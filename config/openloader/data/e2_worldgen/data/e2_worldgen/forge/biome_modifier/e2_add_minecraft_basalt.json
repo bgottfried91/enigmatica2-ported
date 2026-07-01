@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "e2_worldgen:minecraft_basalt",
+  "step": "underground_ores"
+}

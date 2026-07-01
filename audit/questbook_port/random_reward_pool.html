@@ -1,0 +1,4220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Enigmatica 2 Ported - Random Quest Reward Pool</title>
+<style>
+:root { color-scheme: light; --bg:#f6f7f9; --panel:#fff; --text:#1f2933; --muted:#667085; --line:#d9dee7; --head:#172033; --accent:#1f6feb; --soft:#eaf2ff; --danger:#b42318; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:14px/1.45 system-ui, -apple-system, Segoe UI, sans-serif; }
+header { background:var(--head); color:white; padding:28px 36px; }
+h1 { margin:0 0 8px; font-size:28px; letter-spacing:0; }
+header p { margin:0; max-width:1050px; color:#d7dce7; }
+main { padding:24px 36px 48px; max-width:1500px; margin:0 auto; }
+.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:12px; margin-bottom:22px; }
+.card { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:14px 16px; }
+.card .label { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.04em; }
+.card .value { font-size:24px; font-weight:700; margin-top:4px; }
+section { background:var(--panel); border:1px solid var(--line); border-radius:8px; margin:18px 0; overflow:hidden; }
+section h2 { margin:0; padding:16px 18px; font-size:18px; border-bottom:1px solid var(--line); background:#fbfcfe; }
+.note { margin:0; padding:12px 18px; color:var(--muted); border-bottom:1px solid var(--line); }
+.toolbar { display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding:12px 18px; border-bottom:1px solid var(--line); background:#fbfcfe; }
+button { border:1px solid #b7c3d7; background:white; color:#1f2933; border-radius:6px; padding:7px 10px; font:inherit; cursor:pointer; }
+button.primary { background:var(--accent); border-color:var(--accent); color:white; }
+button.danger { color:var(--danger); border-color:#f2b8b5; }
+button:hover { filter:brightness(.97); }
+.status { margin-left:auto; color:var(--muted); }
+textarea { width:100%; min-height:170px; border:0; border-top:1px solid var(--line); padding:12px 18px; font:12px/1.4 ui-monospace, SFMono-Regular, Consolas, monospace; resize:vertical; }
+table { width:100%; border-collapse:collapse; }
+th, td { padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+th { position:sticky; top:0; background:#eef2f8; color:#334155; text-align:left; font-size:12px; text-transform:uppercase; letter-spacing:.035em; z-index:1; }
+tr:hover td { background:var(--soft); }
+.select { width:42px; text-align:center; }
+.num { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+.strong { font-weight:700; }
+.item .title { display:block; font-weight:650; }
+code { font-family:ui-monospace, SFMono-Regular, Consolas, monospace; font-size:12px; color:#334155; background:#f1f4f8; border:1px solid #e1e6ef; border-radius:4px; padding:1px 4px; }
+details { background:var(--panel); border:1px solid var(--line); border-radius:8px; margin-top:18px; overflow:hidden; }
+summary { cursor:pointer; padding:16px 18px; font-weight:700; background:#fbfcfe; }
+.footer { color:var(--muted); margin-top:18px; }
+</style>
+</head>
+<body>
+<header>
+<h1>Random Quest Reward Pool</h1>
+<p>Generated from the current FTB Quests conversion of the legacy BetterQuesting random loot table. Check rows in the aggregated table, then generate a remove-list file for either checked or unchecked rows.</p>
+</header>
+<main>
+<div class="cards">
+<div class="card"><div class="label">Actual Outcomes</div><div class="value">125</div></div>
+<div class="card"><div class="label">Weighted Entries</div><div class="value">128</div></div>
+<div class="card"><div class="label">Total Weight</div><div class="value">1145</div></div>
+<div class="card"><div class="label">Skipped Legacy Entries</div><div class="value">227</div></div>
+<div class="card"><div class="label">Legacy Source Entries</div><div class="value">355</div></div>
+</div>
+
+<section>
+<h2>Chance By Legacy Group</h2>
+<p class="note">This shows how much of the current flat FTB table is contributed by each old BetterQuesting loot group after unmapped entries are removed.</p>
+<table><thead><tr><th>Group</th><th class="num">Kept Entries</th><th class="num">Total Weight</th><th class="num">Chance</th><th class="num">Human Readable</th></tr></thead><tbody>
+<tr>
+<td>Common</td>
+<td class="num">53</td>
+<td class="num">636.00</td>
+<td class="num strong">55.55%</td>
+<td class="num">about 1 in 1.8</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="num">31</td>
+<td class="num">310.00</td>
+<td class="num strong">27.07%</td>
+<td class="num">about 1 in 3.7</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="num">19</td>
+<td class="num">133.00</td>
+<td class="num strong">11.62%</td>
+<td class="num">about 1 in 8.6</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td class="num">16</td>
+<td class="num">48.00</td>
+<td class="num strong">4.19%</td>
+<td class="num">about 1 in 24</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td class="num">9</td>
+<td class="num">18.00</td>
+<td class="num strong">1.57%</td>
+<td class="num">about 1 in 64</td>
+</tr>
+</tbody></table>
+</section>
+
+<section>
+<h2>Aggregated Reward Outcomes</h2>
+<p class="note">Select items here to build a remove-list. The generated file is JSON so it can be pasted back into chat or used by a script later.</p>
+<div class="toolbar">
+<button type="button" id="select-all">Check All</button>
+<button type="button" id="select-none">Check None</button>
+<button type="button" id="invert-selection">Invert</button>
+<button type="button" class="primary" id="download-checked">Download Checked Remove File</button>
+<button type="button" id="download-unchecked">Download Unchecked Remove File</button>
+<button type="button" id="copy-checked">Copy Checked JSON</button>
+<button type="button" class="danger" id="clear-output">Clear Output</button>
+<span class="status" id="selection-status">0 selected</span>
+</div>
+<table><thead><tr><th class="select">Remove</th><th>Reward</th><th class="num">Count</th><th class="num">Weight</th><th class="num">Chance Per Claim</th><th class="num">Human Readable</th><th class="num">Entries</th><th>Group Contribution</th></tr></thead><tbody>
+<tr data-index="0">
+<td class="select"><input type="checkbox" class="remove-check" data-index="0" aria-label="Select Toast With Jam"></td>
+<td class="item"><span class="title">Toast With Jam</span><code>croptopia:toast_with_jam</code></td>
+<td class="num">8</td>
+<td class="num">24.00</td>
+<td class="num strong">2.10%</td>
+<td class="num">about 1 in 48</td>
+<td class="num">2</td>
+<td>Common 2.10%</td>
+</tr>
+<tr data-index="1">
+<td class="select"><input type="checkbox" class="remove-check" data-index="1" aria-label="Select Seared Brick"></td>
+<td class="item"><span class="title">Seared Brick</span><code>tconstruct:seared_brick</code></td>
+<td class="num">1</td>
+<td class="num">22.00</td>
+<td class="num strong">1.92%</td>
+<td class="num">about 1 in 52</td>
+<td class="num">2</td>
+<td>Common 1.05%, Uncommon 0.873%</td>
+</tr>
+<tr data-index="2">
+<td class="select"><input type="checkbox" class="remove-check" data-index="2" aria-label="Select Fir Sapling"></td>
+<td class="item"><span class="title">Fir Sapling</span><code>biomesoplenty:fir_sapling</code></td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="3">
+<td class="select"><input type="checkbox" class="remove-check" data-index="3" aria-label="Select Magic Sapling"></td>
+<td class="item"><span class="title">Magic Sapling</span><code>biomesoplenty:magic_sapling</code></td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="4">
+<td class="select"><input type="checkbox" class="remove-check" data-index="4" aria-label="Select Redwood Sapling"></td>
+<td class="item"><span class="title">Redwood Sapling</span><code>biomesoplenty:redwood_sapling</code></td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="5">
+<td class="select"><input type="checkbox" class="remove-check" data-index="5" aria-label="Select Willow Sapling"></td>
+<td class="item"><span class="title">Willow Sapling</span><code>biomesoplenty:willow_sapling</code></td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="6">
+<td class="select"><input type="checkbox" class="remove-check" data-index="6" aria-label="Select Bookshelf Oak / Rainbow"></td>
+<td class="item"><span class="title">Bookshelf Oak / Rainbow</span><code>chisel:bookshelf_oak/rainbow</code></td>
+<td class="num">8</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="7">
+<td class="select"><input type="checkbox" class="remove-check" data-index="7" aria-label="Select Bricks / Panel"></td>
+<td class="item"><span class="title">Bricks / Panel</span><code>chisel:bricks/panel</code></td>
+<td class="num">64</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="8">
+<td class="select"><input type="checkbox" class="remove-check" data-index="8" aria-label="Select Glassdyed Light Blue / Transparent"></td>
+<td class="item"><span class="title">Glassdyed Light Blue / Transparent</span><code>chisel:glassdyed_light_blue/transparent</code></td>
+<td class="num">64</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="9">
+<td class="select"><input type="checkbox" class="remove-check" data-index="9" aria-label="Select Glassdyed White / Forestry"></td>
+<td class="item"><span class="title">Glassdyed White / Forestry</span><code>chisel:glassdyed_white/forestry</code></td>
+<td class="num">64</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="10">
+<td class="select"><input type="checkbox" class="remove-check" data-index="10" aria-label="Select Hitech Chisel"></td>
+<td class="item"><span class="title">Hitech Chisel</span><code>chisel:hitech_chisel</code></td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="11">
+<td class="select"><input type="checkbox" class="remove-check" data-index="11" aria-label="Select Netherbrick / A1 Netherbrick Lavastonedark"></td>
+<td class="item"><span class="title">Netherbrick / A1 Netherbrick Lavastonedark</span><code>chisel:netherbrick/a1_netherbrick_lavastonedark</code></td>
+<td class="num">64</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="12">
+<td class="select"><input type="checkbox" class="remove-check" data-index="12" aria-label="Select Netherbrick / A1 Netherbrick Redsmall"></td>
+<td class="item"><span class="title">Netherbrick / A1 Netherbrick Redsmall</span><code>chisel:netherbrick/a1_netherbrick_redsmall</code></td>
+<td class="num">64</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="13">
+<td class="select"><input type="checkbox" class="remove-check" data-index="13" aria-label="Select Obsidian / Greek"></td>
+<td class="item"><span class="title">Obsidian / Greek</span><code>chisel:obsidian/greek</code></td>
+<td class="num">64</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="14">
+<td class="select"><input type="checkbox" class="remove-check" data-index="14" aria-label="Select Paper / Floral"></td>
+<td class="item"><span class="title">Paper / Floral</span><code>chisel:paper/floral</code></td>
+<td class="num">64</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="15">
+<td class="select"><input type="checkbox" class="remove-check" data-index="15" aria-label="Select Prismarine / Chaotic Bricks"></td>
+<td class="item"><span class="title">Prismarine / Chaotic Bricks</span><code>chisel:prismarine/chaotic_bricks</code></td>
+<td class="num">64</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="16">
+<td class="select"><input type="checkbox" class="remove-check" data-index="16" aria-label="Select Redstone / Tiles Medium"></td>
+<td class="item"><span class="title">Redstone / Tiles Medium</span><code>chisel:redstone/tiles_medium</code></td>
+<td class="num">8</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="17">
+<td class="select"><input type="checkbox" class="remove-check" data-index="17" aria-label="Select Avocado Sapling"></td>
+<td class="item"><span class="title">Avocado Sapling</span><code>croptopia:avocado_sapling</code></td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="18">
+<td class="select"><input type="checkbox" class="remove-check" data-index="18" aria-label="Select Cashew Sapling"></td>
+<td class="item"><span class="title">Cashew Sapling</span><code>croptopia:cashew_sapling</code></td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="19">
+<td class="select"><input type="checkbox" class="remove-check" data-index="19" aria-label="Select Chocolate"></td>
+<td class="item"><span class="title">Chocolate</span><code>croptopia:chocolate</code></td>
+<td class="num">8</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="20">
+<td class="select"><input type="checkbox" class="remove-check" data-index="20" aria-label="Select Chocolate Ice Cream"></td>
+<td class="item"><span class="title">Chocolate Ice Cream</span><code>croptopia:chocolate_ice_cream</code></td>
+<td class="num">8</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="21">
+<td class="select"><input type="checkbox" class="remove-check" data-index="21" aria-label="Select Dragonfruit Sapling"></td>
+<td class="item"><span class="title">Dragonfruit Sapling</span><code>croptopia:dragonfruit_sapling</code></td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="22">
+<td class="select"><input type="checkbox" class="remove-check" data-index="22" aria-label="Select Spaghetti Squash"></td>
+<td class="item"><span class="title">Spaghetti Squash</span><code>croptopia:spaghetti_squash</code></td>
+<td class="num">8</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="23">
+<td class="select"><input type="checkbox" class="remove-check" data-index="23" aria-label="Select Tuna Sandwich"></td>
+<td class="item"><span class="title">Tuna Sandwich</span><code>croptopia:tuna_sandwich</code></td>
+<td class="num">8</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="24">
+<td class="select"><input type="checkbox" class="remove-check" data-index="24" aria-label="Select Vanilla Ice Cream"></td>
+<td class="item"><span class="title">Vanilla Ice Cream</span><code>croptopia:vanilla_ice_cream</code></td>
+<td class="num">8</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="25">
+<td class="select"><input type="checkbox" class="remove-check" data-index="25" aria-label="Select Bone Block"></td>
+<td class="item"><span class="title">Bone Block</span><code>minecraft:bone_block</code></td>
+<td class="num">24</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="26">
+<td class="select"><input type="checkbox" class="remove-check" data-index="26" aria-label="Select Bookshelf"></td>
+<td class="item"><span class="title">Bookshelf</span><code>minecraft:bookshelf</code></td>
+<td class="num">4</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="27">
+<td class="select"><input type="checkbox" class="remove-check" data-index="27" aria-label="Select Bricks"></td>
+<td class="item"><span class="title">Bricks</span><code>minecraft:bricks</code></td>
+<td class="num">64</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="28">
+<td class="select"><input type="checkbox" class="remove-check" data-index="28" aria-label="Select Cactus"></td>
+<td class="item"><span class="title">Cactus</span><code>minecraft:cactus</code></td>
+<td class="num">16</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="29">
+<td class="select"><input type="checkbox" class="remove-check" data-index="29" aria-label="Select Chorus Flower"></td>
+<td class="item"><span class="title">Chorus Flower</span><code>minecraft:chorus_flower</code></td>
+<td class="num">2</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="30">
+<td class="select"><input type="checkbox" class="remove-check" data-index="30" aria-label="Select Clay"></td>
+<td class="item"><span class="title">Clay</span><code>minecraft:clay</code></td>
+<td class="num">16</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="31">
+<td class="select"><input type="checkbox" class="remove-check" data-index="31" aria-label="Select End Rod"></td>
+<td class="item"><span class="title">End Rod</span><code>minecraft:end_rod</code></td>
+<td class="num">8</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="32">
+<td class="select"><input type="checkbox" class="remove-check" data-index="32" aria-label="Select End Stone Bricks"></td>
+<td class="item"><span class="title">End Stone Bricks</span><code>minecraft:end_stone_bricks</code></td>
+<td class="num">32</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="33">
+<td class="select"><input type="checkbox" class="remove-check" data-index="33" aria-label="Select Hay Block"></td>
+<td class="item"><span class="title">Hay Block</span><code>minecraft:hay_block</code></td>
+<td class="num">9</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="34">
+<td class="select"><input type="checkbox" class="remove-check" data-index="34" aria-label="Select Jack O Lantern"></td>
+<td class="item"><span class="title">Jack O Lantern</span><code>minecraft:jack_o_lantern</code></td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="35">
+<td class="select"><input type="checkbox" class="remove-check" data-index="35" aria-label="Select Mossy Cobblestone"></td>
+<td class="item"><span class="title">Mossy Cobblestone</span><code>minecraft:mossy_cobblestone</code></td>
+<td class="num">32</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="36">
+<td class="select"><input type="checkbox" class="remove-check" data-index="36" aria-label="Select Mycelium"></td>
+<td class="item"><span class="title">Mycelium</span><code>minecraft:mycelium</code></td>
+<td class="num">16</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="37">
+<td class="select"><input type="checkbox" class="remove-check" data-index="37" aria-label="Select Nether Wart Block"></td>
+<td class="item"><span class="title">Nether Wart Block</span><code>minecraft:nether_wart_block</code></td>
+<td class="num">2</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="38">
+<td class="select"><input type="checkbox" class="remove-check" data-index="38" aria-label="Select Prismarine"></td>
+<td class="item"><span class="title">Prismarine</span><code>minecraft:prismarine</code></td>
+<td class="num">32</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="39">
+<td class="select"><input type="checkbox" class="remove-check" data-index="39" aria-label="Select Purpur Block"></td>
+<td class="item"><span class="title">Purpur Block</span><code>minecraft:purpur_block</code></td>
+<td class="num">64</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="40">
+<td class="select"><input type="checkbox" class="remove-check" data-index="40" aria-label="Select Sea Lantern"></td>
+<td class="item"><span class="title">Sea Lantern</span><code>minecraft:sea_lantern</code></td>
+<td class="num">8</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="41">
+<td class="select"><input type="checkbox" class="remove-check" data-index="41" aria-label="Select Slime Block"></td>
+<td class="item"><span class="title">Slime Block</span><code>minecraft:slime_block</code></td>
+<td class="num">4</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="42">
+<td class="select"><input type="checkbox" class="remove-check" data-index="42" aria-label="Select Soul Sand"></td>
+<td class="item"><span class="title">Soul Sand</span><code>minecraft:soul_sand</code></td>
+<td class="num">64</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="43">
+<td class="select"><input type="checkbox" class="remove-check" data-index="43" aria-label="Select Sponge"></td>
+<td class="item"><span class="title">Sponge</span><code>minecraft:sponge</code></td>
+<td class="num">4</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="44">
+<td class="select"><input type="checkbox" class="remove-check" data-index="44" aria-label="Select Obsidian Pressure Plate"></td>
+<td class="item"><span class="title">Obsidian Pressure Plate</span><code>quark:obsidian_pressure_plate</code></td>
+<td class="num">4</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="45">
+<td class="select"><input type="checkbox" class="remove-check" data-index="45" aria-label="Select Soul Bead"></td>
+<td class="item"><span class="title">Soul Bead</span><code>quark:soul_bead</code></td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="46">
+<td class="select"><input type="checkbox" class="remove-check" data-index="46" aria-label="Select Blazewood"></td>
+<td class="item"><span class="title">Blazewood</span><code>tconstruct:blazewood</code></td>
+<td class="num">64</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="47">
+<td class="select"><input type="checkbox" class="remove-check" data-index="47" aria-label="Select Green Clear Stained Glass"></td>
+<td class="item"><span class="title">Green Clear Stained Glass</span><code>tconstruct:green_clear_stained_glass</code></td>
+<td class="num">64</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="48">
+<td class="select"><input type="checkbox" class="remove-check" data-index="48" aria-label="Select Grout"></td>
+<td class="item"><span class="title">Grout</span><code>tconstruct:grout</code></td>
+<td class="num">64</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="49">
+<td class="select"><input type="checkbox" class="remove-check" data-index="49" aria-label="Select Ichor Congealed Slime"></td>
+<td class="item"><span class="title">Ichor Congealed Slime</span><code>tconstruct:ichor_congealed_slime</code></td>
+<td class="num">64</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="50">
+<td class="select"><input type="checkbox" class="remove-check" data-index="50" aria-label="Select Purple Clear Stained Glass"></td>
+<td class="item"><span class="title">Purple Clear Stained Glass</span><code>tconstruct:purple_clear_stained_glass</code></td>
+<td class="num">64</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="51">
+<td class="select"><input type="checkbox" class="remove-check" data-index="51" aria-label="Select Seared Fuel Tank"></td>
+<td class="item"><span class="title">Seared Fuel Tank</span><code>tconstruct:seared_fuel_tank</code></td>
+<td class="num">4</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td class="num">1</td>
+<td>Common 1.05%</td>
+</tr>
+<tr data-index="52">
+<td class="select"><input type="checkbox" class="remove-check" data-index="52" aria-label="Select Goddess Charm"></td>
+<td class="item"><span class="title">Goddess Charm</span><code>botania:goddess_charm</code></td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="53">
+<td class="select"><input type="checkbox" class="remove-check" data-index="53" aria-label="Select Horn Grass"></td>
+<td class="item"><span class="title">Horn Grass</span><code>botania:horn_grass</code></td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="54">
+<td class="select"><input type="checkbox" class="remove-check" data-index="54" aria-label="Select Manasteel Ingot"></td>
+<td class="item"><span class="title">Manasteel Ingot</span><code>botania:manasteel_ingot</code></td>
+<td class="num">8</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="55">
+<td class="select"><input type="checkbox" class="remove-check" data-index="55" aria-label="Select Monocle"></td>
+<td class="item"><span class="title">Monocle</span><code>botania:monocle</code></td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="56">
+<td class="select"><input type="checkbox" class="remove-check" data-index="56" aria-label="Select Lapis / A1 Blocklapis Panel"></td>
+<td class="item"><span class="title">Lapis / A1 Blocklapis Panel</span><code>chisel:lapis/a1_blocklapis_panel</code></td>
+<td class="num">4</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="57">
+<td class="select"><input type="checkbox" class="remove-check" data-index="57" aria-label="Select Chisel Diamond"></td>
+<td class="item"><span class="title">Chisel Diamond</span><code>chiselsandbits:chisel_diamond</code></td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="58">
+<td class="select"><input type="checkbox" class="remove-check" data-index="58" aria-label="Select Cooking Table"></td>
+<td class="item"><span class="title">Cooking Table</span><code>cookingforblockheads:cooking_table</code></td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="59">
+<td class="select"><input type="checkbox" class="remove-check" data-index="59" aria-label="Select Cow Jar"></td>
+<td class="item"><span class="title">Cow Jar</span><code>cookingforblockheads:cow_jar</code></td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="60">
+<td class="select"><input type="checkbox" class="remove-check" data-index="60" aria-label="Select Baked Sweet Potato"></td>
+<td class="item"><span class="title">Baked Sweet Potato</span><code>croptopia:baked_sweet_potato</code></td>
+<td class="num">8</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="61">
+<td class="select"><input type="checkbox" class="remove-check" data-index="61" aria-label="Select Beef Wellington"></td>
+<td class="item"><span class="title">Beef Wellington</span><code>croptopia:beef_wellington</code></td>
+<td class="num">8</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="62">
+<td class="select"><input type="checkbox" class="remove-check" data-index="62" aria-label="Select Blt"></td>
+<td class="item"><span class="title">Blt</span><code>croptopia:blt</code></td>
+<td class="num">8</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="63">
+<td class="select"><input type="checkbox" class="remove-check" data-index="63" aria-label="Select Fish And Chips"></td>
+<td class="item"><span class="title">Fish And Chips</span><code>croptopia:fish_and_chips</code></td>
+<td class="num">8</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="64">
+<td class="select"><input type="checkbox" class="remove-check" data-index="64" aria-label="Select French Fries"></td>
+<td class="item"><span class="title">French Fries</span><code>croptopia:french_fries</code></td>
+<td class="num">8</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="65">
+<td class="select"><input type="checkbox" class="remove-check" data-index="65" aria-label="Select Grilled Cheese"></td>
+<td class="item"><span class="title">Grilled Cheese</span><code>croptopia:grilled_cheese</code></td>
+<td class="num">8</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="66">
+<td class="select"><input type="checkbox" class="remove-check" data-index="66" aria-label="Select Taco"></td>
+<td class="item"><span class="title">Taco</span><code>croptopia:taco</code></td>
+<td class="num">8</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="67">
+<td class="select"><input type="checkbox" class="remove-check" data-index="67" aria-label="Select Toast Sandwich"></td>
+<td class="item"><span class="title">Toast Sandwich</span><code>croptopia:toast_sandwich</code></td>
+<td class="num">8</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="68">
+<td class="select"><input type="checkbox" class="remove-check" data-index="68" aria-label="Select Upgrade Speed"></td>
+<td class="item"><span class="title">Upgrade Speed</span><code>mekanism:upgrade_speed</code></td>
+<td class="num">8</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="69">
+<td class="select"><input type="checkbox" class="remove-check" data-index="69" aria-label="Select Advanced Solar Generator"></td>
+<td class="item"><span class="title">Advanced Solar Generator</span><code>mekanismgenerators:advanced_solar_generator</code></td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="70">
+<td class="select"><input type="checkbox" class="remove-check" data-index="70" aria-label="Select Brewing Stand"></td>
+<td class="item"><span class="title">Brewing Stand</span><code>minecraft:brewing_stand</code></td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="71">
+<td class="select"><input type="checkbox" class="remove-check" data-index="71" aria-label="Select Ender Eye"></td>
+<td class="item"><span class="title">Ender Eye</span><code>minecraft:ender_eye</code></td>
+<td class="num">4</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="72">
+<td class="select"><input type="checkbox" class="remove-check" data-index="72" aria-label="Select Piston"></td>
+<td class="item"><span class="title">Piston</span><code>minecraft:piston</code></td>
+<td class="num">8</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="73">
+<td class="select"><input type="checkbox" class="remove-check" data-index="73" aria-label="Select Tnt"></td>
+<td class="item"><span class="title">Tnt</span><code>minecraft:tnt</code></td>
+<td class="num">8</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="74">
+<td class="select"><input type="checkbox" class="remove-check" data-index="74" aria-label="Select Writable Book"></td>
+<td class="item"><span class="title">Writable Book</span><code>minecraft:writable_book</code></td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="75">
+<td class="select"><input type="checkbox" class="remove-check" data-index="75" aria-label="Select Helium Collector"></td>
+<td class="item"><span class="title">Helium Collector</span><code>nuclearcraft:helium_collector</code></td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="76">
+<td class="select"><input type="checkbox" class="remove-check" data-index="76" aria-label="Select Crafter3"></td>
+<td class="item"><span class="title">Crafter3</span><code>rftoolsutility:crafter3</code></td>
+<td class="num">2</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="77">
+<td class="select"><input type="checkbox" class="remove-check" data-index="77" aria-label="Select Scanner"></td>
+<td class="item"><span class="title">Scanner</span><code>scannable:scanner</code></td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="78">
+<td class="select"><input type="checkbox" class="remove-check" data-index="78" aria-label="Select Seared Brick"></td>
+<td class="item"><span class="title">Seared Brick</span><code>tconstruct:seared_brick</code></td>
+<td class="num">2</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="79">
+<td class="select"><input type="checkbox" class="remove-check" data-index="79" aria-label="Select Seared Brick"></td>
+<td class="item"><span class="title">Seared Brick</span><code>tconstruct:seared_brick</code></td>
+<td class="num">3</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="80">
+<td class="select"><input type="checkbox" class="remove-check" data-index="80" aria-label="Select Sky Congealed Slime"></td>
+<td class="item"><span class="title">Sky Congealed Slime</span><code>tconstruct:sky_congealed_slime</code></td>
+<td class="num">2</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="81">
+<td class="select"><input type="checkbox" class="remove-check" data-index="81" aria-label="Select Dynamo Output Augment"></td>
+<td class="item"><span class="title">Dynamo Output Augment</span><code>thermal:dynamo_output_augment</code></td>
+<td class="num">4</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td class="num">1</td>
+<td>Uncommon 0.873%</td>
+</tr>
+<tr data-index="82">
+<td class="select"><input type="checkbox" class="remove-check" data-index="82" aria-label="Select Farmer"></td>
+<td class="item"><span class="title">Farmer</span><code>actuallyadditions:farmer</code></td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="83">
+<td class="select"><input type="checkbox" class="remove-check" data-index="83" aria-label="Select Greenhouse Glass"></td>
+<td class="item"><span class="title">Greenhouse Glass</span><code>actuallyadditions:greenhouse_glass</code></td>
+<td class="num">5</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="84">
+<td class="select"><input type="checkbox" class="remove-check" data-index="84" aria-label="Select Ranged Collector"></td>
+<td class="item"><span class="title">Ranged Collector</span><code>actuallyadditions:ranged_collector</code></td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="85">
+<td class="select"><input type="checkbox" class="remove-check" data-index="85" aria-label="Select Crafting Unit"></td>
+<td class="item"><span class="title">Crafting Unit</span><code>ae2:crafting_unit</code></td>
+<td class="num">2</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="86">
+<td class="select"><input type="checkbox" class="remove-check" data-index="86" aria-label="Select Exchange Rod"></td>
+<td class="item"><span class="title">Exchange Rod</span><code>botania:exchange_rod</code></td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="87">
+<td class="select"><input type="checkbox" class="remove-check" data-index="87" aria-label="Select Supreme Pizza"></td>
+<td class="item"><span class="title">Supreme Pizza</span><code>croptopia:supreme_pizza</code></td>
+<td class="num">8</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="88">
+<td class="select"><input type="checkbox" class="remove-check" data-index="88" aria-label="Select Basic Io Crystal"></td>
+<td class="item"><span class="title">Basic Io Crystal</span><code>draconicevolution:basic_io_crystal</code></td>
+<td class="num">4</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="89">
+<td class="select"><input type="checkbox" class="remove-check" data-index="89" aria-label="Select Basic Relay Crystal"></td>
+<td class="item"><span class="title">Basic Relay Crystal</span><code>draconicevolution:basic_relay_crystal</code></td>
+<td class="num">4</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="90">
+<td class="select"><input type="checkbox" class="remove-check" data-index="90" aria-label="Select Basic Wireless Crystal"></td>
+<td class="item"><span class="title">Basic Wireless Crystal</span><code>draconicevolution:basic_wireless_crystal</code></td>
+<td class="num">4</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="91">
+<td class="select"><input type="checkbox" class="remove-check" data-index="91" aria-label="Select Ender Pouch"></td>
+<td class="item"><span class="title">Ender Pouch</span><code>enderstorage:ender_pouch</code></td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="92">
+<td class="select"><input type="checkbox" class="remove-check" data-index="92" aria-label="Select Mob Imprisonment Tool"></td>
+<td class="item"><span class="title">Mob Imprisonment Tool</span><code>industrialforegoing:mob_imprisonment_tool</code></td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="93">
+<td class="select"><input type="checkbox" class="remove-check" data-index="93" aria-label="Select Precision Sawmill"></td>
+<td class="item"><span class="title">Precision Sawmill</span><code>mekanism:precision_sawmill</code></td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="94">
+<td class="select"><input type="checkbox" class="remove-check" data-index="94" aria-label="Select Wind Generator"></td>
+<td class="item"><span class="title">Wind Generator</span><code>mekanismgenerators:wind_generator</code></td>
+<td class="num">2</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="95">
+<td class="select"><input type="checkbox" class="remove-check" data-index="95" aria-label="Select Diamond Horse Armor"></td>
+<td class="item"><span class="title">Diamond Horse Armor</span><code>minecraft:diamond_horse_armor</code></td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="96">
+<td class="select"><input type="checkbox" class="remove-check" data-index="96" aria-label="Select Experience Bottle"></td>
+<td class="item"><span class="title">Experience Bottle</span><code>minecraft:experience_bottle</code></td>
+<td class="num">32</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="97">
+<td class="select"><input type="checkbox" class="remove-check" data-index="97" aria-label="Select Shulker Shell"></td>
+<td class="item"><span class="title">Shulker Shell</span><code>minecraft:shulker_shell</code></td>
+<td class="num">8</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="98">
+<td class="select"><input type="checkbox" class="remove-check" data-index="98" aria-label="Select Fission Reactor Controller"></td>
+<td class="item"><span class="title">Fission Reactor Controller</span><code>nuclearcraft:fission_reactor_controller</code></td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="99">
+<td class="select"><input type="checkbox" class="remove-check" data-index="99" aria-label="Select Upgrade Speed"></td>
+<td class="item"><span class="title">Upgrade Speed</span><code>nuclearcraft:upgrade_speed</code></td>
+<td class="num">8</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="100">
+<td class="select"><input type="checkbox" class="remove-check" data-index="100" aria-label="Select Builder"></td>
+<td class="item"><span class="title">Builder</span><code>rftoolsbuilder:builder</code></td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td class="num">1</td>
+<td>Rare 0.611%</td>
+</tr>
+<tr data-index="101">
+<td class="select"><input type="checkbox" class="remove-check" data-index="101" aria-label="Select Singularity"></td>
+<td class="item"><span class="title">Singularity</span><code>ae2:singularity</code></td>
+<td class="num">1</td>
+<td class="num">5.00</td>
+<td class="num strong">0.437%</td>
+<td class="num">about 1 in 229</td>
+<td class="num">2</td>
+<td>Epic 0.262%, Legendary 0.175%</td>
+</tr>
+<tr data-index="102">
+<td class="select"><input type="checkbox" class="remove-check" data-index="102" aria-label="Select Atomic Reconstructor"></td>
+<td class="item"><span class="title">Atomic Reconstructor</span><code>actuallyadditions:atomic_reconstructor</code></td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td class="num">1</td>
+<td>Epic 0.262%</td>
+</tr>
+<tr data-index="103">
+<td class="select"><input type="checkbox" class="remove-check" data-index="103" aria-label="Select Phantom Itemface"></td>
+<td class="item"><span class="title">Phantom Itemface</span><code>actuallyadditions:phantom_itemface</code></td>
+<td class="num">4</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td class="num">1</td>
+<td>Epic 0.262%</td>
+</tr>
+<tr data-index="104">
+<td class="select"><input type="checkbox" class="remove-check" data-index="104" aria-label="Select Charger"></td>
+<td class="item"><span class="title">Charger</span><code>ae2:charger</code></td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td class="num">1</td>
+<td>Epic 0.262%</td>
+</tr>
+<tr data-index="105">
+<td class="select"><input type="checkbox" class="remove-check" data-index="105" aria-label="Select Energy Acceptor"></td>
+<td class="item"><span class="title">Energy Acceptor</span><code>ae2:energy_acceptor</code></td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td class="num">1</td>
+<td>Epic 0.262%</td>
+</tr>
+<tr data-index="106">
+<td class="select"><input type="checkbox" class="remove-check" data-index="106" aria-label="Select Growth Accelerator"></td>
+<td class="item"><span class="title">Growth Accelerator</span><code>ae2:growth_accelerator</code></td>
+<td class="num">5</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td class="num">1</td>
+<td>Epic 0.262%</td>
+</tr>
+<tr data-index="107">
+<td class="select"><input type="checkbox" class="remove-check" data-index="107" aria-label="Select Item Storage Cell 64k"></td>
+<td class="item"><span class="title">Item Storage Cell 64k</span><code>ae2:item_storage_cell_64k</code></td>
+<td class="num">2</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td class="num">1</td>
+<td>Epic 0.262%</td>
+</tr>
+<tr data-index="108">
+<td class="select"><input type="checkbox" class="remove-check" data-index="108" aria-label="Select Molecular Assembler"></td>
+<td class="item"><span class="title">Molecular Assembler</span><code>ae2:molecular_assembler</code></td>
+<td class="num">8</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td class="num">1</td>
+<td>Epic 0.262%</td>
+</tr>
+<tr data-index="109">
+<td class="select"><input type="checkbox" class="remove-check" data-index="109" aria-label="Select Terraform Rod"></td>
+<td class="item"><span class="title">Terraform Rod</span><code>botania:terraform_rod</code></td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td class="num">1</td>
+<td>Epic 0.262%</td>
+</tr>
+<tr data-index="110">
+<td class="select"><input type="checkbox" class="remove-check" data-index="110" aria-label="Select Energy Transfuser"></td>
+<td class="item"><span class="title">Energy Transfuser</span><code>draconicevolution:energy_transfuser</code></td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td class="num">1</td>
+<td>Epic 0.262%</td>
+</tr>
+<tr data-index="111">
+<td class="select"><input type="checkbox" class="remove-check" data-index="111" aria-label="Select Wither Builder"></td>
+<td class="item"><span class="title">Wither Builder</span><code>industrialforegoing:wither_builder</code></td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td class="num">1</td>
+<td>Epic 0.262%</td>
+</tr>
+<tr data-index="112">
+<td class="select"><input type="checkbox" class="remove-check" data-index="112" aria-label="Select Atomic Disassembler"></td>
+<td class="item"><span class="title">Atomic Disassembler</span><code>mekanism:atomic_disassembler</code></td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td class="num">1</td>
+<td>Epic 0.262%</td>
+</tr>
+<tr data-index="113">
+<td class="select"><input type="checkbox" class="remove-check" data-index="113" aria-label="Select Dragon Head"></td>
+<td class="item"><span class="title">Dragon Head</span><code>minecraft:dragon_head</code></td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td class="num">1</td>
+<td>Epic 0.262%</td>
+</tr>
+<tr data-index="114">
+<td class="select"><input type="checkbox" class="remove-check" data-index="114" aria-label="Select End Crystal"></td>
+<td class="item"><span class="title">End Crystal</span><code>minecraft:end_crystal</code></td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td class="num">1</td>
+<td>Epic 0.262%</td>
+</tr>
+<tr data-index="115">
+<td class="select"><input type="checkbox" class="remove-check" data-index="115" aria-label="Select Plate Elite"></td>
+<td class="item"><span class="title">Plate Elite</span><code>nuclearcraft:plate_elite</code></td>
+<td class="num">32</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td class="num">1</td>
+<td>Epic 0.262%</td>
+</tr>
+<tr data-index="116">
+<td class="select"><input type="checkbox" class="remove-check" data-index="116" aria-label="Select Advanced Charged Porter"></td>
+<td class="item"><span class="title">Advanced Charged Porter</span><code>rftoolsutility:advanced_charged_porter</code></td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td class="num">1</td>
+<td>Epic 0.262%</td>
+</tr>
+<tr data-index="117">
+<td class="select"><input type="checkbox" class="remove-check" data-index="117" aria-label="Select Controller"></td>
+<td class="item"><span class="title">Controller</span><code>ae2:controller</code></td>
+<td class="num">1</td>
+<td class="num">2.00</td>
+<td class="num strong">0.175%</td>
+<td class="num">about 1 in 572</td>
+<td class="num">1</td>
+<td>Legendary 0.175%</td>
+</tr>
+<tr data-index="118">
+<td class="select"><input type="checkbox" class="remove-check" data-index="118" aria-label="Select Advanced Dislocator"></td>
+<td class="item"><span class="title">Advanced Dislocator</span><code>draconicevolution:advanced_dislocator</code></td>
+<td class="num">1</td>
+<td class="num">2.00</td>
+<td class="num strong">0.175%</td>
+<td class="num">about 1 in 572</td>
+<td class="num">1</td>
+<td>Legendary 0.175%</td>
+</tr>
+<tr data-index="119">
+<td class="select"><input type="checkbox" class="remove-check" data-index="119" aria-label="Select Dragon Heart"></td>
+<td class="item"><span class="title">Dragon Heart</span><code>draconicevolution:dragon_heart</code></td>
+<td class="num">1</td>
+<td class="num">2.00</td>
+<td class="num strong">0.175%</td>
+<td class="num">about 1 in 572</td>
+<td class="num">1</td>
+<td>Legendary 0.175%</td>
+</tr>
+<tr data-index="120">
+<td class="select"><input type="checkbox" class="remove-check" data-index="120" aria-label="Select Wyvern Axe"></td>
+<td class="item"><span class="title">Wyvern Axe</span><code>draconicevolution:wyvern_axe</code></td>
+<td class="num">1</td>
+<td class="num">2.00</td>
+<td class="num strong">0.175%</td>
+<td class="num">about 1 in 572</td>
+<td class="num">1</td>
+<td>Legendary 0.175%</td>
+</tr>
+<tr data-index="121">
+<td class="select"><input type="checkbox" class="remove-check" data-index="121" aria-label="Select Wyvern Bow"></td>
+<td class="item"><span class="title">Wyvern Bow</span><code>draconicevolution:wyvern_bow</code></td>
+<td class="num">1</td>
+<td class="num">2.00</td>
+<td class="num strong">0.175%</td>
+<td class="num">about 1 in 572</td>
+<td class="num">1</td>
+<td>Legendary 0.175%</td>
+</tr>
+<tr data-index="122">
+<td class="select"><input type="checkbox" class="remove-check" data-index="122" aria-label="Select Wyvern Energy Core"></td>
+<td class="item"><span class="title">Wyvern Energy Core</span><code>draconicevolution:wyvern_energy_core</code></td>
+<td class="num">1</td>
+<td class="num">2.00</td>
+<td class="num strong">0.175%</td>
+<td class="num">about 1 in 572</td>
+<td class="num">1</td>
+<td>Legendary 0.175%</td>
+</tr>
+<tr data-index="123">
+<td class="select"><input type="checkbox" class="remove-check" data-index="123" aria-label="Select Dragon Egg"></td>
+<td class="item"><span class="title">Dragon Egg</span><code>minecraft:dragon_egg</code></td>
+<td class="num">1</td>
+<td class="num">2.00</td>
+<td class="num strong">0.175%</td>
+<td class="num">about 1 in 572</td>
+<td class="num">1</td>
+<td>Legendary 0.175%</td>
+</tr>
+<tr data-index="124">
+<td class="select"><input type="checkbox" class="remove-check" data-index="124" aria-label="Select Nether Star"></td>
+<td class="item"><span class="title">Nether Star</span><code>minecraft:nether_star</code></td>
+<td class="num">1</td>
+<td class="num">2.00</td>
+<td class="num strong">0.175%</td>
+<td class="num">about 1 in 572</td>
+<td class="num">1</td>
+<td>Legendary 0.175%</td>
+</tr>
+</tbody></table>
+<textarea id="remove-output" readonly placeholder="Generated remove-list JSON will appear here."></textarea>
+</section>
+
+<section>
+<h2>Detailed Weighted Entries</h2>
+<p class="note">This lists the exact converted weighted entries feeding the FTB random reward table.</p>
+<table><thead><tr><th>Legacy Group</th><th>Reward</th><th class="num">Count</th><th class="num">Group Weight</th><th class="num">Entry Weight</th><th class="num">Final Weight</th><th class="num">Chance</th><th class="num">Human Readable</th><th>Legacy Stack</th></tr></thead><tbody>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Fir Sapling</span><code>biomesoplenty:fir_sapling</code></td>
+<td class="num">1</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>biomesoplenty:sapling_0:4</code> x1</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Magic Sapling</span><code>biomesoplenty:magic_sapling</code></td>
+<td class="num">1</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>biomesoplenty:sapling_1:7</code> x1</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Redwood Sapling</span><code>biomesoplenty:redwood_sapling</code></td>
+<td class="num">1</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>biomesoplenty:sapling_1:0</code> x1</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Willow Sapling</span><code>biomesoplenty:willow_sapling</code></td>
+<td class="num">1</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>biomesoplenty:sapling_1:1</code> x1</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Bookshelf Oak / Rainbow</span><code>chisel:bookshelf_oak/rainbow</code></td>
+<td class="num">8</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>chisel:bookshelf_oak:0</code> x8</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Bricks / Panel</span><code>chisel:bricks/panel</code></td>
+<td class="num">64</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>chisel:bricks:10</code> x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Glassdyed Light Blue / Transparent</span><code>chisel:glassdyed_light_blue/transparent</code></td>
+<td class="num">64</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>chisel:glassdyedlightblue:5</code> x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Glassdyed White / Forestry</span><code>chisel:glassdyed_white/forestry</code></td>
+<td class="num">64</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>chisel:glassdyedwhite:1</code> x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Hitech Chisel</span><code>chisel:hitech_chisel</code></td>
+<td class="num">1</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>chisel:chisel_hitech:0</code> x1</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Netherbrick / A1 Netherbrick Lavastonedark</span><code>chisel:netherbrick/a1_netherbrick_lavastonedark</code></td>
+<td class="num">64</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>chisel:netherbrick:8</code> x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Netherbrick / A1 Netherbrick Redsmall</span><code>chisel:netherbrick/a1_netherbrick_redsmall</code></td>
+<td class="num">64</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>chisel:netherbrick:13</code> x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Obsidian / Greek</span><code>chisel:obsidian/greek</code></td>
+<td class="num">64</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>chisel:obsidian:13</code> x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Paper / Floral</span><code>chisel:paper/floral</code></td>
+<td class="num">64</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>chisel:paper:6</code> x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Prismarine / Chaotic Bricks</span><code>chisel:prismarine/chaotic_bricks</code></td>
+<td class="num">64</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>chisel:prismarine:6</code> x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Redstone / Tiles Medium</span><code>chisel:redstone/tiles_medium</code></td>
+<td class="num">8</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>chisel:redstone1:8</code> x8</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Avocado Sapling</span><code>croptopia:avocado_sapling</code></td>
+<td class="num">1</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>harvestcraft:avocado_sapling:0</code> x1</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Cashew Sapling</span><code>croptopia:cashew_sapling</code></td>
+<td class="num">1</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>harvestcraft:cashew_sapling:0</code> x1</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Chocolate</span><code>croptopia:chocolate</code></td>
+<td class="num">8</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>harvestcraft:nutellaitem:0</code> x8</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Chocolate Ice Cream</span><code>croptopia:chocolate_ice_cream</code></td>
+<td class="num">8</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>harvestcraft:mintchocolatechipicecreamitem:0</code> x8</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Dragonfruit Sapling</span><code>croptopia:dragonfruit_sapling</code></td>
+<td class="num">1</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>harvestcraft:dragonfruit_sapling:0</code> x1</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Spaghetti Squash</span><code>croptopia:spaghetti_squash</code></td>
+<td class="num">8</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>harvestcraft:spagettiandmeatballsitem:0</code> x8</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Toast With Jam</span><code>croptopia:toast_with_jam</code></td>
+<td class="num">8</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>harvestcraft:limejellysandwichitem:0</code> x8</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Toast With Jam</span><code>croptopia:toast_with_jam</code></td>
+<td class="num">8</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>harvestcraft:apricotjellysandwichitem:0</code> x8</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Tuna Sandwich</span><code>croptopia:tuna_sandwich</code></td>
+<td class="num">8</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>harvestcraft:fishsandwichitem:0</code> x8</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Vanilla Ice Cream</span><code>croptopia:vanilla_ice_cream</code></td>
+<td class="num">8</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>harvestcraft:icecreamitem:0</code> x8</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Bone Block</span><code>minecraft:bone_block</code></td>
+<td class="num">24</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:bone_block:0</code> x24</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Bookshelf</span><code>minecraft:bookshelf</code></td>
+<td class="num">4</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:bookshelf:0</code> x4</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Bricks</span><code>minecraft:bricks</code></td>
+<td class="num">64</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:brick_block:0</code> x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Cactus</span><code>minecraft:cactus</code></td>
+<td class="num">16</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:cactus:0</code> x16</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Chorus Flower</span><code>minecraft:chorus_flower</code></td>
+<td class="num">2</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:chorus_flower:0</code> x2</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Clay</span><code>minecraft:clay</code></td>
+<td class="num">16</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:clay:0</code> x16</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">End Rod</span><code>minecraft:end_rod</code></td>
+<td class="num">8</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:end_rod:0</code> x8</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">End Stone Bricks</span><code>minecraft:end_stone_bricks</code></td>
+<td class="num">32</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:end_bricks:0</code> x32</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Hay Block</span><code>minecraft:hay_block</code></td>
+<td class="num">9</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:hay_block:0</code> x9</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Jack O Lantern</span><code>minecraft:jack_o_lantern</code></td>
+<td class="num">1</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:lit_pumpkin:0</code> x1</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Mossy Cobblestone</span><code>minecraft:mossy_cobblestone</code></td>
+<td class="num">32</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:mossy_cobblestone:0</code> x32</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Mycelium</span><code>minecraft:mycelium</code></td>
+<td class="num">16</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:mycelium:0</code> x16</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Nether Wart Block</span><code>minecraft:nether_wart_block</code></td>
+<td class="num">2</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:nether_wart_block:0</code> x2</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Prismarine</span><code>minecraft:prismarine</code></td>
+<td class="num">32</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:prismarine:0</code> x32</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Purpur Block</span><code>minecraft:purpur_block</code></td>
+<td class="num">64</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:purpur_block:0</code> x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Sea Lantern</span><code>minecraft:sea_lantern</code></td>
+<td class="num">8</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:sea_lantern:0</code> x8</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Slime Block</span><code>minecraft:slime_block</code></td>
+<td class="num">4</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:slime:0</code> x4</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Soul Sand</span><code>minecraft:soul_sand</code></td>
+<td class="num">64</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:soul_sand:0</code> x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Sponge</span><code>minecraft:sponge</code></td>
+<td class="num">4</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>minecraft:sponge:0</code> x4</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Obsidian Pressure Plate</span><code>quark:obsidian_pressure_plate</code></td>
+<td class="num">4</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>quark:obsidian_pressure_plate:0</code> x4</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Soul Bead</span><code>quark:soul_bead</code></td>
+<td class="num">1</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>quark:soul_bead:0</code> x1</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Blazewood</span><code>tconstruct:blazewood</code></td>
+<td class="num">64</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>tconstruct:firewood:0</code> x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Green Clear Stained Glass</span><code>tconstruct:green_clear_stained_glass</code></td>
+<td class="num">64</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>tconstruct:clear_stained_glass:13</code> x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Grout</span><code>tconstruct:grout</code></td>
+<td class="num">64</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>tconstruct:soil:4</code> x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Ichor Congealed Slime</span><code>tconstruct:ichor_congealed_slime</code></td>
+<td class="num">64</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>tconstruct:slime_congealed:3</code> x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Purple Clear Stained Glass</span><code>tconstruct:purple_clear_stained_glass</code></td>
+<td class="num">64</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>tconstruct:clear_stained_glass:10</code> x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Seared Brick</span><code>tconstruct:seared_brick</code></td>
+<td class="num">1</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>tconstruct:materials:13</code> x1</td>
+</tr>
+<tr>
+<td>Common</td>
+<td class="item"><span class="title">Seared Fuel Tank</span><code>tconstruct:seared_fuel_tank</code></td>
+<td class="num">4</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">12.00</td>
+<td class="num strong">1.05%</td>
+<td class="num">about 1 in 95</td>
+<td><code>tconstruct:seared_tank:1</code> x4</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Goddess Charm</span><code>botania:goddess_charm</code></td>
+<td class="num">1</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>botania:goddesscharm:0</code> x1</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Horn Grass</span><code>botania:horn_grass</code></td>
+<td class="num">1</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>botania:grasshorn:0</code> x1</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Manasteel Ingot</span><code>botania:manasteel_ingot</code></td>
+<td class="num">8</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>botania:manaresource:0</code> x8</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Monocle</span><code>botania:monocle</code></td>
+<td class="num">1</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>botania:monocle:0</code> x1</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Lapis / A1 Blocklapis Panel</span><code>chisel:lapis/a1_blocklapis_panel</code></td>
+<td class="num">4</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>chisel:lapis:7</code> x4</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Chisel Diamond</span><code>chiselsandbits:chisel_diamond</code></td>
+<td class="num">1</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>chiselsandbits:chisel_diamond:0</code> x1</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Cooking Table</span><code>cookingforblockheads:cooking_table</code></td>
+<td class="num">1</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>cookingforblockheads:cooking_table:0</code> x1</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Cow Jar</span><code>cookingforblockheads:cow_jar</code></td>
+<td class="num">1</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>cookingforblockheads:cow_jar:0</code> x1</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Baked Sweet Potato</span><code>croptopia:baked_sweet_potato</code></td>
+<td class="num">8</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>harvestcraft:sweetpotatopieitem:0</code> x8</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Beef Wellington</span><code>croptopia:beef_wellington</code></td>
+<td class="num">8</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>harvestcraft:beefwellingtonitem:0</code> x8</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Blt</span><code>croptopia:blt</code></td>
+<td class="num">8</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>harvestcraft:bltitem:0</code> x8</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Fish And Chips</span><code>croptopia:fish_and_chips</code></td>
+<td class="num">8</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>harvestcraft:fishandchipsitem:0</code> x8</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">French Fries</span><code>croptopia:french_fries</code></td>
+<td class="num">8</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>harvestcraft:poutineitem:0</code> x8</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Grilled Cheese</span><code>croptopia:grilled_cheese</code></td>
+<td class="num">8</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>harvestcraft:grilledcheeseitem:0</code> x8</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Taco</span><code>croptopia:taco</code></td>
+<td class="num">8</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>harvestcraft:tacoitem:0</code> x8</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Toast Sandwich</span><code>croptopia:toast_sandwich</code></td>
+<td class="num">8</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>harvestcraft:sausageinbreaditem:0</code> x8</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Upgrade Speed</span><code>mekanism:upgrade_speed</code></td>
+<td class="num">8</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>mekanism:speedupgrade:0</code> x8</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Advanced Solar Generator</span><code>mekanismgenerators:advanced_solar_generator</code></td>
+<td class="num">1</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>mekanismgenerators:generator:5</code> x1</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Brewing Stand</span><code>minecraft:brewing_stand</code></td>
+<td class="num">1</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>minecraft:brewing_stand:0</code> x1</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Ender Eye</span><code>minecraft:ender_eye</code></td>
+<td class="num">4</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>minecraft:ender_eye:0</code> x4</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Piston</span><code>minecraft:piston</code></td>
+<td class="num">8</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>minecraft:piston:0</code> x8</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Tnt</span><code>minecraft:tnt</code></td>
+<td class="num">8</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>minecraft:tnt:0</code> x8</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Writable Book</span><code>minecraft:writable_book</code></td>
+<td class="num">1</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>minecraft:writable_book:0</code> x1</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Helium Collector</span><code>nuclearcraft:helium_collector</code></td>
+<td class="num">1</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>nuclearcraft:helium_collector:0</code> x1</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Crafter3</span><code>rftoolsutility:crafter3</code></td>
+<td class="num">2</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>rftools:crafter3:0</code> x2</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Scanner</span><code>scannable:scanner</code></td>
+<td class="num">1</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>scannable:scanner:0</code> x1</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Seared Brick</span><code>tconstruct:seared_brick</code></td>
+<td class="num">1</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>tconstruct:materials:16</code> x1</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Seared Brick</span><code>tconstruct:seared_brick</code></td>
+<td class="num">2</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>tconstruct:materials:19</code> x2</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Seared Brick</span><code>tconstruct:seared_brick</code></td>
+<td class="num">3</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>tconstruct:materials:14</code> x3</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Sky Congealed Slime</span><code>tconstruct:sky_congealed_slime</code></td>
+<td class="num">2</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>tconstruct:slime_congealed:2</code> x2</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td class="item"><span class="title">Dynamo Output Augment</span><code>thermal:dynamo_output_augment</code></td>
+<td class="num">4</td>
+<td class="num">10</td>
+<td class="num">1</td>
+<td class="num">10.00</td>
+<td class="num strong">0.873%</td>
+<td class="num">about 1 in 114</td>
+<td><code>thermalexpansion:augment:512</code> x4</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Farmer</span><code>actuallyadditions:farmer</code></td>
+<td class="num">1</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>actuallyadditions:block_farmer:0</code> x1</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Greenhouse Glass</span><code>actuallyadditions:greenhouse_glass</code></td>
+<td class="num">5</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>actuallyadditions:block_greenhouse_glass:0</code> x5</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Ranged Collector</span><code>actuallyadditions:ranged_collector</code></td>
+<td class="num">1</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>actuallyadditions:block_ranged_collector:0</code> x1</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Crafting Unit</span><code>ae2:crafting_unit</code></td>
+<td class="num">2</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>appliedenergistics2:crafting_unit:0</code> x2</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Exchange Rod</span><code>botania:exchange_rod</code></td>
+<td class="num">1</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>botania:exchangerod:0</code> x1</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Supreme Pizza</span><code>croptopia:supreme_pizza</code></td>
+<td class="num">8</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>harvestcraft:supremepizzaitem:0</code> x8</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Basic Io Crystal</span><code>draconicevolution:basic_io_crystal</code></td>
+<td class="num">4</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>draconicevolution:energy_crystal:3</code> x4</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Basic Relay Crystal</span><code>draconicevolution:basic_relay_crystal</code></td>
+<td class="num">4</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>draconicevolution:energy_crystal:0</code> x4</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Basic Wireless Crystal</span><code>draconicevolution:basic_wireless_crystal</code></td>
+<td class="num">4</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>draconicevolution:energy_crystal:6</code> x4</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Ender Pouch</span><code>enderstorage:ender_pouch</code></td>
+<td class="num">1</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>enderstorage:ender_pouch:0</code> x1</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Mob Imprisonment Tool</span><code>industrialforegoing:mob_imprisonment_tool</code></td>
+<td class="num">1</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>industrialforegoing:mob_imprisonment_tool:0</code> x1</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Precision Sawmill</span><code>mekanism:precision_sawmill</code></td>
+<td class="num">1</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>mekanism:machineblock2:5</code> x1</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Wind Generator</span><code>mekanismgenerators:wind_generator</code></td>
+<td class="num">2</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>mekanismgenerators:generator:6</code> x2</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Diamond Horse Armor</span><code>minecraft:diamond_horse_armor</code></td>
+<td class="num">1</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>minecraft:diamond_horse_armor:0</code> x1</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Experience Bottle</span><code>minecraft:experience_bottle</code></td>
+<td class="num">32</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>minecraft:experience_bottle:0</code> x32</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Shulker Shell</span><code>minecraft:shulker_shell</code></td>
+<td class="num">8</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>minecraft:shulker_shell:0</code> x8</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Fission Reactor Controller</span><code>nuclearcraft:fission_reactor_controller</code></td>
+<td class="num">1</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>nuclearcraft:fission_controller_new_fixed:0</code> x1</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Upgrade Speed</span><code>nuclearcraft:upgrade_speed</code></td>
+<td class="num">8</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>nuclearcraft:upgrade:0</code> x8</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td class="item"><span class="title">Builder</span><code>rftoolsbuilder:builder</code></td>
+<td class="num">1</td>
+<td class="num">7</td>
+<td class="num">1</td>
+<td class="num">7.00</td>
+<td class="num strong">0.611%</td>
+<td class="num">about 1 in 164</td>
+<td><code>rftools:builder:0</code> x1</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td class="item"><span class="title">Atomic Reconstructor</span><code>actuallyadditions:atomic_reconstructor</code></td>
+<td class="num">1</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td><code>actuallyadditions:block_atomic_reconstructor:0</code> x1</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td class="item"><span class="title">Phantom Itemface</span><code>actuallyadditions:phantom_itemface</code></td>
+<td class="num">4</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td><code>actuallyadditions:block_phantomface:0</code> x4</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td class="item"><span class="title">Charger</span><code>ae2:charger</code></td>
+<td class="num">1</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td><code>appliedenergistics2:charger:0</code> x1</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td class="item"><span class="title">Energy Acceptor</span><code>ae2:energy_acceptor</code></td>
+<td class="num">1</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td><code>appliedenergistics2:energy_acceptor:0</code> x1</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td class="item"><span class="title">Growth Accelerator</span><code>ae2:growth_accelerator</code></td>
+<td class="num">5</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td><code>appliedenergistics2:quartz_growth_accelerator:0</code> x5</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td class="item"><span class="title">Item Storage Cell 64k</span><code>ae2:item_storage_cell_64k</code></td>
+<td class="num">2</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td><code>appliedenergistics2:storage_cell_64k:0</code> x2</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td class="item"><span class="title">Molecular Assembler</span><code>ae2:molecular_assembler</code></td>
+<td class="num">8</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td><code>appliedenergistics2:molecular_assembler:0</code> x8</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td class="item"><span class="title">Singularity</span><code>ae2:singularity</code></td>
+<td class="num">1</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td><code>appliedenergistics2:material:47</code> x1</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td class="item"><span class="title">Terraform Rod</span><code>botania:terraform_rod</code></td>
+<td class="num">1</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td><code>botania:terraformrod:0</code> x1</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td class="item"><span class="title">Energy Transfuser</span><code>draconicevolution:energy_transfuser</code></td>
+<td class="num">1</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td><code>draconicevolution:energy_infuser:0</code> x1</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td class="item"><span class="title">Wither Builder</span><code>industrialforegoing:wither_builder</code></td>
+<td class="num">1</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td><code>industrialforegoing:wither_builder:0</code> x1</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td class="item"><span class="title">Atomic Disassembler</span><code>mekanism:atomic_disassembler</code></td>
+<td class="num">1</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td><code>mekanism:atomicdisassembler:0</code> x1</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td class="item"><span class="title">Dragon Head</span><code>minecraft:dragon_head</code></td>
+<td class="num">1</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td><code>minecraft:skull:5</code> x1</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td class="item"><span class="title">End Crystal</span><code>minecraft:end_crystal</code></td>
+<td class="num">1</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td><code>minecraft:end_crystal:0</code> x1</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td class="item"><span class="title">Plate Elite</span><code>nuclearcraft:plate_elite</code></td>
+<td class="num">32</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td><code>nuclearcraft:part:3</code> x32</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td class="item"><span class="title">Advanced Charged Porter</span><code>rftoolsutility:advanced_charged_porter</code></td>
+<td class="num">1</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">3.00</td>
+<td class="num strong">0.262%</td>
+<td class="num">about 1 in 382</td>
+<td><code>rftools:advanced_charged_porter:0</code> x1</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td class="item"><span class="title">Controller</span><code>ae2:controller</code></td>
+<td class="num">1</td>
+<td class="num">2</td>
+<td class="num">1</td>
+<td class="num">2.00</td>
+<td class="num strong">0.175%</td>
+<td class="num">about 1 in 572</td>
+<td><code>appliedenergistics2:controller:0</code> x1</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td class="item"><span class="title">Singularity</span><code>ae2:singularity</code></td>
+<td class="num">1</td>
+<td class="num">2</td>
+<td class="num">1</td>
+<td class="num">2.00</td>
+<td class="num strong">0.175%</td>
+<td class="num">about 1 in 572</td>
+<td><code>appliedenergistics2:material:47</code> x1</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td class="item"><span class="title">Advanced Dislocator</span><code>draconicevolution:advanced_dislocator</code></td>
+<td class="num">1</td>
+<td class="num">2</td>
+<td class="num">1</td>
+<td class="num">2.00</td>
+<td class="num strong">0.175%</td>
+<td class="num">about 1 in 572</td>
+<td><code>draconicevolution:dislocator_advanced:0</code> x1</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td class="item"><span class="title">Dragon Heart</span><code>draconicevolution:dragon_heart</code></td>
+<td class="num">1</td>
+<td class="num">2</td>
+<td class="num">1</td>
+<td class="num">2.00</td>
+<td class="num strong">0.175%</td>
+<td class="num">about 1 in 572</td>
+<td><code>draconicevolution:dragon_heart:0</code> x1</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td class="item"><span class="title">Wyvern Axe</span><code>draconicevolution:wyvern_axe</code></td>
+<td class="num">1</td>
+<td class="num">2</td>
+<td class="num">1</td>
+<td class="num">2.00</td>
+<td class="num strong">0.175%</td>
+<td class="num">about 1 in 572</td>
+<td><code>draconicevolution:wyvern_axe:0</code> x1</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td class="item"><span class="title">Wyvern Bow</span><code>draconicevolution:wyvern_bow</code></td>
+<td class="num">1</td>
+<td class="num">2</td>
+<td class="num">1</td>
+<td class="num">2.00</td>
+<td class="num strong">0.175%</td>
+<td class="num">about 1 in 572</td>
+<td><code>draconicevolution:wyvern_bow:0</code> x1</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td class="item"><span class="title">Wyvern Energy Core</span><code>draconicevolution:wyvern_energy_core</code></td>
+<td class="num">1</td>
+<td class="num">2</td>
+<td class="num">1</td>
+<td class="num">2.00</td>
+<td class="num strong">0.175%</td>
+<td class="num">about 1 in 572</td>
+<td><code>draconicevolution:wyvern_energy_core:0</code> x1</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td class="item"><span class="title">Dragon Egg</span><code>minecraft:dragon_egg</code></td>
+<td class="num">1</td>
+<td class="num">2</td>
+<td class="num">1</td>
+<td class="num">2.00</td>
+<td class="num strong">0.175%</td>
+<td class="num">about 1 in 572</td>
+<td><code>minecraft:dragon_egg:0</code> x1</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td class="item"><span class="title">Nether Star</span><code>minecraft:nether_star</code></td>
+<td class="num">1</td>
+<td class="num">2</td>
+<td class="num">1</td>
+<td class="num">2.00</td>
+<td class="num strong">0.175%</td>
+<td class="num">about 1 in 572</td>
+<td><code>minecraft:nether_star:0</code> x1</td>
+</tr>
+</tbody></table>
+</section>
+
+<details>
+<summary>Skipped legacy loot entries (227)</summary>
+<p class="note">These old rewards were not included because the mapped item is not installed or the old mod/item no longer has a confident replacement. Top skipped namespaces: harvestcraft (39), chisel (27), minecraft (12), extrautils2 (12), immersiveengineering (11), thermalfoundation (10), openblocks (9), forestry (9), tconstruct (7), rustic (6).</p>
+<table><thead><tr><th>Legacy Group</th><th>Legacy Stack</th><th class="num">Count</th><th>Reason</th></tr></thead><tbody>
+<tr>
+<td>Common</td>
+<td><code>minecraft:dirt:2</code></td>
+<td class="num">1</td>
+<td>removed by review list as minecraft:dirt x1</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>minecraft:grass:0</code></td>
+<td class="num">16</td>
+<td>removed by review list as minecraft:grass_block x16</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>minecraft:concrete_powder:8</code></td>
+<td class="num">64</td>
+<td>removed by review list as minecraft:white_concrete_powder x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>minecraft:web:0</code></td>
+<td class="num">4</td>
+<td>removed by review list as minecraft:cobweb x4</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>minecraft:deadbush:0</code></td>
+<td class="num">64</td>
+<td>removed by review list as minecraft:dead_bush x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>minecraft:red_flower:3</code></td>
+<td class="num">8</td>
+<td>removed by review list as minecraft:azure_bluet x8</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>minecraft:waterlily:0</code></td>
+<td class="num">16</td>
+<td>removed by review list as minecraft:lily_pad x16</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>minecraft:painting:0</code></td>
+<td class="num">3</td>
+<td>removed by review list as minecraft:painting x3</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>minecraft:banner:6</code></td>
+<td class="num">16</td>
+<td>removed by review list as minecraft:white_banner x16</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:andesite1:7</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:andesite/tiles_large x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:basalt:1</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:basalt/solid_bricks x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:antiblock:10</code></td>
+<td class="num">64</td>
+<td>missing mapped item chisel:antiblock</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:cloud:0</code></td>
+<td class="num">64</td>
+<td>missing mapped item chisel:cloud</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:carpet_black:0</code></td>
+<td class="num">64</td>
+<td>missing mapped item chisel:carpet_black</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:block_coal_coke1:12</code></td>
+<td class="num">4</td>
+<td>missing mapped item chisel:block_coal_coke1</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:cobblestonemossy1:14</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:mossy_cobblestone/pillar x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>thermalfoundation:ore:5</code></td>
+<td class="num">16</td>
+<td>missing mapped item thermalfoundation:ore</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>blockcraftery:editable_block:0</code></td>
+<td class="num">64</td>
+<td>missing mapped item blockcraftery:editable_block</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>biomesoplenty:terrarium:13</code></td>
+<td class="num">2</td>
+<td>missing mapped item biomesoplenty:terrarium</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:futura:2</code></td>
+<td class="num">1</td>
+<td>removed by review list as chisel:futura/controller x1</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chiselsandbits:tape_measure:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item chiselsandbits:tape_measure</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>cyclicmagic:sleeping_mat:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item cyclicmagic:sleeping_mat</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:lavastone1:4</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:lavastone/braid x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:lavastone1:6</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:lavastone/tiles_large x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:ice:7</code></td>
+<td class="num">64</td>
+<td>missing mapped item chisel:ice</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:icepillar:4</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:icepillar/convexplain x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:icepillar:5</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:icepillar/carved x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:planks-spruce:12</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:planks_spruce/encased_smooth x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:technicalnew:8</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:technical/vent x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:technical:11</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:technical/cables x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:technical:3</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:technical/pipeslarge x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>openblocks:fan:0</code></td>
+<td class="num">4</td>
+<td>missing mapped item openblocks:fan</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>openblocks:golden_egg:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item openblocks:golden_egg</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>openblocks:luggage:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item openblocks:luggage</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>openblocks:dev_null:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item openblocks:dev_null</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>openblocks:sponge_on_a_stick:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item openblocks:sponge_on_a_stick</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>opencomputers:storage:1</code></td>
+<td class="num">1</td>
+<td>missing mapped item opencomputers:storage</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>harvestcraft:well:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item harvestcraft:well</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>rustic:chandelier:0</code></td>
+<td class="num">2</td>
+<td>missing mapped item rustic:chandelier</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>botania:elfglasspane:0</code></td>
+<td class="num">64</td>
+<td>missing mapped item botania:elfglasspane</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:futura:3</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:futura/wavy x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>cyclicmagic:beacon_redstone:0</code></td>
+<td class="num">2</td>
+<td>missing mapped item cyclicmagic:beacon_redstone</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>darkutils:trap_tile:2</code></td>
+<td class="num">16</td>
+<td>missing mapped item darkutils:trap_tile</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>extrautils2:decorativeglass:1</code></td>
+<td class="num">64</td>
+<td>missing mapped item extrautils2:decorativeglass</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>extrautils2:decorativeglass:4</code></td>
+<td class="num">64</td>
+<td>missing mapped item extrautils2:decorativeglass</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>extrautils2:decorativeglass:5</code></td>
+<td class="num">64</td>
+<td>missing mapped item extrautils2:decorativeglass</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>jaopca:item_coinboron:0</code></td>
+<td class="num">64</td>
+<td>missing mapped item jaopca:item_coinboron</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>jaopca:item_cointitanium:0</code></td>
+<td class="num">64</td>
+<td>missing mapped item jaopca:item_cointitanium</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>jaopca:item_coinardite:0</code></td>
+<td class="num">64</td>
+<td>missing mapped item jaopca:item_coinardite</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>jaopca:item_coinastralstarmetal:0</code></td>
+<td class="num">64</td>
+<td>missing mapped item jaopca:item_coinastralstarmetal</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>flatcoloredblocks:coloredcraftingitem:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item flatcoloredblocks:coloredcraftingitem</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>forestry:doors.giganteum:0</code></td>
+<td class="num">4</td>
+<td>missing mapped item forestry:doors.giganteum</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>forestry:doors.cocobolo:0</code></td>
+<td class="num">4</td>
+<td>missing mapped item forestry:doors.cocobolo</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>forestry:doors.mahoe:0</code></td>
+<td class="num">4</td>
+<td>missing mapped item forestry:doors.mahoe</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>forestry:doors.walnut:0</code></td>
+<td class="num">4</td>
+<td>missing mapped item forestry:doors.walnut</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>forestry:doors.wenge:0</code></td>
+<td class="num">4</td>
+<td>missing mapped item forestry:doors.wenge</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>immersiveengineering:metal_decoration2:4</code></td>
+<td class="num">16</td>
+<td>missing mapped item immersiveengineering:metal_decoration2</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>immersiveengineering:metal_device1:9</code></td>
+<td class="num">8</td>
+<td>missing mapped item immersiveengineering:metal_device1</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>mekanism:balloon:2</code></td>
+<td class="num">16</td>
+<td>missing mapped item mekanism:balloon</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>openblocks:target:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item openblocks:target</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>openblocks:beartrap:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item openblocks:beartrap</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>harvestcraft:zestyzucchiniitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:zestyzucchiniitem</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>harvestcraft:chickencelerycasseroleitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:chickencelerycasseroleitem</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>harvestcraft:cranberryjellysandwichitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:cranberryjellysandwichitem</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>thermalfoundation:tool.shield_diamond:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item thermalfoundation:tool.shield_diamond</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>rustic:candle:0</code></td>
+<td class="num">16</td>
+<td>missing mapped item rustic:candle</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>rustic:iron_lantern:0</code></td>
+<td class="num">16</td>
+<td>missing mapped item rustic:iron_lantern</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>rustic:chair_ironwood:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item rustic:chair_ironwood</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>rustic:table_ironwood:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item rustic:table_ironwood</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>storagedrawers:compdrawers:0</code></td>
+<td class="num">2</td>
+<td>missing mapped item storagedrawers:compdrawers</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>storagedrawers:framingtable:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item storagedrawers:framingtable</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>quark:smoker:0</code></td>
+<td class="num">4</td>
+<td>missing mapped item quark:smoker</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>quark:lit_lamp:0</code></td>
+<td class="num">16</td>
+<td>missing mapped item quark:lit_lamp</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>storagedrawers:tape:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item storagedrawers:tape</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>rustic:vase:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item rustic:vase</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>thermalfoundation:storage_alloy:1</code></td>
+<td class="num">1</td>
+<td>missing mapped item thermalfoundation:storage_alloy</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>thermalfoundation:storage_alloy:4</code></td>
+<td class="num">1</td>
+<td>missing mapped item thermalfoundation:storage_alloy</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>harvestcraft:extremechiliitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:extremechiliitem</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>harvestcraft:pemmicanitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:pemmicanitem</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>harvestcraft:sweetandsourmeatballsitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:sweetandsourmeatballsitem</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>harvestcraft:cheddarandsourcreampotatochipsitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:cheddarandsourcreampotatochipsitem</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>harvestcraft:redvelvetcakeitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:redvelvetcakeitem</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>harvestcraft:gingerchickenitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:gingerchickenitem</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>harvestcraft:pineapplehamitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:pineapplehamitem</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>harvestcraft:garlicchickenitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:garlicchickenitem</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>tconstruct:deco_ground:0</code></td>
+<td class="num">64</td>
+<td>missing mapped item tconstruct:deco_ground</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>tconstruct:seared:6</code></td>
+<td class="num">24</td>
+<td>missing mapped item tconstruct:seared</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>tconstruct:ingots:4</code></td>
+<td class="num">8</td>
+<td>missing mapped item tconstruct:ingots</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>tconstruct:throwball:1</code></td>
+<td class="num">16</td>
+<td>missing mapped item tconstruct:throwball</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>tconstruct:tooltables:5</code></td>
+<td class="num">1</td>
+<td>missing mapped item tconstruct:tooltables</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>tconstruct:slime_grass_tall:4</code></td>
+<td class="num">16</td>
+<td>missing mapped item tconstruct:slime_grass_tall</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>tconstruct:slimesling:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item tconstruct:slimesling</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:concrete_black:3</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:concrete_black/soft_bricks x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:concrete_lightblue:2</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:concrete_light_blue/small_bricks x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:diorite:1</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:diorite/solid_bricks x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:dirt:4</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:dirt/reinforcedcobbledirt x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:factory:6</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:factory/hazard x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:factory:9</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:factory/metalbox x64</td>
+</tr>
+<tr>
+<td>Common</td>
+<td><code>chisel:factory:12</code></td>
+<td class="num">64</td>
+<td>removed by review list as chisel:factory/grinder x64</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>minecraft:observer:0</code></td>
+<td class="num">8</td>
+<td>removed by review list as minecraft:observer x8</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>animania:block_hamster_wheel:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item animania:block_hamster_wheel</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>minecraft:record_mall:0</code></td>
+<td class="num">1</td>
+<td>removed by review list as minecraft:music_disc_mall x1</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>minecraft:record_ward:0</code></td>
+<td class="num">1</td>
+<td>removed by review list as minecraft:music_disc_ward x1</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>advancedrocketry:launchpad:0</code></td>
+<td class="num">49</td>
+<td>missing mapped item advancedrocketry:launchpad</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>actuallyadditions:item_coffee:0</code></td>
+<td class="num">1</td>
+<td>removed by review list as actuallyadditions:coffee_cup x1</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>appliedenergistics2:quartz_fixture:0</code></td>
+<td class="num">16</td>
+<td>removed by review list as ae2:quartz_fixture x16</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>astralsorcery:itemcraftingcomponent:4</code></td>
+<td class="num">4</td>
+<td>missing mapped item astralsorcery:itemcraftingcomponent</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>architecturecraft:sawbench:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item architecturecraft:sawbench</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>mekanism:obsidiantnt:0</code></td>
+<td class="num">16</td>
+<td>missing mapped item mekanism:obsidiantnt</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>nuclearcraft:ingot:9</code></td>
+<td class="num">4</td>
+<td>missing mapped item nuclearcraft:ingot</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>nuclearcraft:ingot:10</code></td>
+<td class="num">4</td>
+<td>missing mapped item nuclearcraft:ingot</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>openblocks:builder_guide:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item openblocks:builder_guide</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>openblocks:hang_glider:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item openblocks:hang_glider</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>animania:entity_egg_random:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item animania:entity_egg_random</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>astralsorcery:itemskyresonator:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item astralsorcery:itemskyresonator</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>astralsorcery:blockworldilluminator:0</code></td>
+<td class="num">2</td>
+<td>missing mapped item astralsorcery:blockworldilluminator</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>cyclicmagic:inventory_food:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item cyclicmagic:inventory_food</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>cyclicmagic:ender_dungeon:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item cyclicmagic:ender_dungeon</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>extrautils2:angelblock:0</code></td>
+<td class="num">16</td>
+<td>missing mapped item extrautils2:angelblock</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>extrautils2:passivegenerator:5</code></td>
+<td class="num">10</td>
+<td>missing mapped item extrautils2:passivegenerator</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>extrautils2:boomerang:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item extrautils2:boomerang</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>forestry:flexible_casing:0</code></td>
+<td class="num">2</td>
+<td>missing mapped item forestry:flexible_casing</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>forestry:sturdy_machine:0</code></td>
+<td class="num">4</td>
+<td>missing mapped item forestry:sturdy_machine</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>forestry:hardened_machine:0</code></td>
+<td class="num">2</td>
+<td>missing mapped item forestry:hardened_machine</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>forestry:impregnated_casing:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item forestry:impregnated_casing</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>ic2:upgrade:0</code></td>
+<td class="num">12</td>
+<td>missing mapped item ic2:upgrade</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>ic2:upgrade:1</code></td>
+<td class="num">8</td>
+<td>missing mapped item ic2:upgrade</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>ironchest:iron_shulker_box_purple:5</code></td>
+<td class="num">1</td>
+<td>missing mapped item ironchest:iron_shulker_box_purple</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>immersiveengineering:metal_decoration2:5</code></td>
+<td class="num">64</td>
+<td>missing mapped item immersiveengineering:metal_decoration2</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>immersiveengineering:metal_device1:8</code></td>
+<td class="num">2</td>
+<td>missing mapped item immersiveengineering:metal_device1</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>immersiveengineering:shield:0</code></td>
+<td class="num">1</td>
+<td>removed by review list as immersiveengineering:shield x1</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>mekanism:robit:0</code></td>
+<td class="num">1</td>
+<td>removed by review list as mekanism:robit x1</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>thermalexpansion:augment:128</code></td>
+<td class="num">4</td>
+<td>missing mapped item thermalexpansion:augment</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>thermalfoundation:glass:7</code></td>
+<td class="num">16</td>
+<td>missing mapped item thermalfoundation:glass</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>harvestcraft:blueberrypancakesitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:blueberrypancakesitem</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>harvestcraft:fishdinneritem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:fishdinneritem</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>harvestcraft:chickencurryitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:chickencurryitem</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>harvestcraft:coconutshrimpitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:coconutshrimpitem</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>harvestcraft:frosteddonutitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:frosteddonutitem</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>harvestcraft:cinnamonsugardonutitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:cinnamonsugardonutitem</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>harvestcraft:generaltsochickenitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:generaltsochickenitem</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>harvestcraft:sundayroastitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:sundayroastitem</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>harvestcraft:bbqpulledporkitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:bbqpulledporkitem</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>harvestcraft:onionhamburgeritem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:onionhamburgeritem</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>harvestcraft:pekingduckitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:pekingduckitem</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>harvestcraft:chilidogitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:chilidogitem</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>storagedrawers:controller:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item storagedrawers:controller</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>storagedrawers:upgrade_void:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item storagedrawers:upgrade_void</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>storagedrawers:upgrade_status:1</code></td>
+<td class="num">16</td>
+<td>missing mapped item storagedrawers:upgrade_status</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>villagermarket:villager_market:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item villagermarket:villager_market</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>libvulpes:holoprojector:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item libvulpes:holoprojector</td>
+</tr>
+<tr>
+<td>Uncommon</td>
+<td><code>chisel:emerald:11</code></td>
+<td class="num">1</td>
+<td>missing mapped item chisel:emerald</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>actuallyadditions:item_potion_ring:1</code></td>
+<td class="num">1</td>
+<td>missing mapped item actuallyadditions:item_potion_ring</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>nuclearcraft:cobblestone_generator_compact:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item nuclearcraft:cobblestone_generator_compact</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>nuclearcraft:rtg_americium:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item nuclearcraft:rtg_americium</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>harvestcraft:toastedwesternitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:toastedwesternitem</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>harvestcraft:hamsweetpicklesandwichitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:hamsweetpicklesandwichitem</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>harvestcraft:bbqplatteritem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:bbqplatteritem</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>betterbuilderswands:wandunbreakable:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item betterbuilderswands:wandunbreakable</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>chisel:offsettool:0</code></td>
+<td class="num">1</td>
+<td>removed by review list as chisel:offset_tool x1</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>computercraft:computer:16384</code></td>
+<td class="num">1</td>
+<td>missing mapped item computercraft:computer</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>colytra:elytra_bauble:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item colytra:elytra_bauble</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>darkutils:charm_sleep:0</code></td>
+<td class="num">1</td>
+<td>removed by review list as darkutils:charm_sleep x1</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>enderstorage:ender_storage:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item enderstorage:ender_storage</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>cyclicmagic:exp_pylon:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item cyclicmagic:exp_pylon</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>extrautils2:resonator:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item extrautils2:resonator</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>farmingforblockheads:market:0</code></td>
+<td class="num">1</td>
+<td>removed by review list as farmingforblockheads:market x1</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>immersiveengineering:metal_device1:10</code></td>
+<td class="num">2</td>
+<td>missing mapped item immersiveengineering:metal_device1</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>immersiveengineering:metal_device1:11</code></td>
+<td class="num">2</td>
+<td>missing mapped item immersiveengineering:metal_device1</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>immersiveengineering:revolver:0</code></td>
+<td class="num">1</td>
+<td>removed by review list as immersiveengineering:revolver x1</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>immersiveengineering:chemthrower:0</code></td>
+<td class="num">1</td>
+<td>removed by review list as immersiveengineering:chemthrower x1</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>immersiveengineering:railgun:0</code></td>
+<td class="num">1</td>
+<td>removed by review list as immersiveengineering:railgun x1</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>immersiveengineering:skyhook:0</code></td>
+<td class="num">1</td>
+<td>removed by review list as immersiveengineering:skyhook x1</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>mekanism:flamethrower:0</code></td>
+<td class="num">1</td>
+<td>removed by review list as mekanism:flamethrower x1</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>thermalexpansion:augment:673</code></td>
+<td class="num">2</td>
+<td>missing mapped item thermalexpansion:augment</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>thermalexpansion:augment:720</code></td>
+<td class="num">2</td>
+<td>missing mapped item thermalexpansion:augment</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>thermalfoundation:upgrade:34</code></td>
+<td class="num">2</td>
+<td>missing mapped item thermalfoundation:upgrade</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>thermalfoundation:upgrade:33</code></td>
+<td class="num">3</td>
+<td>missing mapped item thermalfoundation:upgrade</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>thermalfoundation:material:1028</code></td>
+<td class="num">12</td>
+<td>missing mapped item thermalfoundation:material</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>harvestcraft:southernstylebreakfastitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:southernstylebreakfastitem</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>harvestcraft:meatfeastpizzaitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:meatfeastpizzaitem</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>harvestcraft:thankfuldinneritem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:thankfuldinneritem</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>harvestcraft:cornedbeefbreakfastitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:cornedbeefbreakfastitem</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>harvestcraft:delightedmealitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:delightedmealitem</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>harvestcraft:heartybreakfastitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:heartybreakfastitem</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>harvestcraft:ploughmanslunchitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:ploughmanslunchitem</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>harvestcraft:honeysoyribsitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:honeysoyribsitem</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>harvestcraft:charsiuitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:charsiuitem</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>harvestcraft:shrimpokrahushpuppiesitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:shrimpokrahushpuppiesitem</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>harvestcraft:wontonsoupitem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:wontonsoupitem</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>harvestcraft:coleslawburgeritem:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item harvestcraft:coleslawburgeritem</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>redstonearsenal:tool.shield_flux:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item redstonearsenal:tool.shield_flux</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>redstonearsenal:tool.battlewrench_flux:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item redstonearsenal:tool.battlewrench_flux</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>redstonearsenal:storage:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item redstonearsenal:storage</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>redstonearsenal:storage:1</code></td>
+<td class="num">1</td>
+<td>missing mapped item redstonearsenal:storage</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>rftools:powercell_advanced:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item rftools:powercell_advanced</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>thermalexpansion:frame:129</code></td>
+<td class="num">1</td>
+<td>missing mapped item thermalexpansion:frame</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>thermaldynamics:duct_32:6</code></td>
+<td class="num">48</td>
+<td>missing mapped item thermaldynamics:duct_32</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>thermaldynamics:servo:4</code></td>
+<td class="num">8</td>
+<td>missing mapped item thermaldynamics:servo</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>thermaldynamics:filter:4</code></td>
+<td class="num">8</td>
+<td>missing mapped item thermaldynamics:filter</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td><code>thermalfoundation:storage_alloy:5</code></td>
+<td class="num">1</td>
+<td>missing mapped item thermalfoundation:storage_alloy</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td><code>actuallyadditions:block_misc:9</code></td>
+<td class="num">1</td>
+<td>missing mapped item actuallyadditions:block_misc</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td><code>actuallyadditions:block_phantomface:0</code></td>
+<td class="num">1</td>
+<td>removed by review list as actuallyadditions:phantom_itemface x1</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td><code>betterbuilderswands:wandunbreakable:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item betterbuilderswands:wandunbreakable</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td><code>appliedenergistics2:part:70</code></td>
+<td class="num">32</td>
+<td>missing mapped item appliedenergistics2:part</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td><code>libvulpes:elitemotor:0</code></td>
+<td class="num">2</td>
+<td>missing mapped item libvulpes:elitemotor</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td><code>extrautils2:teleporter:1</code></td>
+<td class="num">1</td>
+<td>missing mapped item extrautils2:teleporter</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td><code>extrautils2:compressedcobblestone:7</code></td>
+<td class="num">1</td>
+<td>missing mapped item extrautils2:compressedcobblestone</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td><code>botania:blacklotus:1</code></td>
+<td class="num">16</td>
+<td>missing mapped item botania:blacklotus</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td><code>botania:flowerbag:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item botania:flowerbag</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td><code>advgenerators:turbine_enderium:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item advgenerators:turbine_enderium</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td><code>advancedrocketry:rocketmotor:0</code></td>
+<td class="num">8</td>
+<td>missing mapped item advancedrocketry:rocketmotor</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td><code>advancedrocketry:railgun:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item advancedrocketry:railgun</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td><code>biomesoplenty:terrestrial_artifact:0</code></td>
+<td class="num">16</td>
+<td>missing mapped item biomesoplenty:terrestrial_artifact</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td><code>environmentaltech:litherite:0</code></td>
+<td class="num">9</td>
+<td>missing mapped item environmentaltech:litherite</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td><code>extrautils2:drum:3</code></td>
+<td class="num">1</td>
+<td>missing mapped item extrautils2:drum</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td><code>thermaldynamics:duct_0:5</code></td>
+<td class="num">64</td>
+<td>missing mapped item thermaldynamics:duct_0</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td><code>thermalfoundation:upgrade:35</code></td>
+<td class="num">2</td>
+<td>missing mapped item thermalfoundation:upgrade</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td><code>actuallyadditions:item_spawner_changer:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item actuallyadditions:item_spawner_changer</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td><code>advancedrocketry:rocketbuilder:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item advancedrocketry:rocketbuilder</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td><code>botania:laputashard:9</code></td>
+<td class="num">1</td>
+<td>removed by review list as botania:laputa_shard x1</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td><code>ic2:nuclear:10</code></td>
+<td class="num">2</td>
+<td>missing mapped item ic2:nuclear</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td><code>nuclearcraft:rtg_californium:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item nuclearcraft:rtg_californium</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td><code>rftools:peace_essence:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item rftools:peace_essence</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td><code>extrautils2:angelring:2</code></td>
+<td class="num">1</td>
+<td>missing mapped item extrautils2:angelring</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td><code>extrautils2:passivegenerator:8</code></td>
+<td class="num">1</td>
+<td>missing mapped item extrautils2:passivegenerator</td>
+</tr>
+<tr>
+<td>Legendary</td>
+<td><code>draconicevolution:ender_energy_manipulator:0</code></td>
+<td class="num">1</td>
+<td>missing mapped item draconicevolution:ender_energy_manipulator</td>
+</tr>
+</tbody></table>
+</details>
+
+<p class="footer">Generated 2026-07-01 09:05:41 from Enigmatica 2 - E2/config/betterquesting/DefaultLoot.json using Enigmatica2-1.20.1/tools/questbook/legacy_bq_item_rules.json.</p>
+</main>
+<script>
+const rewardRows = [{"item": "croptopia:toast_with_jam", "count": 8, "title": "Toast With Jam", "weight": 24.0, "chance": "2.10%", "human_readable": "about 1 in 48"}, {"item": "tconstruct:seared_brick", "count": 1, "title": "Seared Brick", "weight": 22.0, "chance": "1.92%", "human_readable": "about 1 in 52"}, {"item": "biomesoplenty:fir_sapling", "count": 1, "title": "Fir Sapling", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "biomesoplenty:magic_sapling", "count": 1, "title": "Magic Sapling", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "biomesoplenty:redwood_sapling", "count": 1, "title": "Redwood Sapling", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "biomesoplenty:willow_sapling", "count": 1, "title": "Willow Sapling", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "chisel:bookshelf_oak/rainbow", "count": 8, "title": "Bookshelf Oak / Rainbow", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "chisel:bricks/panel", "count": 64, "title": "Bricks / Panel", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "chisel:glassdyed_light_blue/transparent", "count": 64, "title": "Glassdyed Light Blue / Transparent", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "chisel:glassdyed_white/forestry", "count": 64, "title": "Glassdyed White / Forestry", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "chisel:hitech_chisel", "count": 1, "title": "Hitech Chisel", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "chisel:netherbrick/a1_netherbrick_lavastonedark", "count": 64, "title": "Netherbrick / A1 Netherbrick Lavastonedark", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "chisel:netherbrick/a1_netherbrick_redsmall", "count": 64, "title": "Netherbrick / A1 Netherbrick Redsmall", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "chisel:obsidian/greek", "count": 64, "title": "Obsidian / Greek", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "chisel:paper/floral", "count": 64, "title": "Paper / Floral", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "chisel:prismarine/chaotic_bricks", "count": 64, "title": "Prismarine / Chaotic Bricks", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "chisel:redstone/tiles_medium", "count": 8, "title": "Redstone / Tiles Medium", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "croptopia:avocado_sapling", "count": 1, "title": "Avocado Sapling", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "croptopia:cashew_sapling", "count": 1, "title": "Cashew Sapling", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "croptopia:chocolate", "count": 8, "title": "Chocolate", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "croptopia:chocolate_ice_cream", "count": 8, "title": "Chocolate Ice Cream", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "croptopia:dragonfruit_sapling", "count": 1, "title": "Dragonfruit Sapling", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "croptopia:spaghetti_squash", "count": 8, "title": "Spaghetti Squash", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "croptopia:tuna_sandwich", "count": 8, "title": "Tuna Sandwich", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "croptopia:vanilla_ice_cream", "count": 8, "title": "Vanilla Ice Cream", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:bone_block", "count": 24, "title": "Bone Block", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:bookshelf", "count": 4, "title": "Bookshelf", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:bricks", "count": 64, "title": "Bricks", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:cactus", "count": 16, "title": "Cactus", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:chorus_flower", "count": 2, "title": "Chorus Flower", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:clay", "count": 16, "title": "Clay", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:end_rod", "count": 8, "title": "End Rod", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:end_stone_bricks", "count": 32, "title": "End Stone Bricks", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:hay_block", "count": 9, "title": "Hay Block", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:jack_o_lantern", "count": 1, "title": "Jack O Lantern", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:mossy_cobblestone", "count": 32, "title": "Mossy Cobblestone", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:mycelium", "count": 16, "title": "Mycelium", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:nether_wart_block", "count": 2, "title": "Nether Wart Block", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:prismarine", "count": 32, "title": "Prismarine", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:purpur_block", "count": 64, "title": "Purpur Block", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:sea_lantern", "count": 8, "title": "Sea Lantern", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:slime_block", "count": 4, "title": "Slime Block", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:soul_sand", "count": 64, "title": "Soul Sand", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "minecraft:sponge", "count": 4, "title": "Sponge", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "quark:obsidian_pressure_plate", "count": 4, "title": "Obsidian Pressure Plate", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "quark:soul_bead", "count": 1, "title": "Soul Bead", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "tconstruct:blazewood", "count": 64, "title": "Blazewood", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "tconstruct:green_clear_stained_glass", "count": 64, "title": "Green Clear Stained Glass", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "tconstruct:grout", "count": 64, "title": "Grout", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "tconstruct:ichor_congealed_slime", "count": 64, "title": "Ichor Congealed Slime", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "tconstruct:purple_clear_stained_glass", "count": 64, "title": "Purple Clear Stained Glass", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "tconstruct:seared_fuel_tank", "count": 4, "title": "Seared Fuel Tank", "weight": 12.0, "chance": "1.05%", "human_readable": "about 1 in 95"}, {"item": "botania:goddess_charm", "count": 1, "title": "Goddess Charm", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "botania:horn_grass", "count": 1, "title": "Horn Grass", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "botania:manasteel_ingot", "count": 8, "title": "Manasteel Ingot", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "botania:monocle", "count": 1, "title": "Monocle", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "chisel:lapis/a1_blocklapis_panel", "count": 4, "title": "Lapis / A1 Blocklapis Panel", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "chiselsandbits:chisel_diamond", "count": 1, "title": "Chisel Diamond", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "cookingforblockheads:cooking_table", "count": 1, "title": "Cooking Table", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "cookingforblockheads:cow_jar", "count": 1, "title": "Cow Jar", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "croptopia:baked_sweet_potato", "count": 8, "title": "Baked Sweet Potato", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "croptopia:beef_wellington", "count": 8, "title": "Beef Wellington", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "croptopia:blt", "count": 8, "title": "Blt", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "croptopia:fish_and_chips", "count": 8, "title": "Fish And Chips", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "croptopia:french_fries", "count": 8, "title": "French Fries", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "croptopia:grilled_cheese", "count": 8, "title": "Grilled Cheese", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "croptopia:taco", "count": 8, "title": "Taco", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "croptopia:toast_sandwich", "count": 8, "title": "Toast Sandwich", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "mekanism:upgrade_speed", "count": 8, "title": "Upgrade Speed", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "mekanismgenerators:advanced_solar_generator", "count": 1, "title": "Advanced Solar Generator", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "minecraft:brewing_stand", "count": 1, "title": "Brewing Stand", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "minecraft:ender_eye", "count": 4, "title": "Ender Eye", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "minecraft:piston", "count": 8, "title": "Piston", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "minecraft:tnt", "count": 8, "title": "Tnt", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "minecraft:writable_book", "count": 1, "title": "Writable Book", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "nuclearcraft:helium_collector", "count": 1, "title": "Helium Collector", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "rftoolsutility:crafter3", "count": 2, "title": "Crafter3", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "scannable:scanner", "count": 1, "title": "Scanner", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "tconstruct:seared_brick", "count": 2, "title": "Seared Brick", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "tconstruct:seared_brick", "count": 3, "title": "Seared Brick", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "tconstruct:sky_congealed_slime", "count": 2, "title": "Sky Congealed Slime", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "thermal:dynamo_output_augment", "count": 4, "title": "Dynamo Output Augment", "weight": 10.0, "chance": "0.873%", "human_readable": "about 1 in 114"}, {"item": "actuallyadditions:farmer", "count": 1, "title": "Farmer", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "actuallyadditions:greenhouse_glass", "count": 5, "title": "Greenhouse Glass", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "actuallyadditions:ranged_collector", "count": 1, "title": "Ranged Collector", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "ae2:crafting_unit", "count": 2, "title": "Crafting Unit", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "botania:exchange_rod", "count": 1, "title": "Exchange Rod", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "croptopia:supreme_pizza", "count": 8, "title": "Supreme Pizza", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "draconicevolution:basic_io_crystal", "count": 4, "title": "Basic Io Crystal", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "draconicevolution:basic_relay_crystal", "count": 4, "title": "Basic Relay Crystal", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "draconicevolution:basic_wireless_crystal", "count": 4, "title": "Basic Wireless Crystal", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "enderstorage:ender_pouch", "count": 1, "title": "Ender Pouch", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "industrialforegoing:mob_imprisonment_tool", "count": 1, "title": "Mob Imprisonment Tool", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "mekanism:precision_sawmill", "count": 1, "title": "Precision Sawmill", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "mekanismgenerators:wind_generator", "count": 2, "title": "Wind Generator", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "minecraft:diamond_horse_armor", "count": 1, "title": "Diamond Horse Armor", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "minecraft:experience_bottle", "count": 32, "title": "Experience Bottle", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "minecraft:shulker_shell", "count": 8, "title": "Shulker Shell", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "nuclearcraft:fission_reactor_controller", "count": 1, "title": "Fission Reactor Controller", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "nuclearcraft:upgrade_speed", "count": 8, "title": "Upgrade Speed", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "rftoolsbuilder:builder", "count": 1, "title": "Builder", "weight": 7.0, "chance": "0.611%", "human_readable": "about 1 in 164"}, {"item": "ae2:singularity", "count": 1, "title": "Singularity", "weight": 5.0, "chance": "0.437%", "human_readable": "about 1 in 229"}, {"item": "actuallyadditions:atomic_reconstructor", "count": 1, "title": "Atomic Reconstructor", "weight": 3.0, "chance": "0.262%", "human_readable": "about 1 in 382"}, {"item": "actuallyadditions:phantom_itemface", "count": 4, "title": "Phantom Itemface", "weight": 3.0, "chance": "0.262%", "human_readable": "about 1 in 382"}, {"item": "ae2:charger", "count": 1, "title": "Charger", "weight": 3.0, "chance": "0.262%", "human_readable": "about 1 in 382"}, {"item": "ae2:energy_acceptor", "count": 1, "title": "Energy Acceptor", "weight": 3.0, "chance": "0.262%", "human_readable": "about 1 in 382"}, {"item": "ae2:growth_accelerator", "count": 5, "title": "Growth Accelerator", "weight": 3.0, "chance": "0.262%", "human_readable": "about 1 in 382"}, {"item": "ae2:item_storage_cell_64k", "count": 2, "title": "Item Storage Cell 64k", "weight": 3.0, "chance": "0.262%", "human_readable": "about 1 in 382"}, {"item": "ae2:molecular_assembler", "count": 8, "title": "Molecular Assembler", "weight": 3.0, "chance": "0.262%", "human_readable": "about 1 in 382"}, {"item": "botania:terraform_rod", "count": 1, "title": "Terraform Rod", "weight": 3.0, "chance": "0.262%", "human_readable": "about 1 in 382"}, {"item": "draconicevolution:energy_transfuser", "count": 1, "title": "Energy Transfuser", "weight": 3.0, "chance": "0.262%", "human_readable": "about 1 in 382"}, {"item": "industrialforegoing:wither_builder", "count": 1, "title": "Wither Builder", "weight": 3.0, "chance": "0.262%", "human_readable": "about 1 in 382"}, {"item": "mekanism:atomic_disassembler", "count": 1, "title": "Atomic Disassembler", "weight": 3.0, "chance": "0.262%", "human_readable": "about 1 in 382"}, {"item": "minecraft:dragon_head", "count": 1, "title": "Dragon Head", "weight": 3.0, "chance": "0.262%", "human_readable": "about 1 in 382"}, {"item": "minecraft:end_crystal", "count": 1, "title": "End Crystal", "weight": 3.0, "chance": "0.262%", "human_readable": "about 1 in 382"}, {"item": "nuclearcraft:plate_elite", "count": 32, "title": "Plate Elite", "weight": 3.0, "chance": "0.262%", "human_readable": "about 1 in 382"}, {"item": "rftoolsutility:advanced_charged_porter", "count": 1, "title": "Advanced Charged Porter", "weight": 3.0, "chance": "0.262%", "human_readable": "about 1 in 382"}, {"item": "ae2:controller", "count": 1, "title": "Controller", "weight": 2.0, "chance": "0.175%", "human_readable": "about 1 in 572"}, {"item": "draconicevolution:advanced_dislocator", "count": 1, "title": "Advanced Dislocator", "weight": 2.0, "chance": "0.175%", "human_readable": "about 1 in 572"}, {"item": "draconicevolution:dragon_heart", "count": 1, "title": "Dragon Heart", "weight": 2.0, "chance": "0.175%", "human_readable": "about 1 in 572"}, {"item": "draconicevolution:wyvern_axe", "count": 1, "title": "Wyvern Axe", "weight": 2.0, "chance": "0.175%", "human_readable": "about 1 in 572"}, {"item": "draconicevolution:wyvern_bow", "count": 1, "title": "Wyvern Bow", "weight": 2.0, "chance": "0.175%", "human_readable": "about 1 in 572"}, {"item": "draconicevolution:wyvern_energy_core", "count": 1, "title": "Wyvern Energy Core", "weight": 2.0, "chance": "0.175%", "human_readable": "about 1 in 572"}, {"item": "minecraft:dragon_egg", "count": 1, "title": "Dragon Egg", "weight": 2.0, "chance": "0.175%", "human_readable": "about 1 in 572"}, {"item": "minecraft:nether_star", "count": 1, "title": "Nether Star", "weight": 2.0, "chance": "0.175%", "human_readable": "about 1 in 572"}];
+const checks = () => Array.from(document.querySelectorAll(".remove-check"));
+const output = document.getElementById("remove-output");
+const statusEl = document.getElementById("selection-status");
+
+function selectedRows(useChecked) {
+  return checks()
+    .filter(cb => cb.checked === useChecked)
+    .map(cb => rewardRows[Number(cb.dataset.index)]);
+}
+
+function buildPayload(useChecked) {
+  const rows = selectedRows(useChecked);
+  return {
+    type: "enigmatica2_ported_random_reward_remove_list",
+    selection: useChecked ? "checked" : "unchecked",
+    generated_at: new Date().toISOString(),
+    item_count: rows.length,
+    remove: rows.map(row => ({
+      item: row.item,
+      count: row.count,
+      title: row.title,
+      chance: row.chance,
+      human_readable: row.human_readable,
+      weight: row.weight
+    }))
+  };
+}
+
+function refreshStatus() {
+  const selected = checks().filter(cb => cb.checked).length;
+  statusEl.textContent = `${selected} selected / ${rewardRows.length} total`;
+}
+
+function showPayload(useChecked) {
+  const payload = buildPayload(useChecked);
+  output.value = JSON.stringify(payload, null, 2);
+  return payload;
+}
+
+function downloadPayload(useChecked) {
+  const payload = showPayload(useChecked);
+  const blob = new Blob([JSON.stringify(payload, null, 2) + "\n"], { type: "application/json" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = useChecked ? "remove_checked_random_rewards.json" : "remove_unchecked_random_rewards.json";
+  document.body.appendChild(link);
+  link.click();
+  URL.revokeObjectURL(link.href);
+  link.remove();
+}
+
+document.getElementById("select-all").addEventListener("click", () => { checks().forEach(cb => cb.checked = true); refreshStatus(); });
+document.getElementById("select-none").addEventListener("click", () => { checks().forEach(cb => cb.checked = false); refreshStatus(); });
+document.getElementById("invert-selection").addEventListener("click", () => { checks().forEach(cb => cb.checked = !cb.checked); refreshStatus(); });
+document.getElementById("download-checked").addEventListener("click", () => downloadPayload(true));
+document.getElementById("download-unchecked").addEventListener("click", () => downloadPayload(false));
+document.getElementById("copy-checked").addEventListener("click", async () => {
+  const payload = showPayload(true);
+  await navigator.clipboard.writeText(JSON.stringify(payload, null, 2));
+  statusEl.textContent = `Copied ${payload.item_count} checked items`;
+});
+document.getElementById("clear-output").addEventListener("click", () => output.value = "");
+checks().forEach(cb => cb.addEventListener("change", refreshStatus));
+refreshStatus();
+</script>
+</body>
+</html>

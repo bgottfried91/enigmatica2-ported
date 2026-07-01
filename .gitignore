@@ -1,0 +1,17 @@
+# Packwiz/export artifacts
+*.zip
+*.mrpack
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Obsolete Better Questing conversion outputs
+audit/questbook_port/generated_bq*/
+
+# Local runtime artifacts
+logs/
+crash-reports/
+saves/
+screenshots/
+local/

@@ -1,0 +1,6 @@
+# Static KubeJS Audit Findings
+
+| Severity | File | Line | Kind | Value | Detail |
+|---|---:|---:|---|---|---|
+| info | `kubejs/server_scripts/e2_recipes_croptopia.js` | 5 | recipe-removal-unverified | `croptopia:salt_from_water_bottle` | Recipe ID removal cannot be verified until a recipe dump is provided. |
+| info | `kubejs/server_scripts/e2_recipes_croptopia.js` | 6 | recipe-removal-unverified | `croptopia:salt_from_smoking_water_bottle` | Recipe ID removal cannot be verified until a recipe dump is provided. |

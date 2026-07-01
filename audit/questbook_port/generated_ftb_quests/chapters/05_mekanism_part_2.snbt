@@ -1,0 +1,1830 @@
+{
+  id: "0100000000050000",
+  group: "",
+  order_index: 1,
+  filename: "05_mekanism_part_2",
+  title: "Mekanism - Part 2",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      id: "02000000007B0000",
+      title: "Water Processing",
+      x: 4,
+      y: 4,
+      tasks: [
+        {
+          id: "03000000007B0000",
+          type: "item",
+          item: "mekanism:thermal_evaporation_controller"
+        },
+        {
+          id: "03000000007B0001",
+          type: "item",
+          item: "mekanism:thermal_evaporation_valve",
+          count: 2
+        },
+        {
+          id: "03000000007B0002",
+          type: "item",
+          item: "mekanism:thermal_evaporation_block",
+          count: 64
+        }
+      ],
+      description: ["Thermal Evaporation Plants (TEP) uses heat, either generated from machines, or from the sun. It can turn Water into Brine, or Brine into Lithium.", "To build the TEP, you need to make a 4x4 solid base out of Thermal Evaporation Blocks, then make walls (with corners) on top of that base with Thermal Evaporation Blocks.", "On the structure, you will need 1 Controller and at least 2 Valves. The corner blocks MUST be Thermal Evaporation Blocks. It has a minimum height of 3 blocks (incl the base) and a max height of 17 (incl the solar panels).", "There's 2 ways for the TEP to generate heat. It can either collect heat by itself, which depends on biome (Desert is best). You can speed up heat collection by putting Advanced Solar Panels on top, on the corners, with Thermal Evaporation Blocks in between. It must be daytime for it to collect Heat.", "Alternatively you can pump in Heat with Fuelwood or Resistive Heaters. This does require an additional Valve to be attatched to the TEP, but eliminates the night cycle and biome problems.", "The height of the TEP increases its in and output buffer, but also increases the amount of heat it can hold, and thus increasing the production rate.", "", "TEP does, unlike every other multiblock structure, not accept Structural Glass"],
+      icon: "mekanism:thermal_evaporation_controller",
+      dependencies: ["02000000007C0000"],
+      rewards: [
+        {
+          id: "04000000007B0000",
+          type: "item",
+          item: "mekanismgenerators:advanced_solar_generator",
+          count: 4
+        },
+        {
+          id: "04000000007B0064",
+          type: "item",
+          item: "mekanism:alloy_reinforced",
+          count: 8,
+          title: "Choice option: mekanism:alloy_reinforced"
+        },
+        {
+          id: "04000000007B0065",
+          type: "item",
+          item: "mekanism:elite_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:elite_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "02000000007C0000",
+      title: "The Elite",
+      x: 2,
+      y: 4,
+      tasks: [
+        {
+          id: "03000000007C0000",
+          type: "item",
+          item: "mekanism:alloy_reinforced",
+          count: 16
+        },
+        {
+          id: "03000000007C0001",
+          type: "item",
+          item: "mekanism:elite_control_circuit",
+          count: 16
+        }
+      ],
+      description: ["You have learned the advanced ways of Mekanism, but there is still more! It's time for The Elite part. As things gets more complex, this does also mean that there will be a big cut in \"funny\" descriptions, and be more explanation."],
+      icon: "mekanism:elite_control_circuit",
+      rewards: [
+        {
+          id: "04000000007C0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000007D0000",
+      title: "Another Wire Upgrade",
+      x: 3,
+      y: 8,
+      tasks: [
+        {
+          id: "03000000007D0000",
+          type: "item",
+          item: "mekanism:basic_universal_cable",
+          count: 8
+        }
+      ],
+      description: ["Time to upgrade your wires and pipes once again!"],
+      icon: "mekanism:basic_universal_cable",
+      dependencies: ["02000000007C0000"],
+      rewards: [
+        {
+          id: "04000000007D0000",
+          type: "item",
+          item: "mekanism:basic_universal_cable",
+          count: 8
+        }
+      ]
+    },
+    {
+      id: "02000000007E0000",
+      title: "Can it make batteries?",
+      x: 15,
+      y: 2,
+      tasks: [
+        {
+          id: "03000000007E0000",
+          type: "item",
+          item: "mekanism:thermal_evaporation_controller",
+          count: 2
+        },
+        {
+          id: "03000000007E0001",
+          type: "item",
+          item: "mekanism:thermal_evaporation_valve",
+          count: 4
+        },
+        {
+          id: "03000000007E0002",
+          type: "item",
+          item: "mekanism:thermal_evaporation_block",
+          count: 64
+        },
+        {
+          id: "03000000007E0003",
+          type: "item",
+          item: "mekanism:thermal_evaporation_block",
+          count: 64
+        }
+      ],
+      description: ["The Fusion Reactor needs 2 types of fuel, and Tritium is one of them.", "First you need to make Liquid Lithium, which you make in a Thermal Evaporation Plant, but, instead of pumping Water into it, you want to pump Brine into it.", "So you will need 2 Thermal Evaporation Plants."],
+      icon: "mekanism:lithium_bucket",
+      dependencies: ["02000000007F0000"],
+      rewards: [
+        {
+          id: "04000000007E0000",
+          type: "item",
+          item: "mekanismgenerators:advanced_solar_generator",
+          count: 4
+        },
+        {
+          id: "04000000007E0064",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 8,
+          title: "Choice option: mekanism:alloy_atomic"
+        },
+        {
+          id: "04000000007E0065",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:ultimate_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "02000000007F0000",
+      title: "The Ultimate",
+      x: 11,
+      y: 4,
+      tasks: [
+        {
+          id: "03000000007F0000",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 16
+        },
+        {
+          id: "03000000007F0001",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 16
+        }
+      ],
+      description: ["You have gone through the steps of The Elite, but there is still the last part - The Ultimate! This contains the most lategame of Mekanism, including its most powerful power generation and storage, and Quintuple Ore Processing"],
+      icon: "mekanism:ultimate_control_circuit",
+      rewards: [
+        {
+          id: "04000000007F0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000800000",
+      title: "Long distance relations",
+      x: 9,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000000800000",
+          type: "item",
+          item: "mekanism:quantum_entangloporter",
+          count: 2
+        }
+      ],
+      description: ["The Quantum Entangloporters are for your long-range transport of either items, power, fluids or gasses (Heat seems to be non-functional in Mekanism 9.2).", "To get started with it, place it down and assign it either a public or private channel (pipes wont connect otherwise).", "This QE has all the Side Configs available, and everything (including Energy) has Auto-push set to Off, so make sure to set all of them to On, if it's your output QE.", "The stats of the QE is (as per Mekanism 9.2, MC1.10.2):", "1 item per second", "6.4 Million RF/t", "256 mb/t gas/fluid.", "This limit is per channel, so you can't have 2 pairs of QEs to transfer 800k RF/t on the same channel. You can still have 2 pairs of QEs on 2 different channels to transfer 800k RF/t."],
+      icon: "mekanism:quantum_entangloporter",
+      dependencies: ["02000000007F0000"],
+      rewards: [
+        {
+          id: "0400000000800000",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 8,
+          title: "Choice option: mekanism:alloy_atomic"
+        },
+        {
+          id: "0400000000800001",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:ultimate_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000810000",
+      title: "That's a lot of ingots..",
+      x: 7,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000000810000",
+          type: "item",
+          item: "mekanism:chemical_dissolution_chamber"
+        },
+        {
+          id: "0300000000810001",
+          type: "item",
+          item: "mekanism:chemical_washer"
+        },
+        {
+          id: "0300000000810002",
+          type: "item",
+          item: "mekanism:chemical_crystallizer"
+        }
+      ],
+      description: ["The final stage of Mekanism Ore Processing, and overall it's going to be a big setup. The Quintuple Ore Processing adds 3 steps of processing the ores, and 4 steps of gas production.", "The gas production is covered in the linked quests.", "For the ore processing, it goes through the Chemical Dissolution Chamber, where Sulfuric Acid (left gas input) and ores (top item input) are added.", "Then outputs (right gas output) to the Chemical Washer where Water is added (top fluid input)", "Then outputs (right gas output) to the Chemical Crystalizer (right item output).", "After the Crystalizer, it has to go through the Quadruple Ore Processing and down.", "NOTE: You may want a x5 set for every processable ore (7 different ores in 9.2.2), as it may not use all the fluids when fully upgraded."],
+      icon: "mekanism:chemical_dissolution_chamber",
+      dependencies: ["02000000007F0000", "0200000000820000"],
+      rewards: [
+        {
+          id: "0400000000810000",
+          type: "item",
+          item: "minecraft:iron_ore",
+          count: 64
+        },
+        {
+          id: "0400000000810001",
+          type: "item",
+          item: "minecraft:gold_ore",
+          count: 64
+        },
+        {
+          id: "0400000000810002",
+          type: "item",
+          item: "mekanism:osmium_ore",
+          count: 64
+        },
+        {
+          id: "0400000000810064",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 18,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "0400000000810065",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 18,
+          title: "Choice option: mekanism:upgrade_energy"
+        },
+        {
+          id: "0400000000810066",
+          type: "item",
+          item: "mekanism:upgrade_gas",
+          count: 18,
+          title: "Choice option: mekanism:upgrade_gas"
+        }
+      ]
+    },
+    {
+      id: "0200000000820000",
+      title: "Mix it up with some vapors..",
+      x: 7,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000000820000",
+          type: "item",
+          item: "mekanism:chemical_infuser",
+          count: 2
+        }
+      ],
+      description: ["Now that you have Sulfur Trioxide, it's time to add the final ingredient in the next Chemical Infuser! Water Vapor.", "Mix it with the Sulfur Trioxide to get Sulfuric Acid (gas). The Sulfuric Acid goes into the Chemical Dissolution Chamber along with the ores."],
+      icon: "mekanism:chemical_infuser",
+      dependencies: ["0200000000830000", "02000000008E0000"],
+      rewards: [
+        {
+          id: "0400000000820000",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 8,
+          title: "Choice option: mekanism:alloy_atomic"
+        },
+        {
+          id: "0400000000820001",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:ultimate_control_circuit"
+        },
+        {
+          id: "0400000000820002",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "0400000000820003",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_energy"
+        }
+      ]
+    },
+    {
+      id: "0200000000830000",
+      title: "Some air to the sulfur..",
+      x: 9,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000000830000",
+          type: "item",
+          item: "mekanism:chemical_infuser"
+        }
+      ],
+      description: ["Add some Oxygen to the Sulfur Dioxide in the Chemical Infuser, outputs Sulfur Trioxide (gas) at front."],
+      icon: "mekanism:chemical_infuser",
+      dependencies: ["0200000000840000"],
+      rewards: [
+        {
+          id: "0400000000830000",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 8,
+          title: "Choice option: mekanism:alloy_atomic"
+        },
+        {
+          id: "0400000000830001",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:ultimate_control_circuit"
+        },
+        {
+          id: "0400000000830002",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "0400000000830003",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_energy"
+        }
+      ]
+    },
+    {
+      id: "0200000000840000",
+      title: "Oxydizing sulfur",
+      x: 9,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000000840000",
+          type: "item",
+          item: "mekanism:chemical_oxidizer"
+        }
+      ],
+      description: ["The main ingredient for Sulfuric Acid is... Sulfur.", "Put Sulfur in the Chemical Oxydizer to get Sulfur Dioxide (gas).", "Item Input is on the left, top or bottom. Gas output is on the Right"],
+      icon: "mekanism:chemical_oxidizer",
+      dependencies: ["02000000007F0000"],
+      rewards: [
+        {
+          id: "0400000000840000",
+          type: "item",
+          item: "mekanism:dust_sulfur",
+          count: 32
+        },
+        {
+          id: "0400000000840064",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 8,
+          title: "Choice option: mekanism:alloy_atomic"
+        },
+        {
+          id: "0400000000840065",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:ultimate_control_circuit"
+        },
+        {
+          id: "0400000000840066",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "0400000000840067",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_energy"
+        }
+      ]
+    },
+    {
+      id: "0200000000850000",
+      title: "Feeling picky?",
+      x: 0,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000000850000",
+          type: "item",
+          item: "mekanism:digital_miner"
+        }
+      ],
+      description: ["The Auto-Miner/Quarry of Mekanism. It can be specified to mine everything, or specific things.", "It takes power from the sides, outputs in the back, and takes in filler blocks above.", "It can mine with Silk Touch for an increased power cost, and fill in mined blocks, if you provide it with filler blocks.", "What it mines is defined in its Filters in the Config section.", "It's configuration works a lot like the Logistical Sorter, where it can sort by ItemID, OreDict, Material or ModID. For an explanation on those, check the Logistical Sorter quest.", "In the Config Screen, you can also set its Min and Max mining height, and its mining radius.", "When chaning these values, you MUST click the Check Marker or Enter to apply the changes.", "The Digital Miner has a maximum radius of 32 blocks, and goes from y0 to y255.", "Click Start to start it, Stop to stop it, and click \"R (Reset)\", if you want to change its configuration. Click the \"S\" to toggle Silk Touch, \"A\" for Auto-Eject to back chest, \"P\" to Auto-Pull from top chest, in case of block-filling."],
+      icon: "mekanism:digital_miner",
+      dependencies: ["02000000007C0000"],
+      rewards: [
+        {
+          id: "0400000000850000",
+          type: "item",
+          item: "mekanism:upgrade_anchor"
+        },
+        {
+          id: "0400000000850064",
+          type: "item",
+          item: "mekanism:alloy_reinforced",
+          count: 8,
+          title: "Choice option: mekanism:alloy_reinforced"
+        },
+        {
+          id: "0400000000850065",
+          type: "item",
+          item: "mekanism:elite_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:elite_control_circuit"
+        },
+        {
+          id: "0400000000850066",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 4,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "0400000000850067",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 4,
+          title: "Choice option: mekanism:upgrade_energy"
+        }
+      ]
+    },
+    {
+      id: "0200000000860000",
+      title: "Changing the state of matter!",
+      x: 0,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000000860000",
+          type: "item",
+          item: "mekanism:rotary_condensentrator"
+        }
+      ],
+      description: ["The Rotary Condensentrator (RC) can turn Liquid into Gas, and vice versa.", "The RC is side specific for Gas/Liquid in/output.", "The small (left when placed in front) connection is for Gas, the big (right when placed in front) connection is for Liquid. You can also just see if the cable connects or not.", "In the GUI you can switch its conversion function. Condensentrating for Gas to Liquid, and De-Condensentrating for Liquid to Gas.", "There is no Auto-Eject with the RC, so to pull from it, you will have to use the Configurator to set your output pipe to PULL."],
+      icon: "mekanism:rotary_condensentrator",
+      dependencies: ["0200000000870000"],
+      rewards: [
+        {
+          id: "0400000000860000",
+          type: "item",
+          item: "mekanism:alloy_reinforced",
+          count: 8,
+          title: "Choice option: mekanism:alloy_reinforced"
+        },
+        {
+          id: "0400000000860001",
+          type: "item",
+          item: "mekanism:elite_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:elite_control_circuit"
+        },
+        {
+          id: "0400000000860002",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 4,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "0400000000860003",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 4,
+          title: "Choice option: mekanism:upgrade_energy"
+        }
+      ]
+    },
+    {
+      id: "0200000000870000",
+      title: "Too Much Pressure!",
+      x: 0,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000000870000",
+          type: "item",
+          item: "mekanism:pressurized_reaction_chamber"
+        }
+      ],
+      description: ["[This quest chain focuses on HDPE Pellets]", "Pressurized Reaction Chamber is used to create Ethylene, Substrate and HDPE Pellets from Biofuel.", "Its first function is creating Substrate from Biofuel, Hydrogen and Water, with Ethylene (gas) as a side product.", "You may want to configure the in/output sides on the PRC.", "The Substrate and Ethylene is going to be used in the following quests."],
+      icon: "mekanism:pressurized_reaction_chamber",
+      dependencies: ["02000000007C0000"],
+      rewards: [
+        {
+          id: "0400000000870000",
+          type: "item",
+          item: "mekanism:bio_fuel",
+          count: 16
+        },
+        {
+          id: "0400000000870064",
+          type: "item",
+          item: "mekanism:alloy_reinforced",
+          count: 8,
+          title: "Choice option: mekanism:alloy_reinforced"
+        },
+        {
+          id: "0400000000870065",
+          type: "item",
+          item: "mekanism:elite_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:elite_control_circuit"
+        },
+        {
+          id: "0400000000870066",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 4,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "0400000000870067",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 4,
+          title: "Choice option: mekanism:upgrade_energy"
+        }
+      ]
+    },
+    {
+      id: "0200000000880000",
+      title: "Fast Travel",
+      x: 12,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000000880000",
+          type: "item",
+          item: "mekanism:teleporter_frame",
+          count: 18
+        },
+        {
+          id: "0300000000880001",
+          type: "item",
+          item: "mekanism:teleporter",
+          count: 2
+        }
+      ],
+      description: ["Multiblock structure that allows you to teleport between Teleporter setups.", "The structure is a Teleporter at the bottom middle, with a 3x1x4 frame. The Teleporter does require power to function, but uses very little per teleport.", "To set up the teleporters, you need to set it to a Frequency (or make one), and then set the other end to the same Frequency to link them.", "More than 2 Teleporters linked to the same Frequency can be wonky, so you might want to have an Entrance and an Exit portal at each location (if you have more than 2 locations)"],
+      icon: "mekanism:teleporter",
+      dependencies: ["02000000007F0000"],
+      rewards: [
+        {
+          id: "0400000000880000",
+          type: "item",
+          item: "mekanism:portable_teleporter"
+        },
+        {
+          id: "0400000000880064",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 8,
+          title: "Choice option: mekanism:alloy_atomic"
+        },
+        {
+          id: "0400000000880065",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:ultimate_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000890000",
+      title: "The Ignition",
+      x: 9,
+      y: 10,
+      tasks: [
+        {
+          id: "0300000000890000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["To start the Fusion Reactor itself, there are serveral things that needs to be in order.", "Almost all of these are covered by quests, the rest are here.", "You need enough RF stored in the Laser Amplifier (~800mil RF or more).", "You need to produce Deterium and Tritium as fuel for the Reactor.", "You need a Hohlraum with D-T Fuel in the Controller.", "The next step, is to go into the Controller, go to Fuel and set the Injection Rate to 2.", "After that, you activate the Laser Amplifier (by setting redstone mode from \"High\" to \"Low\", or giving it a redstone signal) to shoot into the Laser Matrix Focus, which should cause the ignition.", "If it didn't, you have to store up RF again and possibly place a new Hohlraum in the Controller."],
+      icon: "mekanism:laser_amplifier",
+      dependencies: ["02000000008A0000"],
+      rewards: [
+        {
+          id: "0400000000890000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000008A0000",
+      title: "Fusion Reactor",
+      x: 11,
+      y: 10,
+      tasks: [
+        {
+          id: "03000000008A0000",
+          type: "item",
+          item: "mekanismgenerators:fusion_reactor_frame",
+          count: 81
+        },
+        {
+          id: "03000000008A0001",
+          type: "item",
+          item: "mekanismgenerators:fusion_reactor_port",
+          count: 3
+        },
+        {
+          id: "03000000008A0002",
+          type: "item",
+          item: "mekanismgenerators:fusion_reactor_controller"
+        },
+        {
+          id: "03000000008A0003",
+          type: "item",
+          item: "mekanismgenerators:reactor_glass"
+        }
+      ],
+      description: ["This is the ultimate Reactor for Mekanism, that has a minimum generation of 200.000 rf/t.", "It's quite complicated to get starting, so the explanation will be split between the connected quests of the Fusion Reactor.", "This quest will explain the structure of the Fusion Reactor.", "The base is going to be a 3x3 of Reactor Casing, with 1 additional Casing at N, S, E and W (13 blocks total).", "The 2nd layer will form a 5x5 square without corners on top (12 blocks total).", "The 3rd layer will a 5x5 square With corners. One of the middle blocks has to be the Laser Focus Matrix, side doesn't matter (16 blocks total).", "The 4th layer is exactly like the 2nd (12 blocks total).", "The 5th layer is like the first layer, except the Reactor Controller needs to be in the middle (13 blocks total).", "If the structure is correct, the Controller will light up.", "On each side, the middle 5 blocks (shaped like a +, or in other words, all the edge blocks needs to be Reactor Casing) can be exchanged for either Reactor Glass (to look inside), or Reactor Ports. You will need at least 3 Reactor Ports in total. 2 for Fuel Input, 1 for Power Output.", "The only blocks that can't be replaced for Reactor Glass or Reactor Ports is the Controller and Laser Focus Matrix that needs a central spot."],
+      icon: "mekanismgenerators:reactor_glass",
+      dependencies: ["02000000007F0000", "0200000000990000", "02000000009A0000"],
+      rewards: [
+        {
+          id: "04000000008A0000",
+          type: "item",
+          item: "mekanism:dust_gold",
+          count: 4
+        },
+        {
+          id: "04000000008A0064",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 8,
+          title: "Choice option: mekanism:alloy_atomic"
+        },
+        {
+          id: "04000000008A0065",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:ultimate_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "02000000008B0000",
+      title: "Just me, or is it hot in here?",
+      x: 0,
+      y: 0,
+      tasks: [
+        {
+          id: "03000000008B0000",
+          type: "item",
+          item: "mekanism:fuelwood_heater"
+        },
+        {
+          id: "03000000008B0001",
+          type: "item",
+          item: "mekanism:basic_mechanical_pipe",
+          count: 8
+        }
+      ],
+      description: ["Things are starting to heat up.", "Fuelwood Heater creates heat by burning fuel, and Resistive Heater converts Energy into Heat.", "Heat can be transfered with Thermodynamic Conductors.", "Heat can be applied to the Thermoelectric Boiler, and the Thermal Evaporation Plant (requires Vavle input)"],
+      icon: "mekanism:resistive_heater",
+      dependencies: ["02000000007C0000"],
+      rewards: [
+        {
+          id: "04000000008B0000",
+          type: "item",
+          item: "mekanism:resistive_heater"
+        },
+        {
+          id: "04000000008B0001",
+          type: "item",
+          item: "mekanism:basic_mechanical_pipe",
+          count: 8
+        }
+      ]
+    },
+    {
+      id: "02000000008C0000",
+      title: "Cobble-sulfur",
+      x: 8,
+      y: 4,
+      tasks: [
+        {
+          id: "03000000008C0000",
+          type: "item",
+          item: "mekanism:crusher",
+          count: 2
+        },
+        {
+          id: "03000000008C0001",
+          type: "item",
+          item: "mekanism:purification_chamber"
+        },
+        {
+          id: "03000000008C0002",
+          type: "item",
+          item: "mekanism:chemical_injection_chamber"
+        }
+      ],
+      description: ["Sulfur can be hard to get your hands on from mining. Luckily there are ways to produce it all the way from Cobblestone (which is pretty easy to get your hands on).", "This is a 4 machine setup.", "Cobblestone goes into a Crusher, which outputs Gravel.", "Gravel goes a Purification Chamber with Oxygen to produce 1:1 Flint.", "Flint goes into a Crusher to make it into Gunpowder.", "Gunpowder goes into a Chemical Injection Chamber with Hydrogen Chloride to output Sulfur Dust.", "The Sulfur Dust then goes into the Chemical Oxydizer for the Quintuple Ore Processing."],
+      icon: "mekanism:dust_sulfur",
+      dependencies: ["0200000000840000"],
+      rewards: [
+        {
+          id: "04000000008C0000",
+          type: "item",
+          item: "minecraft:cobblestone",
+          count: 64
+        },
+        {
+          id: "04000000008C0064",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 12,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "04000000008C0065",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 12,
+          title: "Choice option: mekanism:upgrade_energy"
+        },
+        {
+          id: "04000000008C0066",
+          type: "item",
+          item: "mekanism:upgrade_gas",
+          count: 12,
+          title: "Choice option: mekanism:upgrade_gas"
+        }
+      ]
+    },
+    {
+      id: "02000000008D0000",
+      title: "Dustifying lithium",
+      x: 7,
+      y: 0,
+      tasks: [
+        {
+          id: "03000000008D0000",
+          type: "item",
+          item: "mekanism:chemical_crystallizer"
+        }
+      ],
+      description: ["While Lithium Dust isn't needed for a lot, what it's needed for, will require a lot.", "The amount of Induction Cells needed for a full 18x18x18 is no joke, so you better get stocking.", "Just pump some Liquid Lithium into the Crystallizer, and get the dust."],
+      icon: "mekanism:dust_lithium",
+      dependencies: ["02000000007F0000"],
+      rewards: [
+        {
+          id: "04000000008D0000",
+          type: "item",
+          item: "mekanism:lithium_bucket"
+        },
+        {
+          id: "04000000008D0064",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 8,
+          title: "Choice option: mekanism:alloy_atomic"
+        },
+        {
+          id: "04000000008D0065",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:ultimate_control_circuit"
+        },
+        {
+          id: "04000000008D0066",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "04000000008D0067",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_energy"
+        }
+      ]
+    },
+    {
+      id: "02000000008E0000",
+      title: "Vape Nation",
+      x: 9,
+      y: 8,
+      tasks: [
+        {
+          id: "03000000008E0000",
+          type: "item",
+          item: "mekanism:rotary_condensentrator"
+        }
+      ],
+      description: ["While the Rotary Condensentrator can turn gasses into liquids and back, it can also turn Water into a gassous form, in terms of Water Vapor.", "This is needed for the Quintuple Ore Processing"],
+      icon: "mekanism:rotary_condensentrator",
+      dependencies: ["0200000000830000"],
+      rewards: [
+        {
+          id: "04000000008E0000",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 8,
+          title: "Choice option: mekanism:alloy_atomic"
+        },
+        {
+          id: "04000000008E0001",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:ultimate_control_circuit"
+        },
+        {
+          id: "04000000008E0002",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "04000000008E0003",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_energy"
+        }
+      ]
+    },
+    {
+      id: "02000000008F0000",
+      title: "Next Level Tool",
+      x: 10,
+      y: 0,
+      tasks: [
+        {
+          id: "03000000008F0000",
+          type: "item",
+          item: "mekanism:atomic_disassembler"
+        }
+      ],
+      description: ["The Atomic Disassembler is the ultimate all-in-one tool, so it counts as Pickaxe, Axe, Shovel, Hoe and Sword (20 hearts). It uses RF instead of durability, but each broken block/attack uses RF.", "If it runs out of RF, it will mine slower than a Wooden Pickaxe, its Vein mode ceases to work and only does 4 hearts.", "It has 5 modes, that can be switched between by Shift Right-Clicking. Fast, Normal, Slow, Vein, Off.", "Fast Mode is the same speed as a Diamond Pick with Efficiency V and Haste II.", "Normal Mode is like a Diamond Pick, with Efficiency V", "Slow Mode is like a Diamond Pick, unenchanted.", "The Vein mode, takes all the blocks of that type touching the one you mined - Only works on Ores and Wood Logs. It can not be used to clear out Stone and the like.", "The Off mode, disables all its tool abilities, making it unable to break blocks, and turns it into a Sword.", "The Atomic Disassembler tills dirt AND grass in a 1x1 on Slow/Off, 3x3 on Normal/Vein and 5x5 on Fast. It can not make Grass Paths.", "The Atomic Disassembler can not be enchanted."],
+      icon: "mekanism:atomic_disassembler",
+      dependencies: ["02000000007F0000"],
+      rewards: [
+        {
+          id: "04000000008F0000",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 8,
+          title: "Choice option: mekanism:alloy_atomic"
+        },
+        {
+          id: "04000000008F0001",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:ultimate_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000900000",
+      title: "Another Separation",
+      x: 13,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000000900000",
+          type: "item",
+          item: "mekanism:electrolytic_separator"
+        }
+      ],
+      description: ["The Heavy Water has to be pumped into a Electrolytical Separator. This will give you Oxygen and Deterium.", "Deterium is what you need for the Fusion Reactor. Deterium should be pumped directly into the Reactor"],
+      icon: "mekanism:electrolytic_separator",
+      dependencies: ["0200000000910000"],
+      rewards: [
+        {
+          id: "0400000000900000",
+          type: "random",
+          table_id: 360287970189705216
+        },
+        {
+          id: "0400000000900064",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 8,
+          title: "Choice option: mekanism:alloy_atomic"
+        },
+        {
+          id: "0400000000900065",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:ultimate_control_circuit"
+        },
+        {
+          id: "0400000000900066",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "0400000000900067",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_energy"
+        }
+      ]
+    },
+    {
+      id: "0200000000910000",
+      title: "Don't take it lightly",
+      x: 13,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000000910000",
+          type: "item",
+          item: "mekanism:upgrade_filter"
+        }
+      ],
+      description: ["The Fusion Reactor needs 2 kinds of fuel, and Deterium is one of them.", "First you need to make Heavy Water. The Heavy Water comes from the Electric Pump, with a Filter Upgrade.", "While the Electric Pump fully upgraded pumps really fast, while filtering it goes a lot slower.", "A single pump, fully upgraded with a Filter, pumps max 10mb/t"],
+      icon: "mekanism:upgrade_filter",
+      dependencies: ["02000000007F0000"],
+      rewards: [
+        {
+          id: "0400000000910000",
+          type: "item",
+          item: "mekanism:electric_pump"
+        },
+        {
+          id: "0400000000910064",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 8,
+          title: "Choice option: mekanism:alloy_atomic"
+        },
+        {
+          id: "0400000000910065",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:ultimate_control_circuit"
+        },
+        {
+          id: "0400000000910066",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "0400000000910067",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_speed"
+        }
+      ]
+    },
+    {
+      id: "0200000000920000",
+      title: "Why a tripple, when you can get a Quad?",
+      x: 4,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000000920000",
+          type: "item",
+          item: "mekanism:chemical_injection_chamber"
+        }
+      ],
+      description: ["Time to one-up your ore processing, to x4.", "Put the ores in a Chemical Injection Chamber, and add Hydrogen Chloride to it, and then send it on through the x3 processing setup.", "Your total machine setup should now be Chemical Injection Chamber -> Purification Chamber -> Crusher -> Enrichment Chamber -> Smelter"],
+      icon: "mekanism:chemical_injection_chamber",
+      dependencies: ["02000000007C0000"],
+      rewards: [
+        {
+          id: "0400000000920000",
+          type: "item",
+          item: "mekanism:osmium_ore",
+          count: 8
+        },
+        {
+          id: "0400000000920064",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 4,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "0400000000920065",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 4,
+          title: "Choice option: mekanism:upgrade_energy"
+        },
+        {
+          id: "0400000000920066",
+          type: "item",
+          item: "mekanism:upgrade_gas",
+          count: 4,
+          title: "Choice option: mekanism:upgrade_gas"
+        }
+      ]
+    },
+    {
+      id: "0200000000930000",
+      title: "Don't be so plastic",
+      x: 0,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000000930000",
+          type: "item",
+          item: "mekanism:hdpe_sheet",
+          count: 16
+        }
+      ],
+      description: ["Plastic blocks are aesthetic blocks with a Very flat color.", "You are going to need another Pressurized Reaction Chamber for its second function, Oxygen, Substrate and Liquid Ethylene which we covered the last couple of quests.", "The Substrate will turn into HDPE Pellets. which can be turned into HDPE Sheets, which can be turned into Plastic Blocks.", "Making HDPE Pellets will give Oxygen as a side product, which can be reused. It just has to be piped out and back in.", "A note to make, is that a Biofuel -> Substrate will create more Ethylene than a Substrate -> HDPE Pellet requires, so you will have leftover, which you can use in a Gas-Burning Generator."],
+      icon: "mekanism:hdpe_sheet",
+      dependencies: ["02000000007C0000", "0200000000860000"],
+      rewards: [
+        {
+          id: "0400000000930000",
+          type: "item",
+          item: "mekanism:hdpe_stick",
+          count: 4
+        },
+        {
+          id: "0400000000930001",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000940000",
+      title: "The Final Upgrade!",
+      x: 13,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000000940000",
+          type: "item",
+          item: "mekanism:basic_universal_cable",
+          count: 16
+        }
+      ],
+      description: ["Another tier, another upgrade for your wires and pipes! This is the last upgrade for wires and pipes."],
+      icon: "mekanism:basic_universal_cable",
+      dependencies: ["02000000007F0000"],
+      rewards: [
+        {
+          id: "0400000000940000",
+          type: "item",
+          item: "mekanism:basic_universal_cable",
+          count: 8
+        }
+      ]
+    },
+    {
+      id: "0200000000950000",
+      title: "The Kickstart",
+      x: 13,
+      y: 10,
+      tasks: [
+        {
+          id: "0300000000950000",
+          type: "item",
+          item: "mekanismgenerators:hohlraum"
+        }
+      ],
+      description: ["Before the Reactor can start up and produce power, it needs a kickstart injection of D-T Fuel, which is done through the Hohlraum with D-T Fuel in it.", "To get D-T Fuel into it, place it in the [+], in either the Chemical Infuser or a Gas Tank with D-T Fuel."],
+      icon: "mekanismgenerators:hohlraum",
+      dependencies: ["02000000008A0000"],
+      rewards: [
+        {
+          id: "0400000000950000",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 2,
+          title: "Choice option: mekanism:alloy_atomic"
+        },
+        {
+          id: "0400000000950001",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 2,
+          title: "Choice option: mekanism:ultimate_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000960000",
+      title: "By the Power of the sun!",
+      x: 15,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000000960000",
+          type: "item",
+          item: "mekanism:solar_neutron_activator"
+        },
+        {
+          id: "0300000000960001",
+          type: "item",
+          item: "mekanism:rotary_condensentrator"
+        }
+      ],
+      description: ["When you have your Liquid Lithium, you have to convert it into gas with the Rotary Condensentrator, and then transfer the Lithium gas into a Solar Neutron Activator to get Tritium.", "The Solar Neutron Activator does require HDPE Sheets to make, so you should probably look into the Plastic quest if you haven't done so yet.", "The Solar Neutron Activate takes IN gas from the Bottom, and outputs at the front.", "The Solar Neutron Activator needs Sunlight to process the Lithium. Transparent blocks like glass can be put above it.", "Tritium should be pumped directly into the Reactor."],
+      icon: "mekanism:solar_neutron_activator",
+      dependencies: ["02000000007E0000"],
+      rewards: [
+        {
+          id: "0400000000960000",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 8,
+          title: "Choice option: mekanism:alloy_atomic"
+        },
+        {
+          id: "0400000000960001",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:ultimate_control_circuit"
+        },
+        {
+          id: "0400000000960002",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 12,
+          title: "Choice option: mekanism:upgrade_speed"
+        }
+      ]
+    },
+    {
+      id: "0200000000970000",
+      title: "Burning what smells",
+      x: 2,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000000970000",
+          type: "item",
+          item: "mekanismgenerators:gas_burning_generator"
+        }
+      ],
+      description: ["The Gas-Burning Generators does as the name implies, generate power from burning gas.", "It can burn Hydrogen and Ethylene for power generation only.", "Burning Hydrogen gives you no power gain at all in Mekanism V9, and will give you exactly the same amount of power back, that you used to create that Hydrogen.", "Burning Ethylene though, is very much worth it, and a really good mid-game source of power, given you have plenty of materials to turn into Bio Fuel"],
+      icon: "mekanismgenerators:gas_burning_generator",
+      dependencies: ["0200000000980000"],
+      rewards: [
+        {
+          id: "0400000000970000",
+          type: "item",
+          item: "mekanism:bio_fuel",
+          count: 16
+        },
+        {
+          id: "0400000000970064",
+          type: "item",
+          item: "mekanism:alloy_reinforced",
+          count: 8,
+          title: "Choice option: mekanism:alloy_reinforced"
+        },
+        {
+          id: "0400000000970065",
+          type: "item",
+          item: "mekanism:elite_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:elite_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000980000",
+      title: "Too Much Pressure!",
+      x: 4,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000000980000",
+          type: "item",
+          item: "mekanism:pressurized_reaction_chamber"
+        }
+      ],
+      description: ["[This quest chain focuses on power production]", "Pressurized Reaction Chamber is used to create Ethylene, Substrate and HDPE Pellets from Biofuel.", "Its first function is creating Substrate from Biofuel, Hydrogen and Water, with Ethylene (gas) as a side product.", "You may want to configure the in/output sides on the PRC.", "The Ethylene is going to be used in the following quest.", "The Substrate is going to be a waste product here."],
+      icon: "mekanism:pressurized_reaction_chamber",
+      dependencies: ["02000000007C0000"],
+      rewards: [
+        {
+          id: "0400000000980000",
+          type: "item",
+          item: "mekanism:bio_fuel",
+          count: 16
+        },
+        {
+          id: "0400000000980064",
+          type: "item",
+          item: "mekanism:alloy_reinforced",
+          count: 8,
+          title: "Choice option: mekanism:alloy_reinforced"
+        },
+        {
+          id: "0400000000980065",
+          type: "item",
+          item: "mekanism:elite_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:elite_control_circuit"
+        },
+        {
+          id: "0400000000980066",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 4,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "0400000000980067",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 4,
+          title: "Choice option: mekanism:upgrade_energy"
+        }
+      ]
+    },
+    {
+      id: "0200000000990000",
+      title: "Pew pew pew! / Heating up",
+      x: 11,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000000990000",
+          type: "item",
+          item: "mekanism:laser",
+          count: 5
+        },
+        {
+          id: "0300000000990001",
+          type: "item",
+          item: "mekanism:laser_amplifier"
+        }
+      ],
+      description: ["The laser is both your first and last step towards the Fusion Reactor.", "The Reactor needs a burst of heat, before it can kickstart, and the lasers allows that by firing RF into it.", "There's 2 blocks, the Laser and the Laser Amplifier.", "The Lasers shoots a laser, and the Laser Amplifiers combines these lasers into one big beam.", "You can focus Amplifiers into more Amplifiers.", "You want your final Amplifier to line up with the Laser Focus Matrix of the Fusion Reactor.", "You want at least 800mil RF in the final Amplifier to do the kickstart in one big burst (set the Amplifiers redstone mode to \"High\"), and each Laser only transfers 2000 RF/t, so it can be quite a slow process if you don't have a lot of Lasers.", "", "WARNING: The Lasers will break blocks and damage mobs/players, and the stronger the laser is, the faster it breaks/more damage it deals. They will not break any Laser Focus Matrixes. The Laser reaches for 64 blocks, and can extended with Amplifiers."],
+      icon: "mekanism:laser",
+      dependencies: ["02000000007F0000"],
+      rewards: [
+        {
+          id: "0400000000990000",
+          type: "item",
+          item: "mekanism:laser",
+          count: 5
+        },
+        {
+          id: "0400000000990001",
+          type: "item",
+          item: "mekanism:laser_amplifier"
+        }
+      ]
+    },
+    {
+      id: "02000000009A0000",
+      title: "Fueling up",
+      x: 13,
+      y: 8,
+      tasks: [
+        {
+          id: "03000000009A0000",
+          type: "item",
+          item: "mekanism:chemical_infuser"
+        }
+      ],
+      description: ["D-T Fuel is what is needed to do the Kickstart in the Reactor.", "&cNow, DO NOT PUMP D-T FUEL DIRECTLY INTO THE REACTOR, &runless you can keep up with its demand (1000mb/t), which does result in 100mil rf/t generated.", "The Fusion Reactor will make its own D-T Fuel, and take depending on your Injection Rate (minimum 2).", "To make the D-T Fuel, you have to put Deterium and Tritium into a Chemical Infuser. The only use for the D-T Fuel is to fill up the Hohlraums (unless you pump directly into the Reactor)."],
+      icon: "mekanism:chemical_infuser",
+      dependencies: ["0200000000900000", "0200000000960000"],
+      rewards: [
+        {
+          id: "04000000009A0000",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 8,
+          title: "Choice option: mekanism:alloy_atomic"
+        },
+        {
+          id: "04000000009A0001",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:ultimate_control_circuit"
+        },
+        {
+          id: "04000000009A0002",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "04000000009A0003",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_energy"
+        }
+      ]
+    },
+    {
+      id: "02000000009B0000",
+      title: "Pet on a leash - without the leash",
+      x: 2,
+      y: 8,
+      tasks: [
+        {
+          id: "03000000009B0000",
+          type: "item",
+          item: "mekanism:robit"
+        }
+      ],
+      description: ["The Robit is a companion that can follow you around. You have to place it down on a Charge Pad, which will act as its home.", "The Robit can providing all kinds of services.", "It can pick up blocks you drop, and put it in its inventory, which also can act as a chest.", "It can provide Crafting Table, Furnance (requires fuel) and Anvil features as well.", "The robit loses energy when it takes damage. Should it run out of energy, either from damage or usage, it will automatically teleport back home.", "You can of course also tell it yourself to teleport back home. And of course you can rename it too.", "To pick it up again, Shift-Right Click it with a Configurator. After being picked up, you can set a new home to it on a different Charged Pad if you desire."],
+      icon: "mekanism:robit",
+      dependencies: ["02000000007C0000"],
+      rewards: [
+        {
+          id: "04000000009B0000",
+          type: "item",
+          item: "mekanism:chargepad"
+        }
+      ]
+    },
+    {
+      id: "02000000009C0000",
+      title: "It's getting tight..",
+      x: 11,
+      y: 0,
+      tasks: [
+        {
+          id: "03000000009C0000",
+          type: "item",
+          item: "mekanism:osmium_compressor"
+        }
+      ],
+      description: ["The Osmium Compresser combines Osmium Ingots and Refined Obsidian Dust or Glowstone Dust to make Refined Obsidian Ingots or Glowstone Ingots.", "NOTE: The Refined Obsidian armor is really durable, and offers a lot of protection."],
+      icon: "mekanism:osmium_compressor",
+      dependencies: ["02000000007F0000"],
+      rewards: [
+        {
+          id: "04000000009C0000",
+          type: "item",
+          item: "mekanism:ingot_osmium",
+          count: 10
+        },
+        {
+          id: "04000000009C0064",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 8,
+          title: "Choice option: mekanism:alloy_atomic"
+        },
+        {
+          id: "04000000009C0065",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:ultimate_control_circuit"
+        },
+        {
+          id: "04000000009C0066",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "04000000009C0067",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_energy"
+        }
+      ]
+    },
+    {
+      id: "02000000009D0000",
+      title: "Did someone say Sauna?",
+      x: 2,
+      y: 0,
+      tasks: [
+        {
+          id: "03000000009D0000",
+          type: "item",
+          item: "mekanism:boiler_casing",
+          count: 64
+        },
+        {
+          id: "03000000009D0001",
+          type: "item",
+          item: "mekanism:boiler_valve",
+          count: 2
+        },
+        {
+          id: "03000000009D0002",
+          type: "item",
+          item: "mekanism:superheating_element",
+          count: 4
+        },
+        {
+          id: "03000000009D0003",
+          type: "item",
+          item: "mekanism:pressure_disperser",
+          count: 4
+        }
+      ],
+      description: ["The Thermoelectric Boiler multistructure that creates Steam from Water and Heat.", "The structure requirements is seen in the Crafting Task. The minimum size for a Boiler is 3x3x4, but with the crafting and reward, there is exactly enough for a 4x4x9.", "The base and edges has to be Boiler Casing. The walls has to be Boiler Casing, Boiler Valve or Structural Glass.", "The inside of the Boiler is split into 2 parts: Water storage (Bottom part) and Steam storage (Upper part). The Water storage is where the Superheating Elements will go. They don't have be in any particular shape, aslong as they are connected. The more Superheating Elements you have, the faster it can produce Steam.", "The top part has to be separated with Pressure Dispersers (full layer), which is where the steam is stored and extracted. The Water input Valve, has to be below the Pressure Dispersers, while the Steam output has to be on level or above the Pressure Dispersers (while still on the wall)"],
+      icon: "mekanism:superheating_element",
+      dependencies: ["02000000008B0000"],
+      rewards: [
+        {
+          id: "04000000009D0000",
+          type: "item",
+          item: "mekanism:structural_glass",
+          count: 54
+        }
+      ]
+    },
+    {
+      id: "02000000009E0000",
+      title: "My Final Factory!",
+      x: 15,
+      y: 0,
+      tasks: [
+        {
+          id: "03000000009E0000",
+          type: "item",
+          item: "mekanism:elite_smelting_factory"
+        }
+      ],
+      description: ["Elite Factories are the last step.", "They have 7 Processing Slots, and like the rest, they use energy based on the amount of operations running.Elite is the last tier of Factories.", "Like the previous Factory quests, crafting any Elite Factory will do, despite the Crafting Task saying \"Elite Smeling Factory\".", "Note: The Ultimate Tier Installer can only be used on Fluid and Gas tanks."],
+      icon: "mekanism:elite_smelting_factory",
+      dependencies: ["02000000007F0000"],
+      rewards: [
+        {
+          id: "04000000009E0000",
+          type: "item",
+          item: "mekanism:elite_tier_installer"
+        },
+        {
+          id: "04000000009E0001",
+          type: "item",
+          item: "mekanism:ultimate_tier_installer"
+        },
+        {
+          id: "04000000009E0064",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "04000000009E0065",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_energy"
+        },
+        {
+          id: "04000000009E0066",
+          type: "item",
+          item: "mekanism:upgrade_gas",
+          count: 6,
+          title: "Choice option: mekanism:upgrade_gas"
+        },
+        {
+          id: "04000000009E0067",
+          type: "item",
+          item: "mekanism:elite_tier_installer",
+          title: "Choice option: mekanism:elite_tier_installer"
+        }
+      ]
+    },
+    {
+      id: "02000000009F0000",
+      title: "More Steam than you could ever need",
+      x: 11,
+      y: 11.5,
+      tasks: [
+        {
+          id: "03000000009F0000",
+          type: "item",
+          item: "mekanismgenerators:fusion_reactor_port",
+          count: 5
+        }
+      ],
+      description: ["The Fusion Reactor can also be used to produce Steam.", "The only thing required is an additional 2 Reactor Ports, and to set the Injection Rate to 4 or more.", "One of the Ports is for Water Input, and the other is for Steam Output.", "Simply pumping Water into the Reactor will make it start producing Steam at upto 150.000mb/t.", "The Water:Steam ratio is 1:1.", "It is important to use the Configurator on the Steam Reactor Port to set it to Output. It will still produce half the RF while producing Steam.", "", "NOTE: You may want to put the Reactor Port (Output) directly next to the Steam Input of your Turbine (so no pipes between), unless you have a pipe with unlimited Pump Rate."],
+      icon: "mekanismgenerators:turbine_blade",
+      dependencies: ["02000000008A0000"],
+      rewards: [
+        {
+          id: "04000000009F0000",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 8,
+          title: "Choice option: mekanism:alloy_atomic"
+        },
+        {
+          id: "04000000009F0001",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:ultimate_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000A00000",
+      title: "Maximum Security!",
+      x: 14,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000000A00000",
+          type: "item",
+          item: "mekanism:security_desk"
+        }
+      ],
+      description: ["[Multiplayer Only]", "This block is used to control the security of your machines. Every machine with an Interface has Security settings. Public, Private and Trusted.", "On Public, anyone can access it.", "On Private, only you can access it.", "On Trusted, only persons that you put on the Trusted List can access it. The Trusted List is in the Security Desk, and is the only place to add/remove people from the list.", "The Security Desk has 3 security settings at the bottom, and machines put in the bottom right slot, will have that setting applied to them.", "To unlock a machine you own, put it in the top right slot.", "The \"Security Overwrite\" will set all the machines you own, to the selected Security setting in the Security Desk. Very handy if you have some people sneaking around with your machines!"],
+      icon: "mekanism:security_desk",
+      dependencies: ["02000000007F0000"],
+      rewards: [
+        {
+          id: "0400000000A00000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000A10000",
+      title: "Putting Steam to use",
+      x: 4,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000000A10000",
+          type: "item",
+          item: "mekanismgenerators:turbine_casing",
+          count: 64
+        },
+        {
+          id: "0300000000A10001",
+          type: "item",
+          item: "mekanismgenerators:turbine_valve",
+          count: 2
+        },
+        {
+          id: "0300000000A10002",
+          type: "item",
+          item: "mekanismgenerators:turbine_vent",
+          count: 9
+        },
+        {
+          id: "0300000000A10003",
+          type: "item",
+          item: "mekanismgenerators:electromagnetic_coil",
+          count: 9
+        },
+        {
+          id: "0300000000A10004",
+          type: "item",
+          item: "mekanism:pressure_disperser",
+          count: 8
+        },
+        {
+          id: "0300000000A10005",
+          type: "item",
+          item: "mekanismgenerators:rotational_complex"
+        },
+        {
+          id: "0300000000A10006",
+          type: "item",
+          item: "mekanismgenerators:turbine_rotor",
+          count: 2
+        },
+        {
+          id: "0300000000A10007",
+          type: "item",
+          item: "mekanismgenerators:turbine_blade",
+          count: 4
+        }
+      ],
+      description: ["The Turbine is one of Mekanisms bigger power generators. It is a Multiblock, that runs on Steam.", "It is a multistructure that can be turned and flipped in any direction, but in the explanation we're going to have it standing, with the Steam at the top, and the blades going down.", "The materials from the Crafting Task is enough for a 5x5x6. Like the other Mekanism multistructures, the edges must be the base block (Turbine Casing in this case).", "On the top part, you want Turbine Vents. These can be on level or above the Rotational Complex.", "On the top level inside the Turbine, you have to place your Electromagnetic Coils. These just have to connect to each other and the Rotational Complex.", "Below those you need your Pressure Dispersers. Like the Boiler, these must cover the entire layer out to the walls.", "In the middle of the Pressure Dispersers, you want to place your Rotational Complex.", "From the Rotational Complex to the bottom, you place the Turbine Rotors, and the put your Turbine Blades on the Rotors.", "The Valves can go anywhere on the walls (except the corners). The Valves is both Steam input and Power Output.", "The power output from the turbine, depends on the amount of Steam coming in to the turbine. More steam = more power.", " In the Statistics window you can see what is currently limiting your power generation (in the case of the 5x5x6, it's the amount of blades). The fix to this is to build it taller."],
+      icon: "mekanismgenerators:turbine_blade",
+      dependencies: ["02000000009D0000"],
+      rewards: [
+        {
+          id: "0400000000A10000",
+          type: "item",
+          item: "mekanism:structural_glass",
+          count: 46
+        }
+      ]
+    },
+    {
+      id: "0200000000A20000",
+      title: "My Second Factory",
+      x: 1,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000000A20000",
+          type: "item",
+          item: "mekanism:advanced_smelting_factory"
+        }
+      ],
+      description: ["Works like the previous factory, but now with 5 slots instead of 3.", "Once again, the energy used goes up, per operation going.", "Like the previous Factory quest, crafting any Advanced Factory will do, despite the Crafting Task saying \"Advanced Smelting Factory\".", "", "Note: The Advanced Tier Installer and higher can also be used on Fluid and Gas Tanks to increase their capacity"],
+      icon: "mekanism:advanced_smelting_factory",
+      dependencies: ["02000000007C0000"],
+      rewards: [
+        {
+          id: "0400000000A20000",
+          type: "item",
+          item: "mekanism:advanced_tier_installer"
+        },
+        {
+          id: "0400000000A20064",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 4,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "0400000000A20065",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 4,
+          title: "Choice option: mekanism:upgrade_energy"
+        },
+        {
+          id: "0400000000A20066",
+          type: "item",
+          item: "mekanism:upgrade_gas",
+          count: 4,
+          title: "Choice option: mekanism:upgrade_gas"
+        },
+        {
+          id: "0400000000A20067",
+          type: "item",
+          item: "mekanism:advanced_tier_installer",
+          title: "Choice option: mekanism:advanced_tier_installer"
+        }
+      ]
+    },
+    {
+      id: "0200000000A30000",
+      title: "Store all the power!",
+      x: 8,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000000A30000",
+          type: "item",
+          item: "mekanism:induction_port",
+          count: 2
+        },
+        {
+          id: "0300000000A30001",
+          type: "item",
+          item: "mekanism:induction_casing",
+          count: 54
+        },
+        {
+          id: "0300000000A30002",
+          type: "item",
+          item: "mekanism:basic_induction_cell",
+          count: 4
+        }
+      ],
+      description: ["The Induction Matrix is a multiblock power storage.", "There is not much to the construction of the Induction Matrix, other than it has to be a box, with a minimum size of 3x3x4 and maximum size of 18x18x18. Just include some Induction Ports to take power in and out.", "As with all other Mekanism multistructures, the corners has to be built of the base block (in this case Induction Casing), and the walls can be of Structural Glass.", "The amount of stored in the Induction Matrix depends on the Induction Cells inside of it, with each Induction Cell holding a certain amount. The Induction Providers determines how much power can go in and out of the Induction Matrix.", "The Crafting Task has materials for a 4x4x4 box. The Matrix does NOT have to fully filled to function. It is a \"functional\" structure while empty, except it can hold 0 RF and transfer 0 RF/t"],
+      icon: "mekanism:induction_port",
+      dependencies: ["02000000007F0000"],
+      rewards: [
+        {
+          id: "0400000000A30000",
+          type: "item",
+          item: "mekanism:basic_induction_provider"
+        },
+        {
+          id: "0400000000A30064",
+          type: "item",
+          item: "mekanism:alloy_atomic",
+          count: 8,
+          title: "Choice option: mekanism:alloy_atomic"
+        },
+        {
+          id: "0400000000A30065",
+          type: "item",
+          item: "mekanism:ultimate_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:ultimate_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000A40000",
+      title: "Infusing Hydrogen with.. chloride?",
+      x: 4,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000000A40000",
+          type: "item",
+          item: "mekanism:chemical_infuser"
+        }
+      ],
+      description: ["Chemical Infuser infuses 2 gasses together to create a 3rd one.", "Inputs are on the sides (Chemical Infuser has no side specific inputs for any recipe), output is in the front.", "To make Hydrogen Chloride, you need Hydrogen from an Electrolytical Separator with Water, and Chloride from an Eletrolytical Separator with Brine.", "", "NOTE: Putting Brine in a Eletrolytical Separator will also produce Sodium, which currently has no use, so don't worry about storing it."],
+      icon: "mekanism:chemical_infuser",
+      dependencies: ["02000000007B0000", "0200000000920000"],
+      rewards: [
+        {
+          id: "0400000000A40000",
+          type: "item",
+          item: "mekanism:alloy_reinforced",
+          count: 8,
+          title: "Choice option: mekanism:alloy_reinforced"
+        },
+        {
+          id: "0400000000A40001",
+          type: "item",
+          item: "mekanism:elite_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:elite_control_circuit"
+        },
+        {
+          id: "0400000000A40002",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 4,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "0400000000A40003",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 4,
+          title: "Choice option: mekanism:upgrade_energy"
+        }
+      ]
+    }
+  ],
+  quest_links: [],
+  subtitle: ["This is Part 2 of Mekanism.", "This is where things starts to take a step up in complexity, which means that there will be no more \"funny/silly\" descriptions, and focus mainly on the explanation of the machines.", "Part 2 includes The Elite and The Ultimate parts of Mekanism.", "", "Authored by Discomanco."],
+  icon: "minecraft:book"
+}

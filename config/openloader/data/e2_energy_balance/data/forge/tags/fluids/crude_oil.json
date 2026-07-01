@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "thermal:crude_oil",
+    "immersivepetroleum:crudeoil",
+    "pneumaticcraft:oil"
+  ]
+}

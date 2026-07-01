@@ -1,0 +1,487 @@
+{
+  id: "01000000000B0000",
+  group: "",
+  order_index: 4,
+  filename: "11_embers",
+  title: "Embers",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      id: "02000000010E0000",
+      title: "Ancient Codex",
+      x: 0,
+      y: 0,
+      tasks: [
+        {
+          id: "03000000010E0000",
+          type: "item",
+          item: "embers:ancient_codex"
+        }
+      ],
+      description: ["The Ancient Codex is this mod's in game manual, containing useful information about everything you need to know about Embers.", "", "Both materials required to craft this item can be found by slaying Ancient Golems which spawn at night. Be mindful though, as they can hurt quite a bit.", "", "Even though this quest line will assume for the most part you haven't read the Codex, we strongly encourage you to check it on your own to learn more about specific topics that aren't covered here."],
+      icon: "embers:ancient_codex",
+      rewards: [
+        {
+          id: "04000000010E0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001100000",
+      title: "Atmospheric Gauge",
+      x: 0,
+      y: 2.25,
+      tasks: [
+        {
+          id: "0300000001100000",
+          type: "item",
+          item: "embers:atmospheric_gauge"
+        }
+      ],
+      description: ["The Atmospheric Gauge, while not technically required, is a tool that is highly recommended to use before starting Embers.", "", "Holding it in your hand will display a rough indicator of the level of Ember near the current position (ignoring the vertical axis). It is highly recommended to find an area with a high density of it to set up the Ember Bore in (see the Ember Bore quest), as this will very noticeably increase the speed at which you can progress through the mod."],
+      icon: "embers:atmospheric_gauge",
+      dependencies: ["02000000010E0000"],
+      rewards: [
+        {
+          id: "0400000001100000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001120000",
+      title: "Ember Bore",
+      x: 1.5,
+      y: 2.25,
+      tasks: [
+        {
+          id: "0300000001120000",
+          type: "item",
+          item: "embers:ember_bore"
+        },
+        {
+          id: "0300000001120001",
+          type: "item",
+          item: "embers:mechanical_core"
+        }
+      ],
+      description: ["The Ember Bore is a big machine that is used to collect Ember from Bedrock.", "", "After finding a place with a good enough amount of Ember (see Atmospheric Gauge quest), you'll need to dig to Bedrock and place the Bore so that its blade touch it. The Machine itself is 3x3x3, with the blades not actually being solid and making up the bottom 2 layers of the structure.", "", "Once placed, you can put a Mechanical Core on top of it to extend its only interactable side (the one with a little hole) so that you can plug more than one machine/cable on it.", "", "Finally, feed it any furnace fuel using any item transportation (such as Hoppers) into its interactable side (or its extension through a Mechanical Core) and it'll start digging.", "", "You'll need to extract the Ember Shards it collects using any item extracting device, such as the Item Extractor and Item Pipe the mod provide. Simply place the Extractor on one of the interactable sides, power it with redstone, lay down Pipes to the inventory you want to fill and you'll be able to collect what the Bore has been collecting."],
+      icon: "embers:ember_bore",
+      dependencies: ["0200000001100000"],
+      rewards: [
+        {
+          id: "0400000001120000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001140000",
+      title: "Ember Generation and Transfer",
+      x: 3,
+      y: 2.25,
+      tasks: [
+        {
+          id: "0300000001140000",
+          type: "item",
+          item: "embers:ember_activator"
+        },
+        {
+          id: "0300000001140001",
+          type: "item",
+          item: "embers:tinker_hammer"
+        },
+        {
+          id: "0300000001140002",
+          type: "item",
+          item: "embers:ember_emitter"
+        },
+        {
+          id: "0300000001140003",
+          type: "item",
+          item: "embers:ember_receiver"
+        }
+      ],
+      description: ["The Ember Activator is a machine that will turn Ember Shards and Crystals into useable energy, usually called Ember.", "", "Simply place it down, use any item automation to input Shards/Crystals into its bottom part and it will generate Ember (energy) that will be stored in its upper part.", "", "To actually use this Ember, you'll need Ember Emitters and Receptors. Place an Emitter on the source (here the top part of your Ember Activator), place a Receptor on a machine that can accept it. Then, sneak + right click the Receptor with the Tinker's Hammer, right click the Emitter and power it with redstone and Ember should start flowing.", "", "Note that a single Emitter can also only power a single Receptor, but a single Receptor can receive power from multiple Emitters. If you want to use a single Emitter to power multiple Receptors, you'll need Beam Splitters."],
+      icon: "embers:ember_activator",
+      dependencies: ["0200000001120000"],
+      rewards: [
+        {
+          id: "0400000001140000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001160000",
+      title: "Melter and Stamper",
+      x: 4.5,
+      y: 2.25,
+      tasks: [
+        {
+          id: "0300000001160000",
+          type: "item",
+          item: "embers:melter"
+        },
+        {
+          id: "0300000001160001",
+          type: "item",
+          item: "embers:stamper"
+        },
+        {
+          id: "0300000001160002",
+          type: "item",
+          item: "embers:stamp_base"
+        }
+      ],
+      description: ["The Melter is a machine that allows you to melt various metals using Ember.", "", "Simply place it down, input valid items in its bottom part and Ember, and it will melt them into a liquid that can be extracted from the top block.", "", "The Stamper is another machine that allows you to turn those molten metals into useable materials.", "", "Place the Stamper Base down, then place the Stamper itself 2 blocks above it (1 empty block between the two) and put a Stamp inside of it. Input the liquid in the Base and input Ember in the Stamper and it should start working.", "", "You can place a Bin under the Stamper Base to automatically collect what it's producing."],
+      icon: "embers:stamp_base",
+      dependencies: ["0200000001140000"],
+      rewards: [
+        {
+          id: "0400000001160000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001180000",
+      title: "Bin",
+      x: 0,
+      y: 4.5,
+      tasks: [
+        {
+          id: "0300000001180000",
+          type: "item",
+          item: "embers:bin"
+        }
+      ],
+      description: ["The Bin is a simple container that can hold 1 stack of an item.", "", "While it is pretty unimpressive, several machines from this mod will automatically output their work into a Bin right under them, which greatly simplifies their automation process."],
+      icon: "embers:bin",
+      dependencies: ["0200000001100000"],
+      rewards: [
+        {
+          id: "0400000001180000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000011A0000",
+      title: "Ember and Fluid Dial",
+      x: 3,
+      y: 0.75,
+      tasks: [
+        {
+          id: "03000000011A0000",
+          type: "item",
+          item: "embers:ember_dial"
+        },
+        {
+          id: "03000000011A0001",
+          type: "item",
+          item: "embers:fluid_dial"
+        }
+      ],
+      description: ["The Ember and Fluid Dials are tools that can be placed on the side of any Ember or Fluid container from this mod, respectively.", "", "When hovered over, they will respectively display the Ember level and Fluid content of the machine, which is especially useful since there are no other ways of getting such information."],
+      icon: "embers:ember_dial",
+      dependencies: ["0200000001140000"],
+      rewards: [
+        {
+          id: "04000000011A0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000011C0000",
+      title: "Mixer Centrifuge",
+      x: 6,
+      y: 2.25,
+      tasks: [
+        {
+          id: "03000000011C0000",
+          type: "item",
+          item: "embers:mixer_centrifuge"
+        }
+      ],
+      description: ["The Mixer Centrifuge is a machine that allows you to mix molten metals into molten alloys using Ember.", "", "Each of the 4 faces of the bottom block is its own tank. Supply them with a valid combinaison of liquids and feed the top block with Ember and it'll mix them together, making a new fluid that can be pumped out from the top block.", "", "Most alloys you can make with this can also be made in other ways, with the exception of Dawnstone which will be used for more advanced recipes."],
+      icon: "embers:mixer_centrifuge",
+      dependencies: ["0200000001160000"],
+      rewards: [
+        {
+          id: "04000000011C0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000011E0000",
+      title: "Copper Charger",
+      x: 4.5,
+      y: 3.75,
+      tasks: [
+        {
+          id: "03000000011E0000",
+          type: "item",
+          item: "embers:copper_charger"
+        }
+      ],
+      description: ["The Copper Charger is a machine that allows charging items with Ember.", "", "Simply place any item that can accept Ember in it by right clicking and feed the Charger with Ember. The item will then charge using the Ember contained in the Charger.", "", "The most useful use for this is charging Mantle Jars and Cartridges. Both are portable Ember batteries that can be used by various powerful tools (such as the Blazing Ray) when in your inventory. Jars can be accessed from anywhere in your inventory by those tools, but Cartridges need to be held in your hand (but can contain more Ember)."],
+      icon: "embers:copper_charger",
+      dependencies: ["02000000011C0000"],
+      rewards: [
+        {
+          id: "04000000011E0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001200000",
+      title: "Dawnstone Anvil",
+      x: 6,
+      y: 3.75,
+      tasks: [
+        {
+          id: "0300000001200000",
+          type: "item",
+          item: "embers:dawnstone_anvil"
+        }
+      ],
+      description: ["The Dawnstone Anvil is a block that allows repairing tools and dissambling them.", "", "To repair a tool, simply place it on the Anvil, then place its repair material on it. Right click the Anvil a bunch of time using the Tinker's Hammer and the item will enventually be repaired.", "", "To dissassemble a tool, do the same process but without placing the repair material on top of the tool before smashing it with the Hammer. Not all tools can be dissassembled, but most common ones should be."],
+      icon: "embers:dawnstone_anvil",
+      dependencies: ["02000000011C0000"],
+      rewards: [
+        {
+          id: "0400000001200000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001220000",
+      title: "Automatic Hammer",
+      x: 4.5,
+      y: 5.25,
+      tasks: [
+        {
+          id: "0300000001220000",
+          type: "item",
+          item: "embers:automatic_hammer"
+        }
+      ],
+      description: ["The Automatic Hammer is a way to automate the process on smashing your Tinker's Hammer on the Dawnstone Anvil.", "", "Simply place it above the Anvil, feed it Ember and power it with redstone and it'll start smacking the Anvil just like you would manually."],
+      icon: "embers:automatic_hammer",
+      dependencies: ["0200000001200000"],
+      rewards: [
+        {
+          id: "0400000001220000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001230000",
+      title: "Cinder Plinth",
+      x: 6,
+      y: 0.75,
+      tasks: [
+        {
+          id: "0300000001230000",
+          type: "item",
+          item: "embers:cinder_plinth"
+        }
+      ],
+      description: ["The Cinder Plinth is a simple machine that uses Ember to turn any item into Ash Piles.", "", "Insert the items you wish to burn in it (can be manually done via right clicking) and feed it Ember and it'll start burning them into Ash Piles. Placing a Bin under it will allow you to automatically gather them.", "", "Ash Piles can be used as small furnace fuel, each being able to smelt 1 item, or can be used to make decorative blocks along with Stone. They also play an important role in Energetic Alchemy later on."],
+      icon: "embers:cinder_plinth",
+      dependencies: ["0200000001140000"],
+      rewards: [
+        {
+          id: "0400000001230000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001240000",
+      title: "Beam Cannon",
+      x: 7.5,
+      y: 2.25,
+      tasks: [
+        {
+          id: "0300000001240000",
+          type: "item",
+          item: "embers:beam_cannon"
+        }
+      ],
+      description: ["The Beam Cannon is a deadly machine that can fire lasers using Ember.", "", "To aim it, place it down, sneak + right click a target block with the Tinker's Hammer then right click the Cannon. You can then feed it Ember and, when you need to fire it, give it a redstone signal (doesn't respond to pulses immediatly, use a Lever or similar instead of a Button).", "", "This beam can kill nearly any unarmored creature, including you if you're not careful, but is also used to start the Exchange Tablet."],
+      icon: "embers:beam_cannon",
+      dependencies: ["02000000011C0000"],
+      rewards: [
+        {
+          id: "0400000001240000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001250000",
+      title: "Exchange Tablet",
+      x: 9,
+      y: 2.25,
+      tasks: [
+        {
+          id: "0300000001250000",
+          type: "item",
+          item: "embers:alchemy_tablet"
+        },
+        {
+          id: "0300000001250001",
+          type: "item",
+          item: "embers:alchemy_pedestal"
+        }
+      ],
+      description: ["The Exchange Tablet is a machine that allows performing Energetic Alchemy.", "", "Place the Tablet somewhere, place some Alchemy Pedestal near it, and aim a Beam Cannon at it to set it up.", "", "To perform a recipe, first insert all required items by right clicking the various faces (top and all 4 sides) of the Tablet with the items in hand, then insert appropriate Aspectus on the Pedestals. Fill the Pedestals with an amount of Ash Pile within the range displayed in JEI (for example Netherrack requires between 8 and 16 Ash Piles on the Pedestal with the Copper Aspectus), and fire the Beam Cannon to finish the process.", "", "The amount of Ash Piles a certain recipe needs depends on the world's seed, but is always within the displayed ranges. If you put too much or not enough Ash Piles into certain Aspectus, you'll get Alchemical Waste instead of the desired item.", "", "Those Wastes will tell how by how much you were wrong, allowing you to note down the actual require amounts for a specific recipe, and can be recycled into Ash Piles in a Stamper."],
+      icon: "embers:alchemy_tablet",
+      dependencies: ["0200000001230000", "0200000001240000"],
+      rewards: [
+        {
+          id: "0400000001250000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001260000",
+      title: "Ashen Armor",
+      x: 9,
+      y: 0.75,
+      tasks: [
+        {
+          id: "0300000001260000",
+          type: "item",
+          item: "embers:ashen_goggles"
+        },
+        {
+          id: "0300000001260001",
+          type: "item",
+          item: "embers:ashen_cloak"
+        },
+        {
+          id: "0300000001260002",
+          type: "item",
+          item: "embers:ashen_leggings"
+        },
+        {
+          id: "0300000001260003",
+          type: "item",
+          item: "embers:ashen_boots"
+        }
+      ],
+      description: ["The Ashen Armor is an armor made using Dawnstone and Ashen Fabric. It grants a good amount of protection on top of being incredibly classy.", "", "Their most important feature however is the ability to stitch attuned Inflictor Gems to the Ashen Cloak.", "", "Holding an Inflictor Gem in your hand while taking any form of damage will attune it to this specific damage source. Putting this attuned Gem along with a piece of String and the Cloak in a crafting grid will stitch them together, reducing damage taken from this specifc source by about a third.", "", "Up to 7 Gems can be stitched on the Cloak, and they can be removed by placing the Cloak in an empty crafting grid."],
+      icon: "embers:ashen_goggles",
+      dependencies: ["0200000001250000"],
+      rewards: [
+        {
+          id: "0400000001260000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001270000",
+      title: "Isolated Materia",
+      x: 7.5,
+      y: 3.75,
+      tasks: [
+        {
+          id: "0300000001270000",
+          type: "item",
+          item: "embers:isolated_materia"
+        }
+      ],
+      description: ["Isolated Materia is an item that can be used as a substitute for any repairing material in the Dawnstone Anvil.", "", "Use it as you would for any repairing material to repair your tools or armor. This is especially useful to repair expensive tools."],
+      icon: "embers:isolated_materia",
+      dependencies: ["0200000001200000", "0200000001250000"],
+      rewards: [
+        {
+          id: "0400000001270000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001280000",
+      title: "Gathering Heat",
+      x: 7.5,
+      y: 5.25,
+      tasks: [
+        {
+          id: "0300000001280000",
+          type: "item",
+          item: "embers:ancient_motive_core"
+        }
+      ],
+      description: ["Ancient Motive Cores are dropped by Ancient Golems found at night, or can be crafted once you get your hands on the Exchange Tablet.", "", "While you probably used one already to make the Ancient Codex, they can also be strapped on any tool, weapon or armor at the Dawnstone Anvil. Simply place your item followed by the Core and slam them down either with your Tinker's Hammer or an Automatic Hammer.", "", "Once the Core is placed, your item will be able to gather Heat simply by being used.", "", "While you won't be able to do anything with this Heat before getting the Inferno Forge, since it can take quite some time to fill the bar we encourage you to start gathering Heat now, so that you can immediatly use the Inferno Forge once you get your hands on it."],
+      icon: "embers:ancient_motive_core",
+      dependencies: ["0200000001200000"],
+      rewards: [
+        {
+          id: "0400000001280000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001290000",
+      title: "Inferno Forge",
+      x: 9,
+      y: 5.25,
+      tasks: [
+        {
+          id: "0300000001290000",
+          type: "item",
+          item: "embers:inferno_forge"
+        },
+        {
+          id: "0300000001290001",
+          type: "item",
+          item: "embers:mechanical_core"
+        }
+      ],
+      description: ["The Inferno Forge is a big machine that allows you to gain Levels on your tools, weapons and armor you have managed to fill their Heat bar (see Gathering Heat quest).", "", "Simply place it down, put a Mechanical Core under its center bottom block and feed it Ember. When you have a tool ready to be leveled, open the hatch on the top by right clicking it, and throw it inside along with any number of Ember Crystals.", "", "Close the hatch once that's done and it should start fuming if you did it correctly. Once it's done, you can get your tool back and hopefully it will have gained a Level. The more Ember Crystals you threw in it, the more likely it is to suceed.", "", "Various Modifiers can be strapped on a tool with a Level at the Dawnstone Anvil, just like you strapped the Core to gather Heat in the first place. The various Modifiers are detailled inside the Ancient Codex, and you can put them multiple times to increase their level. Note that you can't get Modifiers to a higher Level than your tool's, which means you'll need to use it more if you wish to make the Modifiers more powerful."],
+      icon: "embers:inferno_forge",
+      dependencies: ["0200000001250000", "0200000001280000"],
+      rewards: [
+        {
+          id: "0400000001290000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    }
+  ],
+  quest_links: [],
+  subtitle: ["Embers is a dwarven themed tech mod, focused around collecting Ember from the core of the earth to fuel powerful magic contraptions. Authored by Lykrast."],
+  icon: "minecraft:book"
+}

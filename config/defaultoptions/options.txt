@@ -1,0 +1,2 @@
+enableVsync:false
+guiScale:3

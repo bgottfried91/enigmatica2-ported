@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": "e2_worldgen:draconicevolution_nether_draconium_ore",
+  "step": "underground_ores"
+}

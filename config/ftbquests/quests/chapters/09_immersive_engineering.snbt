@@ -1,0 +1,665 @@
+{
+  id: "0100000000090000",
+  group: "",
+  order_index: 2,
+  filename: "09_immersive_engineering",
+  title: "Immersive Engineering",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      id: "0200000001D50000",
+      title: "Immersive Engineering",
+      x: -5.67,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000001D50000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["Welcome to Immersive Engineering! This mod primarily offers large multi-block machines and cool aesthetical things.", "", "&4The speed and energy requirements of the machines have been modified.&r"],
+      icon: "immersiveengineering:hammer",
+      rewards: [
+        {
+          id: "0400000001D50000",
+          type: "item",
+          item: "immersiveengineering:hammer"
+        },
+        {
+          id: "0400000001D50001",
+          type: "item",
+          item: "immersiveengineering:wirecutter"
+        },
+        {
+          id: "0400000001D50001",
+          type: "command",
+          command: "/say VAR_NAME has begun the Immersive Engineering questline!"
+        }
+      ]
+    },
+    {
+      id: "0200000001D60000",
+      title: "Coke Oven",
+      x: -4,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000001D60000",
+          type: "item",
+          item: "immersiveengineering:cokebrick",
+          count: 27
+        }
+      ],
+      description: ["The Coke Oven produces Coal Coke, Charcoal and Creosote oil. Supply it with Coal or Logs.", "", "I recommended that you use the quest rewards to build a &4&3&2Metal Press&r - You'll need it to produce Steel Rods for the Steel Scaffolding."],
+      icon: "immersiveengineering:cokebrick",
+      dependencies: ["0200000001D50000"],
+      rewards: [
+        {
+          id: "0400000001D60000",
+          type: "item",
+          item: "immersiveengineering:steel_scaffolding_standard",
+          count: 2
+        },
+        {
+          id: "0400000001D60001",
+          type: "item",
+          item: "immersiveengineering:rs_engineering"
+        },
+        {
+          id: "0400000001D60002",
+          type: "item",
+          item: "minecraft:piston"
+        },
+        {
+          id: "0400000001D60003",
+          type: "item",
+          item: "immersiveengineering:conveyor_basic",
+          count: 2
+        },
+        {
+          id: "0400000001D60004",
+          type: "item",
+          item: "immersiveengineering:heavy_engineering"
+        }
+      ]
+    },
+    {
+      id: "0200000001D70000",
+      title: "Treated Wood",
+      x: -2.33,
+      y: 1.67,
+      tasks: [
+        {
+          id: "0300000001D70000",
+          type: "item",
+          item: "immersiveengineering:treated_wood_horizontal",
+          count: 8
+        }
+      ],
+      description: ["Treated Wood is used in a lot of recipes in Immersive Engineering, and it's also a great looking building block."],
+      icon: "immersiveengineering:treated_wood_horizontal",
+      dependencies: ["0200000001D60000"],
+      rewards: [
+        {
+          id: "0400000001D70000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001D80000",
+      title: "Blast Furnace",
+      x: -2.33,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000001D80000",
+          type: "item",
+          item: "immersiveengineering:blastbrick",
+          count: 27
+        }
+      ],
+      description: ["The Blast Furnace produces Steel, when supplied with Charcoal or Coal Coke and Iron Ingots."],
+      icon: "immersiveengineering:blastbrick",
+      dependencies: ["0200000001D60000"],
+      rewards: [
+        {
+          id: "0400000001D80000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001D90000",
+      title: "Alloy Kiln",
+      x: -4,
+      y: 1.67,
+      tasks: [
+        {
+          id: "0300000001D90000",
+          type: "item",
+          item: "immersiveengineering:alloybrick",
+          count: 8
+        }
+      ],
+      description: ["The Alloy Kiln is an early-game way to make alloys."],
+      icon: "immersiveengineering:alloybrick",
+      dependencies: ["0200000001D50000"],
+      rewards: [
+        {
+          id: "0400000001D90000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001DA0000",
+      title: "Water Wheel",
+      x: -2.33,
+      y: 5.67,
+      tasks: [
+        {
+          id: "0300000001DA0000",
+          type: "item",
+          item: "immersiveengineering:watermill"
+        }
+      ],
+      description: ["Early game power."],
+      icon: "immersiveengineering:watermill",
+      dependencies: ["0200000001DE0000"],
+      rewards: [
+        {
+          id: "0400000001DA0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001DB0000",
+      title: "Engineer's Workbench",
+      x: -0.67,
+      y: 1.67,
+      tasks: [
+        {
+          id: "0300000001DB0000",
+          type: "item",
+          item: "immersiveengineering:workbench"
+        }
+      ],
+      description: ["The Engineer's Workbench lets you craft some things with a discount, if you have the recipe."],
+      icon: "immersiveengineering:workbench",
+      dependencies: ["0200000001D70000"],
+      rewards: [
+        {
+          id: "0400000001DB0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001DC0000",
+      title: "Windmill",
+      x: -0.67,
+      y: 5.67,
+      tasks: [
+        {
+          id: "0300000001DC0000",
+          type: "item",
+          item: "immersiveengineering:windmill"
+        }
+      ],
+      description: ["Early game power."],
+      icon: "immersiveengineering:windmill",
+      dependencies: ["0200000001DE0000"],
+      rewards: [
+        {
+          id: "0400000001DC0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001DD0000",
+      title: "Improved Blast Furnace",
+      x: -0.67,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000001DD0000",
+          type: "item",
+          item: "immersiveengineering:blastbrick_reinforced",
+          count: 27
+        },
+        {
+          id: "0300000001DD0001",
+          type: "item",
+          item: "immersiveengineering:blastfurnace_preheater",
+          count: 2
+        }
+      ],
+      description: ["A better way to make steel."],
+      icon: "immersiveengineering:blastbrick_reinforced",
+      dependencies: ["0200000001D80000"],
+      rewards: [
+        {
+          id: "0400000001DD0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001DE0000",
+      title: "Kinetic Dynamo",
+      x: -2.33,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000001DE0000",
+          type: "item",
+          item: "immersiveengineering:dynamo"
+        }
+      ],
+      description: ["The Kinetic Dynamo produces power, when a Windmill or Watermill is attached to it, and running."],
+      icon: "immersiveengineering:dynamo",
+      dependencies: ["0200000001D70000"],
+      rewards: [
+        {
+          id: "0400000001DE0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002970000",
+      title: "Thermoelectric Generator",
+      x: -4,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000002970000",
+          type: "item",
+          item: "immersiveengineering:thermoelectric_generator"
+        },
+        {
+          id: "0300000002970001",
+          type: "item",
+          item: "minecraft:lava_bucket"
+        },
+        {
+          id: "0300000002970002",
+          type: "item",
+          item: "minecraft:ice"
+        }
+      ],
+      description: ["The Thermoelectric Generator passively produces power, when a hot and a cold block is adjacent to it, on opposite sides. You can use up to 3 hot and 3 cold blocks per Thermoelectric Generator, and it will increase the power generated threefold.", "", "Check the Engineer's Manual to see which blocks are valid."],
+      icon: "immersiveengineering:thermoelectric_generator",
+      dependencies: ["0200000001D90000"],
+      rewards: [
+        {
+          id: "0400000002970000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002980000",
+      title: "Redstone Engineering Block.",
+      x: 1,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000002980000",
+          type: "item",
+          item: "immersiveengineering:rs_engineering"
+        }
+      ],
+      description: ["This block is used for some Multiblock machines."],
+      icon: "immersiveengineering:rs_engineering",
+      dependencies: ["0200000001DD0000"],
+      rewards: [
+        {
+          id: "0400000002980000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002990000",
+      title: "Light Engineering Block",
+      x: 1,
+      y: 1.67,
+      tasks: [
+        {
+          id: "0300000002990000",
+          type: "item",
+          item: "immersiveengineering:light_engineering"
+        }
+      ],
+      description: ["This block is used for some Multiblock machines."],
+      icon: "immersiveengineering:light_engineering",
+      dependencies: ["0200000002980000"],
+      rewards: [
+        {
+          id: "0400000002990000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000029A0000",
+      title: "Heavy Engineering Block",
+      x: 1,
+      y: 3,
+      tasks: [
+        {
+          id: "03000000029A0000",
+          type: "item",
+          item: "immersiveengineering:heavy_engineering"
+        }
+      ],
+      description: ["This block is used for some Multiblock machines."],
+      icon: "immersiveengineering:heavy_engineering",
+      dependencies: ["0200000002990000"],
+      rewards: [
+        {
+          id: "04000000029A0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000029B0000",
+      title: "Generator Block",
+      x: 1,
+      y: 4.33,
+      tasks: [
+        {
+          id: "03000000029B0000",
+          type: "item",
+          item: "immersiveengineering:generator"
+        }
+      ],
+      description: ["This block is used for some Multiblock machines."],
+      icon: "immersiveengineering:generator",
+      dependencies: ["02000000029A0000"],
+      rewards: [
+        {
+          id: "04000000029B0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000029C0000",
+      title: "Radiator Block",
+      x: 1,
+      y: 5.67,
+      tasks: [
+        {
+          id: "03000000029C0000",
+          type: "item",
+          item: "immersiveengineering:radiator"
+        }
+      ],
+      description: ["This block is used for some Multiblock machines."],
+      icon: "immersiveengineering:radiator",
+      dependencies: ["02000000029B0000"],
+      rewards: [
+        {
+          id: "04000000029C0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000029D0000",
+      title: "Metal Press Molds",
+      x: -0.67,
+      y: 4.33,
+      tasks: [
+        {
+          id: "03000000029D0000",
+          type: "item",
+          item: "immersiveengineering:mold_plate"
+        },
+        {
+          id: "03000000029D0001",
+          type: "item",
+          item: "immersiveengineering:mold_gear"
+        },
+        {
+          id: "03000000029D0002",
+          type: "item",
+          item: "immersiveengineering:mold_rod"
+        },
+        {
+          id: "03000000029D0003",
+          type: "item",
+          item: "immersiveengineering:mold_wire"
+        }
+      ],
+      description: ["Metal Press Molds decide what the Metal Press should output."],
+      icon: "immersiveengineering:mold_plate",
+      dependencies: ["0200000002A30000"],
+      rewards: [
+        {
+          id: "04000000029D0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000029E0000",
+      title: "Projector",
+      x: 2.67,
+      y: 3,
+      tasks: [
+        {
+          id: "03000000029E0000",
+          type: "item",
+          item: "immersivepetroleum:projector"
+        }
+      ],
+      description: ["The Projector can display how multiblock structures are supposed to be built.", "", "Craft the Projector with an Engineer's Manual turned to the page of the machine you want to build, to set it."],
+      icon: "immersivepetroleum:projector",
+      dependencies: ["0200000002980000", "0200000002990000", "02000000029A0000", "02000000029B0000", "02000000029C0000"],
+      rewards: [
+        {
+          id: "04000000029E0000",
+          type: "random",
+          table_id: 360287970189705216
+        },
+        {
+          id: "04000000029E0001",
+          type: "random",
+          table_id: 360287970189705216
+        },
+        {
+          id: "04000000029E0002",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002A20000",
+      title: "External Heater",
+      x: -4,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000002A20000",
+          type: "item",
+          item: "immersiveengineering:furnace_heater"
+        }
+      ],
+      description: ["When supplied with power, the External Heater will power and increase speed of adjacent furnaces."],
+      icon: "immersiveengineering:furnace_heater",
+      dependencies: ["0200000002970000"],
+      rewards: [
+        {
+          id: "0400000002A20000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002A30000",
+      title: "Blueprints",
+      x: -0.67,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000002A30000",
+          type: "item",
+          item: "immersiveengineering:blueprint"
+        }
+      ],
+      description: ["Blueprints let you craft various recipes in the Engineer's Workbench."],
+      icon: "immersiveengineering:blueprint",
+      dependencies: ["0200000001DB0000"],
+      rewards: [
+        {
+          id: "0400000002A30000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002AC0000",
+      title: "LV Energy",
+      x: -5.67,
+      y: 1.67,
+      tasks: [
+        {
+          id: "0300000002AC0000",
+          type: "item",
+          item: "immersiveengineering:capacitor_lv"
+        },
+        {
+          id: "0300000002AC0001",
+          type: "item",
+          item: "immersiveengineering:wirecoil_copper"
+        },
+        {
+          id: "0300000002AC0002",
+          type: "item",
+          item: "immersiveengineering:connector_lv"
+        },
+        {
+          id: "0300000002AC0003",
+          type: "item",
+          item: "immersiveengineering:connector_lv_relay"
+        }
+      ],
+      description: ["LV, or Low Voltage, is the lowest power transfer rate in Immersive Engineering. In this pack, it's 2048 RF/t, per connection."],
+      icon: "immersiveengineering:capacitor_lv",
+      dependencies: ["0200000001D50000"],
+      rewards: [
+        {
+          id: "0400000002AC0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002AD0000",
+      title: "MV Energy",
+      x: -5.67,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000002AD0000",
+          type: "item",
+          item: "immersiveengineering:capacitor_mv"
+        },
+        {
+          id: "0300000002AD0001",
+          type: "item",
+          item: "immersiveengineering:wirecoil_electrum"
+        },
+        {
+          id: "0300000002AD0002",
+          type: "item",
+          item: "immersiveengineering:connector_mv"
+        },
+        {
+          id: "0300000002AD0003",
+          type: "item",
+          item: "immersiveengineering:connector_mv_relay"
+        }
+      ],
+      description: ["MV, Medium Voltage, can transfer up to 8192 RF/t, per connection."],
+      icon: "immersiveengineering:capacitor_mv",
+      dependencies: ["0200000002AC0000"],
+      rewards: [
+        {
+          id: "0400000002AD0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002AE0000",
+      title: "HV Energy",
+      x: -5.67,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000002AE0000",
+          type: "item",
+          item: "immersiveengineering:capacitor_hv"
+        },
+        {
+          id: "0300000002AE0001",
+          type: "item",
+          item: "immersiveengineering:wirecoil_steel"
+        },
+        {
+          id: "0300000002AE0002",
+          type: "item",
+          item: "immersiveengineering:connector_hv"
+        },
+        {
+          id: "0300000002AE0003",
+          type: "item",
+          item: "immersiveengineering:connector_hv_relay"
+        }
+      ],
+      description: ["HV, High Voltage, is the highest power transfer rate in Immersive Engineering. In this pack, it's 32768 RF/t, per connection."],
+      icon: "immersiveengineering:capacitor_hv",
+      dependencies: ["0200000002AD0000"],
+      rewards: [
+        {
+          id: "0400000002AE0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    }
+  ],
+  quest_links: [],
+  subtitle: ["Quests for Immersive Engineering. Authored by NillerMedDild."],
+  icon: "minecraft:book"
+}

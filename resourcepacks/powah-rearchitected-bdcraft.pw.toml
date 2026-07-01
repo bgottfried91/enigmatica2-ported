@@ -1,0 +1,13 @@
+name = "Powah! (Rearchitected) BDCraft"
+filename = "[32x] Powah! BDCraft - 1.20-1.21.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c930540ef69a43d9e72ce55534df95c625d58c13"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7631478
+project-id = 1463517

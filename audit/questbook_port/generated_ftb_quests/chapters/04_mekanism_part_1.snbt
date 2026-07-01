@@ -1,0 +1,1562 @@
+{
+  id: "0100000000040000",
+  group: "",
+  order_index: 0,
+  filename: "04_mekanism_part_1",
+  title: "Mekanism - Part 1",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      id: "02000000004B0000",
+      title: "All wired up",
+      x: 2,
+      y: 0,
+      tasks: [
+        {
+          id: "03000000004B0000",
+          type: "item",
+          item: "mekanism:basic_universal_cable",
+          count: 16
+        }
+      ],
+      description: ["Every machine needs power, but putting a generator next to every machine is not fun! Use the cables to transfer your power around!", "NOTE: The Universal Cables can have a lot of trouble connecting to non-Mekanism machines, so it is recommended to use other cables (like Thermal Expansion) for cross-mod machines."],
+      icon: "mekanism:basic_universal_cable",
+      dependencies: ["02000000004C0000"],
+      rewards: [
+        {
+          id: "04000000004B0000",
+          type: "item",
+          item: "mekanism:basic_universal_cable",
+          count: 8
+        }
+      ]
+    },
+    {
+      id: "02000000004C0000",
+      title: "Feel my power!",
+      x: 4,
+      y: 2,
+      tasks: [
+        {
+          id: "03000000004C0000",
+          type: "item",
+          item: "mekanismgenerators:heat_generator"
+        }
+      ],
+      description: ["Almost every machine in every mod needs power, and Mekanism is no different. Create a simple power generator, to feed your machines"],
+      icon: "mekanismgenerators:heat_generator",
+      dependencies: ["02000000005E0000"],
+      rewards: [
+        {
+          id: "04000000004C0000",
+          type: "item",
+          item: "minecraft:coal",
+          count: 16
+        }
+      ]
+    },
+    {
+      id: "02000000004D0000",
+      title: "Moving Time",
+      x: 0,
+      y: 6,
+      tasks: [
+        {
+          id: "03000000004D0000",
+          type: "item",
+          item: "mekanism:cardboard_box",
+          count: 5
+        }
+      ],
+      description: ["All these machines with settings and chests with lots of stuff, and you're moving base. If only there was something to help you out here..."],
+      icon: "mekanism:cardboard_box",
+      dependencies: ["02000000004E0000", "02000000004F0000"],
+      rewards: [
+        {
+          id: "04000000004D0000",
+          type: "item",
+          item: "mekanism:cardboard_box",
+          count: 5
+        }
+      ]
+    },
+    {
+      id: "02000000004E0000",
+      title: "Sag on wood",
+      x: 2,
+      y: 8,
+      tasks: [
+        {
+          id: "03000000004E0000",
+          type: "item",
+          item: "mekanism:precision_sawmill"
+        }
+      ],
+      description: ["The Precision Sawmill increases your Wood Planks output by 50%, for a bit of power. And it gives you its leftovers as well! So very kind of it"],
+      icon: "mekanism:precision_sawmill",
+      dependencies: ["0200000000580000"],
+      rewards: [
+        {
+          id: "04000000004E0000",
+          type: "item",
+          item: "minecraft:oak_log",
+          count: 8,
+          title: "Choice option: minecraft:oak_log"
+        },
+        {
+          id: "04000000004E0001",
+          type: "item",
+          item: "minecraft:spruce_log",
+          count: 8,
+          title: "Choice option: minecraft:spruce_log"
+        },
+        {
+          id: "04000000004E0002",
+          type: "item",
+          item: "minecraft:birch_log",
+          count: 8,
+          title: "Choice option: minecraft:birch_log"
+        },
+        {
+          id: "04000000004E0003",
+          type: "item",
+          item: "minecraft:jungle_log",
+          count: 8,
+          title: "Choice option: minecraft:jungle_log"
+        }
+      ]
+    },
+    {
+      id: "02000000004F0000",
+      title: "Misc Basic Items",
+      x: 2,
+      y: 4,
+      tasks: [
+        {
+          id: "03000000004F0000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["All the items that didn't quite fit in any other category or path"],
+      icon: "minecraft:paper",
+      dependencies: ["02000000005E0000"],
+      rewards: [
+        {
+          id: "04000000004F0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000500000",
+      title: "Flow like the river",
+      x: 5,
+      y: 10,
+      tasks: [
+        {
+          id: "0300000000500000",
+          type: "item",
+          item: "mekanism:advanced_universal_cable",
+          count: 16
+        }
+      ],
+      description: ["Need your fluids elsewhere? Or maybe in your machines?", "Fear no more, the Mechanical Pipes are here to save you!"],
+      icon: "mekanism:advanced_universal_cable",
+      dependencies: ["0200000000510000"],
+      rewards: [
+        {
+          id: "0400000000500000",
+          type: "item",
+          item: "mekanism:advanced_universal_cable",
+          count: 8
+        }
+      ]
+    },
+    {
+      id: "0200000000510000",
+      title: "*slurp*",
+      x: 4,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000000510000",
+          type: "item",
+          item: "mekanism:electric_pump"
+        }
+      ],
+      description: ["The fluid pump of Mekanism.", "Needs to be placed above a source block, and it will drain anything connected with that source block.", "Power input from behind. Output is above.", "The pump can be upgraded with a Filter, to get Heavy Water"],
+      icon: "mekanism:electric_pump",
+      dependencies: ["0200000000580000"],
+      rewards: [
+        {
+          id: "0400000000510000",
+          type: "item",
+          item: "minecraft:water_bucket",
+          count: 2
+        },
+        {
+          id: "0400000000510064",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 2,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000510065",
+          type: "item",
+          item: "mekanism:basic_control_circuit",
+          count: 2,
+          title: "Choice option: mekanism:basic_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000520000",
+      title: "Becoming Better",
+      x: 10,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000000520000",
+          type: "item",
+          item: "mekanism:basic_universal_cable",
+          count: 16
+        },
+        {
+          id: "0300000000520001",
+          type: "item",
+          item: "mekanism:basic_energy_cube"
+        }
+      ],
+      description: ["With better power generation, comes better wires and storage. Upgrade your old wires and storage, and step up your power game! Also upgrade your other pipes for items/fluids/gasses"],
+      icon: "mekanism:basic_universal_cable",
+      dependencies: ["0200000000530000"],
+      rewards: [
+        {
+          id: "0400000000520000",
+          type: "item",
+          item: "mekanism:basic_universal_cable",
+          count: 8
+        }
+      ]
+    },
+    {
+      id: "0200000000530000",
+      title: "The Advanced",
+      x: 12,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000000530000",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 32
+        },
+        {
+          id: "0300000000530001",
+          type: "item",
+          item: "mekanism:advanced_control_circuit",
+          count: 16
+        }
+      ],
+      description: ["You have now gotten the basics of Mekanism, and is ready to step up your game a bit"],
+      icon: "mekanism:advanced_control_circuit",
+      rewards: [
+        {
+          id: "0400000000530000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000540000",
+      title: "Holding the ocean",
+      x: 4,
+      y: 10,
+      tasks: [
+        {
+          id: "0300000000540000",
+          type: "item",
+          item: "mekanism:basic_fluid_tank"
+        }
+      ],
+      description: ["Basic fluid storage. Will keep its contents when broken. Can input or output from every side (not both at once)."],
+      icon: "mekanism:basic_fluid_tank",
+      dependencies: ["0200000000510000"],
+      rewards: [
+        {
+          id: "0400000000540000",
+          type: "item",
+          item: "minecraft:water_bucket"
+        }
+      ]
+    },
+    {
+      id: "0200000000550000",
+      title: "A slight breeze",
+      x: 10,
+      y: 5,
+      tasks: [
+        {
+          id: "0300000000550000",
+          type: "item",
+          item: "mekanismgenerators:wind_generator"
+        }
+      ],
+      description: ["Passive power generation. Who doesn't like passive power generation? Make sure to put this up high, where the wind is windier!", "", "NOTE: The Wind Generator's output has been nerfed in the Enigmatica modpacks."],
+      icon: "mekanismgenerators:wind_generator",
+      dependencies: ["0200000000530000"],
+      rewards: [
+        {
+          id: "0400000000550000",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 4,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000550001",
+          type: "item",
+          item: "mekanism:advanced_control_circuit",
+          count: 3,
+          title: "Choice option: mekanism:advanced_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000560000",
+      title: "Automating the Machines",
+      x: 6,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000000560000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["When looking in a machine interface, you will see Side Config in the top left.", "In the Side Config, you can configure each side to Input or Output (or Extra/Power/None). To automate the machine with other machines/chests, you need to set Auto-Eject to On, by clicking the \"A\" in the top right. Around the interface, you can also select Config for Fluid/Gas/Power, depending on the machine.", "Mekanism has no In/Out setting, it's either In OR Out. Or None."],
+      icon: "mekanism:security_desk",
+      dependencies: ["02000000005E0000"],
+      rewards: [
+        {
+          id: "0400000000560000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000570000",
+      title: "Enriched Ores!",
+      x: 5,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000000570000",
+          type: "item",
+          item: "mekanism:enrichment_chamber"
+        }
+      ],
+      description: ["The Enrichment Chamber is Mekanisms ore doubler, but is also used in all 4 tiers of Mekanism ore processing (up to quintuple (5) output).", "The Enrichment Chamber can also increase the efficiency of infusion materials, and increase their effectivenes by x8. So for example, an enriched piece of Redstone will count as 8 pieces of Redstone in the Metallurgic Infuser"],
+      icon: "mekanism:enrichment_chamber",
+      dependencies: ["0200000000580000"],
+      rewards: [
+        {
+          id: "0400000000570000",
+          type: "item",
+          item: "mekanism:osmium_ore",
+          count: 8
+        },
+        {
+          id: "0400000000570064",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 2,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000570065",
+          type: "item",
+          item: "mekanism:basic_control_circuit",
+          count: 2,
+          title: "Choice option: mekanism:basic_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000580000",
+      title: "All the alloys!",
+      x: 4,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000000580000",
+          type: "item",
+          item: "mekanism:metallurgic_infuser"
+        }
+      ],
+      description: ["The Metallurgic Infuser is the most basic Mekanism machine, and you will need this machine a lot.", "The Metallurgic Infuser is used to create the most basic Alloys and Circuits, but also the most advanced alloys.", "The Infuse materials can be octuplied (times 8) in an Enrichment Chamber."],
+      icon: "mekanism:metallurgic_infuser",
+      dependencies: ["02000000005E0000"],
+      rewards: [
+        {
+          id: "0400000000580000",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 8
+        },
+        {
+          id: "0400000000580001",
+          type: "item",
+          item: "mekanism:basic_control_circuit",
+          count: 8
+        }
+      ]
+    },
+    {
+      id: "0200000000590000",
+      title: "Munch munch",
+      x: 12,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000000590000",
+          type: "item",
+          item: "mekanism:crusher"
+        }
+      ],
+      description: ["After ores have gone through the Purification Chamber, it needs to go through a Crusher. After the Crusher, it has to go through the Ore Doubling setup.", "Your total ore processing setup should now be Purification Chamber -> Crusher -> Enrichment Chamber -> Smelter"],
+      icon: "mekanism:crusher",
+      dependencies: ["02000000005A0000"],
+      rewards: [
+        {
+          id: "0400000000590000",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 8,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000590001",
+          type: "item",
+          item: "mekanism:advanced_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:advanced_control_circuit"
+        },
+        {
+          id: "0400000000590002",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 2,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "0400000000590003",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 2,
+          title: "Choice option: mekanism:upgrade_energy"
+        }
+      ]
+    },
+    {
+      id: "02000000005A0000",
+      title: "Ooh baby, a tripple!",
+      x: 14,
+      y: 2,
+      tasks: [
+        {
+          id: "03000000005A0000",
+          type: "item",
+          item: "mekanism:purification_chamber"
+        }
+      ],
+      description: ["You have gotten your Ore Doubling, but that is not enough!", "The Purification Chamber is the beginning of your ore trippling. The Purification Chamber will need Oxygen from the Electrolytical Separator."],
+      icon: "mekanism:purification_chamber",
+      dependencies: ["0200000000630000"],
+      rewards: [
+        {
+          id: "04000000005A0000",
+          type: "item",
+          item: "mekanism:osmium_ore",
+          count: 8
+        },
+        {
+          id: "04000000005A0064",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 2,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "04000000005A0065",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 2,
+          title: "Choice option: mekanism:upgrade_energy"
+        },
+        {
+          id: "04000000005A0066",
+          type: "item",
+          item: "mekanism:upgrade_gas",
+          count: 2,
+          title: "Choice option: mekanism:upgrade_gas"
+        },
+        {
+          id: "04000000005A0067",
+          type: "item",
+          item: "mekanism:advanced_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:advanced_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "02000000005B0000",
+      title: "Powered Furnace",
+      x: 6,
+      y: 8,
+      tasks: [
+        {
+          id: "03000000005B0000",
+          type: "item",
+          item: "mekanism:energized_smelter"
+        }
+      ],
+      description: ["A standard Furnace that runs on power. Can be used to smelt ore dust, cook food and anything you would expect a normal furnace to do."],
+      icon: "mekanism:energized_smelter",
+      dependencies: ["0200000000580000"],
+      rewards: [
+        {
+          id: "04000000005B0000",
+          type: "item",
+          item: "minecraft:porkchop",
+          count: 8
+        },
+        {
+          id: "04000000005B0064",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 2,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "04000000005B0065",
+          type: "item",
+          item: "mekanism:basic_control_circuit",
+          count: 2,
+          title: "Choice option: mekanism:basic_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "02000000005C0000",
+      title: "OreDicts? Isn't that just ores?",
+      x: -1,
+      y: 0,
+      tasks: [
+        {
+          id: "03000000005C0000",
+          type: "item",
+          item: "mekanism:dictionary"
+        }
+      ],
+      description: ["If you don't know how to find the OreDict for different items, the Dictionary is here to help you out.", "Simply right click any block in the world, and it will tell you its OreDict key (if it has any).", "For items that are not blocks, you can shift-right click with the Dictionary, and put items into its slot to get the OreDict key."],
+      icon: "mekanism:dictionary",
+      dependencies: ["02000000005D0000"],
+      rewards: [
+        {
+          id: "04000000005C0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000005D0000",
+      title: "Too many variations!",
+      x: 1,
+      y: 0,
+      tasks: [
+        {
+          id: "03000000005D0000",
+          type: "item",
+          item: "mekanism:oredictionificator"
+        }
+      ],
+      description: ["Found 5 different variations of fx. Copper Ingot from dungeon chests, that's filling up your storage space?", "The Oredictionificator can unify them into the same type of Copper Ingot. This is done by entering the oreDict key of the thing you want to convert, and selecting which variation you want (Smelt its ore, to see which one is the default).", "Check the next quest on how to find oreDicts"],
+      icon: "mekanism:oredictionificator",
+      dependencies: ["02000000004F0000"],
+      rewards: [
+        {
+          id: "04000000005D0000",
+          type: "random",
+          table_id: 360287970189705216
+        },
+        {
+          id: "04000000005D0064",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 2,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "04000000005D0065",
+          type: "item",
+          item: "mekanism:basic_control_circuit",
+          count: 2,
+          title: "Choice option: mekanism:basic_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "02000000005E0000",
+      title: "The Basics",
+      x: 4,
+      y: 4,
+      tasks: [
+        {
+          id: "03000000005E0000",
+          type: "item",
+          item: "minecraft:iron_ingot",
+          count: 16
+        },
+        {
+          id: "03000000005E0001",
+          type: "item",
+          item: "mekanism:ingot_osmium",
+          count: 16
+        },
+        {
+          id: "03000000005E0002",
+          type: "item",
+          item: "minecraft:redstone",
+          count: 16
+        }
+      ],
+      description: ["This is the starting point of Mekanism, where you will get your first basic machines.", "You will need some basic resources to get started"],
+      icon: "mekanism:basic_control_circuit",
+      rewards: [
+        {
+          id: "04000000005E0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000005F0000",
+      title: "Well armed!",
+      x: 2,
+      y: 6,
+      tasks: [
+        {
+          id: "03000000005F0000",
+          type: "item",
+          item: "mekanismtools:osmium_helmet"
+        },
+        {
+          id: "03000000005F0001",
+          type: "item",
+          item: "mekanismtools:osmium_chestplate"
+        },
+        {
+          id: "03000000005F0002",
+          type: "item",
+          item: "mekanismtools:osmium_leggings"
+        },
+        {
+          id: "03000000005F0003",
+          type: "item",
+          item: "mekanismtools:osmium_boots"
+        }
+      ],
+      description: ["What is a mod with custom ores without custom armor? Osmium armor is really durable, and is on a level between Iron and Diamond, which makes for a really good early game solution"],
+      icon: "mekanismtools:osmium_chestplate",
+      dependencies: ["02000000005E0000"],
+      rewards: [
+        {
+          id: "04000000005F0000",
+          type: "item",
+          item: "mekanismtools:osmium_pickaxe"
+        },
+        {
+          id: "04000000005F0001",
+          type: "item",
+          item: "mekanismtools:osmium_shovel"
+        },
+        {
+          id: "04000000005F0002",
+          type: "item",
+          item: "mekanismtools:osmium_hoe"
+        },
+        {
+          id: "04000000005F0003",
+          type: "item",
+          item: "mekanismtools:osmium_sword"
+        },
+        {
+          id: "04000000005F0004",
+          type: "item",
+          item: "mekanismtools:osmium_axe"
+        }
+      ]
+    },
+    {
+      id: "0200000000610000",
+      title: "Power Values",
+      x: 6,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000000610000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["Mekanism likes to use shortcuts when it comes to power display, rather than raw numbers, and they're not all obvious. So here they are:", "KRF = Thousand RF (1.000)", "MRF = Million RF      (1.000.000)", "GRF = Billion RF       (1.000.000.000)", "TRF = Trillion RF      (1.000.000.000.000)", "PRF = Quadtrillion RF (1.000.000.000.000.000)", "ERF = Quintillion RF    (1.000.000.000.000.000.000)", "ZRF = Sextillion RF     (1.000.000.000.000.000.000.000)", "So for a few examples: 1.6 KRF = 1.600 RF. 16.27 GRF = 16.270.000.000 RF, or as most mods likes to display it: 16.270M RF"],
+      icon: "mekanism:upgrade_energy",
+      dependencies: ["02000000005E0000"],
+      rewards: [
+        {
+          id: "0400000000610000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000620000",
+      title: "Storing the Gas",
+      x: 18,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000000620000",
+          type: "item",
+          item: "mekanism:basic_chemical_tank"
+        }
+      ],
+      description: ["With all that gas going about, you need a way to store it"],
+      icon: "mekanism:basic_chemical_tank",
+      dependencies: ["0200000000630000"],
+      rewards: [
+        {
+          id: "0400000000620000",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 4,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000620001",
+          type: "item",
+          item: "mekanism:advanced_control_circuit",
+          count: 3,
+          title: "Choice option: mekanism:advanced_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000630000",
+      title: "The Separation",
+      x: 16,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000000630000",
+          type: "item",
+          item: "mekanism:electrolytic_separator"
+        }
+      ],
+      description: ["Electrolytical Separator is one of your main gas-producing machines.", "It takes in liquid from the front, and outputs to the sides.", "Every separatable liquid will separate into 2 gasses, and which side they will export to is fixed, so you need to plan for that.", "You can look up the sides in JEI, by looking at the \"Item Uses\".", "You can also fuel Jet Packs and Gas Tanks directly in the Electrolytical Separator."],
+      icon: "mekanism:electrolytic_separator",
+      dependencies: ["0200000000530000"],
+      rewards: [
+        {
+          id: "0400000000630000",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 8,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000630001",
+          type: "item",
+          item: "mekanism:advanced_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:advanced_control_circuit"
+        },
+        {
+          id: "0400000000630002",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 2,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "0400000000630003",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 2,
+          title: "Choice option: mekanism:upgrade_energy"
+        }
+      ]
+    },
+    {
+      id: "0200000000640000",
+      title: "FIIIIIRRREEEEEE",
+      x: 16,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000000640000",
+          type: "item",
+          item: "mekanism:flamethrower"
+        }
+      ],
+      description: ["You know your mom always told you not to play with fire, but she can't stop you now!", "The Flamethrower will need Hydrogen from the Electrolytical Separator"],
+      icon: "mekanism:flamethrower",
+      dependencies: ["0200000000630000"],
+      rewards: [
+        {
+          id: "0400000000640000",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 4,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000640001",
+          type: "item",
+          item: "mekanism:advanced_control_circuit",
+          count: 3,
+          title: "Choice option: mekanism:advanced_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000650000",
+      title: "Smashing the power!",
+      x: 10,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000000650000",
+          type: "item",
+          item: "mekanism:crusher"
+        }
+      ],
+      description: ["As the machines progresses on, you may start to notice that your coal is disappearing, and start looking into other power options.", "If you have a good agriculture setup, with either wheat, or even sapling, there are ways to turn those into power.", "The Crusher can crush organic material into Bio Fuel, which can be used to power certain machines.", "Check the next quest for the Generator.", "", "I will recommend setting up some Bio Fuel, as its very useful for a bigger power source in Part 2"],
+      icon: "mekanism:crusher",
+      dependencies: ["0200000000530000"],
+      rewards: [
+        {
+          id: "0400000000650000",
+          type: "item",
+          item: "minecraft:apple",
+          count: 8
+        },
+        {
+          id: "0400000000650064",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 8,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000650065",
+          type: "item",
+          item: "mekanism:advanced_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:advanced_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000660000",
+      title: "The Power of Nature!",
+      x: 8,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000000660000",
+          type: "item",
+          item: "mekanismgenerators:bio_generator"
+        }
+      ],
+      description: ["Your Coal problems are now solved, when you can generate a bit of power with self-replenishing solutions.", "The Bio-Generator uses Bio Fuel from the Crusher to generate some power. With automatic farming from other mods, you can have a very good, self-sufficient power source early on."],
+      icon: "mekanismgenerators:bio_generator",
+      dependencies: ["0200000000650000"],
+      rewards: [
+        {
+          id: "0400000000660000",
+          type: "item",
+          item: "mekanism:bio_fuel",
+          count: 8
+        },
+        {
+          id: "0400000000660064",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 8,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000660065",
+          type: "item",
+          item: "mekanism:advanced_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:advanced_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000670000",
+      title: "The higher you fly..",
+      x: 18,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000000670000",
+          type: "item",
+          item: "mekanism:jetpack"
+        }
+      ],
+      description: ["Flight! Well, it's not true flight, like creative flight, but it's flight nontheless!", "The Jetpack requires Hydrogen to fly, which you get from the Electrolytical Separator. You can fuel it directly in the Electrolytical Separator, or from a Gas Tank.", "The Jetpack also has an Armored version."],
+      icon: "mekanism:jetpack",
+      dependencies: ["0200000000630000"],
+      rewards: [
+        {
+          id: "0400000000670000",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 4,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000670001",
+          type: "item",
+          item: "mekanism:advanced_control_circuit",
+          count: 3,
+          title: "Choice option: mekanism:advanced_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000680000",
+      title: ".. the harder you fall",
+      x: 20,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000000680000",
+          type: "item",
+          item: "mekanism:free_runners"
+        }
+      ],
+      description: ["Free Runners will absorb all of your fall damage, you could get from flying a tad too high with your Jetpack. They do require power to absorb the damage though.", "You power them by standing on a powered Charge Pad"],
+      icon: "mekanism:free_runners",
+      dependencies: ["0200000000670000"],
+      rewards: [
+        {
+          id: "0400000000680000",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 4,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000680001",
+          type: "item",
+          item: "mekanism:advanced_control_circuit",
+          count: 3,
+          title: "Choice option: mekanism:advanced_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000690000",
+      title: "Configuring the Pipes!",
+      x: 12,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000000690000",
+          type: "item",
+          item: "mekanism:configurator"
+        }
+      ],
+      description: ["The Configurator is the Wrench of Mekanism, and has a few functions. Lets start off with wires.", "Right clicking on a Wire/Pipe/Tube, will turn its Redstone Sensitivity on or off. While on, the cable will be disabled while gaining a redstone signal. If you shift-right click on the connecting points, you can change the wires side to be either PUSH, PULL, NONE or NORMAL. For cross-mod interaction, it can often be a requirement for it to be set to PULL to accept items.", "For Logistical Pipes, it can set a color to the pipe when you shift-right click on its center, which is used to direct items a certain direction with the Logistical Sorter.", "The Configurator can also config the sides of machines, without having to enter the GUI. By default, it will change side config for Item Transfers, however you can change its function with its default keybind M (You may need to rebind that), in case a machine has more than 1 type of in/output (like Items, Fluids, Gas, Heat, Energy). But, if a machine only has fx Fluid Output, it will always config the fluid output, no matter the current function.", "The Configurator also has a Wrench function, which can rotate machines on right click and break machines and wires on shift-right click. Again, press M (or your rebound key) to get to it."],
+      icon: "mekanism:configurator",
+      dependencies: ["0200000000530000"],
+      rewards: [
+        {
+          id: "0400000000690000",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 4,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000690001",
+          type: "item",
+          item: "mekanism:advanced_control_circuit",
+          count: 3,
+          title: "Choice option: mekanism:advanced_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "02000000006A0000",
+      title: "Another state of matter!",
+      x: 18,
+      y: 4,
+      tasks: [
+        {
+          id: "03000000006A0000",
+          type: "item",
+          item: "mekanism:elite_universal_cable",
+          count: 16
+        }
+      ],
+      description: ["With all that gas going about, you need a way to safely transport it"],
+      icon: "mekanism:elite_universal_cable",
+      dependencies: ["0200000000630000"],
+      rewards: [
+        {
+          id: "04000000006A0000",
+          type: "item",
+          item: "mekanism:elite_universal_cable",
+          count: 8
+        }
+      ]
+    },
+    {
+      id: "02000000006B0000",
+      title: "Harder, Better, Faster, Stronger",
+      x: 11,
+      y: 2,
+      tasks: [
+        {
+          id: "03000000006B0000",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 8
+        },
+        {
+          id: "03000000006B0001",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 8
+        },
+        {
+          id: "03000000006B0002",
+          type: "item",
+          item: "mekanism:upgrade_gas",
+          count: 8
+        }
+      ],
+      description: ["Feeling your machines are running slow? Good thing there's upgrades for those things! Upgrades stack up to 8 times (Muffling stacks to 4, with 4 being completely silent)"],
+      icon: "mekanism:upgrade_speed",
+      dependencies: ["0200000000530000"],
+      rewards: [
+        {
+          id: "04000000006B0000",
+          type: "item",
+          item: "mekanism:upgrade_muffling",
+          count: 4
+        }
+      ]
+    },
+    {
+      id: "02000000006C0000",
+      title: "Doing the job for you",
+      x: 0,
+      y: 2,
+      tasks: [
+        {
+          id: "03000000006C0000",
+          type: "item",
+          item: "mekanism:formulaic_assemblicator"
+        }
+      ],
+      description: ["Very simple RF powered auto-crafter. Materials can be inserted manually or through pipes into its internal buffer.", "For the Formulaic Assemblicator to craft anything, it needs a Crafting Formula inserted into it (so yes, it can only craft 1 thing at a time).", "You set up the recipe in the Formulic Assemblicator, put in a Crafting Formula and Encode the pattern.", "You can now use it to craft that item, either automatically, or when you tell it to."],
+      icon: "mekanism:formulaic_assemblicator",
+      dependencies: ["02000000004F0000"],
+      rewards: [
+        {
+          id: "04000000006C0000",
+          type: "item",
+          item: "mekanism:crafting_formula"
+        },
+        {
+          id: "04000000006C0064",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 2,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "04000000006C0065",
+          type: "item",
+          item: "mekanism:basic_control_circuit",
+          count: 2,
+          title: "Choice option: mekanism:basic_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "02000000006D0000",
+      title: "Better than batteries",
+      x: 6,
+      y: 0,
+      tasks: [
+        {
+          id: "03000000006D0000",
+          type: "item",
+          item: "mekanism:basic_energy_cube"
+        }
+      ],
+      description: ["The basic energy storage for Mekanism"],
+      icon: "mekanism:basic_energy_cube",
+      dependencies: ["02000000004C0000"],
+      rewards: [
+        {
+          id: "04000000006D0000",
+          type: "item",
+          item: "minecraft:coal",
+          count: 16
+        }
+      ]
+    },
+    {
+      id: "02000000006F0000",
+      title: "It is very personal, kid.",
+      x: 0,
+      y: 1,
+      tasks: [
+        {
+          id: "03000000006F0000",
+          type: "item",
+          item: "mekanism:personal_chest"
+        }
+      ],
+      description: ["A locked chest or a backpack? Why not both.", "This chest is a double-chest, that can be placed on the ground, or opened while it's in your hand. Very handy for long trips"],
+      icon: "mekanism:personal_chest",
+      dependencies: ["02000000004F0000"],
+      rewards: [
+        {
+          id: "04000000006F0000",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 2,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "04000000006F0001",
+          type: "item",
+          item: "mekanism:basic_control_circuit",
+          count: 2,
+          title: "Choice option: mekanism:basic_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000700000",
+      title: "Copy/Paste",
+      x: 6,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000000700000",
+          type: "item",
+          item: "mekanism:configuration_card"
+        }
+      ],
+      description: ["Tired of setting up the same configuration on every machine, because they happen to have the same input/output?", "With the Configuration Card, you can shift-right click on a Machine to copy its settings (all of them), and then right click on a Machine to paste them.", "This only works on machines of the same type."],
+      icon: "mekanism:configuration_card",
+      dependencies: ["0200000000580000"],
+      rewards: [
+        {
+          id: "0400000000700000",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 2,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000700001",
+          type: "item",
+          item: "mekanism:basic_control_circuit",
+          count: 2,
+          title: "Choice option: mekanism:basic_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000710000",
+      title: "*buurp*",
+      x: 3,
+      y: 10,
+      tasks: [
+        {
+          id: "0300000000710000",
+          type: "item",
+          item: "mekanism:fluidic_plenisher"
+        }
+      ],
+      description: ["Now that you've drained up a lot of water, maybe you want to fill up a lake? Lets get going shall we?", "It will fill up everything below it with a source block, with the liquid you give it.", "Power goes in from behind, fluid inputs from above (recommending pipes)..", "", "Note: The Fluidic Plenisher can check and place a maximum of 4000 souce blocks, before it stops, so it needs to be moved after that."],
+      icon: "mekanism:fluidic_plenisher",
+      dependencies: ["0200000000510000"],
+      rewards: [
+        {
+          id: "0400000000710000",
+          type: "item",
+          item: "minecraft:water_bucket"
+        },
+        {
+          id: "0400000000710064",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 2,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000710065",
+          type: "item",
+          item: "mekanism:basic_control_circuit",
+          count: 2,
+          title: "Choice option: mekanism:basic_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000720000",
+      title: "Time for a dive",
+      x: 16,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000000720000",
+          type: "item",
+          item: "mekanism:scuba_mask"
+        },
+        {
+          id: "0300000000720001",
+          type: "item",
+          item: "mekanism:scuba_tank"
+        }
+      ],
+      description: ["Ever wanted to take a long swim?", "With the Diving Gear, you can go on for ages! Given you don't run out of Oxygen that is - or get blasted by a Guardian.", "This diving gear will need Oxygen from an Electrolytical Separator"],
+      icon: "mekanism:scuba_tank",
+      dependencies: ["0200000000630000"],
+      rewards: [
+        {
+          id: "0400000000720000",
+          type: "item",
+          item: "minecraft:potion"
+        },
+        {
+          id: "0400000000720064",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 4,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000720065",
+          type: "item",
+          item: "mekanism:advanced_control_circuit",
+          count: 3,
+          title: "Choice option: mekanism:advanced_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000730000",
+      title: "Leftovers",
+      x: 14,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000000730000",
+          type: "item",
+          item: "mekanism:gauge_dropper"
+        }
+      ],
+      description: ["Ever had some leftover gas/liquid in a machine that you can't remove because you can't pull it out?", "The Gauge Dropper can remove gas/liquid from any Mekanism machines input or output slot, and either insert it into another input or output slot, or void it.", "Simply click the Gas/Liquid with the Gauge Dropper in the machine interface (like you're about to Drag-n'-drop it) to extract it, and right click to insert it (given it is in the correct input/output slot).", "You can also Shift-Click with it on a gas/liquid to void all its stored contents in that slot, or shift-right click with it to void its own contents."],
+      icon: "mekanism:gauge_dropper",
+      dependencies: ["0200000000630000"],
+      rewards: [
+        {
+          id: "0400000000730000",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 4,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000730001",
+          type: "item",
+          item: "mekanism:basic_control_circuit",
+          count: 3,
+          title: "Choice option: mekanism:basic_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000740000",
+      title: "Yet Another Better Barrels Attempt",
+      x: 0,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000000740000",
+          type: "item",
+          item: "mekanism:basic_bin"
+        }
+      ],
+      description: ["Got too many stacks of Cobblestone, and big chests are just kind of meh?", "The Bins can only store 1 kind of item at a time, but they can store an absurd amount of that 1 item. And it can be upgraded too, to store even more!"],
+      icon: "mekanism:basic_bin",
+      dependencies: ["02000000004F0000"],
+      rewards: [
+        {
+          id: "0400000000740000",
+          type: "item",
+          item: "mekanism:advanced_tier_installer"
+        }
+      ]
+    },
+    {
+      id: "0200000000750000",
+      title: "But can jet fuel melt it?",
+      x: 3,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000000750000",
+          type: "item",
+          item: "thermal:obsidian_glass",
+          count: 8
+        }
+      ],
+      description: ["Steel is an important part of Mekanism.", "Steel Blend is created in the Metallurgic Infuser with 1 Iron and 2 Coal. Infuse the Iron with 1 Coal to get Enriched Iron, then infuse that with Coal again, to get Steel Blend.", "Smelt that Steel Blend to get Steel Ingots"],
+      icon: "thermal:obsidian_glass",
+      dependencies: ["0200000000580000"],
+      rewards: [
+        {
+          id: "0400000000750000",
+          type: "item",
+          item: "mekanism:steel_casing"
+        },
+        {
+          id: "0400000000750064",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 2,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000750065",
+          type: "item",
+          item: "mekanism:basic_control_circuit",
+          count: 2,
+          title: "Choice option: mekanism:basic_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000760000",
+      title: "You go there, you go there..",
+      x: 10,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000000760000",
+          type: "item",
+          item: "mekanism:logistical_sorter"
+        }
+      ],
+      description: ["The Logistical Sorter and Logistical Pipes are your main item transfer method in Mekanism.", "The Logistical Sorter has options to output specific items to specific colors channels, or if you want it to output everything, enable Auto-Eject.", "RR (Round Robin) will split all items evenly to multiple destinations.", "You can also set up Filters for specific items (either Specific, OreDict, Material or Mod ID).", "For Specific, you have to drag an item into its item slot.", "For OreDict, you either drag an item, or write the OreDict key of the items you want to move. You can also specify it to take fx everything that has \"ore\" in its OreDict (like every Ore does), by writing the Key like \"ore*\". Also works for stuff like \"ingot*\", \"chest*\" etc.", "For Material, you place an item, and it will extract all items related to the material (ie Oak Planks Material will extract stuff like Oak Chest, Oak Slabs, Oak Stairs etc). NOTE: Only placable blocks can be used as Material.", "For ModID, you have to specify the name of the mod, by going with its ID Name (like \"minecraft\" for vanilla, \"thermalexpansion\" for Thermal Expansion, and so on).", "Each filter can be assigned to a Color. Setting colors will be covered in the Configurator quest"],
+      icon: "mekanism:logistical_sorter",
+      dependencies: ["0200000000530000"],
+      rewards: [
+        {
+          id: "0400000000760000",
+          type: "item",
+          item: "mekanism:ultimate_universal_cable",
+          count: 8
+        },
+        {
+          id: "0400000000760064",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 8,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000760065",
+          type: "item",
+          item: "mekanism:advanced_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:advanced_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000770000",
+      title: "Dayer Light",
+      x: 8,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000000770000",
+          type: "item",
+          item: "mekanismgenerators:advanced_solar_generator"
+        }
+      ],
+      description: ["Harnesing the power of the sun!.. in an advanced way!"],
+      icon: "mekanismgenerators:advanced_solar_generator",
+      dependencies: ["0200000000780000"],
+      rewards: [
+        {
+          id: "0400000000770000",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 8,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000770001",
+          type: "item",
+          item: "mekanism:advanced_control_circuit",
+          count: 6,
+          title: "Choice option: mekanism:advanced_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000780000",
+      title: "Day Light",
+      x: 10,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000000780000",
+          type: "item",
+          item: "mekanismgenerators:solar_generator"
+        }
+      ],
+      description: ["Harnesing the power of the sun!"],
+      icon: "mekanismgenerators:solar_generator",
+      dependencies: ["0200000000530000"],
+      rewards: [
+        {
+          id: "0400000000780000",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 4,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "0400000000780001",
+          type: "item",
+          item: "mekanism:advanced_control_circuit",
+          count: 3,
+          title: "Choice option: mekanism:advanced_control_circuit"
+        }
+      ]
+    },
+    {
+      id: "0200000000790000",
+      title: "My First Factory",
+      x: 11,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000000790000",
+          type: "item",
+          item: "mekanism:basic_smelting_factory"
+        }
+      ],
+      description: ["Why have 3 machines when you can just have 1?", "Basic Factories have 3 processing slots, so it can run 3 operations at once, but also with a higher power cost.", "", "The Crafting Task will show Basic Smelting Factory to be required, but any Basic Factory will do"],
+      icon: "mekanism:basic_smelting_factory",
+      dependencies: ["0200000000530000"],
+      rewards: [
+        {
+          id: "0400000000790000",
+          type: "item",
+          item: "mekanism:basic_tier_installer"
+        },
+        {
+          id: "0400000000790064",
+          type: "item",
+          item: "mekanism:upgrade_speed",
+          count: 2,
+          title: "Choice option: mekanism:upgrade_speed"
+        },
+        {
+          id: "0400000000790065",
+          type: "item",
+          item: "mekanism:upgrade_energy",
+          count: 2,
+          title: "Choice option: mekanism:upgrade_energy"
+        },
+        {
+          id: "0400000000790066",
+          type: "item",
+          item: "mekanism:upgrade_gas",
+          count: 2,
+          title: "Choice option: mekanism:upgrade_gas"
+        },
+        {
+          id: "0400000000790067",
+          type: "item",
+          item: "mekanism:basic_tier_installer",
+          title: "Choice option: mekanism:basic_tier_installer"
+        }
+      ]
+    },
+    {
+      id: "02000000007A0000",
+      title: "Power Stalk",
+      x: 4,
+      y: 0,
+      tasks: [
+        {
+          id: "03000000007A0000",
+          type: "item",
+          item: "mekanism:network_reader"
+        }
+      ],
+      description: ["Ever wondered exactly how much power flows through your wires? How much fluid or gas goes through the pipes? Use this to take a little read on the network!"],
+      icon: "mekanism:network_reader",
+      dependencies: ["02000000004B0000"],
+      rewards: [
+        {
+          id: "04000000007A0000",
+          type: "item",
+          item: "mekanism:alloy_infused",
+          count: 2,
+          title: "Choice option: mekanism:alloy_infused"
+        },
+        {
+          id: "04000000007A0001",
+          type: "item",
+          item: "mekanism:basic_control_circuit",
+          count: 2,
+          title: "Choice option: mekanism:basic_control_circuit"
+        }
+      ]
+    }
+  ],
+  quest_links: [],
+  subtitle: ["Mekanism is a very technical mod that includes everything somebody could ever need.", "Simple machine setups for those new to the whole Tech side, with easy ore processing, lots of misc items and low RF generation (~60rf/t), and really complicated machine setups for the maximum profit, like complicated ore processing (upto x5 processing), machine automation and really high RF generation (200k+ rf/t).", "Mekanism is a big mod, so the quests will be split into 2 parts. This is Part 1, that includes the Basic and Advanced parts of Mekanism.", "", "Disclaimer: You are expected to know how to look up recipes in JEI (Just Enough Items).", "", "", "Authored by Discomanco."],
+  icon: "minecraft:book"
+}

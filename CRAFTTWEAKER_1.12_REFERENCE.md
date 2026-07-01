@@ -1,0 +1,6434 @@
+# Enigmatica 2 CraftTweaker 1.12.2 Item Reference
+
+Reference for mapping 1.12.2 items to 1.20.1 equivalents during porting.
+Generated from: `/ct blocks`, `/ct oredict`, `/ct recipes` commands.
+
+## Usage
+When you encounter an old 1.12 item ID you can't identify, search this file for the mod namespace and item name.
+
+## Registered Blocks (by Mod)
+
+### actuallyadditions
+- `actuallyadditions:block_atomic_reconstructor` — Atomic Reconstructor
+- `actuallyadditions:block_battery_box` — Battery Box
+- `actuallyadditions:block_bio_reactor` — Bio Reactor
+- `actuallyadditions:block_black_lotus` — Black Lotus
+- `actuallyadditions:block_breaker` — Auto-Breaker
+- `actuallyadditions:block_canola_oil` — Canola Oil
+- `actuallyadditions:block_canola_press` — Canola Press
+- `actuallyadditions:block_canola` — Canola Plant
+- `actuallyadditions:block_chiseled_quartz_slab` — Chiseled Black Quartz Slab
+- `actuallyadditions:block_chiseled_quartz_stair` — Chiseled Black Quartz Stairs
+- `actuallyadditions:block_chiseled_quartz_wall` — Chiseled Black Quartz Wall
+- `actuallyadditions:block_coal_generator` — Coal Generator
+- `actuallyadditions:block_coffee_machine` — Coffee Maker
+- `actuallyadditions:block_coffee` — Coffee Plant
+- `actuallyadditions:block_colored_lamp_on` — tile.actuallyadditions.block_colored_lamp_on.name
+- `actuallyadditions:block_colored_lamp` — tile.actuallyadditions.block_colored_lamp.name
+- `actuallyadditions:block_compost` — Compost
+- `actuallyadditions:block_crystal_cluster_coal` — Black Crystal Cluster
+- `actuallyadditions:block_crystal_cluster_diamond` — Light Blue Crystal Cluster
+- `actuallyadditions:block_crystal_cluster_emerald` — Green Crystal Cluster
+- `actuallyadditions:block_crystal_cluster_iron` — White Crystal Cluster
+- `actuallyadditions:block_crystal_cluster_lapis` — Blue Crystal Cluster
+- `actuallyadditions:block_crystal_cluster_redstone` — Red Crystal Cluster
+- `actuallyadditions:block_crystal_empowered` — tile.actuallyadditions.block_crystal_empowered.name
+- `actuallyadditions:block_crystal_oil` — Crystallized Oil
+- `actuallyadditions:block_crystal` — tile.actuallyadditions.block_crystal.name
+- `actuallyadditions:block_directional_breaker` — Long-Range Breaker
+- `actuallyadditions:block_display_stand` — Display Stand
+- `actuallyadditions:block_dropper` — Automatic Precision Dropper
+- `actuallyadditions:block_empowered_oil` — Empowered Oil
+- `actuallyadditions:block_empowerer` — Empowerer
+- `actuallyadditions:block_energizer` — Energizer
+- `actuallyadditions:block_enervator` — Enervator
+- `actuallyadditions:block_farmer` — Farmer
+- `actuallyadditions:block_feeder` — Automatic Feeder
+- `actuallyadditions:block_fermenting_barrel` — Fermenting Barrel
+- `actuallyadditions:block_firework_box` — Firework Box
+- `actuallyadditions:block_fishing_net` — Fishing Net
+- `actuallyadditions:block_flax` — Flax Plant
+- `actuallyadditions:block_fluid_collector` — Fluid Collector
+- `actuallyadditions:block_fluid_placer` — Fluid Placer
+- `actuallyadditions:block_furnace_double` — Powered Furnace
+- `actuallyadditions:block_furnace_solar` — Solar Panel
+- `actuallyadditions:block_giant_chest_large` — Large Storage Crate
+- `actuallyadditions:block_giant_chest_medium` — Medium Storage Crate
+- `actuallyadditions:block_giant_chest` — Small Storage Crate
+- `actuallyadditions:block_greenhouse_glass` — Greenhouse Glass
+- `actuallyadditions:block_grinder_double` — Double Crusher
+- `actuallyadditions:block_grinder` — Crusher
+- `actuallyadditions:block_heat_collector` — Heat Collector
+- `actuallyadditions:block_inputter_advanced` — Advanced ESD
+- `actuallyadditions:block_inputter` — ESD
+- `actuallyadditions:block_item_repairer` — Item Repairer
+- `actuallyadditions:block_item_viewer_hopping` — Hopping Item Interface
+- `actuallyadditions:block_item_viewer` — Item Interface
+- `actuallyadditions:block_lamp_powerer` — Lamp Controller
+- `actuallyadditions:block_laser_relay_advanced` — Advanced Energy Laser Relay
+- `actuallyadditions:block_laser_relay_extreme` — Extreme Energy Laser Relay
+- `actuallyadditions:block_laser_relay_fluids` — Fluid Laser Relay
+- `actuallyadditions:block_laser_relay_item_whitelist` — Advanced Item Laser Relay
+- `actuallyadditions:block_laser_relay_item` — Item Laser Relay
+- `actuallyadditions:block_laser_relay` — Energy Laser Relay
+- `actuallyadditions:block_lava_factory_controller` — Lava Factory Controller
+- `actuallyadditions:block_leaf_generator` — Leaf-Eating Generator
+- `actuallyadditions:block_miner` — Vertical Digger
+- `actuallyadditions:block_misc` — tile.actuallyadditions.block_misc.name
+- `actuallyadditions:block_oil_generator` — Oil Generator
+- `actuallyadditions:block_phantom_booster` — Phantom Booster
+- `actuallyadditions:block_phantom_breaker` — Phantom Breaker
+- `actuallyadditions:block_phantom_energyface` — Phantom Energyface
+- `actuallyadditions:block_phantom_liquiface` — Phantom Liquiface
+- `actuallyadditions:block_phantom_placer` — Phantom Placer
+- `actuallyadditions:block_phantom_redstoneface` — Phantom Redstoneface
+- `actuallyadditions:block_phantomface` — Phantomface
+- `actuallyadditions:block_pillar_quartz_slab` — Black Quartz Pillar Slab
+- `actuallyadditions:block_pillar_quartz_stair` — Black Quartz Pillar Stairs
+- `actuallyadditions:block_pillar_quartz_wall` — Black Quartz Pillar Wall
+- `actuallyadditions:block_placer` — Auto-Placer
+- `actuallyadditions:block_player_interface` — Player Interface
+- `actuallyadditions:block_quartz_slab` — Black Quartz Slab
+- `actuallyadditions:block_quartz_stair` — Black Quartz Stairs
+- `actuallyadditions:block_quartz_wall` — Black Quartz Wall
+- `actuallyadditions:block_ranged_collector` — Ranged Collector
+- `actuallyadditions:block_refined_canola_oil` — Refined Canola Oil
+- `actuallyadditions:block_rice` — Rice Plant
+- `actuallyadditions:block_shock_suppressor` — Shock Absorber
+- `actuallyadditions:block_smiley_cloud` — Smiley Cloud
+- `actuallyadditions:block_testifi_bucks_green_fence` — Ethetic Green Wall
+- `actuallyadditions:block_testifi_bucks_green_slab` — Ethetic Green Slab
+- `actuallyadditions:block_testifi_bucks_green_stairs` — Ethetic Green Stairs
+- `actuallyadditions:block_testifi_bucks_green_wall` — Ethetic Green Block
+- `actuallyadditions:block_testifi_bucks_white_fence` — Ethetic Quartz Wall
+- `actuallyadditions:block_testifi_bucks_white_slab` — Ethetic Quartz Slab
+- `actuallyadditions:block_testifi_bucks_white_stairs` — Ethetic Quartz Stairs
+- `actuallyadditions:block_testifi_bucks_white_wall` — Ethetic Quartz
+- `actuallyadditions:block_tiny_torch` — Tiny Torch
+- `actuallyadditions:block_treasure_chest` — Treasure Chest
+- `actuallyadditions:block_wild` — tile.actuallyadditions.block_wild.name
+- `actuallyadditions:block_xp_solidifier` — Experience Solidifier
+
+### advancedrocketry
+- `advancedrocketry:advbipropellantrocketmotor` — Advanced Bipropellant Rocket Engine
+- `advancedrocketry:advrocketmotor` — Advanced Monopropellant Rocket Engine
+- `advancedrocketry:airlock_door` — item.smallAirlockDoor.name
+- `advancedrocketry:alienleaves` — Lightwood Leaves
+- `advancedrocketry:aliensapling` — Lightwood Sapling
+- `advancedrocketry:alienwood` — Lightwood Wood
+- `advancedrocketry:altitudecontroller` — Altitude Controller
+- `advancedrocketry:arcfurnace` — Electric Arc Furnace
+- `advancedrocketry:basalt` — Basalt
+- `advancedrocketry:beacon` — Beacon
+- `advancedrocketry:biomescanner` — Biome Scanner
+- `advancedrocketry:bipropellantfueltank` — Bipropellant Fuel Tank
+- `advancedrocketry:bipropellantrocketmotor` — Bipropellant Rocket Engine
+- `advancedrocketry:blackholegenerator` — Black Hole Generator
+- `advancedrocketry:blastbrick` — HeatProof Brick
+- `advancedrocketry:blocklens` — Lens
+- `advancedrocketry:blockpump` — Fluid Extractor
+- `advancedrocketry:centrifuge` — Essentia Centrifuge
+- `advancedrocketry:charcoallog` — Charcoal Log
+- `advancedrocketry:chemicalreactor` — Chemical Reactor
+- `advancedrocketry:circlelight` — Station Light
+- `advancedrocketry:concrete` — Concrete
+- `advancedrocketry:crystallizer` — Crystallizer
+- `advancedrocketry:crystal` — Crystallized Obsidian
+- `advancedrocketry:cuttingmachine` — Cutting Machine
+- `advancedrocketry:deployablerocketbuilder` — Unmanned Vehicle Assembler
+- `advancedrocketry:drill` — Drill
+- `advancedrocketry:electricmushroom` — Electric Mushroom
+- `advancedrocketry:electrolyser` — Electrolyser
+- `advancedrocketry:enrichedlavafluid` — Enriched Lava Block
+- `advancedrocketry:forcefieldprojector` — Force Field Projector
+- `advancedrocketry:forcefield` — Force Field
+- `advancedrocketry:fuelingstation` — Fueling station
+- `advancedrocketry:fueltank` — Monopropellant Fuel Tank
+- `advancedrocketry:geode` — Geode Block
+- `advancedrocketry:gravitycontroller` — Station Gravity Controller
+- `advancedrocketry:gravitymachine` — Area Gravity Controller
+- `advancedrocketry:guidancecomputer` — Guidance Computer
+- `advancedrocketry:hotturf` — Oxidized Ferric Sand
+- `advancedrocketry:hydrogenfluid` — Hydrogen
+- `advancedrocketry:intake` — Gas Intake
+- `advancedrocketry:landingfloat` — Landing Float
+- `advancedrocketry:landingpad` — Docking Pad
+- `advancedrocketry:lathe` — Lathe
+- `advancedrocketry:launchpad` — Launch Pad
+- `advancedrocketry:lightsource` — tile.lightSource.name
+- `advancedrocketry:liquidtank` — Pressurized Tank
+- `advancedrocketry:loader` — tile.loader.name
+- `advancedrocketry:metal0` — tile.metal.name
+- `advancedrocketry:microwavereciever` — Microwave Receiver
+- `advancedrocketry:monitoringstation` — Rocket Monitoring Station
+- `advancedrocketry:moonturf_dark` — Dark Moon Turf
+- `advancedrocketry:moonturf` — Moon Turf
+- `advancedrocketry:nitrogenfluid` — Nitrogen
+- `advancedrocketry:nuclearcore` — Nuclear Thermal Fission Core
+- `advancedrocketry:nuclearfueltank` — Nuclear Thermal Working Fluid Tank
+- `advancedrocketry:nuclearrocketmotor` — Nuclear Thermal Rocket Engine
+- `advancedrocketry:observatory` — Observatory
+- `advancedrocketry:orientationcontroller` — Orientation Controller
+- `advancedrocketry:oxidizerfueltank` — Oxidizer Fuel Tank
+- `advancedrocketry:oxygencharger` — Gas Charge Pad
+- `advancedrocketry:oxygendetection` — Atmosphere Detector
+- `advancedrocketry:oxygenfluid` — Oxygen
+- `advancedrocketry:oxygenscrubber` — CO2 Scrubber
+- `advancedrocketry:oxygenvent` — Oxygen Vent
+- `advancedrocketry:pipesealer` — Pipe Seal
+- `advancedrocketry:planetanalyser` — Astrobody Data Processor
+- `advancedrocketry:planetholoselector` — Holographic Planet Selector
+- `advancedrocketry:planetselector` — Planet Selector
+- `advancedrocketry:planks` — Lightwood planks
+- `advancedrocketry:platepress` — Small Plate Presser
+- `advancedrocketry:precisionassemblingmachine` — Precision Assembler
+- `advancedrocketry:precisionlaseretcher` — Precision Laser Etcher
+- `advancedrocketry:quartzcrucible` — Quartz Crucible
+- `advancedrocketry:railgun` — Railgun
+- `advancedrocketry:rocketbuilder` — Rocket Assembling Machine
+- `advancedrocketry:rocketfire` — tile.null.name
+- `advancedrocketry:rocketfuel` — Rocket Fuel
+- `advancedrocketry:rocketmotor` — Monopropellant Rocket Engine
+- `advancedrocketry:rollingmachine` — Rolling Machine
+- `advancedrocketry:satellitebuilder` — Satellite Builder
+- `advancedrocketry:satellitecontrolcenter` — Satellite Terminal
+- `advancedrocketry:sawblade` — Saw Blade Assembly
+- `advancedrocketry:seat` — Seat
+- `advancedrocketry:solararraypanel` — Solar Array Panel
+- `advancedrocketry:solararray` — Solar Array
+- `advancedrocketry:solargenerator` — Solar Generator
+- `advancedrocketry:solarpanel` — Solar Panel
+- `advancedrocketry:spaceelevatorcontroller` — Space Elevator
+- `advancedrocketry:spacelaser` — Orbital Laser Drill
+- `advancedrocketry:stationbuilder` — Space Station Assembler
+- `advancedrocketry:stationmarker` — Station Docking Port
+- `advancedrocketry:structuretower` — Structure Tower
+- `advancedrocketry:suitworkstation` — Suit Workstation
+- `advancedrocketry:terraformer` — Atmosphere Terraformer
+- `advancedrocketry:thermitetorch` — Thermite Torch
+- `advancedrocketry:unlittorch` — Extinguished Torch
+- `advancedrocketry:vacuumlaser` — Vacuum-Chamber High Power Laser Emitter
+- `advancedrocketry:vitrifiedsand` — Vitrified Sand
+- `advancedrocketry:warpcore` — Warp Core
+- `advancedrocketry:warpmonitor` — Warp Controller
+- `advancedrocketry:wirelesstransciever` — Wireless Transceiver
+
+### advgenerators
+- `advgenerators:control` — Redstone Control Module
+- `advgenerators:efficiency_upgrade_tier1` — Fuel/Air Mixer
+- `advgenerators:efficiency_upgrade_tier2` — Gas Mix Compressor
+- `advgenerators:eu_output_ev` — Extreme Voltage Emitter
+- `advgenerators:eu_output_hv` — High Voltage Emitter
+- `advgenerators:eu_output_iv` — Insane Voltage Emitter
+- `advgenerators:eu_output_lv` — Low Voltage Emitter
+- `advgenerators:eu_output_mv` — Medium Voltage Emitter
+- `advgenerators:exchanger_controller` — Heat Exchanger Controller
+- `advgenerators:fluid_input` — Fluid Intake Valve
+- `advgenerators:fluid_output_select` — Fluid Output Valve
+- `advgenerators:forge_output` — Forge Energy Emitter
+- `advgenerators:fuel_tank` — Fuel Tank
+- `advgenerators:gas_input` — Gas Intake Valve
+- `advgenerators:generators_data_port` — Machine Data Port
+- `advgenerators:heat_exchanger` — Heat Exchanger
+- `advgenerators:heating_chamber` — Heating Chamber
+- `advgenerators:item_input` — Item Input Port
+- `advgenerators:item_output` — Item Output Port
+- `advgenerators:mixing_chamber` — Mixing Chamber
+- `advgenerators:power_capacitor_advanced` — Advanced Power Capacitor
+- `advgenerators:power_capacitor_dense` — High Density Power Capacitor
+- `advgenerators:power_capacitor_redstone` — Basic Power Capacitor
+- `advgenerators:rf_output` — Flux Generator
+- `advgenerators:sensor` — Sensor Module
+- `advgenerators:steam_turbine_controller` — Steam Turbine Controller
+- `advgenerators:steam` — Steam
+- `advgenerators:syngas_controller` — Syngas Producer Controller
+- `advgenerators:syngas_flaming` — tile.advgenerators.syngas_flaming.name
+- `advgenerators:syngas` — Syngas
+- `advgenerators:tesla_output` — Tesla Generator
+- `advgenerators:turbine_adv_alloy` — Advanced Alloy Turbine
+- `advgenerators:turbine_bronze` — Bronze Turbine
+- `advgenerators:turbine_controller` — Gas Turbine controller
+- `advgenerators:turbine_enderium` — Enderium Turbine
+- `advgenerators:turbine_gold` — Gold Plated Turbine
+- `advgenerators:turbine_iron` — Iron Turbine
+- `advgenerators:turbine_manyullyn` — Manyullyn Turbine
+- `advgenerators:turbine_steel` — Steel Turbine
+
+### ae2stuff
+- `ae2stuff:encoder` — Pattern Encoder
+- `ae2stuff:grower` — Crystal Growth Chamber
+- `ae2stuff:inscriber` — Advanced Inscriber
+- `ae2stuff:wireless` — Wireless Connector
+
+### animania
+- `animania:block_hive` — Bee Hive
+- `animania:block_mud` — Mud
+- `animania:block_nest` — Nest
+- `animania:block_seeds` — Seeds
+- `animania:block_straw` — Straw
+- `animania:block_trough` — Trough
+- `animania:block_wild_hive` — Bee Nest
+- `animania:cheese_friesian` — Cheese Wheel (Friesian)
+- `animania:cheese_goat` — Cheese Wheel (Goat)
+- `animania:cheese_holstein` — Cheese Wheel (Holstein)
+- `animania:cheese_jersey` — Cheese Wheel (Jersey)
+- `animania:cheese_mold` — Cheese Mold
+- `animania:cheese_sheep` — Cheese Wheel (Sheep)
+- `animania:honey` — Honey Block
+- `animania:invisiblock` — Trough
+- `animania:milk_friesian` — tile.milk_friesian.name
+- `animania:milk_goat` — tile.milk_goat.name
+- `animania:milk_holstein` — tile.milk_holstein.name
+- `animania:milk_jersey` — tile.milk_jersey.name
+- `animania:milk_sheep` — tile.milk_sheep.name
+- `animania:salt_lick` — Salt Lick
+- `animania:slop` — tile.slop.name
+- `animania:wool` — tile.animania_wool.name
+
+### apotheosis
+- `apotheosis:hellshelf` — Hellshelf
+- `apotheosis:prismatic_altar` — Altar of the Sea
+
+### appliedenergistics2
+- `appliedenergistics2:cable_bus` — AE2 Cable and/or Bus
+- `appliedenergistics2:cell_workbench` — Cell Workbench
+- `appliedenergistics2:charged_quartz_ore` — Charged Certus Quartz Ore
+- `appliedenergistics2:charger` — Charger
+- `appliedenergistics2:chest` — ME Chest
+- `appliedenergistics2:chiseled_quartz_block` — Chiseled Certus Quartz Block
+- `appliedenergistics2:chiseled_quartz_double_slab` — tile.appliedenergistics2.chiseled_quartz_double_slab.name
+- `appliedenergistics2:chiseled_quartz_slab` — Chiseled Certus Quartz Slabs
+- `appliedenergistics2:chiseled_quartz_stairs` — Chiseled Certus Quartz Stairs
+- `appliedenergistics2:condenser` — Matter Condenser
+- `appliedenergistics2:controller` — ME Controller
+- `appliedenergistics2:crafting_accelerator` — Crafting Co-Processing Unit
+- `appliedenergistics2:crafting_monitor` — Crafting Monitor
+- `appliedenergistics2:crafting_storage_16k` — 16k Crafting Storage
+- `appliedenergistics2:crafting_storage_1k` — 1k Crafting Storage
+- `appliedenergistics2:crafting_storage_4k` — 4k Crafting Storage
+- `appliedenergistics2:crafting_storage_64k` — 64k Crafting Storage
+- `appliedenergistics2:crafting_unit` — Crafting Unit
+- `appliedenergistics2:crank` — Wooden Crank
+- `appliedenergistics2:creative_energy_cell` — Creative Energy Cell
+- `appliedenergistics2:dense_energy_cell` — Dense Energy Cell
+- `appliedenergistics2:drive` — ME Drive
+- `appliedenergistics2:energy_acceptor` — Energy Acceptor
+- `appliedenergistics2:energy_cell` — Energy Cell
+- `appliedenergistics2:fluid_interface` — ME Fluid Interface
+- `appliedenergistics2:fluix_block` — Fluix Block
+- `appliedenergistics2:fluix_double_slab` — tile.appliedenergistics2.fluix_double_slab.name
+- `appliedenergistics2:fluix_slab` — Fluix Slabs
+- `appliedenergistics2:fluix_stairs` — Fluix Stairs
+- `appliedenergistics2:grindstone` — Quartz Grindstone
+- `appliedenergistics2:inscriber` — Inscriber
+- `appliedenergistics2:interface` — ME Interface
+- `appliedenergistics2:io_port` — ME IO Port
+- `appliedenergistics2:light_detector` — Light Detecting Fixture
+- `appliedenergistics2:matrix_frame` — Matrix Frame
+- `appliedenergistics2:molecular_assembler` — Molecular Assembler
+- `appliedenergistics2:paint` — tile.appliedenergistics2.paint.name
+- `appliedenergistics2:quantum_link` — ME Quantum Link Chamber
+- `appliedenergistics2:quantum_ring` — ME Quantum Ring
+- `appliedenergistics2:quartz_block` — Certus Quartz Block
+- `appliedenergistics2:quartz_double_slab` — tile.appliedenergistics2.quartz_double_slab.name
+- `appliedenergistics2:quartz_fixture` — Charged Quartz Fixture
+- `appliedenergistics2:quartz_glass` — Quartz Glass
+- `appliedenergistics2:quartz_growth_accelerator` — Crystal Growth Accelerator
+- `appliedenergistics2:quartz_ore` — Certus Quartz Ore
+- `appliedenergistics2:quartz_pillar_double_slab` — tile.appliedenergistics2.quartz_pillar_double_slab.name
+- `appliedenergistics2:quartz_pillar_slab` — Certus Quartz Pillar Slabs
+- `appliedenergistics2:quartz_pillar_stairs` — Certus Quartz Pillar Stairs
+- `appliedenergistics2:quartz_pillar` — Certus Quartz Pillar
+- `appliedenergistics2:quartz_slab` — Certus Quartz Slabs
+- `appliedenergistics2:quartz_stairs` — Certus Quartz Stairs
+- `appliedenergistics2:quartz_vibrant_glass` — Vibrant Quartz Glass
+- `appliedenergistics2:security_station` — ME Security Terminal
+- `appliedenergistics2:sky_compass` — Meteorite Compass
+- `appliedenergistics2:sky_stone_block` — Sky Stone
+- `appliedenergistics2:sky_stone_brick_double_slab` — tile.appliedenergistics2.sky_stone_brick_double_slab.name
+- `appliedenergistics2:sky_stone_brick_slab` — Sky Stone Brick Slabs
+- `appliedenergistics2:sky_stone_brick_stairs` — Sky Stone Brick Stairs
+- `appliedenergistics2:sky_stone_brick` — Sky Stone Brick
+- `appliedenergistics2:sky_stone_chest` — Sky Stone Chest
+- `appliedenergistics2:sky_stone_double_slab` — tile.appliedenergistics2.sky_stone_double_slab.name
+- `appliedenergistics2:sky_stone_slab` — Sky Stone Slabs
+- `appliedenergistics2:sky_stone_small_brick_double_slab` — tile.appliedenergistics2.sky_stone_small_brick_double_slab.name
+- `appliedenergistics2:sky_stone_small_brick_slab` — Sky Stone Small Brick Slabs
+- `appliedenergistics2:sky_stone_small_brick_stairs` — Sky Stone Small Brick Stairs
+- `appliedenergistics2:sky_stone_small_brick` — Sky Stone Small Brick
+- `appliedenergistics2:sky_stone_stairs` — Sky Stone Stairs
+- `appliedenergistics2:smooth_sky_stone_block` — Sky Stone Block
+- `appliedenergistics2:smooth_sky_stone_chest` — Sky Stone Block Chest
+- `appliedenergistics2:smooth_sky_stone_double_slab` — tile.appliedenergistics2.smooth_sky_stone_double_slab.name
+- `appliedenergistics2:smooth_sky_stone_slab` — Sky Stone Block Slabs
+- `appliedenergistics2:smooth_sky_stone_stairs` — Sky Stone Block Stairs
+- `appliedenergistics2:spatial_io_port` — Spatial IO Port
+- `appliedenergistics2:spatial_pylon` — Spatial Pylon
+- `appliedenergistics2:tiny_tnt` — Tiny TNT
+- `appliedenergistics2:vibration_chamber` — Vibration Chamber
+- `appliedenergistics2:wireless_access_point` — ME Wireless Access Point
+
+### astralsorcery
+- `astralsorcery:blockaltar` — Altar
+- `astralsorcery:blockattunementaltar` — Attunement Altar
+- `astralsorcery:blockattunementrelay` — Spectral Relay
+- `astralsorcery:blockblackmarble` — Sooty Marble
+- `astralsorcery:blockborehead` — tile.blockborehead.name
+- `astralsorcery:blockbore` — Evershifting Fountain
+- `astralsorcery:blockcelestialcollectorcrystal` — Floating Crystal
+- `astralsorcery:blockcelestialcrystals` — Celestial Crystal Cluster
+- `astralsorcery:blockcelestialgateway` — Celestial Gateway
+- `astralsorcery:blockchalice` — Containment Chalice
+- `astralsorcery:blockcollectorcrystal` — Floating Crystal
+- `astralsorcery:blockcustomflower` — Faint Amaranth
+- `astralsorcery:blockcustomore` — Rock Crystal Ore
+- `astralsorcery:blockcustomsandore` — Aquamarine Shale
+- `astralsorcery:blockfaketree` — 
+- `astralsorcery:blockflarelight` — Volatile Flare
+- `astralsorcery:blockgemcrystals` — Gem Crystal Cluster
+- `astralsorcery:blockinfusedwood` — Infused Wood
+- `astralsorcery:blocklens` — Lens
+- `astralsorcery:blockmachine` — Telescope
+- `astralsorcery:blockmapdrawingtable` — Stellar Refraction Table
+- `astralsorcery:blockmarbledoubleslab` — tile.blockmarbledoubleslab.name
+- `astralsorcery:blockmarbleslab` — tile.blockmarbleslab.name
+- `astralsorcery:blockmarblestairs` — Marble Stairs
+- `astralsorcery:blockmarble` — Marble
+- `astralsorcery:blockobservatory` — Observatory
+- `astralsorcery:blockportalnode` — 
+- `astralsorcery:blockprism` — PrismLens
+- `astralsorcery:blockrituallink` — Ritual Anchor
+- `astralsorcery:blockritualpedestal` — Ritual Pedestal
+- `astralsorcery:blockstarlightinfuser` — Starlight Infuser
+- `astralsorcery:blockstructural` — tile.blockstructural.name
+- `astralsorcery:blocktranslucentblock` — Translucent Block
+- `astralsorcery:blocktreebeacon` — Tree Beacon
+- `astralsorcery:blockvanishing` — tile.blockvanishing.name
+- `astralsorcery:blockwell` — Lightwell
+- `astralsorcery:blockworldilluminator` — Cave Illuminator
+- `astralsorcery:fluidblockliquidstarlight` — Liquid Starlight
+
+### betterquesting
+- `betterquesting:submit_station` — Object Submission Station (OSS)
+
+### bibliocraft
+- `bibliocraft:bell` — Desk Bell
+- `bibliocraft:bookcasecreative` — tile.BiblioCraft
+- `bibliocraft:bookcase` — tile.BiblioCraft
+- `bibliocraft:case` — tile.BiblioCraft
+- `bibliocraft:clipboard` — tile.BiblioCraft
+- `bibliocraft:clock` — tile.BiblioCraft
+- `bibliocraft:cookiejar` — Cookie Jar
+- `bibliocraft:desk` — tile.BiblioCraft
+- `bibliocraft:dinnerplate` — Dinner Plate
+- `bibliocraft:discrack` — Disc Rack
+- `bibliocraft:fancysign` — tile.BiblioCraft
+- `bibliocraft:framedchest` — tile.BiblioCraft
+- `bibliocraft:furniturepaneler` — tile.BiblioCraft
+- `bibliocraft:label` — tile.BiblioCraft
+- `bibliocraft:lampgold` — tile.BiblioCraft
+- `bibliocraft:lampiron` — tile.BiblioCraft
+- `bibliocraft:lanterngold` — tile.BiblioCraft
+- `bibliocraft:lanterniron` — tile.BiblioCraft
+- `bibliocraft:mapframe` — tile.BiblioCraft
+- `bibliocraft:markerpole` — tile.BiblioCraft
+- `bibliocraft:paintingframeborderless` — tile.BiblioCraft
+- `bibliocraft:paintingframefancy` — tile.BiblioCraft
+- `bibliocraft:paintingframeflat` — tile.BiblioCraft
+- `bibliocraft:paintingframemiddle` — tile.BiblioCraft
+- `bibliocraft:paintingframesimple` — tile.BiblioCraft
+- `bibliocraft:paintingpress` — Painting Press
+- `bibliocraft:potionshelf` — tile.BiblioCraft
+- `bibliocraft:printingpress` — Printing Press
+- `bibliocraft:seat` — tile.BiblioCraft
+- `bibliocraft:shelf` — tile.BiblioCraft
+- `bibliocraft:swordpedestal` — tile.BiblioCraft
+- `bibliocraft:table` — tile.BiblioCraft
+- `bibliocraft:toolrack` — tile.BiblioCraft
+- `bibliocraft:typesettingtable` — Typesetting Table
+- `bibliocraft:typewriter` — tile.BiblioCraft
+
+### bigreactors
+- `bigreactors:blockblutonium` — Blutonium Block
+- `bigreactors:blockcyanite` — Cyanite Block
+- `bigreactors:blockgraphite` — Graphite Block
+- `bigreactors:blockludicrite` — Ludicrite Block
+- `bigreactors:blocksteel` — Steel Block
+- `bigreactors:blockyellorium` — Yellorium Block
+- `bigreactors:cyanite` — tile.bigreactors
+- `bigreactors:oreanglesite` — Anglesite Ore
+- `bigreactors:orebenitoite` — Benitoite Ore
+- `bigreactors:oreyellorite` — Yellorite Ore
+- `bigreactors:reactoraccessport` — Reactor Access Port (Legacy)
+- `bigreactors:reactorcasing` — Reactor Casing (Legacy)
+- `bigreactors:reactorcomputerport` — Reactor Computer Port (Legacy)
+- `bigreactors:reactorcontroller` — Reactor Controller (Legacy)
+- `bigreactors:reactorcontrolrod` — Reactor Control Rod (Legacy)
+- `bigreactors:reactorcoolantport` — Reactor Coolant Port (Legacy)
+- `bigreactors:reactorcreativecoolantport` — Reactor Creative Coolant Port (Legacy)
+- `bigreactors:reactorfuelrod` — Reactor Fuel Rod (Legacy)
+- `bigreactors:reactorglass` — Reactor Glass (Legacy)
+- `bigreactors:reactorpowertaprf` — Reactor Redstone Flux Power Tap (Legacy)
+- `bigreactors:reactorpowertaptesla` — Reactor Tesla Power Tap (Legacy)
+- `bigreactors:reactorrednetport` — Reactor RedNet Port (Legacy)
+- `bigreactors:reactorredstoneport` — Reactor Redstone Port (Legacy)
+- `bigreactors:turbinebearing` — Turbine Rotor Bearing (Legacy)
+- `bigreactors:turbinecomputerport` — Turbine Computer Port (Legacy)
+- `bigreactors:turbinecontroller` — Turbine Controller (Legacy)
+- `bigreactors:turbinecreativesteamgenerator` — Turbine Creative Steam Generator (Legacy)
+- `bigreactors:turbinefluidport` — Turbine Fluid Port (Legacy)
+- `bigreactors:turbineglass` — Turbine Glass (Legacy)
+- `bigreactors:turbinehousing` — Turbine Housing (Legacy)
+- `bigreactors:turbinepowertaprf` — Turbine Redstone Flux Power Tap (Legacy)
+- `bigreactors:turbinepowertaptesla` — Turbine Tesla Power Tap (Legacy)
+- `bigreactors:turbinerotorblade` — Turbine Rotor Blade (Legacy)
+- `bigreactors:turbinerotorshaft` — Turbine Rotor Shaft (Legacy)
+- `bigreactors:yellorium` — tile.bigreactors
+
+### binniecore
+- `binniecore:storage` — tile.null.name
+
+### biomesoplenty
+- `biomesoplenty:ash_block` — Ash Block
+- `biomesoplenty:bamboo_thatching` — Bamboo Thatching
+- `biomesoplenty:bamboo` — Bamboo
+- `biomesoplenty:biome_block` — Biome Essence Ore
+- `biomesoplenty:blood` — tile.null.name
+- `biomesoplenty:blue_fire` — Blue Fire
+- `biomesoplenty:bramble_plant` — Bramble
+- `biomesoplenty:cherry_door_block` — item.cherry_door_block.name
+- `biomesoplenty:cherry_fence_gate` — Cherry Fence Gate
+- `biomesoplenty:cherry_fence` — Cherry Fence
+- `biomesoplenty:cherry_stairs` — Cherry Wood Stairs
+- `biomesoplenty:coral` — tile.coral.name
+- `biomesoplenty:crystal` — Crystallized Obsidian
+- `biomesoplenty:dirt` — Dirt
+- `biomesoplenty:double_other_slab` — tile.double_other_slab.name
+- `biomesoplenty:double_plant` — tile.double_plant.name
+- `biomesoplenty:double_wood_slab_0` — tile.double_wood_slab_0.name
+- `biomesoplenty:double_wood_slab_1` — tile.double_wood_slab_1.name
+- `biomesoplenty:dried_sand` — Dried Sand
+- `biomesoplenty:ebony_door_block` — item.ebony_door_block.name
+- `biomesoplenty:ebony_fence_gate` — Ebony Fence Gate
+- `biomesoplenty:ebony_fence` — Ebony Fence
+- `biomesoplenty:ebony_stairs` — Ebony Wood Stairs
+- `biomesoplenty:ethereal_door_block` — item.ethereal_door_block.name
+- `biomesoplenty:ethereal_fence_gate` — Ethereal Fence Gate
+- `biomesoplenty:ethereal_fence` — Ethereal Fence
+- `biomesoplenty:ethereal_stairs` — Ethereal Wood Stairs
+- `biomesoplenty:eucalyptus_door_block` — item.eucalyptus_door_block.name
+- `biomesoplenty:eucalyptus_fence_gate` — Eucalyptus Fence Gate
+- `biomesoplenty:eucalyptus_fence` — Eucalyptus Fence
+- `biomesoplenty:eucalyptus_stairs` — Eucalyptus Wood Stairs
+- `biomesoplenty:farmland_0` — tile.farmland_0.name
+- `biomesoplenty:farmland_1` — tile.farmland_1.name
+- `biomesoplenty:fir_door_block` — item.fir_door_block.name
+- `biomesoplenty:fir_fence_gate` — Fir Fence Gate
+- `biomesoplenty:fir_fence` — Fir Fence
+- `biomesoplenty:fir_stairs` — Fir Wood Stairs
+- `biomesoplenty:flesh` — Flesh
+- `biomesoplenty:flower_0` — tile.flower_0.name
+- `biomesoplenty:flower_1` — tile.flower_1.name
+- `biomesoplenty:gem_block` — tile.gem_block.name
+- `biomesoplenty:gem_ore` — tile.gem_ore.name
+- `biomesoplenty:grass_path` — tile.grass_path.name
+- `biomesoplenty:grass` — Grass Block
+- `biomesoplenty:hard_ice` — Hardened Ice
+- `biomesoplenty:hellbark_door_block` — item.hellbark_door_block.name
+- `biomesoplenty:hellbark_fence_gate` — Hellbark Fence Gate
+- `biomesoplenty:hellbark_fence` — Hellbark Fence
+- `biomesoplenty:hellbark_stairs` — Hellbark Wood Stairs
+- `biomesoplenty:hive` — tile.hive.name
+- `biomesoplenty:honey_block` — Honey Block
+- `biomesoplenty:honey` — tile.null.name
+- `biomesoplenty:hot_spring_water` — tile.null.name
+- `biomesoplenty:ivy` — Ivy
+- `biomesoplenty:jacaranda_door_block` — item.jacaranda_door_block.name
+- `biomesoplenty:jacaranda_fence_gate` — Jacaranda Fence Gate
+- `biomesoplenty:jacaranda_fence` — Jacaranda Fence
+- `biomesoplenty:jacaranda_stairs` — Jacaranda Wood Stairs
+- `biomesoplenty:leaves_0` — tile.leaves_0.name
+- `biomesoplenty:leaves_1` — tile.leaves_1.name
+- `biomesoplenty:leaves_2` — tile.leaves_2.name
+- `biomesoplenty:leaves_3` — tile.leaves_3.name
+- `biomesoplenty:leaves_4` — tile.leaves_4.name
+- `biomesoplenty:leaves_5` — tile.leaves_5.name
+- `biomesoplenty:leaves_6` — tile.leaves_6.name
+- `biomesoplenty:log_0` — tile.log_0.name
+- `biomesoplenty:log_1` — tile.log_1.name
+- `biomesoplenty:log_2` — tile.log_2.name
+- `biomesoplenty:log_3` — tile.log_3.name
+- `biomesoplenty:log_4` — tile.log_4.name
+- `biomesoplenty:magic_door_block` — item.magic_door_block.name
+- `biomesoplenty:magic_fence_gate` — Magic Fence Gate
+- `biomesoplenty:magic_fence` — Magic Fence
+- `biomesoplenty:magic_stairs` — Magic Wood Stairs
+- `biomesoplenty:mahogany_door_block` — item.mahogany_door_block.name
+- `biomesoplenty:mahogany_fence_gate` — Mahogany Fence Gate
+- `biomesoplenty:mahogany_fence` — Mahogany Fence
+- `biomesoplenty:mahogany_stairs` — Mahogany Wood Stairs
+- `biomesoplenty:mangrove_door_block` — item.mangrove_door_block.name
+- `biomesoplenty:mangrove_fence_gate` — Mangrove Fence Gate
+- `biomesoplenty:mangrove_fence` — Mangrove Fence
+- `biomesoplenty:mangrove_stairs` — Mangrove Wood Stairs
+- `biomesoplenty:mud_brick_block` — Mud Bricks
+- `biomesoplenty:mud_brick_stairs` — Mud Brick Stairs
+- `biomesoplenty:mud` — tile.mud.name
+- `biomesoplenty:mushroom` — Mushroom
+- `biomesoplenty:other_slab` — tile.other_slab.name
+- `biomesoplenty:palm_door_block` — item.palm_door_block.name
+- `biomesoplenty:palm_fence_gate` — Palm Fence Gate
+- `biomesoplenty:palm_fence` — Palm Fence
+- `biomesoplenty:palm_stairs` — Palm Wood Stairs
+- `biomesoplenty:pine_door_block` — item.pine_door_block.name
+- `biomesoplenty:pine_fence_gate` — Pine Fence Gate
+- `biomesoplenty:pine_fence` — Pine Fence
+- `biomesoplenty:pine_stairs` — Pine Wood Stairs
+- `biomesoplenty:planks_0` — tile.planks_0.name
+- `biomesoplenty:plant_0` — tile.plant_0.name
+- `biomesoplenty:plant_1` — tile.plant_1.name
+- `biomesoplenty:poison` — tile.null.name
+- `biomesoplenty:redwood_door_block` — item.redwood_door_block.name
+- `biomesoplenty:redwood_fence_gate` — Redwood Fence Gate
+- `biomesoplenty:redwood_fence` — Redwood Fence
+- `biomesoplenty:redwood_stairs` — Redwood Wood Stairs
+- `biomesoplenty:sacred_oak_door_block` — item.sacred_oak_door_block.name
+- `biomesoplenty:sacred_oak_fence_gate` — Sacred Oak Fence Gate
+- `biomesoplenty:sacred_oak_fence` — Sacred Oak Fence
+- `biomesoplenty:sacred_oak_stairs` — Sacred Oak Wood Stairs
+- `biomesoplenty:sand` — tile.null.name
+- `biomesoplenty:sapling_0` — tile.sapling_0.name
+- `biomesoplenty:sapling_1` — tile.sapling_1.name
+- `biomesoplenty:sapling_2` — tile.sapling_2.name
+- `biomesoplenty:seaweed` — tile.seaweed.name
+- `biomesoplenty:terrarium` — tile.terrarium.name
+- `biomesoplenty:umbran_door_block` — item.umbran_door_block.name
+- `biomesoplenty:umbran_fence_gate` — Umbran Fence Gate
+- `biomesoplenty:umbran_fence` — Umbran Fence
+- `biomesoplenty:umbran_stairs` — Umbran Wood Stairs
+- `biomesoplenty:waterlily` — Lily Pad
+- `biomesoplenty:white_sandstone_stairs` — White Sandstone Stairs
+- `biomesoplenty:white_sandstone` — tile.white_sandstone.name
+- `biomesoplenty:white_sand` — White Sand
+- `biomesoplenty:willow_door_block` — item.willow_door_block.name
+- `biomesoplenty:willow_fence_gate` — Willow Fence Gate
+- `biomesoplenty:willow_fence` — Willow Fence
+- `biomesoplenty:willow_stairs` — Willow Wood Stairs
+- `biomesoplenty:willow_vine` — Willow Vine
+- `biomesoplenty:wood_slab_0` — tile.wood_slab_0.name
+- `biomesoplenty:wood_slab_1` — tile.wood_slab_1.name
+
+### blockcraftery
+- `blockcraftery:editable_block_reinforced` — Reinforced Framed Block
+- `blockcraftery:editable_block` — Framed Block
+- `blockcraftery:editable_door_reinforced` — Reinforced Framed Door
+- `blockcraftery:editable_door` — Framed Door
+- `blockcraftery:editable_double_slab_reinforced` — tile.editable_double_slab_reinforced.name
+- `blockcraftery:editable_double_slab` — tile.editable_double_slab.name
+- `blockcraftery:editable_fence_reinforced` — Reinforced Framed Fence
+- `blockcraftery:editable_fence` — Framed Fence
+- `blockcraftery:editable_inner_corner_reinforced` — Reinforced Framed Inner Corner
+- `blockcraftery:editable_inner_corner` — Framed Inner Corner
+- `blockcraftery:editable_outer_corner_reinforced` — Reinforced Framed Outer Corner
+- `blockcraftery:editable_outer_corner` — Framed Outer Corner
+- `blockcraftery:editable_pressure_plate_all_reinforced` — Reinforced Framed Pressure Plate (All)
+- `blockcraftery:editable_pressure_plate_all` — Framed Pressure Plate (All)
+- `blockcraftery:editable_pressure_plate_items_reinforced` — Reinforced Framed Pressure Plate (Items)
+- `blockcraftery:editable_pressure_plate_items` — Framed Pressure Plate (Items)
+- `blockcraftery:editable_pressure_plate_mobs_reinforced` — Reinforced Framed Pressure Plate (Mobs)
+- `blockcraftery:editable_pressure_plate_mobs` — Framed Pressure Plate (Mobs)
+- `blockcraftery:editable_pressure_plate_player_reinforced` — Reinforced Framed Pressure Plate (Players)
+- `blockcraftery:editable_pressure_plate_player` — Framed Pressure Plate (Players)
+- `blockcraftery:editable_slab_reinforced` — Reinforced Framed Slab
+- `blockcraftery:editable_slab` — Framed Slab
+- `blockcraftery:editable_slant_reinforced` — Reinforced Framed Slant
+- `blockcraftery:editable_slant` — Framed Slant
+- `blockcraftery:editable_stairs_reinforced` — Reinforced Framed Stairs
+- `blockcraftery:editable_stairs` — Framed Stairs
+- `blockcraftery:editable_trap_door_reinforced` — Reinforced Framed Trapdoor
+- `blockcraftery:editable_trap_door` — Framed Trapdoor
+- `blockcraftery:editable_wall_reinforced` — tile.editable_wall_reinforced.normal.name
+- `blockcraftery:editable_wall` — tile.editable_wall.normal.name
+
+### bloodmagic
+- `bloodmagic:alchemy_array` — Alchemy Array
+- `bloodmagic:alchemy_table` — Alchemy Table
+- `bloodmagic:altar` — Blood Altar
+- `bloodmagic:blood_light` — Blood Light
+- `bloodmagic:blood_rune` — tile.bloodmagic.rune..name
+- `bloodmagic:blood_tank` — Blood Tank
+- `bloodmagic:decorative_brick` — tile.bloodmagic..name
+- `bloodmagic:demon_brick_1` — tile.bloodmagic.bricks1..name
+- `bloodmagic:demon_brick_2` — tile.bloodmagic.bricks2..name
+- `bloodmagic:demon_crucible` — Demon Crucible
+- `bloodmagic:demon_crystallizer` — Demon Crystallizer
+- `bloodmagic:demon_crystal` — tile.bloodmagic.demonCrystal..name
+- `bloodmagic:demon_extras` — tile.bloodmagic.extras..name
+- `bloodmagic:demon_light` — tile.bloodmagic.demonlight..name
+- `bloodmagic:demon_pillar_1` — tile.bloodmagic.pillar1..name
+- `bloodmagic:demon_pillar_2` — tile.bloodmagic.pillar2..name
+- `bloodmagic:demon_pillar_cap_1` — tile.bloodmagic.pillarCap1..name
+- `bloodmagic:demon_pillar_cap_2` — tile.bloodmagic.pillarCap2..name
+- `bloodmagic:demon_pillar_cap_3` — tile.bloodmagic.pillarCap3..name
+- `bloodmagic:demon_pylon` — Demon Pylon
+- `bloodmagic:demon_stairs_1` — tile.bloodmagic.stairs1..name
+- `bloodmagic:demon_stairs_2` — tile.bloodmagic.stairs2..name
+- `bloodmagic:demon_stairs_3` — tile.bloodmagic.stairs3..name
+- `bloodmagic:demon_wall_1` — tile.bloodmagic.wall1..name
+- `bloodmagic:dimensional_portal` — Dimensional Portal
+- `bloodmagic:incense_altar` — Incense Altar
+- `bloodmagic:input_routing_node` — Input Routing Node
+- `bloodmagic:inversion_pillar_end` — tile.bloodmagic.inversionpillarend..name
+- `bloodmagic:inversion_pillar` — tile.bloodmagic.inversionpillar..name
+- `bloodmagic:item_routing_node` — Routing Node
+- `bloodmagic:life_essence` — Life Essence
+- `bloodmagic:master_routing_node` — Master Routing Node
+- `bloodmagic:mimic` — tile.bloodmagic.mimic..name
+- `bloodmagic:output_routing_node` — Output Routing Node
+- `bloodmagic:path` — tile.bloodmagic.path..name
+- `bloodmagic:phantom` — Phantom Block
+- `bloodmagic:ritual_controller` — tile.bloodmagic.stone.ritual..name
+- `bloodmagic:ritual_stone` — tile.bloodmagic.ritualStone..name
+- `bloodmagic:soul_forge` — Hellfire Forge
+- `bloodmagic:spectral` — tile.bloodmagic.spectral.name
+- `bloodmagic:teleposer` — Teleposer
+
+### botania
+- `botania:alchemycatalyst` — tile.alchemyCatalyst.name
+- `botania:alfheimportal` — tile.alfheimPortal.name
+- `botania:altar` — tile.altar.name
+- `botania:altgrass` — tile.altGrass.name
+- `botania:animatedtorch` — tile.animatedTorch.name
+- `botania:avatar` — tile.avatar.name
+- `botania:bellows` — Arcane Bellows
+- `botania:bifrostpermpane` — tile.bifrostPermPane.name
+- `botania:bifrostperm` — tile.bifrostPerm.name
+- `botania:bifrost` — tile.bifrost.name
+- `botania:biomestonea0slabfull` — tile.biomeStoneA0SlabFull.name
+- `botania:biomestonea0slab` — tile.biomeStoneA0Slab.name
+- `botania:biomestonea0stairs` — tile.biomeStoneA0Stairs.name
+- `botania:biomestonea0wall` — tile.biomeStoneA0Wall.normal.name
+- `botania:biomestonea10slabfull` — tile.biomeStoneA10SlabFull.name
+- `botania:biomestonea10slab` — tile.biomeStoneA10Slab.name
+- `botania:biomestonea10stairs` — tile.biomeStoneA10Stairs.name
+- `botania:biomestonea11slabfull` — tile.biomeStoneA11SlabFull.name
+- `botania:biomestonea11slab` — tile.biomeStoneA11Slab.name
+- `botania:biomestonea11stairs` — tile.biomeStoneA11Stairs.name
+- `botania:biomestonea12slabfull` — tile.biomeStoneA12SlabFull.name
+- `botania:biomestonea12slab` — tile.biomeStoneA12Slab.name
+- `botania:biomestonea12stairs` — tile.biomeStoneA12Stairs.name
+- `botania:biomestonea13slabfull` — tile.biomeStoneA13SlabFull.name
+- `botania:biomestonea13slab` — tile.biomeStoneA13Slab.name
+- `botania:biomestonea13stairs` — tile.biomeStoneA13Stairs.name
+- `botania:biomestonea14slabfull` — tile.biomeStoneA14SlabFull.name
+- `botania:biomestonea14slab` — tile.biomeStoneA14Slab.name
+- `botania:biomestonea14stairs` — tile.biomeStoneA14Stairs.name
+- `botania:biomestonea15slabfull` — tile.biomeStoneA15SlabFull.name
+- `botania:biomestonea15slab` — tile.biomeStoneA15Slab.name
+- `botania:biomestonea15stairs` — tile.biomeStoneA15Stairs.name
+- `botania:biomestonea1slabfull` — tile.biomeStoneA1SlabFull.name
+- `botania:biomestonea1slab` — tile.biomeStoneA1Slab.name
+- `botania:biomestonea1stairs` — tile.biomeStoneA1Stairs.name
+- `botania:biomestonea2slabfull` — tile.biomeStoneA2SlabFull.name
+- `botania:biomestonea2slab` — tile.biomeStoneA2Slab.name
+- `botania:biomestonea2stairs` — tile.biomeStoneA2Stairs.name
+- `botania:biomestonea3slabfull` — tile.biomeStoneA3SlabFull.name
+- `botania:biomestonea3slab` — tile.biomeStoneA3Slab.name
+- `botania:biomestonea3stairs` — tile.biomeStoneA3Stairs.name
+- `botania:biomestonea4slabfull` — tile.biomeStoneA4SlabFull.name
+- `botania:biomestonea4slab` — tile.biomeStoneA4Slab.name
+- `botania:biomestonea4stairs` — tile.biomeStoneA4Stairs.name
+- `botania:biomestonea5slabfull` — tile.biomeStoneA5SlabFull.name
+- `botania:biomestonea5slab` — tile.biomeStoneA5Slab.name
+- `botania:biomestonea5stairs` — tile.biomeStoneA5Stairs.name
+- `botania:biomestonea6slabfull` — tile.biomeStoneA6SlabFull.name
+- `botania:biomestonea6slab` — tile.biomeStoneA6Slab.name
+- `botania:biomestonea6stairs` — tile.biomeStoneA6Stairs.name
+- `botania:biomestonea7slabfull` — tile.biomeStoneA7SlabFull.name
+- `botania:biomestonea7slab` — tile.biomeStoneA7Slab.name
+- `botania:biomestonea7stairs` — tile.biomeStoneA7Stairs.name
+- `botania:biomestonea8slabfull` — tile.biomeStoneA8SlabFull.name
+- `botania:biomestonea8slab` — tile.biomeStoneA8Slab.name
+- `botania:biomestonea8stairs` — tile.biomeStoneA8Stairs.name
+- `botania:biomestonea9slabfull` — tile.biomeStoneA9SlabFull.name
+- `botania:biomestonea9slab` — tile.biomeStoneA9Slab.name
+- `botania:biomestonea9stairs` — tile.biomeStoneA9Stairs.name
+- `botania:biomestonea` — tile.biomeStoneA.name
+- `botania:biomestoneb0slabfull` — tile.biomeStoneB0SlabFull.name
+- `botania:biomestoneb0slab` — tile.biomeStoneB0Slab.name
+- `botania:biomestoneb0stairs` — tile.biomeStoneB0Stairs.name
+- `botania:biomestoneb1slabfull` — tile.biomeStoneB1SlabFull.name
+- `botania:biomestoneb1slab` — tile.biomeStoneB1Slab.name
+- `botania:biomestoneb1stairs` — tile.biomeStoneB1Stairs.name
+- `botania:biomestoneb2slabfull` — tile.biomeStoneB2SlabFull.name
+- `botania:biomestoneb2slab` — tile.biomeStoneB2Slab.name
+- `botania:biomestoneb2stairs` — tile.biomeStoneB2Stairs.name
+- `botania:biomestoneb3slabfull` — tile.biomeStoneB3SlabFull.name
+- `botania:biomestoneb3slab` — tile.biomeStoneB3Slab.name
+- `botania:biomestoneb3stairs` — tile.biomeStoneB3Stairs.name
+- `botania:biomestoneb4slabfull` — tile.biomeStoneB4SlabFull.name
+- `botania:biomestoneb4slab` — tile.biomeStoneB4Slab.name
+- `botania:biomestoneb4stairs` — tile.biomeStoneB4Stairs.name
+- `botania:biomestoneb5slabfull` — tile.biomeStoneB5SlabFull.name
+- `botania:biomestoneb5slab` — tile.biomeStoneB5Slab.name
+- `botania:biomestoneb5stairs` — tile.biomeStoneB5Stairs.name
+- `botania:biomestoneb6slabfull` — tile.biomeStoneB6SlabFull.name
+- `botania:biomestoneb6slab` — tile.biomeStoneB6Slab.name
+- `botania:biomestoneb6stairs` — tile.biomeStoneB6Stairs.name
+- `botania:biomestoneb7slabfull` — tile.biomeStoneB7SlabFull.name
+- `botania:biomestoneb7slab` — tile.biomeStoneB7Slab.name
+- `botania:biomestoneb7stairs` — tile.biomeStoneB7Stairs.name
+- `botania:biomestoneb` — tile.biomeStoneB.name
+- `botania:blazeblock` — tile.blazeBlock.name
+- `botania:brewery` — tile.brewery.name
+- `botania:buriedpetals` — tile.buriedPetals.name
+- `botania:cacophoniumblock` — tile.cacophoniumBlock.name
+- `botania:cellblock` — tile.cellBlock.name
+- `botania:cocoon` — tile.cocoon.name
+- `botania:conjurationcatalyst` — tile.conjurationCatalyst.name
+- `botania:corporeacrystalcube` — tile.corporeaCrystalCube.name
+- `botania:corporeafunnel` — tile.corporeaFunnel.name
+- `botania:corporeaindex` — tile.corporeaIndex.name
+- `botania:corporeainterceptor` — tile.corporeaInterceptor.name
+- `botania:corporearetainer` — tile.corporeaRetainer.name
+- `botania:custombrick` — tile.customBrick.name
+- `botania:distributor` — tile.distributor.name
+- `botania:doubleflower1` — tile.doubleFlower1.name
+- `botania:doubleflower2` — tile.doubleFlower2.name
+- `botania:dreamwood0slabfull` — tile.dreamwood0SlabFull.name
+- `botania:dreamwood0slab` — tile.dreamwood0Slab.name
+- `botania:dreamwood0stairs` — tile.dreamwood0Stairs.name
+- `botania:dreamwood0wall` — tile.dreamwood0Wall.normal.name
+- `botania:dreamwood1slabfull` — tile.dreamwood1SlabFull.name
+- `botania:dreamwood1slab` — tile.dreamwood1Slab.name
+- `botania:dreamwood1stairs` — tile.dreamwood1Stairs.name
+- `botania:dreamwood` — tile.dreamwood.name
+- `botania:elfglasspane` — tile.elfGlassPane.name
+- `botania:elfglass` — tile.elfGlass.name
+- `botania:enchantedsoil` — tile.enchantedSoil.name
+- `botania:enchanter` — tile.enchanter.name
+- `botania:endereyeblock` — tile.enderEyeBlock.name
+- `botania:fakeair` — tile.fakeAir.name
+- `botania:felpumpkin` — tile.felPumpkin.name
+- `botania:floatingspecialflower` — tile.floatingSpecialFlower.name
+- `botania:flower` — tile.flower.name
+- `botania:forestdrum` — tile.forestDrum.name
+- `botania:foresteye` — tile.forestEye.name
+- `botania:gaiaheadblock` — tile.skull.skeleton.name
+- `botania:ghostrail` — tile.ghostRail.name
+- `botania:hourglass` — tile.hourglass.name
+- `botania:incenseplate` — tile.incensePlate.name
+- `botania:lightlauncher` — tile.lightLauncher.name
+- `botania:lightrelay` — tile.lightRelay.name
+- `botania:livingrock0slabfull` — tile.livingrock0SlabFull.name
+- `botania:livingrock0slab` — tile.livingrock0Slab.name
+- `botania:livingrock0stairs` — tile.livingrock0Stairs.name
+- `botania:livingrock0wall` — tile.livingrock0Wall.normal.name
+- `botania:livingrock1slabfull` — tile.livingrock1SlabFull.name
+- `botania:livingrock1slab` — tile.livingrock1Slab.name
+- `botania:livingrock1stairs` — tile.livingrock1Stairs.name
+- `botania:livingrock` — tile.livingrock.name
+- `botania:livingwood0slabfull` — tile.livingwood0SlabFull.name
+- `botania:livingwood0slab` — tile.livingwood0Slab.name
+- `botania:livingwood0stairs` — tile.livingwood0Stairs.name
+- `botania:livingwood0wall` — tile.livingwood0Wall.normal.name
+- `botania:livingwood1slabfull` — tile.livingwood1SlabFull.name
+- `botania:livingwood1slab` — tile.livingwood1Slab.name
+- `botania:livingwood1stairs` — tile.livingwood1Stairs.name
+- `botania:livingwood` — tile.livingwood.name
+- `botania:manabomb` — tile.manaBomb.name
+- `botania:manadetector` — tile.manaDetector.name
+- `botania:manaflame` — tile.manaFlame.name
+- `botania:managlasspane` — tile.manaGlassPane.name
+- `botania:managlass` — tile.manaGlass.name
+- `botania:manavoid` — tile.manaVoid.name
+- `botania:miniisland` — tile.miniIsland.name
+- `botania:mushroom` — Mushroom
+- `botania:opencrate` — tile.openCrate.name
+- `botania:pavement0slabfull` — tile.pavement0SlabFull.name
+- `botania:pavement0slab` — tile.pavement0Slab.name
+- `botania:pavement0stairs` — tile.pavement0Stairs.name
+- `botania:pavement1slabfull` — tile.pavement1SlabFull.name
+- `botania:pavement1slab` — tile.pavement1Slab.name
+- `botania:pavement1stairs` — tile.pavement1Stairs.name
+- `botania:pavement2slabfull` — tile.pavement2SlabFull.name
+- `botania:pavement2slab` — tile.pavement2Slab.name
+- `botania:pavement2stairs` — tile.pavement2Stairs.name
+- `botania:pavement3slabfull` — tile.pavement3SlabFull.name
+- `botania:pavement3slab` — tile.pavement3Slab.name
+- `botania:pavement3stairs` — tile.pavement3Stairs.name
+- `botania:pavement4slabfull` — tile.pavement4SlabFull.name
+- `botania:pavement4slab` — tile.pavement4Slab.name
+- `botania:pavement4stairs` — tile.pavement4Stairs.name
+- `botania:pavement5slabfull` — tile.pavement5SlabFull.name
+- `botania:pavement5slab` — tile.pavement5Slab.name
+- `botania:pavement5stairs` — tile.pavement5Stairs.name
+- `botania:pavement` — tile.pavement.name
+- `botania:petalblock` — tile.petalBlock.name
+- `botania:pistonrelay` — tile.pistonRelay.name
+- `botania:platform` — tile.platform.name
+- `botania:pool` — tile.pool.name
+- `botania:prism` — tile.prism.name
+- `botania:pump` — Fluid Extractor
+- `botania:pylon` — tile.pylon.name
+- `botania:quartzslabblazefull` — tile.quartzSlabBlazeFull.name
+- `botania:quartzslabblazehalf` — tile.quartzSlabBlazeHalf.name
+- `botania:quartzslabdarkfull` — tile.quartzSlabDarkFull.name
+- `botania:quartzslabdarkhalf` — tile.quartzSlabDarkHalf.name
+- `botania:quartzslabelffull` — tile.quartzSlabElfFull.name
+- `botania:quartzslabelfhalf` — tile.quartzSlabElfHalf.name
+- `botania:quartzslablavenderfull` — tile.quartzSlabLavenderFull.name
+- `botania:quartzslablavenderhalf` — tile.quartzSlabLavenderHalf.name
+- `botania:quartzslabmanafull` — tile.quartzSlabManaFull.name
+- `botania:quartzslabmanahalf` — tile.quartzSlabManaHalf.name
+- `botania:quartzslabredfull` — tile.quartzSlabRedFull.name
+- `botania:quartzslabredhalf` — tile.quartzSlabRedHalf.name
+- `botania:quartzslabsunnyfull` — tile.quartzSlabSunnyFull.name
+- `botania:quartzslabsunnyhalf` — tile.quartzSlabSunnyHalf.name
+- `botania:quartzstairsblaze` — tile.quartzStairsBlaze.name
+- `botania:quartzstairsdark` — tile.quartzStairsDark.name
+- `botania:quartzstairself` — tile.quartzStairsElf.name
+- `botania:quartzstairslavender` — tile.quartzStairsLavender.name
+- `botania:quartzstairsmana` — tile.quartzStairsMana.name
+- `botania:quartzstairsred` — tile.quartzStairsRed.name
+- `botania:quartzstairssunny` — tile.quartzStairsSunny.name
+- `botania:quartztypeblaze` — tile.quartzTypeBlaze.name
+- `botania:quartztypedark` — tile.quartzTypeDark.name
+- `botania:quartztypeelf` — tile.quartzTypeElf.name
+- `botania:quartztypelavender` — tile.quartzTypeLavender.name
+- `botania:quartztypemana` — tile.quartzTypeMana.name
+- `botania:quartztypered` — tile.quartzTypeRed.name
+- `botania:quartztypesunny` — tile.quartzTypeSunny.name
+- `botania:redstringcomparator` — tile.redStringComparator.name
+- `botania:redstringcontainer` — tile.redStringContainer.name
+- `botania:redstringdispenser` — tile.redStringDispenser.name
+- `botania:redstringfertilizer` — tile.redStringFertilizer.name
+- `botania:redstringinterceptor` — tile.redStringInterceptor.name
+- `botania:redstringrelay` — tile.redStringRelay.name
+- `botania:rfgenerator` — tile.rfGenerator.name
+- `botania:root` — tile.root.name
+- `botania:runealtar` — tile.runeAltar.name
+- `botania:shimmerrock0slabfull` — tile.shimmerrock0SlabFull.name
+- `botania:shimmerrock0slab` — tile.shimmerrock0Slab.name
+- `botania:shimmerrock0stairs` — tile.shimmerrock0Stairs.name
+- `botania:shimmerrock` — tile.shimmerrock.name
+- `botania:shimmerwoodplanks0slabfull` — tile.shimmerwoodPlanks0SlabFull.name
+- `botania:shimmerwoodplanks0slab` — tile.shimmerwoodPlanks0Slab.name
+- `botania:shimmerwoodplanks0stairs` — tile.shimmerwoodPlanks0Stairs.name
+- `botania:shimmerwoodplanks` — tile.shimmerwoodPlanks.name
+- `botania:shinyflower` — tile.shinyFlower.name
+- `botania:solidvine` — tile.solidVine.name
+- `botania:sparkchanger` — tile.sparkChanger.name
+- `botania:spawnerclaw` — tile.spawnerClaw.name
+- `botania:specialflower` — tile.specialFlower.name
+- `botania:spreader` — tile.spreader.name
+- `botania:starfield` — tile.starfield.name
+- `botania:storage` — tile.storage.name
+- `botania:terraplate` — tile.terraPlate.name
+- `botania:teruterubozu` — tile.teruTeruBozu.name
+- `botania:tinyplanetblock` — tile.tinyPlanetBlock.name
+- `botania:tinypotato` — tile.tinyPotato.name
+- `botania:turntable` — tile.turntable.name
+
+### botany
+- `botany:flowerbed_no_weed` — botany.soil.flowerbed.name
+- `botany:flowerbed` — botany.soil.flowerbed.name
+- `botany:flower` — Botany Flower
+- `botany:loam_no_weed` — botany.soil.loam.name
+- `botany:loam` — botany.soil.loam.name
+- `botany:machine` — tile.null.name
+- `botany:plant` — tile.null.name
+- `botany:soil_no_weed` — botany.soil.soil.name
+- `botany:soil` — botany.soil.soil.name
+
+### buildinggadgets
+- `buildinggadgets:constructionblock_dense` — Dense Construction Block
+- `buildinggadgets:constructionblockpowder` — Construction Block Powder
+- `buildinggadgets:constructionblock` — Construction Block
+- `buildinggadgets:effectblock` — (Unused)Effect Block
+- `buildinggadgets:templatemanager` — Template Manager
+
+### careerbees
+- `careerbees:alveary_frame` — Alveary Frame Holder
+- `careerbees:flower_pedastal` — Flower Pedastal
+
+### chiselsandbits
+- `chiselsandbits:bittank` — Chiseled Fluid Bit Tank
+- `chiselsandbits:chiseled_clay` — Chiseled Clay
+- `chiselsandbits:chiseled_cloth` — Chiseled Cloth
+- `chiselsandbits:chiseled_fluid` — Chiseled Fluid
+- `chiselsandbits:chiseled_glass` — Chiseled Glass
+- `chiselsandbits:chiseled_grass` — Chiseled Grass
+- `chiselsandbits:chiseled_ground` — Chiseled Ground
+- `chiselsandbits:chiseled_ice` — Chiseled Ice
+- `chiselsandbits:chiseled_iron` — Chiseled Metal
+- `chiselsandbits:chiseled_leaves` — Chiseled Leaves
+- `chiselsandbits:chiseled_packedice` — Chiseled Packed Ice
+- `chiselsandbits:chiseled_rock` — Chiseled Rock
+- `chiselsandbits:chiseled_sand` — Chiseled Sand
+- `chiselsandbits:chiseled_snow` — Chiseled Snow
+- `chiselsandbits:chiseled_wood` — Chiseled Wood
+
+### chisel
+- `chisel:andesite1` — Andesite
+- `chisel:andesite2` — Andesite
+- `chisel:andesite` — Andesite
+- `chisel:antiblock` — Antiblock
+- `chisel:arcane_stone1` — Arcane Stone
+- `chisel:arcane_stone2` — Arcane Stone
+- `chisel:arcane_stone` — Arcane Stone
+- `chisel:auto_chisel` — Auto Chisel
+- `chisel:basalt1` — Basalt
+- `chisel:basalt2` — Basalt
+- `chisel:basalt` — Basalt
+- `chisel:block_charcoal1` — Block of Charcoal
+- `chisel:block_charcoal2` — Block of Charcoal
+- `chisel:block_charcoal` — Block of Charcoal
+- `chisel:block_coal1` — Block of Coal
+- `chisel:block_coal2` — Block of Coal
+- `chisel:block_coal_coke1` — Block of Coal Coke
+- `chisel:block_coal_coke2` — Block of Coal Coke
+- `chisel:block_coal_coke` — Block of Coal Coke
+- `chisel:block_coal` — Block of Coal
+- `chisel:blockaluminum` — Block of Aluminum
+- `chisel:blockbronze` — Block of Bronze
+- `chisel:blockcobalt` — Block of Cobalt
+- `chisel:blockcopper` — Block of Copper
+- `chisel:blockelectrum` — Block of Electrum
+- `chisel:blockgold` — Block of Gold
+- `chisel:blockinvar` — Block of Invar
+- `chisel:blockiron` — Block of Iron
+- `chisel:blocklead` — Block of Lead
+- `chisel:blocknickel` — Block of Nickel
+- `chisel:blockplatinum` — Block of Platinum
+- `chisel:blocksilver` — Block of Silver
+- `chisel:blocksteel` — Block of Steel
+- `chisel:blocktin` — Block of Tin
+- `chisel:blockuranium` — Block of Uranium
+- `chisel:bloodmagic` — Chiseled Blood Rune
+- `chisel:bookshelf_acacia` — Acacia Bookshelf
+- `chisel:bookshelf_birch` — Birch Bookshelf
+- `chisel:bookshelf_darkoak` — Dark Oak Bookshelf
+- `chisel:bookshelf_jungle` — Jungle Bookshelf
+- `chisel:bookshelf_oak` — Oak Bookshelf
+- `chisel:bookshelf_spruce` — Spruce Bookshelf
+- `chisel:bricks1` — Bricks
+- `chisel:bricks2` — Bricks
+- `chisel:bricks` — Bricks
+- `chisel:brownstone` — Brownstone
+- `chisel:carpet_black` — Black Carpet
+- `chisel:carpet_blue` — Blue Carpet
+- `chisel:carpet_brown` — Brown Carpet
+- `chisel:carpet_cyan` — Cyan Carpet
+- `chisel:carpet_gray` — Gray Carpet
+- `chisel:carpet_green` — Green Carpet
+- `chisel:carpet_lightblue` — Light Blue Carpet
+- `chisel:carpet_lightgray` — Light Gray Carpet
+- `chisel:carpet_lime` — Lime Carpet
+- `chisel:carpet_magenta` — Magenta Carpet
+- `chisel:carpet_orange` — Orange Carpet
+- `chisel:carpet_pink` — Pink Carpet
+- `chisel:carpet_purple` — Purple Carpet
+- `chisel:carpet_red` — Red Carpet
+- `chisel:carpet_white` — White Carpet
+- `chisel:carpet_yellow` — Yellow Carpet
+- `chisel:certus1` — Block of Certus Quartz
+- `chisel:certus2` — Block of Certus Quartz
+- `chisel:certus` — Block of Certus Quartz
+- `chisel:cloud` — Cloud
+- `chisel:cobblestone1` — Cobblestone
+- `chisel:cobblestone2` — Cobblestone
+- `chisel:cobblestonemossy1` — Moss Stone
+- `chisel:cobblestonemossy2` — Moss Stone
+- `chisel:cobblestonemossy` — Moss Stone
+- `chisel:cobblestone` — Cobblestone
+- `chisel:concrete_black1` — Black Concrete
+- `chisel:concrete_black2` — Black Concrete
+- `chisel:concrete_black` — Black Concrete
+- `chisel:concrete_blue1` — Blue Concrete
+- `chisel:concrete_blue2` — Blue Concrete
+- `chisel:concrete_blue` — Blue Concrete
+- `chisel:concrete_brown1` — Brown Concrete
+- `chisel:concrete_brown2` — Brown Concrete
+- `chisel:concrete_brown` — Brown Concrete
+- `chisel:concrete_cyan1` — Cyan Concrete
+- `chisel:concrete_cyan2` — Cyan Concrete
+- `chisel:concrete_cyan` — Cyan Concrete
+- `chisel:concrete_gray1` — Gray Concrete
+- `chisel:concrete_gray2` — Gray Concrete
+- `chisel:concrete_gray` — Gray Concrete
+- `chisel:concrete_green1` — Green Concrete
+- `chisel:concrete_green2` — Green Concrete
+- `chisel:concrete_green` — Green Concrete
+- `chisel:concrete_lightblue1` — Light Blue Concrete
+- `chisel:concrete_lightblue2` — Light Blue Concrete
+- `chisel:concrete_lightblue` — Light Blue Concrete
+- `chisel:concrete_lightgray1` — Light Gray Concrete
+- `chisel:concrete_lightgray2` — Light Gray Concrete
+- `chisel:concrete_lightgray` — Light Gray Concrete
+- `chisel:concrete_lime1` — Lime Concrete
+- `chisel:concrete_lime2` — Lime Concrete
+- `chisel:concrete_lime` — Lime Concrete
+- `chisel:concrete_magenta1` — Magenta Concrete
+- `chisel:concrete_magenta2` — Magenta Concrete
+- `chisel:concrete_magenta` — Magenta Concrete
+- `chisel:concrete_orange1` — Orange Concrete
+- `chisel:concrete_orange2` — Orange Concrete
+- `chisel:concrete_orange` — Orange Concrete
+- `chisel:concrete_pink1` — Pink Concrete
+- `chisel:concrete_pink2` — Pink Concrete
+- `chisel:concrete_pink` — Pink Concrete
+- `chisel:concrete_purple1` — Purple Concrete
+- `chisel:concrete_purple2` — Purple Concrete
+- `chisel:concrete_purple` — Purple Concrete
+- `chisel:concrete_red1` — Red Concrete
+- `chisel:concrete_red2` — Red Concrete
+- `chisel:concrete_red` — Red Concrete
+- `chisel:concrete_white1` — White Concrete
+- `chisel:concrete_white2` — White Concrete
+- `chisel:concrete_white` — White Concrete
+- `chisel:concrete_yellow1` — Yellow Concrete
+- `chisel:concrete_yellow2` — Yellow Concrete
+- `chisel:concrete_yellow` — Yellow Concrete
+- `chisel:diamond` — Block of Diamond
+- `chisel:diorite1` — Diorite
+- `chisel:diorite2` — Diorite
+- `chisel:diorite` — Diorite
+- `chisel:dirt` — Dirt
+- `chisel:emerald` — Block of Emerald
+- `chisel:endstone1` — Endstone
+- `chisel:endstone2` — Endstone
+- `chisel:endstone` — Endstone
+- `chisel:energizedvoidstone` — Primal Voidstone
+- `chisel:factory1` — Factory Block
+- `chisel:factory` — Factory Block
+- `chisel:futura` — Futura Block
+- `chisel:glass1` — Glass
+- `chisel:glassdyedblack` — Black Stained Glass
+- `chisel:glassdyedblue` — Blue Stained Glass
+- `chisel:glassdyedbrown` — Brown Stained Glass
+- `chisel:glassdyedcyan` — Cyan Stained Glass
+- `chisel:glassdyedgray` — Gray Stained Glass
+- `chisel:glassdyedgreen` — Green Stained Glass
+- `chisel:glassdyedlightblue` — Light Blue Stained Glass
+- `chisel:glassdyedlightgray` — Light Gray Stained Glass
+- `chisel:glassdyedlime` — Lime Stained Glass
+- `chisel:glassdyedmagenta` — Magenta Stained Glass
+- `chisel:glassdyedorange` — Orange Stained Glass
+- `chisel:glassdyedpink` — Pink Stained Glass
+- `chisel:glassdyedpurple` — Purple Stained Glass
+- `chisel:glassdyedred` — Red Stained Glass
+- `chisel:glassdyedwhite` — White Stained Glass
+- `chisel:glassdyedyellow` — Yellow Stained Glass
+- `chisel:glasspane1` — Glass Pane
+- `chisel:glasspanedyedblack` — Black Stained Glass Pane
+- `chisel:glasspanedyedblue` — Blue Stained Glass Pane
+- `chisel:glasspanedyedbrown` — Brown Stained Glass Pane
+- `chisel:glasspanedyedcyan` — Cyan Stained Glass Pane
+- `chisel:glasspanedyedgray` — Gray Stained Glass Pane
+- `chisel:glasspanedyedgreen` — Green Stained Glass Pane
+- `chisel:glasspanedyedlightblue` — Light Blue Stained Glass Pane
+- `chisel:glasspanedyedlightgray` — Light Gray Stained Glass Pane
+- `chisel:glasspanedyedlime` — Lime Stained Glass Pane
+- `chisel:glasspanedyedmagenta` — Magenta Stained Glass Pane
+- `chisel:glasspanedyedorange` — Orange Stained Glass Pane
+- `chisel:glasspanedyedpink` — Pink Stained Glass Pane
+- `chisel:glasspanedyedpurple` — Purple Stained Glass Pane
+- `chisel:glasspanedyedred` — Red Stained Glass Pane
+- `chisel:glasspanedyedwhite` — White Stained Glass Pane
+- `chisel:glasspanedyedyellow` — Yellow Stained Glass Pane
+- `chisel:glasspane` — Glass Pane
+- `chisel:glass` — Glass
+- `chisel:glowstone1` — Glowstone
+- `chisel:glowstone2` — Glowstone
+- `chisel:glowstone` — Glowstone
+- `chisel:gold` — Block of Gold
+- `chisel:granite1` — Granite
+- `chisel:granite2` — Granite
+- `chisel:granite` — Granite
+- `chisel:hardenedclay1` — Terracotta
+- `chisel:hardenedclay2` — Terracotta
+- `chisel:hardenedclay` — Terracotta
+- `chisel:ice1` — Ice
+- `chisel:ice2` — Ice
+- `chisel:icepillar` — Ice Pillar
+- `chisel:ice` — Ice
+- `chisel:ironpane` — Iron Bars
+- `chisel:iron` — Block of Iron
+- `chisel:laboratory` — Laboratory Block
+- `chisel:lapis` — Lapis Lazuli Block
+- `chisel:lavastone1` — Lavastone
+- `chisel:lavastone2` — Lavastone
+- `chisel:lavastone` — Lavastone
+- `chisel:limestone1` — Limestone
+- `chisel:limestone2` — Limestone
+- `chisel:limestone` — Limestone
+- `chisel:marble1` — Marble
+- `chisel:marble2` — Marble
+- `chisel:marblepillar` — Marble Pillar
+- `chisel:marble` — Marble
+- `chisel:netherbrick` — Nether Brick
+- `chisel:netherrack` — Netherrack
+- `chisel:obsidian` — Obsidian
+- `chisel:paper` — Paper Wall
+- `chisel:planks-acacia` — Acacia Wood Planks
+- `chisel:planks-birch` — Birch Wood Planks
+- `chisel:planks-dark-oak` — Dark Oak Wood Planks
+- `chisel:planks-jungle` — Jungle Wood Planks
+- `chisel:planks-oak` — Oak Wood Planks
+- `chisel:planks-spruce` — Spruce Wood Planks
+- `chisel:prismarine1` — Prismarine
+- `chisel:prismarine2` — Prismarine
+- `chisel:prismarine` — Prismarine
+- `chisel:purpur1` — Purpur Block
+- `chisel:purpur2` — Purpur Block
+- `chisel:purpur` — Purpur Block
+- `chisel:quartz1` — Block of Quartz
+- `chisel:quartz` — Block of Quartz
+- `chisel:redstone1` — Block of Redstone
+- `chisel:redstone` — Block of Redstone
+- `chisel:sandstone-scribbles` — Sandstone Scribbles
+- `chisel:sandstonered-scribbles` — Red Sandstone Scribbles
+- `chisel:sandstonered1` — Red Sandstone
+- `chisel:sandstonered2` — Red Sandstone
+- `chisel:sandstonered` — Red Sandstone
+- `chisel:sandstoneyellow1` — Sandstone
+- `chisel:sandstoneyellow2` — Sandstone
+- `chisel:sandstoneyellow` — Sandstone
+- `chisel:stonebrick1` — Chiseled Stone
+- `chisel:stonebrick2` — Chiseled Stone
+- `chisel:stonebrick` — Chiseled Stone
+- `chisel:technical1` — Factory Block
+- `chisel:technicalnew` — Factory Block
+- `chisel:technical` — Factory Block
+- `chisel:templemossy` — Mossy Temple Block
+- `chisel:temple` — Temple Block
+- `chisel:tyrian` — Tyrian
+- `chisel:valentines` — Valentines' Block
+- `chisel:voidstonerunic` — Runed Voidstone
+- `chisel:voidstone` — Voidstone
+- `chisel:waterstone1` — Waterstone
+- `chisel:waterstone2` — Waterstone
+- `chisel:waterstone` — Waterstone
+- `chisel:wool_black` — Black Wool
+- `chisel:wool_blue` — Blue Wool
+- `chisel:wool_brown` — Brown Wool
+- `chisel:wool_cyan` — Cyan Wool
+- `chisel:wool_gray` — Gray Wool
+- `chisel:wool_green` — Green Wool
+- `chisel:wool_lightblue` — Light Blue Wool
+- `chisel:wool_lightgray` — Light Gray Wool
+- `chisel:wool_lime` — Lime Wool
+- `chisel:wool_magenta` — Magenta Wool
+- `chisel:wool_orange` — Orange Wool
+- `chisel:wool_pink` — Pink Wool
+- `chisel:wool_purple` — Purple Wool
+- `chisel:wool_red` — Red Wool
+- `chisel:wool_white` — Wool
+- `chisel:wool_yellow` — Yellow Wool
+
+### comforts
+- `comforts:hammock_black` — tile.comforts.hammock.black.name
+- `comforts:hammock_blue` — tile.comforts.hammock.blue.name
+- `comforts:hammock_brown` — tile.comforts.hammock.brown.name
+- `comforts:hammock_cyan` — tile.comforts.hammock.cyan.name
+- `comforts:hammock_gray` — tile.comforts.hammock.gray.name
+- `comforts:hammock_green` — tile.comforts.hammock.green.name
+- `comforts:hammock_light_blue` — tile.comforts.hammock.light_blue.name
+- `comforts:hammock_lime` — tile.comforts.hammock.lime.name
+- `comforts:hammock_magenta` — tile.comforts.hammock.magenta.name
+- `comforts:hammock_orange` — tile.comforts.hammock.orange.name
+- `comforts:hammock_pink` — tile.comforts.hammock.pink.name
+- `comforts:hammock_purple` — tile.comforts.hammock.purple.name
+- `comforts:hammock_red` — tile.comforts.hammock.red.name
+- `comforts:hammock_silver` — tile.comforts.hammock.silver.name
+- `comforts:hammock_white` — tile.comforts.hammock.white.name
+- `comforts:hammock_yellow` — tile.comforts.hammock.yellow.name
+- `comforts:rope` — Rope and Nail
+- `comforts:sleeping_bag_black` — tile.comforts.sleeping_bag.black.name
+- `comforts:sleeping_bag_blue` — tile.comforts.sleeping_bag.blue.name
+- `comforts:sleeping_bag_brown` — tile.comforts.sleeping_bag.brown.name
+- `comforts:sleeping_bag_cyan` — tile.comforts.sleeping_bag.cyan.name
+- `comforts:sleeping_bag_gray` — tile.comforts.sleeping_bag.gray.name
+- `comforts:sleeping_bag_green` — tile.comforts.sleeping_bag.green.name
+- `comforts:sleeping_bag_light_blue` — tile.comforts.sleeping_bag.light_blue.name
+- `comforts:sleeping_bag_lime` — tile.comforts.sleeping_bag.lime.name
+- `comforts:sleeping_bag_magenta` — tile.comforts.sleeping_bag.magenta.name
+- `comforts:sleeping_bag_orange` — tile.comforts.sleeping_bag.orange.name
+- `comforts:sleeping_bag_pink` — tile.comforts.sleeping_bag.pink.name
+- `comforts:sleeping_bag_purple` — tile.comforts.sleeping_bag.purple.name
+- `comforts:sleeping_bag_red` — tile.comforts.sleeping_bag.red.name
+- `comforts:sleeping_bag_silver` — tile.comforts.sleeping_bag.silver.name
+- `comforts:sleeping_bag_white` — tile.comforts.sleeping_bag.white.name
+- `comforts:sleeping_bag_yellow` — tile.comforts.sleeping_bag.yellow.name
+
+### compactmachines3
+- `compactmachines3:craftinghologram` — tile.compactmachines3.craftinghologram.name
+- `compactmachines3:fieldprojector` — Miniaturization Field Projector
+- `compactmachines3:machine` — tile.compactmachines3.machine.name
+- `compactmachines3:redstonetunnel` — Redstone Tunnel
+- `compactmachines3:tunnel` — Tunnel
+- `compactmachines3:wallbreakable` — Compact Machine Wall
+- `compactmachines3:wall` — Solid Compact Machine Wall
+
+### computercraft
+- `computercraft:advanced_modem` — Ender Modem
+- `computercraft:cable` — Networking Cable
+- `computercraft:command_computer` — Command Computer
+- `computercraft:computer` — Computer
+- `computercraft:peripheral` — tile.computercraft
+- `computercraft:turtle_advanced` — Turtle
+- `computercraft:turtle_expanded` — Turtle
+- `computercraft:turtle` — Turtle
+- `computercraft:wired_modem_full` — tile.computercraft
+
+### conarm
+- `conarm:armorforge` — Armor Forge
+- `conarm:armorstation` — Armor Station
+- `conarm:soft_obsidian` — Unstable Obsidian
+
+### cookingforblockheads
+- `cookingforblockheads:cabinet` — Kitchen Cabinet
+- `cookingforblockheads:cooking_table` — Cooking Table
+- `cookingforblockheads:corner` — Kitchen Corner
+- `cookingforblockheads:counter` — Kitchen Counter
+- `cookingforblockheads:cow_jar` — Cow in a Jar
+- `cookingforblockheads:cutting_board` — Cutting Board
+- `cookingforblockheads:fridge` — Fridge
+- `cookingforblockheads:fruit_basket` — Fruit Basket
+- `cookingforblockheads:kitchen_floor` — Kitchen Floor
+- `cookingforblockheads:milk_jar` — Milk Jar
+- `cookingforblockheads:oven` — Oven
+- `cookingforblockheads:sink` — Sink
+- `cookingforblockheads:spice_rack` — Spice Rack
+- `cookingforblockheads:toaster` — Toaster
+- `cookingforblockheads:tool_rack` — Tool Rack
+
+### cyclicmagic
+- `cyclicmagic:amber` — Amber
+- `cyclicmagic:apple` — Apple Sprout
+- `cyclicmagic:auto_crafter` — Auto Crafter
+- `cyclicmagic:auto_packager` — Packager
+- `cyclicmagic:battery_infinite` — Infinite Battery
+- `cyclicmagic:battery` — Battery
+- `cyclicmagic:beacon_potion` — Pharos Beacon
+- `cyclicmagic:beacon_redstone` — Empty Beacon
+- `cyclicmagic:biomass` — Biomass
+- `cyclicmagic:block_anvil_magma` — Magma Anvil
+- `cyclicmagic:block_anvil` — Powered Diamond Anvil
+- `cyclicmagic:block_disenchanter` — Unchant Pylon
+- `cyclicmagic:block_enchanter` — Enchanter
+- `cyclicmagic:block_fishing` — Automatic Fishing Net
+- `cyclicmagic:block_forester` — Forester
+- `cyclicmagic:block_fragile_auto` — Responsive Scaffolding
+- `cyclicmagic:block_fragile_weak` — Replaceable Scaffolding
+- `cyclicmagic:block_fragile` — Fragile Scaffolding
+- `cyclicmagic:block_hydrator` — Hydrator
+- `cyclicmagic:block_library_ctrl` — Ender Library
+- `cyclicmagic:block_library` — Ender Bookshelf
+- `cyclicmagic:block_miner_smart` — Controlled Miner
+- `cyclicmagic:block_miner` — Block Miner
+- `cyclicmagic:block_screen` — Text Projector
+- `cyclicmagic:block_shears` — Shearing Block
+- `cyclicmagic:block_soundproofing` — Soundproofing
+- `cyclicmagic:block_storeempty` — Fluid Storage Tank
+- `cyclicmagic:block_user` — Automated User
+- `cyclicmagic:block_vacuum` — Item Collector
+- `cyclicmagic:block_workbench` — Workbench
+- `cyclicmagic:builder_block` — Structure Builder
+- `cyclicmagic:builder_pattern` — Pattern Replicator
+- `cyclicmagic:button_large` — Large Button
+- `cyclicmagic:cable_wireless_energy` — Energy Transfer Node
+- `cyclicmagic:cable_wireless_fluid` — Fluid Transfer Node
+- `cyclicmagic:cable_wireless` — Item Transfer Node
+- `cyclicmagic:clock` — Redstone Clock
+- `cyclicmagic:crystal` — Crystallized Obsidian
+- `cyclicmagic:dehydrator` — Dehydrator
+- `cyclicmagic:dice` — Dice
+- `cyclicmagic:doorbell_simple` — Doorbell
+- `cyclicmagic:dropper_exact` — Precise Dropper
+- `cyclicmagic:entity_detector` — Entity Detector
+- `cyclicmagic:exp_pylon` — Experience Pylon
+- `cyclicmagic:fan` — Fan
+- `cyclicmagic:fire_dark` — Dark Fire
+- `cyclicmagic:fire_frost` — Frost Fire
+- `cyclicmagic:fire_starter` — Fire Starter
+- `cyclicmagic:fluid_drain` — Fluid Collector
+- `cyclicmagic:fluid_placer` — Fluid Placer
+- `cyclicmagic:glass_strong` — Tempered Glass
+- `cyclicmagic:harvester_block` — Harvester
+- `cyclicmagic:imbuer` — Imbuer
+- `cyclicmagic:laser` — Laser Cell
+- `cyclicmagic:magnet_anti_block` — Interdiction Pulsar
+- `cyclicmagic:magnet_block` — Item Magnet
+- `cyclicmagic:melter` — Melter
+- `cyclicmagic:milk` — Milk
+- `cyclicmagic:moon_sensor` — Moon Phase Sensor
+- `cyclicmagic:password_block` — Password Trigger
+- `cyclicmagic:placer_block` — Block Placer
+- `cyclicmagic:plate_launch_extra` — Extreme Slime Plate
+- `cyclicmagic:plate_launch_large` — Hardened Slime Plate
+- `cyclicmagic:plate_launch_med` — Slime Plate
+- `cyclicmagic:plate_launch_small` — Soft Slime Plate
+- `cyclicmagic:plate_push_corner` — Conveyor Belt Corner
+- `cyclicmagic:plate_push_fast_angle` — Fast Conveyor Belt Ramp
+- `cyclicmagic:plate_push_fast_corner` — Fast Conveyor Belt Corner
+- `cyclicmagic:plate_push_fast` — Fast Conveyor Belt
+- `cyclicmagic:plate_push_med_angle` — Conveyor Belt Ramp
+- `cyclicmagic:plate_push_slow_angle` — Slow Conveyor Belt Ramp
+- `cyclicmagic:plate_push_slow_corner` — Slow Conveyor Belt Corner
+- `cyclicmagic:plate_push_slowest_angle` — Slowest Conveyor Belt Ramp
+- `cyclicmagic:plate_push_slowest_corner` — Slowest Conveyor Belt Corner
+- `cyclicmagic:plate_push_slowest` — Slowest Conveyor Belt
+- `cyclicmagic:plate_push_slow` — Slow Conveyor Belt
+- `cyclicmagic:plate_push` — Conveyor Belt
+- `cyclicmagic:plate_vector` — Aerial Faith Plate
+- `cyclicmagic:poison` — Poison
+- `cyclicmagic:screen_target` — Sensor Display
+- `cyclicmagic:solidifier` — Solidifier
+- `cyclicmagic:sound_player` — SFX Block
+- `cyclicmagic:spikes_diamond` — Diamond Spikes
+- `cyclicmagic:spikes_iron` — Iron Spikes
+- `cyclicmagic:sprinkler` — Sprinkler
+- `cyclicmagic:sprout` — Magic Bean Sprout
+- `cyclicmagic:target` — Bullseye Target
+- `cyclicmagic:trash` — Trash Void
+- `cyclicmagic:void_anvil` — Void Anvil
+- `cyclicmagic:water_candle` — Water Candle
+- `cyclicmagic:wireless_receiver` — Wireless Receiver
+- `cyclicmagic:wireless_transmitter` — Wireless Transmitter
+- `cyclicmagic:xpjuice` — Experience
+
+### danknull
+- `danknull:danknull_dock` — /dank/null Docking Station
+
+### dankstorage
+- `dankstorage:dank_1` — Dank 1
+- `dankstorage:dank_2` — Dank 2
+- `dankstorage:dank_3` — Dank 3
+- `dankstorage:dank_4` — Dank 4
+- `dankstorage:dank_5` — Dank 5
+- `dankstorage:dank_6` — Dank 6
+- `dankstorage:dank_7` — Dank 7
+
+### darkutils
+- `darkutils:anti_slime` — Anti-Slime Block
+- `darkutils:ender_hopper` — Ender Hopper
+- `darkutils:ender_pearl_hopper` — Pearled Ender Hopper
+- `darkutils:ender_tether` — Ender Tether
+- `darkutils:fake_tnt` — TNT
+- `darkutils:filter_inverted` — Inverted Mob Filter
+- `darkutils:filter` — Mob Filter
+- `darkutils:grate` — Item Grate
+- `darkutils:monolith` — tile.darkutils.monolith.name
+- `darkutils:pearl_block` — tile.darkutils.pearl.block.name
+- `darkutils:slime_dyed` — tile.darkutils.slime.dyed.name
+- `darkutils:sneaky_bedrock` — Sneaky Bedrock
+- `darkutils:sneaky_button` — Sneaky Button
+- `darkutils:sneaky_ghost` — Sneaky False Block
+- `darkutils:sneaky_lever` — Sneaky Lever
+- `darkutils:sneaky_obsidian` — Sneaky Obsidian
+- `darkutils:sneaky_plate` — Sneaky Pressure Plate
+- `darkutils:sneaky_torch` — Sneaky Torch
+- `darkutils:sneaky` — Sneaky Block
+- `darkutils:timer` — Timer
+- `darkutils:trap_anchor` — Anchor Plate
+- `darkutils:trap_move_fast` — Fast Vector Plate
+- `darkutils:trap_move_hyper` — Extreme Vector Plate
+- `darkutils:trap_move` — Vector Plate
+- `darkutils:trap_tile` — tile.darkutils.trap.tile.name
+- `darkutils:update_detector` — Block Update Detector
+- `darkutils:wither_block` — Wither Block
+
+### demagnetize
+- `demagnetize:demagnetizer_advanced` — Advanced Demagnetizer
+- `demagnetize:demagnetizer` — Demagnetizer
+
+### draconicevolution
+- `draconicevolution:celestial_manipulator` — Celestial Manipulator
+- `draconicevolution:chaos_crystal` — Chaos Crystal
+- `draconicevolution:chaos_shard_atmos` — tile.draconicevolution
+- `draconicevolution:crafting_injector` — tile.draconicevolution
+- `draconicevolution:creative_rf_source` — Creative RF Source
+- `draconicevolution:dislocator_pedestal` — Dislocator Pedestal
+- `draconicevolution:dislocator_receptacle` — Dislocator Receptacle
+- `draconicevolution:diss_enchanter` — Disenchanter
+- `draconicevolution:draconic_block` — Awakened Draconium Block
+- `draconicevolution:draconic_spawner` — Stabilized Mob Spawner
+- `draconicevolution:draconium_block` — Draconium Block
+- `draconicevolution:draconium_chest` — Draconium Chest
+- `draconicevolution:draconium_ore` — tile.draconicevolution
+- `draconicevolution:energy_crystal` — tile.draconicevolution
+- `draconicevolution:energy_infuser` — Energy Infuser
+- `draconicevolution:energy_pylon` — Energy Pylon
+- `draconicevolution:energy_storage_core` — Energy Core
+- `draconicevolution:entity_detector` — Entity Detector
+- `draconicevolution:flow_gate` — tile.draconicevolution
+- `draconicevolution:fusion_crafting_core` — Fusion Crafting Core
+- `draconicevolution:generator` — Generator
+- `draconicevolution:grinder` — Mob Grinder
+- `draconicevolution:infused_obsidian` — Draconium Infused Obsidian
+- `draconicevolution:invis_e_core_block` — tile.draconicevolution
+- `draconicevolution:item_dislocation_inhibitor` — Dislocation Normalization Field Projector
+- `draconicevolution:particle_generator` — Particle Generator
+- `draconicevolution:placed_item` — tile.draconicevolution
+- `draconicevolution:portal` — Portal
+- `draconicevolution:potentiometer` — Potentiometer
+- `draconicevolution:rain_sensor` — Rain Sensor
+- `draconicevolution:reactor_component` — tile.draconicevolution
+- `draconicevolution:reactor_core` — Draconic Reactor Core
+
+### embers
+- `embers:advanced_edge` — tile.advanced_edge.name
+- `embers:alchemical_redstone` — tile.null.name
+- `embers:alchemy_pedestal` — Alchemy Pedestal
+- `embers:alchemy_tablet` — Exchange Tablet
+- `embers:aluminum` — tile.null.name
+- `embers:archaic_bricks` — Archaic Bricks
+- `embers:archaic_edge` — Archaic Edge
+- `embers:archaic_light` — Archaic Light
+- `embers:archaic_mech_edge` — tile.archaic_mech_edge.name
+- `embers:archaic_tile` — Archaic Tile
+- `embers:ashen_brick_slab_double` — Ashen Brick Double Slab
+- `embers:ashen_brick_slab` — Ashen Brick Slab
+- `embers:ashen_brick` — Ashen Brick
+- `embers:ashen_stone_slab_double` — Ashen Stone Double Slab
+- `embers:ashen_stone_slab` — Ashen Stone Slab
+- `embers:ashen_stone` — Ashen Stone
+- `embers:ashen_tile_slab_double` — Ashen Tile Double Slab
+- `embers:ashen_tile_slab` — Ashen Tile Slab
+- `embers:ashen_tile` — Ashen Tile
+- `embers:auto_hammer` — Automatic Hammer
+- `embers:beam_cannon` — Beam Cannon
+- `embers:beam_splitter` — Beam Splitter
+- `embers:bin` — Bin
+- `embers:block_aluminum` — Aluminium Block
+- `embers:block_bronze` — Bronze Block
+- `embers:block_caminite_brick_slab_double` — Caminite Brick Double Slab
+- `embers:block_caminite_brick_slab` — Caminite Brick Slab
+- `embers:block_caminite_brick` — Caminite Bricks
+- `embers:block_copper` — Copper Block
+- `embers:block_dawnstone` — Dawnstone Block
+- `embers:block_electrum` — Electrum Block
+- `embers:block_furnace` — Melter
+- `embers:block_lantern` — Ember Lantern
+- `embers:block_lead` — Lead Block
+- `embers:block_nickel` — Nickel Block
+- `embers:block_silver` — Silver Block
+- `embers:block_tank` — Fluid Tank
+- `embers:block_tin` — Tin Block
+- `embers:boiler` — Pressure Refinery
+- `embers:breaker` — Automatic Breaker
+- `embers:bronze` — tile.null.name
+- `embers:caminite_lever` — Caminite Lever
+- `embers:catalytic_plug` — Catalytic Plug
+- `embers:catalyzer` — Catalysis Chamber
+- `embers:charger` — Copper Charger
+- `embers:cinder_plinth` — Cinder Plinth
+- `embers:clockwork_attenuator` — Clockwork Attenuator
+- `embers:combustor` — Combustion Chamber
+- `embers:copper_cell` — Copper Cell
+- `embers:copper` — tile.null.name
+- `embers:creative_ember_source` — Creative Ember Source
+- `embers:crystal_cell` — Crystal Cell
+- `embers:dawnstone_anvil` — Dawnstone Anvil
+- `embers:dawnstone` — tile.null.name
+- `embers:electrum` — tile.null.name
+- `embers:ember_activator` — Ember Activator
+- `embers:ember_bore` — Ember Bore
+- `embers:ember_emitter` — Ember Emitter
+- `embers:ember_funnel` — Ember Funnel
+- `embers:ember_gauge` — Ember Dial
+- `embers:ember_injector` — Ember Injector
+- `embers:ember_pipe` — Volatile Ember Conduit
+- `embers:ember_pulser` — Ember Ejector
+- `embers:ember_receiver` — Ember Receptor
+- `embers:ember_relay` — Ember Relay
+- `embers:ember_siphon` — Ember Siphon
+- `embers:explosion_pedestal` — Explosion Charm Pedestal
+- `embers:field_chart` — Field Chart
+- `embers:fluid_dropper` — Fluid Dropper
+- `embers:fluid_gauge` — Fluid Dial
+- `embers:fluid_transfer` — Fluid Transfer
+- `embers:geo_separator` — Geologic Separator
+- `embers:glow` — tile.glow.name
+- `embers:gold` — tile.null.name
+- `embers:heat_coil` — Hearth Coil
+- `embers:inferno_forge_edge` — tile.inferno_forge_edge.name
+- `embers:inferno_forge` — Inferno Forge
+- `embers:iron` — tile.null.name
+- `embers:item_dropper` — Item Dropper
+- `embers:item_pipe` — Item Pipe
+- `embers:item_pump` — Item Extractor
+- `embers:item_request` — Item Requisition
+- `embers:item_transfer` — Item Transfer
+- `embers:large_tank` — Reservoir
+- `embers:lead` — tile.null.name
+- `embers:mech_accessor` — Machine Accessor
+- `embers:mech_core` — Mechanical Core
+- `embers:mech_edge` — tile.mech_edge.name
+- `embers:mechanical_pump` — Mechanical Pump
+- `embers:mini_boiler` — Mini Boiler
+- `embers:mixer` — Mixer Centrifuge
+- `embers:nickel` — tile.null.name
+- `embers:ore_aluminum` — Aluminium Ore
+- `embers:ore_copper` — Copper Ore
+- `embers:ore_lead` — Lead Ore
+- `embers:ore_nickel` — Nickel Ore
+- `embers:ore_quartz` — Quartz Ore
+- `embers:ore_silver` — Silver Ore
+- `embers:ore_tin` — Tin Ore
+- `embers:pipe` — Fluid Pipe
+- `embers:pump` — Fluid Extractor
+- `embers:reaction_chamber` — Reaction Chamber
+- `embers:reactor` — Ignem Reactor
+- `embers:sealed_planks` — Sealed Planks
+- `embers:seed_aluminum` — Aluminium Crystal Seed
+- `embers:seed_copper` — Copper Crystal Seed
+- `embers:seed_dawnstone` — Dawnstone Crystal Seed
+- `embers:seed_gold` — Gold Crystal Seed
+- `embers:seed_iron` — Iron Crystal Seed
+- `embers:seed_lead` — Lead Crystal Seed
+- `embers:seed_nickel` — Nickel Crystal Seed
+- `embers:seed_silver` — Silver Crystal Seed
+- `embers:seed_tin` — Tin Crystal Seed
+- `embers:seed` — tile.seed.name
+- `embers:silver` — tile.null.name
+- `embers:stairs_ashen_brick` — Ashen Brick Stairs
+- `embers:stairs_ashen_stone` — Ashen Stone Stairs
+- `embers:stairs_ashen_tile` — Ashen Tile Stairs
+- `embers:stairs_caminite_brick` — Caminite Brick Stairs
+- `embers:stamper_base` — Stamp Base
+- `embers:stamper` — Stamper
+- `embers:stirling` — Wildfire Stirling
+- `embers:stone_edge` — Caminite Ring
+- `embers:stone_valve` — Caminite Valve
+- `embers:structure_marker` — tile.structure_marker.name
+- `embers:tin` — tile.null.name
+- `embers:turret` — tile.turret.name
+- `embers:vacuum` — Item Vacuum
+- `embers:wall_ashen_brick` — tile.wall_ashen_brick.normal.name
+- `embers:wall_ashen_stone` — tile.wall_ashen_stone.normal.name
+- `embers:wall_ashen_tile` — tile.wall_ashen_tile.normal.name
+- `embers:wall_caminite_brick` — tile.wall_caminite_brick.normal.name
+- `embers:wrapped_sealed_planks` — Reinforced Sealed Planks
+
+### enderio
+- `enderio:block_advanced_power_monitor` — Graphical Power Monitor
+- `enderio:block_alloy_endergy` — Endergy Alloy Block
+- `enderio:block_alloy_smelter` — Alloy Smelter
+- `enderio:block_alloy` — Alloy Block
+- `enderio:block_attractor_obelisk` — Attractor Obelisk
+- `enderio:block_aversion_obelisk` — Aversion Obelisk
+- `enderio:block_broken_anvil` — Broken Dark Steel Anvil
+- `enderio:block_buffer` — tile.block_buffer.name
+- `enderio:block_cap_bank` — tile.block_cap_bank.name
+- `enderio:block_cold_fire` — Cold Fire
+- `enderio:block_combustion_generator` — Combustion Generator
+- `enderio:block_concussion_charge` — Concussion Charge
+- `enderio:block_conduit_bundle` — Conduit Connector
+- `enderio:block_confusion_charge` — Confusion Charge
+- `enderio:block_crafter` — Crafter
+- `enderio:block_creative_spawner` — Creative Spawner
+- `enderio:block_dark_fused_glass` — Dark Clear Glass
+- `enderio:block_dark_fused_quartz` — Dark Fused Quartz
+- `enderio:block_dark_iron_bars` — Dark Iron Bars
+- `enderio:block_dark_paper_anvil` — Dark Paper Anvil
+- `enderio:block_dark_steel_anvil` — Dark Steel Anvil
+- `enderio:block_dark_steel_door` — Dark Steel Door
+- `enderio:block_dark_steel_ladder` — Dark Steel Ladder
+- `enderio:block_dark_steel_trapdoor` — Dark Steel Trapdoor
+- `enderio:block_death_pouch` — Dead Player
+- `enderio:block_decoration1` — Decoration Block
+- `enderio:block_decoration2` — Decoration Block
+- `enderio:block_decoration3` — Decoration Block
+- `enderio:block_detector_block_silent` — Block Detector (Silent)
+- `enderio:block_detector_block` — Block Detector
+- `enderio:block_dialing_device` — Dialing Device
+- `enderio:block_electric_light` — Light
+- `enderio:block_enchanter` — Enchanter
+- `enderio:block_end_iron_bars` — End Steel Bars
+- `enderio:block_ender_charge` — Ender Charge
+- `enderio:block_ender_generator` — Ender Generator
+- `enderio:block_enderman_skull` — Enderman Skull
+- `enderio:block_enhanced_alloy_smelter_top` — Enhanced Alloy Smelter
+- `enderio:block_enhanced_alloy_smelter` — Enhanced Alloy Smelter
+- `enderio:block_enhanced_combustion_generator_top` — Enhanced Combustion Generator
+- `enderio:block_enhanced_combustion_generator` — Enhanced Combustion Generator
+- `enderio:block_enhanced_sag_mill_top` — Enhanced SAG Mill
+- `enderio:block_enhanced_sag_mill` — Enhanced SAG Mill
+- `enderio:block_enhanced_vat_top` — The Enhanced Vat
+- `enderio:block_enhanced_vat` — The Enhanced Vat
+- `enderio:block_enhanced_wired_charger_top` — Enhanced Wired Charger
+- `enderio:block_enhanced_wired_charger` — Enhanced Wired Charger
+- `enderio:block_enhanced_wireless_charger` — Enhanced Wireless Charging Antenna
+- `enderio:block_enlightened_fused_glass` — Enlightened Clear Glass
+- `enderio:block_enlightened_fused_quartz` — Enlightened Fused Quartz
+- `enderio:block_exit_rail` — Exit Rail
+- `enderio:block_experience_obelisk` — Experience Obelisk
+- `enderio:block_farm_station` — Farming Station
+- `enderio:block_fluid_cloud_seed_concentrated` — Concentrated Cloud Seed
+- `enderio:block_fluid_cloud_seed` — Cloud Seed
+- `enderio:block_fluid_conductive_iron` — Molten Conductive Iron
+- `enderio:block_fluid_construction_alloy` — Molten Iron Alloy
+- `enderio:block_fluid_crude_steel` — tile.fluid.crude_steel.name
+- `enderio:block_fluid_crystalline_alloy` — tile.fluid.crystalline_alloy.name
+- `enderio:block_fluid_crystalline_pink_slime` — tile.fluid.crystalline_pink_slime.name
+- `enderio:block_fluid_dark_steel` — Molten Dark Steel
+- `enderio:block_fluid_electrical_steel` — Molten Electrical Steel
+- `enderio:block_fluid_end_steel` — Molten End Steel
+- `enderio:block_fluid_ender_distillation` — Dew of the Void
+- `enderio:block_fluid_ender` — Liquefied Ender Pearls
+- `enderio:block_fluid_energetic_alloy` — Molten Energetic Alloy
+- `enderio:block_fluid_energetic_silver` — tile.fluid.energetic_silver.name
+- `enderio:block_fluid_fire_water` — Fire Water
+- `enderio:block_fluid_glowstone` — Glowgas
+- `enderio:block_fluid_hootch` — Hootch
+- `enderio:block_fluid_liquid_sunshine` — Liquid Sunshine
+- `enderio:block_fluid_melodic_alloy` — tile.fluid.melodic_alloy.name
+- `enderio:block_fluid_nutrient_distillation` — Nutrient Distillation
+- `enderio:block_fluid_pulsating_iron` — Molten Pulsating Iron
+- `enderio:block_fluid_redstone_alloy` — Molten Redstone Alloy
+- `enderio:block_fluid_redstone` — Molten Redstone
+- `enderio:block_fluid_rocket_fuel` — Rocket Fuel
+- `enderio:block_fluid_soularium` — Molten Soularium
+- `enderio:block_fluid_stellar_alloy` — tile.fluid.stellar_alloy.name
+- `enderio:block_fluid_vapor_of_levity` — tile.fluid.vapor_of_levity.name
+- `enderio:block_fluid_vibrant_alloy` — Molten Vibrant Alloy
+- `enderio:block_fluid_vivid_alloy` — tile.fluid.vivid_alloy.name
+- `enderio:block_franken_zombie_generator` — Frank'n'Zombie Generator
+- `enderio:block_fused_glass` — Quite Clear Glass
+- `enderio:block_fused_quartz` — Fused Quartz
+- `enderio:block_gauge` — Energy Gauge
+- `enderio:block_holier_fog` — Glowstone Nano-Particles
+- `enderio:block_holy_dark_fused_glass` — Dark Clear Glass
+- `enderio:block_holy_dark_fused_quartz` — Dark Fused Quartz
+- `enderio:block_holy_enlightened_fused_glass` — Enlightened Clear Glass
+- `enderio:block_holy_enlightened_fused_quartz` — Enlightened Fused Quartz
+- `enderio:block_holy_fog` — Glowstone Nano-Particles (old)
+- `enderio:block_holy_fused_glass` — Quite Clear Glass
+- `enderio:block_holy_fused_quartz` — Fused Quartz
+- `enderio:block_impulse_hopper` — Impulse Hopper
+- `enderio:block_industrial_insulation` — Industrial Insulation
+- `enderio:block_infinity_fog` — Infinity Dust
+- `enderio:block_infinity` — tile.block_infinity.name
+- `enderio:block_inhibitor_obelisk` — Inhibitor Obelisk
+- `enderio:block_inventory_chest_big` — Big Inventory System Storage
+- `enderio:block_inventory_chest_enormous` — Enormous Inventory System Storage
+- `enderio:block_inventory_chest_huge` — Huge Inventory System Storage
+- `enderio:block_inventory_chest_large` — Large Inventory System Storage
+- `enderio:block_inventory_chest_medium` — Medium Inventory System Storage
+- `enderio:block_inventory_chest_small` — Small Inventory System Storage
+- `enderio:block_inventory_chest_tiny` — Tiny Inventory System Storage
+- `enderio:block_inventory_chest_warehouse13` — Inventory System Storage Extended Warehouse
+- `enderio:block_inventory_chest_warehouse` — Inventory System Storage Warehouse
+- `enderio:block_inventory_panel_sensor` — Inventory Sensor
+- `enderio:block_inventory_panel` — Inventory Panel
+- `enderio:block_killer_joe` — Killer Joe
+- `enderio:block_lava_generator` — Lava Heat Exchanger
+- `enderio:block_light_node` — tile.block_light_node.name
+- `enderio:block_machine_base` — (technical block)
+- `enderio:block_machine_io` — (technical block)
+- `enderio:block_niard` — The Niard
+- `enderio:block_normal_wireless_charger` — Wireless Charging Antenna
+- `enderio:block_not_holy_dark_fused_glass` — Dark Clear Glass
+- `enderio:block_not_holy_dark_fused_quartz` — Dark Fused Quartz
+- `enderio:block_not_holy_enlightened_fused_glass` — Enlightened Clear Glass
+- `enderio:block_not_holy_enlightened_fused_quartz` — Enlightened Fused Quartz
+- `enderio:block_not_holy_fused_glass` — Quite Clear Glass
+- `enderio:block_not_holy_fused_quartz` — Fused Quartz
+- `enderio:block_not_pasture_dark_fused_glass` — Dark Clear Glass
+- `enderio:block_not_pasture_dark_fused_quartz` — Dark Fused Quartz
+- `enderio:block_not_pasture_enlightened_fused_glass` — Enlightened Clear Glass
+- `enderio:block_not_pasture_enlightened_fused_quartz` — Enlightened Fused Quartz
+- `enderio:block_not_pasture_fused_glass` — Quite Clear Glass
+- `enderio:block_not_pasture_fused_quartz` — Fused Quartz
+- `enderio:block_not_unholy_dark_fused_glass` — Dark Clear Glass
+- `enderio:block_not_unholy_dark_fused_quartz` — Dark Fused Quartz
+- `enderio:block_not_unholy_enlightened_fused_glass` — Enlightened Clear Glass
+- `enderio:block_not_unholy_enlightened_fused_quartz` — Enlightened Fused Quartz
+- `enderio:block_not_unholy_fused_glass` — Quite Clear Glass
+- `enderio:block_not_unholy_fused_quartz` — Fused Quartz
+- `enderio:block_omni_reservoir` — Omnivoir
+- `enderio:block_painted_carpet` — Painted Carpet
+- `enderio:block_painted_dark_steel_door` — item.block_painted_dark_steel_door.name
+- `enderio:block_painted_dark_steel_trapdoor` — Painted Dark Steel Trapdoor
+- `enderio:block_painted_double_slab` — Painted Slab
+- `enderio:block_painted_fence_gate` — Painted Gate
+- `enderio:block_painted_fence` — Painted Fence
+- `enderio:block_painted_fused_quartz1` — Painted Fused Quartz
+- `enderio:block_painted_fused_quartz2` — Painted Fused Quartz
+- `enderio:block_painted_fused_quartz` — Painted Fused Quartz
+- `enderio:block_painted_glowstone_solid` — Painted Glowstone
+- `enderio:block_painted_glowstone` — Painted Glowstone
+- `enderio:block_painted_iron_door` — item.block_painted_iron_door.name
+- `enderio:block_painted_iron_trapdoor` — Painted Iron Trapdoor
+- `enderio:block_painted_packed_ice_solid` — Painted Packed Ice
+- `enderio:block_painted_packed_ice` — Painted Packed Ice
+- `enderio:block_painted_pressure_plate` — Painted Pressure Plate
+- `enderio:block_painted_redstone_solid` — Painted Redstone
+- `enderio:block_painted_redstone` — Painted Redstone
+- `enderio:block_painted_reinforced_obsidian_nonsolid` — Painted Reinforced Obsidian
+- `enderio:block_painted_reinforced_obsidian` — Painted Reinforced Obsidian
+- `enderio:block_painted_sand` — Painted Sand
+- `enderio:block_painted_slab` — Painted Slab
+- `enderio:block_painted_stair` — Painted Stairs
+- `enderio:block_painted_stone_double_slab` — Painted Stone Slab
+- `enderio:block_painted_stone_fence` — Painted Stone Fence
+- `enderio:block_painted_stone_slab` — Painted Stone Slab
+- `enderio:block_painted_stone_stair` — Painted Stone Stairs
+- `enderio:block_painted_stone` — Painted Cobblestone
+- `enderio:block_painted_wall` — Painted Wall
+- `enderio:block_painted_wooden_door` — item.block_painted_wooden_door.name
+- `enderio:block_painted_wooden_trapdoor` — Painted Wooden Trapdoor
+- `enderio:block_painted_workbench` — Painted Crafting Table
+- `enderio:block_painter` — Painting Machine
+- `enderio:block_pasture_dark_fused_glass` — Dark Clear Glass
+- `enderio:block_pasture_dark_fused_quartz` — Dark Fused Quartz
+- `enderio:block_pasture_enlightened_fused_glass` — Enlightened Clear Glass
+- `enderio:block_pasture_enlightened_fused_quartz` — Enlightened Fused Quartz
+- `enderio:block_pasture_fused_glass` — Quite Clear Glass
+- `enderio:block_pasture_fused_quartz` — Fused Quartz
+- `enderio:block_power_monitor` — Power Monitor
+- `enderio:block_powered_spawner` — Powered Spawner
+- `enderio:block_reinforced_obsidian` — Reinforced Obsidian
+- `enderio:block_relocator_obelisk` — Relocator Obelisk
+- `enderio:block_reservoir` — Endervoir
+- `enderio:block_sag_mill` — SAG Mill
+- `enderio:block_self_resetting_lever10i` — Inverted Self-resetting Lever (10 seconds)
+- `enderio:block_self_resetting_lever10` — Self-resetting Lever (10 seconds)
+- `enderio:block_self_resetting_lever300i` — Inverted Self-resetting Lever (5 Minutes)
+- `enderio:block_self_resetting_lever300` — Self-resetting Lever (5 Minutes)
+- `enderio:block_self_resetting_lever30i` — Inverted Self-resetting Lever (30 seconds)
+- `enderio:block_self_resetting_lever30` — Self-resetting Lever (30 seconds)
+- `enderio:block_self_resetting_lever5i` — Inverted Self-resetting Lever (5 seconds)
+- `enderio:block_self_resetting_lever5` — Self-resetting Lever (5 seconds)
+- `enderio:block_self_resetting_lever60i` — Inverted Self-resetting Lever (1 Minute)
+- `enderio:block_self_resetting_lever60` — Self-resetting Lever (1 Minute)
+- `enderio:block_simple_alloy_smelter` — Simple Alloy Smelter
+- `enderio:block_simple_crafter` — Simple Crafter
+- `enderio:block_simple_furnace` — Simple Powered Furnace
+- `enderio:block_simple_sag_mill` — Simple SAG Mill
+- `enderio:block_simple_stirling_generator` — Simple Stirling Generator
+- `enderio:block_simple_wired_charger` — Simple Wired Charger
+- `enderio:block_slice_and_splice` — Slice'N'Splice
+- `enderio:block_solar_panel` — Photovoltaic Cell
+- `enderio:block_soul_binder` — Soul Binder
+- `enderio:block_stirling_generator` — Stirling Generator
+- `enderio:block_tank` — Fluid Tank
+- `enderio:block_tele_pad` — Telepad Block
+- `enderio:block_transceiver` — Dimensional Transceiver
+- `enderio:block_travel_anchor` — Travel Anchor
+- `enderio:block_unholy_dark_fused_glass` — Dark Clear Glass
+- `enderio:block_unholy_dark_fused_quartz` — Dark Fused Quartz
+- `enderio:block_unholy_enlightened_fused_glass` — Enlightened Clear Glass
+- `enderio:block_unholy_enlightened_fused_quartz` — Enlightened Fused Quartz
+- `enderio:block_unholy_fused_glass` — Quite Clear Glass
+- `enderio:block_unholy_fused_quartz` — Fused Quartz
+- `enderio:block_vacuum_chest` — Vacuum Chest
+- `enderio:block_vat` — The Vat
+- `enderio:block_weather_obelisk` — Weather Obelisk
+- `enderio:block_wired_charger` — Wired Charger
+- `enderio:block_wireless_charger_extension` — Wireless Charging Antenna Extension
+- `enderio:block_wireless_charger` — Wireless Charger
+- `enderio:block_xp_vacuum` — XP Vacuum
+- `enderio:block_zombie_generator` — Zombie Generator
+
+### enderstorage
+- `enderstorage:ender_storage` — tile.ender_storage.name
+
+### engineersdoors
+- `engineersdoors:door_concrete_ornate` — Concrete Door
+- `engineersdoors:door_concrete_reinforced` — Concrete Door
+- `engineersdoors:door_concrete` — Concrete Door
+- `engineersdoors:door_steel_ornate` — Steel Door
+- `engineersdoors:door_steel_reinforced` — Steel Door
+- `engineersdoors:door_steel` — Steel Door
+- `engineersdoors:door_treated_ornate` — Treated Wood Door
+- `engineersdoors:door_treated_reinforced` — Treated Wood Door
+- `engineersdoors:door_treated` — Treated Wood Door
+- `engineersdoors:fencegate_aluminium` — Aluminum Fence Gate
+- `engineersdoors:fencegate_steel` — Steel Fence Gate
+- `engineersdoors:fencegate_treated` — Treated Wood Fence Gate
+- `engineersdoors:trapdoor_concrete` — Concrete Trapdoor
+- `engineersdoors:trapdoor_steel` — Steel Trapdoor
+- `engineersdoors:trapdoor_treated` — Treated Wood Trapdoor
+
+### environmentalmaterials
+- `environmentalmaterials:alabaster_brick_slab_black_double` — tile.environmentalmaterials.alabaster_brick_slab_black_double.name
+- `environmentalmaterials:alabaster_brick_slab_black` — Black Alabaster Brick Slab
+- `environmentalmaterials:alabaster_brick_slab_blue_double` — tile.environmentalmaterials.alabaster_brick_slab_blue_double.name
+- `environmentalmaterials:alabaster_brick_slab_blue` — Blue Alabaster Brick Slab
+- `environmentalmaterials:alabaster_brick_slab_brown_double` — tile.environmentalmaterials.alabaster_brick_slab_brown_double.name
+- `environmentalmaterials:alabaster_brick_slab_brown` — Brown Alabaster Brick Slab
+- `environmentalmaterials:alabaster_brick_slab_cyan_double` — tile.environmentalmaterials.alabaster_brick_slab_cyan_double.name
+- `environmentalmaterials:alabaster_brick_slab_cyan` — Cyan Alabaster Brick Slab
+- `environmentalmaterials:alabaster_brick_slab_gray_double` — tile.environmentalmaterials.alabaster_brick_slab_gray_double.name
+- `environmentalmaterials:alabaster_brick_slab_gray` — Gray Alabaster Brick Slab
+- `environmentalmaterials:alabaster_brick_slab_green_double` — tile.environmentalmaterials.alabaster_brick_slab_green_double.name
+- `environmentalmaterials:alabaster_brick_slab_green` — Green Alabaster Brick Slab
+- `environmentalmaterials:alabaster_brick_slab_light_blue_double` — tile.environmentalmaterials.alabaster_brick_slab_light_blue_double.name
+- `environmentalmaterials:alabaster_brick_slab_light_blue` — Light Blue Alabaster Brick Slab
+- `environmentalmaterials:alabaster_brick_slab_lime_double` — tile.environmentalmaterials.alabaster_brick_slab_lime_double.name
+- `environmentalmaterials:alabaster_brick_slab_lime` — Lime Alabaster Brick Slab
+- `environmentalmaterials:alabaster_brick_slab_magenta_double` — tile.environmentalmaterials.alabaster_brick_slab_magenta_double.name
+- `environmentalmaterials:alabaster_brick_slab_magenta` — Magenta Alabaster Brick Slab
+- `environmentalmaterials:alabaster_brick_slab_orange_double` — tile.environmentalmaterials.alabaster_brick_slab_orange_double.name
+- `environmentalmaterials:alabaster_brick_slab_orange` — Orange Alabaster Brick Slab
+- `environmentalmaterials:alabaster_brick_slab_pink_double` — tile.environmentalmaterials.alabaster_brick_slab_pink_double.name
+- `environmentalmaterials:alabaster_brick_slab_pink` — Pink Alabaster Brick Slab
+- `environmentalmaterials:alabaster_brick_slab_purple_double` — tile.environmentalmaterials.alabaster_brick_slab_purple_double.name
+- `environmentalmaterials:alabaster_brick_slab_purple` — Purple Alabaster Brick Slab
+- `environmentalmaterials:alabaster_brick_slab_red_double` — tile.environmentalmaterials.alabaster_brick_slab_red_double.name
+- `environmentalmaterials:alabaster_brick_slab_red` — Red Alabaster Brick Slab
+- `environmentalmaterials:alabaster_brick_slab_silver_double` — tile.environmentalmaterials.alabaster_brick_slab_silver_double.name
+- `environmentalmaterials:alabaster_brick_slab_silver` — Light Gray Alabaster Brick Slab
+- `environmentalmaterials:alabaster_brick_slab_white_double` — tile.environmentalmaterials.alabaster_brick_slab_white_double.name
+- `environmentalmaterials:alabaster_brick_slab_white` — White Alabaster Brick Slab
+- `environmentalmaterials:alabaster_brick_slab_yellow_double` — tile.environmentalmaterials.alabaster_brick_slab_yellow_double.name
+- `environmentalmaterials:alabaster_brick_slab_yellow` — Yellow Alabaster Brick Slab
+- `environmentalmaterials:alabaster_brick_stairs_black` — Black Alabaster Brick Stairs
+- `environmentalmaterials:alabaster_brick_stairs_blue` — Blue Alabaster Brick Stairs
+- `environmentalmaterials:alabaster_brick_stairs_brown` — Brown Alabaster Brick Stairs
+- `environmentalmaterials:alabaster_brick_stairs_cyan` — Cyan Alabaster Brick Stairs
+- `environmentalmaterials:alabaster_brick_stairs_gray` — Gray Alabaster Brick Stairs
+- `environmentalmaterials:alabaster_brick_stairs_green` — Green Alabaster Brick Stairs
+- `environmentalmaterials:alabaster_brick_stairs_light_blue` — Light Blue Alabaster Brick Stairs
+- `environmentalmaterials:alabaster_brick_stairs_lime` — Lime Alabaster Brick Stairs
+- `environmentalmaterials:alabaster_brick_stairs_magenta` — Magenta Alabaster Brick Stairs
+- `environmentalmaterials:alabaster_brick_stairs_orange` — Orange Alabaster Brick Stairs
+- `environmentalmaterials:alabaster_brick_stairs_pink` — Pink Alabaster Brick Stairs
+- `environmentalmaterials:alabaster_brick_stairs_purple` — Purple Alabaster Brick Stairs
+- `environmentalmaterials:alabaster_brick_stairs_red` — Red Alabaster Brick Stairs
+- `environmentalmaterials:alabaster_brick_stairs_silver` — Light Gray Alabaster Brick Stairs
+- `environmentalmaterials:alabaster_brick_stairs_white` — White Alabaster Brick Stairs
+- `environmentalmaterials:alabaster_brick_stairs_yellow` — Yellow Alabaster Brick Stairs
+- `environmentalmaterials:alabaster_bricks` — tile.environmentalmaterials.alabaster_bricks.name
+- `environmentalmaterials:alabaster_paver_slab_black_double` — tile.environmentalmaterials.alabaster_paver_slab_black_double.name
+- `environmentalmaterials:alabaster_paver_slab_black` — Black Alabaster Paver Slab
+- `environmentalmaterials:alabaster_paver_slab_blue_double` — tile.environmentalmaterials.alabaster_paver_slab_blue_double.name
+- `environmentalmaterials:alabaster_paver_slab_blue` — Blue Alabaster Paver Slab
+- `environmentalmaterials:alabaster_paver_slab_brown_double` — tile.environmentalmaterials.alabaster_paver_slab_brown_double.name
+- `environmentalmaterials:alabaster_paver_slab_brown` — Brown Alabaster Paver Slab
+- `environmentalmaterials:alabaster_paver_slab_cyan_double` — tile.environmentalmaterials.alabaster_paver_slab_cyan_double.name
+- `environmentalmaterials:alabaster_paver_slab_cyan` — Cyan Alabaster Paver Slab
+- `environmentalmaterials:alabaster_paver_slab_gray_double` — tile.environmentalmaterials.alabaster_paver_slab_gray_double.name
+- `environmentalmaterials:alabaster_paver_slab_gray` — Gray Alabaster Paver Slab
+- `environmentalmaterials:alabaster_paver_slab_green_double` — tile.environmentalmaterials.alabaster_paver_slab_green_double.name
+- `environmentalmaterials:alabaster_paver_slab_green` — Green Alabaster Paver Slab
+- `environmentalmaterials:alabaster_paver_slab_light_blue_double` — tile.environmentalmaterials.alabaster_paver_slab_light_blue_double.name
+- `environmentalmaterials:alabaster_paver_slab_light_blue` — Light Blue Alabaster Paver Slab
+- `environmentalmaterials:alabaster_paver_slab_lime_double` — tile.environmentalmaterials.alabaster_paver_slab_lime_double.name
+- `environmentalmaterials:alabaster_paver_slab_lime` — Lime Alabaster Paver Slab
+- `environmentalmaterials:alabaster_paver_slab_magenta_double` — tile.environmentalmaterials.alabaster_paver_slab_magenta_double.name
+- `environmentalmaterials:alabaster_paver_slab_magenta` — Magenta Alabaster Paver Slab
+- `environmentalmaterials:alabaster_paver_slab_orange_double` — tile.environmentalmaterials.alabaster_paver_slab_orange_double.name
+- `environmentalmaterials:alabaster_paver_slab_orange` — Orange Alabaster Paver Slab
+- `environmentalmaterials:alabaster_paver_slab_pink_double` — tile.environmentalmaterials.alabaster_paver_slab_pink_double.name
+- `environmentalmaterials:alabaster_paver_slab_pink` — Pink Alabaster Paver Slab
+- `environmentalmaterials:alabaster_paver_slab_purple_double` — tile.environmentalmaterials.alabaster_paver_slab_purple_double.name
+- `environmentalmaterials:alabaster_paver_slab_purple` — Purple Alabaster Paver Slab
+- `environmentalmaterials:alabaster_paver_slab_red_double` — tile.environmentalmaterials.alabaster_paver_slab_red_double.name
+- `environmentalmaterials:alabaster_paver_slab_red` — Red Alabaster Paver Slab
+- `environmentalmaterials:alabaster_paver_slab_silver_double` — tile.environmentalmaterials.alabaster_paver_slab_silver_double.name
+- `environmentalmaterials:alabaster_paver_slab_silver` — Light Gray Alabaster Paver Slab
+- `environmentalmaterials:alabaster_paver_slab_white_double` — tile.environmentalmaterials.alabaster_paver_slab_white_double.name
+- `environmentalmaterials:alabaster_paver_slab_white` — White Alabaster Paver Slab
+- `environmentalmaterials:alabaster_paver_slab_yellow_double` — tile.environmentalmaterials.alabaster_paver_slab_yellow_double.name
+- `environmentalmaterials:alabaster_paver_slab_yellow` — Yellow Alabaster Paver Slab
+- `environmentalmaterials:alabaster_paver` — tile.environmentalmaterials.alabaster_paver.name
+- `environmentalmaterials:alabaster_slab_black_double` — tile.environmentalmaterials.alabaster_slab_black_double.name
+- `environmentalmaterials:alabaster_slab_black` — Black Alabaster Slab
+- `environmentalmaterials:alabaster_slab_blue_double` — tile.environmentalmaterials.alabaster_slab_blue_double.name
+- `environmentalmaterials:alabaster_slab_blue` — Blue Alabaster Slab
+- `environmentalmaterials:alabaster_slab_brown_double` — tile.environmentalmaterials.alabaster_slab_brown_double.name
+- `environmentalmaterials:alabaster_slab_brown` — Brown Alabaster Slab
+- `environmentalmaterials:alabaster_slab_cyan_double` — tile.environmentalmaterials.alabaster_slab_cyan_double.name
+- `environmentalmaterials:alabaster_slab_cyan` — Cyan Alabaster Slab
+- `environmentalmaterials:alabaster_slab_gray_double` — tile.environmentalmaterials.alabaster_slab_gray_double.name
+- `environmentalmaterials:alabaster_slab_gray` — Gray Alabaster Slab
+- `environmentalmaterials:alabaster_slab_green_double` — tile.environmentalmaterials.alabaster_slab_green_double.name
+- `environmentalmaterials:alabaster_slab_green` — Green Alabaster Slab
+- `environmentalmaterials:alabaster_slab_light_blue_double` — tile.environmentalmaterials.alabaster_slab_light_blue_double.name
+- `environmentalmaterials:alabaster_slab_light_blue` — Light Blue Alabaster Slab
+- `environmentalmaterials:alabaster_slab_lime_double` — tile.environmentalmaterials.alabaster_slab_lime_double.name
+- `environmentalmaterials:alabaster_slab_lime` — Lime Alabaster Slab
+- `environmentalmaterials:alabaster_slab_magenta_double` — tile.environmentalmaterials.alabaster_slab_magenta_double.name
+- `environmentalmaterials:alabaster_slab_magenta` — Magenta Alabaster Slab
+- `environmentalmaterials:alabaster_slab_orange_double` — tile.environmentalmaterials.alabaster_slab_orange_double.name
+- `environmentalmaterials:alabaster_slab_orange` — Orange Alabaster Slab
+- `environmentalmaterials:alabaster_slab_pink_double` — tile.environmentalmaterials.alabaster_slab_pink_double.name
+- `environmentalmaterials:alabaster_slab_pink` — Pink Alabaster Slab
+- `environmentalmaterials:alabaster_slab_purple_double` — tile.environmentalmaterials.alabaster_slab_purple_double.name
+- `environmentalmaterials:alabaster_slab_purple` — Purple Alabaster Slab
+- `environmentalmaterials:alabaster_slab_red_double` — tile.environmentalmaterials.alabaster_slab_red_double.name
+- `environmentalmaterials:alabaster_slab_red` — Red Alabaster Slab
+- `environmentalmaterials:alabaster_slab_silver_double` — tile.environmentalmaterials.alabaster_slab_silver_double.name
+- `environmentalmaterials:alabaster_slab_silver` — Light Gray Alabaster Slab
+- `environmentalmaterials:alabaster_slab_white_double` — tile.environmentalmaterials.alabaster_slab_white_double.name
+- `environmentalmaterials:alabaster_slab_white` — White Alabaster Slab
+- `environmentalmaterials:alabaster_slab_yellow_double` — tile.environmentalmaterials.alabaster_slab_yellow_double.name
+- `environmentalmaterials:alabaster_slab_yellow` — Yellow Alabaster Slab
+- `environmentalmaterials:alabaster_stairs_black` — Black Alabaster Stairs
+- `environmentalmaterials:alabaster_stairs_blue` — Blue Alabaster Stairs
+- `environmentalmaterials:alabaster_stairs_brown` — Brown Alabaster Stairs
+- `environmentalmaterials:alabaster_stairs_cyan` — Cyan Alabaster Stairs
+- `environmentalmaterials:alabaster_stairs_gray` — Gray Alabaster Stairs
+- `environmentalmaterials:alabaster_stairs_green` — Green Alabaster Stairs
+- `environmentalmaterials:alabaster_stairs_light_blue` — Light Blue Alabaster Stairs
+- `environmentalmaterials:alabaster_stairs_lime` — Lime Alabaster Stairs
+- `environmentalmaterials:alabaster_stairs_magenta` — Magenta Alabaster Stairs
+- `environmentalmaterials:alabaster_stairs_orange` — Orange Alabaster Stairs
+- `environmentalmaterials:alabaster_stairs_pink` — Pink Alabaster Stairs
+- `environmentalmaterials:alabaster_stairs_purple` — Purple Alabaster Stairs
+- `environmentalmaterials:alabaster_stairs_red` — Red Alabaster Stairs
+- `environmentalmaterials:alabaster_stairs_silver` — Light Gray Alabaster Stairs
+- `environmentalmaterials:alabaster_stairs_white` — White Alabaster Stairs
+- `environmentalmaterials:alabaster_stairs_yellow` — Yellow Alabaster Stairs
+- `environmentalmaterials:alabaster_tile_slab_black_double` — tile.environmentalmaterials.alabaster_tile_slab_black_double.name
+- `environmentalmaterials:alabaster_tile_slab_black` — Black Alabaster Tile Slab
+- `environmentalmaterials:alabaster_tile_slab_blue_double` — tile.environmentalmaterials.alabaster_tile_slab_blue_double.name
+- `environmentalmaterials:alabaster_tile_slab_blue` — Blue Alabaster Tile Slab
+- `environmentalmaterials:alabaster_tile_slab_brown_double` — tile.environmentalmaterials.alabaster_tile_slab_brown_double.name
+- `environmentalmaterials:alabaster_tile_slab_brown` — Brown Alabaster Tile Slab
+- `environmentalmaterials:alabaster_tile_slab_cyan_double` — tile.environmentalmaterials.alabaster_tile_slab_cyan_double.name
+- `environmentalmaterials:alabaster_tile_slab_cyan` — Cyan Alabaster Tile Slab
+- `environmentalmaterials:alabaster_tile_slab_gray_double` — tile.environmentalmaterials.alabaster_tile_slab_gray_double.name
+- `environmentalmaterials:alabaster_tile_slab_gray` — Gray Alabaster Tile Slab
+- `environmentalmaterials:alabaster_tile_slab_green_double` — tile.environmentalmaterials.alabaster_tile_slab_green_double.name
+- `environmentalmaterials:alabaster_tile_slab_green` — Green Alabaster Tile Slab
+- `environmentalmaterials:alabaster_tile_slab_light_blue_double` — tile.environmentalmaterials.alabaster_tile_slab_light_blue_double.name
+- `environmentalmaterials:alabaster_tile_slab_light_blue` — Light Blue Alabaster Tile Slab
+- `environmentalmaterials:alabaster_tile_slab_lime_double` — tile.environmentalmaterials.alabaster_tile_slab_lime_double.name
+- `environmentalmaterials:alabaster_tile_slab_lime` — Lime Alabaster Tile Slab
+- `environmentalmaterials:alabaster_tile_slab_magenta_double` — tile.environmentalmaterials.alabaster_tile_slab_magenta_double.name
+- `environmentalmaterials:alabaster_tile_slab_magenta` — Magenta Alabaster Tile Slab
+- `environmentalmaterials:alabaster_tile_slab_orange_double` — tile.environmentalmaterials.alabaster_tile_slab_orange_double.name
+- `environmentalmaterials:alabaster_tile_slab_orange` — Orange Alabaster Tile Slab
+- `environmentalmaterials:alabaster_tile_slab_pink_double` — tile.environmentalmaterials.alabaster_tile_slab_pink_double.name
+- `environmentalmaterials:alabaster_tile_slab_pink` — Pink Alabaster Tile Slab
+- `environmentalmaterials:alabaster_tile_slab_purple_double` — tile.environmentalmaterials.alabaster_tile_slab_purple_double.name
+- `environmentalmaterials:alabaster_tile_slab_purple` — Purple Alabaster Tile Slab
+- `environmentalmaterials:alabaster_tile_slab_red_double` — tile.environmentalmaterials.alabaster_tile_slab_red_double.name
+- `environmentalmaterials:alabaster_tile_slab_red` — Red Alabaster Tile Slab
+- `environmentalmaterials:alabaster_tile_slab_silver_double` — tile.environmentalmaterials.alabaster_tile_slab_silver_double.name
+- `environmentalmaterials:alabaster_tile_slab_silver` — Light Gray Alabaster Tile Slab
+- `environmentalmaterials:alabaster_tile_slab_white_double` — tile.environmentalmaterials.alabaster_tile_slab_white_double.name
+- `environmentalmaterials:alabaster_tile_slab_white` — White Alabaster Tile Slab
+- `environmentalmaterials:alabaster_tile_slab_yellow_double` — tile.environmentalmaterials.alabaster_tile_slab_yellow_double.name
+- `environmentalmaterials:alabaster_tile_slab_yellow` — Yellow Alabaster Tile Slab
+- `environmentalmaterials:alabaster_tile_stairs_black` — Black Alabaster Tile Stairs
+- `environmentalmaterials:alabaster_tile_stairs_blue` — Blue Alabaster Tile Stairs
+- `environmentalmaterials:alabaster_tile_stairs_brown` — Brown Alabaster Tile Stairs
+- `environmentalmaterials:alabaster_tile_stairs_cyan` — Cyan Alabaster Tile Stairs
+- `environmentalmaterials:alabaster_tile_stairs_gray` — Gray Alabaster Tile Stairs
+- `environmentalmaterials:alabaster_tile_stairs_green` — Green Alabaster Tile Stairs
+- `environmentalmaterials:alabaster_tile_stairs_light_blue` — Light Blue Alabaster Tile Stairs
+- `environmentalmaterials:alabaster_tile_stairs_lime` — Lime Alabaster Tile Stairs
+- `environmentalmaterials:alabaster_tile_stairs_magenta` — Magenta Alabaster Tile Stairs
+- `environmentalmaterials:alabaster_tile_stairs_orange` — Orange Alabaster Tile Stairs
+- `environmentalmaterials:alabaster_tile_stairs_pink` — Pink Alabaster Tile Stairs
+- `environmentalmaterials:alabaster_tile_stairs_purple` — Purple Alabaster Tile Stairs
+- `environmentalmaterials:alabaster_tile_stairs_red` — Red Alabaster Tile Stairs
+- `environmentalmaterials:alabaster_tile_stairs_silver` — Light Gray Alabaster Tile Stairs
+- `environmentalmaterials:alabaster_tile_stairs_white` — White Alabaster Tile Stairs
+- `environmentalmaterials:alabaster_tile_stairs_yellow` — Yellow Alabaster Tile Stairs
+- `environmentalmaterials:alabaster_tiles` — tile.environmentalmaterials.alabaster_tiles.name
+- `environmentalmaterials:alabaster_wall_black` — Black Alabaster Wall
+- `environmentalmaterials:alabaster_wall_blue` — Blue Alabaster Wall
+- `environmentalmaterials:alabaster_wall_brown` — Brown Alabaster Wall
+- `environmentalmaterials:alabaster_wall_cyan` — Cyan Alabaster Wall
+- `environmentalmaterials:alabaster_wall_gray` — Gray Alabaster Wall
+- `environmentalmaterials:alabaster_wall_green` — Green Alabaster Wall
+- `environmentalmaterials:alabaster_wall_light_blue` — Light Blue Alabaster Wall
+- `environmentalmaterials:alabaster_wall_lime` — Lime Alabaster Wall
+- `environmentalmaterials:alabaster_wall_magenta` — Magenta Alabaster Wall
+- `environmentalmaterials:alabaster_wall_orange` — Orange Alabaster Wall
+- `environmentalmaterials:alabaster_wall_pink` — Pink Alabaster Wall
+- `environmentalmaterials:alabaster_wall_purple` — Purple Alabaster Wall
+- `environmentalmaterials:alabaster_wall_red` — Red Alabaster Wall
+- `environmentalmaterials:alabaster_wall_silver` — Light Gray Alabaster Wall
+- `environmentalmaterials:alabaster_wall_white` — White Alabaster Wall
+- `environmentalmaterials:alabaster_wall_yellow` — Yellow Alabaster Wall
+- `environmentalmaterials:alabaster` — tile.environmentalmaterials.alabaster.name
+- `environmentalmaterials:basalt_brick_slab_double` — tile.environmentalmaterials.basalt_brick_slab_double.name
+- `environmentalmaterials:basalt_brick_slab` — Basalt Brick Slab
+- `environmentalmaterials:basalt_brick_stairs` — Basalt Brick Stairs
+- `environmentalmaterials:basalt_bricks` — Basalt Bricks
+- `environmentalmaterials:basalt_paver_slab_double` — tile.environmentalmaterials.basalt_paver_slab_double.name
+- `environmentalmaterials:basalt_paver_slab` — Basalt Paver Slab
+- `environmentalmaterials:basalt_paver` — Basalt Paver
+- `environmentalmaterials:basalt_slab_double` — tile.environmentalmaterials.basalt_slab_double.name
+- `environmentalmaterials:basalt_slab` — Basalt Slab
+- `environmentalmaterials:basalt_stairs` — Basalt Stairs
+- `environmentalmaterials:basalt_tile_slab_double` — tile.environmentalmaterials.basalt_tile_slab_double.name
+- `environmentalmaterials:basalt_tile_slab` — Basalt Tile Slab
+- `environmentalmaterials:basalt_tile_stairs` — Basalt Tile Stairs
+- `environmentalmaterials:basalt_tiles` — Basalt Tiles
+- `environmentalmaterials:basalt_wall` — Basalt Wall
+- `environmentalmaterials:basalt` — Basalt
+- `environmentalmaterials:hardened_stone_brick_slab_double` — tile.environmentalmaterials.hardened_stone_brick_slab_double.name
+- `environmentalmaterials:hardened_stone_brick_slab` — Hardened Stone Brick Slab
+- `environmentalmaterials:hardened_stone_brick_stairs` — Hardened Stone Brick Stairs
+- `environmentalmaterials:hardened_stone_bricks` — Hardened Stone Bricks
+- `environmentalmaterials:hardened_stone_paver_slab_double` — tile.environmentalmaterials.hardened_stone_paver_slab_double.name
+- `environmentalmaterials:hardened_stone_paver_slab` — Hardened Stone Paver Slab
+- `environmentalmaterials:hardened_stone_paver` — Hardened Stone Paver
+- `environmentalmaterials:hardened_stone_slab_double` — tile.environmentalmaterials.hardened_stone_slab_double.name
+- `environmentalmaterials:hardened_stone_slab` — Hardened Stone Slab
+- `environmentalmaterials:hardened_stone_stairs` — Hardened Stone Stairs
+- `environmentalmaterials:hardened_stone_tile_slab_double` — tile.environmentalmaterials.hardened_stone_tile_slab_double.name
+- `environmentalmaterials:hardened_stone_tile_slab` — Hardened Stone Tile Slab
+- `environmentalmaterials:hardened_stone_tile_stairs` — Hardened Stone Tile Stairs
+- `environmentalmaterials:hardened_stone_tiles` — Hardened Stone Tiles
+- `environmentalmaterials:hardened_stone_wall` — Hardened Stone Wall
+- `environmentalmaterials:hardened_stone` — Hardened Stone
+
+### environmentaltech
+- `environmentaltech:aethium_bricks` — Aethium Bricks
+- `environmentaltech:aethium_paver` — Aethium Paver
+- `environmentaltech:aethium_tiles` — Aethium Tiles
+- `environmentaltech:aethium` — Aethium
+- `environmentaltech:erodium_bricks` — Erodium Bricks
+- `environmentaltech:erodium_paver` — Erodium Paver
+- `environmentaltech:erodium_tiles` — Erodium Tiles
+- `environmentaltech:erodium` — Erodium
+- `environmentaltech:interconnect` — Interconnect
+- `environmentaltech:ionite_bricks` — Ionite Bricks
+- `environmentaltech:ionite_paver` — Ionite Paver
+- `environmentaltech:ionite_tiles` — Ionite Tiles
+- `environmentaltech:ionite` — Ionite
+- `environmentaltech:kyronite_bricks` — Kyronite Bricks
+- `environmentaltech:kyronite_paver` — Kyronite Paver
+- `environmentaltech:kyronite_tiles` — Kyronite Tiles
+- `environmentaltech:kyronite` — Kyronite
+- `environmentaltech:laser_core` — Laser Core
+- `environmentaltech:laser_lens_colored` — tile.environmentaltech.laser_lens_colored.name
+- `environmentaltech:laser_lens_crystal` — Crystal Laser Lens
+- `environmentaltech:laser_lens` — Clear Laser Lens
+- `environmentaltech:lightning_cont_1` — Lightning Controller Tier 1
+- `environmentaltech:lightning_cont_2` — Lightning Controller Tier 2
+- `environmentaltech:lightning_cont_3` — Lightning Controller Tier 3
+- `environmentaltech:lightning_cont_4` — Lightning Controller Tier 4
+- `environmentaltech:lightning_cont_5` — Lightning Controller Tier 5
+- `environmentaltech:lightning_cont_6` — Lightning Controller Tier 6
+- `environmentaltech:lightning_rod_insulated` — Insulated Lightning Rod
+- `environmentaltech:lightning_rod` — Lightning Rod
+- `environmentaltech:litherite_bricks` — Litherite Bricks
+- `environmentaltech:litherite_paver` — Litherite Paver
+- `environmentaltech:litherite_tiles` — Litherite Tiles
+- `environmentaltech:litherite` — Litherite
+- `environmentaltech:lonsdaleite_bricks` — Lonsdaleite Bricks
+- `environmentaltech:lonsdaleite_paver` — Lonsdaleite Paver
+- `environmentaltech:lonsdaleite_tiles` — Lonsdaleite Tiles
+- `environmentaltech:lonsdaleite` — Lonsdaleite
+- `environmentaltech:mica` — Mica
+- `environmentaltech:modifier_absorption` — Absoption Modifier
+- `environmentaltech:modifier_accuracy` — Accuracy Modifier
+- `environmentaltech:modifier_creative_flight` — Creative Flight Modifier
+- `environmentaltech:modifier_fire_resistance` — Fire Resistance Modifier
+- `environmentaltech:modifier_flight_speed` — Flight Speed Modifier
+- `environmentaltech:modifier_glowing` — Glowing Modifier
+- `environmentaltech:modifier_haste` — Haste Modifier
+- `environmentaltech:modifier_health_boost` — Health Boost Modifier
+- `environmentaltech:modifier_invisibility` — Invisibility Modifier
+- `environmentaltech:modifier_jump_boost` — Jump Boost Modifier
+- `environmentaltech:modifier_luck` — Luck Modifier
+- `environmentaltech:modifier_night_vision` — Night Vision Modifier
+- `environmentaltech:modifier_null` — Null Modifier
+- `environmentaltech:modifier_piezo` — Piezo Modifier
+- `environmentaltech:modifier_regeneration` — Regen Modifier
+- `environmentaltech:modifier_resistance` — Resistance Modifier
+- `environmentaltech:modifier_saturation` — Saturation Modifier
+- `environmentaltech:modifier_speed` — Speed Modifier
+- `environmentaltech:modifier_strength` — Strength Modifier
+- `environmentaltech:modifier_water_breathing` — Water Breathing Modifier
+- `environmentaltech:nano_cont_personal_1` — Personal Nano Bot Beacon Tier 1
+- `environmentaltech:nano_cont_personal_2` — Personal Nano Bot Beacon Tier 2
+- `environmentaltech:nano_cont_personal_3` — Personal Nano Bot Beacon Tier 3
+- `environmentaltech:nano_cont_personal_4` — Personal Nano Bot Beacon Tier 4
+- `environmentaltech:nano_cont_personal_5` — Personal Nano Bot Beacon Tier 5
+- `environmentaltech:nano_cont_personal_6` — Personal Nano Bot Beacon Tier 6
+- `environmentaltech:nano_cont_ranged_1` — Ranged Nano Bot Beacon Tier 1
+- `environmentaltech:nano_cont_ranged_2` — Ranged Nano Bot Beacon Tier 2
+- `environmentaltech:nano_cont_ranged_3` — Ranged Nano Bot Beacon Tier 3
+- `environmentaltech:nano_cont_ranged_4` — Ranged Nano Bot Beacon Tier 4
+- `environmentaltech:nano_cont_ranged_5` — Ranged Nano Bot Beacon Tier 5
+- `environmentaltech:nano_cont_ranged_6` — Ranged Nano Bot Beacon Tier 6
+- `environmentaltech:pladium_bricks` — Pladium Bricks
+- `environmentaltech:pladium_paver` — Pladium Paver
+- `environmentaltech:pladium_tiles` — Pladium Tiles
+- `environmentaltech:pladium` — Pladium
+- `environmentaltech:solar_cell_aethium` — Aethium Solar Cell
+- `environmentaltech:solar_cell_erodium` — Erodium Solar Cell
+- `environmentaltech:solar_cell_ionite` — Ionite Solar Cell
+- `environmentaltech:solar_cell_kyronite` — Kyronite Solar Cell
+- `environmentaltech:solar_cell_litherite` — Litherite Solar Cell
+- `environmentaltech:solar_cell_pladium` — Pladium Solar Cell
+- `environmentaltech:solar_cont_1` — Solar Array Controller Tier 1
+- `environmentaltech:solar_cont_2` — Solar Array Controller Tier 2
+- `environmentaltech:solar_cont_3` — Solar Array Controller Tier 3
+- `environmentaltech:solar_cont_4` — Solar Array Controller Tier 4
+- `environmentaltech:solar_cont_5` — Solar Array Controller Tier 5
+- `environmentaltech:solar_cont_6` — Solar Array Controller Tier 6
+- `environmentaltech:structure_frame_1` — Structure Frame Tier 1
+- `environmentaltech:structure_frame_2` — Structure Frame Tier 2
+- `environmentaltech:structure_frame_3` — Structure Frame Tier 3
+- `environmentaltech:structure_frame_4` — Structure Frame Tier 4
+- `environmentaltech:structure_frame_5` — Structure Frame Tier 5
+- `environmentaltech:structure_frame_6` — Structure Frame Tier 6
+- `environmentaltech:structure_panel_clear` — Clear Structure Panel
+- `environmentaltech:structure_panel` — Structure Panel
+- `environmentaltech:thermal_cell` — Thermal Cell
+- `environmentaltech:void_ore_miner_cont_1` — Void Ore Miner Controller Tier 1
+- `environmentaltech:void_ore_miner_cont_2` — Void Ore Miner Controller Tier 2
+- `environmentaltech:void_ore_miner_cont_3` — Void Ore Miner Controller Tier 3
+- `environmentaltech:void_ore_miner_cont_4` — Void Ore Miner Controller Tier 4
+- `environmentaltech:void_ore_miner_cont_5` — Void Ore Miner Controller Tier 5
+- `environmentaltech:void_ore_miner_cont_6` — Void Ore Miner Controller Tier 6
+- `environmentaltech:void_res_miner_cont_1` — Void Resource Miner Controller Tier 1
+- `environmentaltech:void_res_miner_cont_2` — Void Resource Miner Controller Tier 2
+- `environmentaltech:void_res_miner_cont_3` — Void Resource Miner Controller Tier 3
+- `environmentaltech:void_res_miner_cont_4` — Void Resource Miner Controller Tier 4
+- `environmentaltech:void_res_miner_cont_5` — Void Resource Miner Controller Tier 5
+- `environmentaltech:void_res_miner_cont_6` — Void Resource Miner Controller Tier 6
+
+### extrabees
+- `extrabees:alveary` — tile.null.name
+- `extrabees:ectoplasm` — Ectoplasm
+- `extrabees:hive` — tile.null.name
+
+### extrabitmanipulation
+- `extrabitmanipulation:bodypart_template` — Bodypart Template
+
+### extracells
+- `extracells:certustank` — extracells.block.certustank.name
+- `extracells:ecbaseblock` — tile.extracells.block.ecbaseblock.name
+- `extracells:fluidcrafter` — ME Fluid Assembler
+- `extracells:fluidfiller` — ME Fluid Auto Filler
+- `extracells:hardmedrive` — Blast resistant ME Drive
+- `extracells:vibrantchamberfluid` — Fluid Vibration Chamber
+- `extracells:walrus` — Walrus
+
+### extrarails
+- `extrarails:comparator_rail` — Comparator Rail
+- `extrarails:direction_rail` — Direction Rail
+- `extrarails:locking_rail` — Locking Rail
+- `extrarails:teleporting_rail` — Teleporting Rail
+- `extrarails:wooden_rail` — Wooden Rail
+
+### extratrees
+- `extratrees:binnie.beer.ale` — Ale
+- `extratrees:binnie.beer.corn` — Corn Beer
+- `extratrees:binnie.beer.lager` — Lager
+- `extratrees:binnie.beer.rye` — Rye Beer
+- `extratrees:binnie.beer.stout` — Stout
+- `extratrees:binnie.beer.wheat` — Wheat Beer
+- `extratrees:binnie.brandy.apple` — Apple Brandy
+- `extratrees:binnie.brandy.apricot` — Apricot Brandy
+- `extratrees:binnie.brandy.cherry` — Cherry Brandy
+- `extratrees:binnie.brandy.citrus` — Citrus Brandy
+- `extratrees:binnie.brandy.elderberry` — Elderberry Brandy
+- `extratrees:binnie.brandy.fruit` — Fruit Brandy
+- `extratrees:binnie.brandy.grape` — Brandy
+- `extratrees:binnie.brandy.pear` — Pear Brandy
+- `extratrees:binnie.brandy.plum` — Plum Brandy
+- `extratrees:binnie.cider.apple` — Cider
+- `extratrees:binnie.cider.peach` — Peach Cider
+- `extratrees:binnie.ciderpear` — Pear Cider
+- `extratrees:binnie.fermented.potatoes` — Fermented Potatoes
+- `extratrees:binnie.juice.apple` — Apple Juice
+- `extratrees:binnie.juice.apricot` — Apricot Juice
+- `extratrees:binnie.juice.banana` — Banana Juice
+- `extratrees:binnie.juice.carrot` — Carrot Juice
+- `extratrees:binnie.juice.cherry` — Cherry Juice
+- `extratrees:binnie.juice.cranberry` — Cranberry Juice
+- `extratrees:binnie.juice.elderberry` — Elderberry Juice
+- `extratrees:binnie.juice.grapefruit` — Grapefruit Juice
+- `extratrees:binnie.juice.lemon` — Lemon Juice
+- `extratrees:binnie.juice.lime` — Lime Juice
+- `extratrees:binnie.juice.olive` — Olive Oil
+- `extratrees:binnie.juice.orange` — Orange Juice
+- `extratrees:binnie.juice.peach` — Peach Juice
+- `extratrees:binnie.juice.pear` — Pear Juice
+- `extratrees:binnie.juice.pineapple` — Pineapple Juice
+- `extratrees:binnie.juice.plum` — Plum Juice
+- `extratrees:binnie.juice.red.grape` — Red Grape Juice
+- `extratrees:binnie.juice.tomato` — Tomato Juice
+- `extratrees:binnie.juice.white.grape` — White Grape Juice
+- `extratrees:binnie.juice` — Fruit Wine
+- `extratrees:binnie.latex` — Latex
+- `extratrees:binnie.liqueur.almond` — Almond Liqueur
+- `extratrees:binnie.liqueur.anise` — Anise Liqueur
+- `extratrees:binnie.liqueur.banana` — Banana Liqueur
+- `extratrees:binnie.liqueur.blackberry` — Blackberry Liqueur
+- `extratrees:binnie.liqueur.blackcurrant` — Blackcurrant Liqueur
+- `extratrees:binnie.liqueur.cherry` — Cherry Liqueur
+- `extratrees:binnie.liqueur.chocolate` — Chocolate Liqueur
+- `extratrees:binnie.liqueur.cinnamon` — Cinnamon Liqueur
+- `extratrees:binnie.liqueur.coffee` — Coffee Liqueur
+- `extratrees:binnie.liqueur.hazelnut` — Hazelnut Liqueur
+- `extratrees:binnie.liqueur.herbal` — Herbal Liqueur
+- `extratrees:binnie.liqueur.lemon` — Lemon Liqueur
+- `extratrees:binnie.liqueur.melon` — Melon Liqueur
+- `extratrees:binnie.liqueur.mint` — Mint Liqueur
+- `extratrees:binnie.liqueur.orange` — Orange Liqueur
+- `extratrees:binnie.liqueur.peach` — Peach Liqueur
+- `extratrees:binnie.liqueur.raspberry` — Raspberry Liqueur
+- `extratrees:binnie.liquor.apple` — Apple Liquor
+- `extratrees:binnie.liquor.apricot` — Apricot Liquor
+- `extratrees:binnie.liquor.cherry` — Cherry Liquor
+- `extratrees:binnie.liquor.elderberry` — Elderberry Liquor
+- `extratrees:binnie.liquor.fruit` — Fruit Liquor
+- `extratrees:binnie.liquor.pear` — Pear Liquor
+- `extratrees:binnie.mash.corn` — Fermented Corn Mash
+- `extratrees:binnie.mash.grain` — Fermented Grain Mash
+- `extratrees:binnie.mash.rye` — Fermented Rye Mash
+- `extratrees:binnie.mash.wheat` — Fermented Wheat Mash
+- `extratrees:binnie.resin` — Resin
+- `extratrees:binnie.rum.dark` — Dark Rum
+- `extratrees:binnie.rum.white` — White Rum
+- `extratrees:binnie.sap` — Sap
+- `extratrees:binnie.spirit.gin` — Gin
+- `extratrees:binnie.spirit.neutral` — Neutral Spirit
+- `extratrees:binnie.spirit.sugarcane` — Cachaca
+- `extratrees:binnie.tequila` — Tequila
+- `extratrees:binnie.turpentine` — Turpentine
+- `extratrees:binnie.vodka` — Vodka
+- `extratrees:binnie.whiskey.corn` — Bourbon
+- `extratrees:binnie.whiskey.rye` — Rye Whiskey
+- `extratrees:binnie.whiskey.wheat` — Wheat Whiskey
+- `extratrees:binnie.whiskey` — Whiskey
+- `extratrees:binnie.wine.agave` — Agave Wine
+- `extratrees:binnie.wine.apricot` — Apricot Wine
+- `extratrees:binnie.wine.banana` — Banana Wine
+- `extratrees:binnie.wine.carrot` — Carrot Wine
+- `extratrees:binnie.wine.cherry` — Cherry Wine
+- `extratrees:binnie.wine.citrus` — Citrus Wine
+- `extratrees:binnie.wine.cranberry` — Cranberry Wine
+- `extratrees:binnie.wine.elderberry` — Elderberry Wine
+- `extratrees:binnie.wine.fortified` — Fortified Wine
+- `extratrees:binnie.wine.pineapple` — Pineapple Wine
+- `extratrees:binnie.wine.plum` — Plum Wine
+- `extratrees:binnie.wine.red` — Red Wine
+- `extratrees:binnie.wine.sparkling` — Sparkling Wine
+- `extratrees:binnie.wine.tomato` — Tomato Wine
+- `extratrees:binnie.wine.white` — White Wine
+- `extratrees:doors.alder` — item.doors.alder.name
+- `extratrees:doors.apple` — item.doors.apple.name
+- `extratrees:doors.ash` — item.doors.ash.name
+- `extratrees:doors.banana` — item.doors.banana.name
+- `extratrees:doors.beech` — item.doors.beech.name
+- `extratrees:doors.box` — item.doors.box.name
+- `extratrees:doors.brazilwood` — item.doors.brazilwood.name
+- `extratrees:doors.butternut` — item.doors.butternut.name
+- `extratrees:doors.cedar` — item.doors.cedar.name
+- `extratrees:doors.cypress` — item.doors.cypress.name
+- `extratrees:doors.elder` — item.doors.elder.name
+- `extratrees:doors.elm` — item.doors.elm.name
+- `extratrees:doors.eucalyptus` — item.doors.eucalyptus.name
+- `extratrees:doors.fig` — item.doors.fig.name
+- `extratrees:doors.fir` — item.doors.fir.name
+- `extratrees:doors.gingko` — item.doors.gingko.name
+- `extratrees:doors.hawthorn` — item.doors.hawthorn.name
+- `extratrees:doors.hazel` — item.doors.hazel.name
+- `extratrees:doors.hemlock` — item.doors.hemlock.name
+- `extratrees:doors.hickory` — item.doors.hickory.name
+- `extratrees:doors.holly` — item.doors.holly.name
+- `extratrees:doors.hornbeam` — item.doors.hornbeam.name
+- `extratrees:doors.iroko` — item.doors.iroko.name
+- `extratrees:doors.locust` — item.doors.locust.name
+- `extratrees:doors.logwood` — item.doors.logwood.name
+- `extratrees:doors.maclura` — item.doors.maclura.name
+- `extratrees:doors.olive` — item.doors.olive.name
+- `extratrees:doors.pear` — item.doors.pear.name
+- `extratrees:doors.pinkivory` — item.doors.pinkivory.name
+- `extratrees:doors.purpleheart` — item.doors.purpleheart.name
+- `extratrees:doors.rosewood` — item.doors.rosewood.name
+- `extratrees:doors.rowan` — item.doors.rowan.name
+- `extratrees:doors.sweetgum` — item.doors.sweetgum.name
+- `extratrees:doors.syzgium` — item.doors.syzgium.name
+- `extratrees:doors.whitebeam` — item.doors.whitebeam.name
+- `extratrees:doors.yew` — item.doors.yew.name
+- `extratrees:fence.gates.alder` — tile.fence.gates.alder.name
+- `extratrees:fence.gates.apple` — tile.fence.gates.apple.name
+- `extratrees:fence.gates.ash` — tile.fence.gates.ash.name
+- `extratrees:fence.gates.banana` — tile.fence.gates.banana.name
+- `extratrees:fence.gates.beech` — tile.fence.gates.beech.name
+- `extratrees:fence.gates.box` — tile.fence.gates.box.name
+- `extratrees:fence.gates.brazilwood` — tile.fence.gates.brazilwood.name
+- `extratrees:fence.gates.butternut` — tile.fence.gates.butternut.name
+- `extratrees:fence.gates.cedar` — tile.fence.gates.cedar.name
+- `extratrees:fence.gates.cypress` — tile.fence.gates.cypress.name
+- `extratrees:fence.gates.elder` — tile.fence.gates.elder.name
+- `extratrees:fence.gates.elm` — tile.fence.gates.elm.name
+- `extratrees:fence.gates.eucalyptus` — tile.fence.gates.eucalyptus.name
+- `extratrees:fence.gates.fig` — tile.fence.gates.fig.name
+- `extratrees:fence.gates.fireproof.alder` — tile.fence.gates.fireproof.alder.name
+- `extratrees:fence.gates.fireproof.apple` — tile.fence.gates.fireproof.apple.name
+- `extratrees:fence.gates.fireproof.ash` — tile.fence.gates.fireproof.ash.name
+- `extratrees:fence.gates.fireproof.banana` — tile.fence.gates.fireproof.banana.name
+- `extratrees:fence.gates.fireproof.beech` — tile.fence.gates.fireproof.beech.name
+- `extratrees:fence.gates.fireproof.box` — tile.fence.gates.fireproof.box.name
+- `extratrees:fence.gates.fireproof.brazilwood` — tile.fence.gates.fireproof.brazilwood.name
+- `extratrees:fence.gates.fireproof.butternut` — tile.fence.gates.fireproof.butternut.name
+- `extratrees:fence.gates.fireproof.cedar` — tile.fence.gates.fireproof.cedar.name
+- `extratrees:fence.gates.fireproof.cypress` — tile.fence.gates.fireproof.cypress.name
+- `extratrees:fence.gates.fireproof.elder` — tile.fence.gates.fireproof.elder.name
+- `extratrees:fence.gates.fireproof.elm` — tile.fence.gates.fireproof.elm.name
+- `extratrees:fence.gates.fireproof.eucalyptus` — tile.fence.gates.fireproof.eucalyptus.name
+- `extratrees:fence.gates.fireproof.fig` — tile.fence.gates.fireproof.fig.name
+- `extratrees:fence.gates.fireproof.fir` — tile.fence.gates.fireproof.fir.name
+- `extratrees:fence.gates.fireproof.gingko` — tile.fence.gates.fireproof.gingko.name
+- `extratrees:fence.gates.fireproof.hawthorn` — tile.fence.gates.fireproof.hawthorn.name
+- `extratrees:fence.gates.fireproof.hazel` — tile.fence.gates.fireproof.hazel.name
+- `extratrees:fence.gates.fireproof.hemlock` — tile.fence.gates.fireproof.hemlock.name
+- `extratrees:fence.gates.fireproof.hickory` — tile.fence.gates.fireproof.hickory.name
+- `extratrees:fence.gates.fireproof.holly` — tile.fence.gates.fireproof.holly.name
+- `extratrees:fence.gates.fireproof.hornbeam` — tile.fence.gates.fireproof.hornbeam.name
+- `extratrees:fence.gates.fireproof.iroko` — tile.fence.gates.fireproof.iroko.name
+- `extratrees:fence.gates.fireproof.locust` — tile.fence.gates.fireproof.locust.name
+- `extratrees:fence.gates.fireproof.logwood` — tile.fence.gates.fireproof.logwood.name
+- `extratrees:fence.gates.fireproof.maclura` — tile.fence.gates.fireproof.maclura.name
+- `extratrees:fence.gates.fireproof.olive` — tile.fence.gates.fireproof.olive.name
+- `extratrees:fence.gates.fireproof.pear` — tile.fence.gates.fireproof.pear.name
+- `extratrees:fence.gates.fireproof.pinkivory` — tile.fence.gates.fireproof.pinkivory.name
+- `extratrees:fence.gates.fireproof.purpleheart` — tile.fence.gates.fireproof.purpleheart.name
+- `extratrees:fence.gates.fireproof.rosewood` — tile.fence.gates.fireproof.rosewood.name
+- `extratrees:fence.gates.fireproof.rowan` — tile.fence.gates.fireproof.rowan.name
+- `extratrees:fence.gates.fireproof.sweetgum` — tile.fence.gates.fireproof.sweetgum.name
+- `extratrees:fence.gates.fireproof.syzgium` — tile.fence.gates.fireproof.syzgium.name
+- `extratrees:fence.gates.fireproof.whitebeam` — tile.fence.gates.fireproof.whitebeam.name
+- `extratrees:fence.gates.fireproof.yew` — tile.fence.gates.fireproof.yew.name
+- `extratrees:fence.gates.fir` — tile.fence.gates.fir.name
+- `extratrees:fence.gates.gingko` — tile.fence.gates.gingko.name
+- `extratrees:fence.gates.hawthorn` — tile.fence.gates.hawthorn.name
+- `extratrees:fence.gates.hazel` — tile.fence.gates.hazel.name
+- `extratrees:fence.gates.hemlock` — tile.fence.gates.hemlock.name
+- `extratrees:fence.gates.hickory` — tile.fence.gates.hickory.name
+- `extratrees:fence.gates.holly` — tile.fence.gates.holly.name
+- `extratrees:fence.gates.hornbeam` — tile.fence.gates.hornbeam.name
+- `extratrees:fence.gates.iroko` — tile.fence.gates.iroko.name
+- `extratrees:fence.gates.locust` — tile.fence.gates.locust.name
+- `extratrees:fence.gates.logwood` — tile.fence.gates.logwood.name
+- `extratrees:fence.gates.maclura` — tile.fence.gates.maclura.name
+- `extratrees:fence.gates.olive` — tile.fence.gates.olive.name
+- `extratrees:fence.gates.pear` — tile.fence.gates.pear.name
+- `extratrees:fence.gates.pinkivory` — tile.fence.gates.pinkivory.name
+- `extratrees:fence.gates.purpleheart` — tile.fence.gates.purpleheart.name
+- `extratrees:fence.gates.rosewood` — tile.fence.gates.rosewood.name
+- `extratrees:fence.gates.rowan` — tile.fence.gates.rowan.name
+- `extratrees:fence.gates.sweetgum` — tile.fence.gates.sweetgum.name
+- `extratrees:fence.gates.syzgium` — tile.fence.gates.syzgium.name
+- `extratrees:fence.gates.whitebeam` — tile.fence.gates.whitebeam.name
+- `extratrees:fence.gates.yew` — tile.fence.gates.yew.name
+- `extratrees:fences.0` — tile.fences.0.name
+- `extratrees:fences.1` — tile.fences.1.name
+- `extratrees:fences.2` — tile.fences.2.name
+- `extratrees:fences.fireproof.0` — tile.fences.fireproof.0.name
+- `extratrees:fences.fireproof.1` — tile.fences.fireproof.1.name
+- `extratrees:fences.fireproof.2` — tile.fences.fireproof.2.name
+- `extratrees:hops` — tile.hops.name
+- `extratrees:leaves.decorative.0` — tile.leaves.decorative.0.name
+- `extratrees:leaves.decorative.1` — tile.leaves.decorative.1.name
+- `extratrees:leaves.decorative.2` — tile.leaves.decorative.2.name
+- `extratrees:leaves.decorative.3` — tile.leaves.decorative.3.name
+- `extratrees:leaves.decorative.4` — tile.leaves.decorative.4.name
+- `extratrees:leaves.decorative.5` — tile.leaves.decorative.5.name
+- `extratrees:leaves.decorative.6` — tile.leaves.decorative.6.name
+- `extratrees:leaves.default.0` — tile.leaves.default.0.name
+- `extratrees:leaves.default.10` — tile.leaves.default.10.name
+- `extratrees:leaves.default.11` — tile.leaves.default.11.name
+- `extratrees:leaves.default.12` — tile.leaves.default.12.name
+- `extratrees:leaves.default.13` — tile.leaves.default.13.name
+- `extratrees:leaves.default.14` — tile.leaves.default.14.name
+- `extratrees:leaves.default.15` — tile.leaves.default.15.name
+- `extratrees:leaves.default.16` — tile.leaves.default.16.name
+- `extratrees:leaves.default.17` — tile.leaves.default.17.name
+- `extratrees:leaves.default.18` — tile.leaves.default.18.name
+- `extratrees:leaves.default.19` — tile.leaves.default.19.name
+- `extratrees:leaves.default.1` — tile.leaves.default.1.name
+- `extratrees:leaves.default.20` — tile.leaves.default.20.name
+- `extratrees:leaves.default.21` — tile.leaves.default.21.name
+- `extratrees:leaves.default.22` — tile.leaves.default.22.name
+- `extratrees:leaves.default.23` — tile.leaves.default.23.name
+- `extratrees:leaves.default.24` — tile.leaves.default.24.name
+- `extratrees:leaves.default.2` — tile.leaves.default.2.name
+- `extratrees:leaves.default.3` — tile.leaves.default.3.name
+- `extratrees:leaves.default.4` — tile.leaves.default.4.name
+- `extratrees:leaves.default.5` — tile.leaves.default.5.name
+- `extratrees:leaves.default.6` — tile.leaves.default.6.name
+- `extratrees:leaves.default.7` — tile.leaves.default.7.name
+- `extratrees:leaves.default.8` — tile.leaves.default.8.name
+- `extratrees:leaves.default.9` — tile.leaves.default.9.name
+- `extratrees:leaves.default.fruit.0` — tile.leaves.default.0.name
+- `extratrees:leaves.default.fruit.10` — tile.leaves.default.10.name
+- `extratrees:leaves.default.fruit.11` — tile.leaves.default.11.name
+- `extratrees:leaves.default.fruit.12` — tile.leaves.default.12.name
+- `extratrees:leaves.default.fruit.13` — tile.leaves.default.13.name
+- `extratrees:leaves.default.fruit.14` — tile.leaves.default.14.name
+- `extratrees:leaves.default.fruit.1` — tile.leaves.default.1.name
+- `extratrees:leaves.default.fruit.2` — tile.leaves.default.2.name
+- `extratrees:leaves.default.fruit.3` — tile.leaves.default.3.name
+- `extratrees:leaves.default.fruit.4` — tile.leaves.default.4.name
+- `extratrees:leaves.default.fruit.5` — tile.leaves.default.5.name
+- `extratrees:leaves.default.fruit.6` — tile.leaves.default.6.name
+- `extratrees:leaves.default.fruit.7` — tile.leaves.default.7.name
+- `extratrees:leaves.default.fruit.8` — tile.leaves.default.8.name
+- `extratrees:leaves.default.fruit.9` — tile.leaves.default.9.name
+- `extratrees:logs.0` — tile.logs.0.name
+- `extratrees:logs.1` — tile.logs.1.name
+- `extratrees:logs.2` — tile.logs.2.name
+- `extratrees:logs.3` — tile.logs.3.name
+- `extratrees:logs.4` — tile.logs.4.name
+- `extratrees:logs.5` — tile.logs.5.name
+- `extratrees:logs.6` — tile.logs.6.name
+- `extratrees:logs.7` — tile.logs.7.name
+- `extratrees:logs.8` — tile.logs.8.name
+- `extratrees:logs.9` — tile.logs.9.name
+- `extratrees:logs.fireproof.0` — tile.logs.fireproof.0.name
+- `extratrees:logs.fireproof.1` — tile.logs.fireproof.1.name
+- `extratrees:logs.fireproof.2` — tile.logs.fireproof.2.name
+- `extratrees:logs.fireproof.3` — tile.logs.fireproof.3.name
+- `extratrees:logs.fireproof.4` — tile.logs.fireproof.4.name
+- `extratrees:logs.fireproof.5` — tile.logs.fireproof.5.name
+- `extratrees:logs.fireproof.6` — tile.logs.fireproof.6.name
+- `extratrees:logs.fireproof.7` — tile.logs.fireproof.7.name
+- `extratrees:logs.fireproof.8` — tile.logs.fireproof.8.name
+- `extratrees:logs.fireproof.9` — tile.logs.fireproof.9.name
+- `extratrees:machine` — tile.null.name
+- `extratrees:multifence` — tile.null.name
+- `extratrees:planks.0` — tile.planks.0.name
+- `extratrees:planks.1` — tile.planks.1.name
+- `extratrees:planks.2` — tile.planks.2.name
+- `extratrees:planks.fireproof.0` — tile.planks.fireproof.0.name
+- `extratrees:planks.fireproof.1` — tile.planks.fireproof.1.name
+- `extratrees:planks.fireproof.2` — tile.planks.fireproof.2.name
+- `extratrees:shrub_log` — tile.shrub_log.name
+- `extratrees:slabs.0` — tile.slabs.0.name
+- `extratrees:slabs.1` — tile.slabs.1.name
+- `extratrees:slabs.2` — tile.slabs.2.name
+- `extratrees:slabs.3` — tile.slabs.3.name
+- `extratrees:slabs.4` — tile.slabs.4.name
+- `extratrees:slabs.double.0` — tile.slabs.double.0.name
+- `extratrees:slabs.double.1` — tile.slabs.double.1.name
+- `extratrees:slabs.double.2` — tile.slabs.double.2.name
+- `extratrees:slabs.double.3` — tile.slabs.double.3.name
+- `extratrees:slabs.double.4` — tile.slabs.double.4.name
+- `extratrees:slabs.fireproof.0` — tile.slabs.fireproof.0.name
+- `extratrees:slabs.fireproof.1` — tile.slabs.fireproof.1.name
+- `extratrees:slabs.fireproof.2` — tile.slabs.fireproof.2.name
+- `extratrees:slabs.fireproof.3` — tile.slabs.fireproof.3.name
+- `extratrees:slabs.fireproof.4` — tile.slabs.fireproof.4.name
+- `extratrees:slabs.fireproof.double.0` — tile.slabs.fireproof.double.0.name
+- `extratrees:slabs.fireproof.double.1` — tile.slabs.fireproof.double.1.name
+- `extratrees:slabs.fireproof.double.2` — tile.slabs.fireproof.double.2.name
+- `extratrees:slabs.fireproof.double.3` — tile.slabs.fireproof.double.3.name
+- `extratrees:slabs.fireproof.double.4` — tile.slabs.fireproof.double.4.name
+- `extratrees:stairs.alder` — tile.stairs.alder.name
+- `extratrees:stairs.apple` — tile.stairs.apple.name
+- `extratrees:stairs.ash` — tile.stairs.ash.name
+- `extratrees:stairs.banana` — tile.stairs.banana.name
+- `extratrees:stairs.beech` — tile.stairs.beech.name
+- `extratrees:stairs.box` — tile.stairs.box.name
+- `extratrees:stairs.brazilwood` — tile.stairs.brazilwood.name
+- `extratrees:stairs.butternut` — tile.stairs.butternut.name
+- `extratrees:stairs.cedar` — tile.stairs.cedar.name
+- `extratrees:stairs.cypress` — tile.stairs.cypress.name
+- `extratrees:stairs.elder` — tile.stairs.elder.name
+- `extratrees:stairs.elm` — tile.stairs.elm.name
+- `extratrees:stairs.eucalyptus` — tile.stairs.eucalyptus.name
+- `extratrees:stairs.fig` — tile.stairs.fig.name
+- `extratrees:stairs.fireproof.alder` — tile.stairs.fireproof.alder.name
+- `extratrees:stairs.fireproof.apple` — tile.stairs.fireproof.apple.name
+- `extratrees:stairs.fireproof.ash` — tile.stairs.fireproof.ash.name
+- `extratrees:stairs.fireproof.banana` — tile.stairs.fireproof.banana.name
+- `extratrees:stairs.fireproof.beech` — tile.stairs.fireproof.beech.name
+- `extratrees:stairs.fireproof.box` — tile.stairs.fireproof.box.name
+- `extratrees:stairs.fireproof.brazilwood` — tile.stairs.fireproof.brazilwood.name
+- `extratrees:stairs.fireproof.butternut` — tile.stairs.fireproof.butternut.name
+- `extratrees:stairs.fireproof.cedar` — tile.stairs.fireproof.cedar.name
+- `extratrees:stairs.fireproof.cypress` — tile.stairs.fireproof.cypress.name
+- `extratrees:stairs.fireproof.elder` — tile.stairs.fireproof.elder.name
+- `extratrees:stairs.fireproof.elm` — tile.stairs.fireproof.elm.name
+- `extratrees:stairs.fireproof.eucalyptus` — tile.stairs.fireproof.eucalyptus.name
+- `extratrees:stairs.fireproof.fig` — tile.stairs.fireproof.fig.name
+- `extratrees:stairs.fireproof.fir` — tile.stairs.fireproof.fir.name
+- `extratrees:stairs.fireproof.gingko` — tile.stairs.fireproof.gingko.name
+- `extratrees:stairs.fireproof.hawthorn` — tile.stairs.fireproof.hawthorn.name
+- `extratrees:stairs.fireproof.hazel` — tile.stairs.fireproof.hazel.name
+- `extratrees:stairs.fireproof.hemlock` — tile.stairs.fireproof.hemlock.name
+- `extratrees:stairs.fireproof.hickory` — tile.stairs.fireproof.hickory.name
+- `extratrees:stairs.fireproof.holly` — tile.stairs.fireproof.holly.name
+- `extratrees:stairs.fireproof.hornbeam` — tile.stairs.fireproof.hornbeam.name
+- `extratrees:stairs.fireproof.iroko` — tile.stairs.fireproof.iroko.name
+- `extratrees:stairs.fireproof.locust` — tile.stairs.fireproof.locust.name
+- `extratrees:stairs.fireproof.logwood` — tile.stairs.fireproof.logwood.name
+- `extratrees:stairs.fireproof.maclura` — tile.stairs.fireproof.maclura.name
+- `extratrees:stairs.fireproof.olive` — tile.stairs.fireproof.olive.name
+- `extratrees:stairs.fireproof.pear` — tile.stairs.fireproof.pear.name
+- `extratrees:stairs.fireproof.pinkivory` — tile.stairs.fireproof.pinkivory.name
+- `extratrees:stairs.fireproof.purpleheart` — tile.stairs.fireproof.purpleheart.name
+- `extratrees:stairs.fireproof.rosewood` — tile.stairs.fireproof.rosewood.name
+- `extratrees:stairs.fireproof.rowan` — tile.stairs.fireproof.rowan.name
+- `extratrees:stairs.fireproof.sweetgum` — tile.stairs.fireproof.sweetgum.name
+- `extratrees:stairs.fireproof.syzgium` — tile.stairs.fireproof.syzgium.name
+- `extratrees:stairs.fireproof.whitebeam` — tile.stairs.fireproof.whitebeam.name
+- `extratrees:stairs.fireproof.yew` — tile.stairs.fireproof.yew.name
+- `extratrees:stairs.fir` — tile.stairs.fir.name
+- `extratrees:stairs.gingko` — tile.stairs.gingko.name
+- `extratrees:stairs.hawthorn` — tile.stairs.hawthorn.name
+- `extratrees:stairs.hazel` — tile.stairs.hazel.name
+- `extratrees:stairs.hemlock` — tile.stairs.hemlock.name
+- `extratrees:stairs.hickory` — tile.stairs.hickory.name
+- `extratrees:stairs.holly` — tile.stairs.holly.name
+- `extratrees:stairs.hornbeam` — tile.stairs.hornbeam.name
+- `extratrees:stairs.iroko` — tile.stairs.iroko.name
+- `extratrees:stairs.locust` — tile.stairs.locust.name
+- `extratrees:stairs.logwood` — tile.stairs.logwood.name
+- `extratrees:stairs.maclura` — tile.stairs.maclura.name
+- `extratrees:stairs.olive` — tile.stairs.olive.name
+- `extratrees:stairs.pear` — tile.stairs.pear.name
+- `extratrees:stairs.pinkivory` — tile.stairs.pinkivory.name
+- `extratrees:stairs.purpleheart` — tile.stairs.purpleheart.name
+- `extratrees:stairs.rosewood` — tile.stairs.rosewood.name
+- `extratrees:stairs.rowan` — tile.stairs.rowan.name
+- `extratrees:stairs.sweetgum` — tile.stairs.sweetgum.name
+- `extratrees:stairs.syzgium` — tile.stairs.syzgium.name
+- `extratrees:stairs.whitebeam` — tile.stairs.whitebeam.name
+- `extratrees:stairs.yew` — tile.stairs.yew.name
+
+### extrautils2
+- `extrautils2:analogcrafter` — Analog Crafter
+- `extrautils2:angelblock` — Angel Block
+- `extrautils2:compressedcobblestone` — tile.extrautils2
+- `extrautils2:compresseddirt` — tile.extrautils2
+- `extrautils2:compressedgravel` — tile.extrautils2
+- `extrautils2:compressednetherrack` — tile.extrautils2
+- `extrautils2:compressedsand` — tile.extrautils2
+- `extrautils2:creativechest` — Creative Chest
+- `extrautils2:creativeenergy` — Creative Energy Source
+- `extrautils2:creativeharvest` — Creative Harvest
+- `extrautils2:cursedearth` — Cursed Earth
+- `extrautils2:decorativebedrock` — tile.extrautils2
+- `extrautils2:decorativeglass` — tile.extrautils2
+- `extrautils2:decorativesolidwood` — tile.extrautils2
+- `extrautils2:decorativesolid` — tile.extrautils2
+- `extrautils2:drum` — Drum
+- `extrautils2:enderlilly` — Ender Lilly
+- `extrautils2:indexer` — Indexer
+- `extrautils2:ineffableglass` — tile.extrautils2
+- `extrautils2:interactionproxy` — Ender Porcupine
+- `extrautils2:ironwood_leaves` — tile.extrautils2
+- `extrautils2:ironwood_log` — tile.extrautils2
+- `extrautils2:ironwood_planks` — tile.extrautils2
+- `extrautils2:ironwood_sapling` — tile.extrautils2
+- `extrautils2:klein` — Klein Bottle
+- `extrautils2:largishchest` — Slightly-Larger Chest
+- `extrautils2:machine` — Machine
+- `extrautils2:miner` — Mechanical Miner
+- `extrautils2:minichest` — Mini Chest
+- `extrautils2:moonstone` — Moon Stone
+- `extrautils2:opinium` — tile.extrautils2
+- `extrautils2:passivegenerator` — tile.extrautils2
+- `extrautils2:pipe_1` — Transfer Pipe
+- `extrautils2:pipe_2` — Transfer Pipe
+- `extrautils2:pipe_3` — Transfer Pipe
+- `extrautils2:pipe` — Transfer Pipe
+- `extrautils2:playerchest` — Player Chest
+- `extrautils2:powerbattery` — Wireless RF Battery
+- `extrautils2:poweroverload` — Power Overload
+- `extrautils2:powertransmitter` — Wireless RF Transmitter
+- `extrautils2:rainbowgenerator` — tile.extrautils2
+- `extrautils2:redorchid` — Red Orchid
+- `extrautils2:redstoneclock` — Redstone Clock
+- `extrautils2:redstonelantern` — Redstone Lantern
+- `extrautils2:resonator` — Resonator
+- `extrautils2:scanner` — Scanner
+- `extrautils2:screen` — Screen
+- `extrautils2:simpledecorative` — tile.extrautils2
+- `extrautils2:spike_creative` — Creative Spikes
+- `extrautils2:spike_diamond` — Diamond Spikes
+- `extrautils2:spike_gold` — Golden Spikes
+- `extrautils2:spike_iron` — Iron Spikes
+- `extrautils2:spike_stone` — Stone Spikes
+- `extrautils2:spike_wood` — Wooden Spikes
+- `extrautils2:spotlight` — Spotlight
+- `extrautils2:supermobspawner` — Resturbed Mob Spawner
+- `extrautils2:teleporter` — tile.extrautils2
+- `extrautils2:terraformer` — tile.extrautils2
+- `extrautils2:transferholder` — tile.ExtraUtils2
+- `extrautils2:trashcanenergy` — Trash Can (Energy)
+- `extrautils2:trashcanfluid` — Trash Can (Fluid)
+- `extrautils2:trashcan` — Trash Can
+- `extrautils2:trashchest` — Trash Chest
+- `extrautils2:user` — Mechanical User
+
+### farmingforblockheads
+- `farmingforblockheads:chicken_nest` — Chicken Nest
+- `farmingforblockheads:feeding_trough` — Feeding Trough
+- `farmingforblockheads:fertilized_farmland_healthy_stable` — Fertilized Farmland
+- `farmingforblockheads:fertilized_farmland_healthy` — Fertilized Farmland
+- `farmingforblockheads:fertilized_farmland_rich_stable` — Fertilized Farmland
+- `farmingforblockheads:fertilized_farmland_rich` — Fertilized Farmland
+- `farmingforblockheads:fertilized_farmland_stable` — Fertilized Farmland
+- `farmingforblockheads:market` — Market
+
+### flatcoloredblocks
+- `flatcoloredblocks:flatcoloredblock0` — tile.flatcoloredblocks.flatcoloredblock.0.name
+- `flatcoloredblocks:flatcoloredblock10` — tile.flatcoloredblocks.flatcoloredblock.160.name
+- `flatcoloredblocks:flatcoloredblock11` — tile.flatcoloredblocks.flatcoloredblock.176.name
+- `flatcoloredblocks:flatcoloredblock12` — tile.flatcoloredblocks.flatcoloredblock.192.name
+- `flatcoloredblocks:flatcoloredblock13` — tile.flatcoloredblocks.flatcoloredblock.208.name
+- `flatcoloredblocks:flatcoloredblock14` — tile.flatcoloredblocks.flatcoloredblock.224.name
+- `flatcoloredblocks:flatcoloredblock15` — tile.flatcoloredblocks.flatcoloredblock.240.name
+- `flatcoloredblocks:flatcoloredblock16` — tile.flatcoloredblocks.flatcoloredblock.256.name
+- `flatcoloredblocks:flatcoloredblock17` — tile.flatcoloredblocks.flatcoloredblock.272.name
+- `flatcoloredblocks:flatcoloredblock18` — tile.flatcoloredblocks.flatcoloredblock.288.name
+- `flatcoloredblocks:flatcoloredblock19` — tile.flatcoloredblocks.flatcoloredblock.304.name
+- `flatcoloredblocks:flatcoloredblock1` — tile.flatcoloredblocks.flatcoloredblock.16.name
+- `flatcoloredblocks:flatcoloredblock20` — tile.flatcoloredblocks.flatcoloredblock.320.name
+- `flatcoloredblocks:flatcoloredblock21` — tile.flatcoloredblocks.flatcoloredblock.336.name
+- `flatcoloredblocks:flatcoloredblock22` — tile.flatcoloredblocks.flatcoloredblock.352.name
+- `flatcoloredblocks:flatcoloredblock23` — tile.flatcoloredblocks.flatcoloredblock.368.name
+- `flatcoloredblocks:flatcoloredblock24` — tile.flatcoloredblocks.flatcoloredblock.384.name
+- `flatcoloredblocks:flatcoloredblock25` — tile.flatcoloredblocks.flatcoloredblock.400.name
+- `flatcoloredblocks:flatcoloredblock26` — tile.flatcoloredblocks.flatcoloredblock.416.name
+- `flatcoloredblocks:flatcoloredblock27` — tile.flatcoloredblocks.flatcoloredblock.432.name
+- `flatcoloredblocks:flatcoloredblock28` — tile.flatcoloredblocks.flatcoloredblock.448.name
+- `flatcoloredblocks:flatcoloredblock29` — tile.flatcoloredblocks.flatcoloredblock.464.name
+- `flatcoloredblocks:flatcoloredblock2` — tile.flatcoloredblocks.flatcoloredblock.32.name
+- `flatcoloredblocks:flatcoloredblock30` — tile.flatcoloredblocks.flatcoloredblock.480.name
+- `flatcoloredblocks:flatcoloredblock31` — tile.flatcoloredblocks.flatcoloredblock.496.name
+- `flatcoloredblocks:flatcoloredblock32` — tile.flatcoloredblocks.flatcoloredblock.512.name
+- `flatcoloredblocks:flatcoloredblock33` — tile.flatcoloredblocks.flatcoloredblock.528.name
+- `flatcoloredblocks:flatcoloredblock34` — tile.flatcoloredblocks.flatcoloredblock.544.name
+- `flatcoloredblocks:flatcoloredblock35` — tile.flatcoloredblocks.flatcoloredblock.560.name
+- `flatcoloredblocks:flatcoloredblock36` — tile.flatcoloredblocks.flatcoloredblock.576.name
+- `flatcoloredblocks:flatcoloredblock37` — tile.flatcoloredblocks.flatcoloredblock.592.name
+- `flatcoloredblocks:flatcoloredblock38` — tile.flatcoloredblocks.flatcoloredblock.608.name
+- `flatcoloredblocks:flatcoloredblock39` — tile.flatcoloredblocks.flatcoloredblock.624.name
+- `flatcoloredblocks:flatcoloredblock3` — tile.flatcoloredblocks.flatcoloredblock.48.name
+- `flatcoloredblocks:flatcoloredblock40` — tile.flatcoloredblocks.flatcoloredblock.640.name
+- `flatcoloredblocks:flatcoloredblock4` — tile.flatcoloredblocks.flatcoloredblock.64.name
+- `flatcoloredblocks:flatcoloredblock5` — tile.flatcoloredblocks.flatcoloredblock.80.name
+- `flatcoloredblocks:flatcoloredblock6` — tile.flatcoloredblocks.flatcoloredblock.96.name
+- `flatcoloredblocks:flatcoloredblock7` — tile.flatcoloredblocks.flatcoloredblock.112.name
+- `flatcoloredblocks:flatcoloredblock8` — tile.flatcoloredblocks.flatcoloredblock.128.name
+- `flatcoloredblocks:flatcoloredblock9` — tile.flatcoloredblocks.flatcoloredblock.144.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_0` — tile.flatcoloredblocks.flatcoloredblock.0.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_10` — tile.flatcoloredblocks.flatcoloredblock.160.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_11` — tile.flatcoloredblocks.flatcoloredblock.176.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_12` — tile.flatcoloredblocks.flatcoloredblock.192.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_13` — tile.flatcoloredblocks.flatcoloredblock.208.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_14` — tile.flatcoloredblocks.flatcoloredblock.224.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_15` — tile.flatcoloredblocks.flatcoloredblock.240.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_16` — tile.flatcoloredblocks.flatcoloredblock.256.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_17` — tile.flatcoloredblocks.flatcoloredblock.272.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_18` — tile.flatcoloredblocks.flatcoloredblock.288.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_19` — tile.flatcoloredblocks.flatcoloredblock.304.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_1` — tile.flatcoloredblocks.flatcoloredblock.16.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_20` — tile.flatcoloredblocks.flatcoloredblock.320.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_21` — tile.flatcoloredblocks.flatcoloredblock.336.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_22` — tile.flatcoloredblocks.flatcoloredblock.352.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_23` — tile.flatcoloredblocks.flatcoloredblock.368.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_24` — tile.flatcoloredblocks.flatcoloredblock.384.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_25` — tile.flatcoloredblocks.flatcoloredblock.400.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_26` — tile.flatcoloredblocks.flatcoloredblock.416.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_27` — tile.flatcoloredblocks.flatcoloredblock.432.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_28` — tile.flatcoloredblocks.flatcoloredblock.448.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_29` — tile.flatcoloredblocks.flatcoloredblock.464.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_2` — tile.flatcoloredblocks.flatcoloredblock.32.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_30` — tile.flatcoloredblocks.flatcoloredblock.480.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_31` — tile.flatcoloredblocks.flatcoloredblock.496.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_32` — tile.flatcoloredblocks.flatcoloredblock.512.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_33` — tile.flatcoloredblocks.flatcoloredblock.528.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_34` — tile.flatcoloredblocks.flatcoloredblock.544.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_35` — tile.flatcoloredblocks.flatcoloredblock.560.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_36` — tile.flatcoloredblocks.flatcoloredblock.576.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_37` — tile.flatcoloredblocks.flatcoloredblock.592.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_38` — tile.flatcoloredblocks.flatcoloredblock.608.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_39` — tile.flatcoloredblocks.flatcoloredblock.624.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_3` — tile.flatcoloredblocks.flatcoloredblock.48.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_40` — tile.flatcoloredblocks.flatcoloredblock.640.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_4` — tile.flatcoloredblocks.flatcoloredblock.64.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_5` — tile.flatcoloredblocks.flatcoloredblock.80.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_6` — tile.flatcoloredblocks.flatcoloredblock.96.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_7` — tile.flatcoloredblocks.flatcoloredblock.112.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_8` — tile.flatcoloredblocks.flatcoloredblock.128.name
+- `flatcoloredblocks:flatcoloredblock_glowing0_9` — tile.flatcoloredblocks.flatcoloredblock.144.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_0` — tile.flatcoloredblocks.flatcoloredblock.0.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_10` — tile.flatcoloredblocks.flatcoloredblock.160.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_11` — tile.flatcoloredblocks.flatcoloredblock.176.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_12` — tile.flatcoloredblocks.flatcoloredblock.192.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_13` — tile.flatcoloredblocks.flatcoloredblock.208.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_14` — tile.flatcoloredblocks.flatcoloredblock.224.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_15` — tile.flatcoloredblocks.flatcoloredblock.240.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_16` — tile.flatcoloredblocks.flatcoloredblock.256.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_17` — tile.flatcoloredblocks.flatcoloredblock.272.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_18` — tile.flatcoloredblocks.flatcoloredblock.288.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_19` — tile.flatcoloredblocks.flatcoloredblock.304.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_1` — tile.flatcoloredblocks.flatcoloredblock.16.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_20` — tile.flatcoloredblocks.flatcoloredblock.320.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_21` — tile.flatcoloredblocks.flatcoloredblock.336.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_22` — tile.flatcoloredblocks.flatcoloredblock.352.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_23` — tile.flatcoloredblocks.flatcoloredblock.368.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_24` — tile.flatcoloredblocks.flatcoloredblock.384.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_25` — tile.flatcoloredblocks.flatcoloredblock.400.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_26` — tile.flatcoloredblocks.flatcoloredblock.416.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_27` — tile.flatcoloredblocks.flatcoloredblock.432.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_28` — tile.flatcoloredblocks.flatcoloredblock.448.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_29` — tile.flatcoloredblocks.flatcoloredblock.464.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_2` — tile.flatcoloredblocks.flatcoloredblock.32.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_30` — tile.flatcoloredblocks.flatcoloredblock.480.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_31` — tile.flatcoloredblocks.flatcoloredblock.496.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_32` — tile.flatcoloredblocks.flatcoloredblock.512.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_33` — tile.flatcoloredblocks.flatcoloredblock.528.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_34` — tile.flatcoloredblocks.flatcoloredblock.544.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_35` — tile.flatcoloredblocks.flatcoloredblock.560.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_36` — tile.flatcoloredblocks.flatcoloredblock.576.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_37` — tile.flatcoloredblocks.flatcoloredblock.592.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_38` — tile.flatcoloredblocks.flatcoloredblock.608.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_39` — tile.flatcoloredblocks.flatcoloredblock.624.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_3` — tile.flatcoloredblocks.flatcoloredblock.48.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_40` — tile.flatcoloredblocks.flatcoloredblock.640.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_4` — tile.flatcoloredblocks.flatcoloredblock.64.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_5` — tile.flatcoloredblocks.flatcoloredblock.80.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_6` — tile.flatcoloredblocks.flatcoloredblock.96.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_7` — tile.flatcoloredblocks.flatcoloredblock.112.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_8` — tile.flatcoloredblocks.flatcoloredblock.128.name
+- `flatcoloredblocks:flatcoloredblock_transparent0_9` — tile.flatcoloredblocks.flatcoloredblock.144.name
+
+### forestry
+- `forestry:alveary.fan` — Alveary Fan
+- `forestry:alveary.heater` — Alveary Heater
+- `forestry:alveary.hygro` — Alveary Hygroregulator
+- `forestry:alveary.plain` — Alveary
+- `forestry:alveary.sieve` — Alveary Sieve
+- `forestry:alveary.stabiliser` — Alveary Stabiliser
+- `forestry:alveary.swarmer` — Alveary Swarmer
+- `forestry:analyzer` — Analyzer
+- `forestry:apiary` — Apiary
+- `forestry:arboretum` — Arboretum
+- `forestry:ash_block_0` — Ash Block
+- `forestry:ash_block_1` — Ash Block
+- `forestry:ash_block_2` — Ash Block
+- `forestry:ash_block_3` — Ash Block
+- `forestry:ash_brick` — Ash Bricks
+- `forestry:ash_stairs` — Ash Brick Stairs
+- `forestry:bee_chest` — Apiarist's Chest
+- `forestry:bee_combs_0` — tile.for.bee_combs.name
+- `forestry:bee_combs_1` — tile.for.bee_combs.name
+- `forestry:bee_house` — Bee House
+- `forestry:beehives` — tile.for.beehives.name
+- `forestry:bog_earth` — tile.for.bog_earth.name
+- `forestry:bottler` — Bottler
+- `forestry:butterfly_chest` — Lepidopterist's Chest
+- `forestry:candle` — tile.for.candle.name
+- `forestry:carpenter` — Carpenter
+- `forestry:centrifuge` — Centrifuge
+- `forestry:charcoal` — Block of Charcoal
+- `forestry:climatiser` — tile.for.climatiser.name
+- `forestry:cocoon.solid` — tile.for.cocoon.solid.name
+- `forestry:cocoon` — tile.for.cocoon.name
+- `forestry:database` — Database
+- `forestry:doors.acacia` — item.for.doors.acacia.name
+- `forestry:doors.balsa` — item.for.doors.balsa.name
+- `forestry:doors.baobab` — item.for.doors.baobab.name
+- `forestry:doors.cherry` — item.for.doors.cherry.name
+- `forestry:doors.chestnut` — item.for.doors.chestnut.name
+- `forestry:doors.citrus` — item.for.doors.citrus.name
+- `forestry:doors.cocobolo` — item.for.doors.cocobolo.name
+- `forestry:doors.ebony` — item.for.doors.ebony.name
+- `forestry:doors.giganteum` — item.for.doors.giganteum.name
+- `forestry:doors.greenheart` — item.for.doors.greenheart.name
+- `forestry:doors.ipe` — item.for.doors.ipe.name
+- `forestry:doors.kapok` — item.for.doors.kapok.name
+- `forestry:doors.larch` — item.for.doors.larch.name
+- `forestry:doors.lime` — item.for.doors.lime.name
+- `forestry:doors.mahoe` — item.for.doors.mahoe.name
+- `forestry:doors.mahogany` — item.for.doors.mahogany.name
+- `forestry:doors.maple` — item.for.doors.maple.name
+- `forestry:doors.padauk` — item.for.doors.padauk.name
+- `forestry:doors.palm` — item.for.doors.palm.name
+- `forestry:doors.papaya` — item.for.doors.papaya.name
+- `forestry:doors.pine` — item.for.doors.pine.name
+- `forestry:doors.plum` — item.for.doors.plum.name
+- `forestry:doors.poplar` — item.for.doors.poplar.name
+- `forestry:doors.sequoia` — item.for.doors.sequoia.name
+- `forestry:doors.teak` — item.for.doors.teak.name
+- `forestry:doors.walnut` — item.for.doors.walnut.name
+- `forestry:doors.wenge` — item.for.doors.wenge.name
+- `forestry:doors.willow` — item.for.doors.willow.name
+- `forestry:doors.zebrawood` — item.for.doors.zebrawood.name
+- `forestry:engine_biogas` — Biogas Engine
+- `forestry:engine_clockwork` — Clockwork Engine
+- `forestry:engine_electrical` — Electrical Engine
+- `forestry:engine_generator` — Bio Generator
+- `forestry:engine_peat` — Peat-fired Engine
+- `forestry:escritoire` — Escritoire
+- `forestry:fabricator` — Thermionic Fabricator
+- `forestry:farm_crops` — Farm
+- `forestry:farm_ender` — Ender Farm
+- `forestry:farm_gourd` — Gourd Farm
+- `forestry:farm_mushroom` — Mushroom Farm
+- `forestry:farm_nether` — Infernal Farm
+- `forestry:fence.gates.acacia` — tile.for.fence.gates.acacia.name
+- `forestry:fence.gates.balsa` — tile.for.fence.gates.balsa.name
+- `forestry:fence.gates.baobab` — tile.for.fence.gates.baobab.name
+- `forestry:fence.gates.cherry` — tile.for.fence.gates.cherry.name
+- `forestry:fence.gates.chestnut` — tile.for.fence.gates.chestnut.name
+- `forestry:fence.gates.citrus` — tile.for.fence.gates.citrus.name
+- `forestry:fence.gates.cocobolo` — tile.for.fence.gates.cocobolo.name
+- `forestry:fence.gates.ebony` — tile.for.fence.gates.ebony.name
+- `forestry:fence.gates.fireproof.acacia` — tile.for.fence.gates.fireproof.acacia.name
+- `forestry:fence.gates.fireproof.balsa` — tile.for.fence.gates.fireproof.balsa.name
+- `forestry:fence.gates.fireproof.baobab` — tile.for.fence.gates.fireproof.baobab.name
+- `forestry:fence.gates.fireproof.cherry` — tile.for.fence.gates.fireproof.cherry.name
+- `forestry:fence.gates.fireproof.chestnut` — tile.for.fence.gates.fireproof.chestnut.name
+- `forestry:fence.gates.fireproof.citrus` — tile.for.fence.gates.fireproof.citrus.name
+- `forestry:fence.gates.fireproof.cocobolo` — tile.for.fence.gates.fireproof.cocobolo.name
+- `forestry:fence.gates.fireproof.ebony` — tile.for.fence.gates.fireproof.ebony.name
+- `forestry:fence.gates.fireproof.giganteum` — tile.for.fence.gates.fireproof.giganteum.name
+- `forestry:fence.gates.fireproof.greenheart` — tile.for.fence.gates.fireproof.greenheart.name
+- `forestry:fence.gates.fireproof.ipe` — tile.for.fence.gates.fireproof.ipe.name
+- `forestry:fence.gates.fireproof.kapok` — tile.for.fence.gates.fireproof.kapok.name
+- `forestry:fence.gates.fireproof.larch` — tile.for.fence.gates.fireproof.larch.name
+- `forestry:fence.gates.fireproof.lime` — tile.for.fence.gates.fireproof.lime.name
+- `forestry:fence.gates.fireproof.mahoe` — tile.for.fence.gates.fireproof.mahoe.name
+- `forestry:fence.gates.fireproof.mahogany` — tile.for.fence.gates.fireproof.mahogany.name
+- `forestry:fence.gates.fireproof.maple` — tile.for.fence.gates.fireproof.maple.name
+- `forestry:fence.gates.fireproof.padauk` — tile.for.fence.gates.fireproof.padauk.name
+- `forestry:fence.gates.fireproof.palm` — tile.for.fence.gates.fireproof.palm.name
+- `forestry:fence.gates.fireproof.papaya` — tile.for.fence.gates.fireproof.papaya.name
+- `forestry:fence.gates.fireproof.pine` — tile.for.fence.gates.fireproof.pine.name
+- `forestry:fence.gates.fireproof.plum` — tile.for.fence.gates.fireproof.plum.name
+- `forestry:fence.gates.fireproof.poplar` — tile.for.fence.gates.fireproof.poplar.name
+- `forestry:fence.gates.fireproof.sequoia` — tile.for.fence.gates.fireproof.sequoia.name
+- `forestry:fence.gates.fireproof.teak` — tile.for.fence.gates.fireproof.teak.name
+- `forestry:fence.gates.fireproof.walnut` — tile.for.fence.gates.fireproof.walnut.name
+- `forestry:fence.gates.fireproof.wenge` — tile.for.fence.gates.fireproof.wenge.name
+- `forestry:fence.gates.fireproof.willow` — tile.for.fence.gates.fireproof.willow.name
+- `forestry:fence.gates.fireproof.zebrawood` — tile.for.fence.gates.fireproof.zebrawood.name
+- `forestry:fence.gates.giganteum` — tile.for.fence.gates.giganteum.name
+- `forestry:fence.gates.greenheart` — tile.for.fence.gates.greenheart.name
+- `forestry:fence.gates.ipe` — tile.for.fence.gates.ipe.name
+- `forestry:fence.gates.kapok` — tile.for.fence.gates.kapok.name
+- `forestry:fence.gates.larch` — tile.for.fence.gates.larch.name
+- `forestry:fence.gates.lime` — tile.for.fence.gates.lime.name
+- `forestry:fence.gates.mahoe` — tile.for.fence.gates.mahoe.name
+- `forestry:fence.gates.mahogany` — tile.for.fence.gates.mahogany.name
+- `forestry:fence.gates.maple` — tile.for.fence.gates.maple.name
+- `forestry:fence.gates.padauk` — tile.for.fence.gates.padauk.name
+- `forestry:fence.gates.palm` — tile.for.fence.gates.palm.name
+- `forestry:fence.gates.papaya` — tile.for.fence.gates.papaya.name
+- `forestry:fence.gates.pine` — tile.for.fence.gates.pine.name
+- `forestry:fence.gates.plum` — tile.for.fence.gates.plum.name
+- `forestry:fence.gates.poplar` — tile.for.fence.gates.poplar.name
+- `forestry:fence.gates.sequoia` — tile.for.fence.gates.sequoia.name
+- `forestry:fence.gates.teak` — tile.for.fence.gates.teak.name
+- `forestry:fence.gates.vanilla.fireproof.acacia` — tile.for.fence.gates.vanilla.fireproof.acacia.name
+- `forestry:fence.gates.vanilla.fireproof.birch` — tile.for.fence.gates.vanilla.fireproof.birch.name
+- `forestry:fence.gates.vanilla.fireproof.dark_oak` — tile.for.fence.gates.vanilla.fireproof.dark_oak.name
+- `forestry:fence.gates.vanilla.fireproof.jungle` — tile.for.fence.gates.vanilla.fireproof.jungle.name
+- `forestry:fence.gates.vanilla.fireproof.oak` — tile.for.fence.gates.vanilla.fireproof.oak.name
+- `forestry:fence.gates.vanilla.fireproof.spruce` — tile.for.fence.gates.vanilla.fireproof.spruce.name
+- `forestry:fence.gates.walnut` — tile.for.fence.gates.walnut.name
+- `forestry:fence.gates.wenge` — tile.for.fence.gates.wenge.name
+- `forestry:fence.gates.willow` — tile.for.fence.gates.willow.name
+- `forestry:fence.gates.zebrawood` — tile.for.fence.gates.zebrawood.name
+- `forestry:fences.0` — tile.for.fences.0.name
+- `forestry:fences.1` — tile.for.fences.1.name
+- `forestry:fences.fireproof.0` — tile.for.fences.fireproof.0.name
+- `forestry:fences.fireproof.1` — tile.for.fences.fireproof.1.name
+- `forestry:fences.vanilla.fireproof.0` — tile.for.fences.vanilla.fireproof.0.name
+- `forestry:fermenter` — Fermenter
+- `forestry:ffarm` — tile.for.ffarm.name
+- `forestry:fluid.bio.ethanol` — Ethanol
+- `forestry:fluid.biomass` — Biomass
+- `forestry:fluid.for.honey` — Honey
+- `forestry:fluid.glass` — Liquid Glass
+- `forestry:fluid.ice` — Crushed Ice
+- `forestry:fluid.juice` — Fruit Juice
+- `forestry:fluid.milk` — Milk
+- `forestry:fluid.seed.oil` — Seed Oil
+- `forestry:fluid.short.mead` — Short Mead
+- `forestry:genetic_filter` — Genetic Filter
+- `forestry:greenhouse.window_up` — Greenhouse Roof Window
+- `forestry:greenhouse.window` — Greenhouse Window
+- `forestry:greenhouse` — tile.for.greenhouse.name
+- `forestry:habitat_former` — Habitat Former
+- `forestry:humus` — Humus
+- `forestry:leaves.decorative.0` — tile.for.leaves.decorative.0.name
+- `forestry:leaves.decorative.1` — tile.for.leaves.decorative.1.name
+- `forestry:leaves.decorative.2` — tile.for.leaves.decorative.2.name
+- `forestry:leaves.default.0` — tile.for.leaves.default.0.name
+- `forestry:leaves.default.1` — tile.for.leaves.default.1.name
+- `forestry:leaves.default.2` — tile.for.leaves.default.2.name
+- `forestry:leaves.default.3` — tile.for.leaves.default.3.name
+- `forestry:leaves.default.4` — tile.for.leaves.default.4.name
+- `forestry:leaves.default.5` — tile.for.leaves.default.5.name
+- `forestry:leaves.default.6` — tile.for.leaves.default.6.name
+- `forestry:leaves.default.7` — tile.for.leaves.default.7.name
+- `forestry:leaves.default.8` — tile.for.leaves.default.8.name
+- `forestry:leaves.default.fruit.0` — tile.for.leaves.default.fruit.0.name
+- `forestry:leaves.default.fruit.1` — tile.for.leaves.default.fruit.1.name
+- `forestry:leaves` — tile.for.leaves.name
+- `forestry:loam` — Loam
+- `forestry:logs.0` — tile.for.logs.0.name
+- `forestry:logs.1` — tile.for.logs.1.name
+- `forestry:logs.2` — tile.for.logs.2.name
+- `forestry:logs.3` — tile.for.logs.3.name
+- `forestry:logs.4` — tile.for.logs.4.name
+- `forestry:logs.5` — tile.for.logs.5.name
+- `forestry:logs.6` — tile.for.logs.6.name
+- `forestry:logs.7` — tile.for.logs.7.name
+- `forestry:logs.fireproof.0` — tile.for.logs.fireproof.0.name
+- `forestry:logs.fireproof.1` — tile.for.logs.fireproof.1.name
+- `forestry:logs.fireproof.2` — tile.for.logs.fireproof.2.name
+- `forestry:logs.fireproof.3` — tile.for.logs.fireproof.3.name
+- `forestry:logs.fireproof.4` — tile.for.logs.fireproof.4.name
+- `forestry:logs.fireproof.5` — tile.for.logs.fireproof.5.name
+- `forestry:logs.fireproof.6` — tile.for.logs.fireproof.6.name
+- `forestry:logs.fireproof.7` — tile.for.logs.fireproof.7.name
+- `forestry:logs.vanilla.fireproof.0` — tile.for.logs.vanilla.fireproof.0.name
+- `forestry:logs.vanilla.fireproof.1` — tile.for.logs.vanilla.fireproof.1.name
+- `forestry:mailbox` — Mailbox
+- `forestry:moistener` — Moistener
+- `forestry:mushroom` — tile.for.mushroom.name
+- `forestry:peat_bog` — Peat Bog
+- `forestry:planks.0` — tile.for.planks.0.name
+- `forestry:planks.1` — tile.for.planks.1.name
+- `forestry:planks.fireproof.0` — tile.for.planks.fireproof.0.name
+- `forestry:planks.fireproof.1` — tile.for.planks.fireproof.1.name
+- `forestry:planks.vanilla.fireproof.0` — tile.for.planks.vanilla.fireproof.0.name
+- `forestry:pods.banana` — tile.for.pods.banana.name
+- `forestry:pods.cocoa` — tile.for.pods.cocoa.name
+- `forestry:pods.coconut` — tile.for.pods.coconut.name
+- `forestry:pods.dates` — tile.for.pods.dates.name
+- `forestry:pods.papaya` — tile.for.pods.papaya.name
+- `forestry:pods.plantain` — tile.for.pods.plantain.name
+- `forestry:pods.red_banana` — tile.for.pods.red_banana.name
+- `forestry:rainmaker` — Rainmaker
+- `forestry:raintank` — Rain Tank
+- `forestry:resource_storage` — tile.for.resource_storage.name
+- `forestry:resources` — tile.for.resources.name
+- `forestry:sapling_ge` — tile.for.sapling_ge.name
+- `forestry:slabs.0` — tile.for.slabs.0.name
+- `forestry:slabs.1` — tile.for.slabs.1.name
+- `forestry:slabs.2` — tile.for.slabs.2.name
+- `forestry:slabs.3` — tile.for.slabs.3.name
+- `forestry:slabs.double.0` — tile.for.slabs.double.0.name
+- `forestry:slabs.double.1` — tile.for.slabs.double.1.name
+- `forestry:slabs.double.2` — tile.for.slabs.double.2.name
+- `forestry:slabs.double.3` — tile.for.slabs.double.3.name
+- `forestry:slabs.double.fireproof.0` — tile.for.slabs.double.fireproof.0.name
+- `forestry:slabs.double.fireproof.1` — tile.for.slabs.double.fireproof.1.name
+- `forestry:slabs.double.fireproof.2` — tile.for.slabs.double.fireproof.2.name
+- `forestry:slabs.double.fireproof.3` — tile.for.slabs.double.fireproof.3.name
+- `forestry:slabs.fireproof.0` — tile.for.slabs.fireproof.0.name
+- `forestry:slabs.fireproof.1` — tile.for.slabs.fireproof.1.name
+- `forestry:slabs.fireproof.2` — tile.for.slabs.fireproof.2.name
+- `forestry:slabs.fireproof.3` — tile.for.slabs.fireproof.3.name
+- `forestry:slabs.vanilla.double.fireproof.0` — tile.for.slabs.vanilla.double.fireproof.0.name
+- `forestry:slabs.vanilla.fireproof.0` — tile.for.slabs.vanilla.fireproof.0.name
+- `forestry:squeezer` — Squeezer
+- `forestry:stairs.acacia` — tile.for.stairs.acacia.name
+- `forestry:stairs.balsa` — tile.for.stairs.balsa.name
+- `forestry:stairs.baobab` — tile.for.stairs.baobab.name
+- `forestry:stairs.cherry` — tile.for.stairs.cherry.name
+- `forestry:stairs.chestnut` — tile.for.stairs.chestnut.name
+- `forestry:stairs.citrus` — tile.for.stairs.citrus.name
+- `forestry:stairs.cocobolo` — tile.for.stairs.cocobolo.name
+- `forestry:stairs.ebony` — tile.for.stairs.ebony.name
+- `forestry:stairs.fireproof.acacia` — tile.for.stairs.fireproof.acacia.name
+- `forestry:stairs.fireproof.balsa` — tile.for.stairs.fireproof.balsa.name
+- `forestry:stairs.fireproof.baobab` — tile.for.stairs.fireproof.baobab.name
+- `forestry:stairs.fireproof.cherry` — tile.for.stairs.fireproof.cherry.name
+- `forestry:stairs.fireproof.chestnut` — tile.for.stairs.fireproof.chestnut.name
+- `forestry:stairs.fireproof.citrus` — tile.for.stairs.fireproof.citrus.name
+- `forestry:stairs.fireproof.cocobolo` — tile.for.stairs.fireproof.cocobolo.name
+- `forestry:stairs.fireproof.ebony` — tile.for.stairs.fireproof.ebony.name
+- `forestry:stairs.fireproof.giganteum` — tile.for.stairs.fireproof.giganteum.name
+- `forestry:stairs.fireproof.greenheart` — tile.for.stairs.fireproof.greenheart.name
+- `forestry:stairs.fireproof.ipe` — tile.for.stairs.fireproof.ipe.name
+- `forestry:stairs.fireproof.kapok` — tile.for.stairs.fireproof.kapok.name
+- `forestry:stairs.fireproof.larch` — tile.for.stairs.fireproof.larch.name
+- `forestry:stairs.fireproof.lime` — tile.for.stairs.fireproof.lime.name
+- `forestry:stairs.fireproof.mahoe` — tile.for.stairs.fireproof.mahoe.name
+- `forestry:stairs.fireproof.mahogany` — tile.for.stairs.fireproof.mahogany.name
+- `forestry:stairs.fireproof.maple` — tile.for.stairs.fireproof.maple.name
+- `forestry:stairs.fireproof.padauk` — tile.for.stairs.fireproof.padauk.name
+- `forestry:stairs.fireproof.palm` — tile.for.stairs.fireproof.palm.name
+- `forestry:stairs.fireproof.papaya` — tile.for.stairs.fireproof.papaya.name
+- `forestry:stairs.fireproof.pine` — tile.for.stairs.fireproof.pine.name
+- `forestry:stairs.fireproof.plum` — tile.for.stairs.fireproof.plum.name
+- `forestry:stairs.fireproof.poplar` — tile.for.stairs.fireproof.poplar.name
+- `forestry:stairs.fireproof.sequoia` — tile.for.stairs.fireproof.sequoia.name
+- `forestry:stairs.fireproof.teak` — tile.for.stairs.fireproof.teak.name
+- `forestry:stairs.fireproof.walnut` — tile.for.stairs.fireproof.walnut.name
+- `forestry:stairs.fireproof.wenge` — tile.for.stairs.fireproof.wenge.name
+- `forestry:stairs.fireproof.willow` — tile.for.stairs.fireproof.willow.name
+- `forestry:stairs.fireproof.zebrawood` — tile.for.stairs.fireproof.zebrawood.name
+- `forestry:stairs.giganteum` — tile.for.stairs.giganteum.name
+- `forestry:stairs.greenheart` — tile.for.stairs.greenheart.name
+- `forestry:stairs.ipe` — tile.for.stairs.ipe.name
+- `forestry:stairs.kapok` — tile.for.stairs.kapok.name
+- `forestry:stairs.larch` — tile.for.stairs.larch.name
+- `forestry:stairs.lime` — tile.for.stairs.lime.name
+- `forestry:stairs.mahoe` — tile.for.stairs.mahoe.name
+- `forestry:stairs.mahogany` — tile.for.stairs.mahogany.name
+- `forestry:stairs.maple` — tile.for.stairs.maple.name
+- `forestry:stairs.padauk` — tile.for.stairs.padauk.name
+- `forestry:stairs.palm` — tile.for.stairs.palm.name
+- `forestry:stairs.papaya` — tile.for.stairs.papaya.name
+- `forestry:stairs.pine` — tile.for.stairs.pine.name
+- `forestry:stairs.plum` — tile.for.stairs.plum.name
+- `forestry:stairs.poplar` — tile.for.stairs.poplar.name
+- `forestry:stairs.sequoia` — tile.for.stairs.sequoia.name
+- `forestry:stairs.teak` — tile.for.stairs.teak.name
+- `forestry:stairs.vanilla.fireproof.acacia` — tile.for.stairs.vanilla.fireproof.acacia.name
+- `forestry:stairs.vanilla.fireproof.birch` — tile.for.stairs.vanilla.fireproof.birch.name
+- `forestry:stairs.vanilla.fireproof.dark_oak` — tile.for.stairs.vanilla.fireproof.dark_oak.name
+- `forestry:stairs.vanilla.fireproof.jungle` — tile.for.stairs.vanilla.fireproof.jungle.name
+- `forestry:stairs.vanilla.fireproof.oak` — tile.for.stairs.vanilla.fireproof.oak.name
+- `forestry:stairs.vanilla.fireproof.spruce` — tile.for.stairs.vanilla.fireproof.spruce.name
+- `forestry:stairs.walnut` — tile.for.stairs.walnut.name
+- `forestry:stairs.wenge` — tile.for.stairs.wenge.name
+- `forestry:stairs.willow` — tile.for.stairs.willow.name
+- `forestry:stairs.zebrawood` — tile.for.stairs.zebrawood.name
+- `forestry:stamp_collector` — Stamp Collector
+- `forestry:still` — Still
+- `forestry:stump` — Candle Stump
+- `forestry:trade_station` — Trade Station
+- `forestry:tree_chest` — Arborist's Chest
+- `forestry:wood_pile_decorative` — Decorative Wood Pile
+- `forestry:wood_pile` — Wood Pile
+- `forestry:worktable` — Worktable
+
+### funkylocomotion
+- `funkylocomotion:booster` — Frame Booster
+- `funkylocomotion:frame_0` — Frame Block
+- `funkylocomotion:frame_1` — Frame Block
+- `funkylocomotion:frame_2` — Frame Block
+- `funkylocomotion:frame_3` — Frame Block
+- `funkylocomotion:frame_projector` — Frame Projector
+- `funkylocomotion:mass_frame_corner` — Super-Frame Corner
+- `funkylocomotion:mass_frame_edge` — Super-Frame Edge
+- `funkylocomotion:moving` — tile.null.name
+- `funkylocomotion:pusher` — tile.funkylocomotion
+- `funkylocomotion:slider` — Frame Slider
+- `funkylocomotion:teleporter` — Frame Teleporter
+
+### gardenstuff
+- `gardenstuff:bloomery_furnace` — Bloomery Furnace
+- `gardenstuff:candelabra` — tile.gardenstuff.candelabra.name
+- `gardenstuff:candelilla` — tile.gardenstuff.candelilla.name
+- `gardenstuff:metal_block` — tile.gardenstuff.metal_block.name
+- `gardenstuff:metal_fence` — tile.gardenstuff.metal_fence.name
+- `gardenstuff:metal_lattice` — tile.gardenstuff.metal_lattice.name
+- `gardenstuff:stone_block` — tile.gardenstuff.stone_block.name
+
+### gendustry
+- `gendustry:extractor` — DNA Extractor
+- `gendustry:imprinter` — Genetic Imprinter
+- `gendustry:industrial_apiary` — Industrial Apiary
+- `gendustry:liquiddna` — Liquid DNA
+- `gendustry:liquifier` — Protein Liquifier
+- `gendustry:mutagen_producer` — Mutagen Producer
+- `gendustry:mutagen` — Mutagen
+- `gendustry:mutatron_advanced` — Advanced mutatron
+- `gendustry:mutatron` — Mutatron
+- `gendustry:protein` — Protein
+- `gendustry:replicator` — Genetic Replicator
+- `gendustry:sampler` — Genetic Sampler
+- `gendustry:transposer` — Genetic Transposer
+
+### genetics
+- `genetics:adv_machine` — tile.null.name
+- `genetics:binnie.bacteria.poly` — tile.genetics.fluid.geneticliquid.bacteriapoly.name
+- `genetics:binnie.bacteria.vector` — tile.genetics.fluid.geneticliquid.bacteriavector.name
+- `genetics:binnie.bacteria` — tile.genetics.fluid.geneticliquid.bacteria.name
+- `genetics:binnie.dna.raw` — tile.genetics.fluid.geneticliquid.rawdna.name
+- `genetics:binnie.growth.medium` — tile.genetics.fluid.geneticliquid.growthmedium.name
+- `genetics:lab_machine` — tile.null.name
+- `genetics:machine` — tile.null.name
+
+### harvestcraft
+- `harvestcraft:almond_sapling` — Almond Sapling
+- `harvestcraft:apiary` — Apiary
+- `harvestcraft:apple_sapling` — Apple Sapling
+- `harvestcraft:apricot_sapling` — Apricot Sapling
+- `harvestcraft:aridgarden` — Arid Garden
+- `harvestcraft:avocado_sapling` — Avocado Sapling
+- `harvestcraft:banana_sapling` — Banana Sapling
+- `harvestcraft:beehive` — Beehive
+- `harvestcraft:breadfruit_sapling` — Breadfruit Sapling
+- `harvestcraft:candledeco10` — Cyan Candle
+- `harvestcraft:candledeco11` — Purple Candle
+- `harvestcraft:candledeco12` — Blue Candle
+- `harvestcraft:candledeco13` — Brown Candle
+- `harvestcraft:candledeco14` — Green Candle
+- `harvestcraft:candledeco15` — Red Candle
+- `harvestcraft:candledeco16` — Black Candle
+- `harvestcraft:candledeco1` — White Candle
+- `harvestcraft:candledeco2` — Orange Candle
+- `harvestcraft:candledeco3` — Magenta Candle
+- `harvestcraft:candledeco4` — Light Blue Candle
+- `harvestcraft:candledeco5` — Yellow Candle
+- `harvestcraft:candledeco6` — Lime Candle
+- `harvestcraft:candledeco7` — Pink Candle
+- `harvestcraft:candledeco8` — Dark Grey Candle
+- `harvestcraft:candledeco9` — Light Grey Candle
+- `harvestcraft:carrotcake` — Carrot Cake
+- `harvestcraft:cashew_sapling` — Cashew Sapling
+- `harvestcraft:cheesecake` — Cheese Cake
+- `harvestcraft:cherry_sapling` — Cherry Sapling
+- `harvestcraft:cherrycheesecake` — Cherry Cheese Cake
+- `harvestcraft:chestnut_sapling` — Chestnut Sapling
+- `harvestcraft:chocolatesprinklecake` — Chocolate Sprinkles Cake
+- `harvestcraft:cinnamon_sapling` — Cinnamon Sapling
+- `harvestcraft:coconut_sapling` — Coconut Sapling
+- `harvestcraft:date_sapling` — Date Sapling
+- `harvestcraft:dragonfruit_sapling` — Dragonfruit Sapling
+- `harvestcraft:durian_sapling` — Durian Sapling
+- `harvestcraft:fig_sapling` — Fig Sapling
+- `harvestcraft:frostgarden` — Frost Garden
+- `harvestcraft:gooseberry_sapling` — Gooseberry Sapling
+- `harvestcraft:grapefruit_sapling` — Grapefruit Sapling
+- `harvestcraft:grinder` — Grinder
+- `harvestcraft:groundtrap` — Ground Trap
+- `harvestcraft:guava_sapling` — Guava Sapling
+- `harvestcraft:hazelnut_sapling` — Hazelnut Sapling
+- `harvestcraft:holidaycake` — Holiday Cake
+- `harvestcraft:honeycomb` — Honeycomb Block
+- `harvestcraft:honey` — Honey Block
+- `harvestcraft:jackfruit_sapling` — Jackfruit Sapling
+- `harvestcraft:lamingtoncake` — Lamington
+- `harvestcraft:lemon_sapling` — Lemon Sapling
+- `harvestcraft:lime_sapling` — Lime Sapling
+- `harvestcraft:lychee_sapling` — Lychee Sapling
+- `harvestcraft:mango_sapling` — Mango Sapling
+- `harvestcraft:maple_sapling` — Maple Sapling
+- `harvestcraft:market` — Market
+- `harvestcraft:nutmeg_sapling` — Nutmeg Sapling
+- `harvestcraft:olive_sapling` — Olive Sapling
+- `harvestcraft:orange_sapling` — Orange Sapling
+- `harvestcraft:pamagavecrop` — tile.pamagavecrop.name
+- `harvestcraft:pamalmond` — Almond
+- `harvestcraft:pamamaranthcrop` — tile.pamamaranthcrop.name
+- `harvestcraft:pamapple` — Apple
+- `harvestcraft:pamapricot` — Apricot
+- `harvestcraft:pamarrowrootcrop` — tile.pamarrowrootcrop.name
+- `harvestcraft:pamartichokecrop` — tile.pamartichokecrop.name
+- `harvestcraft:pamasparaguscrop` — tile.pamasparaguscrop.name
+- `harvestcraft:pamavocado` — Avocado
+- `harvestcraft:pambambooshootcrop` — tile.pambambooshootcrop.name
+- `harvestcraft:pambanana` — Banana
+- `harvestcraft:pambarleycrop` — tile.pambarleycrop.name
+- `harvestcraft:pambeancrop` — tile.pambeancrop.name
+- `harvestcraft:pambeetcrop` — tile.pambeetcrop.name
+- `harvestcraft:pambellpeppercrop` — tile.pambellpeppercrop.name
+- `harvestcraft:pamblackberrycrop` — tile.pamblackberrycrop.name
+- `harvestcraft:pamblueberrycrop` — tile.pamblueberrycrop.name
+- `harvestcraft:pambreadfruit` — Breadfruit
+- `harvestcraft:pambroccolicrop` — tile.pambroccolicrop.name
+- `harvestcraft:pambrusselsproutcrop` — tile.pambrusselsproutcrop.name
+- `harvestcraft:pamcabbagecrop` — tile.pamcabbagecrop.name
+- `harvestcraft:pamcactusfruitcrop` — tile.pamcactusfruitcrop.name
+- `harvestcraft:pamcandleberrycrop` — tile.pamcandleberrycrop.name
+- `harvestcraft:pamcantaloupecrop` — tile.pamcantaloupecrop.name
+- `harvestcraft:pamcashew` — Cashew
+- `harvestcraft:pamcassavacrop` — tile.pamcassavacrop.name
+- `harvestcraft:pamcauliflowercrop` — tile.pamcauliflowercrop.name
+- `harvestcraft:pamcelerycrop` — tile.pamcelerycrop.name
+- `harvestcraft:pamcherry` — Cherry
+- `harvestcraft:pamchestnut` — Chestnut
+- `harvestcraft:pamchickpeacrop` — tile.pamchickpeacrop.name
+- `harvestcraft:pamchilipeppercrop` — tile.pamchilipeppercrop.name
+- `harvestcraft:pamcinnamon` — Cinnamon Wood
+- `harvestcraft:pamcoconut` — Coconut
+- `harvestcraft:pamcoffeebeancrop` — tile.pamcoffeebeancrop.name
+- `harvestcraft:pamcorncrop` — tile.pamcorncrop.name
+- `harvestcraft:pamcottoncrop` — tile.pamcottoncrop.name
+- `harvestcraft:pamcranberrycrop` — tile.pamcranberrycrop.name
+- `harvestcraft:pamcucumbercrop` — tile.pamcucumbercrop.name
+- `harvestcraft:pamcurryleafcrop` — tile.pamcurryleafcrop.name
+- `harvestcraft:pamdate` — Date
+- `harvestcraft:pamdragonfruit` — Dragonfruit
+- `harvestcraft:pamdurian` — Durian
+- `harvestcraft:pameggplantcrop` — tile.pameggplantcrop.name
+- `harvestcraft:pamelderberrycrop` — tile.pamelderberrycrop.name
+- `harvestcraft:pamfig` — Fig
+- `harvestcraft:pamflaxcrop` — tile.pamflaxcrop.name
+- `harvestcraft:pamgarliccrop` — tile.pamgarliccrop.name
+- `harvestcraft:pamgigapicklecrop` — tile.pamgigapicklecrop.name
+- `harvestcraft:pamgingercrop` — tile.pamgingercrop.name
+- `harvestcraft:pamgooseberry` — Gooseberry
+- `harvestcraft:pamgrapecrop` — tile.pamgrapecrop.name
+- `harvestcraft:pamgrapefruit` — Grapefruit
+- `harvestcraft:pamgreengrapecrop` — tile.pamgreengrapecrop.name
+- `harvestcraft:pamguava` — Guava
+- `harvestcraft:pamhazelnut` — Hazelnut
+- `harvestcraft:pamhuckleberrycrop` — tile.pamhuckleberrycrop.name
+- `harvestcraft:pamjackfruit` — Jackfruit
+- `harvestcraft:pamjicamacrop` — tile.pamjicamacrop.name
+- `harvestcraft:pamjuniperberrycrop` — tile.pamjuniperberrycrop.name
+- `harvestcraft:pamjutecrop` — tile.pamjutecrop.name
+- `harvestcraft:pamkalecrop` — tile.pamkalecrop.name
+- `harvestcraft:pamkenafcrop` — tile.pamkenafcrop.name
+- `harvestcraft:pamkiwicrop` — tile.pamkiwicrop.name
+- `harvestcraft:pamkohlrabicrop` — tile.pamkohlrabicrop.name
+- `harvestcraft:pamleekcrop` — tile.pamleekcrop.name
+- `harvestcraft:pamlemon` — Lemon
+- `harvestcraft:pamlentilcrop` — tile.pamlentilcrop.name
+- `harvestcraft:pamlettucecrop` — tile.pamlettucecrop.name
+- `harvestcraft:pamlime` — Lime
+- `harvestcraft:pamlychee` — Lychee
+- `harvestcraft:pammango` — Mango
+- `harvestcraft:pammaple` — Maple Wood
+- `harvestcraft:pammilletcrop` — tile.pammilletcrop.name
+- `harvestcraft:pammulberrycrop` — tile.pammulberrycrop.name
+- `harvestcraft:pammustardseedscrop` — tile.pammustardseedscrop.name
+- `harvestcraft:pamnutmeg` — Nutmeg
+- `harvestcraft:pamoatscrop` — tile.pamoatscrop.name
+- `harvestcraft:pamokracrop` — tile.pamokracrop.name
+- `harvestcraft:pamolive` — Olive
+- `harvestcraft:pamonioncrop` — tile.pamonioncrop.name
+- `harvestcraft:pamorange` — Orange
+- `harvestcraft:pampapaya` — Papaya
+- `harvestcraft:pampaperbark` — Paperbark Wood
+- `harvestcraft:pamparsnipcrop` — tile.pamparsnipcrop.name
+- `harvestcraft:pampassionfruit` — Passionfruit
+- `harvestcraft:pampawpaw` — Pawpaw
+- `harvestcraft:pampeach` — Peach
+- `harvestcraft:pampeanutcrop` — tile.pampeanutcrop.name
+- `harvestcraft:pampear` — Pear
+- `harvestcraft:pampeascrop` — tile.pampeascrop.name
+- `harvestcraft:pampecan` — Pecan
+- `harvestcraft:pampeppercorn` — Peppercorn
+- `harvestcraft:pampersimmon` — Persimmon
+- `harvestcraft:pampineapplecrop` — tile.pampineapplecrop.name
+- `harvestcraft:pampistachio` — Pistachio
+- `harvestcraft:pamplum` — Plum
+- `harvestcraft:pampomegranate` — Pomegranate
+- `harvestcraft:pamquinoacrop` — tile.pamquinoacrop.name
+- `harvestcraft:pamradishcrop` — tile.pamradishcrop.name
+- `harvestcraft:pamrambutan` — Rambutan
+- `harvestcraft:pamraspberrycrop` — tile.pamraspberrycrop.name
+- `harvestcraft:pamrhubarbcrop` — tile.pamrhubarbcrop.name
+- `harvestcraft:pamricecrop` — tile.pamricecrop.name
+- `harvestcraft:pamrutabagacrop` — tile.pamrutabagacrop.name
+- `harvestcraft:pamryecrop` — tile.pamryecrop.name
+- `harvestcraft:pamscallioncrop` — tile.pamscallioncrop.name
+- `harvestcraft:pamseaweedcrop` — tile.pamseaweedcrop.name
+- `harvestcraft:pamsesameseedscrop` — tile.pamsesameseedscrop.name
+- `harvestcraft:pamsisalcrop` — tile.pamsisalcrop.name
+- `harvestcraft:pamsoursop` — Soursop
+- `harvestcraft:pamsoybeancrop` — tile.pamsoybeancrop.name
+- `harvestcraft:pamspiceleafcrop` — tile.pamspiceleafcrop.name
+- `harvestcraft:pamspiderweb` — Spider Web
+- `harvestcraft:pamspinachcrop` — tile.pamspinachcrop.name
+- `harvestcraft:pamstarfruit` — Starfruit
+- `harvestcraft:pamstrawberrycrop` — tile.pamstrawberrycrop.name
+- `harvestcraft:pamsweetpotatocrop` — tile.pamsweetpotatocrop.name
+- `harvestcraft:pamtamarind` — Tamarind
+- `harvestcraft:pamtarocrop` — tile.pamtarocrop.name
+- `harvestcraft:pamtealeafcrop` — tile.pamtealeafcrop.name
+- `harvestcraft:pamtomatillocrop` — tile.pamtomatillocrop.name
+- `harvestcraft:pamtomatocrop` — tile.pamtomatocrop.name
+- `harvestcraft:pamturnipcrop` — tile.pamturnipcrop.name
+- `harvestcraft:pamvanillabean` — Vanilla Bean
+- `harvestcraft:pamwalnut` — Walnut
+- `harvestcraft:pamwaterchestnutcrop` — tile.pamwaterchestnutcrop.name
+- `harvestcraft:pamwhitemushroomcrop` — tile.pamwhitemushroomcrop.name
+- `harvestcraft:pamwintersquashcrop` — tile.pamwintersquashcrop.name
+- `harvestcraft:pamzucchinicrop` — tile.pamzucchinicrop.name
+- `harvestcraft:papaya_sapling` — Papaya Sapling
+- `harvestcraft:paperbark_sapling` — Paperbark Sapling
+- `harvestcraft:passionfruit_sapling` — Passion Fruit Sapling
+- `harvestcraft:pavlovacake` — Pavlova
+- `harvestcraft:pawpaw_sapling` — Pawpaw Sapling
+- `harvestcraft:peach_sapling` — Peach Sapling
+- `harvestcraft:pear_sapling` — Pear Sapling
+- `harvestcraft:pecan_sapling` — Pecan Sapling
+- `harvestcraft:peppercorn_sapling` — Peppercorn Sapling
+- `harvestcraft:persimmon_sapling` — Persimmon Sapling
+- `harvestcraft:pineappleupsidedowncake` — Pineapple Upside Down Cake
+- `harvestcraft:pistachio_sapling` — Pistachio Sapling
+- `harvestcraft:plum_sapling` — Plum Sapling
+- `harvestcraft:pomegranate_sapling` — Pomegranate Sapling
+- `harvestcraft:pressedwax` — Pressed Wax Block
+- `harvestcraft:presser` — Presser
+- `harvestcraft:pumpkincheesecake` — Pumpkin Cheese Cake
+- `harvestcraft:rambutan_sapling` — Rambutan Sapling
+- `harvestcraft:redvelvetcake` — Red Velvet Cake
+- `harvestcraft:shadedgarden` — Shaded Garden
+- `harvestcraft:shippingbin` — Shipping Bin
+- `harvestcraft:soggygarden` — Soggy Garden
+- `harvestcraft:soursop_sapling` — Soursop Sapling
+- `harvestcraft:spiderweb_sapling` — Spider Web Sapling
+- `harvestcraft:starfruit_sapling` — Starfruit Sapling
+- `harvestcraft:tamarind_sapling` — Tamarind Sapling
+- `harvestcraft:tropicalgarden` — Tropical Garden
+- `harvestcraft:vanillabean_sapling` — Vanilla Sapling
+- `harvestcraft:walnut_sapling` — Walnut Sapling
+- `harvestcraft:waterfilter` — Water Filter
+- `harvestcraft:watertrap` — Water Trap
+- `harvestcraft:waxcomb` — Waxcomb Block
+- `harvestcraft:well` — Well
+- `harvestcraft:windygarden` — Windy Garden
+
+### horsetweaks
+- `horsetweaks:crumbling_magma` — tile.null.name
+
+### ic2
+- `ic2:air` — ic2.air.name
+- `ic2:biogas` — ic2.biogas.name
+- `ic2:biomass` — ic2.biomass.name
+- `ic2:construction_foam` — ic2.construction_foam.name
+- `ic2:coolant` — ic2.coolant.name
+- `ic2:creosote` — ic2.creosote.name
+- `ic2:distilled_water` — ic2.distilled_water.name
+- `ic2:dynamite` — Dynamite
+- `ic2:fence` — ic2.fence
+- `ic2:foam` — ic2.foam
+- `ic2:glass` — ic2.glass
+- `ic2:heavy_water` — ic2.heavy_water.name
+- `ic2:hot_coolant` — ic2.hot_coolant.name
+- `ic2:hot_water` — ic2.hot_water.name
+- `ic2:hydrogen` — ic2.hydrogen.name
+- `ic2:leaves` — Leaves
+- `ic2:milk` — ic2.milk.name
+- `ic2:mining_pipe` — ic2.mining_pipe
+- `ic2:oxygen` — ic2.oxygen.name
+- `ic2:pahoehoe_lava` — ic2.pahoehoe_lava.name
+- `ic2:refractory_bricks` — Refractory Bricks
+- `ic2:reinforced_door` — ic2.reinforced_door.name
+- `ic2:resource` — ic2.resource
+- `ic2:rubber_wood` — Rubber Wood
+- `ic2:sapling` — ic2.sapling.rubber.name
+- `ic2:scaffold` — ic2.scaffold
+- `ic2:sheet` — ic2.sheet
+- `ic2:steam` — ic2.steam.name
+- `ic2:superheated_steam` — ic2.superheated_steam.name
+- `ic2:te` — ic2.te
+- `ic2:uu_matter` — ic2.uu_matter.name
+- `ic2:wall` — ic2.wall
+- `ic2:weed_ex` — ic2.weed_ex.name
+
+### immersiveengineering
+- `immersiveengineering:aluminum_scaffolding_stairs0` — Aluminium Scaffolding Stairs
+- `immersiveengineering:aluminum_scaffolding_stairs1` — Aluminium Scaffolding Stairs
+- `immersiveengineering:aluminum_scaffolding_stairs2` — Aluminium Scaffolding Stairs
+- `immersiveengineering:cloth_device` — tile.immersiveengineering.cloth_device.name
+- `immersiveengineering:connector` — tile.immersiveengineering.connector.name
+- `immersiveengineering:conveyor` — tile.immersiveengineering.conveyor.name
+- `immersiveengineering:fake_light` — tile.immersiveengineering.fake_light.name
+- `immersiveengineering:fluidbiodiesel` — Biodiesel
+- `immersiveengineering:fluidconcrete` — Liquid Concrete
+- `immersiveengineering:fluidcreosote` — Creosote Oil
+- `immersiveengineering:fluidethanol` — Ethanol
+- `immersiveengineering:fluidplantoil` — Plant Oil
+- `immersiveengineering:hemp` — Industrial Hemp
+- `immersiveengineering:metal_decoration0` — tile.immersiveengineering.metal_decoration0.name
+- `immersiveengineering:metal_decoration1_slab` — tile.immersiveengineering.metal_decoration1_slab.name
+- `immersiveengineering:metal_decoration1` — tile.immersiveengineering.metal_decoration1.name
+- `immersiveengineering:metal_decoration2` — tile.immersiveengineering.metal_decoration2.name
+- `immersiveengineering:metal_device0` — tile.immersiveengineering.metal_device0.name
+- `immersiveengineering:metal_device1` — tile.immersiveengineering.metal_device1.name
+- `immersiveengineering:metal_ladder` — tile.immersiveengineering.metal_ladder.name
+- `immersiveengineering:metal_multiblock` — tile.immersiveengineering.metal_multiblock.name
+- `immersiveengineering:molten_constantan` — Molten Constantan
+- `immersiveengineering:molten_uranium` — Molten Uranium
+- `immersiveengineering:ore` — tile.immersiveengineering.ore.name
+- `immersiveengineering:sheetmetal_slab` — tile.immersiveengineering.sheetmetal_slab.name
+- `immersiveengineering:sheetmetal` — tile.immersiveengineering.sheetmetal.name
+- `immersiveengineering:steel_scaffolding_stairs0` — Steel Scaffolding Stairs
+- `immersiveengineering:steel_scaffolding_stairs1` — Steel Scaffolding Stairs
+- `immersiveengineering:steel_scaffolding_stairs2` — Steel Scaffolding Stairs
+- `immersiveengineering:stone_decoration_slab` — tile.immersiveengineering.stone_decoration_slab.name
+- `immersiveengineering:stone_decoration_stairs_concrete_leaded` — Leaded Concrete Stairs
+- `immersiveengineering:stone_decoration_stairs_concrete_tile` — Concrete Tile Stairs
+- `immersiveengineering:stone_decoration_stairs_concrete` — Concrete Stairs
+- `immersiveengineering:stone_decoration_stairs_hempcrete` — Hempcrete Stairs
+- `immersiveengineering:stone_decoration` — tile.immersiveengineering.stone_decoration.name
+- `immersiveengineering:stone_device` — tile.immersiveengineering.stone_device.name
+- `immersiveengineering:storage_slab` — tile.immersiveengineering.storage_slab.name
+- `immersiveengineering:storage` — tile.immersiveengineering.storage.name
+- `immersiveengineering:treated_wood_slab` — tile.immersiveengineering.treated_wood_slab.name
+- `immersiveengineering:treated_wood_stairs0` — Treated Wood Stairs
+- `immersiveengineering:treated_wood_stairs1` — Treated Wood Stairs
+- `immersiveengineering:treated_wood_stairs2` — Treated Wood Stairs
+- `immersiveengineering:treated_wood` — tile.immersiveengineering.treated_wood.name
+- `immersiveengineering:wooden_decoration` — tile.immersiveengineering.wooden_decoration.name
+- `immersiveengineering:wooden_device0` — tile.immersiveengineering.wooden_device0.name
+- `immersiveengineering:wooden_device1` — tile.immersiveengineering.wooden_device1.name
+
+### immersivepetroleum
+- `immersivepetroleum:dummy` — tile.immersivepetroleum.dummy.name
+- `immersivepetroleum:fluid_crude_oil` — Crude Oil
+- `immersivepetroleum:fluid_diesel` — Diesel
+- `immersivepetroleum:fluid_gasoline` — Gasoline
+- `immersivepetroleum:fluid_lubricant` — Lubricant
+- `immersivepetroleum:fluid_napalm` — Napalm
+- `immersivepetroleum:metal_device` — tile.immersivepetroleum.metal_device.name
+- `immersivepetroleum:metal_multiblock` — tile.immersivepetroleum.metal_multiblock.name
+- `immersivepetroleum:stone_decoration` — tile.immersivepetroleum.stone_decoration.name
+
+### immersivetech
+- `immersivetech:connectors` — tile.immersivetech.connectors.name
+- `immersivetech:exhauststeam` — tile.immersivetech.exhaustSteam.name
+- `immersivetech:fluidchlorine` — Chlorine
+- `immersivetech:fluiddistwater` — Distilled Water
+- `immersivetech:fluidfluegas` — Flue Gas
+- `immersivetech:fluidhighpressuresteam` — High Pressure Steam
+- `immersivetech:fluidhotwater` — Hot Spring Water
+- `immersivetech:fluidmoltensalt` — Molten Salt
+- `immersivetech:fluidmoltensodium` — Molten Sodium
+- `immersivetech:fluidsteam` — Steam
+- `immersivetech:fluidsuperheatedmoltensodium` — Superheated Molten Sodium
+- `immersivetech:metal_barrel` — tile.immersivetech.metal_barrel.name
+- `immersivetech:metal_multiblock1` — tile.immersivetech.metal_multiblock1.name
+- `immersivetech:metal_multiblock` — tile.immersivetech.metal_multiblock.name
+- `immersivetech:metal_trash` — tile.immersivetech.metal_trash.name
+- `immersivetech:stone_decoration_slab` — tile.immersivetech.stone_decoration_slab.name
+- `immersivetech:stone_decoration` — tile.immersivetech.stone_decoration.name
+- `immersivetech:valve` — tile.immersivetech.valve.name
+- `immersivetech:wooden_crate` — tile.immersivetech.wooden_crate.name
+
+### industrialforegoing
+- `industrialforegoing:animal_byproduct_recolector` — Animal Sewer
+- `industrialforegoing:animal_growth_increaser` — Animal Grower
+- `industrialforegoing:animal_independence_selector` — Animal Baby Separator
+- `industrialforegoing:animal_resource_harvester` — Animal Rancher
+- `industrialforegoing:animal_stock_increaser` — Animal Feeder
+- `industrialforegoing:biofuel_generator` — Biofuel Generator
+- `industrialforegoing:biofuel` — Biofuel
+- `industrialforegoing:bioreactor` — Bioreactor
+- `industrialforegoing:black_hole_controller_reworked` — Black Hole Controller v2.0
+- `industrialforegoing:black_hole_controller` — Black Hole Controller (DEPRECATED)
+- `industrialforegoing:black_hole_label` — Black Hole Label
+- `industrialforegoing:black_hole_tank` — Black Hole Tank
+- `industrialforegoing:black_hole_unit` — Black Hole Unit
+- `industrialforegoing:block_destroyer` — Block Breaker
+- `industrialforegoing:block_placer` — Block Placer
+- `industrialforegoing:conveyor` — Conveyor Belt
+- `industrialforegoing:crop_enrich_material_injector` — Plant Fertilizer
+- `industrialforegoing:crop_recolector` — Plant Gatherer
+- `industrialforegoing:crop_sower` — Plant Sower
+- `industrialforegoing:dye_mixer` — Dye Mixer
+- `industrialforegoing:enchantment_aplicator` — Enchantment Applicator
+- `industrialforegoing:enchantment_extractor` — Enchantment Extractor
+- `industrialforegoing:enchantment_invoker` — Enchantment Factory
+- `industrialforegoing:enchantment_refiner` — Enchantment Sorter
+- `industrialforegoing:energy_field_provider` — Energy Field Provider
+- `industrialforegoing:essence` — Essence
+- `industrialforegoing:fluid_crafter` — Fluid Crafter
+- `industrialforegoing:fluid_pump` — Fluid Pump
+- `industrialforegoing:fluiddictionary_converter` — Fluid Dictionary Converter
+- `industrialforegoing:froster` — Froster
+- `industrialforegoing:hydrator` — Hydrator
+- `industrialforegoing:if.pink_slime` — Pink Slime
+- `industrialforegoing:if.protein` — Protein
+- `industrialforegoing:item_splitter` — Item Splitter
+- `industrialforegoing:laser_base` — Laser Base
+- `industrialforegoing:laser_drill` — Laser Drill
+- `industrialforegoing:latex_processing_unit` — Latex Processing Unit
+- `industrialforegoing:latex` — Latex
+- `industrialforegoing:lava_fabricator` — Lava Fabricator
+- `industrialforegoing:material_stonework_factory` — Material StoneWork Factory
+- `industrialforegoing:meat` — Liquid Meat
+- `industrialforegoing:milk` — Milk
+- `industrialforegoing:mob_detector` — Mob Detector
+- `industrialforegoing:mob_duplicator` — Mob Duplicator
+- `industrialforegoing:mob_relocator` — Mob Crusher
+- `industrialforegoing:mob_slaughter_factory` — Mob Slaughter Factory
+- `industrialforegoing:ore_fermenter` — Fermentation Station
+- `industrialforegoing:ore_processor` — Ore Processor
+- `industrialforegoing:ore_sieve` — Fluid Sieving Machine
+- `industrialforegoing:ore_washer` — Washing Factory
+- `industrialforegoing:oredictionary_converter` — Ore Dictionary Converter
+- `industrialforegoing:petrified_fuel_generator` — Petrified Fuel Generator
+- `industrialforegoing:pitiful_fuel_generator` — Pitiful Fuel Generator
+- `industrialforegoing:plant_interactor` — Plant Interactor
+- `industrialforegoing:potion_enervator` — Potion Brewer
+- `industrialforegoing:protein_generator` — Protein Generator
+- `industrialforegoing:protein_reactor` — Protein Reactor
+- `industrialforegoing:resourceful_furnace` — Resourceful Furnace
+- `industrialforegoing:sewage_composter_solidifier` — Sewage Composter
+- `industrialforegoing:sewage` — Sewage
+- `industrialforegoing:sludge_refiner` — Sludge Refiner
+- `industrialforegoing:sludge` — Sludge
+- `industrialforegoing:spores_recreator` — Spores Recreator
+- `industrialforegoing:tree_fluid_extractor` — Tree Fluid Extractor
+- `industrialforegoing:villager_trade_exchanger` — Villager Trade Exchanger
+- `industrialforegoing:water_condensator` — Water Condensator
+- `industrialforegoing:water_resources_collector` — Resources Fisher
+- `industrialforegoing:wither_builder` — Wither Builder
+
+### integrateddynamics
+- `integrateddynamics:block_liquid_chorus` — Liquid Chorus
+- `integrateddynamics:block_menril_resin` — Menril Resin
+- `integrateddynamics:cable` — Logic Cable
+- `integrateddynamics:coal_generator` — Generator
+- `integrateddynamics:creative_energy_battery` — Creative Energy Battery
+- `integrateddynamics:crystalized_chorus_block_stairs` — Crystalized Chorus Stairs
+- `integrateddynamics:crystalized_chorus_block` — Block of Crystalized Chorus
+- `integrateddynamics:crystalized_chorus_brick_stairs` — Crystalized Chorus Brick Stairs
+- `integrateddynamics:crystalized_chorus_brick` — Crystalized Chorus Brick
+- `integrateddynamics:crystalized_menril_block_stairs` — Crystalized Menril Stairs
+- `integrateddynamics:crystalized_menril_block` — Block of Crystalized Menril
+- `integrateddynamics:crystalized_menril_brick_stairs` — Crystalized Menril Brick Stairs
+- `integrateddynamics:crystalized_menril_brick` — Crystalized Menril Brick
+- `integrateddynamics:delay` — Delayer
+- `integrateddynamics:drying_basin` — Drying Basin
+- `integrateddynamics:energy_battery` — Energy Battery
+- `integrateddynamics:invisible_light` — Invisible Light
+- `integrateddynamics:logic_programmer` — Logic Programmer
+- `integrateddynamics:materializer` — Materializer
+- `integrateddynamics:mechanical_drying_basin` — Mechanical Drying Basin
+- `integrateddynamics:mechanical_squeezer` — Mechanical Squeezer
+- `integrateddynamics:menril_door` — item.blocks.integrateddynamics.menril_door.name
+- `integrateddynamics:menril_leaves` — Menril Leaves
+- `integrateddynamics:menril_log_filled` — Enriched Menril Wood
+- `integrateddynamics:menril_log` — Menril Wood
+- `integrateddynamics:menril_planks_stairs` — Menril Wood Stairs
+- `integrateddynamics:menril_planks` — Menril Wood Planks
+- `integrateddynamics:menril_sapling` — tile.blocks.integrateddynamics.menril_sapling.oak.name
+- `integrateddynamics:menril_torch_stone` — Menril Stone Torch
+- `integrateddynamics:menril_torch` — Menril Torch
+- `integrateddynamics:part_audio_reader_block` — tile.blocks.integrateddynamics.part_audio_reader_block.name
+- `integrateddynamics:part_audio_writer_block` — tile.blocks.integrateddynamics.part_audio_writer_block.name
+- `integrateddynamics:part_block_reader_block` — tile.blocks.integrateddynamics.part_block_reader_block.name
+- `integrateddynamics:part_connector_mono_directional_block` — tile.blocks.integrateddynamics.part_connector_mono_directional_block.name
+- `integrateddynamics:part_connector_omni_directional_block` — tile.blocks.integrateddynamics.part_connector_omni_directional_block.name
+- `integrateddynamics:part_display_panel_block` — tile.blocks.integrateddynamics.part_display_panel_block.name
+- `integrateddynamics:part_dynamic_light_panel_block` — tile.blocks.integrateddynamics.part_dynamic_light_panel_block.name
+- `integrateddynamics:part_effect_writer_block` — tile.blocks.integrateddynamics.part_effect_writer_block.name
+- `integrateddynamics:part_entity_reader_block` — tile.blocks.integrateddynamics.part_entity_reader_block.name
+- `integrateddynamics:part_entity_writer_block` — tile.blocks.integrateddynamics.part_entity_writer_block.name
+- `integrateddynamics:part_extradimensional_reader_block` — tile.blocks.integrateddynamics.part_extradimensional_reader_block.name
+- `integrateddynamics:part_fluid_reader_block` — tile.blocks.integrateddynamics.part_fluid_reader_block.name
+- `integrateddynamics:part_inventory_reader_block` — tile.blocks.integrateddynamics.part_inventory_reader_block.name
+- `integrateddynamics:part_inventory_writer_block` — tile.blocks.integrateddynamics.part_inventory_writer_block.name
+- `integrateddynamics:part_machine_reader_block` — tile.blocks.integrateddynamics.part_machine_reader_block.name
+- `integrateddynamics:part_machine_writer_block` — tile.blocks.integrateddynamics.part_machine_writer_block.name
+- `integrateddynamics:part_network_reader_block` — tile.blocks.integrateddynamics.part_network_reader_block.name
+- `integrateddynamics:part_redstone_reader_block` — tile.blocks.integrateddynamics.part_redstone_reader_block.name
+- `integrateddynamics:part_redstone_writer_block` — tile.blocks.integrateddynamics.part_redstone_writer_block.name
+- `integrateddynamics:part_static_light_panel_block` — tile.blocks.integrateddynamics.part_static_light_panel_block.name
+- `integrateddynamics:part_world_reader_block` — tile.blocks.integrateddynamics.part_world_reader_block.name
+- `integrateddynamics:proxy` — Proxy
+- `integrateddynamics:squeezer` — Squeezer
+- `integrateddynamics:variablestore` — Variable Store
+
+### integratedtunnels
+- `integratedtunnels:part_exporter_energy_block` — tile.blocks.integratedtunnels.part_exporter_energy_block.name
+- `integratedtunnels:part_exporter_fluid_block` — tile.blocks.integratedtunnels.part_exporter_fluid_block.name
+- `integratedtunnels:part_exporter_item_block` — tile.blocks.integratedtunnels.part_exporter_item_block.name
+- `integratedtunnels:part_exporter_world_block_block` — tile.blocks.integratedtunnels.part_exporter_world_block_block.name
+- `integratedtunnels:part_exporter_world_energy_block` — tile.blocks.integratedtunnels.part_exporter_world_energy_block.name
+- `integratedtunnels:part_exporter_world_fluid_block` — tile.blocks.integratedtunnels.part_exporter_world_fluid_block.name
+- `integratedtunnels:part_exporter_world_item_block` — tile.blocks.integratedtunnels.part_exporter_world_item_block.name
+- `integratedtunnels:part_importer_energy_block` — tile.blocks.integratedtunnels.part_importer_energy_block.name
+- `integratedtunnels:part_importer_fluid_block` — tile.blocks.integratedtunnels.part_importer_fluid_block.name
+- `integratedtunnels:part_importer_item_block` — tile.blocks.integratedtunnels.part_importer_item_block.name
+- `integratedtunnels:part_importer_world_block_block` — tile.blocks.integratedtunnels.part_importer_world_block_block.name
+- `integratedtunnels:part_importer_world_energy_block` — tile.blocks.integratedtunnels.part_importer_world_energy_block.name
+- `integratedtunnels:part_importer_world_fluid_block` — tile.blocks.integratedtunnels.part_importer_world_fluid_block.name
+- `integratedtunnels:part_importer_world_item_block` — tile.blocks.integratedtunnels.part_importer_world_item_block.name
+- `integratedtunnels:part_interface_energy_block` — tile.blocks.integratedtunnels.part_interface_energy_block.name
+- `integratedtunnels:part_interface_fluid_block` — tile.blocks.integratedtunnels.part_interface_fluid_block.name
+- `integratedtunnels:part_interface_item_block` — tile.blocks.integratedtunnels.part_interface_item_block.name
+- `integratedtunnels:part_player_simulator_block` — tile.blocks.integratedtunnels.part_player_simulator_block.name
+
+### ironchest
+- `ironchest:iron_chest` — tile.IronChest.name
+- `ironchest:iron_shulker_box_black` — tile.IronShulkerBoxblack.name
+- `ironchest:iron_shulker_box_blue` — tile.IronShulkerBoxblue.name
+- `ironchest:iron_shulker_box_brown` — tile.IronShulkerBoxbrown.name
+- `ironchest:iron_shulker_box_cyan` — tile.IronShulkerBoxcyan.name
+- `ironchest:iron_shulker_box_gray` — tile.IronShulkerBoxgray.name
+- `ironchest:iron_shulker_box_green` — tile.IronShulkerBoxgreen.name
+- `ironchest:iron_shulker_box_light_blue` — tile.IronShulkerBoxlight_blue.name
+- `ironchest:iron_shulker_box_lime` — tile.IronShulkerBoxlime.name
+- `ironchest:iron_shulker_box_magenta` — tile.IronShulkerBoxmagenta.name
+- `ironchest:iron_shulker_box_orange` — tile.IronShulkerBoxorange.name
+- `ironchest:iron_shulker_box_pink` — tile.IronShulkerBoxpink.name
+- `ironchest:iron_shulker_box_purple` — tile.IronShulkerBoxpurple.name
+- `ironchest:iron_shulker_box_red` — tile.IronShulkerBoxred.name
+- `ironchest:iron_shulker_box_silver` — tile.IronShulkerBoxsilver.name
+- `ironchest:iron_shulker_box_white` — tile.IronShulkerBoxwhite.name
+- `ironchest:iron_shulker_box_yellow` — tile.IronShulkerBoxyellow.name
+
+### jaopca
+- `jaopca:block_blockaquamarine` — Block of %s
+- `jaopca:block_blockastralstarmetal` — Block of %s
+- `jaopca:block_blockcertusquartz` — Block of %s
+- `jaopca:block_blockchargedcertusquartz` — Block of %s
+- `jaopca:block_blockdilithium` — Block of %s
+- `jaopca:block_blockdimensionalshard` — Block of %s
+- `jaopca:fluid_moltendraconium` — tile.jaopca.molten.name
+- `jaopca:fluid_moltenmithril` — tile.jaopca.molten.name
+
+### libvulpes
+- `libvulpes:advancedmotor` — Advanced Motor
+- `libvulpes:advstructuremachine` — Advanced Machine Structure
+- `libvulpes:blockphantom` — tile.blockPhantom.name
+- `libvulpes:coalgenerator` — Coal Generator
+- `libvulpes:coil0` — tile.coil.name
+- `libvulpes:creativepowerbattery` — Creative Power Input Plug
+- `libvulpes:elitemotor` — Elite Motor
+- `libvulpes:enhancedmotor` — Enhanced Motor
+- `libvulpes:forgepowerinput` — Power Input Plug
+- `libvulpes:forgepoweroutput` — Power Output Plug
+- `libvulpes:hatch` — tile.hatch.name
+- `libvulpes:ic2plug` — IC2 Plug(EU)
+- `libvulpes:metal0` — tile.metal.name
+- `libvulpes:motor` — Motor
+- `libvulpes:ore0` — tile.ore.name
+- `libvulpes:placeholder` — Machine
+- `libvulpes:structuremachine` — Machine Structure
+
+### magicbees
+- `magicbees:effectjar` — Bee Collector's Jar
+- `magicbees:enchanted_earth` — Enchanted Earth
+- `magicbees:hiveblock` — tile.magicbees.hiveblock.name
+
+### malisisdoors
+- `malisisdoors:big_door_acacia_3x3` — Large Acacia Double Doors
+- `malisisdoors:big_door_birch_3x3` — Large Birch Double Doors
+- `malisisdoors:big_door_dark_oak_3x3` — Large Dark Oak Double Doors
+- `malisisdoors:big_door_iron_3x3` — Large Iron Double Doors
+- `malisisdoors:big_door_jungle_3x3` — Large Jungle Double Doors
+- `malisisdoors:big_door_oak_3x3` — Large Oak Double Doors
+- `malisisdoors:big_door_rusty_3x3` — Large Rusty Iron Double Doors
+- `malisisdoors:big_door_spruce_3x3` — Large Spruce Double Doors
+- `malisisdoors:camofencegate` — Camo Fence Gate
+- `malisisdoors:carriage_door` — Carriage Door
+- `malisisdoors:curtain_black` — Black Curtain
+- `malisisdoors:curtain_blue` — Blue Curtain
+- `malisisdoors:curtain_brown` — Brown Curtain
+- `malisisdoors:curtain_cyan` — Cyan Curtain
+- `malisisdoors:curtain_gray` — Gray Curtain
+- `malisisdoors:curtain_green` — Green Curtain
+- `malisisdoors:curtain_light_blue` — Light Blue Curtain
+- `malisisdoors:curtain_lime` — Lime Curtain
+- `malisisdoors:curtain_magenta` — Magenta Curtain
+- `malisisdoors:curtain_orange` — Orange Curtain
+- `malisisdoors:curtain_pink` — Pink Curtain
+- `malisisdoors:curtain_purple` — Purple Curtain
+- `malisisdoors:curtain_red` — Red Curtain
+- `malisisdoors:curtain_silver` — SilverCurtain
+- `malisisdoors:curtain_white` — White Curtain
+- `malisisdoors:curtain_yellow` — Yellow Curtain
+- `malisisdoors:customdoor` — item.customDoor.name
+- `malisisdoors:door_factory` — Door Factory
+- `malisisdoors:factory_door` — Factory Door
+- `malisisdoors:forcefielddoor` — Forcefield
+- `malisisdoors:garage_door` — Garage Door
+- `malisisdoors:hitechdoor` — Hi-tech Door
+- `malisisdoors:iron_sliding_door` — Iron Glass Door
+- `malisisdoors:jail_door` — Jail Door
+- `malisisdoors:laboratory_door` — Laboratory Door
+- `malisisdoors:medieval_door` — Medieval Door
+- `malisisdoors:rustyhatch` — Rusty Hatch
+- `malisisdoors:rustyladder` — Rusty Ladder
+- `malisisdoors:saloon` — Saloon Door
+- `malisisdoors:shoji_door` — Shoji Door
+- `malisisdoors:sliding_trapdoor` — Sliding Trapdoor
+- `malisisdoors:trapdoor_acacia` — Acacia Trapdoor
+- `malisisdoors:trapdoor_birch` — Birch Trapdoor
+- `malisisdoors:trapdoor_dark_oak` — Dark Oak Trapdoor
+- `malisisdoors:trapdoor_jungle` — Jungle Trapdoor
+- `malisisdoors:trapdoor_spruce` — Spruce Trapdoor
+- `malisisdoors:verticalhatch` — Reinforced Door
+- `malisisdoors:wood_sliding_door` — Wooden Glass Door
+
+### mcjtylib_ng
+- `mcjtylib_ng:multipart` — tile.mcjtylib_ng.multipart.name
+
+### mcmultipart
+- `mcmultipart:multipart` — tile.null.name
+
+### meecreeps
+- `meecreeps:creepcube` — tile.meecreeps.held_creepcube.name
+- `meecreeps:portalblock` — tile.meecreeps.portalblock.name
+
+### mekanismgenerators
+- `mekanismgenerators:generator` — tile.Generator.name
+- `mekanismgenerators:reactorglass` — tile.ReactorGlass.name
+- `mekanismgenerators:reactor` — tile.Reactor.name
+
+### mekanism
+- `mekanism:basicblock2` — tile.BasicBlock2.name
+- `mekanism:basicblock` — tile.BasicBlock.name
+- `mekanism:boundingblock` — Bounding Block
+- `mekanism:cardboardbox` — Cardboard Box
+- `mekanism:energycube` — tile.EnergyCube.name
+- `mekanism:gastank` — tile.GasTank.name
+- `mekanism:glowpanel` — Glow Panel
+- `mekanism:glowplasticblock` — Plastic Glow Block
+- `mekanism:machineblock2` — tile.MachineBlock2.name
+- `mekanism:machineblock3` — tile.MachineBlock3.name
+- `mekanism:machineblock` — tile.MachineBlock.name
+- `mekanism:obsidiantnt` — Obsidian TNT
+- `mekanism:oreblock` — tile.OreBlock.name
+- `mekanism:plasticblock` — Plastic Block
+- `mekanism:plasticfence` — Plastic Barrier
+- `mekanism:reinforcedplasticblock` — Reinforced Plastic Block
+- `mekanism:roadplasticblock` — Plastic Road
+- `mekanism:saltblock` — Salt Block
+- `mekanism:slickplasticblock` — Slick Plastic Block
+- `mekanism:transmitter` — tile.Transmitter.name
+
+### minecolonies
+- `minecolonies:barrel_block` — Barrel
+- `minecolonies:blockbarrackstowersubstitution` — BarracksTower Placeholder
+- `minecolonies:blockconstructiontape` — Construction tape
+- `minecolonies:blockhutarchery` — Archery
+- `minecolonies:blockhutbaker` — Bakery
+- `minecolonies:blockhutbarrackstower` — BarracksTower
+- `minecolonies:blockhutbarracks` — Barracks
+- `minecolonies:blockhutblacksmith` — Blacksmith
+- `minecolonies:blockhutbuilder` — Builder's Hut
+- `minecolonies:blockhutchickenherder` — ChickenHerders's Hut
+- `minecolonies:blockhutcitizen` — Citizen's Hut
+- `minecolonies:blockhutcombatacademy` — Combat Academy
+- `minecolonies:blockhutcomposter` — Composter Hut
+- `minecolonies:blockhutcook` — Restaurant
+- `minecolonies:blockhutcowboy` — Cowboy's Hut
+- `minecolonies:blockhutcrusher` — Crusher
+- `minecolonies:blockhutdeliveryman` — Deliveryman
+- `minecolonies:blockhutenchanter` — Enchanter
+- `minecolonies:blockhutfarmer` — Farm
+- `minecolonies:blockhutfield` — Field
+- `minecolonies:blockhutfisherman` — Fisherman's Hut
+- `minecolonies:blockhutflorist` — Flower Shop
+- `minecolonies:blockhutguardtower` — GuardTower
+- `minecolonies:blockhutlibrary` — Library
+- `minecolonies:blockhutlumberjack` — Lumberjack's Hut
+- `minecolonies:blockhutminer` — Mine
+- `minecolonies:blockhutsawmill` — Sawmill
+- `minecolonies:blockhutshepherd` — Shepherd's Hut
+- `minecolonies:blockhutsifter` — Sifter
+- `minecolonies:blockhutsmeltery` — Smeltery
+- `minecolonies:blockhutstonemason` — Stonemason
+- `minecolonies:blockhutstonesmeltery` — Stone Smeltery
+- `minecolonies:blockhutswineherder` — SwineHerders's Hut
+- `minecolonies:blockhuttownhall` — Town Hall
+- `minecolonies:blockhutwarehouse` — Warehouse
+- `minecolonies:blockinfoposter` — tile.minecolonies.blockInfoPoster.name
+- `minecolonies:blockminecoloniesrack` — Rack
+- `minecolonies:blockpostbox` — Postbox
+- `minecolonies:blockwaypoint` — Waypoint placeholder
+- `minecolonies:composted_dirt` — Composted Dirt
+- `minecolonies:decorationcontroller` — Decoration Controller
+
+### minecraft
+- `minecraft:acacia_door` — Acacia Door
+- `minecraft:acacia_fence_gate` — Acacia Fence Gate
+- `minecraft:acacia_fence` — Acacia Fence
+- `minecraft:acacia_stairs` — Acacia Wood Stairs
+- `minecraft:activator_rail` — Activator Rail
+- `minecraft:air` — Air
+- `minecraft:anvil` — Anvil
+- `minecraft:barrier` — Warding Aura
+- `minecraft:beacon` — Beacon
+- `minecraft:bedrock` — Bedrock
+- `minecraft:bed` — tile.bed.name
+- `minecraft:beetroots` — Beetroots
+- `minecraft:birch_door` — Birch Door
+- `minecraft:birch_fence_gate` — Birch Fence Gate
+- `minecraft:birch_fence` — Birch Fence
+- `minecraft:birch_stairs` — Birch Wood Stairs
+- `minecraft:black_glazed_terracotta` — Black Glazed Terracotta
+- `minecraft:black_shulker_box` — Black Shulker Box
+- `minecraft:blue_glazed_terracotta` — Blue Glazed Terracotta
+- `minecraft:blue_shulker_box` — Blue Shulker Box
+- `minecraft:bone_block` — Bone Block
+- `minecraft:bookshelf` — Oak Bookshelf
+- `minecraft:brewing_stand` — Brewing Stand
+- `minecraft:brick_block` — Bricks
+- `minecraft:brick_stairs` — Brick Stairs
+- `minecraft:brown_glazed_terracotta` — Brown Glazed Terracotta
+- `minecraft:brown_mushroom_block` — Mushroom
+- `minecraft:brown_mushroom` — Mushroom
+- `minecraft:brown_shulker_box` — Brown Shulker Box
+- `minecraft:cactus` — Cactus
+- `minecraft:cake` — Cake
+- `minecraft:carpet` — Carpet
+- `minecraft:carrots` — Carrots
+- `minecraft:cauldron` — Cauldron
+- `minecraft:chain_command_block` — Chain Command Block
+- `minecraft:chest` — Oak Chest
+- `minecraft:chorus_flower` — Chorus Flower
+- `minecraft:chorus_plant` — Chorus Plant
+- `minecraft:clay` — Clay
+- `minecraft:coal_block` — Block of Coal
+- `minecraft:coal_ore` — Coal Ore
+- `minecraft:cobblestone_wall` — Cobblestone Wall
+- `minecraft:cobblestone` — Cobblestone
+- `minecraft:cocoa` — Cocoa
+- `minecraft:command_block` — Command Block
+- `minecraft:concrete_powder` — tile.concretePowder.name
+- `minecraft:concrete` — Concrete
+- `minecraft:crafting_table` — Crafting Table
+- `minecraft:cyan_glazed_terracotta` — Cyan Glazed Terracotta
+- `minecraft:cyan_shulker_box` — Cyan Shulker Box
+- `minecraft:dark_oak_door` — Dark Oak Door
+- `minecraft:dark_oak_fence_gate` — Dark Oak Fence Gate
+- `minecraft:dark_oak_fence` — Dark Oak Fence
+- `minecraft:dark_oak_stairs` — Dark Oak Wood Stairs
+- `minecraft:daylight_detector_inverted` — Daylight Sensor
+- `minecraft:daylight_detector` — Daylight Sensor
+- `minecraft:deadbush` — Dead Bush
+- `minecraft:detector_rail` — Detector Rail
+- `minecraft:diamond_block` — Block of Diamond
+- `minecraft:diamond_ore` — Diamond Ore
+- `minecraft:dirt` — Dirt
+- `minecraft:dispenser` — Dispenser
+- `minecraft:double_plant` — Plant
+- `minecraft:double_stone_slab2` — Red Sandstone Slab
+- `minecraft:double_stone_slab` — Stone Slab
+- `minecraft:double_wooden_slab` — Wood Slab
+- `minecraft:dragon_egg` — Dragon Egg
+- `minecraft:dropper` — Dropper
+- `minecraft:emerald_block` — Block of Emerald
+- `minecraft:emerald_ore` — Emerald Ore
+- `minecraft:enchanting_table` — Enchantment Table
+- `minecraft:end_bricks` — End Stone Bricks
+- `minecraft:end_gateway` — tile.null.name
+- `minecraft:end_portal_frame` — End Portal
+- `minecraft:end_portal` — tile.null.name
+- `minecraft:end_rod` — End Rod
+- `minecraft:end_stone` — End Stone
+- `minecraft:ender_chest` — Ender Chest
+- `minecraft:farmland` — Farmland
+- `minecraft:fence_gate` — Oak Fence Gate
+- `minecraft:fence` — Oak Fence
+- `minecraft:fire` — Fire
+- `minecraft:flower_pot` — Flower Pot
+- `minecraft:flowing_lava` — Lava
+- `minecraft:flowing_water` — Water
+- `minecraft:frosted_ice` — Frosted Ice
+- `minecraft:furnace` — Furnace
+- `minecraft:glass_pane` — Glass Pane
+- `minecraft:glass` — Glass
+- `minecraft:glowstone` — Glowstone
+- `minecraft:gold_block` — Block of Gold
+- `minecraft:gold_ore` — Gold Ore
+- `minecraft:golden_rail` — Powered Rail
+- `minecraft:grass_path` — Grass Path
+- `minecraft:grass` — Grass Block
+- `minecraft:gravel` — Gravel
+- `minecraft:gray_glazed_terracotta` — Gray Glazed Terracotta
+- `minecraft:gray_shulker_box` — Gray Shulker Box
+- `minecraft:green_glazed_terracotta` — Green Glazed Terracotta
+- `minecraft:green_shulker_box` — Green Shulker Box
+- `minecraft:hardened_clay` — Terracotta
+- `minecraft:hay_block` — Hay Bale
+- `minecraft:heavy_weighted_pressure_plate` — Weighted Pressure Plate (Heavy)
+- `minecraft:hopper` — Hopper
+- `minecraft:ice` — Ice
+- `minecraft:iron_bars` — Iron Bars
+- `minecraft:iron_block` — Block of Iron
+- `minecraft:iron_door` — Iron Door
+- `minecraft:iron_ore` — Iron Ore
+- `minecraft:iron_trapdoor` — Iron Trapdoor
+- `minecraft:jukebox` — Jukebox
+- `minecraft:jungle_door` — Jungle Door
+- `minecraft:jungle_fence_gate` — Jungle Fence Gate
+- `minecraft:jungle_fence` — Jungle Fence
+- `minecraft:jungle_stairs` — Jungle Wood Stairs
+- `minecraft:ladder` — Ladder
+- `minecraft:lapis_block` — Lapis Lazuli Block
+- `minecraft:lapis_ore` — Lapis Lazuli Ore
+- `minecraft:lava` — Lava
+- `minecraft:leaves2` — Leaves
+- `minecraft:leaves` — Leaves
+- `minecraft:lever` — Lever
+- `minecraft:light_blue_glazed_terracotta` — Light Blue Glazed Terracotta
+- `minecraft:light_blue_shulker_box` — Light Blue Shulker Box
+- `minecraft:light_weighted_pressure_plate` — Weighted Pressure Plate (Light)
+- `minecraft:lime_glazed_terracotta` — Lime Glazed Terracotta
+- `minecraft:lime_shulker_box` — Lime Shulker Box
+- `minecraft:lit_furnace` — Furnace
+- `minecraft:lit_pumpkin` — Jack o'Lantern
+- `minecraft:lit_redstone_lamp` — Redstone Lamp
+- `minecraft:lit_redstone_ore` — Redstone Ore
+- `minecraft:log2` — Wood
+- `minecraft:log` — Wood
+- `minecraft:magenta_glazed_terracotta` — Magenta Glazed Terracotta
+- `minecraft:magenta_shulker_box` — Magenta Shulker Box
+- `minecraft:magma` — Magma Block
+- `minecraft:melon_block` — Melon
+- `minecraft:melon_stem` — Pumpkin Stem
+- `minecraft:mob_spawner` — Monster Spawner
+- `minecraft:monster_egg` — Stone Monster Egg
+- `minecraft:mossy_cobblestone` — Moss Stone
+- `minecraft:mycelium` — Mycelium
+- `minecraft:nether_brick_fence` — Nether Brick Fence
+- `minecraft:nether_brick_stairs` — Nether Brick Stairs
+- `minecraft:nether_brick` — Nether Brick
+- `minecraft:nether_wart_block` — Nether Wart Block
+- `minecraft:nether_wart` — Nether Wart
+- `minecraft:netherrack` — Netherrack
+- `minecraft:noteblock` — Note Block
+- `minecraft:oak_stairs` — Oak Wood Stairs
+- `minecraft:observer` — Observer
+- `minecraft:obsidian` — Obsidian
+- `minecraft:orange_glazed_terracotta` — Orange Glazed Terracotta
+- `minecraft:orange_shulker_box` — Orange Shulker Box
+- `minecraft:packed_ice` — Packed Ice
+- `minecraft:pink_glazed_terracotta` — Pink Glazed Terracotta
+- `minecraft:pink_shulker_box` — Pink Shulker Box
+- `minecraft:piston_extension` — tile.null.name
+- `minecraft:piston_head` — Piston
+- `minecraft:piston` — Piston
+- `minecraft:planks` — Wooden Planks
+- `minecraft:portal` — tile.null.name
+- `minecraft:potatoes` — Potatoes
+- `minecraft:powered_comparator` — Redstone Comparator
+- `minecraft:powered_repeater` — Redstone Repeater
+- `minecraft:prismarine` — Prismarine
+- `minecraft:pumpkin_stem` — Pumpkin Stem
+- `minecraft:pumpkin` — Pumpkin
+- `minecraft:purple_glazed_terracotta` — Purple Glazed Terracotta
+- `minecraft:purple_shulker_box` — Purple Shulker Box
+- `minecraft:purpur_block` — Purpur Block
+- `minecraft:purpur_double_slab` — Purpur Slab
+- `minecraft:purpur_pillar` — Purpur Pillar
+- `minecraft:purpur_slab` — Purpur Slab
+- `minecraft:purpur_stairs` — Purpur Stairs
+- `minecraft:quartz_block` — Block of Quartz
+- `minecraft:quartz_ore` — Nether Quartz Ore
+- `minecraft:quartz_stairs` — Quartz Stairs
+- `minecraft:rail` — Rail
+- `minecraft:red_flower` — Flower
+- `minecraft:red_glazed_terracotta` — Red Glazed Terracotta
+- `minecraft:red_mushroom_block` — Mushroom
+- `minecraft:red_mushroom` — Mushroom
+- `minecraft:red_nether_brick` — Red Nether Brick
+- `minecraft:red_sandstone_stairs` — Red Sandstone Stairs
+- `minecraft:red_sandstone` — Red Sandstone
+- `minecraft:red_shulker_box` — Red Shulker Box
+- `minecraft:redstone_block` — Block of Redstone
+- `minecraft:redstone_lamp` — Redstone Lamp
+- `minecraft:redstone_ore` — Redstone Ore
+- `minecraft:redstone_torch` — Redstone Torch
+- `minecraft:redstone_wire` — Redstone Dust
+- `minecraft:reeds` — Sugar Cane
+- `minecraft:repeating_command_block` — Repeating Command Block
+- `minecraft:sandstone_stairs` — Sandstone Stairs
+- `minecraft:sandstone` — Sandstone
+- `minecraft:sand` — Sand
+- `minecraft:sapling` — Oak Sapling
+- `minecraft:sea_lantern` — Sea Lantern
+- `minecraft:silver_glazed_terracotta` — Light Gray Glazed Terracotta
+- `minecraft:silver_shulker_box` — Light Gray Shulker Box
+- `minecraft:skull` — tile.skull.skeleton.name
+- `minecraft:slime` — Green Slime Block
+- `minecraft:snow_layer` — Snow
+- `minecraft:snow` — Snow
+- `minecraft:soul_sand` — Soul Sand
+- `minecraft:sponge` — Sponge
+- `minecraft:spruce_door` — Spruce Door
+- `minecraft:spruce_fence_gate` — Spruce Fence Gate
+- `minecraft:spruce_fence` — Spruce Fence
+- `minecraft:spruce_stairs` — Spruce Wood Stairs
+- `minecraft:stained_glass_pane` — Stained Glass Pane
+- `minecraft:stained_glass` — Stained Glass
+- `minecraft:stained_hardened_clay` — Stained Terracotta
+- `minecraft:standing_banner` — White Banner
+- `minecraft:standing_sign` — Sign
+- `minecraft:sticky_piston` — Sticky Piston
+- `minecraft:stone_brick_stairs` — Stone Brick Stairs
+- `minecraft:stone_button` — Button
+- `minecraft:stone_pressure_plate` — Stone Pressure Plate
+- `minecraft:stone_slab2` — Red Sandstone Slab
+- `minecraft:stone_slab` — Stone Slab
+- `minecraft:stone_stairs` — Cobblestone Stairs
+- `minecraft:stonebrick` — Stone Bricks
+- `minecraft:stone` — Stone
+- `minecraft:structure_block` — Structure Block
+- `minecraft:structure_void` — Structure Void
+- `minecraft:tallgrass` — Grass
+- `minecraft:tnt` — TNT
+- `minecraft:torch` — Torch
+- `minecraft:trapdoor` — Wooden Trapdoor
+- `minecraft:trapped_chest` — Oak Trapped Chest
+- `minecraft:tripwire_hook` — Tripwire Hook
+- `minecraft:tripwire` — Tripwire
+- `minecraft:unlit_redstone_torch` — Redstone Torch
+- `minecraft:unpowered_comparator` — Redstone Comparator
+- `minecraft:unpowered_repeater` — Redstone Repeater
+- `minecraft:vine` — Vines
+- `minecraft:wall_banner` — White Banner
+- `minecraft:wall_sign` — Sign
+- `minecraft:waterlily` — Lily Pad
+- `minecraft:water` — Water
+- `minecraft:web` — Cobweb
+- `minecraft:wheat` — Crops
+- `minecraft:white_glazed_terracotta` — White Glazed Terracotta
+- `minecraft:white_shulker_box` — White Shulker Box
+- `minecraft:wooden_button` — Oak Button
+- `minecraft:wooden_door` — Oak Door
+- `minecraft:wooden_pressure_plate` — Oak Pressure Plate
+- `minecraft:wooden_slab` — Wood Slab
+- `minecraft:wool` — Wool
+- `minecraft:yellow_flower` — Flower
+- `minecraft:yellow_glazed_terracotta` — Yellow Glazed Terracotta
+- `minecraft:yellow_shulker_box` — Yellow Shulker Box
+
+### modularrouters
+- `modularrouters:item_router` — Item Router
+- `modularrouters:template_frame` — Template Frame
+
+### mysticalworld
+- `mysticalworld:amethyst_block` — Block of Amethyst
+- `mysticalworld:amethyst_ore` — Amethyst Ore
+- `mysticalworld:aubergine_crop` — tile.aubergine_crop.name
+- `mysticalworld:charred_button` — Charred Button
+- `mysticalworld:charred_double_slab` — tile.charred_double_slab.name
+- `mysticalworld:charred_fence_gate` — Charred Fence Gate
+- `mysticalworld:charred_fence` — Charred Fence
+- `mysticalworld:charred_log` — Charred Log
+- `mysticalworld:charred_planks` — Charred Planks
+- `mysticalworld:charred_pressure_plate` — Charred Pressure Plate
+- `mysticalworld:charred_slab` — Charred Slab
+- `mysticalworld:charred_stairs` — Charred Stairs
+- `mysticalworld:charred_wall` — tile.charred_wall.normal.name
+- `mysticalworld:copper_block` — Block of Copper
+- `mysticalworld:copper_ore` — Copper Ore
+- `mysticalworld:gall_apple_crop` — tile.gall_apple_crop.name
+- `mysticalworld:granite_quartz_ore` — Quartz Ore
+- `mysticalworld:mud_block_button` — Mud Block Button
+- `mysticalworld:mud_block_double_slab` — tile.mud_block_double_slab.name
+- `mysticalworld:mud_block_fence_gate` — Mud Block Fence Gate
+- `mysticalworld:mud_block_fence` — Mud Block Fence
+- `mysticalworld:mud_block_pressure_plate` — Mud Block Pressure Plate
+- `mysticalworld:mud_block_slab` — Mud Block Slab
+- `mysticalworld:mud_block_stairs` — Mud Block Stairs
+- `mysticalworld:mud_block_wall` — tile.mud_block_wall.normal.name
+- `mysticalworld:mud_block` — Mud Block
+- `mysticalworld:mud_brick_button` — Mud Brick Button
+- `mysticalworld:mud_brick_double_slab` — tile.mud_brick_double_slab.name
+- `mysticalworld:mud_brick_fence_gate` — Mud Brick Fence Gate
+- `mysticalworld:mud_brick_fence` — Mud Brick Fence
+- `mysticalworld:mud_brick_pressure_plate` — Mud Brick Pressure Plate
+- `mysticalworld:mud_brick_slab` — Mud Brick Slab
+- `mysticalworld:mud_brick_stairs` — Mud Brick Stairs
+- `mysticalworld:mud_brick_wall` — tile.mud_brick_wall.normal.name
+- `mysticalworld:mud_brick` — Mud Brick
+- `mysticalworld:pearl_block` — Pearl Block
+- `mysticalworld:pearl_button` — Pearl Button
+- `mysticalworld:pearl_double_slab` — tile.pearl_double_slab.name
+- `mysticalworld:pearl_fence_gate` — Pearl Fence Gate
+- `mysticalworld:pearl_fence` — Pearl Fence
+- `mysticalworld:pearl_pressure_plate` — Pearl Pressure Plate
+- `mysticalworld:pearl_slab` — Pearl Slab
+- `mysticalworld:pearl_stairs` — Pearl Stairs
+- `mysticalworld:pearl_wall` — tile.pearl_wall.normal.name
+- `mysticalworld:quartz_ore` — Quartz Ore
+- `mysticalworld:silver_block` — Block of Silver
+- `mysticalworld:silver_ore` — Silver Ore
+- `mysticalworld:slime_eggs` — tile.slime_eggs.name
+- `mysticalworld:thatch_double_slab` — tile.thatch_double_slab.name
+- `mysticalworld:thatch_slab` — Thatch Slab
+- `mysticalworld:thatch_stairs` — Thatch Stairs
+- `mysticalworld:thatch_wall` — tile.thatch_wall.normal.name
+- `mysticalworld:thatch` — Thatch
+- `mysticalworld:wet_mud_block` — Wet Mud Block
+- `mysticalworld:wet_mud_brick` — Wet Mud Brick
+
+### natura
+- `natura:amaranth_button` — Amaranth Button
+- `natura:amaranth_fence_gate` — Amaranth Fence Gate
+- `natura:amaranth_fence` — Amaranth Fence
+- `natura:amaranth_pressure_plate` — Amaranth Pressure Plate
+- `natura:amaranth_trap_door` — Amaranth Trap Door
+- `natura:barley_crop` — tile.natura.barley_crop.name
+- `natura:blaze_hopper` — Blaze Hopper
+- `natura:blaze_rail_activator` — Activator Blaze Rail
+- `natura:blaze_rail_detector` — Detector Blaze Rail
+- `natura:blaze_rail_golden` — Powered Blaze Rail
+- `natura:blaze_rail` — Blaze Rail
+- `natura:bloodwood_button` — Bloodwood Button
+- `natura:bloodwood_fence_gate` — Bloodwood Fence Gate
+- `natura:bloodwood_fence` — Bloodwood Fence
+- `natura:bloodwood_pressure_plate` — Bloodwood Pressure Plate
+- `natura:bloodwood_trap_door` — Bloodwood Trap Door
+- `natura:bluebells_flower` — Bluebells
+- `natura:clouds` — tile.natura.clouds.name
+- `natura:colored_grass_slab` — tile.natura.colored_grass_slab.name
+- `natura:colored_grass_stairs_autumnal` — Autumnal Grass Stairs
+- `natura:colored_grass_stairs_bluegrass` — Bluegrass Stairs
+- `natura:colored_grass_stairs_topiary` — Topiary Grass Stairs
+- `natura:colored_grass` — tile.natura.colored_grass.name
+- `natura:cotton_crop` — tile.natura.cotton_crop.name
+- `natura:darkwood_button` — Darkwood Button
+- `natura:darkwood_fence_gate` — Darkwood Fence Gate
+- `natura:darkwood_fence` — Darkwood Fence
+- `natura:darkwood_pressure_plate` — Darkwood Pressure Plate
+- `natura:darkwood_trap_door` — Darkwood Trap Door
+- `natura:eucalyptus_button` — Eucalyptus Button
+- `natura:eucalyptus_fence_gate` — Eucalyptus Fence Gate
+- `natura:eucalyptus_fence` — Eucalyptus Fence
+- `natura:eucalyptus_pressure_plate` — Eucalyptus Pressure Plate
+- `natura:eucalyptus_trap_door` — Eucalyptus Trap Door
+- `natura:fusewood_button` — Fusewood Button
+- `natura:fusewood_fence_gate` — Fusewood Fence Gate
+- `natura:fusewood_fence` — Fusewood Fence
+- `natura:fusewood_pressure_plate` — Fusewood Pressure Plate
+- `natura:fusewood_trap_door` — Fusewood Trap Door
+- `natura:ghostwood_button` — Ghostwood Button
+- `natura:ghostwood_fence_gate` — Ghostwood Fence Gate
+- `natura:ghostwood_fence` — Ghostwood Fence
+- `natura:ghostwood_pressure_plate` — Ghostwood Pressure Plate
+- `natura:ghostwood_trap_door` — Ghostwood Trap Door
+- `natura:hopseed_button` — Hopseed Button
+- `natura:hopseed_fence_gate` — Hopseed Fence Gate
+- `natura:hopseed_fence` — Hopseed Fence
+- `natura:hopseed_pressure_plate` — Hopseed Pressure Plate
+- `natura:hopseed_trap_door` — Hopseed Trap Door
+- `natura:lit_netherrack_furnace` — Nether Furnace
+- `natura:maple_button` — Maple Button
+- `natura:maple_fence_gate` — Maple Fence Gate
+- `natura:maple_fence` — Maple Fence
+- `natura:maple_pressure_plate` — Maple Pressure Plate
+- `natura:maple_trap_door` — Maple Trap Door
+- `natura:nether_berrybush_blightberry` — Blightberry Bush
+- `natura:nether_berrybush_duskberry` — Duskberry Bush
+- `natura:nether_berrybush_skyberry` — Skyberry Bush
+- `natura:nether_berrybush_stingberry` — Stingberry Bush
+- `natura:nether_blue_large_glowshroom` — tile.natura.nether_blue_large_glowshroom.name
+- `natura:nether_bookshelves` — tile.natura.nether_bookshelves.name
+- `natura:nether_button` — Button
+- `natura:nether_door_bloodwood` — item.natura.nether_door_bloodwood.name
+- `natura:nether_door_darkwood` — item.natura.nether_door_darkwood.name
+- `natura:nether_door_fusewood` — item.natura.nether_door_fusewood.name
+- `natura:nether_door_ghostwood` — item.natura.nether_door_ghostwood.name
+- `natura:nether_glass` — tile.natura.nether_glass.name
+- `natura:nether_glowshroom` — tile.natura.nether_glowshroom.name
+- `natura:nether_green_large_glowshroom` — tile.natura.nether_green_large_glowshroom.name
+- `natura:nether_heat_sand` — Heat Sand
+- `natura:nether_leaves2` — tile.natura.nether_leaves2.name
+- `natura:nether_leaves` — tile.natura.nether_leaves.name
+- `natura:nether_lever` — Lever
+- `natura:nether_logs2` — Bloodwood
+- `natura:nether_logs` — tile.natura.nether_logs.name
+- `natura:nether_planks` — tile.natura.nether_planks.name
+- `natura:nether_pressure_plate` — Pressure Plate
+- `natura:nether_purple_large_glowshroom` — tile.natura.nether_purple_large_glowshroom.name
+- `natura:nether_sapling2` — tile.natura.nether_sapling2.oak.name
+- `natura:nether_sapling` — tile.natura.nether_sapling.oak.name
+- `natura:nether_slab` — tile.natura.nether_slab.name
+- `natura:nether_stairs_bloodwood` — Blood Stairs
+- `natura:nether_stairs_darkwood` — Darkwood Stairs
+- `natura:nether_stairs_fusewood` — Fusewood Stairs
+- `natura:nether_stairs_ghostwood` — Ghostwood Stairs
+- `natura:nether_tainted_soil` — tile.natura.nether_tainted_soil.name
+- `natura:nether_thorn_vines` — Thornvines
+- `natura:nether_workbenches` — tile.natura.nether_workbenches.name
+- `natura:netherrack_furnace` — Nether Furnace
+- `natura:overworld_berrybush_blackberry` — Blackberry Bush
+- `natura:overworld_berrybush_blueberry` — Blueberry Bush
+- `natura:overworld_berrybush_maloberry` — Maloberry Bush
+- `natura:overworld_berrybush_raspberry` — Raspberry Bush
+- `natura:overworld_bookshelves` — tile.natura.overworld_bookshelves.name
+- `natura:overworld_door_eucalyptus` — item.natura.overworld_door_eucalyptus.name
+- `natura:overworld_door_hopseed` — item.natura.overworld_door_hopseed.name
+- `natura:overworld_door_maple` — item.natura.overworld_door_maple.name
+- `natura:overworld_door_redwood_bark` — item.natura.overworld_door_redwood_bark.name
+- `natura:overworld_door_redwood` — item.natura.overworld_door_redwood.name
+- `natura:overworld_door_sakura` — item.natura.overworld_door_sakura.name
+- `natura:overworld_door_silverbell` — item.natura.overworld_door_silverbell.name
+- `natura:overworld_door_tiger` — item.natura.overworld_door_tiger.name
+- `natura:overworld_leaves2` — tile.natura.overworld_leaves2.name
+- `natura:overworld_leaves` — tile.natura.overworld_leaves.name
+- `natura:overworld_logs2` — tile.natura.overworld_logs2.name
+- `natura:overworld_logs` — tile.natura.overworld_logs.name
+- `natura:overworld_planks` — tile.natura.overworld_planks.name
+- `natura:overworld_sapling2` — tile.natura.overworld_sapling2.oak.name
+- `natura:overworld_sapling` — tile.natura.overworld_sapling.oak.name
+- `natura:overworld_slab2` — tile.natura.overworld_slab2.name
+- `natura:overworld_slab` — tile.natura.overworld_slab.name
+- `natura:overworld_stairs_amaranth` — Amaranth Stairs
+- `natura:overworld_stairs_eucalyptus` — Eucalyptus Stairs
+- `natura:overworld_stairs_hopseed` — Hopseed Stairs
+- `natura:overworld_stairs_maple` — Maple Stairs
+- `natura:overworld_stairs_redwood` — Redwood Stairs
+- `natura:overworld_stairs_sakura` — Sakura Stairs
+- `natura:overworld_stairs_silverbell` — Silverbell Stairs
+- `natura:overworld_stairs_tiger` — Tiger Stairs
+- `natura:overworld_stairs_willow` — Willow Stairs
+- `natura:overworld_workbenches` — tile.natura.overworld_workbenches.name
+- `natura:redwood_button` — Redwood Button
+- `natura:redwood_fence_gate` — Redwood Fence Gate
+- `natura:redwood_fence` — Redwood Fence
+- `natura:redwood_leaves` — tile.natura.redwood_leaves.name
+- `natura:redwood_logs` — tile.natura.redwood_logs.name
+- `natura:redwood_pressure_plate` — Redwood Pressure Plate
+- `natura:redwood_sapling` — tile.natura.redwood_sapling.oak.name
+- `natura:redwood_trap_door` — Redwood Trap Door
+- `natura:respawn_obelisk` — tile.natura.respawn_obelisk.name
+- `natura:saguaro_baby` — Baby Saguaro Cactus
+- `natura:saguaro_fruit` — Saguaro Fruit
+- `natura:saguaro` — Saguaro Cactus
+- `natura:sakura_button` — Sakura Button
+- `natura:sakura_fence_gate` — Sakura Fence Gate
+- `natura:sakura_fence` — Sakura Fence
+- `natura:sakura_pressure_plate` — Sakura Pressure Plate
+- `natura:sakura_trap_door` — Sakura Trap Door
+- `natura:silverbell_button` — Silverbell Button
+- `natura:silverbell_fence_gate` — Silverbell Fence Gate
+- `natura:silverbell_fence` — Silverbell Fence
+- `natura:silverbell_pressure_plate` — Silverbell Pressure Plate
+- `natura:silverbell_trap_door` — Silverbell Trap Door
+- `natura:tiger_button` — Tiger Button
+- `natura:tiger_fence_gate` — Tiger Fence Gate
+- `natura:tiger_fence` — Tiger Fence
+- `natura:tiger_pressure_plate` — Tiger Pressure Plate
+- `natura:tiger_trap_door` — Tiger Trap Door
+- `natura:willow_button` — Willow Button
+- `natura:willow_fence_gate` — Willow Fence Gate
+- `natura:willow_fence` — Willow Fence
+- `natura:willow_pressure_plate` — Willow Pressure Plate
+- `natura:willow_trap_door` — Willow Trap Door
+
+### notenoughwands
+- `notenoughwands:lightblock` — Illuminating Orb
+
+### nuclearcraft
+- `nuclearcraft:accelerator_electromagnet_active` — Superconducting Electromagnet
+- `nuclearcraft:accelerator_electromagnet_idle` — Superconducting Electromagnet
+- `nuclearcraft:active_cooler` — Active Fluid Cooler
+- `nuclearcraft:alloy_furnace_active` — Alloy Furnace
+- `nuclearcraft:alloy_furnace_idle` — Alloy Furnace
+- `nuclearcraft:bin` — Universal Bin
+- `nuclearcraft:block_depleted_americium` — Americium-243 Block
+- `nuclearcraft:block_depleted_berkelium` — Berkelium-247 Block
+- `nuclearcraft:block_depleted_californium` — Californium-252 Block
+- `nuclearcraft:block_depleted_curium` — Curium-246 Block
+- `nuclearcraft:block_depleted_neptunium` — Neptunium-237 Block
+- `nuclearcraft:block_depleted_plutonium` — Plutonium-242 Block
+- `nuclearcraft:block_depleted_thorium` — Thorium-230 Block
+- `nuclearcraft:block_depleted_uranium` — Uranium-238 Block
+- `nuclearcraft:block_ice` — Supercold Ice
+- `nuclearcraft:buffer` — Buffer
+- `nuclearcraft:cell_block` — Reactor Cell
+- `nuclearcraft:centrifuge_active` — Centrifuge
+- `nuclearcraft:centrifuge_idle` — Centrifuge
+- `nuclearcraft:chemical_reactor_active` — Chemical Reactor
+- `nuclearcraft:chemical_reactor_idle` — Chemical Reactor
+- `nuclearcraft:cobblestone_generator_compact` — Compact Cobblestone Generator
+- `nuclearcraft:cobblestone_generator_dense` — Dense Cobblestone Generator
+- `nuclearcraft:cobblestone_generator` — Cobblestone Generator
+- `nuclearcraft:cooler` — tile.nuclearcraft.cooler.name
+- `nuclearcraft:crystallizer_active` — Crystallizer
+- `nuclearcraft:crystallizer_idle` — Crystallizer
+- `nuclearcraft:decay_generator` — Decay Generator
+- `nuclearcraft:decay_hastener_active` — Decay Hastener
+- `nuclearcraft:decay_hastener_idle` — Decay Hastener
+- `nuclearcraft:dissolver_active` — Fluid Enricher
+- `nuclearcraft:dissolver_idle` — Fluid Enricher
+- `nuclearcraft:dry_earth` — Wasteland Earth
+- `nuclearcraft:electrolyser_active` — Electrolyzer
+- `nuclearcraft:electrolyser_idle` — Electrolyzer
+- `nuclearcraft:electromagnet_supercooler_active` — Superconducting Supercooler
+- `nuclearcraft:electromagnet_supercooler_idle` — Superconducting Supercooler
+- `nuclearcraft:extractor_active` — Fluid Extractor
+- `nuclearcraft:extractor_idle` — Fluid Extractor
+- `nuclearcraft:fission_block` — tile.nuclearcraft.fission_block.name
+- `nuclearcraft:fission_controller_active` — Fission Controller
+- `nuclearcraft:fission_controller_idle` — Fission Controller (Old)
+- `nuclearcraft:fission_controller_new_active` — Fission Controller
+- `nuclearcraft:fission_controller_new_fixed` — Fission Controller
+- `nuclearcraft:fission_controller_new_idle` — Fission Controller
+- `nuclearcraft:fission_port` — Fission Reactor Port
+- `nuclearcraft:fluid_alugentum` — Molten Alugentum
+- `nuclearcraft:fluid_alumina` — Molten Alumina
+- `nuclearcraft:fluid_aluminum` — Molten Aluminum
+- `nuclearcraft:fluid_americium_241_fluoride_flibe` — Molten FLiBe Salt Solution of Americium-241 Fluoride
+- `nuclearcraft:fluid_americium_241_fluoride` — Molten Americium-241 Fluoride
+- `nuclearcraft:fluid_americium_241` — Molten Americium-241
+- `nuclearcraft:fluid_americium_242_fluoride_flibe` — Molten FLiBe Salt Solution of Americium-242 Fluoride
+- `nuclearcraft:fluid_americium_242_fluoride` — Molten Americium-242 Fluoride
+- `nuclearcraft:fluid_americium_242` — Molten Americium-242
+- `nuclearcraft:fluid_americium_243_fluoride_flibe` — Molten FLiBe Salt Solution of Americium-243 Fluoride
+- `nuclearcraft:fluid_americium_243_fluoride` — Molten Americium-243 Fluoride
+- `nuclearcraft:fluid_americium_243` — Molten Americium-243
+- `nuclearcraft:fluid_ammonia` — Ammonia
+- `nuclearcraft:fluid_arsenic` — Molten Arsenic
+- `nuclearcraft:fluid_bas` — Molten Boron Arsenide
+- `nuclearcraft:fluid_bef2` — Molten Beryllium Fluoride
+- `nuclearcraft:fluid_berkelium_247_fluoride_flibe` — Molten FLiBe Salt Solution of Berkelium-247 Fluoride
+- `nuclearcraft:fluid_berkelium_247_fluoride` — Molten Berkelium-247 Fluoride
+- `nuclearcraft:fluid_berkelium_247` — Molten Berkelium-247
+- `nuclearcraft:fluid_berkelium_248_fluoride_flibe` — Molten FLiBe Salt Solution of Berkelium-248 Fluoride
+- `nuclearcraft:fluid_berkelium_248_fluoride` — Molten Berkelium-248 Fluoride
+- `nuclearcraft:fluid_berkelium_248` — Molten Berkelium-248
+- `nuclearcraft:fluid_beryllium` — Molten Beryllium
+- `nuclearcraft:fluid_borax_solution` — Borax Solution
+- `nuclearcraft:fluid_boric_acid` — Boric Acid
+- `nuclearcraft:fluid_boron10` — Molten Boron-10
+- `nuclearcraft:fluid_boron11` — Molten Boron-11
+- `nuclearcraft:fluid_boron_nitride_solution` — Boron Nitride Solution
+- `nuclearcraft:fluid_boron` — Molten Boron
+- `nuclearcraft:fluid_calcium_sulfate_solution` — Calcium Sulfate Solution
+- `nuclearcraft:fluid_californium_249_fluoride_flibe` — Molten FLiBe Salt Solution of Californium-249 Fluoride
+- `nuclearcraft:fluid_californium_249_fluoride` — Molten Californium-249 Fluoride
+- `nuclearcraft:fluid_californium_249` — Molten Californium-249
+- `nuclearcraft:fluid_californium_250_fluoride_flibe` — Molten FLiBe Salt Solution of Californium-250 Fluoride
+- `nuclearcraft:fluid_californium_250_fluoride` — Molten Californium-250 Fluoride
+- `nuclearcraft:fluid_californium_250` — Molten Californium-250
+- `nuclearcraft:fluid_californium_251_fluoride_flibe` — Molten FLiBe Salt Solution of Californium-251 Fluoride
+- `nuclearcraft:fluid_californium_251_fluoride` — Molten Californium-251 Fluoride
+- `nuclearcraft:fluid_californium_251` — Molten Californium-251
+- `nuclearcraft:fluid_californium_252_fluoride_flibe` — Molten FLiBe Salt Solution of Californium-252 Fluoride
+- `nuclearcraft:fluid_californium_252_fluoride` — Molten Californium-252 Fluoride
+- `nuclearcraft:fluid_californium_252` — Molten Californium-252
+- `nuclearcraft:fluid_carbon_dioxide` — Carbon Dioxide
+- `nuclearcraft:fluid_carbon_monoxide` — Carbon Monoxide
+- `nuclearcraft:fluid_chocolate_liquor` — Chocolate Liquor
+- `nuclearcraft:fluid_cocoa_butter` — Cocoa Butter
+- `nuclearcraft:fluid_condensate_water` — Condensate Water
+- `nuclearcraft:fluid_copper_nak_hot` — Hot Eutectic NaK-Copper Mixture
+- `nuclearcraft:fluid_copper_nak` — Eutectic NaK-Copper Mixture
+- `nuclearcraft:fluid_copper` — Molten Copper
+- `nuclearcraft:fluid_corium` — Corium
+- `nuclearcraft:fluid_cryotheum_nak_hot` — Hot Eutectic NaK-Cryotheum Mixture
+- `nuclearcraft:fluid_cryotheum_nak` — Eutectic NaK-Cryotheum Mixture
+- `nuclearcraft:fluid_curium_243_fluoride_flibe` — Molten FLiBe Salt Solution of Curium-243 Fluoride
+- `nuclearcraft:fluid_curium_243_fluoride` — Molten Curium-243 Fluoride
+- `nuclearcraft:fluid_curium_243` — Molten Curium-243
+- `nuclearcraft:fluid_curium_245_fluoride_flibe` — Molten FLiBe Salt Solution of Curium-245 Fluoride
+- `nuclearcraft:fluid_curium_245_fluoride` — Molten Curium-245 Fluoride
+- `nuclearcraft:fluid_curium_245` — Molten Curium-245
+- `nuclearcraft:fluid_curium_246_fluoride_flibe` — Molten FLiBe Salt Solution of Curium-246 Fluoride
+- `nuclearcraft:fluid_curium_246_fluoride` — Molten Curium-246 Fluoride
+- `nuclearcraft:fluid_curium_246` — Molten Curium-246
+- `nuclearcraft:fluid_curium_247_fluoride_flibe` — Molten FLiBe Salt Solution of Curium-247 Fluoride
+- `nuclearcraft:fluid_curium_247_fluoride` — Molten Curium-247 Fluoride
+- `nuclearcraft:fluid_curium_247` — Molten Curium-247
+- `nuclearcraft:fluid_dark_chocolate` — Molten Dark Chocolate
+- `nuclearcraft:fluid_depleted_fuel_hea_242_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted HEA-242 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_hea_242_fluoride` — Molten Depleted HEA-242 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_hea_242` — Molten Depleted HEA-242 Fuel
+- `nuclearcraft:fluid_depleted_fuel_heb_248_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted HEB-248 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_heb_248_fluoride` — Molten Depleted HEB-248 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_heb_248` — Molten Depleted HEB-248 Fuel
+- `nuclearcraft:fluid_depleted_fuel_hecf_249_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted HECf-249 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_hecf_249_fluoride` — Molten Depleted HECf-249 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_hecf_249` — Molten Depleted HECf-249 Fuel
+- `nuclearcraft:fluid_depleted_fuel_hecf_251_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted HECf-251 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_hecf_251_fluoride` — Molten Depleted HECf-251 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_hecf_251` — Molten Depleted HECf-251 Fuel
+- `nuclearcraft:fluid_depleted_fuel_hecm_243_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted HECm-243 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_hecm_243_fluoride` — Molten Depleted HECm-243 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_hecm_243` — Molten Depleted HECm-243 Fuel
+- `nuclearcraft:fluid_depleted_fuel_hecm_245_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted HECm-245 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_hecm_245_fluoride` — Molten Depleted HECm-245 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_hecm_245` — Molten Depleted HECm-245 Fuel
+- `nuclearcraft:fluid_depleted_fuel_hecm_247_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted HECm-247 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_hecm_247_fluoride` — Molten Depleted HECm-247 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_hecm_247` — Molten Depleted HECm-247 Fuel
+- `nuclearcraft:fluid_depleted_fuel_hen_236_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted HEN-236 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_hen_236_fluoride` — Molten Depleted HEN-236 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_hen_236` — Molten Depleted HEN-236 Fuel
+- `nuclearcraft:fluid_depleted_fuel_hep_239_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted HEP-239 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_hep_239_fluoride` — Molten Depleted HEP-239 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_hep_239` — Molten Depleted HEP-239 Fuel
+- `nuclearcraft:fluid_depleted_fuel_hep_241_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted HEP-241 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_hep_241_fluoride` — Molten Depleted HEP-241 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_hep_241` — Molten Depleted HEP-241 Fuel
+- `nuclearcraft:fluid_depleted_fuel_heu_233_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted HEU-233 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_heu_233_fluoride` — Molten Depleted HEU-233 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_heu_233` — Molten Depleted HEU-233 Fuel
+- `nuclearcraft:fluid_depleted_fuel_heu_235_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted HEU-235 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_heu_235_fluoride` — Molten Depleted HEU-235 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_heu_235` — Molten Depleted HEU-235 Fuel
+- `nuclearcraft:fluid_depleted_fuel_lea_242_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted LEA-242 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_lea_242_fluoride` — Molten Depleted LEA-242 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_lea_242` — Molten Depleted LEA-242 Fuel
+- `nuclearcraft:fluid_depleted_fuel_leb_248_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted LEB-248 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_leb_248_fluoride` — Molten Depleted LEB-248 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_leb_248` — Molten Depleted LEB-248 Fuel
+- `nuclearcraft:fluid_depleted_fuel_lecf_249_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted LECf-249 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_lecf_249_fluoride` — Molten Depleted LECf-249 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_lecf_249` — Molten Depleted LECf-249 Fuel
+- `nuclearcraft:fluid_depleted_fuel_lecf_251_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted LECf-251 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_lecf_251_fluoride` — Molten Depleted LECf-251 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_lecf_251` — Molten Depleted LECf-251 Fuel
+- `nuclearcraft:fluid_depleted_fuel_lecm_243_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted LECm-243 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_lecm_243_fluoride` — Molten Depleted LECm-243 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_lecm_243` — Molten Depleted LECm-243 Fuel
+- `nuclearcraft:fluid_depleted_fuel_lecm_245_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted LECm-245 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_lecm_245_fluoride` — Molten Depleted LECm-245 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_lecm_245` — Molten Depleted LECm-245 Fuel
+- `nuclearcraft:fluid_depleted_fuel_lecm_247_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted LECm-247 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_lecm_247_fluoride` — Molten Depleted LECm-247 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_lecm_247` — Molten Depleted LECm-247 Fuel
+- `nuclearcraft:fluid_depleted_fuel_len_236_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted LEN-236 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_len_236_fluoride` — Molten Depleted LEN-236 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_len_236` — Molten Depleted LEN-236 Fuel
+- `nuclearcraft:fluid_depleted_fuel_lep_239_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted LEP-239 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_lep_239_fluoride` — Molten Depleted LEP-239 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_lep_239` — Molten Depleted LEP-239 Fuel
+- `nuclearcraft:fluid_depleted_fuel_lep_241_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted LEP-241 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_lep_241_fluoride` — Molten Depleted LEP-241 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_lep_241` — Molten Depleted LEP-241 Fuel
+- `nuclearcraft:fluid_depleted_fuel_leu_233_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted LEU-233 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_leu_233_fluoride` — Molten Depleted LEU-233 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_leu_233` — Molten Depleted LEU-233 Fuel
+- `nuclearcraft:fluid_depleted_fuel_leu_235_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted LEU-235 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_leu_235_fluoride` — Molten Depleted LEU-235 Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_leu_235` — Molten Depleted LEU-235 Fuel
+- `nuclearcraft:fluid_depleted_fuel_tbu_fluoride_flibe` — Molten FLiBe Salt Solution of Depleted TBU Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_tbu_fluoride` — Molten Depleted TBU Fluoride Fuel
+- `nuclearcraft:fluid_depleted_fuel_tbu` — Molten Depleted TBU Fuel
+- `nuclearcraft:fluid_deuterium` — Deuterium
+- `nuclearcraft:fluid_diamond_nak_hot` — Hot Eutectic NaK-Diamond Mixture
+- `nuclearcraft:fluid_diamond_nak` — Eutectic NaK-Diamond Mixture
+- `nuclearcraft:fluid_diamond` — Molten Diamond
+- `nuclearcraft:fluid_diborane` — Diborane
+- `nuclearcraft:fluid_emerald_nak_hot` — Hot Eutectic NaK-Emerald Mixture
+- `nuclearcraft:fluid_emerald_nak` — Eutectic NaK-Emerald Mixture
+- `nuclearcraft:fluid_emerald` — Molten Emerald
+- `nuclearcraft:fluid_ender_nak_hot` — Hot Eutectic NaK-Ender Mixture
+- `nuclearcraft:fluid_ender_nak` — Eutectic NaK-Ender Mixture
+- `nuclearcraft:fluid_ethanol` — Ethanol
+- `nuclearcraft:fluid_ethene` — Ethylene
+- `nuclearcraft:fluid_exhaust_steam` — Exhaust Steam
+- `nuclearcraft:fluid_ferroboron` — Molten Ferroboron
+- `nuclearcraft:fluid_flibe` — Molten FLiBe Salt Mixture
+- `nuclearcraft:fluid_fluorine` — Fluorine
+- `nuclearcraft:fluid_fluorite_water` — Fluorite Water
+- `nuclearcraft:fluid_fluoromethane` — Fluoromethane
+- `nuclearcraft:fluid_fuel_hea_242_fluoride_flibe` — Molten FLiBe Salt Solution of HEA-242 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_hea_242_fluoride` — Molten HEA-242 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_hea_242` — Molten HEA-242 Fuel
+- `nuclearcraft:fluid_fuel_heb_248_fluoride_flibe` — Molten FLiBe Salt Solution of HEB-248 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_heb_248_fluoride` — Molten HEB-248 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_heb_248` — Molten HEB-248 Fuel
+- `nuclearcraft:fluid_fuel_hecf_249_fluoride_flibe` — Molten FLiBe Salt Solution of HECf-249 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_hecf_249_fluoride` — Molten HECf-249 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_hecf_249` — Molten HECf-249 Fuel
+- `nuclearcraft:fluid_fuel_hecf_251_fluoride_flibe` — Molten FLiBe Salt Solution of HECf-251 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_hecf_251_fluoride` — Molten HECf-251 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_hecf_251` — Molten HECf-251 Fuel
+- `nuclearcraft:fluid_fuel_hecm_243_fluoride_flibe` — Molten FLiBe Salt Solution of HECm-243 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_hecm_243_fluoride` — Molten HECm-243 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_hecm_243` — Molten HECm-243 Fuel
+- `nuclearcraft:fluid_fuel_hecm_245_fluoride_flibe` — Molten FLiBe Salt Solution of HECm-245 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_hecm_245_fluoride` — Molten HECm-245 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_hecm_245` — Molten HECm-245 Fuel
+- `nuclearcraft:fluid_fuel_hecm_247_fluoride_flibe` — Molten FLiBe Salt Solution of HECm-247 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_hecm_247_fluoride` — Molten HECm-247 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_hecm_247` — Molten HECm-247 Fuel
+- `nuclearcraft:fluid_fuel_hen_236_fluoride_flibe` — Molten FLiBe Salt Solution of HEN-236 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_hen_236_fluoride` — Molten HEN-236 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_hen_236` — Molten HEN-236 Fuel
+- `nuclearcraft:fluid_fuel_hep_239_fluoride_flibe` — Molten FLiBe Salt Solution of HEP-239 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_hep_239_fluoride` — Molten HEP-239 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_hep_239` — Molten HEP-239 Fuel
+- `nuclearcraft:fluid_fuel_hep_241_fluoride_flibe` — Molten FLiBe Salt Solution of HEP-241 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_hep_241_fluoride` — Molten HEP-241 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_hep_241` — Molten HEP-241 Fuel
+- `nuclearcraft:fluid_fuel_heu_233_fluoride_flibe` — Molten FLiBe Salt Solution of HEU-233 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_heu_233_fluoride` — Molten HEU-233 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_heu_233` — Molten HEU-233 Fuel
+- `nuclearcraft:fluid_fuel_heu_235_fluoride_flibe` — Molten FLiBe Salt Solution of HEU-235 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_heu_235_fluoride` — Molten HEU-235 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_heu_235` — Molten HEU-235 Fuel
+- `nuclearcraft:fluid_fuel_lea_242_fluoride_flibe` — Molten FLiBe Salt Solution of LEA-242 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_lea_242_fluoride` — Molten LEA-242 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_lea_242` — Molten LEA-242 Fuel
+- `nuclearcraft:fluid_fuel_leb_248_fluoride_flibe` — Molten FLiBe Salt Solution of LEB-248 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_leb_248_fluoride` — Molten LEB-248 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_leb_248` — Molten LEB-248 Fuel
+- `nuclearcraft:fluid_fuel_lecf_249_fluoride_flibe` — Molten FLiBe Salt Solution of LECf-249 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_lecf_249_fluoride` — Molten LECf-249 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_lecf_249` — Molten LECf-249 Fuel
+- `nuclearcraft:fluid_fuel_lecf_251_fluoride_flibe` — Molten FLiBe Salt Solution of LECf-251 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_lecf_251_fluoride` — Molten LECf-251 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_lecf_251` — Molten LECf-251 Fuel
+- `nuclearcraft:fluid_fuel_lecm_243_fluoride_flibe` — Molten FLiBe Salt Solution of LECm-243 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_lecm_243_fluoride` — Molten LECm-243 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_lecm_243` — Molten LECm-243 Fuel
+- `nuclearcraft:fluid_fuel_lecm_245_fluoride_flibe` — Molten FLiBe Salt Solution of LECm-245 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_lecm_245_fluoride` — Molten LECm-245 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_lecm_245` — Molten LECm-245 Fuel
+- `nuclearcraft:fluid_fuel_lecm_247_fluoride_flibe` — Molten FLiBe Salt Solution of LECm-247 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_lecm_247_fluoride` — Molten LECm-247 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_lecm_247` — Molten LECm-247 Fuel
+- `nuclearcraft:fluid_fuel_len_236_fluoride_flibe` — Molten FLiBe Salt Solution of LEN-236 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_len_236_fluoride` — Molten LEN-236 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_len_236` — Molten LEN-236 Fuel
+- `nuclearcraft:fluid_fuel_lep_239_fluoride_flibe` — Molten FLiBe Salt Solution of LEP-239 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_lep_239_fluoride` — Molten LEP-239 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_lep_239` — Molten LEP-239 Fuel
+- `nuclearcraft:fluid_fuel_lep_241_fluoride_flibe` — Molten FLiBe Salt Solution of LEP-241 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_lep_241_fluoride` — Molten LEP-241 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_lep_241` — Molten LEP-241 Fuel
+- `nuclearcraft:fluid_fuel_leu_233_fluoride_flibe` — Molten FLiBe Salt Solution of LEU-233 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_leu_233_fluoride` — Molten LEU-233 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_leu_233` — Molten LEU-233 Fuel
+- `nuclearcraft:fluid_fuel_leu_235_fluoride_flibe` — Molten FLiBe Salt Solution of LEU-235 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_leu_235_fluoride` — Molten LEU-235 Fluoride Fuel
+- `nuclearcraft:fluid_fuel_leu_235` — Molten LEU-235 Fuel
+- `nuclearcraft:fluid_fuel_tbu_fluoride_flibe` — Molten FLiBe Salt Solution of TBU Fluoride Fuel
+- `nuclearcraft:fluid_fuel_tbu_fluoride` — Molten TBU Fluoride Fuel
+- `nuclearcraft:fluid_fuel_tbu` — Molten TBU Fuel
+- `nuclearcraft:fluid_gelatin` — Molten Gelatin
+- `nuclearcraft:fluid_glowstone_nak_hot` — Hot Eutectic NaK-Glowstone Mixture
+- `nuclearcraft:fluid_glowstone_nak` — Eutectic NaK-Glowstone Mixture
+- `nuclearcraft:fluid_gold_nak_hot` — Hot Eutectic NaK-Gold Mixture
+- `nuclearcraft:fluid_gold_nak` — Eutectic NaK-Gold Mixture
+- `nuclearcraft:fluid_gold` — Molten Gold
+- `nuclearcraft:fluid_hard_carbon` — Molten Hard Carbon
+- `nuclearcraft:fluid_helium3` — Helium-3
+- `nuclearcraft:fluid_helium` — Helium
+- `nuclearcraft:fluid_high_pressure_steam` — High Pressure Steam
+- `nuclearcraft:fluid_hydrated_gelatin` — Hydrated Gelatin
+- `nuclearcraft:fluid_hydrofluoric_acid` — Hydrofluoric Acid
+- `nuclearcraft:fluid_hydrogen` — Hydrogen
+- `nuclearcraft:fluid_iron_nak_hot` — Hot Eutectic NaK-Iron Mixture
+- `nuclearcraft:fluid_iron_nak` — Eutectic NaK-Iron Mixture
+- `nuclearcraft:fluid_iron` — Molten Iron
+- `nuclearcraft:fluid_koh` — Molten Potassium Hydroxide
+- `nuclearcraft:fluid_lapis_nak_hot` — Hot Eutectic NaK-Lapis Mixture
+- `nuclearcraft:fluid_lapis_nak` — Eutectic NaK-Lapis Mixture
+- `nuclearcraft:fluid_lapis` — Molten Lapis
+- `nuclearcraft:fluid_lif` — Molten Lithium Fluoride
+- `nuclearcraft:fluid_liquid_nitrogen` — Liquid Nitrogen
+- `nuclearcraft:fluid_liquidhelium_nak_hot` — Hot Eutectic NaK-Helium Mixture
+- `nuclearcraft:fluid_liquidhelium_nak` — Eutectic NaK-Helium Mixture
+- `nuclearcraft:fluid_liquidhelium` — Liquid Helium
+- `nuclearcraft:fluid_lithium6` — Molten Lithium-6
+- `nuclearcraft:fluid_lithium7` — Molten Lithium-7
+- `nuclearcraft:fluid_lithium` — Molten Lithium
+- `nuclearcraft:fluid_low_pressure_steam` — Low Pressure Steam
+- `nuclearcraft:fluid_low_quality_steam` — Low Quality Steam
+- `nuclearcraft:fluid_magnesium_nak_hot` — Hot Eutectic NaK-Magnesium Mixture
+- `nuclearcraft:fluid_magnesium_nak` — Eutectic NaK-Magnesium Mixture
+- `nuclearcraft:fluid_magnesium` — Molten Magnesium
+- `nuclearcraft:fluid_manganese_dioxide` — Molten Manganese Dioxide
+- `nuclearcraft:fluid_manganese` — Molten Manganese
+- `nuclearcraft:fluid_marshmallow` — Liquid Marshmallow
+- `nuclearcraft:fluid_methanol` — Methanol
+- `nuclearcraft:fluid_milk_chocolate` — Molten Milk Chocolate
+- `nuclearcraft:fluid_milk` — Milk
+- `nuclearcraft:fluid_nak_hot` — Hot Eutectic NaK Alloy
+- `nuclearcraft:fluid_nak` — Eutectic NaK Alloy
+- `nuclearcraft:fluid_naoh` — Molten Sodium Hydroxide
+- `nuclearcraft:fluid_neptunium_236_fluoride_flibe` — Molten FLiBe Salt Solution of Neptunium-236 Fluoride
+- `nuclearcraft:fluid_neptunium_236_fluoride` — Molten Neptunium-236 Fluoride
+- `nuclearcraft:fluid_neptunium_236` — Molten Neptunium-236
+- `nuclearcraft:fluid_neptunium_237_fluoride_flibe` — Molten FLiBe Salt Solution of Neptunium-237 Fluoride
+- `nuclearcraft:fluid_neptunium_237_fluoride` — Molten Neptunium-237 Fluoride
+- `nuclearcraft:fluid_neptunium_237` — Molten Neptunium-237
+- `nuclearcraft:fluid_neutron` — Neutron Fluid
+- `nuclearcraft:fluid_nitrogen` — Nitrogen
+- `nuclearcraft:fluid_oxygen_difluoride` — Oxygen Difluoride
+- `nuclearcraft:fluid_oxygen` — Oxygen
+- `nuclearcraft:fluid_plasma` — Plasma
+- `nuclearcraft:fluid_plutonium_238_fluoride_flibe` — Molten FLiBe Salt Solution of Plutonium-238 Fluoride
+- `nuclearcraft:fluid_plutonium_238_fluoride` — Molten Plutonium-238 Fluoride
+- `nuclearcraft:fluid_plutonium_238` — Molten Plutonium-238
+- `nuclearcraft:fluid_plutonium_239_fluoride_flibe` — Molten FLiBe Salt Solution of Plutonium-239 Fluoride
+- `nuclearcraft:fluid_plutonium_239_fluoride` — Molten Plutonium-239 Fluoride
+- `nuclearcraft:fluid_plutonium_239` — Molten Plutonium-239
+- `nuclearcraft:fluid_plutonium_241_fluoride_flibe` — Molten FLiBe Salt Solution of Plutonium-241 Fluoride
+- `nuclearcraft:fluid_plutonium_241_fluoride` — Molten Plutonium-241 Fluoride
+- `nuclearcraft:fluid_plutonium_241` — Molten Plutonium-241
+- `nuclearcraft:fluid_plutonium_242_fluoride_flibe` — Molten FLiBe Salt Solution of Plutonium-242 Fluoride
+- `nuclearcraft:fluid_plutonium_242_fluoride` — Molten Plutonium-242 Fluoride
+- `nuclearcraft:fluid_plutonium_242` — Molten Plutonium-242
+- `nuclearcraft:fluid_plutonium_fluoride_flibe` — Molten FLiBe Salt Solution of Plutonium Fluoride
+- `nuclearcraft:fluid_plutonium_fluoride` — Molten Plutonium Fluoride
+- `nuclearcraft:fluid_plutonium` — Molten Plutonium
+- `nuclearcraft:fluid_potassium_fluoride_solution` — Potassium Fluoride Solution
+- `nuclearcraft:fluid_potassium_hydroxide_solution` — Potassium Hydroxide Solution
+- `nuclearcraft:fluid_potassium` — Molten Potassium
+- `nuclearcraft:fluid_preheated_water` — Preheated Water
+- `nuclearcraft:fluid_quartz_nak_hot` — Hot Eutectic NaK-Quartz Mixture
+- `nuclearcraft:fluid_quartz_nak` — Eutectic NaK-Quartz Mixture
+- `nuclearcraft:fluid_quartz` — Molten Quartz
+- `nuclearcraft:fluid_radaway_slow` — Slow-Acting RadAway Fluid
+- `nuclearcraft:fluid_radaway` — RadAway Fluid
+- `nuclearcraft:fluid_redstone_nak_hot` — Hot Eutectic NaK-Redstone Mixture
+- `nuclearcraft:fluid_redstone_nak` — Eutectic NaK-Redstone Mixture
+- `nuclearcraft:fluid_sic_vapor` — Silicon Carbide Vapor
+- `nuclearcraft:fluid_silver` — Molten Silver
+- `nuclearcraft:fluid_sodium_fluoride_solution` — Sodium Fluoride Solution
+- `nuclearcraft:fluid_sodium_hydroxide_solution` — Sodium Hydroxide Solution
+- `nuclearcraft:fluid_sodium` — Molten Sodium
+- `nuclearcraft:fluid_steel` — Molten Steel
+- `nuclearcraft:fluid_sugar` — Molten Sugar
+- `nuclearcraft:fluid_sulfur_dioxide` — Sulfur Dioxide
+- `nuclearcraft:fluid_sulfur_trioxide` — Sulfur Trioxide
+- `nuclearcraft:fluid_sulfuric_acid` — Sulfuric Acid
+- `nuclearcraft:fluid_sulfur` — Molten Sulfur
+- `nuclearcraft:fluid_thorium_230_fluoride_flibe` — Molten FLiBe Salt Solution of Thorium-230 Fluoride
+- `nuclearcraft:fluid_thorium_230_fluoride` — Molten Thorium-230 Fluoride
+- `nuclearcraft:fluid_thorium_230` — Molten Thorium-230
+- `nuclearcraft:fluid_thorium_fluoride_flibe` — Molten FLiBe Salt Solution of Thorium Fluoride
+- `nuclearcraft:fluid_thorium_fluoride` — Molten Thorium Fluoride
+- `nuclearcraft:fluid_thorium` — Molten Thorium
+- `nuclearcraft:fluid_tin_nak_hot` — Hot Eutectic NaK-Tin Mixture
+- `nuclearcraft:fluid_tin_nak` — Eutectic NaK-Tin Mixture
+- `nuclearcraft:fluid_tin` — Molten Tin
+- `nuclearcraft:fluid_tough` — Molten Tough Alloy
+- `nuclearcraft:fluid_tritium` — Tritium
+- `nuclearcraft:fluid_unsweetened_chocolate` — Molten Unsweetened Chocolate
+- `nuclearcraft:fluid_uranium_233_fluoride_flibe` — Molten FLiBe Salt Solution of Uranium-233 Fluoride
+- `nuclearcraft:fluid_uranium_233_fluoride` — Molten Uranium-233 Fluoride
+- `nuclearcraft:fluid_uranium_233` — Molten Uranium-233
+- `nuclearcraft:fluid_uranium_235_fluoride_flibe` — Molten FLiBe Salt Solution of Uranium-235 Fluoride
+- `nuclearcraft:fluid_uranium_235_fluoride` — Molten Uranium-235 Fluoride
+- `nuclearcraft:fluid_uranium_235` — Molten Uranium-235
+- `nuclearcraft:fluid_uranium_238_fluoride_flibe` — Molten FLiBe Salt Solution of Uranium-238 Fluoride
+- `nuclearcraft:fluid_uranium_238_fluoride` — Molten Uranium-238 Fluoride
+- `nuclearcraft:fluid_uranium_238` — Molten Uranium-238
+- `nuclearcraft:fluid_uranium_fluoride_flibe` — Molten FLiBe Salt Solution of Uranium Fluoride
+- `nuclearcraft:fluid_uranium_fluoride` — Molten Uranium Fluoride
+- `nuclearcraft:fluid_uranium` — Molten Uranium
+- `nuclearcraft:fuel_reprocessor_active` — Fuel Reprocessor
+- `nuclearcraft:fuel_reprocessor_idle` — Fuel Reprocessor
+- `nuclearcraft:fusion_connector` — Fusion Connector
+- `nuclearcraft:fusion_core` — Fusion Core
+- `nuclearcraft:fusion_dummy_side` — Fusion Core
+- `nuclearcraft:fusion_dummy_top` — Fusion Core
+- `nuclearcraft:fusion_electromagnet_active` — Fusion Electromagnet
+- `nuclearcraft:fusion_electromagnet_idle` — Fusion Electromagnet
+- `nuclearcraft:fusion_electromagnet_transparent_active` — Transparent Fusion Electromagnet
+- `nuclearcraft:fusion_electromagnet_transparent_idle` — Transparent Fusion Electromagnet
+- `nuclearcraft:geiger_block` — Geiger Counter Block
+- `nuclearcraft:glowing_mushroom` — Glowing Mushroom
+- `nuclearcraft:heat_exchanger_computer_port` — Heat Exchanger Computer Port
+- `nuclearcraft:heat_exchanger_condenser_tube_copper` — Copper Condensation Tube
+- `nuclearcraft:heat_exchanger_condenser_tube_hard_carbon` — Hard Carbon Condensation Tube
+- `nuclearcraft:heat_exchanger_condenser_tube_thermoconducting` — Thermoconducting Alloy Condensation Tube
+- `nuclearcraft:heat_exchanger_controller` — Heat Exchanger Controller
+- `nuclearcraft:heat_exchanger_frame` — Heat Exchanger Frame
+- `nuclearcraft:heat_exchanger_glass` — Heat Exchanger Glass
+- `nuclearcraft:heat_exchanger_tube_copper` — Copper Heat Exchanger Tube
+- `nuclearcraft:heat_exchanger_tube_hard_carbon` — Hard Carbon Heat Exchanger Tube
+- `nuclearcraft:heat_exchanger_tube_thermoconducting` — Thermoconducting Alloy Heat Exchanger Tube
+- `nuclearcraft:heat_exchanger_vent` — Heat Exchanger Vent
+- `nuclearcraft:heat_exchanger_wall` — Heat Exchanger Shell
+- `nuclearcraft:helium_collector_compact` — Compact Helium Collector
+- `nuclearcraft:helium_collector_dense` — Dense Helium Collector
+- `nuclearcraft:helium_collector` — Helium Collector
+- `nuclearcraft:infuser_active` — Fluid Infuser
+- `nuclearcraft:infuser_idle` — Fluid Infuser
+- `nuclearcraft:ingot_block` — tile.nuclearcraft.ingot_block.name
+- `nuclearcraft:ingot_former_active` — Ingot Former
+- `nuclearcraft:ingot_former_idle` — Ingot Former
+- `nuclearcraft:irradiator_active` — Neutron Irradiator
+- `nuclearcraft:irradiator_idle` — Neutron Irradiator
+- `nuclearcraft:isotope_separator_active` — Isotope Separator
+- `nuclearcraft:isotope_separator_idle` — Isotope Separator
+- `nuclearcraft:lithium_ion_battery_advanced` — Advanced Lithium Ion Battery
+- `nuclearcraft:lithium_ion_battery_basic` — Basic Lithium Ion Battery
+- `nuclearcraft:lithium_ion_battery_du` — DU Lithium Ion Battery
+- `nuclearcraft:lithium_ion_battery_elite` — Elite Lithium Ion Battery
+- `nuclearcraft:machine_interface` — Machine Interface
+- `nuclearcraft:manufactory_active` — Manufactory
+- `nuclearcraft:manufactory_idle` — Manufactory
+- `nuclearcraft:melter_active` — Melter
+- `nuclearcraft:melter_idle` — Melter
+- `nuclearcraft:nitrogen_collector_compact` — Compact Nitrogen Collector
+- `nuclearcraft:nitrogen_collector_dense` — Dense Nitrogen Collector
+- `nuclearcraft:nitrogen_collector` — Nitrogen Collector
+- `nuclearcraft:nuclear_furnace_active` — Nuclear Furnace
+- `nuclearcraft:nuclear_furnace_idle` — Nuclear Furnace
+- `nuclearcraft:ore` — tile.nuclearcraft.ore.name
+- `nuclearcraft:pressurizer_active` — Pressurizer
+- `nuclearcraft:pressurizer_idle` — Pressurizer
+- `nuclearcraft:radiation_scrubber` — Radiation Scrubber
+- `nuclearcraft:reactor_casing_transparent` — Transparent Fission Reactor Casing
+- `nuclearcraft:reactor_door` — item.nuclearcraft.reactor_door.name
+- `nuclearcraft:reactor_trapdoor` — Reactor Trapdoor
+- `nuclearcraft:rock_crusher_active` — Rock Crusher
+- `nuclearcraft:rock_crusher_idle` — Rock Crusher
+- `nuclearcraft:rtg_americium` — Americium RTG
+- `nuclearcraft:rtg_californium` — Californium RTG
+- `nuclearcraft:rtg_plutonium` — Plutonium RTG
+- `nuclearcraft:rtg_uranium` — Uranium RTG
+- `nuclearcraft:salt_fission_beam` — Molten Salt Reactor Beam
+- `nuclearcraft:salt_fission_computer_port` — Molten Salt Reactor Computer Port
+- `nuclearcraft:salt_fission_controller` — Molten Salt Reactor Controller
+- `nuclearcraft:salt_fission_distributor` — Molten Salt Fuel Distributor
+- `nuclearcraft:salt_fission_frame` — Molten Salt Reactor Frame
+- `nuclearcraft:salt_fission_glass` — Molten Salt Reactor Glass
+- `nuclearcraft:salt_fission_heater` — Molten Salt Coolant Heater
+- `nuclearcraft:salt_fission_moderator` — Molten Salt Reactor Moderator Housing
+- `nuclearcraft:salt_fission_redstone_port` — Molten Salt Reactor Redstone Port
+- `nuclearcraft:salt_fission_retriever` — Molten Salt Depleted Fuel Retriever
+- `nuclearcraft:salt_fission_vent` — Molten Salt Reactor Vent
+- `nuclearcraft:salt_fission_vessel` — Molten Salt Fission Vessel
+- `nuclearcraft:salt_fission_wall` — Molten Salt Reactor Wall
+- `nuclearcraft:salt_mixer_active` — Salt Mixer
+- `nuclearcraft:salt_mixer_idle` — Salt Mixer
+- `nuclearcraft:solar_panel_advanced` — Advanced Solar Panel
+- `nuclearcraft:solar_panel_basic` — Basic Solar Panel
+- `nuclearcraft:solar_panel_du` — DU Solar Panel
+- `nuclearcraft:solar_panel_elite` — Elite Solar Panel
+- `nuclearcraft:supercooler_active` — Supercooler
+- `nuclearcraft:supercooler_idle` — Supercooler
+- `nuclearcraft:tritium_lamp` — Tritium Lamp
+- `nuclearcraft:turbine_coil_connector` — Turbine Dynamo Coil Connector
+- `nuclearcraft:turbine_computer_port` — Turbine Computer Port
+- `nuclearcraft:turbine_controller` — Turbine Controller
+- `nuclearcraft:turbine_dynamo_coil` — tile.nuclearcraft.turbine_dynamo_coil.name
+- `nuclearcraft:turbine_frame` — Turbine Frame
+- `nuclearcraft:turbine_glass` — Transparent Turbine Wall
+- `nuclearcraft:turbine_inlet` — Turbine Fluid Inlet
+- `nuclearcraft:turbine_outlet` — Turbine Fluid Outlet
+- `nuclearcraft:turbine_rotor_bearing` — Turbine Rotor Bearing
+- `nuclearcraft:turbine_rotor_blade_extreme` — Extreme Alloy Turbine Rotor Blade
+- `nuclearcraft:turbine_rotor_blade_sic_sic_cmc` — SiC-SiC CMC Turbine Rotor Blade
+- `nuclearcraft:turbine_rotor_blade_steel` — Steel Turbine Rotor Blade
+- `nuclearcraft:turbine_rotor_shaft` — Turbine Rotor Shaft
+- `nuclearcraft:turbine_rotor_stator` — Turbine Rotor Stator
+- `nuclearcraft:turbine_wall` — Turbine Wall
+- `nuclearcraft:voltaic_pile_advanced` — Advanced Voltaic Pile
+- `nuclearcraft:voltaic_pile_basic` — Basic Voltaic Pile
+- `nuclearcraft:voltaic_pile_du` — DU Voltaic Pile
+- `nuclearcraft:voltaic_pile_elite` — Elite Voltaic Pile
+- `nuclearcraft:water_source_compact` — Compact Infinite Water Source
+- `nuclearcraft:water_source_dense` — Dense Infinite Water Source
+- `nuclearcraft:water_source` — Infinite Water Source
+
+### openblocks
+- `openblocks:auto_anvil` — Auto Anvil
+- `openblocks:auto_enchantment_table` — Auto Enchantment Table
+- `openblocks:beartrap` — Bear Trap
+- `openblocks:big_button_wood` — Wooden Big Button
+- `openblocks:big_button` — Stone Big Button
+- `openblocks:block_breaker` — Block Breaker
+- `openblocks:block_placer` — Block Placer
+- `openblocks:builder_guide` — Enhanced Building Guide
+- `openblocks:cannon` — Item Cannon
+- `openblocks:canvas_glass` — Canvas
+- `openblocks:canvas` — Canvas
+- `openblocks:donation_station` — Donation Station
+- `openblocks:drawing_table` — Drawing Table
+- `openblocks:elevator_rotating` — Rotating Elevator
+- `openblocks:elevator` — Elevator
+- `openblocks:fan` — Fan
+- `openblocks:flag` — Flag
+- `openblocks:golden_egg` — Golden Egg
+- `openblocks:guide` — Building Guide
+- `openblocks:heal` — Healer
+- `openblocks:imaginary` — tile.openblocks.imaginary.name
+- `openblocks:item_dropper` — Item Dropper
+- `openblocks:ladder` — Jaded Ladder
+- `openblocks:paint_can` — Paint Can
+- `openblocks:paint_mixer` — Paint Mixer
+- `openblocks:path` — Path
+- `openblocks:projector` — Height Map Projector
+- `openblocks:rope_ladder` — Rope Ladder
+- `openblocks:scaffolding` — Scaffolding
+- `openblocks:sky` — Sky Block
+- `openblocks:sponge` — Sponge
+- `openblocks:sprinkler` — Sprinkler
+- `openblocks:tank` — Tank
+- `openblocks:target` — Target
+- `openblocks:trophy` — Trophy
+- `openblocks:vacuum_hopper` — Vacuum Hopper
+- `openblocks:village_highlighter` — Village Highlighter
+- `openblocks:xp_bottler` — XP Bottler
+- `openblocks:xp_drain` — XP Drain
+- `openblocks:xp_shower` — XP Shower
+
+### opencomputers
+- `opencomputers:adapter` — Adapter
+- `opencomputers:assembler` — Electronics Assembler
+- `opencomputers:cable` — Cable
+- `opencomputers:capacitor` — Capacitor
+- `opencomputers:carpetedcapacitor` — Carpeted Capacitor
+- `opencomputers:case1` — Computer Case (Tier 1)
+- `opencomputers:case2` — Computer Case (Tier 2)
+- `opencomputers:case3` — Computer Case (Tier 3)
+- `opencomputers:casecreative` — Computer Case (Creative)
+- `opencomputers:chameliumblock` — Block of Chamelium
+- `opencomputers:charger` — Charger
+- `opencomputers:disassembler` — Disassembler
+- `opencomputers:diskdrive` — Disk Drive
+- `opencomputers:endstone` — End Stone
+- `opencomputers:geolyzer` — Geolyzer
+- `opencomputers:hologram1` — Hologram Projector (Tier 1)
+- `opencomputers:hologram2` — Hologram Projector (Tier 2)
+- `opencomputers:keyboard` — Keyboard
+- `opencomputers:microcontroller` — Microcontroller
+- `opencomputers:motionsensor` — Motion Sensor
+- `opencomputers:netsplitter` — Net Splitter
+- `opencomputers:powerconverter` — Power Converter
+- `opencomputers:powerdistributor` — Power Distributor
+- `opencomputers:printer` — 3D Printer
+- `opencomputers:print` — 3D Print
+- `opencomputers:rack` — Rack
+- `opencomputers:raid` — Raid
+- `opencomputers:redstone` — Redstone I/O
+- `opencomputers:relay` — Relay
+- `opencomputers:robotafterimage` — Robot
+- `opencomputers:robot` — robot.name
+- `opencomputers:screen1` — Screen (Tier 1)
+- `opencomputers:screen2` — Screen (Tier 2)
+- `opencomputers:screen3` — Screen (Tier 3)
+- `opencomputers:transposer` — Transposer
+- `opencomputers:waypoint` — Waypoint
+
+### openterraingenerator
+- `openterraingenerator:portalotg_beige` — tile.null.name
+- `openterraingenerator:portalotg_black` — tile.null.name
+- `openterraingenerator:portalotg_blue` — tile.null.name
+- `openterraingenerator:portalotg_crystalblue` — tile.null.name
+- `openterraingenerator:portalotg_darkblue` — tile.null.name
+- `openterraingenerator:portalotg_darkgreen` — tile.null.name
+- `openterraingenerator:portalotg_darkred` — tile.null.name
+- `openterraingenerator:portalotg_emerald` — tile.null.name
+- `openterraingenerator:portalotg_flame` — tile.null.name
+- `openterraingenerator:portalotg_gold` — tile.null.name
+- `openterraingenerator:portalotg_green` — tile.null.name
+- `openterraingenerator:portalotg_grey` — tile.null.name
+- `openterraingenerator:portalotg_lightblue` — tile.null.name
+- `openterraingenerator:portalotg_lightgreen` — tile.null.name
+- `openterraingenerator:portalotg_orange` — tile.null.name
+- `openterraingenerator:portalotg_pink` — tile.null.name
+- `openterraingenerator:portalotg_red` — tile.null.name
+- `openterraingenerator:portalotg_white` — tile.null.name
+- `openterraingenerator:portalotg_yellow` — tile.null.name
+- `openterraingenerator:portalotg` — tile.null.name
+
+### plustic
+- `plustic:alumiteblock` — Alumite Block
+- `plustic:centrifuge` — Essentia Centrifuge
+- `plustic:invarblock` — Invar Block
+- `plustic:mirionblock` — Mirion Block
+- `plustic:osgloglasblock` — Osgloglas Block
+- `plustic:osmiridiumblock` — Osmiridium Block
+- `plustic:plustic.molten_alumite` — Molten Alumite
+- `plustic:plustic.molten_elementium` — Molten Elementium
+- `plustic:plustic.molten_manasteel` — Molten Manasteel
+- `plustic:plustic.molten_mirion` — Molten Mirion
+- `plustic:plustic.molten_osgloglas` — Molten Osgloglas
+- `plustic:plustic.molten_osmiridium` — Molten Osmiridium
+- `plustic:plustic.molten_osmium` — Molten Osmium
+- `plustic:plustic.molten_psimetal` — Molten Psimetal
+- `plustic:plustic.molten_refinedglowstone` — Refined Glowstone
+- `plustic:plustic.molten_refinedobsidian` — Molten Refined Obsidian
+- `plustic:plustic.molten_starmetal` — Molten Starmetal
+- `plustic:plustic.molten_terrasteel` — Molten Terrasteel
+- `plustic:plustic.molten_thaumium` — Molten Thaumium
+- `plustic:plustic.molten_titanium` — Molten Titanium
+
+### pneumaticcraft
+- `pneumaticcraft:advanced_air_compressor` — Advanced Air Compressor
+- `pneumaticcraft:advanced_liquid_compressor` — Advanced Liquid Compressor
+- `pneumaticcraft:advanced_pressure_tube` — Advanced Pressure Tube
+- `pneumaticcraft:aerial_interface` — Aerial Interface
+- `pneumaticcraft:air_cannon` — Air Cannon
+- `pneumaticcraft:air_compressor` — Air Compressor
+- `pneumaticcraft:aphorism_tile` — Aphorism Tile
+- `pneumaticcraft:assembly_controller` — Assembly Controller
+- `pneumaticcraft:assembly_drill` — Assembly Drill
+- `pneumaticcraft:assembly_io_unit` — Assembly IO Unit
+- `pneumaticcraft:assembly_laser` — Assembly Laser
+- `pneumaticcraft:assembly_platform` — Assembly Platform
+- `pneumaticcraft:charging_station` — Charging Station
+- `pneumaticcraft:compressed_iron_block` — Block of Compressed Iron
+- `pneumaticcraft:creative_compressor` — Creative Compressor
+- `pneumaticcraft:drone_interface` — Drone Interface
+- `pneumaticcraft:drone_redstone_emitter` — tile.drone_redstone_emitter.name
+- `pneumaticcraft:electric_compressor` — Electric Compressor
+- `pneumaticcraft:electrostatic_compressor` — Electrostatic Compressor
+- `pneumaticcraft:elevator_base` — Elevator Base
+- `pneumaticcraft:elevator_caller` — Elevator Caller
+- `pneumaticcraft:elevator_frame` — Elevator Frame
+- `pneumaticcraft:fake_ice` — tile.fake_ice.name
+- `pneumaticcraft:fluid.etchacid` — Etching Acid
+- `pneumaticcraft:fluid.fuel` — Gasoline
+- `pneumaticcraft:fluid.kerosene` — Kerosene
+- `pneumaticcraft:fluid.lpg` — LPG
+- `pneumaticcraft:fluid.plastic` — Plastic
+- `pneumaticcraft:flux_compressor` — Flux Compressor
+- `pneumaticcraft:gas_lift` — Gas Lift
+- `pneumaticcraft:heat_sink` — Heat Sink
+- `pneumaticcraft:kerosene_lamp_light` — tile.kerosene_lamp_light.name
+- `pneumaticcraft:kerosene_lamp` — Kerosene Lamp
+- `pneumaticcraft:liquid_compressor` — Liquid Compressor
+- `pneumaticcraft:liquid_hopper` — Liquid Hopper
+- `pneumaticcraft:omnidirectional_hopper` — Omnidirectional Hopper
+- `pneumaticcraft:plastic_mixer` — Plastic Mixer
+- `pneumaticcraft:pneumatic_door_base` — Pneumatic Door Base
+- `pneumaticcraft:pneumatic_door` — Pneumatic Door
+- `pneumaticcraft:pneumatic_dynamo` — Pneumatic Dynamo
+- `pneumaticcraft:pneumatic_generator` — Pneumatic Generator
+- `pneumaticcraft:pressure_chamber_glass` — Pressure Chamber Glass
+- `pneumaticcraft:pressure_chamber_interface` — Pressure Chamber Interface
+- `pneumaticcraft:pressure_chamber_valve` — Pressure Chamber Valve
+- `pneumaticcraft:pressure_chamber_wall` — Pressure Chamber Wall
+- `pneumaticcraft:pressure_tube` — Pressure Tube
+- `pneumaticcraft:programmable_controller` — Programmable Controller
+- `pneumaticcraft:programmer` — Programmer
+- `pneumaticcraft:refinery` — Refinery
+- `pneumaticcraft:security_station` — Security Station
+- `pneumaticcraft:sentry_turret` — Sentry Turret
+- `pneumaticcraft:thermal_compressor` — Thermal Compressor
+- `pneumaticcraft:thermopneumatic_processing_plant` — Thermopneumatic Processing Plant
+- `pneumaticcraft:universal_sensor` — Universal Sensor
+- `pneumaticcraft:uv_light_box` — UV Light Box
+- `pneumaticcraft:vacuum_pump` — Vacuum Pump
+- `pneumaticcraft:vortex_tube` — Vortex Tube
+
+### psi
+- `psi:cad_assembler` — tile.cad_assembler.name
+- `psi:conjured` — tile.conjured.name
+- `psi:programmer` — Programmer
+- `psi:psi_decorative` — tile.psi_decorative.name
+
+### quark
+- `quark:acacia_button` — tile.acacia_button.name
+- `quark:acacia_pressure_plate` — tile.acacia_pressure_plate.name
+- `quark:andesite_speleothem` — tile.andesite_speleothem.name
+- `quark:bark` — tile.bark.name
+- `quark:basalt_speleothem` — tile.basalt_speleothem.name
+- `quark:basalt_wall` — tile.basalt_wall.name
+- `quark:basalt` — Basalt
+- `quark:biome_brick` — tile.biome_brick.name
+- `quark:biome_cobblestone` — tile.biome_cobblestone.name
+- `quark:birch_button` — tile.birch_button.name
+- `quark:birch_pressure_plate` — tile.birch_pressure_plate.name
+- `quark:black_ash` — tile.black_ash.name
+- `quark:blaze_lantern` — tile.blaze_lantern.name
+- `quark:blaze_rod` — tile.blaze_rod.name
+- `quark:candle` — tile.candle.name
+- `quark:carved_wood` — tile.carved_wood.name
+- `quark:charred_nether_bricks` — tile.charred_nether_bricks.name
+- `quark:chute` — tile.chute.name
+- `quark:cobbed_stone_slab_double` — tile.cobbed_stone_slab_double.name
+- `quark:cobbed_stone_slab` — tile.cobbed_stone_slab.name
+- `quark:cobbed_stone_stairs` — tile.cobbed_stone_stairs.name
+- `quark:cobbed_stone_wall` — tile.cobbed_stone_wall.name
+- `quark:color_slime` — tile.color_slime.name
+- `quark:colored_flowerpot_black` — tile.colored_flowerpot_black.name
+- `quark:colored_flowerpot_blue` — tile.colored_flowerpot_blue.name
+- `quark:colored_flowerpot_brown` — tile.colored_flowerpot_brown.name
+- `quark:colored_flowerpot_cyan` — tile.colored_flowerpot_cyan.name
+- `quark:colored_flowerpot_gray` — tile.colored_flowerpot_gray.name
+- `quark:colored_flowerpot_green` — tile.colored_flowerpot_green.name
+- `quark:colored_flowerpot_light_blue` — tile.colored_flowerpot_light_blue.name
+- `quark:colored_flowerpot_lime` — tile.colored_flowerpot_lime.name
+- `quark:colored_flowerpot_magenta` — tile.colored_flowerpot_magenta.name
+- `quark:colored_flowerpot_orange` — tile.colored_flowerpot_orange.name
+- `quark:colored_flowerpot_pink` — tile.colored_flowerpot_pink.name
+- `quark:colored_flowerpot_purple` — tile.colored_flowerpot_purple.name
+- `quark:colored_flowerpot_red` — tile.colored_flowerpot_red.name
+- `quark:colored_flowerpot_silver` — tile.colored_flowerpot_silver.name
+- `quark:colored_flowerpot_white` — tile.colored_flowerpot_white.name
+- `quark:colored_flowerpot_yellow` — tile.colored_flowerpot_yellow.name
+- `quark:crystal_pane` — tile.crystal_pane.name
+- `quark:crystal` — Crystallized Obsidian
+- `quark:custom_bookshelf` — tile.custom_bookshelf.name
+- `quark:custom_chest_trap` — tile.custom_chest_trap.name
+- `quark:custom_chest` — tile.custom_chest.name
+- `quark:dark_oak_button` — tile.dark_oak_button.name
+- `quark:dark_oak_pressure_plate` — tile.dark_oak_pressure_plate.name
+- `quark:diorite_speleothem` — tile.diorite_speleothem.name
+- `quark:duskbound_block` — tile.duskbound_block.name
+- `quark:duskbound_lantern` — tile.duskbound_lantern.name
+- `quark:elder_prismarine_bricks_slab_double` — tile.elder_prismarine_bricks_slab_double.name
+- `quark:elder_prismarine_bricks_slab` — tile.elder_prismarine_bricks_slab.name
+- `quark:elder_prismarine_bricks_stairs` — tile.elder_prismarine_bricks_stairs.name
+- `quark:elder_prismarine_bricks_wall` — tile.elder_prismarine_bricks_wall.name
+- `quark:elder_prismarine_dark_slab_double` — tile.elder_prismarine_dark_slab_double.name
+- `quark:elder_prismarine_dark_slab` — tile.elder_prismarine_dark_slab.name
+- `quark:elder_prismarine_dark_stairs` — tile.elder_prismarine_dark_stairs.name
+- `quark:elder_prismarine_dark_wall` — tile.elder_prismarine_dark_wall.name
+- `quark:elder_prismarine_slab_double` — tile.elder_prismarine_slab_double.name
+- `quark:elder_prismarine_slab` — tile.elder_prismarine_slab.name
+- `quark:elder_prismarine_stairs` — tile.elder_prismarine_stairs.name
+- `quark:elder_prismarine_wall` — tile.elder_prismarine_wall.name
+- `quark:elder_prismarine` — tile.elder_prismarine.name
+- `quark:elder_sea_lantern` — tile.elder_sea_lantern.name
+- `quark:fire_stone_brick_slab_double` — tile.fire_stone_brick_slab_double.name
+- `quark:fire_stone_brick_slab` — tile.fire_stone_brick_slab.name
+- `quark:fire_stone_brick_stairs` — tile.fire_stone_brick_stairs.name
+- `quark:fire_stone_brick_wall` — tile.fire_stone_brick_wall.name
+- `quark:fire_stone_slab_double` — tile.fire_stone_slab_double.name
+- `quark:fire_stone_slab` — tile.fire_stone_slab.name
+- `quark:fire_stone_stairs` — tile.fire_stone_stairs.name
+- `quark:fire_stone_wall` — tile.fire_stone_wall.name
+- `quark:framed_glass_pane` — tile.framed_glass_pane.name
+- `quark:framed_glass` — tile.framed_glass.name
+- `quark:glowcelium` — tile.glowcelium.name
+- `quark:glowshroom_block` — tile.glowshroom_block.name
+- `quark:glowshroom` — tile.glowshroom.name
+- `quark:glowstone_dust_block` — tile.glowstone_dust_block.name
+- `quark:gold_button` — tile.gold_button.name
+- `quark:granite_speleothem` — tile.granite_speleothem.name
+- `quark:grate` — tile.grate.name
+- `quark:gravisand` — tile.gravisand.name
+- `quark:gunpowder_block` — tile.gunpowder_block.name
+- `quark:hardened_clay_tiles` — tile.hardened_clay_tiles.name
+- `quark:icy_stone_brick_slab_double` — tile.icy_stone_brick_slab_double.name
+- `quark:icy_stone_brick_slab` — tile.icy_stone_brick_slab.name
+- `quark:icy_stone_brick_stairs` — tile.icy_stone_brick_stairs.name
+- `quark:icy_stone_brick_wall` — tile.icy_stone_brick_wall.name
+- `quark:icy_stone_slab_double` — tile.icy_stone_slab_double.name
+- `quark:icy_stone_slab` — tile.icy_stone_slab.name
+- `quark:icy_stone_stairs` — tile.icy_stone_stairs.name
+- `quark:icy_stone_wall` — tile.icy_stone_wall.name
+- `quark:iron_button` — tile.iron_button.name
+- `quark:iron_ladder` — tile.iron_ladder.name
+- `quark:iron_plate` — tile.iron_plate.name
+- `quark:iron_rod` — tile.iron_rod.name
+- `quark:jasper_speleothem` — tile.jasper_speleothem.name
+- `quark:jasper_wall` — tile.jasper_wall.name
+- `quark:jasper` — tile.jasper.name
+- `quark:jungle_button` — tile.jungle_button.name
+- `quark:jungle_pressure_plate` — tile.jungle_pressure_plate.name
+- `quark:leaf_carpet` — tile.leaf_carpet.name
+- `quark:limestone_speleothem` — tile.limestone_speleothem.name
+- `quark:limestone_wall` — tile.limestone_wall.name
+- `quark:limestone` — tile.limestone.name
+- `quark:lit_lamp` — tile.lit_lamp.name
+- `quark:magma_bricks_slab_double` — tile.magma_bricks_slab_double.name
+- `quark:magma_bricks_slab` — tile.magma_bricks_slab.name
+- `quark:magma_bricks_stairs` — tile.magma_bricks_stairs.name
+- `quark:magma_bricks` — tile.magma_bricks.name
+- `quark:marble_speleothem` — tile.marble_speleothem.name
+- `quark:marble_wall` — tile.marble_wall.name
+- `quark:marble` — tile.marble.name
+- `quark:midori_block_slab_double` — tile.midori_block_slab_double.name
+- `quark:midori_block_slab` — tile.midori_block_slab.name
+- `quark:midori_block_stairs` — tile.midori_block_stairs.name
+- `quark:midori_block` — tile.midori_block.name
+- `quark:midori_pillar` — tile.midori_pillar.name
+- `quark:monster_box` — tile.monster_box.name
+- `quark:nether_brick_fence_gate` — tile.nether_brick_fence_gate.name
+- `quark:netherrack_speleothem` — tile.netherrack_speleothem.name
+- `quark:obsidian_pressure_plate` — tile.obsidian_pressure_plate.name
+- `quark:paper_lantern` — tile.paper_lantern.name
+- `quark:paper_wall_big` — tile.paper_wall_big.name
+- `quark:paper_wall_sakura` — tile.paper_wall_sakura.name
+- `quark:paper_wall` — tile.paper_wall.name
+- `quark:polished_netherrack` — tile.polished_netherrack.name
+- `quark:polished_stone` — tile.polished_stone.name
+- `quark:quilted_wool` — tile.quilted_wool.name
+- `quark:rain_detector` — tile.rain_detector.name
+- `quark:redstone_inductor` — tile.redstone_inductor.name
+- `quark:redstone_randomizer` — tile.redstone_randomizer.name
+- `quark:reed_block` — tile.reed_block.name
+- `quark:roots_black_flower` — tile.roots_black_flower.name
+- `quark:roots_blue_flower` — tile.roots_blue_flower.name
+- `quark:roots_white_flower` — tile.roots_white_flower.name
+- `quark:roots` — tile.roots.name
+- `quark:rope` — tile.rope.name
+- `quark:sandstone_new` — tile.sandstone_new.name
+- `quark:sandy_bricks` — tile.sandy_bricks.name
+- `quark:slate_speleothem` — tile.slate_speleothem.name
+- `quark:slate_wall` — tile.slate_wall.name
+- `quark:slate` — tile.slate.name
+- `quark:smoker` — tile.smoker.name
+- `quark:snow_bricks` — tile.snow_bricks.name
+- `quark:soul_sandstone_slab_double` — tile.soul_sandstone_slab_double.name
+- `quark:soul_sandstone_slab` — tile.soul_sandstone_slab.name
+- `quark:soul_sandstone` — tile.soul_sandstone.name
+- `quark:spruce_button` — tile.spruce_button.name
+- `quark:spruce_pressure_plate` — tile.spruce_pressure_plate.name
+- `quark:stained_clay_tiles` — tile.stained_clay_tiles.name
+- `quark:stone_basalt_slab_double` — tile.stone_basalt_slab_double.name
+- `quark:stone_basalt_slab` — tile.stone_basalt_slab.name
+- `quark:stone_basalt_stairs` — tile.stone_basalt_stairs.name
+- `quark:stone_jasper_slab_double` — tile.stone_jasper_slab_double.name
+- `quark:stone_jasper_slab` — tile.stone_jasper_slab.name
+- `quark:stone_jasper_stairs` — tile.stone_jasper_stairs.name
+- `quark:stone_limestone_slab_double` — tile.stone_limestone_slab_double.name
+- `quark:stone_limestone_slab` — tile.stone_limestone_slab.name
+- `quark:stone_limestone_stairs` — tile.stone_limestone_stairs.name
+- `quark:stone_marble_slab_double` — tile.stone_marble_slab_double.name
+- `quark:stone_marble_slab` — tile.stone_marble_slab.name
+- `quark:stone_marble_stairs` — tile.stone_marble_stairs.name
+- `quark:stone_slate_slab_double` — tile.stone_slate_slab_double.name
+- `quark:stone_slate_slab` — tile.stone_slate_slab.name
+- `quark:stone_slate_stairs` — tile.stone_slate_stairs.name
+- `quark:stone_speleothem` — tile.stone_speleothem.name
+- `quark:sturdy_stone` — tile.sturdy_stone.name
+- `quark:sugar_block` — tile.sugar_block.name
+- `quark:thatch` — Thatch
+- `quark:turf_slab_double` — tile.turf_slab_double.name
+- `quark:turf_slab` — tile.turf_slab.name
+- `quark:turf_stairs` — tile.turf_stairs.name
+- `quark:turf` — Moon Turf
+- `quark:variant_leaves` — tile.variant_leaves.name
+- `quark:variant_sapling` — tile.variant_sapling.name
+- `quark:vertical_planks` — tile.vertical_planks.name
+- `quark:world_stone_bricks` — tile.world_stone_bricks.name
+- `quark:world_stone_carved` — tile.world_stone_carved.name
+- `quark:world_stone_pavement` — tile.world_stone_pavement.name
+
+### rebornstorage
+- `rebornstorage:multicrafter` — tile.rebornstorage.multicrafter.name
+
+### reccomplex
+- `reccomplex:generic_solid` — Generic Solid
+- `reccomplex:generic_space` — Generic Space
+- `reccomplex:maze_generator` — Maze Generator
+- `reccomplex:spawn_script` — Script Block
+- `reccomplex:structure_generator` — Structure Generator
+- `reccomplex:weighted_command_block` — tile.spawn_command.name
+
+### redstonearsenal
+- `redstonearsenal:storage` — tile.redstonearsenal.storage.name
+
+### refinedstoragerequestify
+- `refinedstoragerequestify:requester` — Requester
+
+### refinedstorage
+- `refinedstorage:cable` — Cable
+- `refinedstorage:constructor` — Constructor
+- `refinedstorage:controller` — block.refinedstorage
+- `refinedstorage:crafter_manager` — Crafter Manager
+- `refinedstorage:crafter` — Crafter
+- `refinedstorage:crafting_monitor` — Crafting Monitor
+- `refinedstorage:destructor` — Destructor
+- `refinedstorage:detector` — Detector
+- `refinedstorage:disk_drive` — Disk Drive
+- `refinedstorage:disk_manipulator` — Disk Manipulator
+- `refinedstorage:exporter` — Exporter
+- `refinedstorage:external_storage` — External Storage
+- `refinedstorage:fluid_interface` — Fluid Interface
+- `refinedstorage:fluid_storage` — block.refinedstorage
+- `refinedstorage:grid` — block.refinedstorage
+- `refinedstorage:importer` — Importer
+- `refinedstorage:interface` — Interface
+- `refinedstorage:machine_casing` — Machine Casing
+- `refinedstorage:network_receiver` — Network Receiver
+- `refinedstorage:network_transmitter` — Network Transmitter
+- `refinedstorage:portable_grid` — block.refinedstorage
+- `refinedstorage:quartz_enriched_iron_block` — Block of Quartz Enriched Iron
+- `refinedstorage:reader` — Reader
+- `refinedstorage:relay` — Relay
+- `refinedstorage:security_manager` — Security Manager
+- `refinedstorage:storage_monitor` — Storage Monitor
+- `refinedstorage:storage` — block.refinedstorage
+- `refinedstorage:wireless_transmitter` — Wireless Transmitter
+- `refinedstorage:writer` — Writer
+
+### rf-capability-adapter
+- `rf-capability-adapter:aecapabilityadapter` — ME Capability Adapter
+
+### rftoolscontrol
+- `rftoolscontrol:craftingstation` — Crafting Station
+- `rftoolscontrol:node` — Node
+- `rftoolscontrol:processor` — Processor
+- `rftoolscontrol:programmer` — Programmer
+- `rftoolscontrol:tank` — Multi Tank
+- `rftoolscontrol:workbench` — Workbench
+
+### rftoolsdim
+- `rftoolsdim:activity_probe` — Activity Probe
+- `rftoolsdim:biome_absorber` — Biome Absorber
+- `rftoolsdim:dimension_builder` — Dimension Builder
+- `rftoolsdim:dimension_editor` — Dimension Editor
+- `rftoolsdim:dimension_enscriber` — Dimension Enscriber
+- `rftoolsdim:dimensional_blank_block` — Dimensional Blank Block
+- `rftoolsdim:dimensional_block` — Dimensional Block
+- `rftoolsdim:dimensional_cross2_block` — Dimensional Cross 2 Block
+- `rftoolsdim:dimensional_cross_block` — Dimensional Cross Block
+- `rftoolsdim:dimensional_pattern1_block` — Dimensional Pattern 1 Block
+- `rftoolsdim:dimensional_pattern2_block` — Dimensional Pattern 2 Block
+- `rftoolsdim:dimensional_small_blocks` — Dimensional Small Blocks
+- `rftoolsdim:dimlet_workbench` — Dimlet Workbench
+- `rftoolsdim:energy_extractor` — Energy Extractor
+- `rftoolsdim:fake_gravel` — levarG
+- `rftoolsdim:fake_sand` — dnaS
+- `rftoolsdim:fake_water` — retaW
+- `rftoolsdim:feature_absorber` — Feature Absorber
+- `rftoolsdim:liquid_absorber` — Liquid Absorber
+- `rftoolsdim:material_absorber` — Material Absorber
+- `rftoolsdim:terrain_absorber` — Terrain Absorber
+- `rftoolsdim:time_absorber` — Time Absorber
+
+### rftools
+- `rftools:analog_block` — Analog
+- `rftools:block_protector` — Block Protector
+- `rftools:booster` — Booster
+- `rftools:builder` — Builder
+- `rftools:camo_shield_block_opaque` — Camo Shield Block
+- `rftools:camo_shield_block` — Camo Shield Block
+- `rftools:coalgenerator` — Coal Generator
+- `rftools:composer` — Composer
+- `rftools:counter_block` — Counter
+- `rftools:crafter1` — Crafter Tier 1
+- `rftools:crafter2` — Crafter Tier 2
+- `rftools:crafter3` — Crafter Tier 3
+- `rftools:creative_screen` — Creative Screen
+- `rftools:destination_analyzer` — Destination Analyzer
+- `rftools:dialing_device` — Dialing Device
+- `rftools:digit_block` — Digit
+- `rftools:dimensional_shard_ore` — Dimensional Shard Ore
+- `rftools:elevator` — Elevator
+- `rftools:ender_monitor` — Ender Monitor
+- `rftools:endergenic` — Endergenic Generator
+- `rftools:environmental_controller` — Environmental Controller
+- `rftools:invchecker_block` — Inventory Checker
+- `rftools:invisible_shield_block_opaque` — Invisible Shield Block
+- `rftools:invisible_shield_block` — Invisible Shield Block
+- `rftools:item_filter` — Item Filter
+- `rftools:level_emitter` — Level Emitter
+- `rftools:liquid_monitor` — Liquid Monitor
+- `rftools:locator` — Locator
+- `rftools:logic_block` — Logic Gate
+- `rftools:machine_base` — Machine Base
+- `rftools:machine_frame` — Machine Frame
+- `rftools:machine_infuser` — Machine Infuser
+- `rftools:matter_beamer` — Matter Beamer
+- `rftools:matter_booster` — Matter Booster
+- `rftools:matter_receiver` — Matter Receiver
+- `rftools:matter_transmitter` — Matter Transmitter
+- `rftools:modular_storage` — Modular Storage
+- `rftools:notick_camo_shield_block_opaque` — Camo Shield Block
+- `rftools:notick_camo_shield_block` — Camo Shield Block
+- `rftools:notick_invisible_shield_block_opaque` — Invisible Shield Block
+- `rftools:notick_invisible_shield_block` — Invisible Shield Block
+- `rftools:notick_solid_shield_block_opaque` — Solid Shield Block
+- `rftools:notick_solid_shield_block` — Solid Shield Block
+- `rftools:pearl_injector` — Pearl Injector
+- `rftools:powercell_advanced` — Advanced Powercell
+- `rftools:powercell_creative` — Creative Powercell
+- `rftools:powercell_simple` — Simple Powercell
+- `rftools:powercell` — Powercell
+- `rftools:projector` — Projector
+- `rftools:redstone_receiver_block` — Redstone Receiver
+- `rftools:redstone_transmitter_block` — Redstone Transmitter
+- `rftools:relay` — Power Relay
+- `rftools:remote_scanner` — Remote Scanner
+- `rftools:remote_storage` — Remote Storage
+- `rftools:rf_monitor` — RF Monitor
+- `rftools:scanner` — Scanner
+- `rftools:screen_controller` — Screen Controller
+- `rftools:screen_hitblock` — Screen
+- `rftools:screen` — Screen
+- `rftools:security_manager` — Security Manager
+- `rftools:sensor_block` — Sensor
+- `rftools:sequencer_block` — Sequencer
+- `rftools:shield_block1` — Shield Projector Tier 1
+- `rftools:shield_block2` — Shield Projector Tier 2
+- `rftools:shield_block3` — Shield Projector Tier 3
+- `rftools:shield_block4` — Shield Projector Tier 4
+- `rftools:shield_template_block` — Shield Template
+- `rftools:simple_dialer` — Simple Dialer
+- `rftools:solid_shield_block_opaque` — Solid Shield Block
+- `rftools:solid_shield_block` — Solid Shield Block
+- `rftools:space_chamber_controller` — Space Chamber Controller Block
+- `rftools:space_chamber` — Space Chamber Corner Block
+- `rftools:spawner` — Spawner
+- `rftools:storage_scanner` — Storage Scanner
+- `rftools:storage_terminal` — Storage Terminal
+- `rftools:support_block` — Support Block
+- `rftools:timer_block` — Timer
+- `rftools:wire_block` — Wire
+
+### roots
+- `roots:baffle_cap_huge_stem` — Huge Baffle Cap Stem
+- `roots:baffle_cap_huge_top` — Huge Baffle Cap
+- `roots:baffle_cap_mushroom` — Baffle Cap
+- `roots:catalyst_plate` — Catalyst Plate
+- `roots:chiseled_runed_obsidian` — Chiseled Runed Obsidian
+- `roots:chiseled_runestone` — Chiseled Runestone
+- `roots:cloud_berry_crop` — tile.cloud_berry_crop.name
+- `roots:decorative_pyre` — Decorative Pyre
+- `roots:dewgonia_crop` — tile.dewgonia_crop.name
+- `roots:elemental_soil_air` — Caelic Soil
+- `roots:elemental_soil_earth` — Terran Soil
+- `roots:elemental_soil_fire` — Magmatic Soil
+- `roots:elemental_soil_water` — Aqueous Soil
+- `roots:elemental_soil` — Elemental Soil
+- `roots:fake_lava` — tile.fake_lava.name
+- `roots:fake_water` — tile.fake_water.name
+- `roots:fey_colored_light` — Fey Light
+- `roots:fey_crafter` — Fey Crafter
+- `roots:fey_decaying_light` — Fey Light
+- `roots:fey_fire` — tile.fey_fire.name
+- `roots:fey_light` — Fey Light
+- `roots:grove_stone` — Grove Stone
+- `roots:imbuer` — Imbuer
+- `roots:imposer` — Imposer
+- `roots:infernal_bulb_crop` — tile.infernal_bulb_crop.name
+- `roots:moonglow_crop` — tile.moonglow_crop.name
+- `roots:mortar` — Mortar
+- `roots:pereskia_crop` — tile.pereskia_crop.name
+- `roots:pyre` — Pyre
+- `roots:reinforced_catalyst_plate` — Reinforced Catalyst Plate
+- `roots:reinforced_pyre` — Reinforced Pyre
+- `roots:runed_acacia` — Runed Acacia
+- `roots:runed_birch` — Runed Birch
+- `roots:runed_dark_oak` — Runed Dark Oak
+- `roots:runed_jungle` — Runed Jungle
+- `roots:runed_oak` — Runed Oak
+- `roots:runed_obsidian_brick_alt_button` — Runed Obsidian Brick Button
+- `roots:runed_obsidian_brick_alt_double_slab` — tile.runed_obsidian_brick_alt_double_slab.name
+- `roots:runed_obsidian_brick_alt_pressure_plate` — Runed Obsidian Brick Pressure Plate
+- `roots:runed_obsidian_brick_alt_slab` — Runed Obsidian Brick Slab
+- `roots:runed_obsidian_brick_alt_stairs` — Runed Obsidian Brick Stairs
+- `roots:runed_obsidian_brick_alt_wall` — tile.runed_obsidian_brick_alt_wall.normal.name
+- `roots:runed_obsidian_brick_alt` — Runed Obsidian Brick
+- `roots:runed_obsidian_brick_button` — Runed Obsidian Brick Button
+- `roots:runed_obsidian_brick_double_slab` — tile.runed_obsidian_brick_double_slab.name
+- `roots:runed_obsidian_brick_pressure_plate` — Runed Obsidian Brick Pressure Plate
+- `roots:runed_obsidian_brick_slab` — Runed Obsidian Brick Slab
+- `roots:runed_obsidian_brick_stairs` — Runed Obsidian Brick Stairs
+- `roots:runed_obsidian_brick_wall` — tile.runed_obsidian_brick_wall.normal.name
+- `roots:runed_obsidian_brick` — Runed Obsidian Brick
+- `roots:runed_obsidian_button` — Runed Obsidian Button
+- `roots:runed_obsidian_double_slab` — tile.runed_obsidian_double_slab.name
+- `roots:runed_obsidian_pressure_plate` — Runed Obsidian Pressure Plate
+- `roots:runed_obsidian_slab` — Runed Obsidian Slab
+- `roots:runed_obsidian_stairs` — Runed Obsidian Stairs
+- `roots:runed_obsidian_wall` — tile.runed_obsidian_wall.normal.name
+- `roots:runed_obsidian` — Runed Obsidian
+- `roots:runed_spruce` — Runed Spruce
+- `roots:runed_wildwood` — Runed Wildwood
+- `roots:runestone_brick_alt_button` — Runestone Brick Button
+- `roots:runestone_brick_alt_double_slab` — tile.runestone_brick_alt_double_slab.name
+- `roots:runestone_brick_alt_pressure_plate` — Runestone Brick Pressure Plate
+- `roots:runestone_brick_alt_slab` — Runestone Brick Slab
+- `roots:runestone_brick_alt_stairs` — Runestone Brick Stairs
+- `roots:runestone_brick_alt_wall` — tile.runestone_brick_alt_wall.normal.name
+- `roots:runestone_brick_alt` — Runestone Brick
+- `roots:runestone_brick_button` — Runestone Brick Button
+- `roots:runestone_brick_double_slab` — tile.runestone_brick_double_slab.name
+- `roots:runestone_brick_pressure_plate` — Runestone Brick Pressure Plate
+- `roots:runestone_brick_slab` — Runestone Brick Slab
+- `roots:runestone_brick_stairs` — Runestone Brick Stairs
+- `roots:runestone_brick_wall` — tile.runestone_brick_wall.normal.name
+- `roots:runestone_brick` — Runestone Brick
+- `roots:runestone_button` — Runestone Button
+- `roots:runestone_double_slab` — tile.runestone_double_slab.name
+- `roots:runestone_pressure_plate` — Runestone Pressure Plate
+- `roots:runestone_slab` — Runestone Slab
+- `roots:runestone_stairs` — Runestone Stairs
+- `roots:runestone_trample` — Sure-Footed Stone
+- `roots:runestone_wall` — tile.runestone_wall.normal.name
+- `roots:runestone` — Runestone
+- `roots:runic_crafter` — Runic Crafter
+- `roots:spirit_herb_crop` — tile.spirit_herb_crop.name
+- `roots:stalicripe_crop` — tile.stalicripe_crop.name
+- `roots:unending_bowl` — Unending Bowl
+- `roots:wildewheet_crop` — tile.wildewheet_crop.name
+- `roots:wildroot_crop` — tile.wildroot_crop.name
+- `roots:wildroot_rune` — Wildroot Rune
+- `roots:wildwood_button` — Wildwood Button
+- `roots:wildwood_door` — Wildwood Door
+- `roots:wildwood_double_slab` — tile.wildwood_double_slab.name
+- `roots:wildwood_fence_gate` — Wildwood Fence Gate
+- `roots:wildwood_fence` — Wildwood Fence
+- `roots:wildwood_ladder` — Wildwood Ladder
+- `roots:wildwood_leaves` — Wildwood Leaves
+- `roots:wildwood_log` — Wildwood Log
+- `roots:wildwood_planks` — Wildwood Planks
+- `roots:wildwood_pressure_plate` — Wildwood Pressure Plate
+- `roots:wildwood_sapling` — Wildwood Sapling
+- `roots:wildwood_slab` — Wildwood Slab
+- `roots:wildwood_stairs` — Wildwood Stairs
+- `roots:wildwood_trapdoor` — Wildwood Trapdoor
+- `roots:wildwood_wall` — tile.wildwood_wall.normal.name
+
+### rustic
+- `rustic:ale_wort` — Ale Wort
+- `rustic:aloe_vera` — Aloe Vera
+- `rustic:andesite_pillar` — Andesite Pillar
+- `rustic:apiary` — Apiary
+- `rustic:apple_juice` — Apple Juice
+- `rustic:apple_seeds` — Apple Seeds
+- `rustic:barrel` — Barrel
+- `rustic:beehive` — Beehive
+- `rustic:blood_orchid` — Blood Orchid
+- `rustic:brewing_barrel` — Brewing Barrel
+- `rustic:cabinet` — Cabinet
+- `rustic:candle_gold` — Golden Candle
+- `rustic:candle_lever_gold` — Golden Candle Lever
+- `rustic:candle_lever_silver` — Silver Candle Lever
+- `rustic:candle_lever` — Iron Candle Lever
+- `rustic:candle_silver` — Silver Candle
+- `rustic:candle` — Iron Candle
+- `rustic:chain_gold` — Golden Chain
+- `rustic:chain_silver` — Silver Chain
+- `rustic:chain` — Iron Chain
+- `rustic:chair_acacia` — Acacia Chair
+- `rustic:chair_big_oak` — Dark Oak Chair
+- `rustic:chair_birch` — Birch Chair
+- `rustic:chair_ironwood` — Ironwood Chair
+- `rustic:chair_jungle` — Jungle Chair
+- `rustic:chair_oak` — Oak Chair
+- `rustic:chair_olive` — Olive Wood Chair
+- `rustic:chair_spruce` — Spruce Chair
+- `rustic:chamomile` — Chamomile
+- `rustic:chandelier_gold` — Golden Chandelier Ring
+- `rustic:chandelier_silver` — Silver Chandelier Ring
+- `rustic:chandelier` — Iron Chandelier Ring
+- `rustic:chili_crop` — Chili Crop
+- `rustic:clay_wall_cross` — Crossed Clay Wall
+- `rustic:clay_wall_diag` — Diagonal Clay Wall
+- `rustic:clay_wall` — Clay Wall
+- `rustic:cloudsbluff` — Cloudsbluff
+- `rustic:cohosh` — Cohosh
+- `rustic:condenser_advanced` — Advanced Alchemic Condenser
+- `rustic:condenser` — Alchemic Condenser
+- `rustic:core_root` — Core Root
+- `rustic:crop_stake` — Wooden Stake
+- `rustic:crushing_tub` — Crushing Tub
+- `rustic:deathstalk_mushroom` — Deathstalk Mushroom
+- `rustic:diorite_pillar` — Diorite Pillar
+- `rustic:evaporating_basin` — Drying Basin
+- `rustic:fence_gate_ironwood` — Ironwood Fence Gate
+- `rustic:fence_gate_olive` — Olive Wood Fence Gate
+- `rustic:fence_ironwood` — Ironwood Fence
+- `rustic:fence_olive` — Olive Wood Fence
+- `rustic:fertile_soil` — Fertile Soil
+- `rustic:gargoyle` — Gargoyle
+- `rustic:ginseng` — Ginseng
+- `rustic:golden_lantern` — Golden Lantern
+- `rustic:granite_pillar` — Granite Pillar
+- `rustic:grape_juice` — Grape Juice
+- `rustic:grape_leaves` — Grape Leaves
+- `rustic:grape_stem` — Grape Seeds
+- `rustic:honey` — Honey
+- `rustic:horsetail` — Horsetail
+- `rustic:iron_lantern` — Iron Lantern
+- `rustic:iron_lattice` — Iron Lattice
+- `rustic:ironberry_juice` — Ironberry Juice
+- `rustic:ironwood_door` — item.rustic.ironwood_door.name
+- `rustic:ironwood_doubleslab` — tile.rustic.ironwood_doubleslab.name
+- `rustic:ironwood_slab` — Ironwood Slab
+- `rustic:lantern_wood` — Wooden Lantern
+- `rustic:leaves_apple` — Apple Leaves
+- `rustic:leaves` — tile.rustic.leaves.name
+- `rustic:liquid_barrel` — Liquid Barrel
+- `rustic:log` — tile.rustic.log.name
+- `rustic:marsh_mallow` — Marsh Mallow
+- `rustic:mooncap_mushroom` — Mooncap Mushroom
+- `rustic:olive_door` — item.rustic.olive_door.name
+- `rustic:olive_doubleslab` — tile.rustic.olive_doubleslab.name
+- `rustic:olive_oil` — Olive Oil
+- `rustic:olive_slab` — Olive Wood Slab
+- `rustic:painted_wood_black` — Black Painted Wood
+- `rustic:painted_wood_blue` — Blue Painted Wood
+- `rustic:painted_wood_brown` — Brown Painted Wood
+- `rustic:painted_wood_cyan` — Cyan Painted Wood
+- `rustic:painted_wood_gray` — Gray Painted Wood
+- `rustic:painted_wood_green` — Green Painted Wood
+- `rustic:painted_wood_light_blue` — Light Blue Painted Wood
+- `rustic:painted_wood_lime` — Lime Painted Wood
+- `rustic:painted_wood_magenta` — Magenta Painted Wood
+- `rustic:painted_wood_orange` — Orange Painted Wood
+- `rustic:painted_wood_pink` — Pink Painted Wood
+- `rustic:painted_wood_purple` — Purple Painted Wood
+- `rustic:painted_wood_red` — Red Painted Wood
+- `rustic:painted_wood_silver` — Light Gray Painted Wood
+- `rustic:painted_wood_white` — White Painted Wood
+- `rustic:painted_wood_yellow` — Yellow Painted Wood
+- `rustic:planks` — tile.rustic.planks.name
+- `rustic:retort_advanced` — Advanced Alchemic Retort
+- `rustic:retort` — Alchemic Retort
+- `rustic:rope` — Rope
+- `rustic:sapling_apple` — Apple Sapling
+- `rustic:sapling` — tile.rustic.sapling.name
+- `rustic:silver_lantern` — Silver Lantern
+- `rustic:slate_brick_doubleslab` — tile.rustic.slate_brick_doubleslab.name
+- `rustic:slate_brick_slab` — Slate Brick Slab
+- `rustic:slate_brick` — Slate Brick
+- `rustic:slate_chiseled` — Chiseled Slate
+- `rustic:slate_pillar` — Slate Pillar
+- `rustic:slate_roof_doubleslab` — tile.rustic.slate_roof_doubleslab.name
+- `rustic:slate_roof_slab` — Slate Roof Slab
+- `rustic:slate_roof` — Slate Roof
+- `rustic:slate_tile` — Slate Tile
+- `rustic:slate` — Slate
+- `rustic:stairs_ironwood` — Ironwood Stairs
+- `rustic:stairs_olive` — Olive Wood Stairs
+- `rustic:stairs_slate_brick` — Slate Brick Stairs
+- `rustic:stairs_slate_roof` — Slate Roof Stairs
+- `rustic:stake_tied` — Stake With Rope
+- `rustic:stone_pillar` — Stone Pillar
+- `rustic:table_acacia` — Acacia Table
+- `rustic:table_big_oak` — Dark Oak Table
+- `rustic:table_birch` — Birch Table
+- `rustic:table_ironwood` — Ironwood Table
+- `rustic:table_jungle` — Jungle Table
+- `rustic:table_oak` — Oak Table
+- `rustic:table_olive` — Olive Wood Table
+- `rustic:table_spruce` — Spruce Table
+- `rustic:tomato_crop` — Tomato Crop
+- `rustic:vase` — Pot
+- `rustic:wildberry_bush` — Wildberry Bush
+- `rustic:wildberry_juice` — Wildberry Juice
+- `rustic:wind_thistle` — Wind Thistle
+
+### storagedrawers
+- `storagedrawers:basicdrawers` — tile.storagedrawers.basicDrawers.name
+- `storagedrawers:compdrawers` — Compacting Drawer
+- `storagedrawers:controllerslave` — Controller Slave
+- `storagedrawers:controller` — Drawer Controller
+- `storagedrawers:customdrawers` — tile.storagedrawers.customDrawers.name
+- `storagedrawers:customtrim` — Framed Trim
+- `storagedrawers:framingtable` — Framing Table
+- `storagedrawers:keybutton` — tile.storagedrawers.keyButton.name
+- `storagedrawers:trim` — tile.storagedrawers.trim.name
+
+### streams
+- `streams:river/tile.lava/-1/-2` — Lava
+- `streams:river/tile.lava/-1/2` — Lava
+- `streams:river/tile.lava/-2/-1` — Lava
+- `streams:river/tile.lava/-2/-2` — Lava
+- `streams:river/tile.lava/-2/0` — Lava
+- `streams:river/tile.lava/-2/1` — Lava
+- `streams:river/tile.lava/-2/2` — Lava
+- `streams:river/tile.lava/0/-2` — Lava
+- `streams:river/tile.lava/0/0` — Lava
+- `streams:river/tile.lava/0/2` — Lava
+- `streams:river/tile.lava/1/-2` — Lava
+- `streams:river/tile.lava/1/2` — Lava
+- `streams:river/tile.lava/2/-1` — Lava
+- `streams:river/tile.lava/2/-2` — Lava
+- `streams:river/tile.lava/2/0` — Lava
+- `streams:river/tile.lava/2/1` — Lava
+- `streams:river/tile.lava/2/2` — Lava
+- `streams:river/tile.water/-1/-2` — Water
+- `streams:river/tile.water/-1/2` — Water
+- `streams:river/tile.water/-2/-1` — Water
+- `streams:river/tile.water/-2/-2` — Water
+- `streams:river/tile.water/-2/0` — Water
+- `streams:river/tile.water/-2/1` — Water
+- `streams:river/tile.water/-2/2` — Water
+- `streams:river/tile.water/0/-2` — Water
+- `streams:river/tile.water/0/0` — Water
+- `streams:river/tile.water/0/2` — Water
+- `streams:river/tile.water/1/-2` — Water
+- `streams:river/tile.water/1/2` — Water
+- `streams:river/tile.water/2/-1` — Water
+- `streams:river/tile.water/2/-2` — Water
+- `streams:river/tile.water/2/0` — Water
+- `streams:river/tile.water/2/1` — Water
+- `streams:river/tile.water/2/2` — Water
+
+### structurize
+- `structurize:blockcactusdoor` — item.structurize.blockcactusdoor.name
+- `structurize:blockcactusfencegate` — Cactus Fence Gate
+- `structurize:blockcactusfence` — Cactus Fence
+- `structurize:blockcactusplank` — Cactus Plank
+- `structurize:blockcactusslab_double` — tile.structurize.blockcactusslab_double.name
+- `structurize:blockcactusslab_half` — Cactus Slab
+- `structurize:blockcactusstair` — tile.structurize.blockcactusstair.name
+- `structurize:blockcactustrapdoor` — Cactus Trapdoor
+- `structurize:blockpaperwall` — Paper wall
+- `structurize:blockshingle_acacia` — Acacia Shingle
+- `structurize:blockshingle_birch` — Birch Shingle
+- `structurize:blockshingle_dark_oak` — Dark Oak Shingle
+- `structurize:blockshingle_jungle` — Jungle Shingle
+- `structurize:blockshingle_oak` — Oak Shingle
+- `structurize:blockshingle_spruce` — Spruce Shingle
+- `structurize:blockshingleslab` — Shingle slab
+- `structurize:blocksolidsubstitution` — tile.structurize.blockSolidSubstitution.name
+- `structurize:blocksubstitution` — Placeholderblock
+- `structurize:blocktimberframe_acacia_doublecrossed` —  Acacia Crossed Timber Frame
+- `structurize:blocktimberframe_acacia_downgated` —  Acacia Framed Timber Frame
+- `structurize:blocktimberframe_acacia_framed` —  Acacia Framed Timber Frame
+- `structurize:blocktimberframe_acacia_gateframed` —  Acacia Framed Timber Frame
+- `structurize:blocktimberframe_acacia_horizontalnocap` —  Acacia Horizontal Timber Frame
+- `structurize:blocktimberframe_acacia_horizontalplain` —  Acacia Horizontal Timber Frame
+- `structurize:blocktimberframe_acacia_onecrossedlr` —  Acacia Right-Left Diagonal Timber Frame
+- `structurize:blocktimberframe_acacia_onecrossedrl` —  Acacia Left-Right Diagonal Timber Frame
+- `structurize:blocktimberframe_acacia_plain` —  Acacia Plain Timber Frame
+- `structurize:blocktimberframe_acacia_sideframed` —  Acacia Framed Timber Frame
+- `structurize:blocktimberframe_birch_doublecrossed` —  Birch Crossed Timber Frame
+- `structurize:blocktimberframe_birch_downgated` —  Birch Framed Timber Frame
+- `structurize:blocktimberframe_birch_framed` —  Birch Framed Timber Frame
+- `structurize:blocktimberframe_birch_gateframed` —  Birch Framed Timber Frame
+- `structurize:blocktimberframe_birch_horizontalnocap` —  Birch Horizontal Timber Frame
+- `structurize:blocktimberframe_birch_horizontalplain` —  Birch Horizontal Timber Frame
+- `structurize:blocktimberframe_birch_onecrossedlr` —  Birch Right-Left Diagonal Timber Frame
+- `structurize:blocktimberframe_birch_onecrossedrl` —  Birch Left-Right Diagonal Timber Frame
+- `structurize:blocktimberframe_birch_plain` —  Birch Plain Timber Frame
+- `structurize:blocktimberframe_birch_sideframed` —  Birch Framed Timber Frame
+- `structurize:blocktimberframe_dark_oak_doublecrossed` —  Dark Oak Crossed Timber Frame
+- `structurize:blocktimberframe_dark_oak_downgated` —  Dark Oak Framed Timber Frame
+- `structurize:blocktimberframe_dark_oak_framed` —  Dark Oak Framed Timber Frame
+- `structurize:blocktimberframe_dark_oak_gateframed` —  Dark Oak Framed Timber Frame
+- `structurize:blocktimberframe_dark_oak_horizontalnocap` —  Dark Oak Horizontal Timber Frame
+- `structurize:blocktimberframe_dark_oak_horizontalplain` —  Dark Oak Horizontal Timber Frame
+- `structurize:blocktimberframe_dark_oak_onecrossedlr` —  Dark Oak Right-Left Diagonal Timber Frame
+- `structurize:blocktimberframe_dark_oak_onecrossedrl` —  Dark Oak Left-Right Diagonal Timber Frame
+- `structurize:blocktimberframe_dark_oak_plain` —  Dark Oak Plain Timber Frame
+- `structurize:blocktimberframe_dark_oak_sideframed` —  Dark Oak Framed Timber Frame
+- `structurize:blocktimberframe_jungle_doublecrossed` —  Jungle Crossed Timber Frame
+- `structurize:blocktimberframe_jungle_downgated` —  Jungle Framed Timber Frame
+- `structurize:blocktimberframe_jungle_framed` —  Jungle Framed Timber Frame
+- `structurize:blocktimberframe_jungle_gateframed` —  Jungle Framed Timber Frame
+- `structurize:blocktimberframe_jungle_horizontalnocap` —  Jungle Horizontal Timber Frame
+- `structurize:blocktimberframe_jungle_horizontalplain` —  Jungle Horizontal Timber Frame
+- `structurize:blocktimberframe_jungle_onecrossedlr` —  Jungle Right-Left Diagonal Timber Frame
+- `structurize:blocktimberframe_jungle_onecrossedrl` —  Jungle Left-Right Diagonal Timber Frame
+- `structurize:blocktimberframe_jungle_plain` —  Jungle Plain Timber Frame
+- `structurize:blocktimberframe_jungle_sideframed` —  Jungle Framed Timber Frame
+- `structurize:blocktimberframe_oak_doublecrossed` —  Oak Crossed Timber Frame
+- `structurize:blocktimberframe_oak_downgated` —  Oak Framed Timber Frame
+- `structurize:blocktimberframe_oak_framed` —  Oak Framed Timber Frame
+- `structurize:blocktimberframe_oak_gateframed` —  Oak Framed Timber Frame
+- `structurize:blocktimberframe_oak_horizontalnocap` —  Oak Horizontal Timber Frame
+- `structurize:blocktimberframe_oak_horizontalplain` —  Oak Horizontal Timber Frame
+- `structurize:blocktimberframe_oak_onecrossedlr` —  Oak Left-Right Diagonal Timber Frame
+- `structurize:blocktimberframe_oak_onecrossedrl` —  Oak Right-Left Diagonal Timber Frame
+- `structurize:blocktimberframe_oak_plain` —  Oak Plain Timber Frame
+- `structurize:blocktimberframe_oak_sideframed` —  Oak Framed Timber Frame
+- `structurize:blocktimberframe_spruce_doublecrossed` —  Spruce Crossed Timber Frame
+- `structurize:blocktimberframe_spruce_downgated` —  Spruce Framed Timber Frame
+- `structurize:blocktimberframe_spruce_framed` —  Spruce Framed Timber Frame
+- `structurize:blocktimberframe_spruce_gateframed` —  Spruce Framed Timber Frame
+- `structurize:blocktimberframe_spruce_horizontalnocap` —  Spruce Horizontal Timber Frame
+- `structurize:blocktimberframe_spruce_horizontalplain` —  Spruce Horizontal Timber Frame
+- `structurize:blocktimberframe_spruce_onecrossedlr` —  Spruce Right-Left Diagonal Timber Frame
+- `structurize:blocktimberframe_spruce_onecrossedrl` —  Spruce Left-Right Diagonal Timber Frame
+- `structurize:blocktimberframe_spruce_plain` —  Spruce Plain Timber Frame
+- `structurize:blocktimberframe_spruce_sideframed` —  Spruce Framed Timber Frame
+- `structurize:multiblock` — MultiBlock
+
+### supersoundmuffler
+- `supersoundmuffler:sound_muffler` — Super Sound Muffler
+
+### tconstruct
+- `tconstruct:blood` — fluid.blood.name
+- `tconstruct:blueslime` — Liquid Blue Slime
+- `tconstruct:brownstone_slab2` — tile.tconstruct.brownstone_slab2.name
+- `tconstruct:brownstone_slab` — tile.tconstruct.brownstone_slab.name
+- `tconstruct:brownstone_stairs_brick_cracked` — Cracked Brownstone Bricks Stairs
+- `tconstruct:brownstone_stairs_brick_fancy` — Fancy Brownstone Bricks Stairs
+- `tconstruct:brownstone_stairs_brick_small` — Small Brownstone Bricks Stairs
+- `tconstruct:brownstone_stairs_brick_square` — Square Brownstone Bricks Stairs
+- `tconstruct:brownstone_stairs_brick_triangle` — Triangle Brownstone Bricks Stairs
+- `tconstruct:brownstone_stairs_brick` — Brownstone Bricks Stairs
+- `tconstruct:brownstone_stairs_creeper` — Brownstone Creeperface Stairs
+- `tconstruct:brownstone_stairs_paver` — Brownstone Paver Stairs
+- `tconstruct:brownstone_stairs_road` — Brownstone Road Stairs
+- `tconstruct:brownstone_stairs_rough` — Rough Brownstone Stairs
+- `tconstruct:brownstone_stairs_smooth` — Smooth Brownstone Stairs
+- `tconstruct:brownstone_stairs_tile` — Brownstone Tile Stairs
+- `tconstruct:brownstone` — tile.tconstruct.brownstone.name
+- `tconstruct:casting` — tile.tconstruct.casting.name
+- `tconstruct:channel` — Casting Channel
+- `tconstruct:clear_glass` — Clear Glass
+- `tconstruct:clear_stained_glass` — tile.tconstruct.clear_stained_glass.name
+- `tconstruct:deco_ground_slab` — tile.tconstruct.deco_ground_slab.name
+- `tconstruct:deco_ground` — tile.tconstruct.deco_ground.name
+- `tconstruct:dried_brick_stairs` — Dried Bricks Stairs
+- `tconstruct:dried_clay_slab` — tile.tconstruct.dried_clay_slab.name
+- `tconstruct:dried_clay_stairs` — Dried Clay Stairs
+- `tconstruct:dried_clay` — tile.tconstruct.dried_clay.name
+- `tconstruct:faucet` — Seared Faucet
+- `tconstruct:firewood_slab` — tile.tconstruct.firewood_slab.name
+- `tconstruct:firewood_stairs` — Firewood Stairs
+- `tconstruct:firewood` — tile.tconstruct.firewood.name
+- `tconstruct:glow` — Glow
+- `tconstruct:lavawood_stairs` — Lavawood Stairs
+- `tconstruct:metal` — tile.tconstruct.metal.name
+- `tconstruct:milk` — fluid.milk.name
+- `tconstruct:molten_alubrass` — Molten Aluminum Brass
+- `tconstruct:molten_aluminum` — Molten Aluminum
+- `tconstruct:molten_ardite` — Molten Ardite
+- `tconstruct:molten_brass` — Molten Brass
+- `tconstruct:molten_bronze` — Molten Bronze
+- `tconstruct:molten_clay` — Molten Clay
+- `tconstruct:molten_cobalt` — Molten Cobalt
+- `tconstruct:molten_copper` — Molten Copper
+- `tconstruct:molten_dirt` — Liquid Dirt
+- `tconstruct:molten_electrum` — Molten Electrum
+- `tconstruct:molten_emerald` — fluid.emerald.name
+- `tconstruct:molten_enderium` — fluid.enderium.name
+- `tconstruct:molten_glass` — fluid.glass.name
+- `tconstruct:molten_gold` — Molten Gold
+- `tconstruct:molten_invar` — fluid.invar.name
+- `tconstruct:molten_iridium` — fluid.iridium.name
+- `tconstruct:molten_iron` — Molten Iron
+- `tconstruct:molten_knightslime` — Molten Knightslime
+- `tconstruct:molten_lead` — Molten Lead
+- `tconstruct:molten_lumium` — fluid.lumium.name
+- `tconstruct:molten_manyullyn` — Molten Manyullyn
+- `tconstruct:molten_nickel` — Molten Nickel
+- `tconstruct:molten_obsidian` — Molten Obsidian
+- `tconstruct:molten_pigiron` — Molten Pigiron
+- `tconstruct:molten_platinum` — fluid.platinum.name
+- `tconstruct:molten_signalum` — fluid.signalum.name
+- `tconstruct:molten_silver` — Molten Silver
+- `tconstruct:molten_steel` — Molten Steel
+- `tconstruct:molten_stone` — Seared Stone
+- `tconstruct:molten_tin` — Molten Tin
+- `tconstruct:molten_zinc` — Molten Zinc
+- `tconstruct:mudbrick_stairs` — Mud Bricks Stairs
+- `tconstruct:ore` — tile.tconstruct.ore.name
+- `tconstruct:punji` — Punji Sticks
+- `tconstruct:purpleslime` — Liquid Purple Slime
+- `tconstruct:rack` — tile.tconstruct.rack.name
+- `tconstruct:seared_furnace_controller` — Seared Furnace Controller
+- `tconstruct:seared_glass` — tile.tconstruct.seared_glass.name
+- `tconstruct:seared_slab2` — tile.tconstruct.seared_slab2.name
+- `tconstruct:seared_slab` — tile.tconstruct.seared_slab.name
+- `tconstruct:seared_stairs_brick_cracked` — Cracked Seared Bricks Stairs
+- `tconstruct:seared_stairs_brick_fancy` — Fancy Seared Bricks Stairs
+- `tconstruct:seared_stairs_brick_small` — Small Seared Bricks Stairs
+- `tconstruct:seared_stairs_brick_square` — Square Seared Bricks Stairs
+- `tconstruct:seared_stairs_brick_triangle` — Triangle Seared Bricks Stairs
+- `tconstruct:seared_stairs_brick` — Seared Bricks Stairs
+- `tconstruct:seared_stairs_cobble` — Seared Cobblestone Stairs
+- `tconstruct:seared_stairs_creeper` — Seared Creeperface Stairs
+- `tconstruct:seared_stairs_paver` — Seared Paver Stairs
+- `tconstruct:seared_stairs_road` — Seared Road Stairs
+- `tconstruct:seared_stairs_stone` — Seared Stone Stairs
+- `tconstruct:seared_stairs_tile` — Seared Tile Stairs
+- `tconstruct:seared_tank` — tile.tconstruct.seared_tank.name
+- `tconstruct:seared` — tile.tconstruct.seared.name
+- `tconstruct:slime_channel` — tile.tconstruct.slime_channel.name
+- `tconstruct:slime_congealed` — tile.tconstruct.slime_congealed.name
+- `tconstruct:slime_dirt` — tile.tconstruct.slime_dirt.name
+- `tconstruct:slime_grass_tall` — tile.tconstruct.slime_grass_tall.name
+- `tconstruct:slime_grass` — tile.tconstruct.slime_grass.name
+- `tconstruct:slime_leaves` — tile.tconstruct.slime_leaves.name
+- `tconstruct:slime_sapling` — tile.tconstruct.slime_sapling.oak.name
+- `tconstruct:slime_vine_blue_end` — Blue Slimy Vine
+- `tconstruct:slime_vine_blue_mid` — Blue Slimy Vine
+- `tconstruct:slime_vine_blue` — Blue Slimy Vine
+- `tconstruct:slime_vine_purple_end` — Purple Slimy Vine
+- `tconstruct:slime_vine_purple_mid` — Purple Slimy Vine
+- `tconstruct:slime_vine_purple` — Purple Slimy Vine
+- `tconstruct:slime` — tile.tconstruct.slime.name
+- `tconstruct:smeltery_controller` — Smeltery Controller
+- `tconstruct:smeltery_io` — tile.tconstruct.smeltery_io.name
+- `tconstruct:soil` — tile.tconstruct.soil.name
+- `tconstruct:stone_ladder` — Stone Ladder
+- `tconstruct:stone_torch` — Stone Torch
+- `tconstruct:tinker_tank_controller` — Tinker Tank Controller
+- `tconstruct:toolforge` — Tool Forge
+- `tconstruct:tooltables` — tile.tconstruct.tooltables.name
+- `tconstruct:wood_rail_trapdoor` — Wooden Rail with a Trapdoor
+- `tconstruct:wood_rail` — Wooden Rail
+- `tconstruct:wooden_hopper` — Wooden Hopper
+
+### thaumcraft
+- `thaumcraft:activator_rail` — Arcane Activator Rail
+- `thaumcraft:alembic` — Arcane Alembic
+- `thaumcraft:amber_block` — Amber Block
+- `thaumcraft:amber_brick` — Amber Bricks
+- `thaumcraft:arcane_ear_toggle` — Arcane Ear (Toggle)
+- `thaumcraft:arcane_ear` — Arcane Ear
+- `thaumcraft:arcane_workbench_charger` — Workbench Charger
+- `thaumcraft:arcane_workbench` — Arcane Workbench
+- `thaumcraft:banner_black` — Black Banner
+- `thaumcraft:banner_blue` — Blue Banner
+- `thaumcraft:banner_brown` — Brown Banner
+- `thaumcraft:banner_crimson_cult` — Crimson Cult Banner
+- `thaumcraft:banner_cyan` — Cyan Banner
+- `thaumcraft:banner_gray` — Gray Banner
+- `thaumcraft:banner_green` — Green Banner
+- `thaumcraft:banner_lightblue` — Light Blue Banner
+- `thaumcraft:banner_lime` — Lime Banner
+- `thaumcraft:banner_magenta` — Magenta Banner
+- `thaumcraft:banner_orange` — Orange Banner
+- `thaumcraft:banner_pink` — Pink Banner
+- `thaumcraft:banner_purple` — Purple Banner
+- `thaumcraft:banner_red` — Red Banner
+- `thaumcraft:banner_silver` — Light Gray Banner
+- `thaumcraft:banner_white` — White Banner
+- `thaumcraft:banner_yellow` — Yellow Banner
+- `thaumcraft:barrier` — Warding Aura
+- `thaumcraft:bellows` — Arcane Bellows
+- `thaumcraft:brain_box` — Mnemonic Matrix
+- `thaumcraft:candle_black` — Black Tallow Candle
+- `thaumcraft:candle_blue` — Blue Tallow Candle
+- `thaumcraft:candle_brown` — Brown Tallow Candle
+- `thaumcraft:candle_cyan` — Cyan Tallow Candle
+- `thaumcraft:candle_gray` — Gray Tallow Candle
+- `thaumcraft:candle_green` — Green Tallow Candle
+- `thaumcraft:candle_lightblue` — Light Blue Tallow Candle
+- `thaumcraft:candle_lime` — Lime Tallow Candle
+- `thaumcraft:candle_magenta` — Magenta Tallow Candle
+- `thaumcraft:candle_orange` — Orange Tallow Candle
+- `thaumcraft:candle_pink` — Pink Tallow Candle
+- `thaumcraft:candle_purple` — Purple Tallow Candle
+- `thaumcraft:candle_red` — Red Tallow Candle
+- `thaumcraft:candle_silver` — Light Gray Tallow Candle
+- `thaumcraft:candle_white` — White Tallow Candle
+- `thaumcraft:candle_yellow` — Yellow Tallow Candle
+- `thaumcraft:centrifuge` — Essentia Centrifuge
+- `thaumcraft:cinderpearl` — Cinderpearl
+- `thaumcraft:condenser_lattice_dirty` — Clogged Flux Condenser Lattice
+- `thaumcraft:condenser_lattice` — Flux Condenser Lattice
+- `thaumcraft:condenser` — Flux Condenser
+- `thaumcraft:crucible` — Crucible
+- `thaumcraft:crystal_aer` — Air Crystal
+- `thaumcraft:crystal_aqua` — Water Crystal
+- `thaumcraft:crystal_ignis` — Fire Crystal
+- `thaumcraft:crystal_ordo` — Order Crystal
+- `thaumcraft:crystal_perditio` — Entropy Crystal
+- `thaumcraft:crystal_terra` — Earth Crystal
+- `thaumcraft:crystal_vitium` — Flux Crystal
+- `thaumcraft:dioptra` — Thaumic Dioptra
+- `thaumcraft:effect_glimmer` — Glimmer
+- `thaumcraft:effect_sap` — Sapping Field
+- `thaumcraft:effect_shock` — Static Field
+- `thaumcraft:empty` — Empty Space
+- `thaumcraft:essentia_input` — Filling Essentia Transfuser
+- `thaumcraft:essentia_output` — Emptying Essentia Transfuser
+- `thaumcraft:everfull_urn` — Everfull Urn
+- `thaumcraft:flesh_block` — Block of Flesh
+- `thaumcraft:flux_goo` — Flux Goo
+- `thaumcraft:golem_builder` — Golem Press
+- `thaumcraft:grass_ambient` — Ambient Grass Block
+- `thaumcraft:hole` — Dimensional Tear
+- `thaumcraft:hungry_chest` — Hungry Chest
+- `thaumcraft:infernal_furnace` — Infernal Furnace
+- `thaumcraft:infusion_matrix` — Runic Matrix
+- `thaumcraft:inlay` — Redstone Inlay
+- `thaumcraft:jar_brain` — Brain in a Jar
+- `thaumcraft:jar_normal` — Warded Jar
+- `thaumcraft:jar_void` — Void Jar
+- `thaumcraft:lamp_arcane` — Arcane Lamp
+- `thaumcraft:lamp_fertility` — Lamp of Fertility
+- `thaumcraft:lamp_growth` — Lamp of Growth  
+- `thaumcraft:leaves_greatwood` — Greatwood Leaves
+- `thaumcraft:leaves_silverwood` — Silverwood Leaves
+- `thaumcraft:levitator` — Arcane Levitator
+- `thaumcraft:liquid_death` — Liquid Death
+- `thaumcraft:log_greatwood` — Greatwood Log
+- `thaumcraft:log_silverwood` — Silverwood Log
+- `thaumcraft:loot_crate_common` — Common Crate
+- `thaumcraft:loot_crate_rare` — Rare Crate
+- `thaumcraft:loot_crate_uncommon` — Uncommon Crate
+- `thaumcraft:loot_urn_common` — Common Urn
+- `thaumcraft:loot_urn_rare` — Rare Urn
+- `thaumcraft:loot_urn_uncommon` — Uncommon Urn
+- `thaumcraft:matrix_cost` — Infusion Cost Stone
+- `thaumcraft:matrix_speed` — Infusion Speed Stone
+- `thaumcraft:metal_alchemical_advanced` — Advanced Alchemical Construct
+- `thaumcraft:metal_alchemical` — Alchemical Construct
+- `thaumcraft:metal_brass` — Brass Block
+- `thaumcraft:metal_thaumium` — Thaumium Block
+- `thaumcraft:metal_void` — Void Metal Block
+- `thaumcraft:mirror_essentia` — Essentia Mirror
+- `thaumcraft:mirror` — Magic Mirror
+- `thaumcraft:nitor_black` — Black Nitor
+- `thaumcraft:nitor_blue` — Blue Nitor
+- `thaumcraft:nitor_brown` — Brown Nitor
+- `thaumcraft:nitor_cyan` — Cyan Nitor
+- `thaumcraft:nitor_gray` — Gray Nitor
+- `thaumcraft:nitor_green` — Green Nitor
+- `thaumcraft:nitor_lightblue` — Light Blue Nitor
+- `thaumcraft:nitor_lime` — Lime Nitor
+- `thaumcraft:nitor_magenta` — Magenta Nitor
+- `thaumcraft:nitor_orange` — Orange Nitor
+- `thaumcraft:nitor_pink` — Pink Nitor
+- `thaumcraft:nitor_purple` — Purple Nitor
+- `thaumcraft:nitor_red` — Red Nitor
+- `thaumcraft:nitor_silver` — Light Gray Nitor
+- `thaumcraft:nitor_white` — White Nitor
+- `thaumcraft:nitor_yellow` — Yellow Nitor
+- `thaumcraft:ore_amber` — Amber Bearing Stone
+- `thaumcraft:ore_cinnabar` — Cinnabar Ore
+- `thaumcraft:ore_quartz` — Quartz Ore
+- `thaumcraft:pattern_crafter` — Arcane Pattern Crafter
+- `thaumcraft:paving_stone_barrier` — Barrier Stone
+- `thaumcraft:paving_stone_travel` — Paving Stone of Travel
+- `thaumcraft:pedestal_ancient` — Ancient Pedestal
+- `thaumcraft:pedestal_arcane` — Arcane Pedestal
+- `thaumcraft:pedestal_eldritch` — Eldritch Pedestal
+- `thaumcraft:pillar_ancient` — Ancient Infusion Pillar
+- `thaumcraft:pillar_arcane` — Infusion Pillar
+- `thaumcraft:pillar_eldritch` — Eldritch Infusion Pillar
+- `thaumcraft:placeholder_anvil` — Golem Press
+- `thaumcraft:placeholder_bars` — Golem Press
+- `thaumcraft:placeholder_brick` — Infernal Furnace
+- `thaumcraft:placeholder_cauldron` — Golem Press
+- `thaumcraft:placeholder_obsidian` — Infernal Furnace
+- `thaumcraft:placeholder_table` — Golem Press
+- `thaumcraft:plank_greatwood` — Greatwood Planks
+- `thaumcraft:plank_silverwood` — Silverwood Planks
+- `thaumcraft:potion_sprayer` — Potion Sprayer
+- `thaumcraft:purifying_fluid` — Purifying Fluid
+- `thaumcraft:recharge_pedestal` — Recharge Pedestal
+- `thaumcraft:redstone_relay` — Redstone Relay
+- `thaumcraft:research_table` — Research Table
+- `thaumcraft:sapling_greatwood` — Greatwood Sapling
+- `thaumcraft:sapling_silverwood` — Silverwood Sapling
+- `thaumcraft:shimmerleaf` — Shimmerleaf
+- `thaumcraft:slab_ancient` — Ancient Stone Slab
+- `thaumcraft:slab_arcane_brick` — Arcane Brick Slab
+- `thaumcraft:slab_arcane_stone` — Arcane Stone Slab
+- `thaumcraft:slab_double_ancient` — tile.slab_double_ancient.name
+- `thaumcraft:slab_double_arcane_brick` — tile.slab_double_arcane_brick.name
+- `thaumcraft:slab_double_arcane_stone` — tile.slab_double_arcane_stone.name
+- `thaumcraft:slab_double_eldritch` — tile.slab_double_eldritch.name
+- `thaumcraft:slab_double_greatwood` — tile.slab_double_greatwood.name
+- `thaumcraft:slab_double_silverwood` — tile.slab_double_silverwood.name
+- `thaumcraft:slab_eldritch` — Eldritch Stone Slab
+- `thaumcraft:slab_greatwood` — Greatwood Slab
+- `thaumcraft:slab_silverwood` — Silverwood Slab
+- `thaumcraft:smelter_aux` — Auxiliary Slurry Pump
+- `thaumcraft:smelter_basic` — Essentia Smeltery
+- `thaumcraft:smelter_thaumium` — Thaumium Essentia Smeltery
+- `thaumcraft:smelter_vent` — Auxiliary Venting Port
+- `thaumcraft:smelter_void` — Void Metal Essentia Smeltery
+- `thaumcraft:spa` — Arcane Spa
+- `thaumcraft:stabilizer` — Stabilizer
+- `thaumcraft:stairs_ancient` — Ancient Stone Stairs
+- `thaumcraft:stairs_arcane_brick` — Arcane Brick Stairs
+- `thaumcraft:stairs_arcane` — Arcane Stone Stairs
+- `thaumcraft:stairs_greatwood` — Greatwood Stairs
+- `thaumcraft:stairs_silverwood` — Silverwood Stairs
+- `thaumcraft:stone_ancient_doorway` — Ancient Barrier
+- `thaumcraft:stone_ancient_glyphed` — Glyphed Stone
+- `thaumcraft:stone_ancient_rock` — Ancient Rock
+- `thaumcraft:stone_ancient_tile` — Ancient Stone Tile
+- `thaumcraft:stone_ancient` — Ancient Stone
+- `thaumcraft:stone_arcane_brick` — Arcane Stone Brick
+- `thaumcraft:stone_arcane` — Arcane Stone
+- `thaumcraft:stone_eldritch_tile` — Eldritch Stone
+- `thaumcraft:stone_porous` — Porous Stone
+- `thaumcraft:table_stone` — Stone Table
+- `thaumcraft:table_wood` — Wood Table
+- `thaumcraft:taint_crust` — Crusted Taint
+- `thaumcraft:taint_feature` — Swollen Taint
+- `thaumcraft:taint_fibre` — Fibrous Taint
+- `thaumcraft:taint_geyser` — Taint Geyser
+- `thaumcraft:taint_log` — Taintwood Log
+- `thaumcraft:taint_rock` — Tainted Rock
+- `thaumcraft:taint_soil` — Tainted Soil
+- `thaumcraft:thaumatorium_top` — Thaumatorium
+- `thaumcraft:thaumatorium` — Thaumatorium
+- `thaumcraft:tube_buffer` — Essentia Buffer
+- `thaumcraft:tube_filter` — Filtered Essentia Tube
+- `thaumcraft:tube_oneway` — Directional Essentia Tube
+- `thaumcraft:tube_restrict` — Restricted Essentia Tube
+- `thaumcraft:tube_valve` — Essentia Valve
+- `thaumcraft:tube` — Essentia Tube
+- `thaumcraft:vis_battery` — Vis Battery
+- `thaumcraft:vis_generator` — Vis Generator
+- `thaumcraft:vishroom` — Vishroom
+- `thaumcraft:void_siphon` — Void Siphon
+- `thaumcraft:wand_workbench` — Focal Manipulator
+
+### thaumictinkerer
+- `thaumictinkerer:animation_tablet` — Dynamism Tablet
+- `thaumictinkerer:black_quartz_block` — Black Quartz Block
+- `thaumictinkerer:dissimulation` — Dissimulation Block
+- `thaumictinkerer:dummy_nitor` — tile.thaumictinkerer
+- `thaumictinkerer:enchantment_pillar` — Enchanting Pillar
+- `thaumictinkerer:example` — Placeholder Block
+- `thaumictinkerer:funnel` — Essentia Funnel
+- `thaumictinkerer:magnet` — Kinetic Attractor
+- `thaumictinkerer:mob_magnet` — Corporeal Attractor
+- `thaumictinkerer:nitor_vapor` — tile.thaumictinkerer
+- `thaumictinkerer:osmotic_enchanter` — Osmotic Enchanter
+- `thaumictinkerer:repairer` — Thaumic Restorer
+- `thaumictinkerer:transvector_dislocator` — Transvector Dislocator
+- `thaumictinkerer:transvector_interface` — Transvector Interface
+
+### thermalcultivation
+- `thermalcultivation:soil` — tile.thermalcultivation.soil.name
+
+### thermaldynamics
+- `thermaldynamics:duct_0` — tile.thermaldynamics.duct.name
+- `thermaldynamics:duct_16` — tile.thermaldynamics.duct.name
+- `thermaldynamics:duct_32` — tile.thermaldynamics.duct.name
+- `thermaldynamics:duct_48` — tile.thermaldynamics.duct.name
+- `thermaldynamics:duct_64` — tile.thermaldynamics.duct.name
+
+### thermalexpansion
+- `thermalexpansion:apparatus` — tile.thermalexpansion.apparatus.name
+- `thermalexpansion:cache` — tile.thermalexpansion.cache.name
+- `thermalexpansion:cell` — tile.thermalexpansion.cell.name
+- `thermalexpansion:device` — tile.thermalexpansion.device.name
+- `thermalexpansion:dynamo` — tile.thermalexpansion.thermalexpansion.dynamo.name
+- `thermalexpansion:machine` — tile.thermalexpansion.machine.name
+- `thermalexpansion:strongbox` — tile.thermalexpansion.strongbox.name
+- `thermalexpansion:tank` — tile.thermalexpansion.tank.name
+
+### thermalfoundation
+- `thermalfoundation:fluid_aerotheum` — Zephyrean Aerotheum
+- `thermalfoundation:fluid_crude_oil` — Crude Oil
+- `thermalfoundation:fluid_cryotheum` — Gelid Cryotheum
+- `thermalfoundation:fluid_ender` — Resonant Ender
+- `thermalfoundation:fluid_glowstone` — Energized Glowstone
+- `thermalfoundation:fluid_mana` — Primal Mana
+- `thermalfoundation:fluid_petrotheum` — Tectonic Petrotheum
+- `thermalfoundation:fluid_pyrotheum` — Blazing Pyrotheum
+- `thermalfoundation:fluid_redstone` — Destabilized Redstone
+- `thermalfoundation:glass_alloy` — tile.thermalfoundation.glass.name
+- `thermalfoundation:glass` — tile.thermalfoundation.glass.name
+- `thermalfoundation:ore_fluid` — tile.thermalfoundation.ore.name
+- `thermalfoundation:ore` — tile.thermalfoundation.ore.name
+- `thermalfoundation:rockwool` — tile.thermalfoundation.rockwool.name
+- `thermalfoundation:storage_alloy` — tile.thermalfoundation.storage.name
+- `thermalfoundation:storage_resource` — tile.thermalfoundation.storage.name
+- `thermalfoundation:storage` — tile.thermalfoundation.storage.name
+
+### tombmanygraves
+- `tombmanygraves:grave_block` — Player Grave (Sneak Over Me)
+
+### torchmaster
+- `torchmaster:dread_lamp` — Dread Lamp
+- `torchmaster:feral_flare_lantern` — Feral Flare Lantern
+- `torchmaster:invisible_light` — tile.torchmaster.invisible_light.name
+- `torchmaster:mega_torch` — tile.torchmaster.mega_torch.name
+- `torchmaster:terrain_lighter` — Terrain Lighter
+
+### twilightforest
+- `twilightforest:aurora_block` — Aurora Block
+- `twilightforest:aurora_pillar` — Aurora Pillar
+- `twilightforest:aurora_slab` — Aurora Slab
+- `twilightforest:auroralized_glass` — Auroralized Glass
+- `twilightforest:block_storage` — tile.twilightforest.BlockOfStorage.name
+- `twilightforest:boss_spawner` — tile.twilightforest.BossSpawner.name
+- `twilightforest:burnt_thorns` — Burnt Thorns
+- `twilightforest:canopy_button` — Canopy Button
+- `twilightforest:canopy_door` — item.twilightforest.CanopyDoor.name
+- `twilightforest:canopy_doubleslab` — Canopy Slab
+- `twilightforest:canopy_fence` — Canopy Fence
+- `twilightforest:canopy_gate` — Canopy Gate
+- `twilightforest:canopy_planks` — Canopy Planks
+- `twilightforest:canopy_plate` — Canopy Pressure Plate
+- `twilightforest:canopy_slab` — Canopy Slab
+- `twilightforest:canopy_stairs` — Canopy Stairs
+- `twilightforest:canopy_trapdoor` — Canopy Trapdoor
+- `twilightforest:castle_brick` — tile.twilightforest.CastleBrick.name
+- `twilightforest:castle_door_vanished` — tile.twilightforest.CastleDoorVanished.name
+- `twilightforest:castle_door` — tile.twilightforest.CastleDoor.name
+- `twilightforest:castle_pillar` — tile.twilightforest.CastlePillar.name
+- `twilightforest:castle_rune_brick` — tile.twilightforest.CastleMagic.name
+- `twilightforest:castle_stairs_brick` — Castle Brick Stairs
+- `twilightforest:castle_stairs_cracked` — Cracked Castle Brick Stairs
+- `twilightforest:castle_stairs_mossy` — Mossy Castle Brick Stairs
+- `twilightforest:castle_stairs_worn` — Worn Castle Brick Stairs
+- `twilightforest:castle_stairs` — tile.twilightforest.CastleStairs.name
+- `twilightforest:castle_unlock` — tile.twilightforest.CastleUnlock.name
+- `twilightforest:cicada` — Cicada
+- `twilightforest:cinder_furnace_lit` — tile.twilightforest.CinderFurnaceLit.name
+- `twilightforest:cinder_furnace` — Cinder Furnace [NYI]
+- `twilightforest:cinder_log` — Cinder Log [NYI]
+- `twilightforest:dark_button` — Darkwood Button
+- `twilightforest:dark_door` — item.twilightforest.DarkDoor.name
+- `twilightforest:dark_doubleslab` — Darkwood Slab
+- `twilightforest:dark_fence` — Darkwood Fence
+- `twilightforest:dark_gate` — Darkwood Gate
+- `twilightforest:dark_leaves` — Darkwood Leaves
+- `twilightforest:dark_planks` — Darkwood Planks
+- `twilightforest:dark_plate` — Darkwood Pressure Plate
+- `twilightforest:dark_slab` — Darkwood Slab
+- `twilightforest:dark_stairs` — Darkwood Stairs
+- `twilightforest:dark_trapdoor` — Darkwood Trapdoor
+- `twilightforest:deadrock` — tile.twilightforest.Deadrock.name
+- `twilightforest:double_aurora_slab` — tile.twilightforest.AuroraDoubleSlab.name
+- `twilightforest:etched_nagastone_mossy` — Mossy Etched Nagastone
+- `twilightforest:etched_nagastone_weathered` — Ruined Etched Nagastone
+- `twilightforest:etched_nagastone` — Etched Nagastone
+- `twilightforest:experiment_115` — tile.twilightforest.experiment115.name
+- `twilightforest:fiery_essence` — tile.twilightforest.fiery_essence.name
+- `twilightforest:fire_jet` — tile.twilightforest.FireJet.name
+- `twilightforest:firefly_jar` — Firefly Jar
+- `twilightforest:firefly` — Firefly
+- `twilightforest:fluffy_cloud` — Fluffy Cloud
+- `twilightforest:force_field` — tile.twilightforest.ForceField.name
+- `twilightforest:giant_cobblestone` — Giant Cobblestone
+- `twilightforest:giant_leaves` — Giant Leaves
+- `twilightforest:giant_log` — Giant Log
+- `twilightforest:giant_obsidian` — Giant Obsidian
+- `twilightforest:hedge` — tile.twilightforest.Hedge.name
+- `twilightforest:huge_lilypad` — Huge Lily Pad
+- `twilightforest:huge_mushgloom` — Huge Mushgloom
+- `twilightforest:huge_stalk` — Huge Stalk
+- `twilightforest:huge_waterlily` — Huge Water Lily
+- `twilightforest:iron_ladder` — Iron Ladder
+- `twilightforest:knightmetal_block` — Block of Knightmetal
+- `twilightforest:lapis_block` — Block Of Lapis [NYI]
+- `twilightforest:magic_leaves` — tile.twilightforest.MagicLeaves.name
+- `twilightforest:magic_log_core` — tile.twilightforest.MagicLogSpecial.name
+- `twilightforest:magic_log` — tile.twilightforest.MagicLog.name
+- `twilightforest:mangrove_button` — Mangrove Button
+- `twilightforest:mangrove_door` — item.twilightforest.MangroveDoor.name
+- `twilightforest:mangrove_doubleslab` — Mangrove Slab
+- `twilightforest:mangrove_fence` — Mangrove Fence
+- `twilightforest:mangrove_gate` — Mangrove Gate
+- `twilightforest:mangrove_planks` — Mangrove Planks
+- `twilightforest:mangrove_plate` — Mangrove Pressure Plate
+- `twilightforest:mangrove_slab` — Mangrove Slab
+- `twilightforest:mangrove_stairs` — Mangrove Stairs
+- `twilightforest:mangrove_trapdoor` — Mangrove Trapdoor
+- `twilightforest:maze_stone` — tile.twilightforest.Mazestone.name
+- `twilightforest:mine_button` — Minewood Button
+- `twilightforest:mine_door` — item.twilightforest.MineDoor.name
+- `twilightforest:mine_doubleslab` — Minewood Slab
+- `twilightforest:mine_fence` — Minewood Fence
+- `twilightforest:mine_gate` — Minewood Gate
+- `twilightforest:mine_planks` — Minewood Planks
+- `twilightforest:mine_plate` — Minewood Pressure Plate
+- `twilightforest:mine_slab` — Minewood Slab
+- `twilightforest:mine_stairs` — Minewood Stairs
+- `twilightforest:mine_trapdoor` — Minewood Trapdoor
+- `twilightforest:miniature_structure` — tile.twilightforest.MiniatureStructure.name
+- `twilightforest:molten_fierymetal` — tile.twilightforest.fierymetal.name
+- `twilightforest:molten_knightmetal` — tile.twilightforest.knightmetal.name
+- `twilightforest:moonworm` — Moonworm
+- `twilightforest:naga_stone` — tile.twilightforest.Nagastone.name
+- `twilightforest:nagastone_pillar_mossy` — Mossy Nagastone Pillar
+- `twilightforest:nagastone_pillar_weathered` — Ruined Nagastone Pillar
+- `twilightforest:nagastone_pillar` — Nagastone Pillar
+- `twilightforest:nagastone_stairs_mossy` — tile.twilightforest.NagastoneStairsMossy.name
+- `twilightforest:nagastone_stairs_weathered` — tile.twilightforest.NagastoneStairsWeathered.name
+- `twilightforest:nagastone_stairs` — tile.twilightforest.NagastoneStairs.name
+- `twilightforest:root` — tile.twilightforest.Roots.name
+- `twilightforest:slider` — tile.twilightforest.Slider.name
+- `twilightforest:sort_button` — Sortingwood Button
+- `twilightforest:sort_door` — item.twilightforest.SortDoor.name
+- `twilightforest:sort_doubleslab` — Sortingwood Slab
+- `twilightforest:sort_fence` — Sortingwood Fence
+- `twilightforest:sort_gate` — Sortingwood Gate
+- `twilightforest:sort_planks` — Sortingwood Planks
+- `twilightforest:sort_plate` — Sortingwood Pressure Plate
+- `twilightforest:sort_slab` — Sortingwood Slab
+- `twilightforest:sort_stairs` — Sortingwood Stairs
+- `twilightforest:sort_trapdoor` — Sortingwood Trapdoor
+- `twilightforest:spiral_bricks` — Spiral Stone Bricks
+- `twilightforest:stone_twist_thin` — tile.twilightforest.StonePillarThin.name
+- `twilightforest:stone_twist` — tile.twilightforest.StonePillar.name
+- `twilightforest:stronghold_shield` — Stronghold Shield
+- `twilightforest:terrorcotta_circle` — Terrorcotta (Circular)
+- `twilightforest:terrorcotta_diagonal` — Terrorcotta (Diagonal)
+- `twilightforest:thorn_rose` — Thorn Rose
+- `twilightforest:thorns` — tile.twilightforest.Thorns.name
+- `twilightforest:time_button` — Timewood Button
+- `twilightforest:time_door` — item.twilightforest.TimeDoor.name
+- `twilightforest:time_doubleslab` — Timewood Slab
+- `twilightforest:time_fence` — Timewood Fence
+- `twilightforest:time_gate` — Timewood Gate
+- `twilightforest:time_planks` — Timewood Planks
+- `twilightforest:time_plate` — Timewood Pressure Plate
+- `twilightforest:time_slab` — Timewood Slab
+- `twilightforest:time_stairs` — Timewood Stairs
+- `twilightforest:time_trapdoor` — Timewood Trapdoor
+- `twilightforest:tower_device` — tile.twilightforest.TowerDevice.name
+- `twilightforest:tower_translucent` — tile.twilightforest.TowerTranslucent.name
+- `twilightforest:tower_wood` — tile.twilightforest.TowerStone.name
+- `twilightforest:trans_button` — Transwood Button
+- `twilightforest:trans_door` — item.twilightforest.TransDoor.name
+- `twilightforest:trans_doubleslab` — Transwood Slab
+- `twilightforest:trans_fence` — Transwood Fence
+- `twilightforest:trans_gate` — Transwood Gate
+- `twilightforest:trans_planks` — Transwood Planks
+- `twilightforest:trans_plate` — Transwood Pressure Plate
+- `twilightforest:trans_slab` — Transwood Slab
+- `twilightforest:trans_stairs` — Transwood Stairs
+- `twilightforest:trans_trapdoor` — Transwood Trapdoor
+- `twilightforest:trollber` — Trollber
+- `twilightforest:trollsteinn` — Trollsteinn
+- `twilightforest:trollvidr` — Trollvidr
+- `twilightforest:trophy_pedestal` — tile.twilightforest.TrophyPedestal.name
+- `twilightforest:trophy` — tile.skull.skeleton.name
+- `twilightforest:twilight_leaves_3` — tile.twilightforest.Leaves3.name
+- `twilightforest:twilight_leaves` — tile.twilightforest.Leaves.name
+- `twilightforest:twilight_log` — tile.twilightforest.Log.name
+- `twilightforest:twilight_oak_button` — Twilight Oak Button
+- `twilightforest:twilight_oak_door` — item.twilightforest.TwilightOakDoor.name
+- `twilightforest:twilight_oak_doubleslab` — Twilight Oak Slab
+- `twilightforest:twilight_oak_fence` — Twilight Oak Fence
+- `twilightforest:twilight_oak_gate` — Twilight Oak Gate
+- `twilightforest:twilight_oak_planks` — Twilight Oak Planks
+- `twilightforest:twilight_oak_plate` — Twilight Oak Pressure Plate
+- `twilightforest:twilight_oak_slab` — Twilight Oak Slab
+- `twilightforest:twilight_oak_stairs` — Twilight Oak Stairs
+- `twilightforest:twilight_oak_trapdoor` — Twilight Oak Trapdoor
+- `twilightforest:twilight_plant` — tile.twilightforest.Plant.name
+- `twilightforest:twilight_portal` — Twilight Forest Portal
+- `twilightforest:twilight_sapling` — Twilight Sapling
+- `twilightforest:uberous_soil` — Uberous Soil
+- `twilightforest:uncrafting_table` — Uncrafting Table
+- `twilightforest:underbrick` — tile.twilightforest.UnderBrick.name
+- `twilightforest:unripe_trollber` — Unripe Trollber
+- `twilightforest:wispy_cloud` — Wispy Cloud
+
+### unlimitedchiselworks
+- `unlimitedchiselworks:chisel_dirt_biomesoplenty_dirt_0` — tile.tile.dirt.name
+- `unlimitedchiselworks:chisel_dirt_biomesoplenty_dirt_1` — tile.tile.dirt.name
+- `unlimitedchiselworks:chisel_dirt_biomesoplenty_dirt_2` — tile.tile.dirt.name
+- `unlimitedchiselworks:chisel_planks_oak_advancedrocketry_planks_0` — tile.tile.lightwoodplanks.name
+- `unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_0` — tile.tile.planks_0.name
+- `unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_10` — tile.tile.planks_0.name
+- `unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_11` — tile.tile.planks_0.name
+- `unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_12` — tile.tile.planks_0.name
+- `unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_13` — tile.tile.planks_0.name
+- `unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_14` — tile.tile.planks_0.name
+- `unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_15` — tile.tile.planks_0.name
+- `unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_1` — tile.tile.planks_0.name
+- `unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_2` — tile.tile.planks_0.name
+- `unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_3` — tile.tile.planks_0.name
+- `unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_4` — tile.tile.planks_0.name
+- `unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_5` — tile.tile.planks_0.name
+- `unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_6` — tile.tile.planks_0.name
+- `unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_7` — tile.tile.planks_0.name
+- `unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_8` — tile.tile.planks_0.name
+- `unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_9` — tile.tile.planks_0.name
+- `unlimitedchiselworks:chisel_planks_oak_botania_dreamwood_1` — tile.tile.dreamwood.name
+- `unlimitedchiselworks:chisel_planks_oak_botania_livingwood_1` — tile.tile.livingwood.name
+- `unlimitedchiselworks:chisel_planks_oak_immersiveengineering_treated_wood_0` — tile.tile.immersiveengineering.treated_wood.name
+- `unlimitedchiselworks:chisel_planks_oak_integrateddynamics_menril_planks_0` — tile.tile.blocks.integrateddynamics.menril_planks.name
+- `unlimitedchiselworks:chisel_planks_oak_natura_nether_planks_0` — tile.tile.natura.nether_planks.name
+- `unlimitedchiselworks:chisel_planks_oak_natura_nether_planks_1` — tile.tile.natura.nether_planks.name
+- `unlimitedchiselworks:chisel_planks_oak_natura_nether_planks_2` — tile.tile.natura.nether_planks.name
+- `unlimitedchiselworks:chisel_planks_oak_natura_nether_planks_3` — tile.tile.natura.nether_planks.name
+- `unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_0` — tile.tile.natura.overworld_planks.name
+- `unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_1` — tile.tile.natura.overworld_planks.name
+- `unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_2` — tile.tile.natura.overworld_planks.name
+- `unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_3` — tile.tile.natura.overworld_planks.name
+- `unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_4` — tile.tile.natura.overworld_planks.name
+- `unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_5` — tile.tile.natura.overworld_planks.name
+- `unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_6` — tile.tile.natura.overworld_planks.name
+- `unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_7` — tile.tile.natura.overworld_planks.name
+- `unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_8` — tile.tile.natura.overworld_planks.name
+- `unlimitedchiselworks:chisel_planks_oak_roots_wildwood_planks_0` — tile.tile.wildwood_planks.name
+- `unlimitedchiselworks:chisel_planks_oak_rustic_planks_0` — tile.tile.rustic.planks.name
+- `unlimitedchiselworks:chisel_planks_oak_rustic_planks_1` — tile.tile.rustic.planks.name
+- `unlimitedchiselworks:chisel_planks_oak_thaumcraft_plank_greatwood_0` — tile.tile.plank_greatwood.name
+- `unlimitedchiselworks:chisel_planks_oak_thaumcraft_plank_silverwood_0` — tile.tile.plank_silverwood.name
+- `unlimitedchiselworks:chisel_prismarine1_quark_elder_prismarine_0` — tile.tile.elder_prismarine.name
+- `unlimitedchiselworks:chisel_prismarine2_quark_elder_prismarine_0` — tile.tile.elder_prismarine.name
+- `unlimitedchiselworks:chisel_prismarine_quark_elder_prismarine_0` — tile.tile.elder_prismarine.name
+- `unlimitedchiselworks:chisel_quartz1_botania_quartztypedark_0` — tile.tile.quartzTypeDark.name
+- `unlimitedchiselworks:chisel_quartz_botania_quartztypedark_0` — tile.tile.quartzTypeDark.name
+- `unlimitedchiselworks:chisel_stonebrick1_astralsorcery_blockblackmarble_1` — tile.tile.blockblackmarble.name
+- `unlimitedchiselworks:chisel_stonebrick1_astralsorcery_blockmarble_1` — tile.tile.blockmarble.name
+- `unlimitedchiselworks:chisel_stonebrick1_botania_livingrock_1` — tile.tile.livingrock.name
+- `unlimitedchiselworks:chisel_stonebrick1_environmentalmaterials_alabaster_bricks_0` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick1_environmentalmaterials_alabaster_bricks_10` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick1_environmentalmaterials_alabaster_bricks_11` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick1_environmentalmaterials_alabaster_bricks_12` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick1_environmentalmaterials_alabaster_bricks_13` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick1_environmentalmaterials_alabaster_bricks_14` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick1_environmentalmaterials_alabaster_bricks_15` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick1_environmentalmaterials_alabaster_bricks_1` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick1_environmentalmaterials_alabaster_bricks_2` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick1_environmentalmaterials_alabaster_bricks_3` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick1_environmentalmaterials_alabaster_bricks_4` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick1_environmentalmaterials_alabaster_bricks_5` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick1_environmentalmaterials_alabaster_bricks_6` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick1_environmentalmaterials_alabaster_bricks_7` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick1_environmentalmaterials_alabaster_bricks_8` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick1_environmentalmaterials_alabaster_bricks_9` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick1_integrateddynamics_crystalized_chorus_brick_0` — tile.tile.blocks.integrateddynamics.crystalized_chorus_brick.name
+- `unlimitedchiselworks:chisel_stonebrick1_integrateddynamics_crystalized_menril_brick_0` — tile.tile.blocks.integrateddynamics.crystalized_menril_brick.name
+- `unlimitedchiselworks:chisel_stonebrick1_quark_world_stone_bricks_6` — tile.tile.world_stone_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick1_quark_world_stone_bricks_7` — tile.tile.world_stone_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick1_roots_runestone_brick_0` — tile.tile.runestone_brick.name
+- `unlimitedchiselworks:chisel_stonebrick1_rustic_slate_brick_0` — tile.tile.rustic.slate_brick.name
+- `unlimitedchiselworks:chisel_stonebrick2_astralsorcery_blockblackmarble_1` — tile.tile.blockblackmarble.name
+- `unlimitedchiselworks:chisel_stonebrick2_astralsorcery_blockmarble_1` — tile.tile.blockmarble.name
+- `unlimitedchiselworks:chisel_stonebrick2_botania_livingrock_1` — tile.tile.livingrock.name
+- `unlimitedchiselworks:chisel_stonebrick2_environmentalmaterials_alabaster_bricks_0` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick2_environmentalmaterials_alabaster_bricks_10` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick2_environmentalmaterials_alabaster_bricks_11` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick2_environmentalmaterials_alabaster_bricks_12` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick2_environmentalmaterials_alabaster_bricks_13` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick2_environmentalmaterials_alabaster_bricks_14` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick2_environmentalmaterials_alabaster_bricks_15` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick2_environmentalmaterials_alabaster_bricks_1` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick2_environmentalmaterials_alabaster_bricks_2` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick2_environmentalmaterials_alabaster_bricks_3` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick2_environmentalmaterials_alabaster_bricks_4` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick2_environmentalmaterials_alabaster_bricks_5` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick2_environmentalmaterials_alabaster_bricks_6` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick2_environmentalmaterials_alabaster_bricks_7` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick2_environmentalmaterials_alabaster_bricks_8` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick2_environmentalmaterials_alabaster_bricks_9` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick2_integrateddynamics_crystalized_chorus_brick_0` — tile.tile.blocks.integrateddynamics.crystalized_chorus_brick.name
+- `unlimitedchiselworks:chisel_stonebrick2_integrateddynamics_crystalized_menril_brick_0` — tile.tile.blocks.integrateddynamics.crystalized_menril_brick.name
+- `unlimitedchiselworks:chisel_stonebrick2_quark_world_stone_bricks_6` — tile.tile.world_stone_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick2_quark_world_stone_bricks_7` — tile.tile.world_stone_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick2_roots_runestone_brick_0` — tile.tile.runestone_brick.name
+- `unlimitedchiselworks:chisel_stonebrick2_rustic_slate_brick_0` — tile.tile.rustic.slate_brick.name
+- `unlimitedchiselworks:chisel_stonebrick_astralsorcery_blockblackmarble_1` — tile.tile.blockblackmarble.name
+- `unlimitedchiselworks:chisel_stonebrick_astralsorcery_blockmarble_1` — tile.tile.blockmarble.name
+- `unlimitedchiselworks:chisel_stonebrick_botania_livingrock_1` — tile.tile.livingrock.name
+- `unlimitedchiselworks:chisel_stonebrick_environmentalmaterials_alabaster_bricks_0` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick_environmentalmaterials_alabaster_bricks_10` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick_environmentalmaterials_alabaster_bricks_11` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick_environmentalmaterials_alabaster_bricks_12` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick_environmentalmaterials_alabaster_bricks_13` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick_environmentalmaterials_alabaster_bricks_14` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick_environmentalmaterials_alabaster_bricks_15` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick_environmentalmaterials_alabaster_bricks_1` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick_environmentalmaterials_alabaster_bricks_2` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick_environmentalmaterials_alabaster_bricks_3` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick_environmentalmaterials_alabaster_bricks_4` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick_environmentalmaterials_alabaster_bricks_5` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick_environmentalmaterials_alabaster_bricks_6` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick_environmentalmaterials_alabaster_bricks_7` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick_environmentalmaterials_alabaster_bricks_8` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick_environmentalmaterials_alabaster_bricks_9` — tile.tile.environmentalmaterials.alabaster_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick_integrateddynamics_crystalized_chorus_brick_0` — tile.tile.blocks.integrateddynamics.crystalized_chorus_brick.name
+- `unlimitedchiselworks:chisel_stonebrick_integrateddynamics_crystalized_menril_brick_0` — tile.tile.blocks.integrateddynamics.crystalized_menril_brick.name
+- `unlimitedchiselworks:chisel_stonebrick_quark_world_stone_bricks_6` — tile.tile.world_stone_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick_quark_world_stone_bricks_7` — tile.tile.world_stone_bricks.name
+- `unlimitedchiselworks:chisel_stonebrick_roots_runestone_brick_0` — tile.tile.runestone_brick.name
+- `unlimitedchiselworks:chisel_stonebrick_rustic_slate_brick_0` — tile.tile.rustic.slate_brick.name
+
+### villagermarket
+- `villagermarket:villager_market` — Villager Market
+
+### wizardry
+- `wizardry:altar_confession` — tile.altar_confession.name
+- `wizardry:altar_sacrament` — tile.altar_sacrament.name
+- `wizardry:cloud` — tile.cloud.name
+- `wizardry:crafting_plate` — tile.crafting_plate.name
+- `wizardry:creative_mana_battery` — tile.creative_mana_battery.name
+- `wizardry:fake_air` — tile.fake_air.name
+- `wizardry:jar_block` — tile.jar_block.name
+- `wizardry:light` — tile.light.name
+- `wizardry:magicians_worktable` — tile.magicians_worktable.name
+- `wizardry:mana_battery` — tile.mana_battery.name
+- `wizardry:mana_fluid` — tile.mana_fluid.name
+- `wizardry:mana_magnet` — tile.mana_magnet.name
+- `wizardry:nacre_block_brick` — tile.nacre_block_brick.name
+- `wizardry:nacre_block` — tile.nacre_block.name
+- `wizardry:nacre_fluid` — tile.nacre_fluid.name
+- `wizardry:pearl_holder` — tile.pearl_holder.name
+- `wizardry:torikki_grass` — tile.torikki_grass.name
+- `wizardry:underworld_portal` — tile.underworld_portal.name
+- `wizardry:wisdom_leaves` — tile.wisdom_leaves.name
+- `wizardry:wisdom_sapling` — tile.wisdom_sapling.name
+- `wizardry:wisdom_wood_door` — item.wisdom_wood_door.name
+- `wizardry:wisdom_wood_fence_gate` — tile.wisdom_wood_fence_gate.name
+- `wizardry:wisdom_wood_fence` — tile.wisdom_wood_fence.name
+- `wizardry:wisdom_wood_log` — tile.wisdom_wood_log.name
+- `wizardry:wisdom_wood_pigmented_planks` — tile.wisdom_wood_pigmented_planks.name
+- `wizardry:wisdom_wood_planks` — tile.wisdom_wood_planks.name
+- `wizardry:wisdom_wood_slab_full` — tile.wisdom_wood_slab_full.name
+- `wizardry:wisdom_wood_slab` — tile.wisdom_wood_slab.name
+- `wizardry:wisdom_wood_stairs` — tile.wisdom_wood_stairs.name
+- `wizardry:wisdom_wood_trapdoor` — tile.wisdom_wood_trapdoor.name
+
+### xnet
+- `xnet:advanced_connector` — Advanced Connector
+- `xnet:antenna_base` — Antenna Base
+- `xnet:antenna_dish` — Antenna Dish
+- `xnet:antenna` — Antenna
+- `xnet:connector` — Connector
+- `xnet:controller` — Controller
+- `xnet:facade` — Facade
+- `xnet:netcable` — Network Cable
+- `xnet:redstone_proxy_upd` — Redstone Proxy (update)
+- `xnet:redstone_proxy` — Redstone Proxy
+- `xnet:router` — Router
+- `xnet:wireless_router` — Wireless Router

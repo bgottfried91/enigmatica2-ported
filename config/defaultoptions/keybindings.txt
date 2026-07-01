@@ -1,0 +1,6 @@
+key_oreexcavation.key.excavate:key.keyboard.grave.accent:NONE
+key_key.ftbquests.quests:key.keyboard.semicolon:NONE
+key_key.dankstorage.construction:key.keyboard.keypad.9:NONE
+key_key.dankstorage.pickup_mode:key.keyboard.keypad.8:NONE
+key_placebo.toggleTrails:key.keyboard.unknown:NONE
+key_placebo.toggleWings:key.keyboard.unknown:NONE

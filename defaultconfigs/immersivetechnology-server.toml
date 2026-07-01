@@ -1,0 +1,189 @@
+
+[multiblocks]
+	#Allowed Values: PROCESS_QUEUE, TEMPLATE_BLOCKS
+	disassemblyMode = "PROCESS_QUEUE"
+	#Range: > 1
+	burnTimeDivider = 10
+	#Range: > 1
+	creativeBarrelOutputAmount = 2147483647
+	#Range: 0.0 ~ 1000.0
+	alternator_power_factor = 1.0
+	#Range: > 1
+	alternator_energy_capacity = 1200000
+	#Range: 0.0 ~ 1.7976931348623157E308
+	alternator_base_mass = 2.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	alternator_friction = 0.0
+	#Range: > 0
+	alternator_max_output = 12288
+
+	[multiblocks.advanced_coke_oven]
+		#Range: 0.1 ~ 10.0
+		speed_base = 1.0
+		#Range: 0.0 ~ 5.0
+		baseheater_speed_increase = 0.25
+		#Range: 1.0 ~ 5.0
+		baseheater_speed_multiplier = 1.25
+		#Range: > 1000
+		baseheater_max_energy = 8000
+		#Range: 1 ~ 1024
+		baseheater_energy_consumption = 32
+
+	[multiblocks.boiler_liquid]
+		#Range: > 1000
+		tank_capacity = 24000
+		#Range: 0.0 ~ 1.7976931348623157E308
+		heat_loss_per_tick = 0.2
+		#Range: 0.0 ~ 1.7976931348623157E308
+		pilot_heat = 20.0
+
+	[multiblocks.boiler_solid]
+		#Range: 0.0 ~ 1.7976931348623157E308
+		heat_loss_per_tick = 0.2
+		#Range: 0.0 ~ 1.7976931348623157E308
+		pilot_heat = 20.0
+		#Range: > 1
+		pilot_multiplier = 15
+		#Range: 0.0 ~ 1.7976931348623157E308
+		default_heat_per_tick = 0.1
+
+	[multiblocks.boiler_tank]
+		#Range: > 1000
+		tank_capacity = 24000
+		#Range: > 0
+		progress_loss_per_tick = 1
+
+	[multiblocks.cooling_tower]
+		#Range: > 1000
+		input_tank_capacity = 24000
+		#Range: > 1000
+		output_tank_capacity = 24000
+		#Biome temperature effect strength on cooling tower speed (0 = disabled). Cold biomes faster, hot slower. Neutral ~0.8.
+		#Range: 0.0 ~ 2.0
+		biome_temp_factor = 0.5
+
+	[multiblocks.distiller]
+		#Range: > 1000
+		tank_capacity = 24000
+		#Range: > 1000
+		energy_capacity = 32000
+
+	[multiblocks.electrolytic_crucible_battery]
+		#Range: > 1000
+		tank_capacity = 10000
+		#Range: > 1000
+		energy_capacity = 16000
+		#Range: 256 ~ 65536
+		energy_max_input = 4096
+
+	[multiblocks.gas_turbine]
+		#Range: > 1000
+		tank_capacity = 12000
+		#Range: > 1000
+		energy_capacity_hv = 8192
+		#Range: > 100
+		energy_capacity_mv = 2048
+		#Range: > 0
+		starter_consumption = 4096
+		#Range: > 0
+		sparkplug_consumption = 1024
+		#Range: 0.0 ~ 1.7976931348623157E308
+		base_mass = 8.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		drive_torque = 30.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		friction = 60.0
+		#Range: 0.01 ~ 1.0
+		max_speed_factor = 0.5
+
+	[multiblocks.heat_exchanger]
+		#Range: > 1000
+		input_tank_capacity = 10000
+		#Range: > 1000
+		output_tank_capacity = 10000
+		#Range: > 1000
+		energy_capacity = 2048
+		#Range: > 0
+		energy_max_io = 1024
+
+	[multiblocks.melting_crucible]
+		#Range: > 1000
+		tank_capacity = 10000
+		#Range: > 1000
+		energy_capacity = 50000
+		#Range: 100.0 ~ 1.7976931348623157E308
+		heat_workingLevel = 1000.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		heat_loss_multiplier = 0.2
+		#Range: 0.1 ~ 1.7976931348623157E308
+		heat_gain_base = 0.55
+		#Range: > 32
+		energy_per_tick_heating = 1000
+		#Range: > 16
+		energy_per_tick_maintain = 512
+
+	[multiblocks.radiator]
+		#Range: > 1000
+		input_tank_capacity = 8000
+		#Range: > 1000
+		output_tank_capacity = 8000
+		#Range: 0.1 ~ 10.0
+		speed_multiplier = 1.0
+		#Biome temperature effect strength on radiator speed (0 = disabled). Cold biomes faster, hot slower. Neutral ~0.8.
+		#Range: 0.0 ~ 2.0
+		biome_temp_factor = 0.5
+
+	[multiblocks.solar_melter]
+		#Range: 0.0 ~ 1.7976931348623157E308
+		day_min_heat_loss = 0.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		loss_per_section_drop = 0.035
+		#Range: 0.0 ~ 1.7976931348623157E308
+		temp_dependent_loss_factor = 3.6E-4
+		#Range: 0.0 ~ 1.7976931348623157E308
+		heat_increase_factor = 0.00568
+		#Range: 1.0 ~ 1.7976931348623157E308
+		temp_to_min_reflectors_divisor = 25.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		reflector_tier_offset = 4.0
+		#Range: > 0
+		progress_loss_off_temp = 2
+		#Range: 0.01 ~ 10.0
+		speed_multiplier = 1.0
+
+	[multiblocks.solar_tower]
+		#Range: 0.0 ~ 1.7976931348623157E308
+		day_min_heat_loss = 0.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		loss_per_section_drop = 0.035
+		#Range: 0.0 ~ 1.7976931348623157E308
+		temp_dependent_loss_factor = 3.6E-4
+		#Range: 0.0 ~ 1.7976931348623157E308
+		heat_increase_factor = 0.00568
+		#Range: 1.0 ~ 1.7976931348623157E308
+		temp_to_min_reflectors_divisor = 25.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		reflector_tier_offset = 4.0
+		#Range: > 0
+		progress_loss_off_temp = 2
+		#Range: 0.01 ~ 10.0
+		speed_multiplier = 1.0
+
+	[multiblocks.steam_turbine]
+		#Range: > 1000
+		tank_capacity = 12000
+		#Range: 0.0 ~ 1.7976931348623157E308
+		base_mass = 10.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		drive_torque = 360.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		friction = 0.0
+		#Range: 0.01 ~ 1.0
+		max_speed_factor = 1.0
+
+	[multiblocks.steel_sheetmetal_tank]
+		#Range: > 1000
+		capacity = 2048000
+		#Range: > 1
+		transfer_speed = 1000
+

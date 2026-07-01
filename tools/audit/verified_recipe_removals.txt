@@ -1,0 +1,9 @@
+# Recipe IDs confirmed present in source mod jars and absent after KubeJS reload.
+advgenerators:crafting/controller
+mekanism:processing/quartz/to_ore
+mekanism:processing/coal/to_ore
+immersivepetroleum:distillationtower/oil
+nuclearcraft:electrolyzer/heavy_water
+nuclearcraft:electrolyzer/water
+nuclearcraft:melter/dusts_obsidian
+nuclearcraft:melter/obsidian

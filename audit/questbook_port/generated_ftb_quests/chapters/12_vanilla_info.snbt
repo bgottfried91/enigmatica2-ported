@@ -1,0 +1,517 @@
+{
+  id: "01000000000C0000",
+  group: "",
+  order_index: 5,
+  filename: "12_vanilla_info",
+  title: "Vanilla \\& Info",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      id: "0200000000230000",
+      title: "Just Enough Items",
+      x: 5.75,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000000230000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["Just Enough Items is a mod that allows you to easily look up the recipe of a specific item as well as any recipe that uses it.", "", "There are 2 ways to do this. Firstly,pressing the Recipe hotkey (default R) or the Usage hotkey (default U) while hovering over an item in your inventory will open a window containing all ways to craft this particular item or all recipes that uses this particular item (with R and U respectively). While in this window, you may look up further recipes or usages by respectively left or right clicking while hovering any particular item displayed in any recipe.", "", "As an added benefit, clicking the category's name will bring up the complete list of recipes.", "", "The other way of bringing up those menus is through the search bar. To open it, press CTRL + O (by default) while in your inventory, then bottom left you can enter the name of the item or block you're looking up. Once you see the item in the list, just either use R/U or left/right clicking to see its recipes and usages as you would do if it was in your inventory.", "", "Lastly, searching for words with a @ before them will search for mod ids instead of item names. For example, searching \"@minecraft\" (without quotes) will bring up all items from vanilla Minecraft."],
+      icon: "minecraft:map",
+      rewards: [
+        {
+          id: "0400000000230000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001030000",
+      title: "Drink Me",
+      x: 4,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000001030000",
+          type: "item",
+          item: "minecraft:potion"
+        }
+      ],
+      description: ["The Awkward Potion is the base of most potions."],
+      icon: "minecraft:potion",
+      dependencies: ["0200000001040000"],
+      rewards: [
+        {
+          id: "0400000001030000",
+          type: "item",
+          item: "minecraft:melon",
+          count: 5,
+          title: "Choice option: minecraft:melon"
+        },
+        {
+          id: "0400000001030001",
+          type: "item",
+          item: "minecraft:golden_carrot",
+          count: 5,
+          title: "Choice option: minecraft:golden_carrot"
+        },
+        {
+          id: "0400000001030002",
+          type: "item",
+          item: "minecraft:cod",
+          count: 5,
+          title: "Choice option: minecraft:cod"
+        }
+      ]
+    },
+    {
+      id: "0200000001040000",
+      title: "Brewery",
+      x: 4,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000001040000",
+          type: "item",
+          item: "minecraft:brewing_stand"
+        }
+      ],
+      description: ["Start your own brewery by crafting a Brewing Stand."],
+      icon: "minecraft:brewing_stand",
+      rewards: [
+        {
+          id: "0400000001040000",
+          type: "item",
+          item: "minecraft:blaze_powder",
+          count: 5
+        }
+      ]
+    },
+    {
+      id: "0200000001050000",
+      title: "Drink Me II",
+      x: 4,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000001050000",
+          type: "item",
+          item: "minecraft:potion"
+        },
+        {
+          id: "0300000001050001",
+          type: "item",
+          item: "minecraft:potion"
+        },
+        {
+          id: "0300000001050002",
+          type: "item",
+          item: "minecraft:potion"
+        },
+        {
+          id: "0300000001050003",
+          type: "item",
+          item: "minecraft:potion"
+        },
+        {
+          id: "0300000001050004",
+          type: "item",
+          item: "minecraft:potion"
+        },
+        {
+          id: "0300000001050005",
+          type: "item",
+          item: "minecraft:potion"
+        },
+        {
+          id: "0300000001050006",
+          type: "item",
+          item: "minecraft:potion"
+        },
+        {
+          id: "0300000001050007",
+          type: "item",
+          item: "minecraft:potion"
+        }
+      ],
+      description: ["Turn in one of each tier 1 vanilla potion that buffs the player."],
+      icon: "minecraft:potion",
+      dependencies: ["0200000001030000"],
+      rewards: [
+        {
+          id: "0400000001050000",
+          type: "item",
+          item: "minecraft:ghast_tear",
+          count: 16,
+          title: "Choice option: minecraft:ghast_tear"
+        },
+        {
+          id: "0400000001050001",
+          type: "item",
+          item: "minecraft:blaze_powder",
+          count: 64,
+          title: "Choice option: minecraft:blaze_powder"
+        },
+        {
+          id: "0400000001050002",
+          type: "item",
+          item: "minecraft:blaze_rod",
+          count: 30,
+          title: "Choice option: minecraft:blaze_rod"
+        },
+        {
+          id: "0400000001050003",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001060000",
+      title: "Another One Bites the Dust",
+      x: 2,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000001060000",
+          type: "item",
+          item: "minecraft:redstone",
+          count: 10
+        },
+        {
+          id: "0300000001060001",
+          type: "item",
+          item: "minecraft:glowstone_dust",
+          count: 10
+        }
+      ],
+      description: ["Get 10 Glowstone Dust and 10 Redstone Dust."],
+      icon: "minecraft:glowstone_dust",
+      dependencies: ["0200000001070000"],
+      rewards: [
+        {
+          id: "0400000001060000",
+          type: "item",
+          item: "minecraft:glowstone",
+          count: 4,
+          title: "Choice option: minecraft:glowstone"
+        },
+        {
+          id: "0400000001060001",
+          type: "item",
+          item: "minecraft:redstone_block",
+          count: 2,
+          title: "Choice option: minecraft:redstone_block"
+        }
+      ]
+    },
+    {
+      id: "0200000001070000",
+      title: "Millionaire",
+      x: 2,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000001070000",
+          type: "item",
+          item: "minecraft:iron_block",
+          count: 2,
+          consume_items: "true"
+        },
+        {
+          id: "0300000001070001",
+          type: "item",
+          item: "minecraft:gold_block",
+          count: 2,
+          consume_items: "true"
+        },
+        {
+          id: "0300000001070002",
+          type: "item",
+          item: "minecraft:diamond_block",
+          count: 2,
+          consume_items: "true"
+        }
+      ],
+      description: ["Give 2 blocks of: Iron, Gold \\& Diamond in exchange for money."],
+      icon: "minecraft:diamond",
+      rewards: [
+        {
+          id: "0400000001070000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001080000",
+      title: "Play That Funky Music",
+      x: 2,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000001080000",
+          type: "item",
+          item: "minecraft:music_disc_13"
+        },
+        {
+          id: "0300000001080001",
+          type: "item",
+          item: "minecraft:jukebox"
+        }
+      ],
+      description: ["Find a music disc, and find or craft a Jukebox. Music discs can be found in dungeon chests, and are also dropped by creepers killed by skeletons."],
+      icon: "minecraft:music_disc_cat",
+      dependencies: ["0200000001060000"],
+      rewards: [
+        {
+          id: "0400000001080000",
+          type: "item",
+          item: "minecraft:music_disc_ward",
+          title: "Choice option: minecraft:music_disc_ward"
+        },
+        {
+          id: "0400000001080001",
+          type: "item",
+          item: "minecraft:music_disc_wait",
+          title: "Choice option: minecraft:music_disc_wait"
+        },
+        {
+          id: "0400000001080002",
+          type: "item",
+          item: "minecraft:music_disc_mall",
+          title: "Choice option: minecraft:music_disc_mall"
+        }
+      ]
+    },
+    {
+      id: "0200000001090000",
+      title: "Ent",
+      x: 0,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000001090000",
+          type: "item",
+          item: "minecraft:oak_sapling"
+        },
+        {
+          id: "0300000001090001",
+          type: "item",
+          item: "minecraft:spruce_sapling"
+        },
+        {
+          id: "0300000001090002",
+          type: "item",
+          item: "minecraft:birch_sapling"
+        },
+        {
+          id: "0300000001090003",
+          type: "item",
+          item: "minecraft:jungle_sapling"
+        },
+        {
+          id: "0300000001090004",
+          type: "item",
+          item: "minecraft:acacia_sapling"
+        },
+        {
+          id: "0300000001090005",
+          type: "item",
+          item: "minecraft:dark_oak_sapling"
+        }
+      ],
+      description: ["Find one of each vanilla sapling."],
+      icon: "minecraft:oak_sapling",
+      rewards: [
+        {
+          id: "0400000001090000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000010A0000",
+      title: "Flowerpower",
+      x: 0,
+      y: 2,
+      tasks: [
+        {
+          id: "03000000010A0000",
+          type: "item",
+          item: "minecraft:dandelion"
+        },
+        {
+          id: "03000000010A0001",
+          type: "item",
+          item: "minecraft:poppy"
+        },
+        {
+          id: "03000000010A0002",
+          type: "item",
+          item: "minecraft:blue_orchid"
+        },
+        {
+          id: "03000000010A0003",
+          type: "item",
+          item: "minecraft:allium"
+        },
+        {
+          id: "03000000010A0004",
+          type: "item",
+          item: "minecraft:azure_bluet"
+        },
+        {
+          id: "03000000010A0005",
+          type: "item",
+          item: "minecraft:red_tulip"
+        },
+        {
+          id: "03000000010A0006",
+          type: "item",
+          item: "minecraft:orange_tulip"
+        },
+        {
+          id: "03000000010A0007",
+          type: "item",
+          item: "minecraft:white_tulip"
+        },
+        {
+          id: "03000000010A0008",
+          type: "item",
+          item: "minecraft:pink_tulip"
+        },
+        {
+          id: "03000000010A0009",
+          type: "item",
+          item: "minecraft:oxeye_daisy"
+        }
+      ],
+      description: ["Find one of each small vanilla flower."],
+      icon: "minecraft:red_tulip",
+      dependencies: ["0200000001090000"],
+      rewards: [
+        {
+          id: "04000000010A0000",
+          type: "item",
+          item: "botania:brew_flask"
+        },
+        {
+          id: "04000000010A0001",
+          type: "item",
+          item: "minecraft:jungle_sapling"
+        },
+        {
+          id: "04000000010A0002",
+          type: "item",
+          item: "minecraft:acacia_sapling"
+        }
+      ]
+    },
+    {
+      id: "02000000010B0000",
+      title: "More Flowerpower",
+      x: 0,
+      y: 4,
+      tasks: [
+        {
+          id: "03000000010B0000",
+          type: "item",
+          item: "minecraft:sunflower"
+        },
+        {
+          id: "03000000010B0001",
+          type: "item",
+          item: "minecraft:lilac"
+        },
+        {
+          id: "03000000010B0002",
+          type: "item",
+          item: "minecraft:rose_bush"
+        },
+        {
+          id: "03000000010B0003",
+          type: "item",
+          item: "minecraft:peony"
+        }
+      ],
+      description: ["Find one of each large vanilla flower."],
+      icon: "minecraft:rose_bush",
+      dependencies: ["02000000010A0000"],
+      rewards: [
+        {
+          id: "04000000010B0000",
+          type: "item",
+          item: "botania:brew_flask"
+        },
+        {
+          id: "04000000010B0064",
+          type: "item",
+          item: "minecraft:dark_oak_sapling",
+          count: 4,
+          title: "Choice option: minecraft:dark_oak_sapling"
+        },
+        {
+          id: "04000000010B0065",
+          type: "item",
+          item: "minecraft:birch_sapling",
+          title: "Choice option: minecraft:birch_sapling"
+        }
+      ]
+    },
+    {
+      id: "02000000012D0000",
+      title: "Inventory Tweaks",
+      x: 5.75,
+      y: 2,
+      tasks: [
+        {
+          id: "03000000012D0000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["Inventory Tweaks is a mod that adds convenience for inventory management.", "", "Its main features allow quick sorting of any inventory (be it yours or a Chest's) by a single mouse middle click or the sorting key (R by default), as well as automatic replacement of broken tools/emptied block stacks in your hand.", "", "For example, you have multiple stacks of Cobblestone that you are placing down. Once you placed an entire stack, instead of having to scroll to the next stack or go to your inventory to put them in your hotbar, Inventory Tweaks will automatically move one to your active hotbar slot."],
+      icon: "minecraft:trapped_chest",
+      dependencies: ["0200000000230000"],
+      rewards: [
+        {
+          id: "04000000012D0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000012E0000",
+      title: "Mouse Tweaks",
+      x: 5.75,
+      y: 4,
+      tasks: [
+        {
+          id: "03000000012E0000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["Mouse Tweaks is a mod that adds convenience when moving items around inventories.", "", "Here is a run-through of its features :", "-Holding right click while dragging an item accross multiple slots will, as always, deposit one of each in each slot, with the difference being that you can pass over the same slot multiple times in order to deposit more than one item", "-Holding left click while picking up an item and dragging it accross multiple slots will allow you to pick up all stacks of the same item along the way, holding shift will \"shift left click\" them instead of adding them to the dragged stack", "-Holding shift and left click then dragging accross items will do the same as if you \"shif left clicked\" each individual one you pass over", "-Scrolling down while hovering over an item in an open inventory (like a Chest) will \"shift left click\" it to the other inventory"],
+      icon: "minecraft:tripwire_hook",
+      dependencies: ["02000000012D0000"],
+      rewards: [
+        {
+          id: "04000000012E0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    }
+  ],
+  quest_links: [],
+  subtitle: ["Finding and crafting various things from Vanilla Minecraft. Authored by NillerMedDild, Lykrast \\& TurtleMiauw."],
+  icon: "minecraft:book"
+}

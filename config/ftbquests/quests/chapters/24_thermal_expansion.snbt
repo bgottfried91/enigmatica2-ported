@@ -1,0 +1,833 @@
+{
+  id: "0100000000180000",
+  group: "",
+  order_index: 13,
+  filename: "24_thermal_expansion",
+  title: "Thermal Expansion",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      id: "0200000002460000",
+      title: "Thermal Expansion",
+      x: 3.33,
+      y: 1,
+      tasks: [
+        {
+          id: "0300000002460000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["Welcome to Thermal Expansion!", "", "This mod offers a large suite of powerful machines. Energy usage and speed of all machines have been increased, some more than others.", "", "The energy production of dynamos have all been increased."],
+      icon: "thermal:wrench",
+      rewards: [
+        {
+          id: "0400000002460000",
+          type: "item",
+          item: "thermal:wrench"
+        },
+        {
+          id: "0400000002460001",
+          type: "item",
+          item: "thermal:rf_potato"
+        },
+        {
+          id: "0400000002460002",
+          type: "item",
+          item: "thermal:redprint"
+        },
+        {
+          id: "0400000002460001",
+          type: "command",
+          command: "/say VAR_NAME has begun the Thermal Expansion questline!"
+        }
+      ]
+    },
+    {
+      id: "0200000002470000",
+      title: "Pulverizer",
+      x: 8.33,
+      y: 1,
+      tasks: [
+        {
+          id: "0300000002470000",
+          type: "item",
+          item: "thermal:machine_pulverizer"
+        }
+      ],
+      description: ["The Pulverizer pulverizes stuff. It can double ores, produce Flint from Gravel, and a lot more."],
+      icon: "thermal:machine_pulverizer",
+      dependencies: ["0200000002480000"],
+      rewards: [
+        {
+          id: "0400000002470000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002480000",
+      title: "Redstone Furnace",
+      x: 7.33,
+      y: 1,
+      tasks: [
+        {
+          id: "0300000002480000",
+          type: "item",
+          item: "thermal:machine_furnace"
+        }
+      ],
+      description: ["A powered furnace."],
+      icon: "thermal:machine_furnace",
+      dependencies: ["0200000002460000"],
+      rewards: [
+        {
+          id: "0400000002480000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002490000",
+      title: "Sawmill",
+      x: 11.33,
+      y: 1,
+      tasks: [
+        {
+          id: "0300000002490000",
+          type: "item",
+          item: "thermal:machine_sawmill"
+        }
+      ],
+      description: ["The Sawmill cuts Wood Logs into Planks, giving 6 Planks per Log."],
+      icon: "thermal:machine_sawmill",
+      dependencies: ["0200000002560000"],
+      rewards: [
+        {
+          id: "0400000002490000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000024A0000",
+      title: "Induction Smelter",
+      x: 12.33,
+      y: 1,
+      tasks: [
+        {
+          id: "03000000024A0000",
+          type: "item",
+          item: "thermal:machine_smelter"
+        }
+      ],
+      description: ["The Induction Smelter can double ores when supplied with Sand, Slag or Cinnabar, and make various crafting components."],
+      icon: "thermal:machine_smelter",
+      dependencies: ["0200000002490000"],
+      rewards: [
+        {
+          id: "04000000024A0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000024B0000",
+      title: "Sequential Fabricator",
+      x: 10.33,
+      y: 4,
+      tasks: [
+        {
+          id: "03000000024B0000",
+          type: "item",
+          item: "thermal:machine_brewer"
+        }
+      ],
+      description: ["The Cyclic Assembler in 1.12.x!"],
+      icon: "thermal:machine_press",
+      dependencies: ["0200000002570000"],
+      rewards: [
+        {
+          id: "04000000024B0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000024C0000",
+      title: "Fractionating Still",
+      x: 9.33,
+      y: 1,
+      tasks: [
+        {
+          id: "03000000024C0000",
+          type: "item",
+          item: "thermal:machine_refinery"
+        }
+      ],
+      description: ["The Fractionating Still refines liquids, sometimes with by-products."],
+      icon: "thermal:machine_refinery",
+      dependencies: ["0200000002470000"],
+      rewards: [
+        {
+          id: "04000000024C0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000024D0000",
+      title: "Energetic Infuser",
+      x: 13.33,
+      y: 1,
+      tasks: [
+        {
+          id: "03000000024D0000",
+          type: "item",
+          item: "thermal:charge_bench"
+        }
+      ],
+      description: ["The Energetic Infuser can charge items that hold RF, and infuse some items into others."],
+      icon: "thermal:charge_bench",
+      dependencies: ["02000000024A0000"],
+      rewards: [
+        {
+          id: "04000000024D0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000024E0000",
+      title: "Fluid Transposer",
+      x: 14.33,
+      y: 1,
+      tasks: [
+        {
+          id: "03000000024E0000",
+          type: "item",
+          item: "thermal:machine_bottler"
+        }
+      ],
+      description: ["The Fluid Transposer can fill/empty tanks and buckets, aswell as some items. It's used extensively through that pack - Some custom recipes will require you to upgrade it."],
+      icon: "thermal:machine_bottler",
+      dependencies: ["02000000024D0000"],
+      rewards: [
+        {
+          id: "04000000024E0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000024F0000",
+      title: "Steam Dynamo",
+      x: 2,
+      y: 3,
+      tasks: [
+        {
+          id: "03000000024F0000",
+          type: "item",
+          item: "thermal:dynamo_stirling"
+        }
+      ],
+      description: ["This Dynamo produces power from burnables and water.", "", "To see all the ways to produce power with Dynamos, use JEI."],
+      icon: "thermal:dynamo_stirling",
+      dependencies: ["0200000002460000"],
+      rewards: [
+        {
+          id: "04000000024F0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002500000",
+      title: "Magmatic Dynamo",
+      x: 2,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000002500000",
+          type: "item",
+          item: "thermal:dynamo_compression"
+        }
+      ],
+      description: ["This Dynamo produces power from hot liquids."],
+      icon: "thermal:dynamo_compression",
+      dependencies: ["02000000024F0000"],
+      rewards: [
+        {
+          id: "0400000002500000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002510000",
+      title: "Compression Dynamo",
+      x: 2,
+      y: 5,
+      tasks: [
+        {
+          id: "0300000002510000",
+          type: "item",
+          item: "thermal:dynamo_magmatic"
+        }
+      ],
+      description: ["This Dynamo produces power from a variety of liquid fuels, such as Liquifacted Coal and Refined Fuel, and water as coolant. See https://teamcofh.com/docs/compression-dynamo/ for the full list of fuels."],
+      icon: "thermal:dynamo_magmatic",
+      dependencies: ["0200000002500000"],
+      rewards: [
+        {
+          id: "0400000002510000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002520000",
+      title: "Reactant Dynamo",
+      x: 2,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000002520000",
+          type: "item",
+          item: "thermal:dynamo_numismatic"
+        }
+      ],
+      description: ["This Dynamo produces power from a solid reactant, and a liquid fuel, for example Destabilized Redstone and Sugar."],
+      icon: "thermal:dynamo_numismatic",
+      dependencies: ["0200000002510000"],
+      rewards: [
+        {
+          id: "0400000002520000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002530000",
+      title: "Enervation Dynamo",
+      x: 2,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000002530000",
+          type: "item",
+          item: "thermal:dynamo_lapidary"
+        }
+      ],
+      description: ["This Dynamo produces power from redstone."],
+      icon: "thermal:dynamo_lapidary",
+      dependencies: ["0200000002520000"],
+      rewards: [
+        {
+          id: "0400000002530000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002540000",
+      title: "Numismatic Dynamo",
+      x: 2,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000002540000",
+          type: "item",
+          item: "thermal:dynamo_disenchantment"
+        }
+      ],
+      description: ["This Dynamo produces power from Coins made in the Compactor with a special augment."],
+      icon: "thermal:dynamo_disenchantment",
+      dependencies: ["0200000002530000"],
+      rewards: [
+        {
+          id: "0400000002540000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002550000",
+      title: "Magma Crucible",
+      x: 15.33,
+      y: 1,
+      tasks: [
+        {
+          id: "0300000002550000",
+          type: "item",
+          item: "thermal:machine_crucible"
+        }
+      ],
+      description: ["The Magma Crucible smelts items into liquids."],
+      icon: "thermal:machine_crucible",
+      dependencies: ["02000000024E0000"],
+      rewards: [
+        {
+          id: "0400000002550000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002560000",
+      title: "Compactor",
+      x: 10.33,
+      y: 1,
+      tasks: [
+        {
+          id: "0300000002560000",
+          type: "item",
+          item: "thermal:machine_press"
+        }
+      ],
+      description: ["The Compactor can make Plates from Ingot. You can augment it in order to make other things, such as Gears."],
+      icon: "thermal:machine_brewer",
+      dependencies: ["02000000024C0000"],
+      rewards: [
+        {
+          id: "0400000002560000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002570000",
+      title: "Glacial Precipitator",
+      x: 9.33,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000002570000",
+          type: "item",
+          item: "thermal:machine_chiller"
+        }
+      ],
+      description: ["The Glacial Precipitator is able to make Snow and Ice out of Water and power."],
+      icon: "thermal:machine_chiller",
+      dependencies: ["0200000002580000"],
+      rewards: [
+        {
+          id: "0400000002570000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002580000",
+      title: "Igneous Extruder",
+      x: 8.33,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000002580000",
+          type: "item",
+          item: "thermal:machine_crafter"
+        }
+      ],
+      description: ["The Igneous Extruder uses Water, Lava and a little power to produce Cobblestone, Stone or Obsidian."],
+      icon: "thermal:machine_crafter",
+      dependencies: ["0200000002590000"],
+      rewards: [
+        {
+          id: "0400000002580000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002590000",
+      title: "Energy Cell",
+      x: 7.33,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000002590000",
+          type: "item",
+          item: "thermal:energy_cell"
+        }
+      ],
+      description: ["The Energy Cell has been configured to hold and transfer far more than the default. It's well worth making, especially if you upgrade and enchant it."],
+      icon: "thermal:energy_cell",
+      dependencies: ["0200000002460000"],
+      rewards: [
+        {
+          id: "0400000002590000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000025A0000",
+      title: "Aqueous Accumulator",
+      x: 8.33,
+      y: 5,
+      tasks: [
+        {
+          id: "03000000025A0000",
+          type: "item",
+          item: "thermal:device_water_gen"
+        }
+      ],
+      description: ["Slowly generates Water, passively. If adjacent to 2 or more Water Source blocks, the generation increases. Having more than 2 source blocks does not increase the speed further."],
+      icon: "thermal:device_water_gen",
+      dependencies: ["02000000025F0000"],
+      rewards: [
+        {
+          id: "04000000025A0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000025B0000",
+      title: "Nullifier",
+      x: 9.33,
+      y: 5,
+      tasks: [
+        {
+          id: "03000000025B0000",
+          type: "item",
+          item: "thermal:device_nullifier"
+        }
+      ],
+      description: ["A fancy trash-can!"],
+      icon: "thermal:device_nullifier",
+      dependencies: ["02000000025A0000"],
+      rewards: [
+        {
+          id: "04000000025B0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000025D0000",
+      title: "Rich Slag",
+      x: 12.33,
+      y: 2.67,
+      tasks: [
+        {
+          id: "03000000025D0000",
+          type: "item",
+          item: "thermal:rich_slag"
+        }
+      ],
+      description: ["A by-product of processing ores in the Induction Smelter. Redstone Ore plus Sand is particularly good."],
+      icon: "thermal:rich_slag",
+      dependencies: ["02000000024A0000"],
+      rewards: [
+        {
+          id: "04000000025D0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000025E0000",
+      title: "Cinnabar",
+      x: 8.33,
+      y: 2.67,
+      tasks: [
+        {
+          id: "03000000025E0000",
+          type: "item",
+          item: "thermal:cinnabar"
+        }
+      ],
+      description: ["A by-product of pulverizing Gold and Redstone Ores. It can be used for crafting, and increasing the output of the Induction Smelters processes."],
+      icon: "thermal:cinnabar",
+      dependencies: ["0200000002470000"],
+      rewards: [
+        {
+          id: "04000000025E0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000025F0000",
+      title: "Arboreal Extractor",
+      x: 6.33,
+      y: 5,
+      tasks: [
+        {
+          id: "03000000025F0000",
+          type: "item",
+          item: "thermal:device_tree_extractor"
+        }
+      ],
+      description: ["Extracts fluids from trees."],
+      icon: "thermal:device_tree_extractor",
+      dependencies: ["0200000002460000", "0200000002590000"],
+      rewards: [
+        {
+          id: "04000000025F0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002600000",
+      title: "Rosin",
+      x: 9.33,
+      y: 2.67,
+      tasks: [
+        {
+          id: "0300000002600000",
+          type: "item",
+          item: "thermal:rosin"
+        }
+      ],
+      description: ["A by-product of refining Resin into Tree Oil."],
+      icon: "thermal:rosin",
+      dependencies: ["02000000024C0000"],
+      rewards: [
+        {
+          id: "0400000002600000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002640000",
+      title: "Hardened Upgrade Kit",
+      x: 5.33,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000002640000",
+          type: "item",
+          item: "thermal:upgrade_augment_1"
+        }
+      ],
+      description: ["This is used to upgrade machines and gadgets in Thermal Expansion. Requires tier immediately preceding."],
+      icon: "thermal:upgrade_augment_1",
+      dependencies: ["0200000002460000"],
+      rewards: [
+        {
+          id: "0400000002640000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002670000",
+      title: "Fuel Catalyzer",
+      x: 0.67,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000002670000",
+          type: "item",
+          item: "thermal:dynamo_fuel_augment"
+        }
+      ],
+      description: ["Increases fuel efficiency."],
+      icon: "thermal:dynamo_fuel_augment",
+      dependencies: ["02000000024F0000"],
+      rewards: [
+        {
+          id: "0400000002670000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002680000",
+      title: "Auxiliary Transmission Coil",
+      x: 0.67,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000002680000",
+          type: "item",
+          item: "thermal:dynamo_output_augment"
+        }
+      ],
+      description: ["Increases power generation."],
+      icon: "thermal:dynamo_output_augment",
+      dependencies: ["02000000024F0000"],
+      rewards: [
+        {
+          id: "0400000002680000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000026B0000",
+      title: "Numismatic Press",
+      x: 10.33,
+      y: 2.67,
+      tasks: [
+        {
+          id: "03000000026B0000",
+          type: "item",
+          item: "thermal:press_coin_die"
+        }
+      ],
+      description: ["This upgrade allows the Compactor to make coins, used to produce energy. It must be set to \"Mint\" mode."],
+      icon: "thermal:press_coin_die",
+      dependencies: ["0200000002560000"],
+      rewards: [
+        {
+          id: "04000000026B0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002710000",
+      title: "Gearworking Die",
+      x: 10.33,
+      y: -0.33,
+      tasks: [
+        {
+          id: "0300000002710000",
+          type: "item",
+          item: "thermal:press_gear_die"
+        }
+      ],
+      description: ["This upgrade allows the Compactor to make Gears out of appropriate metals. The Compactor must be set to Gear mode."],
+      icon: "thermal:press_gear_die",
+      dependencies: ["0200000002560000"],
+      rewards: [
+        {
+          id: "0400000002710000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002720000",
+      title: "Reinforced Upgrade Kit",
+      x: 6.33,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000002720000",
+          type: "item",
+          item: "thermal:upgrade_augment_2"
+        }
+      ],
+      description: ["This is used to upgrade machines and gadgets in Thermal Expansion. Requires tier immediately preceding."],
+      icon: "thermal:upgrade_augment_2",
+      dependencies: ["0200000002640000"],
+      rewards: [
+        {
+          id: "0400000002720000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002730000",
+      title: "Signalum Upgrade Kit",
+      x: 7.33,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000002730000",
+          type: "item",
+          item: "thermal:upgrade_augment_3"
+        }
+      ],
+      description: ["This is used to upgrade machines and gadgets in Thermal Expansion. Requires tier immediately preceding."],
+      icon: "thermal:upgrade_augment_3",
+      dependencies: ["0200000002720000"],
+      rewards: [
+        {
+          id: "0400000002730000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002750000",
+      title: "Parabolic Flux Coupling",
+      x: 13.33,
+      y: 2.67,
+      tasks: [
+        {
+          id: "0300000002750000",
+          type: "item",
+          item: "thermal:rf_coil_xfer_augment"
+        }
+      ],
+      description: ["This upgrade allows for rapid wireless recharging of Thermal Expansion Capacitors. The machine will be incapable of anything else."],
+      icon: "thermal:rf_coil_xfer_augment",
+      dependencies: ["02000000024D0000"],
+      rewards: [
+        {
+          id: "0400000002750000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002760000",
+      title: "Resonant Upgrade Kit",
+      x: 8.33,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000002760000",
+          type: "item",
+          item: "thermal:upgrade_augment_3"
+        }
+      ],
+      description: ["This is used to upgrade machines and gadgets in Thermal Expansion. Requires tier immediately preceding."],
+      icon: "thermal:upgrade_augment_3",
+      dependencies: ["0200000002730000"],
+      rewards: [
+        {
+          id: "0400000002760000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    }
+  ],
+  quest_links: [],
+  subtitle: ["Quests for Thermal Expansion. Authored by NillerMedDild."],
+  icon: "minecraft:book"
+}

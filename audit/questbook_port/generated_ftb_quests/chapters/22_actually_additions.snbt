@@ -1,0 +1,558 @@
+{
+  id: "0100000000160000",
+  group: "",
+  order_index: 11,
+  filename: "22_actually_additions",
+  title: "Actually Additions",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      id: "0200000001EA0000",
+      title: "Actually Additions",
+      x: -6,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000001EA0000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["Welcome to Actually Additions!", "Actually Additions offers a wide variety of blocks and gadgets."],
+      icon: "actuallyadditions:booklet",
+      rewards: [
+        {
+          id: "0400000001EA0000",
+          type: "item",
+          item: "actuallyadditions:booklet"
+        },
+        {
+          id: "0400000001EA0001",
+          type: "command",
+          command: "/say VAR_NAME has begun the Actually Additions questline!"
+        }
+      ]
+    },
+    {
+      id: "0200000001EB0000",
+      title: "Atomic Reconstructor",
+      x: -6,
+      y: 1.67,
+      tasks: [
+        {
+          id: "0300000001EB0000",
+          type: "item",
+          item: "actuallyadditions:atomic_reconstructor"
+        }
+      ],
+      description: ["The Atomic Reconstructor is able to \"reconstruct\" some materials into others. Place or throw the blocks/items you want to change in front of it, and fire its' laser. By default, the laser will fire every few seconds."],
+      icon: "actuallyadditions:atomic_reconstructor",
+      dependencies: ["0200000001EA0000"],
+      rewards: [
+        {
+          id: "0400000001EB0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001EC0000",
+      title: "Empowerer",
+      x: -2.67,
+      y: 5.67,
+      tasks: [
+        {
+          id: "0300000001EC0000",
+          type: "item",
+          item: "actuallyadditions:empowerer"
+        },
+        {
+          id: "0300000001EC0001",
+          type: "item",
+          item: "actuallyadditions:display_stand",
+          count: 4
+        }
+      ],
+      description: ["The Empowerer is a crafting mechanic. You'll need to place the Display Stands with 2 blocks between them and the Empowerer, in all 4 cardinal directions.", "", "The Display Stands require power for the Empowerer to function.", "", "Each Display Stand needs a ingredient, and the Empowerer takes one aswell.", "", "The crafting process automatically begins if 4 correct ingredients and the corresponding Empowerer item is supplied."],
+      icon: "actuallyadditions:empowerer",
+      dependencies: ["0200000001EF0000"],
+      rewards: [
+        {
+          id: "0400000001EC0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001ED0000",
+      title: "Crusher",
+      x: -4.33,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000001ED0000",
+          type: "item",
+          item: "actuallyadditions:crusher"
+        }
+      ],
+      description: ["The Crusher is capable of crushing blocks. This can be used to double ores, and turn various blocks into other blocks."],
+      icon: "actuallyadditions:crusher",
+      dependencies: ["0200000001EF0000"],
+      rewards: [
+        {
+          id: "0400000001ED0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001EE0000",
+      title: "Powered Furnace",
+      x: -4.33,
+      y: 5.67,
+      tasks: [
+        {
+          id: "0300000001EE0000",
+          type: "item",
+          item: "actuallyadditions:powered_furnace"
+        }
+      ],
+      description: ["The Powered Furnace is simply a Furnace that runs on power."],
+      icon: "actuallyadditions:powered_furnace",
+      dependencies: ["0200000001ED0000"],
+      rewards: [
+        {
+          id: "0400000001EE0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001EF0000",
+      title: "Enori",
+      x: -6,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000001EF0000",
+          type: "item",
+          item: "actuallyadditions:enori_crystal"
+        }
+      ],
+      description: ["Enori Crystals are made with the Atomic Reconstructor, and are required in order to progress to Thermal Expansion."],
+      icon: "actuallyadditions:enori_crystal",
+      dependencies: ["0200000001EB0000"],
+      rewards: [
+        {
+          id: "0400000001EF0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001F00000",
+      title: "Worms",
+      x: -4.33,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000001F00000",
+          type: "item",
+          item: "actuallyadditions:worm"
+        }
+      ],
+      description: ["Worms are acquired by tilling grass. They fertilize and till the grass/dirt around them, in a 3x3 centered on themselves.", "", "They &4&4&r&4&rdie after &410.000 ticks&r, in this pack."],
+      icon: "actuallyadditions:worm",
+      dependencies: ["0200000001EA0000"],
+      rewards: [
+        {
+          id: "0400000001F00000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001F10000",
+      title: "Fermenting Barrel",
+      x: -2.67,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000001F10000",
+          type: "item",
+          item: "actuallyadditions:fermenting_barrel"
+        }
+      ],
+      description: ["The Fermenting Barrel refines the oil generated by the Canola Press."],
+      icon: "actuallyadditions:fermenting_barrel",
+      dependencies: ["0200000001F20000"],
+      rewards: [
+        {
+          id: "0400000001F10000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001F20000",
+      title: "Canola Press",
+      x: -4.33,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000001F20000",
+          type: "item",
+          item: "actuallyadditions:canola_press"
+        }
+      ],
+      description: ["The Canola Press turns Canola into oil, which can be used to generate power."],
+      icon: "actuallyadditions:canola_press",
+      dependencies: ["0200000001EB0000"],
+      rewards: [
+        {
+          id: "0400000001F20000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001F30000",
+      title: "Oil Generator",
+      x: -2.67,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000001F30000",
+          type: "item",
+          item: "actuallyadditions:oil_generator"
+        }
+      ],
+      description: ["The Oil Generator generates power with the oil produced with Canola, and it's upgraded versions."],
+      icon: "actuallyadditions:oil_generator",
+      dependencies: ["0200000001EF0000", "0200000001F20000"],
+      rewards: [
+        {
+          id: "0400000001F30000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001F40000",
+      title: "Upgraded Canola Power",
+      x: -1,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000001F40000",
+          type: "item",
+          item: "actuallyadditions:crystallized_canola_seed"
+        }
+      ],
+      description: ["Crystallized Canola can upgrade the oil made by the Fermenting Barrel, when it's thrown into it."],
+      icon: "actuallyadditions:crystallized_canola_seed",
+      dependencies: ["0200000001F10000"],
+      rewards: [
+        {
+          id: "0400000001F40000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001F50000",
+      title: "Ultimate Canola",
+      x: -1,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000001F50000",
+          type: "item",
+          item: "actuallyadditions:empowered_canola_seed"
+        }
+      ],
+      description: ["Empowered Canola improves the oil even further. Like with Crystallized Canola Seeds, throw the Empowered Canola into the oil."],
+      icon: "actuallyadditions:empowered_canola_seed",
+      dependencies: ["0200000001EC0000", "0200000001F40000"],
+      rewards: [
+        {
+          id: "0400000001F50000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000029F0000",
+      title: "Single Battery",
+      x: -6,
+      y: 4.33,
+      tasks: [
+        {
+          id: "03000000029F0000",
+          type: "item",
+          item: "actuallyadditions:single_battery"
+        }
+      ],
+      description: ["Handy power storage - It's a great way to keep equipment powered. Shift-click to toggle between the different modes."],
+      icon: "actuallyadditions:single_battery",
+      dependencies: ["0200000001EF0000"],
+      rewards: [
+        {
+          id: "04000000029F0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002A10000",
+      title: "Automatic Feeder",
+      x: -1,
+      y: 1.67,
+      tasks: [
+        {
+          id: "0300000002A10000",
+          type: "item",
+          item: "actuallyadditions:feeder"
+        }
+      ],
+      description: ["The Automatic Feeder does exactly that, just supply it with the appropriate food - Wheat for Cows, Carrot for Pigs, etc."],
+      icon: "actuallyadditions:feeder",
+      dependencies: ["0200000001EA0000"],
+      rewards: [
+        {
+          id: "0400000002A10000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002A40000",
+      title: "Farmer",
+      x: -4.33,
+      y: 1.67,
+      tasks: [
+        {
+          id: "0300000002A40000",
+          type: "item",
+          item: "actuallyadditions:farmer"
+        }
+      ],
+      description: ["When supplied with power, the Farmer will till, plant and harvest plants in front of it, in a 9x9 area."],
+      icon: "actuallyadditions:farmer",
+      dependencies: ["0200000001EA0000"],
+      rewards: [
+        {
+          id: "0400000002A40000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002A50000",
+      title: "Experience Solidifier",
+      x: -1,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000002A50000",
+          type: "item",
+          item: "actuallyadditions:xp_solidifier"
+        }
+      ],
+      description: ["The Experience Solidifier does exactly what the name suggests. Store all your experience by clicking All.", "", "Although it looks like it can only hold 1 stack of Solidified Experience, its internal buffer can store a lot more than that.", "", "Right-click with Solidified Experience to get experience. Shift-right click to consume a stack."],
+      icon: "actuallyadditions:xp_solidifier",
+      dependencies: ["0200000001EC0000"],
+      rewards: [
+        {
+          id: "0400000002A50000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002A60000",
+      title: "Ranged Collector",
+      x: -2.67,
+      y: 1.67,
+      tasks: [
+        {
+          id: "0300000002A60000",
+          type: "item",
+          item: "actuallyadditions:ranged_collector"
+        }
+      ],
+      description: ["The Ranged Collector will pick up item entities near it. It's highly configurable."],
+      icon: "actuallyadditions:ranged_collector",
+      dependencies: ["0200000001EA0000"],
+      rewards: [
+        {
+          id: "0400000002A60000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002A70000",
+      title: "Phantomface",
+      x: -1,
+      y: 8.33,
+      tasks: [
+        {
+          id: "0300000002A70000",
+          type: "item",
+          item: "actuallyadditions:phantom_itemface"
+        },
+        {
+          id: "0300000002A70001",
+          type: "item",
+          item: "actuallyadditions:phantom_connector"
+        }
+      ],
+      description: ["The Phantomface is essentially a block-proxy. By binding the Phantomface to a block, you can interact with that block by interacting with the Phantomface.", "", "This has a heap of useful applications, especially when it comes to automating machines.", "", "Bind the Phantomface to a block with the Phantom Connector."],
+      icon: "actuallyadditions:phantom_itemface",
+      dependencies: ["0200000001EC0000"],
+      rewards: [
+        {
+          id: "0400000002A70000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002A80000",
+      title: "Double Battery",
+      x: -6,
+      y: 5.67,
+      tasks: [
+        {
+          id: "0300000002A80000",
+          type: "item",
+          item: "actuallyadditions:double_battery"
+        }
+      ],
+      description: ["Handy power storage - It's a great way to keep equipment powered. Shift-click to toggle between the different modes."],
+      icon: "actuallyadditions:double_battery",
+      dependencies: ["02000000029F0000"],
+      rewards: [
+        {
+          id: "0400000002A80000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002AB0000",
+      title: "Greenhouse Glass",
+      x: -2.67,
+      y: 8.33,
+      tasks: [
+        {
+          id: "0300000002AB0000",
+          type: "item",
+          item: "actuallyadditions:greenhouse_glass"
+        }
+      ],
+      description: ["Greenhouse Glass speeds up the growth of plants underneath it."],
+      icon: "actuallyadditions:greenhouse_glass",
+      dependencies: ["0200000001EC0000"],
+      rewards: [
+        {
+          id: "0400000002AB0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002B10000",
+      title: "Triple Battery",
+      x: -6,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000002B10000",
+          type: "item",
+          item: "actuallyadditions:triple_battery"
+        }
+      ],
+      description: ["Handy power storage - It's a great way to keep equipment powered. Shift-click to toggle between the different modes."],
+      icon: "actuallyadditions:triple_battery",
+      dependencies: ["0200000002A80000"],
+      rewards: [
+        {
+          id: "0400000002B10000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002B20000",
+      title: "Quadruple Battery",
+      x: -6,
+      y: 8.33,
+      tasks: [
+        {
+          id: "0300000002B20000",
+          type: "item",
+          item: "actuallyadditions:quadruple_battery"
+        }
+      ],
+      description: ["Handy power storage - It's a great way to keep equipment powered. Shift-click to toggle between the different modes."],
+      icon: "actuallyadditions:quadruple_battery",
+      dependencies: ["0200000002B10000"],
+      rewards: [
+        {
+          id: "0400000002B20000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002B30000",
+      title: "Quintuple Battery",
+      x: -4.33,
+      y: 8.33,
+      tasks: [
+        {
+          id: "0300000002B30000",
+          type: "item",
+          item: "actuallyadditions:quintuple_battery"
+        }
+      ],
+      description: ["Handy power storage - It's a great way to keep equipment powered. Shift-click to toggle between the different modes."],
+      icon: "actuallyadditions:quintuple_battery",
+      dependencies: ["0200000002B20000"],
+      rewards: [
+        {
+          id: "0400000002B30000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    }
+  ],
+  quest_links: [],
+  subtitle: ["Quests for Actually Additions. Authored by NillerMedDild."],
+  icon: "minecraft:book"
+}

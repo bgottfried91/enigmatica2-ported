@@ -1,0 +1,1336 @@
+{
+  id: "0100000000110000",
+  group: "",
+  order_index: 9,
+  filename: "17_botania",
+  title: "Botania",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      id: "0200000002D90000",
+      title: "Botania",
+      x: 4.67,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000002D90000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["Welcome to Botania!", "", "Botania is a magic mod based on flowers.", "", "The flowers are split up in two main groups: Mana generating flowers, and functional flowers, which run on said mana.", "", "The Lexica Botania is really comprehensive, so I suggest you search through it, if you run into issues within the mod. The easiest way, in my opinion, to find what you're looking for, is to open the book index and start typing - That'll open up a search bar.", "", "If the Lexica Botania is in your inventory, you can hold CTRL on a Botania item, to open the corresponding entry."],
+      icon: "botania:lexicon",
+      rewards: [
+        {
+          id: "0400000002D90000",
+          type: "item",
+          item: "botania:lexicon"
+        },
+        {
+          id: "0400000002D90001",
+          type: "item",
+          item: "botania:fertilizer",
+          count: 16
+        },
+        {
+          id: "0400000002D90001",
+          type: "command",
+          command: "/say VAR_NAME has begun the Botania questline!"
+        }
+      ]
+    },
+    {
+      id: "0200000002DA0000",
+      title: "Pure Daisy",
+      x: 2,
+      y: 1.67,
+      tasks: [
+        {
+          id: "0300000002DA0000",
+          type: "item",
+          item: "botania:pure_daisy"
+        }
+      ],
+      description: ["The Pure Daisy can convert adjacent blocks to others. It's main use is for making Livingwood and Livingrock.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:pure_daisy",
+      dependencies: ["0200000002D90000"],
+      rewards: [
+        {
+          id: "0400000002DA0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002DB0000",
+      title: "Livingwood",
+      x: 0,
+      y: 1.67,
+      tasks: [
+        {
+          id: "0300000002DB0000",
+          type: "item",
+          item: "botania:livingwood"
+        }
+      ],
+      description: ["Livingwood is used in crafting.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:livingwood",
+      dependencies: ["0200000002DA0000"],
+      rewards: [
+        {
+          id: "0400000002DB0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002DC0000",
+      title: "Wand of the Forest",
+      x: 3.33,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000002DC0000",
+          type: "item",
+          item: "botania:twig_wand"
+        }
+      ],
+      description: ["The Wand of the Forest is the \"wrench\" of Botania.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:twig_wand",
+      dependencies: ["0200000002DE0000"],
+      rewards: [
+        {
+          id: "0400000002DC0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002DD0000",
+      title: "Endoflame",
+      x: 9.67,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000002DD0000",
+          type: "item",
+          item: "botania:endoflame"
+        }
+      ],
+      description: ["Consult the Lexica Botania for additional information."],
+      icon: "botania:endoflame",
+      dependencies: ["0200000002DF0000"],
+      rewards: [
+        {
+          id: "0400000002DD0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002DE0000",
+      title: "Mana Spreader",
+      x: 2,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000002DE0000",
+          type: "item",
+          item: "botania:mana_spreader"
+        }
+      ],
+      description: ["The Mana Spreader is used for transporting mana.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:mana_spreader",
+      dependencies: ["0200000002DB0000"],
+      rewards: [
+        {
+          id: "0400000002DE0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002DF0000",
+      title: "Petal Apothecary",
+      x: 9.67,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000002DF0000",
+          type: "item",
+          item: "botania:apothecary_default"
+        }
+      ],
+      description: ["Flowers are made in the Petal Apothecary - It needs a bucket of water, and you will need to drop a Seed in to finish crafting.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:apothecary_default",
+      dependencies: ["0200000002D90000"],
+      rewards: [
+        {
+          id: "0400000002DF0000",
+          type: "xp",
+          xp: 5
+        }
+      ]
+    },
+    {
+      id: "0200000002E00000",
+      title: "Manasteel",
+      x: 3.33,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000002E00000",
+          type: "item",
+          item: "botania:manasteel_ingot"
+        }
+      ],
+      description: ["Manasteel is used in crafting.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:manasteel_ingot",
+      dependencies: ["0200000002E70000"],
+      rewards: [
+        {
+          id: "0400000002E00000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002E10000",
+      title: "Hopperhock",
+      x: 14,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000002E10000",
+          type: "item",
+          item: "botania:hopperhock"
+        }
+      ],
+      description: ["", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:hopperhock",
+      dependencies: ["0200000002DF0000"],
+      rewards: [
+        {
+          id: "0400000002E10000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002E20000",
+      title: "Jaded Amaranthus",
+      x: 17,
+      y: 1.33,
+      tasks: [
+        {
+          id: "0300000002E20000",
+          type: "item",
+          item: "botania:jaded_amaranthus"
+        }
+      ],
+      description: ["The Jaded Amaranthus generates Mystical Flowers on nearby dirt/grass at the cost of mana.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:jaded_amaranthus",
+      dependencies: ["0200000002E10000"],
+      rewards: [
+        {
+          id: "0400000002E20000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002E30000",
+      title: "Mana Tablet",
+      x: 2,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000002E30000",
+          type: "item",
+          item: "botania:mana_tablet"
+        }
+      ],
+      description: ["The Mana Tablet can store mana - It's useful for powering your various Botania gadgets, such as Rods and Armor.", "", "Drop it in a Mana Pool set to output to fill it, drop it in a Mana Pool set to input to empty it.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:mana_tablet",
+      dependencies: ["0200000002E70000"],
+      rewards: [
+        {
+          id: "0400000002E30000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002E40000",
+      title: "Runic Altar",
+      x: 4.67,
+      y: 1.67,
+      tasks: [
+        {
+          id: "0300000002E40000",
+          type: "item",
+          item: "botania:runic_altar"
+        }
+      ],
+      description: ["The Runic Altar is used for crafting runes among other things.", "", "Place or drop the items needed for recipes, supply it with mana, and lastly throw a piece of Livingrock on top of it. End the crafting by right-clicking with the Wand of the Forest.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:runic_altar",
+      dependencies: ["0200000002E70000"],
+      rewards: [
+        {
+          id: "0400000002E40000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002E50000",
+      title: "Open Crate",
+      x: 0,
+      y: 5.67,
+      tasks: [
+        {
+          id: "0300000002E50000",
+          type: "item",
+          item: "botania:open_crate"
+        }
+      ],
+      description: ["The Open Crate immediately drops anything piped into it - It's very useful for automation.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:open_crate",
+      dependencies: ["0200000002DB0000"],
+      rewards: [
+        {
+          id: "0400000002E50000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002E60000",
+      title: "Alchemy Catalyst",
+      x: 2,
+      y: 5.67,
+      tasks: [
+        {
+          id: "0300000002E60000",
+          type: "item",
+          item: "botania:alchemy_catalyst"
+        }
+      ],
+      description: ["The Alchemy Catalyst lets you convert items into other items at the cost of mana.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:alchemy_catalyst",
+      dependencies: ["0200000002E30000"],
+      rewards: [
+        {
+          id: "0400000002E60000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002E70000",
+      title: "Mana Pool",
+      x: 2,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000002E70000",
+          type: "item",
+          item: "botania:mana_pool"
+        }
+      ],
+      description: ["The Mana Pool can store mana for later use, and flowers can get the mana they need from them. Use the Wand of the Forest to link them.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:mana_pool",
+      dependencies: ["0200000002F30000"],
+      rewards: [
+        {
+          id: "0400000002E70000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002E80000",
+      title: "Gaia Guardian I",
+      x: 7.33,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000002E80000",
+          type: "item",
+          item: "botania:life_essence"
+        }
+      ],
+      description: ["Consult the Lexica Botania for information on how to summon the Gaia Guardian.", "", "&4Hint&r: If you can't find anything about the Gaia Guardian in the Lexica Botania, try throwing it in the Alfheim portal."],
+      icon: "botania:life_essence",
+      dependencies: ["0200000002F20000"],
+      rewards: [
+        {
+          id: "0400000002E80000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002E90000",
+      title: "Thermalily",
+      x: 10,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000002E90000",
+          type: "item",
+          item: "botania:thermalily"
+        }
+      ],
+      description: ["The Thermalily converts lava into mana. After \"eating\" lava, it goes on cooldown for a while, before it can eat again.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:thermalily",
+      dependencies: ["0200000002DD0000"],
+      rewards: [
+        {
+          id: "0400000002E90000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002EA0000",
+      title: "Soujourner's Sash",
+      x: 6,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000002EA0000",
+          type: "item",
+          item: "botania:travel_belt"
+        }
+      ],
+      description: ["The Soujourner's Sash increases your run speed and jump height, and gives you Step Assist. It requires a tiny amount of mana to function.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:travel_belt",
+      dependencies: ["0200000002E40000"],
+      rewards: [
+        {
+          id: "0400000002EA0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002EB0000",
+      title: "Manaseer Monocle",
+      x: 3.33,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000002EB0000",
+          type: "item",
+          item: "botania:monocle"
+        }
+      ],
+      description: ["The Manaseer Monocle shows you the area of effect of flowers, while you're looking at them.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:monocle",
+      dependencies: ["0200000002E70000"],
+      rewards: [
+        {
+          id: "0400000002EB0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002EC0000",
+      title: "Terrestrial Agglomeration Plate",
+      x: 4.67,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000002EC0000",
+          type: "item",
+          item: "botania:terra_plate"
+        },
+        {
+          id: "0300000002EC0001",
+          type: "item",
+          item: "botania:livingrock",
+          count: 5
+        },
+        {
+          id: "0300000002EC0002",
+          type: "item",
+          item: "minecraft:lapis_block",
+          count: 4
+        }
+      ],
+      description: ["The Terrestrial Agglomaration Plate is used for crafting Terrasteel. It must be placed in a 3x3 multiblock consisting of the plate, Livingrock and Lapis blocks. Place 5 Livingrock in a X pattern, and place the Plate on the middle Livingrock. Then fill it with 4 Lapis Blocks.", "", "Drop 1 Manasteel, 1 Mana Diamond and 1 Mana Pearl on it to initiate the craft.", "", "It takes half a Mana Pool worth of mana.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:terra_plate",
+      dependencies: ["0200000002E40000"],
+      rewards: [
+        {
+          id: "0400000002EC0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002ED0000",
+      title: "Sparks",
+      x: 3.33,
+      y: 5.67,
+      tasks: [
+        {
+          id: "0300000002ED0000",
+          type: "item",
+          item: "botania:spark"
+        }
+      ],
+      description: ["Sparks can rapidly transport mana between them.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:spark",
+      dependencies: ["0200000002E70000"],
+      rewards: [
+        {
+          id: "0400000002ED0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002EE0000",
+      title: "Terrasteel",
+      x: 4.67,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000002EE0000",
+          type: "item",
+          item: "botania:terrasteel_ingot"
+        }
+      ],
+      description: ["Terrasteel is used in crafting.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:terrasteel_ingot",
+      dependencies: ["0200000002EC0000"],
+      rewards: [
+        {
+          id: "0400000002EE0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002EF0000",
+      title: "Gaia Guardian II",
+      x: 7.33,
+      y: 5.67,
+      tasks: [
+        {
+          id: "0300000002EF0000",
+          type: "item",
+          item: "botania:gaia_ingot"
+        }
+      ],
+      description: ["Consult the Lexica Botania for information on how to summon the Gaia Guardian II."],
+      icon: "botania:gaia_ingot",
+      dependencies: ["0200000002E80000"],
+      rewards: [
+        {
+          id: "0400000002EF0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002F00000",
+      title: "Elven Gateway",
+      x: 6,
+      y: 1.67,
+      tasks: [
+        {
+          id: "0300000002F00000",
+          type: "item",
+          item: "botania:alfheim_portal"
+        },
+        {
+          id: "0300000002F00001",
+          type: "item",
+          item: "botania:livingwood",
+          count: 8
+        },
+        {
+          id: "0300000002F00002",
+          type: "item",
+          item: "botania:livingwood",
+          count: 3
+        }
+      ],
+      description: ["These are the blocks required to form the gate to Alfheim.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:alfheim_portal",
+      dependencies: ["0200000002F10000"],
+      rewards: [
+        {
+          id: "0400000002F00000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002F10000",
+      title: "Natura Pylon",
+      x: 6,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000002F10000",
+          type: "item",
+          item: "botania:natura_pylon",
+          count: 2
+        },
+        {
+          id: "0300000002F10001",
+          type: "item",
+          item: "botania:mana_pool",
+          count: 2
+        }
+      ],
+      description: ["You'll need 2 of these to open the gate to Alfheim - Place them over mana pools.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:natura_pylon",
+      dependencies: ["0200000002EE0000"],
+      rewards: [
+        {
+          id: "0400000002F10000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002F20000",
+      title: "Gaia Pylon",
+      x: 7.33,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000002F20000",
+          type: "item",
+          item: "botania:gaia_pylon",
+          count: 4
+        }
+      ],
+      description: ["These Pylons are part of the ritual required to summon the Gaia Guardian.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:gaia_pylon",
+      dependencies: ["0200000002F40000"],
+      rewards: [
+        {
+          id: "0400000002F20000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002F30000",
+      title: "Livingrock",
+      x: 3.33,
+      y: 1.67,
+      tasks: [
+        {
+          id: "0300000002F30000",
+          type: "item",
+          item: "botania:livingrock"
+        }
+      ],
+      description: ["Livingrock is used in crafting.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:livingrock",
+      dependencies: ["0200000002DA0000"],
+      rewards: [
+        {
+          id: "0400000002F30000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002F40000",
+      title: "Elementium Ingot",
+      x: 7.33,
+      y: 1.67,
+      tasks: [
+        {
+          id: "0300000002F40000",
+          type: "item",
+          item: "botania:elementium_ingot"
+        }
+      ],
+      description: ["", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:elementium_ingot",
+      dependencies: ["0200000002F00000"],
+      rewards: [
+        {
+          id: "0400000002F40000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002F50000",
+      title: "Kekimurus",
+      x: 11.67,
+      y: 4.67,
+      tasks: [
+        {
+          id: "0300000002F50000",
+          type: "item",
+          item: "botania:kekimurus"
+        }
+      ],
+      description: ["The Kekimurus eats adjacent Cakes and turn them into large amounts of mana.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:kekimurus",
+      dependencies: ["0200000002DD0000"],
+      rewards: [
+        {
+          id: "0400000002F50000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002F60000",
+      title: "Gourmaryllis",
+      x: 11.33,
+      y: 5.67,
+      tasks: [
+        {
+          id: "0300000002F60000",
+          type: "item",
+          item: "botania:gourmaryllis"
+        }
+      ],
+      description: ["The Gourmaryllis converts food into mana - The better the food, the more mana is produced.", "", "It needs to be fed alternating foods, so it doesn't get sick of one type. 2 different foods will suffice.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:gourmaryllis",
+      dependencies: ["0200000002DD0000"],
+      rewards: [
+        {
+          id: "0400000002F60000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002F70000",
+      title: "Loonium",
+      x: 16.33,
+      y: 3.33,
+      tasks: [
+        {
+          id: "0300000002F70000",
+          type: "item",
+          item: "botania:loonium"
+        }
+      ],
+      description: ["", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:loonium",
+      dependencies: ["0200000002E10000"],
+      rewards: [
+        {
+          id: "0400000002F70000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002F80000",
+      title: "Munchdew",
+      x: 12,
+      y: 3.67,
+      tasks: [
+        {
+          id: "0300000002F80000",
+          type: "item",
+          item: "botania:munchdew"
+        }
+      ],
+      description: ["The Munchdew eats nearby Leaves and converts them into mana.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:munchdew",
+      dependencies: ["0200000002DD0000"],
+      rewards: [
+        {
+          id: "0400000002F80000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002F90000",
+      title: "Entropinnyum",
+      x: 12.33,
+      y: 2.67,
+      tasks: [
+        {
+          id: "0300000002F90000",
+          type: "item",
+          item: "botania:entropinnyum"
+        }
+      ],
+      description: ["The Entropinnyum absorbs nearby explosions and converts them into mana.", "", "For a short duration after an explosion has been absorbed, the Entropinnyum will be unable to absorb another - causing the explosion to actually go off. Use with care!", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:entropinnyum",
+      dependencies: ["0200000002DD0000"],
+      rewards: [
+        {
+          id: "0400000002F90000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002FA0000",
+      title: "Solegnolia",
+      x: 16.67,
+      y: 2.33,
+      tasks: [
+        {
+          id: "0300000002FA0000",
+          type: "item",
+          item: "botania:solegnolia"
+        }
+      ],
+      description: ["The Solegnolia blocks magnets from working in an area around it. It does not require mana to function.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:solegnolia",
+      dependencies: ["0200000002E10000"],
+      rewards: [
+        {
+          id: "0400000002FA0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002FB0000",
+      title: "Narslimmus",
+      x: 11,
+      y: 6.67,
+      tasks: [
+        {
+          id: "0300000002FB0000",
+          type: "item",
+          item: "botania:narslimmus"
+        }
+      ],
+      description: ["The Narslimmus feeds off of Slime chunks - Whenever a Slime spawns, it destroys it and turns it into mana. The bigger the Slime, the more mana is produced.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:narslimmus",
+      dependencies: ["0200000002DD0000"],
+      rewards: [
+        {
+          id: "0400000002FB0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002FC0000",
+      title: "Orechid",
+      x: 14.67,
+      y: 4.67,
+      tasks: [
+        {
+          id: "0300000002FC0000",
+          type: "item",
+          item: "botania:orechid"
+        }
+      ],
+      description: ["The Orechid generates ores in nearby Stone, at the cost of mana.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:orechid",
+      dependencies: ["0200000002E10000"],
+      rewards: [
+        {
+          id: "0400000002FC0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002FD0000",
+      title: "Dice of Fate",
+      x: 7.33,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000002FD0000",
+          type: "item",
+          item: "botania:dice"
+        }
+      ],
+      description: ["Dropped from the Gaia Guardian II - What could be inside?", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:dice",
+      dependencies: ["0200000002EF0000"],
+      rewards: [
+        {
+          id: "0400000002FD0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002FE0000",
+      title: "Clayconia",
+      x: 17.33,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000002FE0000",
+          type: "item",
+          item: "botania:clayconia"
+        }
+      ],
+      description: ["The Clayconia converts nearby Sand blocks into balls of Clay, at the cost of mana.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:clayconia",
+      dependencies: ["0200000002E10000"],
+      rewards: [
+        {
+          id: "0400000002FE0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002FF0000",
+      title: "Pulse Mana Spreader",
+      x: 0,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000002FF0000",
+          type: "item",
+          item: "botania:redstone_spreader"
+        }
+      ],
+      description: ["The Pulse Mana Spreader will fire a mana burst, if it has enough mana, whenever it receives a redstone signal.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:redstone_spreader",
+      dependencies: ["0200000002DE0000"],
+      rewards: [
+        {
+          id: "0400000002FF0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003000000",
+      title: "Conjuration Catalyst",
+      x: 2,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000003000000",
+          type: "item",
+          item: "botania:conjuration_catalyst"
+        }
+      ],
+      description: ["The Conjuration Catalyst lets you duplicate items at the cost of mana.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:conjuration_catalyst",
+      dependencies: ["0200000002E60000"],
+      rewards: [
+        {
+          id: "0400000003000000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003010000",
+      title: "Bellethorne",
+      x: 15.67,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000003010000",
+          type: "item",
+          item: "botania:bellethorn"
+        }
+      ],
+      description: ["The Bellethorne deals damage to nearby entities at the cost of mana.", "", "It does not harm players.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:bellethorn",
+      dependencies: ["0200000002E10000"],
+      rewards: [
+        {
+          id: "0400000003010000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003040000",
+      title: "Orechid Ignem",
+      x: 13.67,
+      y: 5,
+      tasks: [
+        {
+          id: "0300000003040000",
+          type: "item",
+          item: "botania:orechid_ignem"
+        }
+      ],
+      description: ["The Orechid Ignem generates Nether ores in nearby Netherrack, at the cost of mana. Must be in the Nether to function.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:orechid_ignem",
+      dependencies: ["0200000002E10000"],
+      rewards: [
+        {
+          id: "0400000003040000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003050000",
+      title: "Wand of Equal Trade",
+      x: 4.67,
+      y: 8.33,
+      tasks: [
+        {
+          id: "0300000003050000",
+          type: "item",
+          item: "botania:exchange_rod"
+        }
+      ],
+      description: ["This Wand exchanges blocks for another block of your choice, at the cost of mana and said block. Just like an Exchanger.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:exchange_rod",
+      dependencies: ["0200000003190000"],
+      rewards: [
+        {
+          id: "0400000003050000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003060000",
+      title: "Shard of Laputa",
+      x: 8.67,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000003060000",
+          type: "item",
+          item: "botania:laputa_shard"
+        }
+      ],
+      description: ["The Shard of Laputa has the ability to raise a chunk of land from the ground, into the sky. Right-click the ground to use.", "", "It has 20 levels, each level increasing the size of the chunk raised.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:laputa_shard",
+      dependencies: ["0200000002E80000"],
+      rewards: [
+        {
+          id: "0400000003060000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003070000",
+      title: "Rod of the Seas",
+      x: 6,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000003070000",
+          type: "item",
+          item: "botania:water_rod"
+        }
+      ],
+      description: ["The Rod of the Seas can generate water, at the cost of mana. Right-click to place a water source block. It can fill the Petal Apothecary.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:water_rod",
+      dependencies: ["0200000003180000"],
+      rewards: [
+        {
+          id: "0400000003070000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003080000",
+      title: "Band of Mana",
+      x: 1,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000003080000",
+          type: "item",
+          item: "botania:mana_ring"
+        }
+      ],
+      description: ["The Band of Mana is a wearable Mana Tablet.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:mana_ring",
+      dependencies: ["0200000002E30000"],
+      rewards: [
+        {
+          id: "0400000003080000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003090000",
+      title: "Rod of the Terra Firma",
+      x: 4.67,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000003090000",
+          type: "item",
+          item: "botania:terraform_rod"
+        }
+      ],
+      description: ["The Rod of the Terra Firma is an incredibly powerful tool. At the cost of large amounts of mana, it will raise or lower the ground around you, to the level you're standing on.", "", "If you keep a Rod of the Lands on you while you use this, the mana cost of placing dirt will be lessened.", "", "It can destroy most stone-type blocks.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:terraform_rod",
+      dependencies: ["0200000002EE0000", "0200000003050000"],
+      rewards: [
+        {
+          id: "0400000003090000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000030A0000",
+      title: "Horn of the Wild",
+      x: 0,
+      y: 7,
+      tasks: [
+        {
+          id: "03000000030A0000",
+          type: "item",
+          item: "botania:horn_grass"
+        }
+      ],
+      description: ["If you hold right-click with the Horn of the Wild in your hand, it'll harvest all crops and grass in a large radius around you.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:horn_grass",
+      dependencies: ["0200000002E50000"],
+      rewards: [
+        {
+          id: "04000000030A0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000030B0000",
+      title: "Horn of the Canopy",
+      x: 0,
+      y: 8.33,
+      tasks: [
+        {
+          id: "03000000030B0000",
+          type: "item",
+          item: "botania:horn_leaves"
+        }
+      ],
+      description: ["If you hold right-click with the Horn of the Canopy in your hand, it'll harvest all leaves in a large radius around you.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:horn_leaves",
+      dependencies: ["02000000030A0000"],
+      rewards: [
+        {
+          id: "04000000030B0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000030C0000",
+      title: "Horn of the Covering",
+      x: 0,
+      y: 9.67,
+      tasks: [
+        {
+          id: "03000000030C0000",
+          type: "item",
+          item: "botania:horn_snow"
+        }
+      ],
+      description: ["If you hold right-click with the Horn of the Covering in your hand, it'll harvest snow layers in a large radius around you.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:horn_snow",
+      dependencies: ["02000000030B0000"],
+      rewards: [
+        {
+          id: "04000000030C0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003100000",
+      title: "Elven Mana Spreader",
+      x: 8.67,
+      y: 1.67,
+      tasks: [
+        {
+          id: "0300000003100000",
+          type: "item",
+          item: "botania:elven_spreader"
+        }
+      ],
+      description: ["A faster Mana Spreader.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:elven_spreader",
+      dependencies: ["0200000002F40000"],
+      rewards: [
+        {
+          id: "0400000003100000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003110000",
+      title: "Gaia Mana Spreader",
+      x: 8.67,
+      y: 5.67,
+      tasks: [
+        {
+          id: "0300000003110000",
+          type: "item",
+          item: "botania:gaia_spreader"
+        }
+      ],
+      description: ["The absolute fastest Mana Spreader.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:gaia_spreader",
+      dependencies: ["0200000002EF0000"],
+      rewards: [
+        {
+          id: "0400000003110000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003150000",
+      title: "Spark Augments",
+      x: 3.33,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000003150000",
+          type: "item",
+          item: "botania:spark_upgrade_dispersive"
+        },
+        {
+          id: "0300000003150001",
+          type: "item",
+          item: "botania:spark_upgrade_dominant"
+        },
+        {
+          id: "0300000003150002",
+          type: "item",
+          item: "botania:spark_upgrade_recessive"
+        },
+        {
+          id: "0300000003150003",
+          type: "item",
+          item: "botania:spark_upgrade_isolated"
+        }
+      ],
+      description: ["Spark Augments change the way Sparks behave, they can be very useful, especially for automation.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:spark_upgrade_dispersive",
+      dependencies: ["0200000002ED0000"],
+      rewards: [
+        {
+          id: "0400000003150000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003180000",
+      title: "Benevolent Goddess' Charm",
+      x: 6,
+      y: 5.67,
+      tasks: [
+        {
+          id: "0300000003180000",
+          type: "item",
+          item: "botania:goddess_charm"
+        }
+      ],
+      description: ["If you have the Benevolent Goddess' Charm equipped in a bauble slot, it will drastically reduce damage you take from Creeper explosions, and nullify the explosion itself. It requires mana to do so.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:goddess_charm",
+      dependencies: ["0200000002EA0000"],
+      rewards: [
+        {
+          id: "0400000003180000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003190000",
+      title: "Rod of the Plentiful Mantle",
+      x: 6,
+      y: 8.33,
+      tasks: [
+        {
+          id: "0300000003190000",
+          type: "item",
+          item: "botania:divining_rod"
+        }
+      ],
+      description: ["The Rod of the Plentiful Mantle will highlight nearby ores when you right click, at the cost of mana. This is especially useful for finding NuclearCraft meteors.", "", "Consult the Lexica Botania for additional information."],
+      icon: "botania:divining_rod",
+      dependencies: ["0200000003070000"],
+      rewards: [
+        {
+          id: "0400000003190000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    }
+  ],
+  quest_links: [],
+  subtitle: ["Quests for Botania. Authored by NillerMedDild."],
+  icon: "minecraft:book"
+}

@@ -1,0 +1,14 @@
+name = "Enigmatica 2 Ported"
+author = "Enigmatica Team (Ported to 1.20.1)"
+version = "1.0.11"
+description = "Enigmatica 2 modpack ported to Minecraft 1.20.1 with Forge, featuring cross-mod compatibility and balanced progression"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "641f7b1d36a3985d1cb1ce2deb70f50e2c388b651000c9ed9ab0fc02523dc92b"
+
+[versions]
+forge = "47.4.10"
+minecraft = "1.20.1"

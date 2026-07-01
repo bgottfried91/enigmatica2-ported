@@ -1,0 +1,1355 @@
+{
+  id: "01000000000F0000",
+  group: "",
+  order_index: 8,
+  filename: "15_draconic_evolution",
+  title: "Draconic Evolution",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      id: "0200000000DF0000",
+      title: "Link!",
+      x: 0,
+      y: 13,
+      tasks: [
+        {
+          id: "0300000000DF0000",
+          type: "item",
+          item: "draconicevolution:crystal_binder"
+        }
+      ],
+      description: ["The Crystal Binder is used to connect the Crystals to each other.", "Shift-Right Click a crystal with the Crystal Binder to select it, and Right Click on another crystal to link it.", "", "The Crystals will always equalize all their energy between them"],
+      icon: "draconicevolution:crystal_binder",
+      dependencies: ["0200000001B10000"],
+      rewards: [
+        {
+          id: "0400000000DF0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000015E0000",
+      title: "RF Gates!",
+      x: 22,
+      y: 8,
+      tasks: [
+        {
+          id: "03000000015E0000",
+          type: "item",
+          item: "draconicevolution:flux_gate",
+          count: 2
+        }
+      ],
+      description: ["These Flux Gates can limit how much RF flows through them, based on Redstone signal (on or off).", "They are very useful when it comes to controlling the flow of your Draconic Reactor.", "You will need 2 of them, one for the energy input, and one for the energy output."],
+      icon: "draconicevolution:flux_gate",
+      dependencies: ["0200000001A80000"],
+      rewards: [
+        {
+          id: "04000000015E0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001760000",
+      title: "The most advanced stabilizers!",
+      x: 22,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000001760000",
+          type: "item",
+          item: "draconicevolution:reactor_stabilizer",
+          count: 4
+        }
+      ],
+      description: ["The Reactor Stabilizers are what keeps the Draconic Reactor from exploding.", "The Draconic Reactor needs 4 Reactor Stabilizers, that all has to be placed in either a horizontal or vertical plane. Just like the Energy Core.", "You also use these to take energy out of the Draconic Reactor, which is your net gain.", "This is where the Flux Gates comes in handy.", "Each Reactor Stabilizer can give a Comparator output, depending on the Redstone Mode it's set too.", "", "Recommended that each Reactor Stabilizer is at least 4 blocks from the Reactor Core."],
+      icon: "draconicevolution:reactor_stabilizer",
+      dependencies: ["0200000001A80000"],
+      rewards: [
+        {
+          id: "0400000001760000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000017C0000",
+      title: "Pumpin Power!",
+      x: 22,
+      y: 10,
+      tasks: [
+        {
+          id: "03000000017C0000",
+          type: "item",
+          item: "draconicevolution:reactor_injector"
+        }
+      ],
+      description: ["The Reactor Energy Injector is what gives power to the Containment Field shield, and is therefor also the input for the Draconic Reactor.", "This has to be placed on one of the 2 sides, where there's not a Reactor Stabilizer.", "A Flux Gate is recommended to be used with this.", "The Reactor Energy Injector can give out a Comparator output, depending on the Redstone Mode it's set to.", "", "Recommended to be at least 4 blocks away from the Reactor Core."],
+      icon: "draconicevolution:reactor_injector",
+      dependencies: ["0200000001A80000"],
+      rewards: [
+        {
+          id: "04000000017C0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000017F0000",
+      title: "UNLIMITED POWAH",
+      x: 12.75,
+      y: 11.25,
+      tasks: [
+        {
+          id: "03000000017F0000",
+          type: "item",
+          item: "draconicevolution:draconic_staff"
+        }
+      ],
+      description: ["The ultimate All-In-One tool.. well except ranged weapon.", "It gains all the benefits of Sword, Pickaxe, Axe and Shovel.", "Attack and Dig AOE radius can be changed individually in the Draconic GUI.", "", "When fully upgraded and enchanted, it is a beast to behold.", "", "The Staff of Power comes with +3 Reaper enchant."],
+      icon: "draconicevolution:draconic_staff",
+      dependencies: ["02000000018E0000", "0200000001AB0000", "0200000001AE0000"],
+      rewards: [
+        {
+          id: "04000000017F0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001850000",
+      title: "I see you...",
+      x: 0,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000001850000",
+          type: "item",
+          item: "draconicevolution:entity_detector"
+        }
+      ],
+      description: ["A small entity detector, that can.... detect nearby enemies.", "It has serveral settings, and takes power everytime it scans for new entities.", "The power cost is per Pulse, and the cost of a Pulse depends on the range of the detector.", "It can pulse between every 1.5s and 60s.", "It has settings for how many entities needs to be within range to give a certain redstone signal.", "And it has some basic entity filters.", "Redstone Output can be either Fixed or Pulse", "", "For some extra information, check the Draconic Tablet.", "This Entity Detector does not detect Item Entities."],
+      icon: "draconicevolution:entity_detector",
+      dependencies: ["02000000019B0000"],
+      rewards: [
+        {
+          id: "0400000001850000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001860000",
+      title: "Relocated Spawners",
+      x: 0,
+      y: 5,
+      tasks: [
+        {
+          id: "0300000001860000",
+          type: "item",
+          item: "draconicevolution:stabilized_spawner"
+        }
+      ],
+      description: ["In Draconic Evolution it is possible to control, and change spawners.", "First you need to find a mob spawner though, but you must &cnot&r break it (like you do in EnderIO).", "Then right click it with any Draconic Core, and it will drop as an item. This will consume the core.", "", "Your new Spawner doesn't use any power, and can be turned off with a redstone signal.", "The efficiency of the spawner depends on the core thats on top of it. It is possible to replace the core, just right click with another core, and you will get the old one back. More information in the Draconic Tablet on what each tier of Core allows.", "You can also change the type of mob that the spawner spawns, but getting a Mob Soul.", "Mob Souls have a very low chance to drop when killed by a sword with the Reaper enchant. More on that in the Enchants quest.", "", "&cBreaking a Stabilized Mob Spawner will cause it to lose its current soul."],
+      icon: "draconicevolution:stabilized_spawner",
+      dependencies: ["02000000019B0000"],
+      rewards: [
+        {
+          id: "0400000001860000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001870000",
+      title: "Enchants and Item Settings",
+      x: 10,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000001870000",
+          type: "item",
+          item: "draconicevolution:disenchanter"
+        }
+      ],
+      description: ["All the armor, tools and weapons from Draconic Evolution are enchantable.", "The only way to enchant them, is in an Anvil with an Enchanted Book.", "A good way to get Enchants is Fishing, Dungeons and Disenchanting gear with the Disenchanter. This costs Levels to use.", "", "Draconic Evolution also adds a new enchant: Reaper. This goes up to V, and does not interfere with anything else.", "Reaper increases the chance to get Mob Souls when killing mobs. The chance of getting a Mob Soul is 1000/ReaperEnchLvl. So a Diamond Sword with Reaper V, will have 1 in 200 chance on mob kill to drop a Mob Soul.", "Wyvern Sword comes with +1 to Reaper (Max of Reaper VI, 1 in 166 chance)", "Draocnic Sword comes with +2 to Reaper (Max of Reaper VII, 1 in 142 chance)", "Staff of Power comes with +3 to Reaper (Max of Reaper VIII, 1 in 125 chance)", "", "&m-------------------------------------------------------------------------", "&m&k&l&m&m&n&o&rItem Settings:", "Most of Draconic Evolution items has settings of some sorts. To change those settings, you need to go into the Draconic GUI (default \"C\")", "&cNOTE: This conflicts with the default Psi keybind, which takes priority, so you may have to change either keybind to something else.", "&rOnce you're in the GUI, you can click each Draconic item to change their settings, and change the Profile name, and you can re-position and resize the HUD too.", "", "Profiles:", "Each item also holds up to 5 Profile settings, which can change between (default \"BACKSLASH\")"],
+      icon: "minecraft:enchanted_book",
+      dependencies: ["0200000001980000", "0200000001990000"],
+      rewards: [
+        {
+          id: "0400000001870000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001880000",
+      title: "Welcome to: The End",
+      x: 11,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000001880000",
+          type: "checkmark",
+          title: "New Location"
+        }
+      ],
+      description: ["Filler quest to open the End Crystals quest."],
+      icon: "minecraft:ender_eye",
+      rewards: [
+        {
+          id: "0400000001880000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001890000",
+      title: "You over there too!",
+      x: 0,
+      y: 9,
+      tasks: [
+        {
+          id: "0300000001890000",
+          type: "item",
+          item: "draconicevolution:entity_detector",
+          consume_items: "true"
+        }
+      ],
+      description: ["Upgraded version of the Entity Detector.", "It does the same as the standard version, with the exceptions of:", "Range can go up to 64 blocks.", "Better entity filters, with blacklist and whitelist.", "Pulse delay can be down to 0.25s.", "", "This Entity Detector does detect Item Entities."],
+      icon: "draconicevolution:entity_detector",
+      dependencies: ["0200000001850000"],
+      rewards: [
+        {
+          id: "0400000001890000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000018A0000",
+      title: "Energy Ball!",
+      x: 8,
+      y: 4,
+      tasks: [
+        {
+          id: "03000000018A0000",
+          type: "item",
+          item: "draconicevolution:energy_core"
+        },
+        {
+          id: "03000000018A0001",
+          type: "item",
+          item: "draconicevolution:particle_generator",
+          count: 4
+        }
+      ],
+      description: ["You start to get some more energy, and need a place to store it.", "The Energy Core can hold quite a bit, depending on the tier.", "", "To assemble the Energy Core, the need the Energy Core in the center, with 4 Energy Core Stabilizers, formed in a \"+\" around the core - these can turn any direction, and don't have to be at the same range.", "Right click the Core, or a Stabilizer to open the GUI and activate the core.", "To get to the next tier, deactivate the core (it will save the power, aslong as you don't break the Core), click the Tier Up, turn on the Building Guide and build as the guide is showning. Then Right-Click a Stabilizer and Activate the core.", "", "To see the amount of energy, and blocks required for each Tier, check the Draconic Tablet."],
+      icon: "draconicevolution:energy_core",
+      dependencies: ["02000000019D0000"],
+      rewards: [
+        {
+          id: "04000000018A0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000018B0000",
+      title: "Stabilizing in an advanced way",
+      x: 7,
+      y: 2,
+      tasks: [
+        {
+          id: "03000000018B0000",
+          type: "item",
+          item: "draconicevolution:particle_generator",
+          count: 36
+        }
+      ],
+      description: ["You have your small Energy Core, but you wish to go bigger.", "But if you want to go bigger, you need bigger Energy Core Stabilizers. You need Advanced Energy Core Stabilizers!", "To get Advanced Energy Core Stabilizers, simply put 9 Energy Core Stabilizers in a 3x3 shape in the world. The center Stabilizier will determine the center of the Advanced Stabilizer.", "", "&cNOTE: The Retrieval Task will also include the base 4 Energy Core Stabilizers for the T1-T4 Energy Core"],
+      icon: "draconicevolution:particle_generator",
+      dependencies: ["02000000018C0000"],
+      rewards: [
+        {
+          id: "04000000018B0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000018C0000",
+      title: "Give and take from the ball!",
+      x: 9,
+      y: 2,
+      tasks: [
+        {
+          id: "03000000018C0000",
+          type: "item",
+          item: "draconicevolution:energy_pylon",
+          count: 2
+        }
+      ],
+      description: ["To give and take from the Energy Core, you need Energy Pylons. One for Input, and one for Output.", "Place them within 16 blocks range, and put a Glass Block either above or below the Energy Pylon, which will form the energy transfer ball.", "Right-Click the energy transfer ball, to change it between Input and Output. The balls animation indicates which state it's in."],
+      icon: "draconicevolution:energy_pylon",
+      dependencies: ["02000000018A0000"],
+      rewards: [
+        {
+          id: "04000000018C0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000018D0000",
+      title: "An even bigger ball!",
+      x: 7.75,
+      y: 0.25,
+      tasks: [
+        {
+          id: "03000000018D0000",
+          type: "item",
+          item: "draconicevolution:draconium_block",
+          count: 90
+        },
+        {
+          id: "03000000018D0001",
+          type: "item",
+          item: "minecraft:redstone_block",
+          count: 80
+        }
+      ],
+      description: ["The Advanced Energy Cores.", "They're bigger, holds a lot more power and requires Advanced Energy Core Stabilizers. Thats pretty much it", "", "&cNOTE: The Retrieval Task is for the entire ball, which includes the blocks already on the Energy Core. &lDo NOT break the center Energy Core block, or it will lose all its current stored power!"],
+      icon: "draconicevolution:particle_generator",
+      dependencies: ["02000000018B0000"],
+      rewards: [
+        {
+          id: "04000000018D0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000018E0000",
+      title: "Awakened Pocket Battery",
+      x: 13,
+      y: 10,
+      tasks: [
+        {
+          id: "03000000018E0000",
+          type: "item",
+          item: "draconicevolution:draconic_capacitor"
+        }
+      ],
+      description: ["A Tier 2 Flux Capacitor.", "Same rules applies as the Wyvern Flux Capacitor, but with more energy storage.", "This is the only item that can receive a 4th RF Capacity upgrade."],
+      icon: "draconicevolution:draconic_capacitor",
+      dependencies: ["02000000019E0000"],
+      rewards: [
+        {
+          id: "04000000018E0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000018F0000",
+      title: "Even more wireless",
+      x: 0,
+      y: 11,
+      tasks: [
+        {
+          id: "03000000018F0000",
+          type: "item",
+          item: "draconicevolution:basic_wireless_crystal"
+        }
+      ],
+      description: ["The Wireless Crystals can transfer power from itself to other devices.", "Just select the Wireless Crystal with the Crystal Binder and right click a device that needs the power.", "The Wireless Crystal can not be turned into I/O Crystals, or back into a Relay Crystal.", "", "There is a Wireless version of all 3 Tiers of Crystals."],
+      icon: "draconicevolution:basic_wireless_crystal",
+      dependencies: ["0200000001B10000"],
+      rewards: [
+        {
+          id: "04000000018F0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001900000",
+      title: "But I aint done with you yet!",
+      x: 11,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000001900000",
+          type: "item",
+          item: "minecraft:end_crystal",
+          count: 4
+        }
+      ],
+      description: ["You will need multiple Dragon Hearts you progress through Draconic Evolution.", "But there's only 1 Dragon in The End, so you will have to respawn a new one some times.", "", "You will need 4 End Crystals, each one placed on the middle bedrock at the edges of the Center Portal. This is also the vanilla way.", "This will refresh all the Obsidian pillars, and its End Crytsals and then respawn the dragon"],
+      icon: "minecraft:end_crystal",
+      dependencies: ["0200000001880000", "0200000001AA0000"],
+      rewards: [
+        {
+          id: "0400000001900000",
+          type: "item",
+          item: "draconicevolution:dragon_heart"
+        }
+      ]
+    },
+    {
+      id: "0200000001910000",
+      title: "The BIGGEST ball!",
+      x: 16,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000001910000",
+          type: "item",
+          item: "draconicevolution:draconium_block",
+          count: 786
+        },
+        {
+          id: "0300000001910001",
+          type: "item",
+          item: "draconicevolution:awakened_draconium_block",
+          count: 378
+        }
+      ],
+      description: ["This is the biggest Energy Storage amount that any mod hold within a single single/multi-block structure.", "But such storage also comes at a price. And a big one at that.", "Like the T5-T7 Core, it also takes Advanced Core Stabilizers.", "", "This ball can hold a whooping &otakes breath&o &k&l&k&k&r9,223,372,036,854,775,807 RF.", "Have fun filling this badboy up."],
+      icon: "draconicevolution:energy_core",
+      dependencies: ["02000000018D0000", "02000000019E0000"],
+      rewards: [
+        {
+          id: "0400000001910000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001920000",
+      title: "The core of waking",
+      x: 16,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000001920000",
+          type: "item",
+          item: "draconicevolution:awakened_core"
+        }
+      ],
+      description: ["Next tier Core for Draconic Evolution.", "Gives super good efficiency on Resturbed Spawners"],
+      icon: "draconicevolution:awakened_core",
+      dependencies: ["02000000019E0000"],
+      rewards: [
+        {
+          id: "0400000001920000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001930000",
+      title: "Egg Extraction",
+      x: 11,
+      y: 1,
+      tasks: [
+        {
+          id: "0300000001930000",
+          type: "item",
+          item: "minecraft:dragon_egg"
+        }
+      ],
+      description: ["Should you ever need extra Dragon Eggs (which you probably will), this is the device for it.", "Is it cruel? Probably. Is it neccesary? Also probably.", "It is to be placed on the center bedrock, where the first Dragon Egg was, while the dragon is alive."],
+      icon: "minecraft:dragon_egg",
+      dependencies: ["0200000001A40000"],
+      rewards: [
+        {
+          id: "0400000001930000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001940000",
+      title: "How does it work?",
+      x: 0,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000001940000",
+          type: "item",
+          item: "draconicevolution:magnet"
+        }
+      ],
+      description: ["I mean, it is a magnet..", "", "The magnet of Draconic Evolution. Doesn't require any power, and will drag in items and XP in an 8 block radius.", "Shift-right click with it to toggle the magnet. Crouching will disable the magnets pull."],
+      icon: "draconicevolution:magnet",
+      dependencies: ["0200000001960000"],
+      rewards: [
+        {
+          id: "0400000001940000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001950000",
+      title: "Spawn Camping",
+      x: 0,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000001950000",
+          type: "item",
+          item: "draconicevolution:grinder"
+        }
+      ],
+      description: ["The Mob Grinder kills everything in a 7x7x7 infront of it, at ~500 RF per heart damage dealt.", "Everything killed by the Mob Grinder will count as Player Kills, so Player-Only and Experience will drop. The XP Orbs only lasts for 30 seconds to reduce lag.", "", "Can be turned off with a redstone signal", "It is capable of killing Withers, but not Dragons. Damn those dragons.."],
+      icon: "draconicevolution:grinder",
+      dependencies: ["02000000019B0000"],
+      rewards: [
+        {
+          id: "0400000001950000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001960000",
+      title: "It's a little dusty..",
+      x: 1.5,
+      y: 1.5,
+      tasks: [
+        {
+          id: "0300000001960000",
+          type: "item",
+          item: "draconicevolution:draconium_dust",
+          count: 32
+        }
+      ],
+      description: ["The first thing you need to get started with Draconic Evolution is you need to find Draconium Ore.", "Those ores are very rare in the Overworld, semi-rare in the Nether and very common in The End.", "Most recipes requires Ingots, but some of them requires Dust. Draconic Evolution does not have a Crusher, so you can not turn Ingots into Dust with only Draconic Evolution", "", "", "I do not recommend playing Draconic Evolution as a standalone tech mod."],
+      icon: "draconicevolution:draconium_dust",
+      rewards: [
+        {
+          id: "0400000001960000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001970000",
+      title: "Teleports all over!",
+      x: 8,
+      y: 10,
+      tasks: [
+        {
+          id: "0300000001970000",
+          type: "item",
+          item: "draconicevolution:advanced_dislocator"
+        }
+      ],
+      description: ["The Advanced Dislocator is a portable device, that can save multiple locations to teleport to.", "Shift-Right Click to open the GUI, where you can add, change, name and delete Locations.", "Right Click a location in the GUI to teleport to it.", "You can have 1 Quick Location on the Advanced Dislocator. Shift-Scroll with the Advanced Dislocator to change the Quick Location.", "Right Click to teleport to the Quick Location.", "Click on an entity (both passive and hostile) to teleport it to your Quick Location.", "You can click on a sneaking player to teleport them to your Quick Location.", "", "Every teleport consumes 1 Ender Pearl"],
+      icon: "draconicevolution:advanced_dislocator",
+      dependencies: ["0200000001A00000"],
+      rewards: [
+        {
+          id: "0400000001970000",
+          type: "item",
+          item: "minecraft:ender_pearl",
+          count: 16
+        }
+      ]
+    },
+    {
+      id: "0200000001980000",
+      title: "Purple Tools!",
+      x: 10,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000001980000",
+          type: "item",
+          item: "draconicevolution:wyvern_pickaxe"
+        },
+        {
+          id: "0300000001980064",
+          type: "item",
+          item: "draconicevolution:wyvern_axe"
+        },
+        {
+          id: "03000000019800C8",
+          type: "item",
+          item: "draconicevolution:wyvern_shovel"
+        }
+      ],
+      description: ["Tools of the Wyvern.", "They have no durability, but runs on Energy instead. Can mine in 1x1, 3x3, 5x5 and so on"],
+      icon: "draconicevolution:wyvern_pickaxe",
+      dependencies: ["02000000019D0000"],
+      rewards: [
+        {
+          id: "0400000001980000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001990000",
+      title: "Purple weapons!",
+      x: 10,
+      y: 5,
+      tasks: [
+        {
+          id: "0300000001990000",
+          type: "item",
+          item: "draconicevolution:wyvern_sword"
+        },
+        {
+          id: "0300000001990064",
+          type: "item",
+          item: "draconicevolution:wyvern_bow"
+        }
+      ],
+      description: ["Weapons of the Wyvern.", "They have no durability, but runs on energy instead.", "The sword has a small chance on kill to grant a Mob Soul (+1 Reaper). These souls can be used to change the type of a Stabilized Mob Spawner.", "The bow uses regular Minecraft arrows to fire, so it is recommended to enchant it with Infinity."],
+      icon: "draconicevolution:wyvern_sword",
+      dependencies: ["02000000019D0000"],
+      rewards: [
+        {
+          id: "0400000001990000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000019A0000",
+      title: "An ingame wiki??",
+      x: 2,
+      y: 0,
+      tasks: [
+        {
+          id: "03000000019A0000",
+          type: "item",
+          item: "draconicevolution:info_tablet"
+        }
+      ],
+      description: ["The Draconic Information Tablet holds stats and brief explanations of everything in Draconic Evolution.", "I will refer to this Tablet many times throughout this questlog.", "", "\"But why have this whole quest thing then?\"", "Because the tablet doesn't tell you how to progress, only what stuff is :)"],
+      icon: "draconicevolution:info_tablet",
+      dependencies: ["0200000001960000"],
+      rewards: [
+        {
+          id: "04000000019A0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000019B0000",
+      title: "Core of Draconium",
+      x: 2,
+      y: 6,
+      tasks: [
+        {
+          id: "03000000019B0000",
+          type: "item",
+          item: "draconicevolution:draconium_core",
+          count: 5
+        }
+      ],
+      description: ["The Basic Core of Draconic Evolution. Pretty cheap and easy to make. It's going to be a basic crafting component for a lot of things, including later Cores."],
+      icon: "draconicevolution:draconium_core",
+      dependencies: ["0200000001960000"],
+      rewards: [
+        {
+          id: "04000000019B0000",
+          type: "item",
+          item: "draconicevolution:draconium_core",
+          count: 5
+        }
+      ]
+    },
+    {
+      id: "02000000019C0000",
+      title: "/home",
+      x: 4,
+      y: 2,
+      tasks: [
+        {
+          id: "03000000019C0000",
+          type: "item",
+          item: "draconicevolution:dislocator"
+        }
+      ],
+      description: ["A single point, portable teleporter with 20 uses.", "Shift-right click with it, to set its location. The location is fixed, and can not be changed, unless you craft a new Dislocator.", "You can not recharge it either, and has no cooldown (so be careful with right clicking more than once).", "This works cross-dimensions.", "", "There are ways to exchange some things for infinite uses though..."],
+      icon: "draconicevolution:dislocator",
+      dependencies: ["0200000001960000"],
+      rewards: [
+        {
+          id: "04000000019C0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000019D0000",
+      title: "Add a bit of Wither to it..",
+      x: 8,
+      y: 6,
+      tasks: [
+        {
+          id: "03000000019D0000",
+          type: "item",
+          item: "draconicevolution:wyvern_core"
+        }
+      ],
+      description: ["The 2nd tier of Draconic Cores.", "You may want to find an efficient way to kill Withers soon."],
+      icon: "draconicevolution:wyvern_core",
+      dependencies: ["02000000019B0000"],
+      rewards: [
+        {
+          id: "04000000019D0000",
+          type: "item",
+          item: "draconicevolution:draconium_dust",
+          count: 12,
+          title: "Choice option: draconicevolution:draconium_dust"
+        },
+        {
+          id: "04000000019D0001",
+          type: "item",
+          item: "minecraft:diamond",
+          count: 3,
+          title: "Choice option: minecraft:diamond"
+        }
+      ]
+    },
+    {
+      id: "02000000019E0000",
+      title: "Waking up",
+      x: 13,
+      y: 8,
+      tasks: [
+        {
+          id: "03000000019E0000",
+          type: "item",
+          item: "draconicevolution:awakened_draconium_block",
+          count: 4
+        }
+      ],
+      description: ["It is time to awaken the draconium, with hearts.", "You will need Awakened Draconium to upgrade pretty much all your stuff"],
+      icon: "draconicevolution:awakened_draconium_block",
+      dependencies: ["0200000001A00000", "0200000001AA0000"],
+      rewards: [
+        {
+          id: "04000000019E0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000019F0000",
+      title: "The core is chaos!",
+      x: 18,
+      y: 8,
+      tasks: [
+        {
+          id: "03000000019F0000",
+          type: "item",
+          item: "draconicevolution:chaotic_core"
+        }
+      ],
+      description: ["The last tier of Draconic Cores.", "This is mainly used for the Draconic Reactor."],
+      icon: "draconicevolution:chaotic_core",
+      dependencies: ["0200000001920000", "0200000001A10000", "0200000001A70000"],
+      rewards: [
+        {
+          id: "04000000019F0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001A00000",
+      title: "Fusing with Withers ..",
+      x: 8,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000001A00000",
+          type: "item",
+          item: "draconicevolution:wyvern_crafting_injector",
+          count: 8
+        }
+      ],
+      description: ["Time to get Wither killing, because you will need a few stars for this!", "It's time to upgrade the Crafting Fusion set, to the Wyvern Tier. This will unlock new crafting recipes to be made.", "You only need around 8 for most crafting recipes, but there is 1 that requires 10.", "I will let you go with 8 though.", "", "You can mix-match the Crafting Injectors of different tiers, as long as the required recipe has all its materials on the correct tier or higher.", "", "&1Note: Due to this being a Retrieval Task, you may have to break all the Wyvern Crafting Injectors for it to detect."],
+      icon: "draconicevolution:wyvern_crafting_injector",
+      dependencies: ["02000000019D0000", "0200000001A50000"],
+      rewards: [
+        {
+          id: "0400000001A00000",
+          type: "item",
+          item: "minecraft:nether_star",
+          title: "Choice option: minecraft:nether_star"
+        },
+        {
+          id: "0400000001A00001",
+          type: "item",
+          item: "draconicevolution:draconium_core",
+          count: 4,
+          title: "Choice option: draconicevolution:draconium_core"
+        },
+        {
+          id: "0400000001A00002",
+          type: "item",
+          item: "draconicevolution:draconium_dust",
+          count: 16,
+          title: "Choice option: draconicevolution:draconium_dust"
+        }
+      ]
+    },
+    {
+      id: "0200000001A10000",
+      title: "The end, end dragon.",
+      x: 17.5,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000001A10000",
+          type: "checkmark",
+          title: "bq_standard:hunt"
+        }
+      ],
+      description: ["It's going to be a bit chaotic here.", "The Chaos Dragon is the big bad boss of Draconic Evolution. You will need full Draconic Gear to have a chance against this Dragon.", "You need to kill this boss for Chaos Shards.", "The dragon spawns at every 10000 block in The End, at every direction like a grid. So it will be at 0x,10000y, 10000x,10000y, -10000x,0y etc.", "", "Good luck, and have fun!"],
+      icon: "minecraft:dragon_head",
+      rewards: [
+        {
+          id: "0400000001A10000",
+          type: "item",
+          item: "draconicevolution:dragon_heart",
+          count: 32
+        }
+      ]
+    },
+    {
+      id: "0200000001A20000",
+      title: "Maybe it doesn't?",
+      x: 0,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000001A20000",
+          type: "item",
+          item: "draconicevolution:dislocation_inhibitor"
+        }
+      ],
+      description: ["This block will prevent the Item Dislocators pull in a 5 block radius around itself."],
+      icon: "draconicevolution:dislocation_inhibitor",
+      dependencies: ["0200000001940000"],
+      rewards: [
+        {
+          id: "0400000001A20000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001A30000",
+      title: "Pocket battery",
+      x: 12,
+      y: 5,
+      tasks: [
+        {
+          id: "0300000001A30000",
+          type: "item",
+          item: "draconicevolution:wyvern_capacitor"
+        }
+      ],
+      description: ["The Flux Capacitor is a portable Battery, that can recharge your armor and tools on the go, so you don't have to return to base as often, or charge as many different things.", "", "It has 3 modes. Charge Armor, Charge Held Items (items in your main/offhand) and Both.", "To change modes, simply Shift Right-Click with the Flux Capacitor.", "This Flux Capacitor does not need to be on your hotbar, but can not be in a bag (and still work)"],
+      icon: "draconicevolution:wyvern_capacitor",
+      dependencies: ["0200000001980000", "0200000001990000"],
+      rewards: [
+        {
+          id: "0400000001A30000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001A40000",
+      title: "Manipulating the skies",
+      x: 13,
+      y: 1,
+      tasks: [
+        {
+          id: "0300000001A40000",
+          type: "item",
+          item: "draconicevolution:celestial_manipulator"
+        }
+      ],
+      description: ["I hope you grapped that Dragon Egg.", "The Celestial Manipulator can change skies for the cost of power.", "It allows for weather: Sun, Rain and Thunder.", "It allows for day cycle: Sun Rise, Midday, Sun Set, Moon Rise, Midnight, Moon Set, Skip 24 Hours and Stop at current position.", "", "It can activate automatically on Redstone signal, but only for 1 function per Celestial Manipulator.", "So you can set one up to make it permanent day so you don't have to sleep, or you can set it to never rain. How? Sensors."],
+      icon: "draconicevolution:celestial_manipulator",
+      dependencies: ["0200000001AA0000"],
+      rewards: [
+        {
+          id: "0400000001A40000",
+          type: "item",
+          item: "draconicevolution:rain_sensor"
+        },
+        {
+          id: "0400000001A40001",
+          type: "item",
+          item: "minecraft:daylight_detector"
+        }
+      ]
+    },
+    {
+      id: "0200000001A50000",
+      title: "Fuse it up",
+      x: 4,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000001A50000",
+          type: "item",
+          item: "draconicevolution:basic_crafting_injector",
+          count: 10
+        },
+        {
+          id: "0300000001A50001",
+          type: "item",
+          item: "draconicevolution:crafting_core"
+        }
+      ],
+      description: ["This is the part where I sincerely hope you have some other power generation than Draconic Evolution!", "", "Item Fusion is Draconic Evolutions main crafting method.", "You place the main item in the Fusion Crafting Core, and the fusing items on the Fusion Crafting Injectors.", "Most recipes only requires 4-8 Fusion Injectors, however a few crafting jobs does require 10.", "", "You will need to provide power to the Fusion Crafting Injectors, to do any crafting job. And you need quite a lot of it, which will take ages at 84rf/t.", "After you have placed all the items, click the Start button in the Fusion Crafting Core, or give it a redstone signal.", "Check the Draconic Tables for ranges on the Injectors and Redstone outputs from the Core."],
+      icon: "draconicevolution:basic_crafting_injector",
+      dependencies: ["02000000019B0000"],
+      rewards: [
+        {
+          id: "0400000001A50000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001A60000",
+      title: "The Ultimate Chest",
+      x: 4,
+      y: 10,
+      tasks: [
+        {
+          id: "0300000001A60000",
+          type: "item",
+          item: "draconicevolution:draconium_chest"
+        }
+      ],
+      description: ["This is the chest that can do, pretty much everything, with a whooping 260 inventory slots.", "", "It has a built in 5 slot furnace, that runs on power, at 256rf/t. This furnace has 4 auto-feed modes.", "Off: Well, it's.. off.", "Fill: It will refill what is currently smelting with new items from its inventory.", "Lock: It will always keep 1 item in the smelting slot, reserving it for that ore.", "All: It will smelt every smeltable item that comes into the chest.", "You can put a Core in its Core Slot, to increase efficiency, and it will Ore Double as well if you put a Wyvern or higher Core in it.", "", "Its inventory can be split into different regions, and each of those regions can have their own I/O settings towards the chest, and the furnace.", "Click the I/O Regions button to configure the 6 available color regions.", "", "And it has a crafting table.", "", "If you need more information, the Draconic Tablet should tell you what you need."],
+      icon: "draconicevolution:draconium_chest",
+      dependencies: ["0200000001A50000"],
+      rewards: [
+        {
+          id: "0400000001A60000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001A70000",
+      title: ".. and then waking it up..",
+      x: 16,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000001A70000",
+          type: "item",
+          item: "draconicevolution:awakened_crafting_injector",
+          count: 9
+        }
+      ],
+      description: ["Next tier of Fusion Injectors.", "Is needed for making Draconic Armor and Tools.", "There is a recipe at the Draconic Tier requiring 9 Injectors, so you will need to craft 9 of them!", "", "Again, you will need all of them in your inventory at once for the quest to trigger."],
+      icon: "draconicevolution:awakened_crafting_injector",
+      dependencies: ["02000000019E0000"],
+      rewards: [
+        {
+          id: "0400000001A70000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001A80000",
+      title: ".. into CHAOS!",
+      x: 20,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000001A80000",
+          type: "item",
+          item: "draconicevolution:chaotic_crafting_injector",
+          count: 10
+        }
+      ],
+      description: ["The final tier Fusion Crafting.", "You will need 8 for the full upgrade on the Awakened Flux Capacitor.", "If you want to delve into the Draconic Reactor, you will need 10."],
+      icon: "draconicevolution:chaotic_crafting_injector",
+      dependencies: ["02000000019F0000"],
+      rewards: [
+        {
+          id: "0400000001A80000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001A90000",
+      title: "Set Redstone Strength",
+      x: 0,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000001A90000",
+          type: "item",
+          item: "draconicevolution:potentiometer"
+        }
+      ],
+      description: ["The Potentiometer can do what the vanilla Comparator can, but easier.", "You can set it to give a set redstone signal at all times, instead of filling an inventory to a certain amount for the Comparator to read.", "This is useful when used with the Comparator in Subtract mode for certain things.", "I'll leave that part up for you to discover..", "", "(I'm just not creative with Redstone)"],
+      icon: "draconicevolution:potentiometer",
+      dependencies: ["0200000001960000"],
+      rewards: [
+        {
+          id: "0400000001A90000",
+          type: "item",
+          item: "minecraft:redstone",
+          count: 16
+        },
+        {
+          id: "0400000001A90001",
+          type: "item",
+          item: "minecraft:comparator"
+        }
+      ]
+    },
+    {
+      id: "0200000001AA0000",
+      title: "She has to be brought down!",
+      x: 12.75,
+      y: 2.75,
+      tasks: [
+        {
+          id: "0300000001AA0000",
+          type: "checkmark",
+          title: "bq_standard:hunt"
+        }
+      ],
+      description: ["You will have to go to The End, and you will have to kill the Dragon. There's no way around it.", "Now go kill it, don't forget the Dragon Heart, and the Dragon Egg!"],
+      icon: "draconicevolution:dragon_heart",
+      rewards: [
+        {
+          id: "0400000001AA0000",
+          type: "item",
+          item: "draconicevolution:dragon_heart"
+        }
+      ]
+    },
+    {
+      id: "0200000001AB0000",
+      title: "It's... orange!",
+      x: 14,
+      y: 10,
+      tasks: [
+        {
+          id: "0300000001AB0000",
+          type: "item",
+          item: "draconicevolution:draconic_sword"
+        },
+        {
+          id: "0300000001AB0064",
+          type: "item",
+          item: "draconicevolution:draconic_bow"
+        }
+      ],
+      description: ["Tier 2 Weapons", "Much more powerful versions of the Wyvern variants, with more and bigger settings available.", "The Draconic Sword comes with +2 Reaper enchant."],
+      icon: "draconicevolution:draconic_sword",
+      dependencies: ["0200000001A70000"],
+      rewards: [
+        {
+          id: "0400000001AB0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001AE0000",
+      title: "Awakening Tools!",
+      x: 14,
+      y: 11,
+      tasks: [
+        {
+          id: "0300000001AE0000",
+          type: "item",
+          item: "draconicevolution:draconic_pickaxe"
+        },
+        {
+          id: "0300000001AE0064",
+          type: "item",
+          item: "draconicevolution:draconic_axe"
+        },
+        {
+          id: "0300000001AE00C8",
+          type: "item",
+          item: "draconicevolution:draconic_shovel"
+        },
+        {
+          id: "0300000001AE012C",
+          type: "item",
+          item: "draconicevolution:draconic_hoe"
+        }
+      ],
+      description: ["Tier 2 Tools", "Bigger and better than the Wyvern variants.", "And if you're the type that would make Diamond Hoes, there's now good news for you.", "There is a Draconic Hoe!"],
+      icon: "draconicevolution:draconic_pickaxe",
+      dependencies: ["0200000001A70000"],
+      rewards: [
+        {
+          id: "0400000001AE0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001AF0000",
+      title: "How do I power this?",
+      x: 12,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000001AF0000",
+          type: "item",
+          item: "draconicevolution:energy_transfuser"
+        }
+      ],
+      description: ["Used to charge items that can store Energy."],
+      icon: "draconicevolution:energy_transfuser",
+      dependencies: ["0200000001980000", "0200000001990000"],
+      rewards: [
+        {
+          id: "0400000001AF0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001B00000",
+      title: "Fuel for the Fire",
+      x: 4,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000001B00000",
+          type: "item",
+          item: "draconicevolution:generator"
+        }
+      ],
+      description: ["Draconic Evolutions only power generation before very endgame.", "Accepts burnable items, at a rate of 84RF/t"],
+      icon: "draconicevolution:generator",
+      dependencies: ["02000000019B0000"],
+      rewards: [
+        {
+          id: "0400000001B00000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001B10000",
+      title: "Beams of Power!",
+      x: 2,
+      y: 13,
+      tasks: [
+        {
+          id: "0300000001B10000",
+          type: "item",
+          item: "draconicevolution:basic_relay_crystal",
+          count: 3
+        },
+        {
+          id: "0300000001B10001",
+          type: "item",
+          item: "draconicevolution:basic_io_crystal",
+          count: 2
+        }
+      ],
+      description: ["The wires of Draconic Evolution, comes in 3 Tiers.", "The Energy Relay Crystals are for moving energy around, and can accept many connections", "The Energy I/O Crystals are for Sending and Recieving energy into the Crystal system, and can accept few connections", "For capacity/link stats on the Crystal Tiers, check the Draconic Tablet", "", "To configure the Energy I/O Crystals, you have to shift-right click them with an empty hand.", "The way the Energy I/O Crystals work, you have to configure them like they're an Energy Battery rather than a wire.", "If the Energy I/O Crystal is set to Input, it will take in energy to itself, from what it's connected to", "If the Energy I/O Crystal is set to Output, it will give out energy from itself, to what it's connected to", "", "To link the Energy Crystals to each other, check the quest to the left.", "", "The Basic Tier has a link range of 32 blocks."],
+      icon: "draconicevolution:basic_relay_crystal",
+      dependencies: ["02000000019B0000"],
+      rewards: [
+        {
+          id: "0400000001B10000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001B20000",
+      title: "Beaming more power!",
+      x: 8,
+      y: 13,
+      tasks: [
+        {
+          id: "0300000001B20000",
+          type: "item",
+          item: "draconicevolution:wyvern_relay_crystal",
+          count: 4
+        }
+      ],
+      description: ["Next tier of Energy Crystals.", "The Wyvern Tier can transport more RF/t and can have more connections.", "May be a better option rather than 2 Basic Energy Crystals.", "", "The Wyvern Tier has a link range of 64 blocks."],
+      icon: "draconicevolution:wyvern_relay_crystal",
+      dependencies: ["0200000001B10000"],
+      rewards: [
+        {
+          id: "0400000001B20000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001B30000",
+      title: "Beaming ALL the power!",
+      x: 16,
+      y: 13,
+      tasks: [
+        {
+          id: "0300000001B30000",
+          type: "item",
+          item: "draconicevolution:draconic_relay_crystal",
+          count: 4
+        }
+      ],
+      description: ["The final Tier of Energy Crystals.", "Like the previous tier, it can hold more, and have more connections.", "", "The Draconic Tier has a link range of 126 blocks. (Don't know why it's not 128)"],
+      icon: "draconicevolution:draconic_relay_crystal",
+      dependencies: ["0200000001A70000", "0200000001B20000"],
+      rewards: [
+        {
+          id: "0400000001B30000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001B40000",
+      title: "P2P Teleports",
+      x: 4,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000001B40000",
+          type: "item",
+          item: "draconicevolution:dislocator_pedestal"
+        }
+      ],
+      description: ["The Dislocator Pedestal is well... a pedestal for the dislocator.", "You can put a bound Dislocator on the pedestal, and it will act as a one-way teleport.", "While the Dislocator is in the pedestal, it will not lose charges.", "", "You can put another Dislocator Pedestal at the destination that teleports you back, making it a Point-to-Point Teleport system.", "", "So you gain infinite uses, at the cost of portability."],
+      icon: "draconicevolution:dislocator_pedestal",
+      dependencies: ["02000000019C0000"],
+      rewards: [
+        {
+          id: "0400000001B40000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001B50000",
+      title: "Thinking with Portals",
+      x: 4,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000001B50000",
+          type: "item",
+          item: "draconicevolution:infused_obsidian",
+          count: 11
+        },
+        {
+          id: "0300000001B50001",
+          type: "item",
+          item: "draconicevolution:dislocator_receptacle"
+        }
+      ],
+      description: ["You can also use your Dislocators to create a portal, leading to the Dislocator destination.", "By connecting a Dislocator Receptacle with a frame of Draconic Infused Obsidian, and putting the Dislocator into the Receptacle, it will create a portal.", "", "The requirements for the portal frame, is much like a nether portal - There must not be any holes in the inner frame (so you don't need to fill corners), however it can be any shape you desire, and can be flipped so it lies down.", "", "This portal will teleport any entity that comes in contact with it, like dropped items, players and mobs. It will also teleport Withers that are still charging up, which makes it a good way to move it out of your Wither Spawning contraption, into a Wither Killing Chamber."],
+      icon: "draconicevolution:dislocator_receptacle",
+      dependencies: ["02000000019B0000", "02000000019C0000"],
+      rewards: [
+        {
+          id: "0400000001B50000",
+          type: "item",
+          item: "draconicevolution:dislocator"
+        }
+      ]
+    },
+    {
+      id: "0200000001B70000",
+      title: "The Big Core",
+      x: 24,
+      y: 7.5,
+      tasks: [
+        {
+          id: "0300000001B70000",
+          type: "item",
+          item: "draconicevolution:reactor_core"
+        }
+      ],
+      description: ["&r&r&1&rThis is Draconic Evolutions ultimate goal - The Draconic Reactor.", "This is a reactor that runs on Awakened Draconium, that lasts a VERY long time (We're talking weeks of RL time on a server here).", "After the setup has been made correctly, you right click the Reactor Energy Injector, or Reactor Stabilizer to open up the GUI.", "", "The Core GUI has 4 lines:", "&lCore Temperature: &r&rHow hot it is. Higher means more RF produces, and higher fuel consumption. This also determines the size of the Reactor ball. If it touches the Reactor Stabilizers, they will explode, and thus, the Reactor will explode.", "&lContainment Field Strength:&r How strong the Shield is. This is what you Inject and draw RF from. If this reaches 0, the Reactor will explode.", "&lEnergy Satuation: &rHow efficient it is, in fuel to RF conversion. The higher the better, although it usually also means lower Core Temperature.", "&lFuel Conversion Level:&r How far it is with burning the current fuel. When this reaches more than ~85%, the reactor will start to produce uncontrollably.", "", "&lFuel (In):&r Takes up to 8 blocks of Awakened Draconium", "&lChaos (Out):&r Produces Chaos Shards as waste", "", "The core fundementals of how the Draconic Reactor works is, you apply RF to create a shield around the around the core reactor where the RF production is happening. The RF produced is then applied to the shield, to make itself stronger. You then draw RF from the shield, and store it.", "", "To start the Reactor, you need to put up to 8 Awakened Draconium Block and click Charge. This will begin to warm up the Reactor. You then need to pump at least 7 million RF into the Reactor Energy Injector for the shield.", "Congratulations, your Reactor is now running, and producing power", "", "I highly recommend playing with this in Creative first, to get a feel for how it works, and how it can go wrong. And also just to see the pretty explosion!", "For an optimal setup, or ComputerCraft script, I advise you to search on Google."],
+      icon: "draconicevolution:reactor_core",
+      dependencies: ["02000000015E0000", "0200000001760000", "02000000017C0000"],
+      rewards: [
+        {
+          id: "0400000001B70000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    }
+  ],
+  quest_links: [],
+  subtitle: ["Draconic Evolution is a late-game, super powerful mod, with (arguably) the strongest armor, weapons and bosses available to any mod.", "It offers the biggest Energy Storage available, big and dangerous power generation, super powerful armor and weapons, mob spawning and killing and more.", "Draconic Evolution has its name of being the Power Creep of Modded Minecraft, because it does everything bigger and stronger.", "", "Authored by Discomanco"],
+  icon: "minecraft:book"
+}

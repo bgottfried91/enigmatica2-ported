@@ -1,0 +1,401 @@
+{
+  id: "0100000000170000",
+  group: "",
+  order_index: 12,
+  filename: "23_industrial_foregoing",
+  title: "Industrial Foregoing",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      id: "0200000001F60000",
+      title: "Industrial Foregoing",
+      x: -4,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000001F60000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["Welcome to Industrial Foregoing. It offers tons of different machines, that can automate a variety of tasks."],
+      icon: "minecraft:book",
+      rewards: [
+        {
+          id: "0400000001F60000",
+          type: "item",
+          item: "minecraft:book"
+        },
+        {
+          id: "0400000001F60001",
+          type: "command",
+          command: "/say VAR_NAME has begun the Industrial Foregoing questline!"
+        }
+      ]
+    },
+    {
+      id: "0200000001F70000",
+      title: "Material Stonework Factory",
+      x: -0.67,
+      y: 2.33,
+      tasks: [
+        {
+          id: "0300000001F70000",
+          type: "item",
+          item: "industrialforegoing:material_stonework_factory"
+        }
+      ],
+      description: ["The Stonework Factory makes Stone products, such as Gravel and Sand."],
+      icon: "industrialforegoing:material_stonework_factory",
+      dependencies: ["0200000001FC0000"],
+      rewards: [
+        {
+          id: "0400000001F70000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001F80000",
+      title: "Laser Drill",
+      x: -2.33,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000001F80000",
+          type: "item",
+          item: "industrialforegoing:laser_drill"
+        }
+      ],
+      description: ["The Laser Drill, when pointed correctly and powered, will power the Laser Base, which in turn will produce ores. It uses 4000rf/t."],
+      icon: "industrialforegoing:laser_drill",
+      dependencies: ["0200000001FF0000"],
+      rewards: [
+        {
+          id: "0400000001F80000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001F90000",
+      title: "Plant Gatherer",
+      x: -4,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000001F90000",
+          type: "item",
+          item: "industrialforegoing:plant_gatherer"
+        }
+      ],
+      description: ["This machine gathers plants and trees."],
+      icon: "industrialforegoing:plant_gatherer",
+      dependencies: ["0200000002010000"],
+      rewards: [
+        {
+          id: "0400000001F90000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001FA0000",
+      title: "Tree Fluid Extractor",
+      x: -2.33,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000001FA0000",
+          type: "item",
+          item: "industrialforegoing:fluid_extractor"
+        }
+      ],
+      description: ["Place in front of a tree, to extract latex from it. It will destroy the Log eventually."],
+      icon: "industrialforegoing:fluid_extractor",
+      dependencies: ["0200000001F60000"],
+      rewards: [
+        {
+          id: "0400000001FA0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001FB0000",
+      title: "Latex Processing Unit",
+      x: -0.67,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000001FB0000",
+          type: "item",
+          item: "industrialforegoing:latex_processing_unit"
+        }
+      ],
+      description: ["When supplied with Fluid Latex and Water, this machine will make tiny dry rubber."],
+      icon: "industrialforegoing:latex_processing_unit",
+      dependencies: ["0200000001FA0000"],
+      rewards: [
+        {
+          id: "0400000001FB0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001FC0000",
+      title: "Rubber",
+      x: 1,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000001FC0000",
+          type: "item",
+          item: "industrialforegoing:tinydryrubber"
+        },
+        {
+          id: "0300000001FC0001",
+          type: "item",
+          item: "industrialforegoing:dryrubber"
+        },
+        {
+          id: "0300000001FC0002",
+          type: "item",
+          item: "industrialforegoing:plastic"
+        }
+      ],
+      description: ["Rubber is a core ingredient in Industrial Foregoing."],
+      icon: "industrialforegoing:dryrubber",
+      dependencies: ["0200000001FB0000"],
+      rewards: [
+        {
+          id: "0400000001FC0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001FD0000",
+      title: "Mob Slaughter Factory",
+      x: 2.67,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000001FD0000",
+          type: "item",
+          item: "industrialforegoing:mob_slaughter_factory"
+        },
+        {
+          id: "0300000001FD0001",
+          type: "item",
+          item: "industrialforegoing:pink_slime"
+        }
+      ],
+      description: ["This machine will kill animals to produce meat and pink slime. Place the Pink Slime in the world, to spawn a Pink Slime.", "", "Sometimes you need to place the bucket of Pink Slime with 4 blocks around it, in order for the slime to spawn."],
+      icon: "industrialforegoing:pink_slime",
+      dependencies: ["0200000001FC0000"],
+      rewards: [
+        {
+          id: "0400000001FD0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001FE0000",
+      title: "Upgrades",
+      x: 4.33,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000001FE0000",
+          type: "item",
+          item: "industrialforegoing:range_addon0"
+        }
+      ],
+      description: ["A lot of the Industrial Foregoing machines can upgraded."],
+      icon: "industrialforegoing:range_addon9",
+      dependencies: ["0200000001FD0000"],
+      rewards: [
+        {
+          id: "0400000001FE0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001FF0000",
+      title: "Laser Base",
+      x: -2.33,
+      y: 2.33,
+      tasks: [
+        {
+          id: "0300000001FF0000",
+          type: "item",
+          item: "industrialforegoing:ore_laser_base"
+        }
+      ],
+      description: ["The Laser Base, when powered by Laser Drill(s), will generate ores. It will need to have a clear line of sight to bedrock or void bellow it. You can apply lenses to it, to filter which ores to search for."],
+      icon: "industrialforegoing:ore_laser_base",
+      dependencies: ["0200000001FC0000"],
+      rewards: [
+        {
+          id: "0400000001FF0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002000000",
+      title: "Mob Crusher",
+      x: 1,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000002000000",
+          type: "item",
+          item: "industrialforegoing:mob_imprisonment_tool"
+        }
+      ],
+      description: ["This machine kills mobs, when supplied with power. It generates a fluid you will need to duplicate mobs."],
+      icon: "industrialforegoing:mob_imprisonment_tool",
+      dependencies: ["0200000002050000"],
+      rewards: [
+        {
+          id: "0400000002000000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002010000",
+      title: "Plant Sower",
+      x: -4,
+      y: 2.33,
+      tasks: [
+        {
+          id: "0300000002010000",
+          type: "item",
+          item: "industrialforegoing:plant_sower"
+        }
+      ],
+      description: ["This machine sows plants above it. The placement is colour coded."],
+      icon: "industrialforegoing:plant_sower",
+      dependencies: ["0200000001FC0000"],
+      rewards: [
+        {
+          id: "0400000002010000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002020000",
+      title: "Animal Feeder",
+      x: -0.67,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000002020000",
+          type: "item",
+          item: "industrialforegoing:animal_feeder"
+        }
+      ],
+      description: ["This machine simply feeds animals automatically."],
+      icon: "industrialforegoing:animal_feeder",
+      dependencies: ["0200000001FC0000"],
+      rewards: [
+        {
+          id: "0400000002020000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002040000",
+      title: "Wither Builder",
+      x: 4.33,
+      y: 2.33,
+      tasks: [
+        {
+          id: "0300000002040000",
+          type: "item",
+          item: "industrialforegoing:wither_builder"
+        }
+      ],
+      description: ["The Wither Builder places Soul Sand and Wither Skulls, to spawn a Wither. It's blastproof."],
+      icon: "industrialforegoing:wither_builder",
+      dependencies: ["0200000001FC0000"],
+      rewards: [
+        {
+          id: "0400000002040000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002050000",
+      title: "Mob Imprisonment Tool",
+      x: 2.67,
+      y: 2.33,
+      tasks: [
+        {
+          id: "0300000002050000",
+          type: "item",
+          item: "industrialforegoing:mob_imprisonment_tool"
+        }
+      ],
+      description: ["This gadget can, as the name suggests, imprison mobs."],
+      icon: "industrialforegoing:mob_imprisonment_tool",
+      dependencies: ["0200000001FC0000"],
+      rewards: [
+        {
+          id: "0400000002050000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002060000",
+      title: "Mob Duplicator",
+      x: 2.67,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000002060000",
+          type: "item",
+          item: "industrialforegoing:mob_duplicator"
+        }
+      ],
+      description: ["The Mob Duplicator duplicates mobs, when supplied with power, liquid essence and a filled Mob Imprisonment Tool."],
+      icon: "industrialforegoing:mob_duplicator",
+      dependencies: ["0200000002000000"],
+      rewards: [
+        {
+          id: "0400000002060000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    }
+  ],
+  quest_links: [],
+  subtitle: ["Quests for Industrial Foregoing. Authored by NillerMedDild."],
+  icon: "minecraft:book"
+}

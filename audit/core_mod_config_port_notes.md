@@ -1,0 +1,686 @@
+# Core Mod Config Port Notes
+
+Generated comparison notes for config value porting.
+
+## actuallyadditions.cfg -> actuallyadditions-common.toml
+
+- Parsed old scalar values: 154
+- Parsed new scalar values: 34
+- Same key/value pairs: 0
+- Same key but changed value/type: 0
+- Old-only scalar keys: 154
+- New-only scalar keys: 34
+
+Old-only keys sample:
+- `"machine values".Atomic Reconstructor Power` = `300000`
+- `"machine values".Coal Generator Energy Production` = `30`
+- `"machine values".Farmer Area` = `9`
+- `"machine values".Laser Relay Energy Loss` = `true`
+- `"machine values".Leaf Generator Area` = `7`
+- `"machine values".Leaf Generator Cooldown` = `5`
+- `"machine values".Leaf Generator Energy Production` = `300`
+- `"machine values".Mining Lens Energy` = `60000`
+- `"machine values".Mining Lens Math` = `true`
+- `"mob drops".Bat Wing Drop` = `true`
+- `"mob drops".Solidified XP Drop` = `true`
+- `"mob drops".Spider Cobweb Drop` = `false`
+- `"tool control".Disable: Black Quartz AIOT` = `false`
+- `"tool control".Disable: Black Quartz Axe` = `false`
+- `"tool control".Disable: Black Quartz Boots` = `false`
+- `"tool control".Disable: Black Quartz Chestplate` = `false`
+- `"tool control".Disable: Black Quartz Helmet` = `false`
+- `"tool control".Disable: Black Quartz Hoe` = `false`
+- `"tool control".Disable: Black Quartz Pants` = `false`
+- `"tool control".Disable: Black Quartz Pickaxe` = `false`
+- `"tool control".Disable: Black Quartz Shovel` = `false`
+- `"tool control".Disable: Black Quartz Sword` = `false`
+- `"tool control".Disable: Diamatine Crystal AIOT` = `false`
+- `"tool control".Disable: Diamatine Crystal Axe` = `false`
+- `"tool control".Disable: Diamatine Crystal Boots` = `false`
+- `"tool control".Disable: Diamatine Crystal Chestplate` = `false`
+- `"tool control".Disable: Diamatine Crystal Helmet` = `false`
+- `"tool control".Disable: Diamatine Crystal Hoe` = `false`
+- `"tool control".Disable: Diamatine Crystal Pants` = `false`
+- `"tool control".Disable: Diamatine Crystal Pickaxe` = `false`
+- `"tool control".Disable: Diamatine Crystal Shovel` = `false`
+- `"tool control".Disable: Diamatine Crystal Sword` = `false`
+- `"tool control".Disable: Diamond AIOT` = `false`
+- `"tool control".Disable: Emeradic Crystal AIOT` = `false`
+- `"tool control".Disable: Emeradic Crystal Axe` = `false`
+- `"tool control".Disable: Emeradic Crystal Boots` = `false`
+- `"tool control".Disable: Emeradic Crystal Chest` = `false`
+- `"tool control".Disable: Emeradic Crystal Helmet` = `false`
+- `"tool control".Disable: Emeradic Crystal Hoe` = `false`
+- `"tool control".Disable: Emeradic Crystal Pants` = `false`
+- `"tool control".Disable: Emeradic Crystal Pickaxe` = `false`
+- `"tool control".Disable: Emeradic Crystal Shovel` = `false`
+- `"tool control".Disable: Emeradic Crystal Sword` = `false`
+- `"tool control".Disable: Emerald AIOT` = `false`
+- `"tool control".Disable: Emerald Axe` = `false`
+- `"tool control".Disable: Emerald Boots` = `false`
+- `"tool control".Disable: Emerald Chestplate` = `false`
+- `"tool control".Disable: Emerald Helmet` = `false`
+- `"tool control".Disable: Emerald Hoe` = `false`
+- `"tool control".Disable: Emerald Pants` = `false`
+
+New-only keys sample:
+- `itemsSettings.Drill Extra Whitelist` = `["TConstruct:GravelOre"]`
+- `machineSettings.Vertical Digger Blacklist` = `[]`
+- `machineSettings.Vertical Digger Extra Whitelist` = `[]`
+- `machineSettings.farmerArea` = `9`
+- `machineSettings.laserRelayLoss` = `true`
+- `machineSettings.leafGeneratorArea` = `7`
+- `machineSettings.leafGeneratorCPPerLeaf` = `300`
+- `machineSettings.leafGeneratorCooldown` = `5`
+- `machineSettings.minerLensEnergy` = `60000`
+- `machineSettings.oilGeneratorTransfer` = `500`
+- `machineSettings.reconstructorPower` = `300000`
+- `other.advancedInfo` = `true`
+- `other.advancedInfoTooltips` = `true`
+- `other.doBatDrops` = `true`
+- `other.doCatDrops` = `true`
+- `other.doSeedsDrops` = `true`
+- `other.doUpdateCheck` = `true`
+- `other.doXpDrops` = `true`
+- `other.furDropChance` = `5000`
+- `other.giveBookletOnFirstCraft` = `true`
+- `other.noColoredItemNames` = `false`
+- `other.redstoneConfigurator` = `"minecraft:redstone_torch"`
+- `other.relayConfigurator` = `"minecraft:compass"`
+- `other.solidXPOrbs` = `false`
+- `other.superDuperHardRecipes` = `false`
+- `other.tillingWorms` = `true`
+- `other.tinyCoal` = `true`
+- `other.versionSpecificUpdateChecker` = `true`
+- `other.villageAndDungeonLoot` = `true`
+- `other.waterBowl` = `true`
+- `other.waterBowlSpilling` = `true`
+- `other.wormDeathTime` = `0`
+- `worldgenSettings.blackQuartzGeneration` = `false`
+- `worldgenSettings.engineerHouseGeneration` = `true`
+
+## bloodmagic/bloodmagic.cfg -> bloodmagic-common.toml
+
+- Parsed old scalar values: 47
+- Parsed new scalar values: 33
+- Same key/value pairs: 0
+- Same key but changed value/type: 0
+- Old-only scalar keys: 47
+- New-only scalar keys: 33
+
+Old-only keys sample:
+- `client.alwaysRenderRoutingLines` = `false`
+- `client.invisibleSpectralBlocks` = `true`
+- `client.sigilHoldingSkipsEmptySlots` = `false`
+- `compat.wailaAltarDisplayMode` = `SIGIL_HELD`
+- `general.enableAPILogging` = `false`
+- `general.enableDebugLogging` = `false`
+- `general.enableTierSixEvenThoughThereIsNoContent` = `false`
+- `general.enableVerboseAPILogging` = `false`
+- `rituals.imperfect.imperfectRitualNight` = `true`
+- `rituals.imperfect.imperfectRitualRain` = `true`
+- `rituals.imperfect.imperfectRitualResistance` = `true`
+- `rituals.imperfect.imperfectRitualZombie` = `true`
+- `rituals.ritualAltarBuilder` = `true`
+- `rituals.ritualAnimalGrowth` = `true`
+- `rituals.ritualArmourEvolve` = `true`
+- `rituals.ritualContainment` = `true`
+- `rituals.ritualCrushing` = `true`
+- `rituals.ritualCrystalHarvest` = `true`
+- `rituals.ritualCrystalSplit` = `true`
+- `rituals.ritualDowngrade` = `true`
+- `rituals.ritualEllipsoid` = `true`
+- `rituals.ritualExpulsion` = `true`
+- `rituals.ritualFeatheredKnife` = `true`
+- `rituals.ritualFelling` = `true`
+- `rituals.ritualForsakenSoul` = `true`
+- `rituals.ritualFullStomach` = `true`
+- `rituals.ritualGreenGrove` = `true`
+- `rituals.ritualHarvest` = `true`
+- `rituals.ritualInterdiction` = `true`
+- `rituals.ritualJumping` = `true`
+- `rituals.ritualLava` = `true`
+- `rituals.ritualMagnetic` = `true`
+- `rituals.ritualMeteor` = `true`
+- `rituals.ritualPlacer` = `true`
+- `rituals.ritualPortal` = `true`
+- `rituals.ritualPump` = `true`
+- `rituals.ritualRegeneration` = `true`
+- `rituals.ritualSpeed` = `true`
+- `rituals.ritualSuppression` = `true`
+- `rituals.ritualUpgradeRemove` = `true`
+- `rituals.ritualWater` = `true`
+- `rituals.ritualWellOfSuffering` = `true`
+- `rituals.ritualZephyr` = `true`
+- `values.coatOfArmsConversion` = `20`
+- `values.sacrificialDaggerConversion` = `100`
+- `values.shouldResyncMeteors` = `true`
+- `values.wellOfSufferingDrops` = `true`
+
+New-only keys sample:
+- `"Geode Ritual".activation_cost` = `50000`
+- `"Geode Ritual".fortune_cost` = `1.0`
+- `"Geode Ritual".growth_cost` = `0.5`
+- `"Geode Ritual".harm_cost` = `0.125`
+- `"Geode Ritual".hurt_damage` = `2`
+- `"Geode Ritual".max_budding_blocks` = `7`
+- `"Geode Ritual".max_harmed` = `8`
+- `"Geode Ritual".min_corrosive_will` = `50.0`
+- `"Geode Ritual".min_destructive_will` = `50.0`
+- `"Geode Ritual".min_raw_will` = `50.0`
+- `"Geode Ritual".min_steadfast_will` = `50.0`
+- `"Geode Ritual".min_vengeful_will` = `50.0`
+- `"Geode Ritual".refresh_cost` = `50`
+- `"Geode Ritual".silk_touch_cost` = `1.0`
+- `"Geode Ritual".store_cost` = `1.0`
+- `defaultSacrificeValue` = `25`
+- `default_upgrade_points` = `100`
+- `evolved_upgrade_points` = `300`
+- `makeDungeonRitualCreativeOnly` = `false`
+- `sacrificialDaggerConversion` = `100`
+- `sacrificialValues` = `["villager;100", "slime;15", "enderman;10", "cow;100", "chicken;100", "horse;100", "sheep;100", "wolf;100", "ocelot;100", "pig;100", "rabbit;100", "dummmmmmy:target_dummy;0"]`
+- `sigil_cost.air` = `50`
+- `sigil_cost.blood_light` = `10`
+- `sigil_cost.fast_miner` = `100`
+- `sigil_cost.frost` = `100`
+- `sigil_cost.green_grove` = `150`
+- `sigil_cost.lava` = `1000`
+- `sigil_cost.magnetism` = `50`
+- `sigil_cost.suppression` = `400`
+- `sigil_cost.teleposition` = `1000`
+- `sigil_cost.void` = `50`
+- `sigil_cost.water` = `100`
+- `wellOfSuffering` = `["dummmmmmy:target_dummy"]`
+
+## botania.cfg -> botania-common.toml
+
+- Parsed old scalar values: 54
+- Parsed new scalar values: 16
+- Same key/value pairs: 0
+- Same key but changed value/type: 0
+- Old-only scalar keys: 54
+- New-only scalar keys: 16
+
+Old-only keys sample:
+- `general.adaptativeConfig.enabled` = `true`
+- `general.albedoLights.enabled` = `true`
+- `general.armorModels.enable` = `true`
+- `general.baubleRender.enabled` = `true`
+- `general.blockBreakingParticles.enabled` = `true`
+- `general.blockBreakingParticlesTool.enabled` = `true`
+- `general.boundBlock.wireframe.enabled` = `true`
+- `general.chargeAnimation.enabled` = `true`
+- `general.darkQuartz.enabled` = `true`
+- `general.debugInfo.enabled` = `true`
+- `general.elfPortal.particles.enabled` = `true`
+- `general.enderPickpocket.enabled` = `true`
+- `general.fallenKanade.enabled` = `true`
+- `general.fancySkybox.enable` = `true`
+- `general.fancySkybox.normalWorlds` = `false`
+- `general.flightBar.height` = `49`
+- `general.flightBarBreath.height` = `59`
+- `general.flower.forceCheck` = `true`
+- `general.flowerParticles.frequency` = `0.75`
+- `general.harvestLevel.boreLens` = `3`
+- `general.harvestLevel.weightLens` = `2`
+- `general.lexicon.enable.justifiedText` = `false`
+- `general.lexicon.enable.rotatingItems` = `true`
+- `general.lexicon.render.3D` = `true`
+- `general.magnetRing.invert` = `false`
+- `general.manaBar.height` = `29`
+- `general.manaEnchanter.enabled` = `true`
+- `general.manaFluxfield.enabled` = `true`
+- `general.manaSpreaders.silent` = `false`
+- `general.matrixMode.enabled` = `false`
+- `general.powerSystem.subtle` = `false`
+- `general.quickLookup.lexicaOfflineMode` = `false`
+- `general.quickLookup.useShift` = `false`
+- `general.references.enabled` = `true`
+- `general.relics.enabled` = `true`
+- `general.ringOfOdin.fireResist` = `true`
+- `general.seasonalFeatures.enabled` = `true`
+- `general.shaders.enabled` = `true`
+- `general.shaders.secondaryUnit` = `7`
+- `general.shedding.enable` = `false`
+- `general.spreader.posShift` = `1`
+- `general.spreader.traceTime` = `400`
+- `general.staticFloaters.enabled` = `false`
+- `general.thaumcraftAspects.enabled` = `true`
+- `general.thaumraftStabilizers.enabled` = `true`
+- `general.vanillaParticleConfig.enabled` = `true`
+- `general.versionChecking.enabled` = `true`
+- `general.wandBeam.static` = `false`
+- `general.worldgen.flower.density` = `2`
+- `general.worldgen.flower.patchChance` = `16`
+
+New-only keys sample:
+- `blockBreakingParticles.enabled` = `true`
+- `blockBreakingParticles.toolEnabled` = `true`
+- `chargeAnimation` = `true`
+- `enderPickpocket` = `true`
+- `flowerBindingForceCheck` = `true`
+- `gardenOfGlass.islandScaleMultiplier` = `8`
+- `gardenOfGlass.spawnWithLexicon` = `true`
+- `harvestLevels.boreLens` = `3`
+- `harvestLevels.weightLens` = `2`
+- `invertMagnetRing` = `false`
+- `manaEnchanter` = `true`
+- `manaSpreaders.silent` = `false`
+- `manaSpreaders.traceTime` = `400`
+- `rannuncarpus.itemBlacklist` = `[]`
+- `rannuncarpus.modBlacklist` = `["storagedrawers"]`
+- `relics` = `true`
+
+## cyclicmagic.cfg -> cyclic.toml
+
+- Parsed old scalar values: 474
+- Parsed new scalar values: 187
+- Same key/value pairs: 0
+- Same key but changed value/type: 0
+- Old-only scalar keys: 474
+- New-only scalar keys: 187
+
+Old-only keys sample:
+- `"dynamite i-ivcyclicmagic".content.EnderBombs` = `true`
+- `cyclicmagic."world generation".ChestLoot` = `true`
+- `cyclicmagic."world generation".ChestLootChance` = `2`
+- `cyclicmagic."world generation".Emerald Ore Boost` = `true`
+- `cyclicmagic."world generation".End Ore` = `false`
+- `cyclicmagic."world generation".Gold Rivers` = `true`
+- `cyclicmagic."world generation".Infested Ores` = `true`
+- `cyclicmagic."world generation".Nether Ore` = `false`
+- `cyclicmagic."world generation".Ore Singletons` = `true`
+- `cyclicmagic."world generation".PigmenEnrage` = `false`
+- `cyclicmagic."world generation".endorecustom.blockCountCoal` = `8`
+- `cyclicmagic."world generation".endorecustom.blockCountDiamond` = `8`
+- `cyclicmagic."world generation".endorecustom.blockCountEmerald` = `8`
+- `cyclicmagic."world generation".endorecustom.blockCountGold` = `8`
+- `cyclicmagic."world generation".endorecustom.blockCountIron` = `8`
+- `cyclicmagic."world generation".endorecustom.blockCountLapis` = `8`
+- `cyclicmagic."world generation".endorecustom.blockCountRedstone` = `8`
+- `cyclicmagic."world generation".endorecustom.end_coal_ore` = `true`
+- `cyclicmagic."world generation".endorecustom.end_coal_ore_harvest_level` = `0`
+- `cyclicmagic."world generation".endorecustom.end_diamond_ore` = `true`
+- `cyclicmagic."world generation".endorecustom.end_diamond_ore_harvest_level` = `2`
+- `cyclicmagic."world generation".endorecustom.end_emerald_ore` = `true`
+- `cyclicmagic."world generation".endorecustom.end_emerald_ore_harvest_level` = `2`
+- `cyclicmagic."world generation".endorecustom.end_gold_ore` = `true`
+- `cyclicmagic."world generation".endorecustom.end_gold_ore_harvest_level` = `2`
+- `cyclicmagic."world generation".endorecustom.end_iron_ore` = `true`
+- `cyclicmagic."world generation".endorecustom.end_iron_ore_harvest_level` = `1`
+- `cyclicmagic."world generation".endorecustom.end_lapis_ore` = `true`
+- `cyclicmagic."world generation".endorecustom.end_lapis_ore_harvest_level` = `1`
+- `cyclicmagic."world generation".endorecustom.end_redstone_ore` = `true`
+- `cyclicmagic."world generation".endorecustom.end_redstone_ore_harvest_level` = `2`
+- `cyclicmagic."world generation".endorecustom.spawnChanceCoal` = `20`
+- `cyclicmagic."world generation".endorecustom.spawnChanceDiamond` = `4`
+- `cyclicmagic."world generation".endorecustom.spawnChanceEmerald` = `10`
+- `cyclicmagic."world generation".endorecustom.spawnChanceGold` = `12`
+- `cyclicmagic."world generation".endorecustom.spawnChanceIron` = `12`
+- `cyclicmagic."world generation".endorecustom.spawnChanceLapis` = `15`
+- `cyclicmagic."world generation".endorecustom.spawnChanceRedstone` = `18`
+- `cyclicmagic."world generation".netherorecustom.blockCountCoal` = `8`
+- `cyclicmagic."world generation".netherorecustom.blockCountDiamond` = `8`
+- `cyclicmagic."world generation".netherorecustom.blockCountEmerald` = `8`
+- `cyclicmagic."world generation".netherorecustom.blockCountGold` = `8`
+- `cyclicmagic."world generation".netherorecustom.blockCountIron` = `8`
+- `cyclicmagic."world generation".netherorecustom.blockCountLapis` = `8`
+- `cyclicmagic."world generation".netherorecustom.blockCountRedstone` = `8`
+- `cyclicmagic."world generation".netherorecustom.nether_coal_ore` = `true`
+- `cyclicmagic."world generation".netherorecustom.nether_coal_ore_harvest_level` = `0`
+- `cyclicmagic."world generation".netherorecustom.nether_diamond_ore` = `true`
+- `cyclicmagic."world generation".netherorecustom.nether_diamond_ore_harvest_level` = `2`
+- `cyclicmagic."world generation".netherorecustom.nether_emerald_ore` = `true`
+
+New-only keys sample:
+- `cyclic.blocks.altar_destruction.height` = `8`
+- `cyclic.blocks.altar_destruction.radius` = `32`
+- `cyclic.blocks.anti_beacon.potion_list` = `["minecraft:poison", "minecraft:*_poison", "minecraft:wither", "cyclic:gravity", "minecraft:weakness", "minecraft:slowness"]`
+- `cyclic.blocks.anti_beacon.radius` = `16`
+- `cyclic.blocks.anti_beacon.ticks` = `200`
+- `cyclic.blocks.anvil.energy_cost` = `250`
+- `cyclic.blocks.anvil_magma.fluid_cost` = `100`
+- `cyclic.blocks.anvil_void.fluid_cost` = `25`
+- `cyclic.blocks.battery.capacity` = `6400000`
+- `cyclic.blocks.battery.charge` = `8000`
+- `cyclic.blocks.battery_clay.capacity` = `16000`
+- `cyclic.blocks.beacon.energy_cost` = `0`
+- `cyclic.blocks.cables.energy.buffer` = `32000`
+- `cyclic.blocks.cables.energy.flow` = `32000`
+- `cyclic.blocks.cables.fluid.buffer` = `16`
+- `cyclic.blocks.cables.fluid.flow` = `16000`
+- `cyclic.blocks.collector_fluid.energy_cost` = `500`
+- `cyclic.blocks.crafter.energy_cost` = `500`
+- `cyclic.blocks.disenchanter.energy_cost` = `2500`
+- `cyclic.blocks.disenchanter.fluid_cost` = `100`
+- `cyclic.blocks.dropper.energy_cost` = `50`
+- `cyclic.blocks.ender_shelf.books_per_row` = `256`
+- `cyclic.blocks.ender_shelf.controller_distance` = `64`
+- `cyclic.blocks.experience_pylon.radius` = `16`
+- `cyclic.blocks.eye_redstone.frequency` = `5`
+- `cyclic.blocks.eye_redstone.range` = `32`
+- `cyclic.blocks.eye_teleport.exp` = `0`
+- `cyclic.blocks.eye_teleport.frequency` = `5`
+- `cyclic.blocks.eye_teleport.hunger` = `1`
+- `cyclic.blocks.eye_teleport.range` = `128`
+- `cyclic.blocks.facades.cables.enabled` = `true`
+- `cyclic.blocks.facades.itemsNotAllowed` = `["minecraft:double_plant", "minecraft:waterlily", "minecraft:torch", "minecraft:*_torch", "minecraft:redstone", "minecraft:iron_bars", "minecraft:chest", "minecraft:ender_chest", "minecraft:sculk_vein", "minecraft:string", "minecraft:vine", "minecraft:brewing_stand", "minecraft:*_dripleaf", "minecraft:*_pane", "minecraft:*_sapling", "minecraft:*_sign", "minecraft:*_door", "minecraft:*_banner", "minecraft:*_shulker_box", "storagenetwork:*"]`
+- `cyclic.blocks.fisher.chance` = `0.06`
+- `cyclic.blocks.fisher.radius` = `12`
+- `cyclic.blocks.forester.energy_cost` = `50`
+- `cyclic.blocks.generator_food.rf_per_tick` = `60`
+- `cyclic.blocks.generator_food.ticks_per_food` = `100`
+- `cyclic.blocks.generator_fuel.rf_per_tick` = `80`
+- `cyclic.blocks.generator_solar.energy` = `4`
+- `cyclic.blocks.generator_solar.ticks` = `60`
+- `cyclic.blocks.harmful_potions` = `true`
+- `cyclic.blocks.harvester.energy_cost` = `250`
+- `cyclic.blocks.magnet_block.radius` = `16`
+- `cyclic.blocks.miner.energy_cost` = `10`
+- `cyclic.blocks.no_soliciting.height` = `4`
+- `cyclic.blocks.no_soliciting.radius` = `32`
+- `cyclic.blocks.packager.energy_cost` = `50`
+- `cyclic.blocks.peace_candle.height` = `4`
+- `cyclic.blocks.peace_candle.radius` = `32`
+- `cyclic.blocks.peat.conversion_chance` = `0.07999999821186066`
+
+## cyclic_ores.cfg -> cyclic.toml
+
+- Parsed old scalar values: 241
+- Parsed new scalar values: 187
+- Same key/value pairs: 0
+- Same key but changed value/type: 0
+- Old-only scalar keys: 241
+- New-only scalar keys: 187
+
+Old-only keys sample:
+- `_global_.globalOverride` = `false`
+- `aquamarine.end.aquamarine_end_ore` = `true`
+- `aquamarine.end.aquamarine_end_ore_harvest_level` = `1`
+- `aquamarine.end.blockCount` = `8`
+- `aquamarine.end.spawnChance` = `5`
+- `aquamarine.nether.aquamarine_nether_ore` = `true`
+- `aquamarine.nether.aquamarine_nether_ore_harvest_level` = `1`
+- `aquamarine.nether.blockCount` = `8`
+- `aquamarine.nether.spawnChance` = `5`
+- `bauxite.end.bauxite_end_ore` = `true`
+- `bauxite.end.bauxite_end_ore_harvest_level` = `1`
+- `bauxite.end.blockCount` = `8`
+- `bauxite.end.spawnChance` = `5`
+- `bauxite.nether.bauxite_nether_ore` = `true`
+- `bauxite.nether.bauxite_nether_ore_harvest_level` = `1`
+- `bauxite.nether.blockCount` = `8`
+- `bauxite.nether.spawnChance` = `5`
+- `boron.end.blockCount` = `8`
+- `boron.end.boron_end_ore` = `true`
+- `boron.end.boron_end_ore_harvest_level` = `1`
+- `boron.end.spawnChance` = `5`
+- `boron.nether.blockCount` = `8`
+- `boron.nether.boron_nether_ore` = `true`
+- `boron.nether.boron_nether_ore_harvest_level` = `1`
+- `boron.nether.spawnChance` = `5`
+- `cobalt.end.blockCount` = `8`
+- `cobalt.end.cobalt_end_ore` = `true`
+- `cobalt.end.cobalt_end_ore_harvest_level` = `1`
+- `cobalt.end.spawnChance` = `5`
+- `cobalt.nether.blockCount` = `8`
+- `cobalt.nether.cobalt_nether_ore` = `true`
+- `cobalt.nether.cobalt_nether_ore_harvest_level` = `1`
+- `cobalt.nether.spawnChance` = `5`
+- `copper.end.blockCount` = `8`
+- `copper.end.copper_end_ore` = `true`
+- `copper.end.copper_end_ore_harvest_level` = `1`
+- `copper.end.spawnChance` = `5`
+- `copper.nether.blockCount` = `8`
+- `copper.nether.copper_nether_ore` = `true`
+- `copper.nether.copper_nether_ore_harvest_level` = `1`
+- `copper.nether.spawnChance` = `5`
+- `dilithium.end.blockCount` = `8`
+- `dilithium.end.dilithium_end_ore` = `true`
+- `dilithium.end.dilithium_end_ore_harvest_level` = `1`
+- `dilithium.end.spawnChance` = `5`
+- `dilithium.nether.blockCount` = `8`
+- `dilithium.nether.dilithium_nether_ore` = `true`
+- `dilithium.nether.dilithium_nether_ore_harvest_level` = `1`
+- `dilithium.nether.spawnChance` = `5`
+- `galena.end.blockCount` = `8`
+
+New-only keys sample:
+- `cyclic.blocks.altar_destruction.height` = `8`
+- `cyclic.blocks.altar_destruction.radius` = `32`
+- `cyclic.blocks.anti_beacon.potion_list` = `["minecraft:poison", "minecraft:*_poison", "minecraft:wither", "cyclic:gravity", "minecraft:weakness", "minecraft:slowness"]`
+- `cyclic.blocks.anti_beacon.radius` = `16`
+- `cyclic.blocks.anti_beacon.ticks` = `200`
+- `cyclic.blocks.anvil.energy_cost` = `250`
+- `cyclic.blocks.anvil_magma.fluid_cost` = `100`
+- `cyclic.blocks.anvil_void.fluid_cost` = `25`
+- `cyclic.blocks.battery.capacity` = `6400000`
+- `cyclic.blocks.battery.charge` = `8000`
+- `cyclic.blocks.battery_clay.capacity` = `16000`
+- `cyclic.blocks.beacon.energy_cost` = `0`
+- `cyclic.blocks.cables.energy.buffer` = `32000`
+- `cyclic.blocks.cables.energy.flow` = `32000`
+- `cyclic.blocks.cables.fluid.buffer` = `16`
+- `cyclic.blocks.cables.fluid.flow` = `16000`
+- `cyclic.blocks.collector_fluid.energy_cost` = `500`
+- `cyclic.blocks.crafter.energy_cost` = `500`
+- `cyclic.blocks.disenchanter.energy_cost` = `2500`
+- `cyclic.blocks.disenchanter.fluid_cost` = `100`
+- `cyclic.blocks.dropper.energy_cost` = `50`
+- `cyclic.blocks.ender_shelf.books_per_row` = `256`
+- `cyclic.blocks.ender_shelf.controller_distance` = `64`
+- `cyclic.blocks.experience_pylon.radius` = `16`
+- `cyclic.blocks.eye_redstone.frequency` = `5`
+- `cyclic.blocks.eye_redstone.range` = `32`
+- `cyclic.blocks.eye_teleport.exp` = `0`
+- `cyclic.blocks.eye_teleport.frequency` = `5`
+- `cyclic.blocks.eye_teleport.hunger` = `1`
+- `cyclic.blocks.eye_teleport.range` = `128`
+- `cyclic.blocks.facades.cables.enabled` = `true`
+- `cyclic.blocks.facades.itemsNotAllowed` = `["minecraft:double_plant", "minecraft:waterlily", "minecraft:torch", "minecraft:*_torch", "minecraft:redstone", "minecraft:iron_bars", "minecraft:chest", "minecraft:ender_chest", "minecraft:sculk_vein", "minecraft:string", "minecraft:vine", "minecraft:brewing_stand", "minecraft:*_dripleaf", "minecraft:*_pane", "minecraft:*_sapling", "minecraft:*_sign", "minecraft:*_door", "minecraft:*_banner", "minecraft:*_shulker_box", "storagenetwork:*"]`
+- `cyclic.blocks.fisher.chance` = `0.06`
+- `cyclic.blocks.fisher.radius` = `12`
+- `cyclic.blocks.forester.energy_cost` = `50`
+- `cyclic.blocks.generator_food.rf_per_tick` = `60`
+- `cyclic.blocks.generator_food.ticks_per_food` = `100`
+- `cyclic.blocks.generator_fuel.rf_per_tick` = `80`
+- `cyclic.blocks.generator_solar.energy` = `4`
+- `cyclic.blocks.generator_solar.ticks` = `60`
+- `cyclic.blocks.harmful_potions` = `true`
+- `cyclic.blocks.harvester.energy_cost` = `250`
+- `cyclic.blocks.magnet_block.radius` = `16`
+- `cyclic.blocks.miner.energy_cost` = `10`
+- `cyclic.blocks.no_soliciting.height` = `4`
+- `cyclic.blocks.no_soliciting.radius` = `32`
+- `cyclic.blocks.packager.energy_cost` = `50`
+- `cyclic.blocks.peace_candle.height` = `4`
+- `cyclic.blocks.peace_candle.radius` = `32`
+- `cyclic.blocks.peat.conversion_chance` = `0.07999999821186066`
+
+## immersiveengineering.cfg -> immersiveengineering-common.toml
+
+- Parsed old scalar values: 147
+- Parsed new scalar values: 7
+- Same key/value pairs: 0
+- Same key but changed value/type: 0
+- Old-only scalar keys: 147
+- New-only scalar keys: 7
+
+Old-only keys sample:
+- `general.adjustManualScale` = `false`
+- `general.badEyesight` = `false`
+- `general.blocksBreakWires` = `true`
+- `general.colourblindSupport` = `false`
+- `general.compat.actuallyadditions` = `true`
+- `general.compat.albedo` = `true`
+- `general.compat.attaineddrops` = `true`
+- `general.compat.attaineddrops2` = `true`
+- `general.compat.baubles` = `true`
+- `general.compat.betterwithmods` = `true`
+- `general.compat.bloodmagic` = `true`
+- `general.compat.botania` = `true`
+- `general.compat.chisel` = `true`
+- `general.compat.chiselsandbits` = `true`
+- `general.compat.cofhcore` = `true`
+- `general.compat.crafttweaker` = `true`
+- `general.compat.denseores` = `true`
+- `general.compat.enderio` = `true`
+- `general.compat.extrautils2` = `true`
+- `general.compat.forestry` = `true`
+- `general.compat.foundry` = `true`
+- `general.compat.harvestcraft` = `true`
+- `general.compat.ic2` = `true`
+- `general.compat.inspirations` = `true`
+- `general.compat.mysticalagriculture` = `true`
+- `general.compat.opencomputers` = `true`
+- `general.compat.railcraft` = `true`
+- `general.compat.tconstruct` = `true`
+- `general.compat.thaumcraft` = `true`
+- `general.compat.theoneprobe` = `true`
+- `general.compat.thermalfoundation` = `true`
+- `general.compat.waila` = `true`
+- `general.compat.xlfoodmod` = `true`
+- `general.coreSampleCoords` = `true`
+- `general.disableFancyBlueprints` = `true`
+- `general.disableFancyTESR` = `false`
+- `general.enableDebug` = `false`
+- `general.enableVillagers` = `true`
+- `general.enableWireDamage` = `true`
+- `general.fancyItemAnimations` = `true`
+- `general.fancyItemHolding` = `true`
+- `general.hempSeedWeight` = `5`
+- `general.increasedRenderboxes` = `true`
+- `general.increasedTileRenderdistance` = `1.5`
+- `general.machines.arcFurnace_energyModifier` = `1.0`
+- `general.machines.arcFurnace_timeModifier` = `1.0`
+- `general.machines.arcfurnace_electrodeCrafting` = `false`
+- `general.machines.arcfurnace_electrodeDamage` = `96000`
+- `general.machines.arcfurnace_recycle` = `true`
+- `general.machines.assembler_consumption` = `80`
+
+New-only keys sample:
+- `compat.computercraft` = `true`
+- `compat.curios` = `true`
+- `compat.theoneprobe` = `true`
+- `debug.wires.enableWireLogger` = `false`
+- `debug.wires.validateNets` = `false`
+- `importantInfo` = `true`
+- `preferredOres` = `["immersiveengineering", "minecraft"]`
+
+## quark.cfg -> quark-common.toml
+
+- Parsed old scalar values: 1113
+- Parsed new scalar values: 938
+- Same key/value pairs: 0
+- Same key but changed value/type: 3
+- Old-only scalar keys: 1110
+- New-only scalar keys: 935
+
+Changed same-name keys:
+- `automation.Chute`: old `B=true` -> new `==true`
+- `automation.Gravisand`: old `B=true` -> new `==true`
+- `building.Thatch`: old `B=true` -> new `==true`
+
+Old-only keys sample:
+- `_global.Allow Block Variants` = `true`
+- `_global.Enable Anti-Overlap` = `true`
+- `_global.Enable Quark Config Command` = `true`
+- `_global.Enable Seasonal Features` = `true`
+- `_global.Enable q Button` = `false`
+- `_global.Piston Push Limit` = `12`
+- `_global.Use Piston Logic Replacement` = `true`
+- `_global.q Button on the Right` = `false`
+- `_modules.automation` = `true`
+- `_modules.building` = `true`
+- `_modules.client` = `true`
+- `_modules.decoration` = `true`
+- `_modules.experimental` = `true`
+- `_modules.management` = `true`
+- `_modules.misc` = `true`
+- `_modules.tweaks` = `true`
+- `_modules.vanity` = `true`
+- `_modules.world` = `true`
+- `automation."animals eat floor food".Force Enabled` = `false`
+- `automation."animals eat floor food".Maximum entities per chunk area` = `30`
+- `automation."animals eat floor food".Maximum entity density` = `2.0`
+- `automation."chain linkage".Crafts Armor` = `true`
+- `automation."color slime".Rename Vanilla Slime` = `true`
+- `automation."dispensers place blocks".Force Enabled` = `false`
+- `automation."dispensers place seeds".Force Enabled` = `false`
+- `automation."ender watcher".Force Enabled` = `false`
+- `automation."metal buttons".Enable Gold Button` = `true`
+- `automation."metal buttons".Enable Iron Button` = `true`
+- `automation."piston block breakers".Enable Easy Recipe` = `false`
+- `automation."pistons push and pull items".Push Strength` = `0.47999998927116394`
+- `automation.Animals eat floor food` = `false`
+- `automation.Chain linkage` = `true`
+- `automation.Color slime` = `true`
+- `automation.Dispenser records` = `true`
+- `automation.Dispensers place blocks` = `true`
+- `automation.Dispensers place seeds` = `true`
+- `automation.Ender watcher` = `true`
+- `automation.Metal buttons` = `true`
+- `automation.Obsidian pressure plate` = `true`
+- `automation.Piston Block Breakers` = `true`
+- `automation.Pistons Push and Pull Items` = `true`
+- `automation.Pistons move t es` = `false`
+- `automation.Rain detector` = `true`
+- `automation.Redstone inductor` = `true`
+- `automation.Redstone randomizer` = `true`
+- `automation.Sugar block` = `true`
+- `building."bark blocks".Enable stairs and slabs` = `false`
+- `building."bark blocks".Enable walls` = `false`
+- `building."bark blocks".Use 2x2 Recipe` = `false`
+- `building."bark blocks".Use 3x3 Recipe` = `false`
+
+New-only keys sample:
+- `automation.Chains Connect Blocks` = `true`
+- `automation.Crafter` = `true`
+- `automation.Dispensers Place Blocks` = `true`
+- `automation.Ender Watcher` = `true`
+- `automation.Feeding Trough` = `true`
+- `automation.Iron Rod` = `true`
+- `automation.Metal Buttons` = `true`
+- `automation.Obsidian Plate` = `true`
+- `automation.Pistons Move Tile Entities` = `true`
+- `automation.Redstone Randomizer` = `true`
+- `automation.crafter.Allow Items While Powered` = `true`
+- `automation.crafter.Use Emi Logic` = `false`
+- `automation.dispensers_place_blocks.Blacklist` = `["minecraft:water", "minecraft:lava", "minecraft:fire"]`
+- `automation.dispensers_place_blocks.Wrap Existing Behaviors` = `true`
+- `automation.feeding_trough.Cooldown` = `30`
+- `automation.feeding_trough.Look Chance` = `0.015`
+- `automation.feeding_trough.Love Chance` = `0.333333333`
+- `automation.feeding_trough.Max Animals` = `32`
+- `automation.feeding_trough.Range` = `10.0`
+- `automation.iron_rod.Use Pre End Recipe` = `false`
+- `automation.metal_buttons.Enable Gold` = `true`
+- `automation.metal_buttons.Enable Iron` = `true`
+- `automation.pistons_move_tile_entities.Delayed Update List` = `["minecraft:dispenser", "minecraft:dropper"]`
+- `automation.pistons_move_tile_entities.Enable Chests Moving Together` = `true`
+- `automation.pistons_move_tile_entities.Movement Blacklist` = `["minecraft:spawner", "integrateddynamics:cable", "randomthings:blockbreaker", "minecraft:ender_chest", "minecraft:enchanting_table", "minecraft:trapped_chest", "quark:spruce_trapped_chest", "quark:birch_trapped_chest", "quark:jungle_trapped_chest", "quark:acacia_trapped_chest", "quark:dark_oak_trapped_chest", "endergetic:bolloom_bud"]`
+- `automation.pistons_move_tile_entities.Render Blacklist` = `["psi:programmer", "botania:starfield"]`
+- `building.Celebratory Lamps` = `true`
+- `building.Compressed Blocks` = `true`
+- `building.Duskbound Blocks` = `true`
+- `building.Framed Glass` = `true`
+- `building.Glass Item Frame` = `true`
+- `building.Gold Bars` = `true`
+- `building.Grate` = `true`
+- `building.Hedges` = `true`
+- `building.Hollow Logs` = `true`
+- `building.Industrial Palette` = `true`
+- `building.Japanese Palette` = `true`
+- `building.Leaf Carpet` = `true`
+- `building.Midori` = `true`
+- `building.More Brick Types` = `true`
+- `building.More Mud Blocks` = `true`
+- `building.More Potted Plants` = `true`
+- `building.More Stone Variants` = `true`
+- `building.Nether Brick Fence Gate` = `true`
+- `building.Rainbow Lamps` = `true`
+- `building.Raw Metal Bricks` = `true`
+- `building.Rope` = `true`
+- `building.Shear Vines` = `true`
+- `building.Shingles` = `true`
+- `building.Soul Sandstone` = `true`

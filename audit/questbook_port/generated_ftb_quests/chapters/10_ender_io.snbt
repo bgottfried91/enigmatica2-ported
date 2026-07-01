@@ -1,0 +1,455 @@
+{
+  id: "01000000000A0000",
+  group: "",
+  order_index: 3,
+  filename: "10_ender_io",
+  title: "Ender IO",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      id: "0200000003A60000",
+      title: "Ender IO",
+      x: 0.33,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000003A60000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["Welcome to Ender IO! This is an end-themed tech mod, that offers a bunch of machines, utilities, armor and tools.", "", "The mod has been heavily tweaked."],
+      icon: "enderio:void_chassis",
+      rewards: [
+        {
+          id: "0400000003A60000",
+          type: "xp",
+          xp: 30
+        },
+        {
+          id: "0400000003A60001",
+          type: "command",
+          command: "/say VAR_NAME has begun the Ender IO questline!"
+        }
+      ]
+    },
+    {
+      id: "0200000003A70000",
+      title: "Stirling Generator",
+      x: 0.33,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000003A70000",
+          type: "item",
+          item: "enderio:stirling_generator"
+        }
+      ],
+      description: ["Hold shift over the item to view the tooltip description."],
+      icon: "enderio:stirling_generator",
+      dependencies: ["0200000003A60000"],
+      rewards: [
+        {
+          id: "0400000003A70000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003A80000",
+      title: "Basic Capacitor",
+      x: 1.67,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000003A80000",
+          type: "item",
+          item: "enderio:basic_capacitor"
+        }
+      ],
+      description: ["Most Ender IO machines need to have a capacitor in them to function. The capacitor tier determines speed and power usage."],
+      icon: "enderio:basic_capacitor",
+      dependencies: ["0200000003A60000"],
+      rewards: [
+        {
+          id: "0400000003A80000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003A90000",
+      title: "Machine Chassis",
+      x: 7,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000003A90000",
+          type: "item",
+          item: "enderio:void_chassis"
+        }
+      ],
+      description: ["A crafting component."],
+      icon: "enderio:void_chassis",
+      dependencies: ["0200000003A60000"],
+      rewards: [
+        {
+          id: "0400000003A90000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003AA0000",
+      title: "Double-Layer Capacitor",
+      x: 1.67,
+      y: 3.33,
+      tasks: [
+        {
+          id: "0300000003AA0000",
+          type: "item",
+          item: "enderio:double_layer_capacitor"
+        }
+      ],
+      description: ["Most Ender IO machines need to have a capacitor in them to function. The capacitor tier determines speed and power usage."],
+      icon: "enderio:double_layer_capacitor",
+      dependencies: ["0200000003A80000"],
+      rewards: [
+        {
+          id: "0400000003AA0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003AB0000",
+      title: "Octadic Capacitor",
+      x: 1.67,
+      y: 4.67,
+      tasks: [
+        {
+          id: "0300000003AB0000",
+          type: "item",
+          item: "enderio:octadic_capacitor"
+        }
+      ],
+      description: ["Most Ender IO machines need to have a capacitor in them to function. The capacitor tier determines speed and power usage."],
+      icon: "enderio:octadic_capacitor",
+      dependencies: ["0200000003AA0000"],
+      rewards: [
+        {
+          id: "0400000003AB0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003AE0000",
+      title: "Experience Obelisk",
+      x: 4.33,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000003AE0000",
+          type: "item",
+          item: "enderio:xp_obelisk"
+        }
+      ],
+      description: ["The Experience Obelisk can store huge amounts of liquid XP."],
+      icon: "enderio:xp_obelisk",
+      dependencies: ["0200000003A90000"],
+      rewards: [
+        {
+          id: "0400000003AE0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003B10000",
+      title: "Aversion Obelisk",
+      x: 4.33,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000003B10000",
+          type: "item",
+          item: "enderio:aversion_obelisk"
+        }
+      ],
+      description: ["Hold shift over the item to view the tooltip description."],
+      icon: "enderio:aversion_obelisk",
+      dependencies: ["0200000003AE0000"],
+      rewards: [
+        {
+          id: "0400000003B10000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003B50000",
+      title: "Soul Binder",
+      x: 12.33,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000003B50000",
+          type: "item",
+          item: "enderio:soul_binder"
+        }
+      ],
+      description: ["Hold shift over the item to view the tooltip description."],
+      icon: "enderio:soul_binder",
+      dependencies: ["0200000003A90000"],
+      rewards: [
+        {
+          id: "0400000003B50000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003B60000",
+      title: "Slice'N'Splice",
+      x: 12.33,
+      y: 5.67,
+      tasks: [
+        {
+          id: "0300000003B60000",
+          type: "item",
+          item: "enderio:slice_and_splice"
+        }
+      ],
+      description: ["Hold shift over the item to view the tooltip description."],
+      icon: "enderio:slice_and_splice",
+      dependencies: ["0200000003A90000"],
+      rewards: [
+        {
+          id: "0400000003B60000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003B70000",
+      title: "SAG Mill",
+      x: 12.33,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000003B70000",
+          type: "item",
+          item: "enderio:sag_mill"
+        }
+      ],
+      description: ["Hold shift over the item to view the tooltip description."],
+      icon: "enderio:sag_mill",
+      dependencies: ["0200000003A90000"],
+      rewards: [
+        {
+          id: "0400000003B70000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003BB0000",
+      title: "Alloy Smelter",
+      x: 7,
+      y: 8.33,
+      tasks: [
+        {
+          id: "0300000003BB0000",
+          type: "item",
+          item: "enderio:alloy_smelter"
+        }
+      ],
+      description: ["Hold shift over the item to view the tooltip description."],
+      icon: "enderio:alloy_smelter",
+      dependencies: ["0200000003A90000"],
+      rewards: [
+        {
+          id: "0400000003BB0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003BD0000",
+      title: "Basic Capacitor Bank",
+      x: 3,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000003BD0000",
+          type: "item",
+          item: "enderio:basic_capacitor_bank"
+        }
+      ],
+      description: ["The Capacitor Bank can store large amounts of power. Connecting multiple banks together is possible, for higher storage, input and output."],
+      icon: "enderio:basic_capacitor_bank",
+      dependencies: ["0200000003A80000"],
+      rewards: [
+        {
+          id: "0400000003BD0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003BE0000",
+      title: "Capacitor Bank",
+      x: 3,
+      y: 3.33,
+      tasks: [
+        {
+          id: "0300000003BE0000",
+          type: "item",
+          item: "enderio:advanced_capacitor_bank"
+        }
+      ],
+      description: ["The Capacitor Bank can store large amounts of power. Connecting multiple banks together is possible, for higher storage, input and output."],
+      icon: "enderio:advanced_capacitor_bank",
+      dependencies: ["0200000003AA0000", "0200000003BD0000"],
+      rewards: [
+        {
+          id: "0400000003BE0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003BF0000",
+      title: "Vibrant Capacitor Bank",
+      x: 3,
+      y: 4.67,
+      tasks: [
+        {
+          id: "0300000003BF0000",
+          type: "item",
+          item: "enderio:vibrant_capacitor_bank"
+        }
+      ],
+      description: ["The Capacitor Bank can store large amounts of power. Connecting multiple banks together is possible, for higher storage, input and output."],
+      icon: "enderio:vibrant_capacitor_bank",
+      dependencies: ["0200000003AB0000", "0200000003BE0000"],
+      rewards: [
+        {
+          id: "0400000003BF0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003C00000",
+      title: "Enchanter",
+      x: 12.33,
+      y: 1.67,
+      tasks: [
+        {
+          id: "0300000003C00000",
+          type: "item",
+          item: "enderio:enchanter"
+        }
+      ],
+      description: ["Hold shift over the item to view the tooltip description."],
+      icon: "enderio:enchanter",
+      dependencies: ["0200000003A90000"],
+      rewards: [
+        {
+          id: "0400000003C00000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003C10000",
+      title: "Soul Vial",
+      x: 13.67,
+      y: 5,
+      tasks: [
+        {
+          id: "0300000003C10000",
+          type: "item",
+          item: "enderio:empty_soul_vial"
+        }
+      ],
+      description: ["Hold shift over the item to view the tooltip description."],
+      icon: "enderio:empty_soul_vial",
+      dependencies: ["0200000003B50000"],
+      rewards: [
+        {
+          id: "0400000003C10000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003C20000",
+      title: "Powered Spawner",
+      x: 15,
+      y: 5.33,
+      tasks: [
+        {
+          id: "0300000003C20000",
+          type: "item",
+          item: "enderio:powered_spawner"
+        }
+      ],
+      description: ["An upgradeable mob spawner.", "", "You can set the type by combining a Broken Spawner with a filled Soul Vial in the Soul Binder, and then combining the Broken Spawner with the Powered Spawner in an anvil."],
+      icon: "enderio:powered_spawner",
+      dependencies: ["0200000003C10000"],
+      rewards: [
+        {
+          id: "0400000003C20000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003C30000",
+      title: "Painting Machine",
+      x: 12.33,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000003C30000",
+          type: "item",
+          item: "enderio:painting_machine"
+        }
+      ],
+      description: ["Allows you to paint most blocks, and some machines, to show a different texture."],
+      icon: "enderio:painting_machine",
+      dependencies: ["0200000003A90000"],
+      rewards: [
+        {
+          id: "0400000003C30000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    }
+  ],
+  quest_links: [],
+  subtitle: ["Quests for Ender IO. Authored by NillerMedDild."],
+  icon: "minecraft:book"
+}

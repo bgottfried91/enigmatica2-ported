@@ -1,0 +1,588 @@
+{
+  id: "01000000001B0000",
+  group: "",
+  order_index: 15,
+  filename: "27_nuclearcraft",
+  title: "NuclearCraft",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      id: "0200000003340000",
+      title: "NuclearCraft",
+      x: 7.33,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000003340000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["Welcome to NuclearCraft! This mod is all about generating massive amounts of power through Nuclear Fission and Fusion.", "", "The trickiest part of this mod is without a doubt figuring out how to get the various nuclear fuels and isotopes - JEI does show how to obtain it all, but there are often several steps."],
+      icon: "nuclearcraft:manufactory",
+      rewards: [
+        {
+          id: "0400000003340000",
+          type: "command",
+          command: "/say VAR_NAME has begun the NuclearCraft questline!"
+        }
+      ]
+    },
+    {
+      id: "0200000003410000",
+      title: "Manufactory",
+      x: 7.33,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000003410000",
+          type: "item",
+          item: "nuclearcraft:manufactory"
+        }
+      ],
+      description: ["The Manufactory is the first machine you'll get your hands on in NuclearCraft.", "", "It can make various crafting materials and double ores.", "", "It's also used as a crafting component in the recipe of a few other machines."],
+      icon: "nuclearcraft:manufactory",
+      dependencies: ["0200000003340000"],
+      rewards: [
+        {
+          id: "0400000003410000",
+          type: "xp",
+          xp: 10
+        }
+      ]
+    },
+    {
+      id: "0200000003420000",
+      title: "Basic Plating",
+      x: 7.33,
+      y: 9.67,
+      tasks: [
+        {
+          id: "0300000003420000",
+          type: "item",
+          item: "nuclearcraft:plate_basic"
+        }
+      ],
+      description: ["A crafting component used to craft most basic NuclearCraft machines."],
+      icon: "nuclearcraft:plate_basic",
+      dependencies: ["0200000003340000"],
+      rewards: [
+        {
+          id: "0400000003420000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003640000",
+      title: "Advanced Plating",
+      x: 10,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000003640000",
+          type: "item",
+          item: "nuclearcraft:plate_advanced"
+        }
+      ],
+      description: ["A crafting component, used to make most advanced NuclearCraft machines."],
+      icon: "nuclearcraft:plate_advanced",
+      dependencies: ["0200000003410000", "0200000003420000"],
+      rewards: [
+        {
+          id: "0400000003640000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003650000",
+      title: "DU Plating",
+      x: 10,
+      y: 13,
+      tasks: [
+        {
+          id: "0300000003650000",
+          type: "item",
+          item: "nuclearcraft:plate_du"
+        }
+      ],
+      description: ["The DU Plating is used for crafting Elite Plating, and the Fission Controller."],
+      icon: "nuclearcraft:plate_du",
+      dependencies: ["0200000003640000"],
+      rewards: [
+        {
+          id: "0400000003650000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003660000",
+      title: "Elite Plating",
+      x: 14,
+      y: 8.33,
+      tasks: [
+        {
+          id: "0300000003660000",
+          type: "item",
+          item: "nuclearcraft:plate_elite"
+        }
+      ],
+      description: ["The Elite Plating is used in recipes throughout the late/endgame."],
+      icon: "nuclearcraft:plate_elite",
+      dependencies: ["0200000003650000"],
+      rewards: [
+        {
+          id: "0400000003660000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003670000",
+      title: "Alloy Furnace",
+      x: 4.67,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000003670000",
+          type: "item",
+          item: "nuclearcraft:alloy_smelter"
+        }
+      ],
+      description: ["The Alloy Furnace is used to make alloys, aswell as being a crafting component in the recipe for a bunch of other machines."],
+      icon: "nuclearcraft:alloy_smelter",
+      dependencies: ["0200000003410000", "0200000003420000"],
+      rewards: [
+        {
+          id: "0400000003670000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003680000",
+      title: "Fuel Reprocessor",
+      x: 0.67,
+      y: 8.33,
+      tasks: [
+        {
+          id: "0300000003680000",
+          type: "item",
+          item: "nuclearcraft:fuel_reprocessor"
+        }
+      ],
+      description: ["See the machine's tooltip for a description of it."],
+      icon: "nuclearcraft:fuel_reprocessor",
+      dependencies: ["0200000003670000"],
+      rewards: [
+        {
+          id: "0400000003680000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003690000",
+      title: "Fluid Extractor",
+      x: 2.33,
+      y: 11,
+      tasks: [
+        {
+          id: "0300000003690000",
+          type: "item",
+          item: "nuclearcraft:extractor"
+        }
+      ],
+      description: ["See the machine's tooltip for a description of it."],
+      icon: "nuclearcraft:extractor",
+      dependencies: ["02000000036B0000"],
+      rewards: [
+        {
+          id: "0400000003690000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000036B0000",
+      title: "Fluid Infuser",
+      x: 1.33,
+      y: 9.67,
+      tasks: [
+        {
+          id: "03000000036B0000",
+          type: "item",
+          item: "nuclearcraft:fluid_infuser"
+        }
+      ],
+      description: ["See the machine's tooltip for a description of it."],
+      icon: "nuclearcraft:fluid_infuser",
+      dependencies: ["0200000003670000"],
+      rewards: [
+        {
+          id: "04000000036B0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000036C0000",
+      title: "Melter",
+      x: 0.33,
+      y: 7,
+      tasks: [
+        {
+          id: "03000000036C0000",
+          type: "item",
+          item: "nuclearcraft:melter"
+        }
+      ],
+      description: ["See the machine's tooltip for a description of it."],
+      icon: "nuclearcraft:melter",
+      dependencies: ["0200000003670000"],
+      rewards: [
+        {
+          id: "04000000036C0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000036D0000",
+      title: "Supercooler",
+      x: 4.67,
+      y: 1,
+      tasks: [
+        {
+          id: "03000000036D0000",
+          type: "item",
+          item: "nuclearcraft:supercooler"
+        }
+      ],
+      description: ["See the machine's tooltip for a description of it."],
+      icon: "nuclearcraft:supercooler",
+      dependencies: ["0200000003410000"],
+      rewards: [
+        {
+          id: "04000000036D0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000036E0000",
+      title: "Electrolyzer",
+      x: 6,
+      y: 0.33,
+      tasks: [
+        {
+          id: "03000000036E0000",
+          type: "item",
+          item: "nuclearcraft:electrolyzer"
+        }
+      ],
+      description: ["See the machine's tooltip for a description of it."],
+      icon: "nuclearcraft:electrolyzer",
+      dependencies: ["0200000003410000"],
+      rewards: [
+        {
+          id: "04000000036E0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000036F0000",
+      title: "Neutron Irradiator",
+      x: 7.33,
+      y: 0,
+      tasks: [
+        {
+          id: "03000000036F0000",
+          type: "item",
+          item: "nuclearcraft:irradiator"
+        }
+      ],
+      description: ["See the machine's tooltip for a description of it."],
+      icon: "nuclearcraft:irradiator",
+      dependencies: ["0200000003410000"],
+      rewards: [
+        {
+          id: "04000000036F0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003700000",
+      title: "Ingot Former",
+      x: 4.67,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000003700000",
+          type: "item",
+          item: "nuclearcraft:ingot_former"
+        }
+      ],
+      description: ["See the machine's tooltip for a description of it."],
+      icon: "nuclearcraft:ingot_former",
+      dependencies: ["0200000003410000"],
+      rewards: [
+        {
+          id: "0400000003700000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003710000",
+      title: "Pressurizer",
+      x: 0.67,
+      y: 5.67,
+      tasks: [
+        {
+          id: "0300000003710000",
+          type: "item",
+          item: "nuclearcraft:pressurizer"
+        }
+      ],
+      description: ["See the machine's tooltip for a description of it."],
+      icon: "nuclearcraft:pressurizer",
+      dependencies: ["0200000003670000"],
+      rewards: [
+        {
+          id: "0400000003710000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003720000",
+      title: "Isotope Seperator",
+      x: 2.33,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000003720000",
+          type: "item",
+          item: "nuclearcraft:isotope_separator"
+        }
+      ],
+      description: ["See the machine's tooltip for a description of it."],
+      icon: "nuclearcraft:isotope_separator",
+      dependencies: ["0200000003670000"],
+      rewards: [
+        {
+          id: "0400000003720000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003740000",
+      title: "Chemical Reactor",
+      x: 10,
+      y: 1,
+      tasks: [
+        {
+          id: "0300000003740000",
+          type: "item",
+          item: "nuclearcraft:chemical_reactor"
+        }
+      ],
+      description: ["See the machine's tooltip for a description of it."],
+      icon: "nuclearcraft:chemical_reactor",
+      dependencies: ["0200000003410000"],
+      rewards: [
+        {
+          id: "0400000003740000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003750000",
+      title: "Decay Hastener",
+      x: 1.33,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000003750000",
+          type: "item",
+          item: "nuclearcraft:decay_hastener"
+        }
+      ],
+      description: ["See the machine's tooltip for a description of it."],
+      icon: "nuclearcraft:decay_hastener",
+      dependencies: ["0200000003670000"],
+      rewards: [
+        {
+          id: "0400000003750000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003760000",
+      title: "Crystallizer",
+      x: 10,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000003760000",
+          type: "item",
+          item: "nuclearcraft:crystallizer"
+        }
+      ],
+      description: ["See the machine's tooltip for a description of it."],
+      icon: "nuclearcraft:crystallizer",
+      dependencies: ["0200000003640000", "0200000003700000"],
+      rewards: [
+        {
+          id: "0400000003760000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003770000",
+      title: "Fluid Enricher",
+      x: 8.67,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000003770000",
+          type: "item",
+          item: "nuclearcraft:fluid_enricher"
+        }
+      ],
+      description: ["See the machine's tooltip for a description of it."],
+      icon: "nuclearcraft:fluid_enricher",
+      dependencies: ["0200000003410000"],
+      rewards: [
+        {
+          id: "0400000003770000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003780000",
+      title: "Nuclear Furnace",
+      x: 4.67,
+      y: 13,
+      tasks: [
+        {
+          id: "0300000003780000",
+          type: "item",
+          item: "nuclearcraft:nuclear_furnace"
+        }
+      ],
+      description: ["See the machine's tooltip for a description of it."],
+      icon: "nuclearcraft:nuclear_furnace",
+      dependencies: ["0200000003420000"],
+      rewards: [
+        {
+          id: "0400000003780000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003790000",
+      title: "Fusion Core",
+      x: 14,
+      y: 5.67,
+      tasks: [
+        {
+          id: "0300000003790000",
+          type: "item",
+          item: "nuclearcraft:fusion_core"
+        }
+      ],
+      description: ["The Fusion Reactor is a large multiblock generator, capable of generating massive amounts of power.", "", "It's a pretty complicated structure, so I highly advice that you watch a spotlight on it, or read through a guide.", "", "The mod author made this spotlight on it:", "&1&9https://www.youtube.com/watch?v=L-0LOtg2Plk\\&t=12s&r", "", "&r", "", "... That's not actually a hyperlink, it's just coloured text. Sorry."],
+      icon: "nuclearcraft:fusion_core",
+      dependencies: ["0200000003660000", "0200000003740000"],
+      rewards: [
+        {
+          id: "0400000003790000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000037A0000",
+      title: "Fission Controller",
+      x: 7.33,
+      y: 14,
+      tasks: [
+        {
+          id: "03000000037A0000",
+          type: "item",
+          item: "nuclearcraft:fission_reactor_controller"
+        }
+      ],
+      description: ["The Fission Reactor is a midgame multiblock generator capable of producing very large amounts of power.", "", "It's a good idea to watch a guide or read a tutorial, to get an idea of how you operate the Fission Reactor.", "", "Here's a slightly outdated spotlight made by the mod author:", "", "&9https://www.youtube.com/watch?v=G5pM93a0MGA\\&t=2s", "&r", "", "That's not actually a hyperlink, it's just coloured text. Sorry.", "", "The Fission Reactor multiblock parts all have pretty descriptive tooltips, so I suggest you read through those to get an idea of what's possible."],
+      icon: "nuclearcraft:fission_reactor_controller",
+      dependencies: ["0200000003650000", "0200000003780000"],
+      rewards: [
+        {
+          id: "04000000037A0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000037B0000",
+      title: "Speed Upgrade",
+      x: 8.67,
+      y: 3,
+      tasks: [
+        {
+          id: "03000000037B0000",
+          type: "item",
+          item: "nuclearcraft:upgrade_speed"
+        }
+      ],
+      description: ["This upgrade decrease the process time of machines, at the cost of additional power.", "", "&4Note &rthat some machines will reset their work if they run out of power."],
+      icon: "nuclearcraft:upgrade_speed",
+      dependencies: ["0200000003410000"],
+      rewards: [
+        {
+          id: "04000000037B0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    }
+  ],
+  quest_links: [],
+  subtitle: ["Quests for NuclearCraft. Authored by NillerMedDild."],
+  icon: "minecraft:book"
+}

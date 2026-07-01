@@ -1,0 +1,1340 @@
+{
+  id: "0100000000130000",
+  group: "",
+  order_index: 10,
+  filename: "19_blood_magic",
+  title: "Blood Magic",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      id: "0200000000250000",
+      title: "Tome of Peritia",
+      x: 9.83,
+      y: 0.67,
+      tasks: [
+        {
+          id: "0300000000250000",
+          type: "item",
+          item: "bloodmagic:experiencebook"
+        }
+      ],
+      description: ["This tome allows you to rapidly store your levels in it for later use, or withdraw levels to use in enchanting. This allows you to not waste high levels on lower-level enchantments, and safeguards you in case of death.", "", "It will automatically absorb experience you gather while it is in your inventory."],
+      icon: "bloodmagic:experiencebook",
+      rewards: [
+        {
+          id: "0400000000250000",
+          type: "xp",
+          xp: 10
+        }
+      ]
+    },
+    {
+      id: "0200000000260000",
+      title: "Living Armor",
+      x: 2,
+      y: 6.33,
+      tasks: [
+        {
+          id: "0300000000260000",
+          type: "item",
+          item: "bloodmagic:reagentbinding",
+          count: 4
+        }
+      ],
+      description: ["Living armor is powerful protection that will evolve to fit your needs. It will remember key events such as taking damage or sprinting/jumping a lot and spend its upgrade points automatically to aid you with helpful traits.", "", "There are several rituals available to cleanse your armor of unwanted buffs or inflict it with curses in order to increase its capabilities further. See the Sanguine Scientiem for details!", "", "This armor can permanently break, but it can be repaired with binding agent in an anvil (or learn to slowly repair itself).", "", "A full set of armor is required for it to work."],
+      icon: "bloodmagic:livingplate",
+      dependencies: ["0200000003D10000"],
+      rewards: [
+        {
+          id: "0400000000260000",
+          type: "item",
+          item: "minecraft:iron_helmet"
+        },
+        {
+          id: "0400000000260001",
+          type: "item",
+          item: "minecraft:iron_chestplate"
+        },
+        {
+          id: "0400000000260002",
+          type: "item",
+          item: "minecraft:iron_leggings"
+        },
+        {
+          id: "0400000000260003",
+          type: "item",
+          item: "minecraft:iron_boots"
+        }
+      ]
+    },
+    {
+      id: "0200000000270000",
+      title: "Bound Tools",
+      x: 2,
+      y: 7.67,
+      tasks: [
+        {
+          id: "0300000000270000",
+          type: "item",
+          item: "bloodmagic:soulpickaxe"
+        },
+        {
+          id: "0300000000270064",
+          type: "item",
+          item: "bloodmagic:soulaxe"
+        },
+        {
+          id: "03000000002700C8",
+          type: "item",
+          item: "bloodmagic:soulshovel"
+        }
+      ],
+      description: ["Bound tools can be activated by shift + right click. They are already uniquely powerful, but feature a chargable right-click for massive clearing capabilities, extending in all directions and upwards!", "", "Using these tools draws upon your life network - or your lifeforce, should you run out. Use with caution!"],
+      icon: "bloodmagic:soulpickaxe",
+      dependencies: ["0200000000260000"],
+      rewards: [
+        {
+          id: "0400000000270000",
+          type: "item",
+          item: "bloodmagic:blankrune",
+          count: 20
+        },
+        {
+          id: "0400000000270001",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000002C0000",
+      title: "Alchemy Table",
+      x: 3.5,
+      y: 5.33,
+      tasks: [
+        {
+          id: "03000000002C0000",
+          type: "item",
+          item: "bloodmagic:alchemytable"
+        }
+      ],
+      description: ["Sometimes a little creative alchemy is required in order to produce the materials you need. This table provides you with ample options.", "", "In order to work, it requires a blood orb and enough LP in your network. You may check the requirements by hovering over the arrow in the recipe."],
+      icon: "bloodmagic:alchemytable",
+      dependencies: ["0200000003C90000"],
+      rewards: [
+        {
+          id: "04000000002C0000",
+          type: "item",
+          item: "minecraft:glass",
+          count: 32
+        },
+        {
+          id: "04000000002C0001",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000002E0000",
+      title: "Potion Flask",
+      x: 4.33,
+      y: 7.83,
+      tasks: [
+        {
+          id: "03000000002E0000",
+          type: "item",
+          item: "bloodmagic:alchemy_flask"
+        }
+      ],
+      description: ["Through the power of blood, normal potions become but trivial childs play.", "", "You have long since unlocked the power of multiple use potion flasks."],
+      icon: "bloodmagic:alchemy_flask",
+      dependencies: ["02000000002C0000"],
+      rewards: [
+        {
+          id: "04000000002E0000",
+          type: "item",
+          item: "minecraft:nether_wart",
+          count: 12
+        },
+        {
+          id: "04000000002E0001",
+          type: "item",
+          item: "minecraft:glowstone_dust",
+          count: 24
+        },
+        {
+          id: "04000000002E0002",
+          type: "item",
+          item: "minecraft:sugar_cane",
+          count: 4
+        }
+      ]
+    },
+    {
+      id: "02000000002F0000",
+      title: "Incense Altar I",
+      x: 5.67,
+      y: 7,
+      tasks: [
+        {
+          id: "03000000002F0000",
+          type: "item",
+          item: "bloodmagic:incensealtar"
+        }
+      ],
+      description: ["The incense altar is an item that can be incorporated into a multiblock structure in order to aid your self-sacrifice. You can check the current benefit with a sigil of divination. It should start at 20% and may add up to 300%!", "", "Later tiers will feature a value of \"tranquility\", which can also be seen with the sigil. Tranquility is gained by having different kind of blocks in the radius of the altar.", "", "In order to expand the alter into a multiblock, you need to place 3 blocks wide paths going from the 3 x 3 it is placed on, rising in tier as the distance to the altar increases.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:incensealtar",
+      dependencies: ["0200000003C90000"],
+      rewards: [
+        {
+          id: "04000000002F0000",
+          type: "item",
+          item: "minecraft:oak_log",
+          count: 12
+        },
+        {
+          id: "04000000002F0001",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000300000",
+      title: "Incense Altar II",
+      x: 7.17,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000000300000",
+          type: "item",
+          item: "bloodmagic:woodbrickpath",
+          count: 36
+        }
+      ],
+      description: ["Extend your altar by placing 3 x 3 blocks of wooden path in every cardinal direction. This will allow you to include the first blocks for a tranquility bonus.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:incensealtar",
+      dependencies: ["02000000002F0000"],
+      rewards: [
+        {
+          id: "0400000000300000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000310000",
+      title: "Incense Altar III",
+      x: 8.67,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000000310000",
+          type: "item",
+          item: "bloodmagic:stonebrickpath",
+          count: 24
+        }
+      ],
+      description: ["Extend your altar by lengthening the pathways with 2 x 3 stone paths for an even higher tranquility area.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:incensealtar",
+      dependencies: ["0200000000300000"],
+      rewards: [
+        {
+          id: "0400000000310000",
+          type: "item",
+          item: "minecraft:iron_hoe"
+        },
+        {
+          id: "0400000000310001",
+          type: "item",
+          item: "minecraft:wheat_seeds",
+          count: 12
+        },
+        {
+          id: "0400000000310002",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000340000",
+      title: "Incense Altar IV",
+      x: 10.17,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000000340000",
+          type: "item",
+          item: "bloodmagic:wornstonebrickpath",
+          count: 24
+        }
+      ],
+      description: ["Extend your alter by lengthening the pathways with 2 x 3 worn stone brick paths.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:incensealtar",
+      dependencies: ["0200000000310000"],
+      rewards: [
+        {
+          id: "0400000000340000",
+          type: "item",
+          item: "minecraft:oak_log",
+          count: 32
+        },
+        {
+          id: "0400000000340001",
+          type: "item",
+          item: "minecraft:oak_leaves",
+          count: 32
+        },
+        {
+          id: "0400000000340002",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000350000",
+      title: "Incense Altar V",
+      x: 11.67,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000000350000",
+          type: "item",
+          item: "bloodmagic:obsidianbrickpath",
+          count: 24
+        }
+      ],
+      description: ["Take your incense altar to the maximum with 2 x 3 extensions of your pathways, using obsidian brick paths.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:incensealtar",
+      dependencies: ["0200000000340000"],
+      rewards: [
+        {
+          id: "0400000000350000",
+          type: "item",
+          item: "minecraft:netherrack",
+          count: 32
+        },
+        {
+          id: "0400000000350001",
+          type: "item",
+          item: "minecraft:flint_and_steel"
+        },
+        {
+          id: "0400000000350002",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000360000",
+      title: "Demon Crucible",
+      x: 5.67,
+      y: 8.5,
+      tasks: [
+        {
+          id: "0300000000360000",
+          type: "item",
+          item: "bloodmagic:demoncrucible"
+        }
+      ],
+      description: ["The Demon Crucible can smelt down Demonic Will, either raw or contained in Tartaric Gems, and release it into the chunk it occupies.", "", "The will of a chunk can also be drained again by putting a Tartaric Gem into an unoccupied Hellfire Forge.", "", "This opens a few options for a creative magus..."],
+      icon: "bloodmagic:demoncrucible",
+      dependencies: ["0200000003C90000"],
+      rewards: [
+        {
+          id: "0400000000360000",
+          type: "item",
+          item: "bloodmagic:rawdemoncrystal",
+          count: 4
+        }
+      ]
+    },
+    {
+      id: "0200000000370000",
+      title: "Demon Crystalizer",
+      x: 7.17,
+      y: 8.5,
+      tasks: [
+        {
+          id: "0300000000370000",
+          type: "item",
+          item: "bloodmagic:demoncrystallizer"
+        }
+      ],
+      description: ["The Demon Crystalizer can drain the demonic will in the chunk in order to confine it to small nodes of crystals. These nodes take a lot of will to initially grow, but require much less to grow additional crystals, giving you a small net gain should you melt them in the Demon Crucible.", "", "They may be broken with a sufficiently powerful pickaxe, but a powerful magus with more than 1024 will in his inventory may find that right-clicking the node allows him to take off crystals without breaking the main node."],
+      icon: "bloodmagic:demoncrystallizer",
+      dependencies: ["0200000000360000"],
+      rewards: [
+        {
+          id: "0400000000370000",
+          type: "item",
+          item: "bloodmagic:rawdemoncrystal",
+          count: 4
+        },
+        {
+          id: "0400000000370001",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000380000",
+      title: "Different Wills",
+      x: 8.67,
+      y: 8.5,
+      tasks: [
+        {
+          id: "0300000000380000",
+          type: "item",
+          item: "bloodmagic:corrosivedemoncrystal"
+        },
+        {
+          id: "0300000000380001",
+          type: "item",
+          item: "bloodmagic:destructivedemoncrystal"
+        },
+        {
+          id: "0300000000380002",
+          type: "item",
+          item: "bloodmagic:vengefuldemoncrystal"
+        },
+        {
+          id: "0300000000380003",
+          type: "item",
+          item: "bloodmagic:steadfastdemoncrystal"
+        }
+      ],
+      description: ["Too long have you dabbled in crude raw will.", "", "The Resonance of the Faceted Crystal Ritual will allow you to finally distill the different kinds of will from your fully grown crystal clusters.", "", "Having these kind of wills stored in Tartaric Gems in your inventory will influence your sentient tools, weapons and armor, whereas melting them in the Demon Crucible will enable you to influence your rituals held in the same chunk with their aura."],
+      icon: "bloodmagic:rawdemoncrystal",
+      dependencies: ["0200000000370000"],
+      rewards: [
+        {
+          id: "0400000000380000",
+          type: "item",
+          item: "bloodmagic:rawdemoncrystal",
+          count: 32
+        }
+      ]
+    },
+    {
+      id: "0200000000390000",
+      title: "Demon Pylon",
+      x: 10.17,
+      y: 8.5,
+      tasks: [
+        {
+          id: "0300000000390000",
+          type: "item",
+          item: "bloodmagic:demonpylon"
+        }
+      ],
+      description: ["The Demon Pylon allows you to draw in will from surrounding chunks that have more total will than the one the Pylon is placed in.", "", "A handy tool for distributing will, especially considering automatization with rituals."],
+      icon: "bloodmagic:demonpylon",
+      dependencies: ["0200000000380000"],
+      rewards: [
+        {
+          id: "0400000000390000",
+          type: "item",
+          item: "bloodmagic:corrosivedemoncrystal",
+          count: 8
+        },
+        {
+          id: "0400000000390001",
+          type: "item",
+          item: "bloodmagic:destructivedemoncrystal",
+          count: 8
+        },
+        {
+          id: "0400000000390002",
+          type: "item",
+          item: "bloodmagic:vengefuldemoncrystal",
+          count: 8
+        },
+        {
+          id: "0400000000390003",
+          type: "item",
+          item: "bloodmagic:steadfastdemoncrystal",
+          count: 8
+        }
+      ]
+    },
+    {
+      id: "0200000003C70000",
+      title: "Blood Magic",
+      x: 0.33,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000003C70000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["Welcome to Blood Magic!", "", "Blood Magic is a magic mod centered around gaining power from sacrifice.", "", "It offers a lot of cool gadgets such as the &1Sigils&r, not to mention a variety of building blocks.", "", "The &6Sanguine Scientiem &rcontains information on nearly all of Blood Magic, so for the most part, I'll be referring to that."],
+      icon: "bloodmagic:altar",
+      rewards: [
+        {
+          id: "0400000003C70000",
+          type: "xp",
+          xp: 10
+        },
+        {
+          id: "0400000003C70064",
+          type: "item",
+          item: "minecraft:potion"
+        },
+        {
+          id: "0400000003C70065",
+          type: "item",
+          item: "bloodmagic:altar"
+        },
+        {
+          id: "0400000003C70002",
+          type: "command",
+          command: "/say VAR_NAME has begun the Blood Magic questline!"
+        }
+      ]
+    },
+    {
+      id: "0200000003C80000",
+      title: "Demonic Will",
+      x: 1.33,
+      y: 2.33,
+      tasks: [
+        {
+          id: "0300000003C80000",
+          type: "item",
+          item: "bloodmagic:soulsnare"
+        },
+        {
+          id: "0300000003C80001",
+          type: "item",
+          item: "bloodmagic:basemonstersoul"
+        }
+      ],
+      description: ["The first thing you'll need to do is craft up some Rudimentary Snares.", "", "Throw the snares at hostile mobs until white particles appear, and then kill them.", "If you're lucky, they'll drop Demonic Will.", "", "The drop chance is affected by Looting."],
+      icon: "bloodmagic:soulsnare",
+      dependencies: ["0200000003C70000"],
+      rewards: [
+        {
+          id: "0400000003C80000",
+          type: "xp",
+          xp: 10
+        }
+      ]
+    },
+    {
+      id: "0200000003C90000",
+      title: "Blood Altar Tier 1",
+      x: 3.33,
+      y: 2.67,
+      tasks: [
+        {
+          id: "0300000003C90000",
+          type: "item",
+          item: "bloodmagic:altar"
+        }
+      ],
+      description: ["The Blood Altar is the main crafting mechanic of Blood Magic - It infuses Life Essence (Blood) into items to transform them.", "", "It's a multiblock structure, that gets bigger with each tier. You can use the &4Inspectoris Scandalum&r to visualize where the runes and such should be placed.", "", "See the Sanguine Scientiem for details.", "", "Since the altar grows downwards with each tier, it is recommended you plan ahead accordingly. Currently, the altar is only implemented until tier 5, with tier 6 requiring creative mode spawned items. Keep that in mind when laying the foundations!"],
+      icon: "bloodmagic:altar",
+      dependencies: ["0200000003C80000"],
+      rewards: [
+        {
+          id: "0400000003C90000",
+          type: "item",
+          item: "minecraft:stone",
+          count: 64
+        }
+      ]
+    },
+    {
+      id: "0200000003CA0000",
+      title: "Blood Altar Tier 2",
+      x: 5.33,
+      y: 2.67,
+      tasks: [
+        {
+          id: "0300000003CA0000",
+          type: "item",
+          item: "bloodmagic:blankrune",
+          count: 8
+        }
+      ],
+      description: ["Your next tier of blood altar will be able to use runes to empower itself.", "", "At this level, only the 4 runes in the cardinal directions will be used, but surely there is a way to yet further empower it...", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:blankrune",
+      dependencies: ["0200000003C90000"],
+      rewards: [
+        {
+          id: "0400000003CA0000",
+          type: "item",
+          item: "minecraft:stone",
+          count: 64
+        }
+      ]
+    },
+    {
+      id: "0200000003CB0000",
+      title: "Blood Altar Tier 3",
+      x: 7,
+      y: 2.67,
+      tasks: [
+        {
+          id: "0300000003CB0000",
+          type: "item",
+          item: "bloodmagic:blankrune",
+          count: 20
+        },
+        {
+          id: "0300000003CB0001",
+          type: "item",
+          item: "minecraft:sea_lantern",
+          count: 4
+        },
+        {
+          id: "0300000003CB0064",
+          type: "item",
+          item: "bloodmagic:blankrune",
+          count: 20
+        },
+        {
+          id: "0300000003CB0065",
+          type: "item",
+          item: "minecraft:glowstone",
+          count: 4
+        }
+      ],
+      description: ["The power of blood is undeniable. As your altar grows, so does your power.", "", "See the Sanguine Scientiem for details."],
+      icon: "minecraft:glowstone",
+      dependencies: ["0200000003CA0000"],
+      rewards: [
+        {
+          id: "0400000003CB0000",
+          type: "item",
+          item: "minecraft:stone",
+          count: 64
+        }
+      ]
+    },
+    {
+      id: "0200000003CC0000",
+      title: "Blood Altar Tier 4",
+      x: 8.67,
+      y: 2.67,
+      tasks: [
+        {
+          id: "0300000003CC0000",
+          type: "item",
+          item: "bloodmagic:blankrune",
+          count: 28
+        },
+        {
+          id: "0300000003CC0001",
+          type: "item",
+          item: "bloodmagic:bloodstonebrick"
+        }
+      ],
+      description: ["You will not be denied. The most powerful of runes are but slaves to your altar.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:largebloodstonebrick",
+      dependencies: ["0200000003CB0000", "0200000003E60000"],
+      rewards: [
+        {
+          id: "0400000003CC0000",
+          type: "item",
+          item: "minecraft:stone",
+          count: 64
+        }
+      ]
+    },
+    {
+      id: "0200000003CD0000",
+      title: "Blood Altar Tier 5",
+      x: 10.33,
+      y: 2.67,
+      tasks: [
+        {
+          id: "0300000003CD0000",
+          type: "item",
+          item: "bloodmagic:blankrune",
+          count: 52
+        },
+        {
+          id: "0300000003CD0001",
+          type: "item",
+          item: "minecraft:beacon",
+          count: 4
+        }
+      ],
+      description: ["It is done - a monument to your ample might.", "", "Try working out rune synergies, build multiple inter-linked altars, or build a ritual of (self-)sacrifice into your very altar - you are far from done.", "", "See the Sanguine Scientiem for details."],
+      icon: "minecraft:beacon",
+      dependencies: ["0200000003CC0000"],
+      rewards: [
+        {
+          id: "0400000003CD0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003CF0000",
+      title: "Petty Tartaric Gem",
+      x: 0.33,
+      y: 3.67,
+      tasks: [
+        {
+          id: "0300000003CF0000",
+          type: "item",
+          item: "bloodmagic:soulgempetty"
+        }
+      ],
+      description: ["The Tartaric Gem holds Demonic Will for use in crafting, and empowering certain tools. The higher tier, the higher storage. This gem stores up to 64 will.", "", "Sentient tools will use the will of the upper-left most gem in your inventory. Using a sentient weapon will charge your gem by killing mobs without using a snare. The more will you already have stored, the more damage it will do, and the more will is collected.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:soulgempetty",
+      dependencies: ["0200000003E50000"],
+      rewards: [
+        {
+          id: "0400000003CF0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003D00000",
+      title: "Lesser Tartaric Gem",
+      x: 0.33,
+      y: 5,
+      tasks: [
+        {
+          id: "0300000003D00000",
+          type: "item",
+          item: "bloodmagic:soulgemlesser"
+        }
+      ],
+      description: ["Extending your storage capabilities, this gem hold up to 256 demonic will. Your power grows..."],
+      icon: "bloodmagic:soulgemlesser",
+      dependencies: ["0200000003CF0000"],
+      rewards: [
+        {
+          id: "0400000003D00000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003D10000",
+      title: "Common Tartaric Gem",
+      x: 0.33,
+      y: 6.33,
+      tasks: [
+        {
+          id: "0300000003D10000",
+          type: "item",
+          item: "bloodmagic:soulgemcommon"
+        }
+      ],
+      description: ["Your commitment finally paid off. This gem stores up to 1024 demonic will.", "", "Living armor is within your reach, and if you have a sentient sword and at least 500 will, try dropping it to let it fight for you (it can be re-collected with a shift+right click, or after it dies)."],
+      icon: "bloodmagic:soulgemcommon",
+      dependencies: ["0200000003D00000"],
+      rewards: [
+        {
+          id: "0400000003D10000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003D20000",
+      title: "Greater Tartaric Gem",
+      x: 0.33,
+      y: 7.67,
+      tasks: [
+        {
+          id: "0300000003D20000",
+          type: "item",
+          item: "bloodmagic:soulgemgreater"
+        }
+      ],
+      description: ["None shall oppose you. This gem stores up to 4096 demonic will, providing ample storage for your sentient tools, weapons and armor to draw from."],
+      icon: "bloodmagic:soulgemgreater",
+      dependencies: ["0200000003D10000"],
+      rewards: [
+        {
+          id: "0400000003D20000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003D40000",
+      title: "Blank Slate",
+      x: 5.67,
+      y: 5.33,
+      tasks: [
+        {
+          id: "0300000003D40000",
+          type: "item",
+          item: "bloodmagic:blankslate"
+        }
+      ],
+      description: ["Slates are magically charged pieces of stone. They can be crafted by placing a smooth stone block on a blood altar with blood available. A tier 1 altar can only produce blank slates, but as the altar grows, so does its ability to charge the slate further.", "", "Slates are used for many recipes, but first and foremost they enable the creation of runes that can be used to extend and empower your blood altar.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:blankslate",
+      dependencies: ["0200000003D50000"],
+      rewards: [
+        {
+          id: "0400000003D40000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003D50000",
+      title: "Weak Blood Orb",
+      x: 5.67,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000003D50000",
+          type: "item",
+          item: "bloodmagic:weakbloodorb"
+        }
+      ],
+      description: ["Blood orbs are used to transfar life force from either yourself or your alter into your storage, or \"network\". They are also used for certain crafting procedures, and are usually not used up. The tier of the orb dictates how much life force it can ultimately store in your network, and what recipes you can attempt using it.", "", "This orb can charge your network to a maximum of 5,000 LP.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:weakbloodorb",
+      dependencies: ["0200000003C90000"],
+      rewards: [
+        {
+          id: "0400000003D50000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003D60000",
+      title: "Reinforced Slate",
+      x: 7.17,
+      y: 5.33,
+      tasks: [
+        {
+          id: "0300000003D60000",
+          type: "item",
+          item: "bloodmagic:reinforcedslate"
+        }
+      ],
+      description: ["This slate grants access to runes empowering the giving of blood to your altar - whether willingly or otherwise.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:reinforcedslate",
+      dependencies: ["0200000003D70000"],
+      rewards: [
+        {
+          id: "0400000003D60000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003D70000",
+      title: "Apprentice Blood Orb",
+      x: 7.17,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000003D70000",
+          type: "item",
+          item: "bloodmagic:weakbloodorb"
+        }
+      ],
+      description: ["The Apprentice Blood Orb will be useful in crafting of sigils and runes. It will also charge your network up to 25,000 LP.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:weakbloodorb",
+      dependencies: ["0200000003CA0000"],
+      rewards: [
+        {
+          id: "0400000003D70000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003D80000",
+      title: "Imbued Slate",
+      x: 8.67,
+      y: 5.33,
+      tasks: [
+        {
+          id: "0300000003D80000",
+          type: "item",
+          item: "bloodmagic:infusedslate"
+        }
+      ],
+      description: ["This slate grants access to the runes of displacement, allowing for quicker exchanges between the altars internal tank, and the rune of capacity, additively stacking runes that increase your altars main LP storage.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:infusedslate",
+      dependencies: ["0200000003D90000"],
+      rewards: [
+        {
+          id: "0400000003D80000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003D90000",
+      title: "Magician Blood Orb",
+      x: 8.67,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000003D90000",
+          type: "item",
+          item: "bloodmagic:weakbloodorb"
+        }
+      ],
+      description: ["The Magician's Blood Orb unlocks even more powerful sigils and runes, and the master ritual stone, your starting point into ritual magic. It also charges your network up to 150,000 LP.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:weakbloodorb",
+      dependencies: ["0200000003CB0000"],
+      rewards: [
+        {
+          id: "0400000003D90000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003DA0000",
+      title: "Demonic Slate",
+      x: 10.17,
+      y: 5.33,
+      tasks: [
+        {
+          id: "0300000003DA0000",
+          type: "item",
+          item: "bloodmagic:demonslate"
+        }
+      ],
+      description: ["This powerful slate unlocks the rune of acceleration, increasing all tick-based mechanics of the blood altar, and the rune of the orb, increasing the speed at which an orb can supply your blood network.", "", "It also allows you to upgrade your runes of capacity into ones with smaller initial storage, which then stacks multiplicatively - the more you have, the more powerful they become.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:demonslate",
+      dependencies: ["0200000003DB0000"],
+      rewards: [
+        {
+          id: "0400000003DA0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003DB0000",
+      title: "Master Blood Orb",
+      x: 10.17,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000003DB0000",
+          type: "item",
+          item: "bloodmagic:weakbloodorb"
+        }
+      ],
+      description: ["Limitless power is nearly within your reach. Can be used for several powerful recipes and stores up to 1,000,000 LP in your network - enough to call down the heavens themselves, if only once before it needs to be recharged.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:weakbloodorb",
+      dependencies: ["0200000003CC0000"],
+      rewards: [
+        {
+          id: "0400000003DB0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003DC0000",
+      title: "Ethereal Slate",
+      x: 11.67,
+      y: 5.33,
+      tasks: [
+        {
+          id: "0300000003DC0000",
+          type: "item",
+          item: "bloodmagic:etherealslate"
+        }
+      ],
+      description: ["This slate is powerful enough to attract the attention of dubious entities offering power... for a price.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:etherealslate",
+      dependencies: ["0200000003DD0000"],
+      rewards: [
+        {
+          id: "0400000003DC0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003DD0000",
+      title: "Archmage Blood Orb",
+      x: 11.67,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000003DD0000",
+          type: "item",
+          item: "bloodmagic:weakbloodorb"
+        }
+      ],
+      description: ["Unlimited power is at your fingertips. Charges your network up to 10,000,000 LP.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:weakbloodorb",
+      dependencies: ["0200000003CD0000"],
+      rewards: [
+        {
+          id: "0400000003DD0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003DF0000",
+      title: "Weak Activation Crystal",
+      x: 5.67,
+      y: 1.33,
+      tasks: [
+        {
+          id: "0300000003DF0000",
+          type: "item",
+          item: "bloodmagic:activationcrystalweak"
+        }
+      ],
+      description: ["Used on the master ritual stone in order to activate the ritual once all the runes are in place.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:activationcrystalweak",
+      dependencies: ["0200000003CB0000"],
+      rewards: [
+        {
+          id: "0400000003DF0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003E00000",
+      title: "Sacrificial Dagger",
+      x: 2.67,
+      y: 1.33,
+      tasks: [
+        {
+          id: "0300000003E00000",
+          type: "item",
+          item: "bloodmagic:sacrificialdagger"
+        }
+      ],
+      description: ["Used near a Blood Altar to \"donate\" blood.", "", "The dagger can be charged by a nearby incense altar to aid the process. The altar will work on its own, or can be expanded into a multi-block structure for much larger benefits!", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:sacrificialdagger",
+      dependencies: ["0200000003C90000"],
+      rewards: [
+        {
+          id: "0400000003E00000",
+          type: "item",
+          item: "minecraft:potion",
+          count: 2
+        },
+        {
+          id: "0400000003E00001",
+          type: "item",
+          item: "minecraft:potion",
+          count: 2
+        }
+      ]
+    },
+    {
+      id: "0200000003E10000",
+      title: "Arcane Ashes",
+      x: 2,
+      y: 5,
+      tasks: [
+        {
+          id: "0300000003E10000",
+          type: "item",
+          item: "bloodmagic:arcaneashes"
+        }
+      ],
+      description: ["Arcane ashes enable you to hold simplistic rituals to create new items. One ash will last you for several uses. Draw a transmutation circle, then add items with a right click. First put in the reagent (left part of the recipe), then add the catalyst (middle part of the recipe).", "", "These items are required for most sigils and equipment such as the living armor.", "", "See the Sanguine Scientiem (or JEI) for details."],
+      icon: "bloodmagic:arcaneashes",
+      dependencies: ["0200000003E50000"],
+      rewards: [
+        {
+          id: "0400000003E10000",
+          type: "item",
+          item: "minecraft:redstone",
+          count: 24
+        },
+        {
+          id: "0400000003E10001",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003E20000",
+      title: "Divination Sigil",
+      x: 3.67,
+      y: 1.33,
+      tasks: [
+        {
+          id: "0300000003E20000",
+          type: "item",
+          item: "bloodmagic:divinationsigil"
+        }
+      ],
+      description: ["This Sigil lets you see more detailed information about the Blood and Incense Altar. It also enables you to check how much LP are in your blood network.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:divinationsigil",
+      dependencies: ["0200000003C90000"],
+      rewards: [
+        {
+          id: "0400000003E20000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003E30000",
+      title: "Ritual Diviner",
+      x: 6.67,
+      y: 1.33,
+      tasks: [
+        {
+          id: "0300000003E30000",
+          type: "item",
+          item: "bloodmagic:ritualdiviner"
+        }
+      ],
+      description: ["Used to place Ritual Stones for Rituals. Right click on the Master Ritual Stone to place runes automatically. Bear in mind that some Ritual Stones might need to be placed below the level the Master Ritual Stone is in.", "", "Cycle through available Rituals with Shift + Click.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:ritualdiviner",
+      dependencies: ["0200000003CB0000"],
+      rewards: [
+        {
+          id: "0400000003E30000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003E40000",
+      title: "Rituals",
+      x: 4.67,
+      y: 1.33,
+      tasks: [
+        {
+          id: "0300000003E40000",
+          type: "item",
+          item: "bloodmagic:masterritualstone"
+        },
+        {
+          id: "0300000003E40001",
+          type: "item",
+          item: "bloodmagic:ritualstone",
+          count: 8
+        }
+      ],
+      description: ["Blood Magic has a lot of different rituals that perform tasks such as create lava, grow crops, and damage enemies.", "", "The more powerful versions can be used to automize sacrifice to the blood altar, wether from players or mobs, or even calling down a ressource-rich meteorite.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:masterritualstone",
+      dependencies: ["0200000003CA0000"],
+      rewards: [
+        {
+          id: "0400000003E40000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003E50000",
+      title: "Hellfire Forge",
+      x: 2,
+      y: 3.67,
+      tasks: [
+        {
+          id: "0300000003E50000",
+          type: "item",
+          item: "bloodmagic:soulforge"
+        }
+      ],
+      description: ["A hellfire forge is used to craft certain items using demonic will. A recipe will usually have 2 will components - minimum will required, and will consumption. You can check both by hovering over the arrow displayed in the crafting recipe. In order to meet some minimum will requirements, you need to upgrade your tartaric gems to increase their capacity!", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:soulforge",
+      dependencies: ["0200000003C80000"],
+      rewards: [
+        {
+          id: "0400000003E50000",
+          type: "item",
+          item: "minecraft:lapis_lazuli",
+          count: 24
+        }
+      ]
+    },
+    {
+      id: "0200000003E60000",
+      title: "Bound Blade",
+      x: 8,
+      y: 0.67,
+      tasks: [
+        {
+          id: "0300000003E60000",
+          type: "item",
+          item: "bloodmagic:soulsword"
+        },
+        {
+          id: "0300000003E60001",
+          type: "item",
+          item: "bloodmagic:reagentbinding"
+        },
+        {
+          id: "0300000003E60002",
+          type: "item",
+          item: "bloodmagic:weakbloodshard"
+        }
+      ],
+      description: ["Kill hostile mobs with the Bound Blade for a chance to get Weak Blood Shards. Bound Weapons use your Blood Network to power themselfs - or your life force, should you run out.", "", "&1&4Activate the Blade with Shift + Click.", "&r", "The chance is affected by Looting.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:soulsword",
+      dependencies: ["0200000003CB0000"],
+      rewards: [
+        {
+          id: "0400000003E60000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003E70000",
+      title: "Ritual Diviner - Dusk",
+      x: 6.67,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000003E70000",
+          type: "item",
+          item: "bloodmagic:ritualdivinerdusk"
+        }
+      ],
+      description: ["Can place Dusk runes in addition to the 4 basic types, unlocking the most powerful rituals.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:ritualdivinerdusk",
+      dependencies: ["0200000003E30000"],
+      rewards: [
+        {
+          id: "0400000003E70000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003E80000",
+      title: "Awakened Activation Crystal",
+      x: 5.67,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000003E80000",
+          type: "item",
+          item: "bloodmagic:activationcrystalawakened"
+        }
+      ],
+      description: ["Used to activate the most powerful of rituals, including calling down a fragment of the stars.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:activationcrystalawakened",
+      dependencies: ["0200000003DF0000"],
+      rewards: [
+        {
+          id: "0400000003E80000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003E90000",
+      title: "Ritual Tinkerer",
+      x: 4.67,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000003E90000",
+          type: "item",
+          item: "bloodmagic:ritualtinkerer"
+        }
+      ],
+      description: ["The Ritual Tinkerer can be used to move the affected area of a Ritual.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:ritualtinkerer",
+      dependencies: ["0200000003E40000"],
+      rewards: [
+        {
+          id: "0400000003E90000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003EA0000",
+      title: "Seer's Sigil",
+      x: 3.67,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000003EA0000",
+          type: "item",
+          item: "bloodmagic:seersigil"
+        }
+      ],
+      description: ["A stronger, more in-depth Divination Sigil.", "", "Does not work on incense altars.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:seersigil",
+      dependencies: ["0200000003E20000"],
+      rewards: [
+        {
+          id: "0400000003EA0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000003EB0000",
+      title: "Dagger of Sacrifice",
+      x: 2.67,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000003EB0000",
+          type: "item",
+          item: "bloodmagic:daggerofsacrifice"
+        }
+      ],
+      description: ["The Dagger of Sacrifice can be used to sacrifice mobs near your Blood Altar. The amount of blood you get depends on the mob, with hostile mobs usually being worth much more than harmless critters.", "", "See the Sanguine Scientiem for details."],
+      icon: "bloodmagic:daggerofsacrifice",
+      dependencies: ["0200000003E00000"],
+      rewards: [
+        {
+          id: "0400000003EB0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    }
+  ],
+  quest_links: [],
+  subtitle: ["Quests for Blood Magic. Authored by NillerMedDild and shigure1408."],
+  icon: "minecraft:book"
+}

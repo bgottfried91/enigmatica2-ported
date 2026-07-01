@@ -1,0 +1,1022 @@
+# FTB Quests Port Audit
+
+- Converted quests: 513
+- Converted chapters: 16
+- Missing item IDs referenced by stacks: 0
+- Flattened old BQ choice rewards: 67
+
+## Task Types
+
+- `bq_standard:retrieval`: 499
+- `bq_standard:checkbox`: 21
+- `bq_standard:hunt`: 2
+- `bq_standard:location`: 1
+
+## Reward Types
+
+- `bq_standard:item`: 471
+- `bq_standard:choice`: 69
+- `bq_standard:command`: 9
+- `bq_standard:xp`: 6
+
+## Manual/Degraded Tasks
+
+- `checkbox`: 21
+- `bq_standard:hunt`: 2
+- `empty task fallback`: 1
+- `bq_standard:location`: 1
+
+## Dropped Rewards
+
+- None
+
+## Replaced Rewards
+
+- `93: bq_standard:item missing ic2:ingot|2`: 1
+- `144: bq_standard:item missing forge:bucketfilled|0`: 1
+- `147: bq_standard:choice missing mekanism:glowpanel|15`: 1
+- `265: bq_standard:choice missing biomesoplenty:sapling_0|7`: 1
+- `253: bq_standard:item missing appliedenergistics2:part|301`: 1
+- `48: bq_standard:item missing forge:bucketfilled|0`: 1
+- `1003: bq_standard:item missing minecraft:spawn_egg|0`: 1
+
+## Converted Random Rewards
+
+- `loot_chest item reward`: 367
+- `loot_chest choice reward`: 4
+
+## Random Reward Table
+
+- `converted entries`: 128
+
+## Removed Random Reward Table Entries
+
+- `minecraft:dirt x1`: 1
+- `minecraft:grass_block x16`: 1
+- `minecraft:white_concrete_powder x64`: 1
+- `minecraft:cobweb x4`: 1
+- `minecraft:dead_bush x64`: 1
+- `minecraft:azure_bluet x8`: 1
+- `minecraft:lily_pad x16`: 1
+- `minecraft:painting x3`: 1
+- `minecraft:white_banner x16`: 1
+- `chisel:andesite/tiles_large x64`: 1
+- `chisel:basalt/solid_bricks x64`: 1
+- `chisel:mossy_cobblestone/pillar x64`: 1
+- `chisel:futura/controller x1`: 1
+- `chisel:lavastone/braid x64`: 1
+- `chisel:lavastone/tiles_large x64`: 1
+- `chisel:icepillar/convexplain x64`: 1
+- `chisel:icepillar/carved x64`: 1
+- `chisel:planks_spruce/encased_smooth x64`: 1
+- `chisel:technical/vent x64`: 1
+- `chisel:technical/cables x64`: 1
+- `chisel:technical/pipeslarge x64`: 1
+- `chisel:futura/wavy x64`: 1
+- `chisel:concrete_black/soft_bricks x64`: 1
+- `chisel:concrete_light_blue/small_bricks x64`: 1
+- `chisel:diorite/solid_bricks x64`: 1
+- `chisel:dirt/reinforcedcobbledirt x64`: 1
+- `chisel:factory/hazard x64`: 1
+- `chisel:factory/metalbox x64`: 1
+- `chisel:factory/grinder x64`: 1
+- `minecraft:observer x8`: 1
+- `minecraft:music_disc_mall x1`: 1
+- `minecraft:music_disc_ward x1`: 1
+- `actuallyadditions:coffee_cup x1`: 1
+- `ae2:quartz_fixture x16`: 1
+- `immersiveengineering:shield x1`: 1
+- `mekanism:robit x1`: 1
+- `chisel:offset_tool x1`: 1
+- `darkutils:charm_sleep x1`: 1
+- `farmingforblockheads:market x1`: 1
+- `immersiveengineering:revolver x1`: 1
+- `immersiveengineering:chemthrower x1`: 1
+- `immersiveengineering:railgun x1`: 1
+- `immersiveengineering:skyhook x1`: 1
+- `mekanism:flamethrower x1`: 1
+- `actuallyadditions:phantom_itemface x1`: 1
+- `botania:laputa_shard x1`: 1
+
+## Dropped Random Reward Table Entries
+
+- `missing immersiveengineering:metal_device1`: 4
+- `missing extrautils2:decorativeglass`: 3
+- `missing thermalfoundation:storage_alloy`: 3
+- `missing thermalexpansion:augment`: 3
+- `missing thermalfoundation:upgrade`: 3
+- `missing immersiveengineering:metal_decoration2`: 2
+- `missing nuclearcraft:ingot`: 2
+- `missing extrautils2:passivegenerator`: 2
+- `missing ic2:upgrade`: 2
+- `missing betterbuilderswands:wandunbreakable`: 2
+- `missing redstonearsenal:storage`: 2
+- `missing chisel:antiblock`: 1
+- `missing chisel:cloud`: 1
+- `missing chisel:carpet_black`: 1
+- `missing chisel:block_coal_coke1`: 1
+- `missing thermalfoundation:ore`: 1
+- `missing blockcraftery:editable_block`: 1
+- `missing biomesoplenty:terrarium`: 1
+- `missing chiselsandbits:tape_measure`: 1
+- `missing cyclicmagic:sleeping_mat`: 1
+- `missing chisel:ice`: 1
+- `missing openblocks:fan`: 1
+- `missing openblocks:golden_egg`: 1
+- `missing openblocks:luggage`: 1
+- `missing openblocks:dev_null`: 1
+- `missing openblocks:sponge_on_a_stick`: 1
+- `missing opencomputers:storage`: 1
+- `missing harvestcraft:well`: 1
+- `missing rustic:chandelier`: 1
+- `missing botania:elfglasspane`: 1
+- `missing cyclicmagic:beacon_redstone`: 1
+- `missing darkutils:trap_tile`: 1
+- `missing jaopca:item_coinboron`: 1
+- `missing jaopca:item_cointitanium`: 1
+- `missing jaopca:item_coinardite`: 1
+- `missing jaopca:item_coinastralstarmetal`: 1
+- `missing flatcoloredblocks:coloredcraftingitem`: 1
+- `missing forestry:doors.giganteum`: 1
+- `missing forestry:doors.cocobolo`: 1
+- `missing forestry:doors.mahoe`: 1
+- `missing forestry:doors.walnut`: 1
+- `missing forestry:doors.wenge`: 1
+- `missing mekanism:balloon`: 1
+- `missing openblocks:target`: 1
+- `missing openblocks:beartrap`: 1
+- `missing harvestcraft:zestyzucchiniitem`: 1
+- `missing harvestcraft:chickencelerycasseroleitem`: 1
+- `missing harvestcraft:cranberryjellysandwichitem`: 1
+- `missing thermalfoundation:tool.shield_diamond`: 1
+- `missing rustic:candle`: 1
+- `missing rustic:iron_lantern`: 1
+- `missing rustic:chair_ironwood`: 1
+- `missing rustic:table_ironwood`: 1
+- `missing storagedrawers:compdrawers`: 1
+- `missing storagedrawers:framingtable`: 1
+- `missing quark:smoker`: 1
+- `missing quark:lit_lamp`: 1
+- `missing storagedrawers:tape`: 1
+- `missing rustic:vase`: 1
+- `missing harvestcraft:extremechiliitem`: 1
+- `missing harvestcraft:pemmicanitem`: 1
+- `missing harvestcraft:sweetandsourmeatballsitem`: 1
+- `missing harvestcraft:cheddarandsourcreampotatochipsitem`: 1
+- `missing harvestcraft:redvelvetcakeitem`: 1
+- `missing harvestcraft:gingerchickenitem`: 1
+- `missing harvestcraft:pineapplehamitem`: 1
+- `missing harvestcraft:garlicchickenitem`: 1
+- `missing tconstruct:deco_ground`: 1
+- `missing tconstruct:seared`: 1
+- `missing tconstruct:ingots`: 1
+- `missing tconstruct:throwball`: 1
+- `missing tconstruct:tooltables`: 1
+- `missing tconstruct:slime_grass_tall`: 1
+- `missing tconstruct:slimesling`: 1
+- `missing animania:block_hamster_wheel`: 1
+- `missing advancedrocketry:launchpad`: 1
+- `missing astralsorcery:itemcraftingcomponent`: 1
+- `missing architecturecraft:sawbench`: 1
+- `missing mekanism:obsidiantnt`: 1
+- `missing openblocks:builder_guide`: 1
+- `missing openblocks:hang_glider`: 1
+- `missing animania:entity_egg_random`: 1
+- `missing astralsorcery:itemskyresonator`: 1
+- `missing astralsorcery:blockworldilluminator`: 1
+- `missing cyclicmagic:inventory_food`: 1
+- `missing cyclicmagic:ender_dungeon`: 1
+- `missing extrautils2:angelblock`: 1
+- `missing extrautils2:boomerang`: 1
+- `missing forestry:flexible_casing`: 1
+- `missing forestry:sturdy_machine`: 1
+- `missing forestry:hardened_machine`: 1
+- `missing forestry:impregnated_casing`: 1
+- `missing ironchest:iron_shulker_box_purple`: 1
+- `missing thermalfoundation:glass`: 1
+- `missing harvestcraft:blueberrypancakesitem`: 1
+- `missing harvestcraft:fishdinneritem`: 1
+- `missing harvestcraft:chickencurryitem`: 1
+- `missing harvestcraft:coconutshrimpitem`: 1
+- `missing harvestcraft:frosteddonutitem`: 1
+- `missing harvestcraft:cinnamonsugardonutitem`: 1
+- `missing harvestcraft:generaltsochickenitem`: 1
+- `missing harvestcraft:sundayroastitem`: 1
+- `missing harvestcraft:bbqpulledporkitem`: 1
+- `missing harvestcraft:onionhamburgeritem`: 1
+- `missing harvestcraft:pekingduckitem`: 1
+- `missing harvestcraft:chilidogitem`: 1
+- `missing storagedrawers:controller`: 1
+- `missing storagedrawers:upgrade_void`: 1
+- `missing storagedrawers:upgrade_status`: 1
+- `missing villagermarket:villager_market`: 1
+- `missing libvulpes:holoprojector`: 1
+- `missing chisel:emerald`: 1
+- `missing actuallyadditions:item_potion_ring`: 1
+- `missing nuclearcraft:cobblestone_generator_compact`: 1
+- `missing nuclearcraft:rtg_americium`: 1
+- `missing harvestcraft:toastedwesternitem`: 1
+- `missing harvestcraft:hamsweetpicklesandwichitem`: 1
+- `missing harvestcraft:bbqplatteritem`: 1
+- `missing computercraft:computer`: 1
+- `missing colytra:elytra_bauble`: 1
+- `missing enderstorage:ender_storage`: 1
+- `missing cyclicmagic:exp_pylon`: 1
+- `missing extrautils2:resonator`: 1
+- `missing thermalfoundation:material`: 1
+- `missing harvestcraft:southernstylebreakfastitem`: 1
+- `missing harvestcraft:meatfeastpizzaitem`: 1
+- `missing harvestcraft:thankfuldinneritem`: 1
+- `missing harvestcraft:cornedbeefbreakfastitem`: 1
+- `missing harvestcraft:delightedmealitem`: 1
+- `missing harvestcraft:heartybreakfastitem`: 1
+- `missing harvestcraft:ploughmanslunchitem`: 1
+- `missing harvestcraft:honeysoyribsitem`: 1
+- `missing harvestcraft:charsiuitem`: 1
+- `missing harvestcraft:shrimpokrahushpuppiesitem`: 1
+- `missing harvestcraft:wontonsoupitem`: 1
+- `missing harvestcraft:coleslawburgeritem`: 1
+- `missing redstonearsenal:tool.shield_flux`: 1
+- `missing redstonearsenal:tool.battlewrench_flux`: 1
+- `missing rftools:powercell_advanced`: 1
+- `missing thermalexpansion:frame`: 1
+- `missing thermaldynamics:duct_32`: 1
+- `missing thermaldynamics:servo`: 1
+- `missing thermaldynamics:filter`: 1
+- `missing actuallyadditions:block_misc`: 1
+- `missing appliedenergistics2:part`: 1
+- `missing libvulpes:elitemotor`: 1
+- `missing extrautils2:teleporter`: 1
+- `missing extrautils2:compressedcobblestone`: 1
+- `missing botania:blacklotus`: 1
+- `missing botania:flowerbag`: 1
+- `missing advgenerators:turbine_enderium`: 1
+- `missing advancedrocketry:rocketmotor`: 1
+- `missing advancedrocketry:railgun`: 1
+- `missing biomesoplenty:terrestrial_artifact`: 1
+- `missing environmentaltech:litherite`: 1
+- `missing extrautils2:drum`: 1
+- `missing thermaldynamics:duct_0`: 1
+- `missing actuallyadditions:item_spawner_changer`: 1
+- `missing advancedrocketry:rocketbuilder`: 1
+- `missing ic2:nuclear`: 1
+- `missing nuclearcraft:rtg_californium`: 1
+- `missing rftools:peace_essence`: 1
+- `missing extrautils2:angelring`: 1
+- `missing draconicevolution:ender_energy_manipulator`: 1
+
+## Dropped Chapters
+
+- `25:Extra Utilities`: 48
+- `20:Thaumcraft`: 47
+- `21:IndustrialCraft`: 37
+- `28:Environmental Tech`: 33
+- `6:Advanced Rocketry`: 31
+- `2:Ancient Warfare`: 26
+- `16:Astral Sorcery`: 23
+- `7:Forestry`: 21
+- `1:Beating Starvation`: 19
+
+## Dropped Quests
+
+- `42:Sentient Weapon`: 1
+- `43:Sentient Armor`: 1
+- `45:Draft of Angelus`: 1
+- `96:Big bada boom!`: 1
+- `110:Is that a balloon?`: 1
+- `233:Our First Stencil`: 1
+- `235:Stencils`: 1
+- `255:8MB... Highly Fragmented...`: 1
+- `332:The Big Grind`: 1
+- `333:Crystal Production 101`: 1
+- `348:Defense? Offense? Which will YOU choose?`: 1
+- `355:Shovel-pocalypse`: 1
+- `356:Axe Me A Question...I Dare You`: 1
+- `360:Tinker's Tank`: 1
+- `362:Even Sharper!`: 1
+- `373:Tinkers' Furnace`: 1
+- `385:X Marks the Spot`: 1
+- `428:More shields!!`: 1
+- `429:Shields up!`: 1
+- `438:Harder, Better, Faster, Stronger`: 1
+- `515:Fluid Crafter`: 1
+- `604:Thermal Mediator`: 1
+- `609:Ignition Plugs`: 1
+- `610:Lapidary Calibration`: 1
+- `611:Boiler Conversion`: 1
+- `613:Disjunctive Extraction`: 1
+- `614:Ignition Plugs`: 1
+- `617:Isentropic Reservoir`: 1
+- `618:Turbine Conversion`: 1
+- `620:Resin Funnel`: 1
+- `621:Fluidic Fabrication`: 1
+- `622:Pyrolytic Conversion`: 1
+- `628:Elevator`: 1
+- `672:Spawner Changer`: 1
+- `681:Ball of Fur`: 1
+- `682:Fishing Net`: 1
+- `874:Machine Interface`: 1
+- `883:Salt Mixer`: 1
+- `940:Combustion Generation`: 1
+- `941:Enhanced Combustion Generator`: 1
+- `943:Attractor Obelisk`: 1
+- `944:Weather Obelisk`: 1
+- `946:Inhibitor Obelisk`: 1
+- `947:Relocator Obelisk`: 1
+- `948:Farming Station`: 1
+- `952:Power Monitor`: 1
+- `953:The Vat`: 1
+- `954:Killer Joe`: 1
+- `956:Dimensional Transceiver`: 1
+- `979:Grand Tartaric Gem`: 1
+
+## Dropped Prerequisites
+
+- None
+
+## Applied Item Mappings
+
+- `mekanism:speedupgrade|0 -> mekanism:upgrade_speed`: 28
+- `mekanism:enrichedalloy|0 -> mekanism:alloy_infused`: 27
+- `mekanism:energyupgrade|0 -> mekanism:upgrade_energy`: 24
+- `mekanism:controlcircuit|3 -> mekanism:ultimate_control_circuit`: 20
+- `mekanism:atomicalloy|0 -> mekanism:alloy_atomic`: 19
+- `mekanism:controlcircuit|1 -> mekanism:advanced_control_circuit`: 17
+- `mekanism:controlcircuit|0 -> mekanism:basic_control_circuit`: 13
+- `mekanism:transmitter|0 -> mekanism:basic_universal_cable`: 12
+- `bloodmagic:blood_orb|0 -> bloodmagic:weakbloodorb`: 10
+- `mekanism:controlcircuit|2 -> mekanism:elite_control_circuit`: 9
+- `mekanism:gasupgrade|0 -> mekanism:upgrade_gas`: 8
+- `mekanism:reinforcedalloy|0 -> mekanism:alloy_reinforced`: 8
+- `mekanism:machineblock2|2 -> mekanism:chemical_infuser`: 8
+- `tconstruct:sharpening_kit|0 -> tconstruct:repair_kit`: 8
+- `bloodmagic:blood_rune|0 -> bloodmagic:blankrune`: 7
+- `bloodmagic:incense_altar|0 -> bloodmagic:incensealtar`: 6
+- `mekanismgenerators:generator|5 -> mekanismgenerators:advanced_solar_generator`: 5
+- `mekanism:machineblock|3 -> mekanism:crusher`: 5
+- `mekanism:machineblock2|0 -> mekanism:rotary_condensentrator`: 5
+- `appliedenergistics2:quartz_fixture|0 -> ae2:quartz_fixture`: 4
+- `actuallyadditions:block_phantomface|0 -> actuallyadditions:phantom_itemface`: 4
+- `appliedenergistics2:quartz_growth_accelerator|0 -> ae2:growth_accelerator`: 4
+- `appliedenergistics2:molecular_assembler|0 -> ae2:molecular_assembler`: 4
+- `mekanism:oreblock|0 -> mekanism:osmium_ore`: 4
+- `mekanism:machineblock2|4 -> mekanism:electrolytic_separator`: 4
+- `mekanism:biofuel|0 -> mekanism:bio_fuel`: 4
+- `mekanism:machineblock2|10 -> mekanism:pressurized_reaction_chamber`: 4
+- `appliedenergistics2:material|22 -> ae2:logic_processor`: 4
+- `appliedenergistics2:material|24 -> ae2:engineering_processor`: 4
+- `tconstruct:cast|0 -> tconstruct:pick_head_cast`: 4
+- `draconicevolution:draconic_core|0 -> draconicevolution:draconium_core`: 4
+- `bloodmagic:item_demon_crystal|0 -> bloodmagic:rawdemoncrystal`: 4
+- `botania:manaresource|0 -> botania:manasteel_ingot`: 3
+- `botania:grasshorn|0 -> botania:horn_grass`: 3
+- `botania:goddesscharm|0 -> botania:goddess_charm`: 3
+- `thermalexpansion:augment|512 -> thermal:dynamo_output_augment`: 3
+- `actuallyadditions:block_greenhouse_glass|0 -> actuallyadditions:greenhouse_glass`: 3
+- `actuallyadditions:block_ranged_collector|0 -> actuallyadditions:ranged_collector`: 3
+- `appliedenergistics2:crafting_unit|0 -> ae2:crafting_unit`: 3
+- `actuallyadditions:block_farmer|0 -> actuallyadditions:farmer`: 3
+- `nuclearcraft:fission_controller_new_fixed|0 -> nuclearcraft:fission_reactor_controller`: 3
+- `nuclearcraft:upgrade|0 -> nuclearcraft:upgrade_speed`: 3
+- `draconicevolution:energy_crystal|0 -> draconicevolution:basic_relay_crystal`: 3
+- `draconicevolution:energy_crystal|6 -> draconicevolution:basic_wireless_crystal`: 3
+- `mekanism:machineblock2|5 -> mekanism:precision_sawmill`: 3
+- `mekanismgenerators:generator|6 -> mekanismgenerators:wind_generator`: 3
+- `botania:exchangerod|0 -> botania:exchange_rod`: 3
+- `rftools:builder|0 -> rftoolsbuilder:builder`: 3
+- `actuallyadditions:block_atomic_reconstructor|0 -> actuallyadditions:atomic_reconstructor`: 3
+- `appliedenergistics2:charger|0 -> ae2:charger`: 3
+- `botania:terraformrod|0 -> botania:terraform_rod`: 3
+- `appliedenergistics2:energy_acceptor|0 -> ae2:energy_acceptor`: 3
+- `draconicevolution:energy_infuser|0 -> draconicevolution:energy_transfuser`: 3
+- `mekanism:atomicdisassembler|0 -> mekanism:atomic_disassembler`: 3
+- `nuclearcraft:part|3 -> nuclearcraft:plate_elite`: 3
+- `rftools:advanced_charged_porter|0 -> rftoolsutility:advanced_charged_porter`: 3
+- `draconicevolution:dislocator_advanced|0 -> draconicevolution:advanced_dislocator`: 3
+- `mekanism:cardboardbox|0 -> mekanism:cardboard_box`: 3
+- `minecraft:log|0 -> minecraft:oak_log`: 3
+- `mekanism:transmitter|1 -> mekanism:advanced_universal_cable`: 3
+- `mekanism:machineblock|12 -> mekanism:electric_pump`: 3
+- `mekanism:energycube|0 -> mekanism:basic_energy_cube`: 3
+- `mekanism:basicblock2|9 -> mekanism:security_desk`: 3
+- `mekanism:machineblock|9 -> mekanism:purification_chamber`: 3
+- `mekanism:transmitter|2 -> mekanism:elite_universal_cable`: 3
+- `mekanism:tierinstaller|1 -> mekanism:advanced_tier_installer`: 3
+- `mekanism:basicblock|14 -> mekanism:thermal_evaporation_controller`: 3
+- `mekanism:basicblock2|0 -> mekanism:thermal_evaporation_block`: 3
+- `mekanism:machineblock2|14 -> mekanism:laser_amplifier`: 3
+- `mekanism:machineblock2|3 -> mekanism:chemical_injection_chamber`: 3
+- `mekanism:machineblock2|13 -> mekanism:laser`: 3
+- `mekanismgenerators:turbineblade|0 -> mekanismgenerators:turbine_blade`: 3
+- `immersiveengineering:metal_decoration0|3 -> immersiveengineering:rs_engineering`: 3
+- `immersiveengineering:metal_decoration0|5 -> immersiveengineering:heavy_engineering`: 3
+- `appliedenergistics2:interface|0 -> ae2:interface`: 3
+- `appliedenergistics2:portable_cell|0 -> ae2:portable_item_cell_1k`: 3
+- `appliedenergistics2:memory_card|0 -> ae2:memory_card`: 3
+- `appliedenergistics2:quantum_ring|0 -> ae2:quantum_ring`: 3
+- `appliedenergistics2:part|16 -> ae2:fluix_glass_cable`: 3
+- `appliedenergistics2:matter_cannon|0 -> ae2:matter_cannon`: 3
+- `tconstruct:tool_rod|0 -> tconstruct:tool_handle`: 3
+- `tconstruct:cast|0 -> tconstruct:broad_axe_head_cast`: 3
+- `draconicevolution:energy_storage_core|0 -> draconicevolution:energy_core`: 3
+- `draconicevolution:draconic_block|0 -> draconicevolution:awakened_draconium_block`: 3
+- `botania:pool|0 -> botania:mana_pool`: 3
+- `nuclearcraft:manufactory_idle|0 -> nuclearcraft:manufactory`: 3
+- `minecraft:red_flower|3 -> minecraft:azure_bluet`: 2
+- `chisel:futura|2 -> chisel:futura/controller`: 2
+- `minecraft:record_mall|0 -> minecraft:music_disc_mall`: 2
+- `minecraft:record_ward|0 -> minecraft:music_disc_ward`: 2
+- `draconicevolution:energy_crystal|3 -> draconicevolution:basic_io_crystal`: 2
+- `minecraft:skull|5 -> minecraft:dragon_head`: 2
+- `appliedenergistics2:material|47 -> ae2:singularity`: 2
+- `appliedenergistics2:storage_cell_64k|0 -> ae2:item_storage_cell_64k`: 2
+- `appliedenergistics2:controller|0 -> ae2:controller`: 2
+- `mekanismgenerators:generator|0 -> mekanismgenerators:heat_generator`: 2
+- `mekanism:machineblock2|11 -> mekanism:basic_fluid_tank`: 2
+- `mekanism:machineblock|0 -> mekanism:enrichment_chamber`: 2
+- `mekanism:machineblock|8 -> mekanism:metallurgic_infuser`: 2
+- `mekanism:machineblock|10 -> mekanism:energized_smelter`: 2
+- `mekanism:machineblock3|3 -> mekanism:oredictionificator`: 2
+- `mekanism:ingot|1 -> mekanism:ingot_osmium`: 2
+- `mekanismtools:osmiumchestplate|0 -> mekanismtools:osmium_chestplate`: 2
+- `mekanism:gastank|0 -> mekanism:basic_chemical_tank`: 2
+- `mekanismgenerators:generator|4 -> mekanismgenerators:bio_generator`: 2
+- `mekanism:freerunners|0 -> mekanism:free_runners`: 2
+- `mekanism:machineblock3|5 -> mekanism:formulaic_assemblicator`: 2
+- `mekanism:machineblock|13 -> mekanism:personal_chest`: 2
+- `mekanism:configurationcard|0 -> mekanism:configuration_card`: 2
+- `mekanism:machineblock2|12 -> mekanism:fluidic_plenisher`: 2
+- `mekanism:scubatank|0 -> mekanism:scuba_tank`: 2
+- `mekanism:gaugedropper|0 -> mekanism:gauge_dropper`: 2
+- `mekanism:basicblock|6 -> mekanism:basic_bin`: 2
+- `thermalfoundation:material|160 -> thermal:obsidian_glass`: 2
+- `mekanism:machineblock|15 -> mekanism:logistical_sorter`: 2
+- `mekanismgenerators:generator|1 -> mekanismgenerators:solar_generator`: 2
+- `mekanism:machineblock|5 -> mekanism:basic_smelting_factory`: 2
+- `mekanism:tierinstaller|0 -> mekanism:basic_tier_installer`: 2
+- `mekanism:networkreader|0 -> mekanism:network_reader`: 2
+- `mekanism:basicblock|15 -> mekanism:thermal_evaporation_valve`: 2
+- `forge:bucketfilled|0 -> mekanism:lithium_bucket`: 2
+- `mekanism:machineblock3|0 -> mekanism:quantum_entangloporter`: 2
+- `mekanism:machineblock2|6 -> mekanism:chemical_dissolution_chamber`: 2
+- `mekanism:machineblock2|8 -> mekanism:chemical_crystallizer`: 2
+- `mekanism:machineblock2|1 -> mekanism:chemical_oxidizer`: 2
+- `mekanism:otherdust|3 -> mekanism:dust_sulfur`: 2
+- `mekanism:machineblock|4 -> mekanism:digital_miner`: 2
+- `mekanism:machineblock|11 -> mekanism:teleporter`: 2
+- `mekanismgenerators:reactor|2 -> mekanismgenerators:fusion_reactor_port`: 2
+- `mekanismgenerators:reactorglass|1 -> mekanismgenerators:reactor_glass`: 2
+- `mekanism:transmitter|6 -> mekanism:basic_mechanical_pipe`: 2
+- `mekanism:machineblock3|4 -> mekanism:resistive_heater`: 2
+- `mekanism:filterupgrade|0 -> mekanism:upgrade_filter`: 2
+- `mekanism:polyethene|2 -> mekanism:hdpe_sheet`: 2
+- `mekanism:machineblock3|1 -> mekanism:solar_neutron_activator`: 2
+- `mekanismgenerators:generator|3 -> mekanismgenerators:gas_burning_generator`: 2
+- `mekanism:machineblock|1 -> mekanism:osmium_compressor`: 2
+- `mekanism:basicblock2|5 -> mekanism:superheating_element`: 2
+- `mekanism:basicblock2|6 -> mekanism:pressure_disperser`: 2
+- `mekanism:basicblock|10 -> mekanism:structural_glass`: 2
+- `mekanism:machineblock|7 -> mekanism:elite_smelting_factory`: 2
+- `mekanism:tierinstaller|2 -> mekanism:elite_tier_installer`: 2
+- `mekanism:machineblock|6 -> mekanism:advanced_smelting_factory`: 2
+- `mekanism:basicblock2|2 -> mekanism:induction_port`: 2
+- `immersiveengineering:tool|0 -> immersiveengineering:hammer`: 2
+- `immersiveengineering:stone_decoration|0 -> immersiveengineering:cokebrick`: 2
+- `immersiveengineering:treated_wood|0 -> immersiveengineering:treated_wood_horizontal`: 2
+- `immersiveengineering:stone_decoration|1 -> immersiveengineering:blastbrick`: 2
+- `immersiveengineering:stone_decoration|10 -> immersiveengineering:alloybrick`: 2
+- `immersiveengineering:wooden_device1|0 -> immersiveengineering:watermill`: 2
+- `immersiveengineering:wooden_device0|2 -> immersiveengineering:workbench`: 2
+- `immersiveengineering:wooden_device1|1 -> immersiveengineering:windmill`: 2
+- `immersiveengineering:stone_decoration|2 -> immersiveengineering:blastbrick_reinforced`: 2
+- `immersiveengineering:metal_device1|2 -> immersiveengineering:dynamo`: 2
+- `immersiveengineering:metal_device1|3 -> immersiveengineering:thermoelectric_generator`: 2
+- `immersiveengineering:metal_decoration0|4 -> immersiveengineering:light_engineering`: 2
+- `immersiveengineering:metal_decoration0|6 -> immersiveengineering:generator`: 2
+- `immersiveengineering:metal_decoration0|7 -> immersiveengineering:radiator`: 2
+- `immersiveengineering:mold|0 -> immersiveengineering:mold_plate`: 2
+- `immersivepetroleum:schematic|0 -> immersivepetroleum:projector`: 2
+- `immersiveengineering:metal_device1|1 -> immersiveengineering:furnace_heater`: 2
+- `immersiveengineering:metal_device0|0 -> immersiveengineering:capacitor_lv`: 2
+- `immersiveengineering:metal_device0|1 -> immersiveengineering:capacitor_mv`: 2
+- `immersiveengineering:metal_device0|2 -> immersiveengineering:capacitor_hv`: 2
+- `enderio:block_stirling_generator|0 -> enderio:stirling_generator`: 2
+- `enderio:item_basic_capacitor|0 -> enderio:basic_capacitor`: 2
+- `enderio:item_material|1 -> enderio:void_chassis`: 2
+- `enderio:item_basic_capacitor|1 -> enderio:double_layer_capacitor`: 2
+- `enderio:item_basic_capacitor|2 -> enderio:octadic_capacitor`: 2
+- `enderio:block_experience_obelisk|0 -> enderio:xp_obelisk`: 2
+- `enderio:block_aversion_obelisk|0 -> enderio:aversion_obelisk`: 2
+- `enderio:block_soul_binder|0 -> enderio:soul_binder`: 2
+- `enderio:block_slice_and_splice|0 -> enderio:slice_and_splice`: 2
+- `enderio:block_sag_mill|0 -> enderio:sag_mill`: 2
+- `enderio:block_alloy_smelter|0 -> enderio:alloy_smelter`: 2
+- `enderio:block_cap_bank|1 -> enderio:basic_capacitor_bank`: 2
+- `enderio:block_cap_bank|2 -> enderio:advanced_capacitor_bank`: 2
+- `enderio:block_cap_bank|3 -> enderio:vibrant_capacitor_bank`: 2
+- `enderio:block_enchanter|0 -> enderio:enchanter`: 2
+- `enderio:item_soul_vial|0 -> enderio:empty_soul_vial`: 2
+- `enderio:block_powered_spawner|0 -> enderio:powered_spawner`: 2
+- `enderio:block_painter|0 -> enderio:painting_machine`: 2
+- `embers:codex|0 -> embers:ancient_codex`: 2
+- `embers:ember_detector|0 -> embers:atmospheric_gauge`: 2
+- `embers:mech_core|0 -> embers:mechanical_core`: 2
+- `embers:stamper_base|0 -> embers:stamp_base`: 2
+- `embers:ember_gauge|0 -> embers:ember_dial`: 2
+- `embers:mixer|0 -> embers:mixer_centrifuge`: 2
+- `embers:charger|0 -> embers:copper_charger`: 2
+- `embers:auto_hammer|0 -> embers:automatic_hammer`: 2
+- `embers:ashen_cloak_head|0 -> embers:ashen_goggles`: 2
+- `minecraft:sapling|0 -> minecraft:oak_sapling`: 2
+- `minecraft:sapling|2 -> minecraft:birch_sapling`: 2
+- `minecraft:sapling|3 -> minecraft:jungle_sapling`: 2
+- `minecraft:sapling|4 -> minecraft:acacia_sapling`: 2
+- `minecraft:sapling|5 -> minecraft:dark_oak_sapling`: 2
+- `minecraft:red_flower|4 -> minecraft:red_tulip`: 2
+- `botania:brewflask|0 -> botania:brew_flask`: 2
+- `minecraft:double_plant|4 -> minecraft:rose_bush`: 2
+- `appliedenergistics2:part|340 -> ae2:pattern_encoding_terminal`: 2
+- `appliedenergistics2:material|52 -> ae2:blank_pattern`: 2
+- `appliedenergistics2:certus_quartz_wrench|0 -> ae2:certus_quartz_wrench`: 2
+- `appliedenergistics2:charged_staff|0 -> ae2:charged_staff`: 2
+- `appliedenergistics2:crafting_monitor|0 -> ae2:crafting_monitor`: 2
+- `appliedenergistics2:crafting_storage_1k|0 -> ae2:1k_crafting_storage`: 2
+- `appliedenergistics2:crafting_accelerator|0 -> ae2:crafting_accelerator`: 2
+- `appliedenergistics2:part|240 -> ae2:import_bus`: 2
+- `appliedenergistics2:material|20 -> ae2:printed_silicon`: 2
+- `appliedenergistics2:part|220 -> ae2:storage_bus`: 2
+- `appliedenergistics2:part|320 -> ae2:formation_plane`: 2
+- `appliedenergistics2:wireless_terminal|0 -> ae2:wireless_terminal`: 2
+- `appliedenergistics2:cell_workbench|0 -> ae2:cell_workbench`: 2
+- `appliedenergistics2:io_port|0 -> ae2:io_port`: 2
+- `appliedenergistics2:part|460 -> ae2:me_p2p_tunnel`: 2
+- `appliedenergistics2:part|467 -> ae2:light_p2p_tunnel`: 2
+- `appliedenergistics2:condenser|0 -> ae2:condenser`: 2
+- `appliedenergistics2:tiny_tnt|0 -> ae2:tiny_tnt`: 2
+- `appliedenergistics2:quantum_link|0 -> ae2:quantum_link`: 2
+- `appliedenergistics2:color_applicator|0 -> ae2:color_applicator`: 2
+- `appliedenergistics2:spatial_io_port|0 -> ae2:spatial_io_port`: 2
+- `appliedenergistics2:view_cell|0 -> ae2:view_cell`: 2
+- `appliedenergistics2:part|280 -> ae2:level_emitter`: 2
+- `appliedenergistics2:material|53 -> ae2:crafting_card`: 2
+- `appliedenergistics2:material|7 -> ae2:fluix_crystal`: 2
+- `appliedenergistics2:inscriber|0 -> ae2:inscriber`: 2
+- `appliedenergistics2:drive|0 -> ae2:drive`: 2
+- `appliedenergistics2:part|380 -> ae2:terminal`: 2
+- `appliedenergistics2:part|120 -> ae2:cable_anchor`: 2
+- `appliedenergistics2:chest|0 -> ae2:chest`: 2
+- `appliedenergistics2:energy_cell|0 -> ae2:energy_cell`: 2
+- `tconstruct:book|0 -> tconstruct:materials_and_you`: 2
+- `tconstruct:tooltables|2 -> tconstruct:part_builder`: 2
+- `tconstruct:tooltables|3 -> tconstruct:tinker_station`: 2
+- `tconstruct:soil|0 -> tconstruct:grout`: 2
+- `tconstruct:sword_blade|0 -> tconstruct:small_blade`: 2
+- `tconstruct:shovel_head|0 -> tconstruct:pick_head`: 2
+- `tconstruct:axe_head|0 -> tconstruct:small_axe_head`: 2
+- `tconstruct:materials|0 -> tconstruct:seared_brick`: 2
+- `tconstruct:smeltery_io|0 -> tconstruct:seared_drain`: 2
+- `tconstruct:seared|3 -> tconstruct:seared_bricks`: 2
+- `tconstruct:casting|0 -> tconstruct:seared_table`: 2
+- `tconstruct:cast|0 -> tconstruct:tool_binding_cast`: 2
+- `tconstruct:cast|0 -> tconstruct:small_blade_cast`: 2
+- `tconstruct:cast|0 -> tconstruct:repair_kit_cast`: 2
+- `tconstruct:cast_custom|0 -> tconstruct:ingot_cast`: 2
+- `tconstruct:ingots|1 -> minecraft:netherite_scrap`: 2
+- `tconstruct:ingots|0 -> tconstruct:cobalt_ingot`: 2
+- `tconstruct:ingots|2 -> tconstruct:manyullyn_ingot`: 2
+- `tconstruct:binding|0 -> tconstruct:tool_binding`: 2
+- `tconstruct:toolforge|0 -> tconstruct:tinkers_anvil`: 2
+- `draconicevolution:flow_gate|0 -> draconicevolution:flux_gate`: 2
+- `draconicevolution:reactor_component|0 -> draconicevolution:reactor_stabilizer`: 2
+- `draconicevolution:reactor_component|1 -> draconicevolution:reactor_injector`: 2
+- `draconicevolution:draconic_staff_of_power|0 -> draconicevolution:draconic_staff`: 2
+- `draconicevolution:draconic_spawner|0 -> draconicevolution:stabilized_spawner`: 2
+- `draconicevolution:draconium_capacitor|1 -> draconicevolution:draconic_capacitor`: 2
+- `draconicevolution:wyvern_pick|0 -> draconicevolution:wyvern_pickaxe`: 2
+- `draconicevolution:crafting_injector|1 -> draconicevolution:wyvern_crafting_injector`: 2
+- `draconicevolution:item_dislocation_inhibitor|0 -> draconicevolution:dislocation_inhibitor`: 2
+- `draconicevolution:draconium_capacitor|0 -> draconicevolution:wyvern_capacitor`: 2
+- `draconicevolution:crafting_injector|0 -> draconicevolution:basic_crafting_injector`: 2
+- `draconicevolution:crafting_injector|2 -> draconicevolution:awakened_crafting_injector`: 2
+- `draconicevolution:crafting_injector|3 -> draconicevolution:chaotic_crafting_injector`: 2
+- `draconicevolution:draconic_pick|0 -> draconicevolution:draconic_pickaxe`: 2
+- `draconicevolution:energy_crystal|1 -> draconicevolution:wyvern_relay_crystal`: 2
+- `draconicevolution:energy_crystal|2 -> draconicevolution:draconic_relay_crystal`: 2
+- `botania:specialflower|0 -> botania:pure_daisy`: 2
+- `botania:twigwand|0 -> botania:twig_wand`: 2
+- `botania:specialflower|0 -> botania:endoflame`: 2
+- `botania:spreader|0 -> botania:mana_spreader`: 2
+- `botania:altar|0 -> botania:apothecary_default`: 2
+- `botania:specialflower|0 -> botania:hopperhock`: 2
+- `botania:specialflower|0 -> botania:jaded_amaranthus`: 2
+- `botania:manatablet|0 -> botania:mana_tablet`: 2
+- `botania:runealtar|0 -> botania:runic_altar`: 2
+- `botania:opencrate|0 -> botania:open_crate`: 2
+- `botania:alchemycatalyst|0 -> botania:alchemy_catalyst`: 2
+- `botania:manaresource|5 -> botania:life_essence`: 2
+- `botania:specialflower|0 -> botania:thermalily`: 2
+- `botania:travelbelt|0 -> botania:travel_belt`: 2
+- `botania:terraplate|0 -> botania:terra_plate`: 2
+- `botania:manaresource|4 -> botania:terrasteel_ingot`: 2
+- `botania:manaresource|14 -> botania:gaia_ingot`: 2
+- `botania:alfheimportal|0 -> botania:alfheim_portal`: 2
+- `botania:pylon|1 -> botania:natura_pylon`: 2
+- `botania:pylon|2 -> botania:gaia_pylon`: 2
+- `botania:manaresource|7 -> botania:elementium_ingot`: 2
+- `botania:specialflower|0 -> botania:kekimurus`: 2
+- `botania:specialflower|0 -> botania:gourmaryllis`: 2
+- `botania:specialflower|0 -> botania:loonium`: 2
+- `botania:specialflower|0 -> botania:munchdew`: 2
+- `botania:specialflower|0 -> botania:entropinnyum`: 2
+- `botania:specialflower|0 -> botania:solegnolia`: 2
+- `botania:specialflower|0 -> botania:narslimmus`: 2
+- `botania:specialflower|0 -> botania:orechid`: 2
+- `botania:specialflower|0 -> botania:clayconia`: 2
+- `botania:spreader|1 -> botania:redstone_spreader`: 2
+- `botania:conjurationcatalyst|0 -> botania:conjuration_catalyst`: 2
+- `botania:specialflower|0 -> botania:bellethorn`: 2
+- `botania:specialflower|0 -> botania:orechid_ignem`: 2
+- `botania:laputashard|0 -> botania:laputa_shard`: 2
+- `botania:waterrod|0 -> botania:water_rod`: 2
+- `botania:manaring|0 -> botania:mana_ring`: 2
+- `botania:grasshorn|1 -> botania:horn_leaves`: 2
+- `botania:grasshorn|2 -> botania:horn_snow`: 2
+- `botania:spreader|2 -> botania:elven_spreader`: 2
+- `botania:spreader|3 -> botania:gaia_spreader`: 2
+- `botania:sparkupgrade|0 -> botania:spark_upgrade_dispersive`: 2
+- `botania:diviningrod|0 -> botania:divining_rod`: 2
+- `bloodmagic:experience_tome|0 -> bloodmagic:experiencebook`: 2
+- `bloodmagic:component|8 -> bloodmagic:reagentbinding`: 2
+- `bloodmagic:bound_pickaxe|0 -> bloodmagic:soulpickaxe`: 2
+- `bloodmagic:alchemy_table|0 -> bloodmagic:alchemytable`: 2
+- `bloodmagic:potion_flask|0 -> bloodmagic:alchemy_flask`: 2
+- `bloodmagic:demon_crucible|0 -> bloodmagic:demoncrucible`: 2
+- `bloodmagic:demon_crystallizer|0 -> bloodmagic:demoncrystallizer`: 2
+- `bloodmagic:item_demon_crystal|1 -> bloodmagic:corrosivedemoncrystal`: 2
+- `bloodmagic:item_demon_crystal|2 -> bloodmagic:destructivedemoncrystal`: 2
+- `bloodmagic:item_demon_crystal|3 -> bloodmagic:vengefuldemoncrystal`: 2
+- `bloodmagic:item_demon_crystal|4 -> bloodmagic:steadfastdemoncrystal`: 2
+- `bloodmagic:demon_pylon|0 -> bloodmagic:demonpylon`: 2
+- `guideapi:bloodmagic-guide|0 -> bloodmagic:altar`: 2
+- `bloodmagic:soul_snare|0 -> bloodmagic:soulsnare`: 2
+- `bloodmagic:soul_gem|0 -> bloodmagic:soulgempetty`: 2
+- `bloodmagic:soul_gem|1 -> bloodmagic:soulgemlesser`: 2
+- `bloodmagic:soul_gem|2 -> bloodmagic:soulgemcommon`: 2
+- `bloodmagic:soul_gem|3 -> bloodmagic:soulgemgreater`: 2
+- `bloodmagic:slate|0 -> bloodmagic:blankslate`: 2
+- `bloodmagic:slate|1 -> bloodmagic:reinforcedslate`: 2
+- `bloodmagic:slate|2 -> bloodmagic:infusedslate`: 2
+- `bloodmagic:slate|3 -> bloodmagic:demonslate`: 2
+- `bloodmagic:slate|4 -> bloodmagic:etherealslate`: 2
+- `bloodmagic:activation_crystal|0 -> bloodmagic:activationcrystalweak`: 2
+- `bloodmagic:sacrificial_dagger|0 -> bloodmagic:sacrificialdagger`: 2
+- `bloodmagic:arcane_ashes|0 -> bloodmagic:arcaneashes`: 2
+- `bloodmagic:sigil_divination|0 -> bloodmagic:divinationsigil`: 2
+- `bloodmagic:ritual_diviner|0 -> bloodmagic:ritualdiviner`: 2
+- `bloodmagic:ritual_controller|0 -> bloodmagic:masterritualstone`: 2
+- `bloodmagic:soul_forge|0 -> bloodmagic:soulforge`: 2
+- `bloodmagic:bound_sword|0 -> bloodmagic:soulsword`: 2
+- `bloodmagic:ritual_diviner|1 -> bloodmagic:ritualdivinerdusk`: 2
+- `bloodmagic:activation_crystal|1 -> bloodmagic:activationcrystalawakened`: 2
+- `bloodmagic:ritual_reader|0 -> bloodmagic:ritualtinkerer`: 2
+- `bloodmagic:sigil_seer|0 -> bloodmagic:seersigil`: 2
+- `bloodmagic:dagger_of_sacrifice|0 -> bloodmagic:daggerofsacrifice`: 2
+- `actuallyadditions:item_booklet|0 -> actuallyadditions:booklet`: 2
+- `actuallyadditions:block_empowerer|0 -> actuallyadditions:empowerer`: 2
+- `actuallyadditions:block_grinder|0 -> actuallyadditions:crusher`: 2
+- `actuallyadditions:block_furnace_double|0 -> actuallyadditions:powered_furnace`: 2
+- `actuallyadditions:item_crystal|5 -> actuallyadditions:enori_crystal`: 2
+- `actuallyadditions:item_worm|0 -> actuallyadditions:worm`: 2
+- `actuallyadditions:block_fermenting_barrel|0 -> actuallyadditions:fermenting_barrel`: 2
+- `actuallyadditions:block_canola_press|0 -> actuallyadditions:canola_press`: 2
+- `actuallyadditions:block_oil_generator|0 -> actuallyadditions:oil_generator`: 2
+- `actuallyadditions:item_misc|23 -> actuallyadditions:crystallized_canola_seed`: 2
+- `actuallyadditions:item_misc|24 -> actuallyadditions:empowered_canola_seed`: 2
+- `actuallyadditions:item_battery|0 -> actuallyadditions:single_battery`: 2
+- `actuallyadditions:block_feeder|0 -> actuallyadditions:feeder`: 2
+- `actuallyadditions:block_xp_solidifier|0 -> actuallyadditions:xp_solidifier`: 2
+- `actuallyadditions:item_battery_double|0 -> actuallyadditions:double_battery`: 2
+- `actuallyadditions:item_battery_triple|0 -> actuallyadditions:triple_battery`: 2
+- `actuallyadditions:item_battery_quadruple|0 -> actuallyadditions:quadruple_battery`: 2
+- `actuallyadditions:item_battery_quintuple|0 -> actuallyadditions:quintuple_battery`: 2
+- `industrialforegoing:book_manual|0 -> minecraft:book`: 2
+- `industrialforegoing:crop_recolector|0 -> industrialforegoing:plant_gatherer`: 2
+- `industrialforegoing:tree_fluid_extractor|0 -> industrialforegoing:fluid_extractor`: 2
+- `industrialforegoing:laser_base|0 -> industrialforegoing:ore_laser_base`: 2
+- `industrialforegoing:mob_relocator|0 -> industrialforegoing:mob_imprisonment_tool`: 2
+- `industrialforegoing:crop_sower|0 -> industrialforegoing:plant_sower`: 2
+- `industrialforegoing:animal_stock_increaser|0 -> industrialforegoing:animal_feeder`: 2
+- `thermalfoundation:wrench|0 -> thermal:wrench`: 2
+- `thermalexpansion:machine|1 -> thermal:machine_pulverizer`: 2
+- `thermalexpansion:machine|0 -> thermal:machine_furnace`: 2
+- `thermalexpansion:machine|2 -> thermal:machine_sawmill`: 2
+- `thermalexpansion:machine|3 -> thermal:machine_smelter`: 2
+- `thermalexpansion:machine|11 -> thermal:machine_brewer`: 2
+- `thermalexpansion:machine|5 -> thermal:machine_press`: 2
+- `thermalexpansion:machine|7 -> thermal:machine_refinery`: 2
+- `thermalexpansion:machine|9 -> thermal:charge_bench`: 2
+- `thermalexpansion:machine|8 -> thermal:machine_bottler`: 2
+- `thermalexpansion:dynamo|0 -> thermal:dynamo_stirling`: 2
+- `thermalexpansion:dynamo|1 -> thermal:dynamo_compression`: 2
+- `thermalexpansion:dynamo|2 -> thermal:dynamo_magmatic`: 2
+- `thermalexpansion:dynamo|3 -> thermal:dynamo_numismatic`: 2
+- `thermalexpansion:dynamo|4 -> thermal:dynamo_lapidary`: 2
+- `thermalexpansion:dynamo|5 -> thermal:dynamo_disenchantment`: 2
+- `thermalexpansion:machine|6 -> thermal:machine_crucible`: 2
+- `thermalexpansion:machine|14 -> thermal:machine_chiller`: 2
+- `thermalexpansion:machine|15 -> thermal:machine_crafter`: 2
+- `thermalexpansion:cell|0 -> thermal:energy_cell`: 2
+- `thermalexpansion:device|0 -> thermal:device_water_gen`: 2
+- `thermalexpansion:device|1 -> thermal:device_nullifier`: 2
+- `thermalfoundation:material|865 -> thermal:rich_slag`: 2
+- `thermalfoundation:material|866 -> thermal:cinnabar`: 2
+- `thermalexpansion:device|3 -> thermal:device_tree_extractor`: 2
+- `thermalfoundation:material|832 -> thermal:rosin`: 2
+- `thermalfoundation:upgrade|0 -> thermal:upgrade_augment_1`: 2
+- `thermalexpansion:augment|513 -> thermal:dynamo_fuel_augment`: 2
+- `thermalexpansion:augment|336 -> thermal:press_coin_die`: 2
+- `thermalexpansion:augment|337 -> thermal:press_gear_die`: 2
+- `thermalfoundation:upgrade|1 -> thermal:upgrade_augment_2`: 2
+- `thermalfoundation:upgrade|2 -> thermal:upgrade_augment_3`: 2
+- `thermalexpansion:augment|402 -> thermal:rf_coil_xfer_augment`: 2
+- `thermalfoundation:upgrade|3 -> thermal:upgrade_augment_3`: 2
+- `rftools:rftools_manual|0 -> rftoolsbase:manual`: 2
+- `rftools:matter_receiver|0 -> rftoolsutility:matter_receiver`: 2
+- `rftools:shape_card|1 -> rftoolsbuilder:shape_card_void`: 2
+- `rftools:environmental_controller|0 -> rftoolsutility:environmental_controller`: 2
+- `rftools:machine_infuser|0 -> rftoolsbase:machine_infuser`: 2
+- `rftools:modular_storage|0 -> rftoolsstorage:modular_storage`: 2
+- `rftools:screen|0 -> rftoolsutility:screen`: 2
+- `rftools:powercell|0 -> rftoolspower:dimensionalcell`: 2
+- `rftools:shape_card|0 -> rftoolsbuilder:shape_card_def`: 2
+- `rftools:matter_transmitter|0 -> rftoolsutility:matter_transmitter`: 2
+- `rftools:dialing_device|0 -> rftoolsutility:dialing_device`: 2
+- `rftools:destination_analyzer|0 -> rftoolsutility:destination_analyzer`: 2
+- `rftools:matter_booster|0 -> rftoolsutility:matter_booster`: 2
+- `rftools:shape_card|2 -> rftoolsbuilder:shape_card_quarry`: 2
+- `rftools:button_module|0 -> rftoolsutility:button_module`: 2
+- `nuclearcraft:part|0 -> nuclearcraft:plate_basic`: 2
+- `nuclearcraft:part|1 -> nuclearcraft:plate_advanced`: 2
+- `nuclearcraft:part|2 -> nuclearcraft:plate_du`: 2
+- `nuclearcraft:alloy_furnace_idle|0 -> nuclearcraft:alloy_smelter`: 2
+- `nuclearcraft:fuel_reprocessor_idle|0 -> nuclearcraft:fuel_reprocessor`: 2
+- `nuclearcraft:extractor_idle|0 -> nuclearcraft:extractor`: 2
+- `nuclearcraft:infuser_idle|0 -> nuclearcraft:fluid_infuser`: 2
+- `nuclearcraft:melter_idle|0 -> nuclearcraft:melter`: 2
+- `nuclearcraft:supercooler_idle|0 -> nuclearcraft:supercooler`: 2
+- `nuclearcraft:electrolyser_idle|0 -> nuclearcraft:electrolyzer`: 2
+- `nuclearcraft:irradiator_idle|0 -> nuclearcraft:irradiator`: 2
+- `nuclearcraft:ingot_former_idle|0 -> nuclearcraft:ingot_former`: 2
+- `nuclearcraft:pressurizer_idle|0 -> nuclearcraft:pressurizer`: 2
+- `nuclearcraft:isotope_separator_idle|0 -> nuclearcraft:isotope_separator`: 2
+- `nuclearcraft:chemical_reactor_idle|0 -> nuclearcraft:chemical_reactor`: 2
+- `nuclearcraft:decay_hastener_idle|0 -> nuclearcraft:decay_hastener`: 2
+- `nuclearcraft:crystallizer_idle|0 -> nuclearcraft:crystallizer`: 2
+- `nuclearcraft:dissolver_idle|0 -> nuclearcraft:fluid_enricher`: 2
+- `nuclearcraft:nuclear_furnace_idle|0 -> nuclearcraft:nuclear_furnace`: 2
+- `minecraft:grass|0 -> minecraft:grass_block`: 1
+- `minecraft:brick_block|0 -> minecraft:bricks`: 1
+- `minecraft:lit_pumpkin|0 -> minecraft:jack_o_lantern`: 1
+- `minecraft:end_bricks|0 -> minecraft:end_stone_bricks`: 1
+- `minecraft:concrete_powder|8 -> minecraft:white_concrete_powder`: 1
+- `minecraft:web|0 -> minecraft:cobweb`: 1
+- `minecraft:deadbush|0 -> minecraft:dead_bush`: 1
+- `minecraft:waterlily|0 -> minecraft:lily_pad`: 1
+- `minecraft:slime|0 -> minecraft:slime_block`: 1
+- `minecraft:banner|6 -> minecraft:white_banner`: 1
+- `chisel:andesite1|7 -> chisel:andesite/tiles_large`: 1
+- `chisel:basalt|1 -> chisel:basalt/solid_bricks`: 1
+- `chisel:bookshelf_oak|0 -> chisel:bookshelf_oak/rainbow`: 1
+- `chisel:bricks|10 -> chisel:bricks/panel`: 1
+- `chisel:cobblestonemossy1|14 -> chisel:mossy_cobblestone/pillar`: 1
+- `biomesoplenty:sapling_0|4 -> biomesoplenty:fir_sapling`: 1
+- `biomesoplenty:sapling_1|0 -> biomesoplenty:redwood_sapling`: 1
+- `biomesoplenty:sapling_1|1 -> biomesoplenty:willow_sapling`: 1
+- `biomesoplenty:sapling_1|7 -> biomesoplenty:magic_sapling`: 1
+- `chisel:glassdyedwhite|1 -> chisel:glassdyed_white/forestry`: 1
+- `chisel:glassdyedlightblue|5 -> chisel:glassdyed_light_blue/transparent`: 1
+- `chisel:lavastone1|4 -> chisel:lavastone/braid`: 1
+- `chisel:lavastone1|6 -> chisel:lavastone/tiles_large`: 1
+- `chisel:icepillar|4 -> chisel:icepillar/convexplain`: 1
+- `chisel:icepillar|5 -> chisel:icepillar/carved`: 1
+- `chisel:obsidian|13 -> chisel:obsidian/greek`: 1
+- `chisel:netherbrick|13 -> chisel:netherbrick/a1_netherbrick_redsmall`: 1
+- `chisel:netherbrick|8 -> chisel:netherbrick/a1_netherbrick_lavastonedark`: 1
+- `chisel:paper|6 -> chisel:paper/floral`: 1
+- `chisel:planks-spruce|12 -> chisel:planks_spruce/encased_smooth`: 1
+- `chisel:prismarine|6 -> chisel:prismarine/chaotic_bricks`: 1
+- `chisel:redstone1|8 -> chisel:redstone/tiles_medium`: 1
+- `chisel:technicalnew|8 -> chisel:technical/vent`: 1
+- `chisel:technical|11 -> chisel:technical/cables`: 1
+- `chisel:technical|3 -> chisel:technical/pipeslarge`: 1
+- `harvestcraft:avocado_sapling|0 -> croptopia:avocado_sapling`: 1
+- `harvestcraft:cashew_sapling|0 -> croptopia:cashew_sapling`: 1
+- `harvestcraft:dragonfruit_sapling|0 -> croptopia:dragonfruit_sapling`: 1
+- `chisel:futura|3 -> chisel:futura/wavy`: 1
+- `chisel:chisel_hitech|0 -> chisel:hitech_chisel`: 1
+- `harvestcraft:limejellysandwichitem|0 -> croptopia:toast_with_jam`: 1
+- `harvestcraft:fishsandwichitem|0 -> croptopia:tuna_sandwich`: 1
+- `tconstruct:soil|4 -> tconstruct:grout`: 1
+- `tconstruct:slime_congealed|3 -> tconstruct:ichor_congealed_slime`: 1
+- `tconstruct:clear_stained_glass|10 -> tconstruct:purple_clear_stained_glass`: 1
+- `harvestcraft:spagettiandmeatballsitem|0 -> croptopia:spaghetti_squash`: 1
+- `harvestcraft:icecreamitem|0 -> croptopia:vanilla_ice_cream`: 1
+- `harvestcraft:nutellaitem|0 -> croptopia:chocolate`: 1
+- `harvestcraft:apricotjellysandwichitem|0 -> croptopia:toast_with_jam`: 1
+- `harvestcraft:mintchocolatechipicecreamitem|0 -> croptopia:chocolate_ice_cream`: 1
+- `tconstruct:clear_stained_glass|13 -> tconstruct:green_clear_stained_glass`: 1
+- `tconstruct:firewood|0 -> tconstruct:blazewood`: 1
+- `tconstruct:seared_tank|1 -> tconstruct:seared_fuel_tank`: 1
+- `tconstruct:materials|13 -> tconstruct:seared_brick`: 1
+- `chisel:concrete_black|3 -> chisel:concrete_black/soft_bricks`: 1
+- `chisel:concrete_lightblue|2 -> chisel:concrete_light_blue/small_bricks`: 1
+- `chisel:diorite|1 -> chisel:diorite/solid_bricks`: 1
+- `chisel:dirt|4 -> chisel:dirt/reinforcedcobbledirt`: 1
+- `chisel:factory|6 -> chisel:factory/hazard`: 1
+- `chisel:factory|9 -> chisel:factory/metalbox`: 1
+- `chisel:factory|12 -> chisel:factory/grinder`: 1
+- `actuallyadditions:item_coffee|0 -> actuallyadditions:coffee_cup`: 1
+- `harvestcraft:bltitem|0 -> croptopia:blt`: 1
+- `tconstruct:materials|16 -> tconstruct:seared_brick`: 1
+- `tconstruct:materials|14 -> tconstruct:seared_brick`: 1
+- `tconstruct:materials|19 -> tconstruct:seared_brick`: 1
+- `tconstruct:slime_congealed|2 -> tconstruct:sky_congealed_slime`: 1
+- `harvestcraft:tacoitem|0 -> croptopia:taco`: 1
+- `harvestcraft:sweetpotatopieitem|0 -> croptopia:baked_sweet_potato`: 1
+- `harvestcraft:sausageinbreaditem|0 -> croptopia:toast_sandwich`: 1
+- `harvestcraft:beefwellingtonitem|0 -> croptopia:beef_wellington`: 1
+- `harvestcraft:grilledcheeseitem|0 -> croptopia:grilled_cheese`: 1
+- `harvestcraft:fishandchipsitem|0 -> croptopia:fish_and_chips`: 1
+- `harvestcraft:poutineitem|0 -> croptopia:french_fries`: 1
+- `rftools:crafter3|0 -> rftoolsutility:crafter3`: 1
+- `chisel:lapis|7 -> chisel:lapis/a1_blocklapis_panel`: 1
+- `harvestcraft:supremepizzaitem|0 -> croptopia:supreme_pizza`: 1
+- `chisel:offsettool|0 -> chisel:offset_tool`: 1
+- `botania:laputashard|9 -> botania:laputa_shard`: 1
+- `minecraft:log|1 -> minecraft:spruce_log`: 1
+- `minecraft:log|2 -> minecraft:birch_log`: 1
+- `minecraft:log|3 -> minecraft:jungle_log`: 1
+- `mekanismtools:osmiumhelmet|0 -> mekanismtools:osmium_helmet`: 1
+- `mekanismtools:osmiumleggings|0 -> mekanismtools:osmium_leggings`: 1
+- `mekanismtools:osmiumboots|0 -> mekanismtools:osmium_boots`: 1
+- `mekanismtools:osmiumpickaxe|0 -> mekanismtools:osmium_pickaxe`: 1
+- `mekanismtools:osmiumshovel|0 -> mekanismtools:osmium_shovel`: 1
+- `mekanismtools:osmiumhoe|0 -> mekanismtools:osmium_hoe`: 1
+- `mekanismtools:osmiumsword|0 -> mekanismtools:osmium_sword`: 1
+- `mekanismtools:osmiumaxe|0 -> mekanismtools:osmium_axe`: 1
+- `mekanism:mufflingupgrade|0 -> mekanism:upgrade_muffling`: 1
+- `mekanism:craftingformula|0 -> mekanism:crafting_formula`: 1
+- `mekanism:gasmask|0 -> mekanism:scuba_mask`: 1
+- `mekanism:basicblock|8 -> mekanism:steel_casing`: 1
+- `mekanism:transmitter|3 -> mekanism:ultimate_universal_cable`: 1
+- `mekanism:machineblock2|7 -> mekanism:chemical_washer`: 1
+- `mekanism:anchorupgrade|0 -> mekanism:upgrade_anchor`: 1
+- `mekanism:basicblock|7 -> mekanism:teleporter_frame`: 1
+- `mekanism:portableteleporter|0 -> mekanism:portable_teleporter`: 1
+- `mekanismgenerators:reactor|1 -> mekanismgenerators:fusion_reactor_frame`: 1
+- `mekanismgenerators:reactor|0 -> mekanismgenerators:fusion_reactor_controller`: 1
+- `mekanism:dust|1 -> mekanism:dust_gold`: 1
+- `mekanism:machineblock3|6 -> mekanism:fuelwood_heater`: 1
+- `mekanism:otherdust|4 -> mekanism:dust_lithium`: 1
+- `mekanism:polyethene|3 -> mekanism:hdpe_stick`: 1
+- `mekanism:machineblock|14 -> mekanism:chargepad`: 1
+- `mekanism:basicblock2|7 -> mekanism:boiler_casing`: 1
+- `mekanism:basicblock2|8 -> mekanism:boiler_valve`: 1
+- `mekanism:tierinstaller|3 -> mekanism:ultimate_tier_installer`: 1
+- `mekanismgenerators:generator|10 -> mekanismgenerators:turbine_casing`: 1
+- `mekanismgenerators:generator|11 -> mekanismgenerators:turbine_valve`: 1
+- `mekanismgenerators:generator|12 -> mekanismgenerators:turbine_vent`: 1
+- `mekanismgenerators:generator|9 -> mekanismgenerators:electromagnetic_coil`: 1
+- `mekanismgenerators:generator|8 -> mekanismgenerators:rotational_complex`: 1
+- `mekanismgenerators:generator|7 -> mekanismgenerators:turbine_rotor`: 1
+- `mekanism:basicblock2|1 -> mekanism:induction_casing`: 1
+- `mekanism:basicblock2|3 -> mekanism:basic_induction_cell`: 1
+- `mekanism:basicblock2|4 -> mekanism:basic_induction_provider`: 1
+- `immersiveengineering:tool|3 -> immersiveengineering:wirecutter`: 1
+- `immersiveengineering:metal_decoration1|1 -> immersiveengineering:steel_scaffolding_standard`: 1
+- `immersiveengineering:conveyor|0 -> immersiveengineering:conveyor_basic`: 1
+- `immersiveengineering:metal_device1|0 -> immersiveengineering:blastfurnace_preheater`: 1
+- `immersiveengineering:mold|1 -> immersiveengineering:mold_gear`: 1
+- `immersiveengineering:mold|2 -> immersiveengineering:mold_rod`: 1
+- `immersiveengineering:mold|4 -> immersiveengineering:mold_wire`: 1
+- `immersiveengineering:wirecoil|0 -> immersiveengineering:wirecoil_copper`: 1
+- `immersiveengineering:connector|0 -> immersiveengineering:connector_lv`: 1
+- `immersiveengineering:connector|1 -> immersiveengineering:connector_lv_relay`: 1
+- `immersiveengineering:wirecoil|1 -> immersiveengineering:wirecoil_electrum`: 1
+- `immersiveengineering:connector|2 -> immersiveengineering:connector_mv`: 1
+- `immersiveengineering:connector|3 -> immersiveengineering:connector_mv_relay`: 1
+- `immersiveengineering:wirecoil|2 -> immersiveengineering:wirecoil_steel`: 1
+- `immersiveengineering:connector|4 -> immersiveengineering:connector_hv`: 1
+- `immersiveengineering:connector|5 -> immersiveengineering:connector_hv_relay`: 1
+- `enderio:item_material|0 -> enderio:void_chassis`: 1
+- `embers:block_furnace|0 -> embers:melter`: 1
+- `embers:fluid_gauge|0 -> embers:fluid_dial`: 1
+- `embers:ashen_cloak_chest|0 -> embers:ashen_cloak`: 1
+- `embers:ashen_cloak_legs|0 -> embers:ashen_leggings`: 1
+- `embers:ashen_cloak_boots|0 -> embers:ashen_boots`: 1
+- `minecraft:melon_block|0 -> minecraft:melon`: 1
+- `minecraft:fish|0 -> minecraft:cod`: 1
+- `minecraft:record_13|0 -> minecraft:music_disc_13`: 1
+- `minecraft:record_cat|0 -> minecraft:music_disc_cat`: 1
+- `minecraft:record_wait|0 -> minecraft:music_disc_wait`: 1
+- `minecraft:sapling|1 -> minecraft:spruce_sapling`: 1
+- `minecraft:yellow_flower|0 -> minecraft:dandelion`: 1
+- `minecraft:red_flower|0 -> minecraft:poppy`: 1
+- `minecraft:red_flower|1 -> minecraft:blue_orchid`: 1
+- `minecraft:red_flower|2 -> minecraft:allium`: 1
+- `minecraft:red_flower|5 -> minecraft:orange_tulip`: 1
+- `minecraft:red_flower|6 -> minecraft:white_tulip`: 1
+- `minecraft:red_flower|7 -> minecraft:pink_tulip`: 1
+- `minecraft:red_flower|8 -> minecraft:oxeye_daisy`: 1
+- `minecraft:double_plant|0 -> minecraft:sunflower`: 1
+- `minecraft:double_plant|1 -> minecraft:lilac`: 1
+- `minecraft:double_plant|5 -> minecraft:peony`: 1
+- `appliedenergistics2:part|440 -> ae2:cable_interface`: 1
+- `appliedenergistics2:network_tool|0 -> ae2:network_tool`: 1
+- `appliedenergistics2:entropy_manipulator|0 -> ae2:entropy_manipulator`: 1
+- `minecraft:planks|0 -> minecraft:oak_planks`: 1
+- `appliedenergistics2:part|260 -> ae2:export_bus`: 1
+- `appliedenergistics2:material|36 -> ae2:cell_component_4k`: 1
+- `appliedenergistics2:part|300 -> ae2:annihilation_plane`: 1
+- `wct:wct|0 -> ae2:wireless_crafting_terminal`: 1
+- `appliedenergistics2:wireless_access_point|0 -> ae2:wireless_access_point`: 1
+- `appliedenergistics2:material|42 -> ae2:wireless_booster`: 1
+- `appliedenergistics2:light_detector|0 -> ae2:light_detector`: 1
+- `appliedenergistics2:part|462 -> ae2:item_p2p_tunnel`: 1
+- `appliedenergistics2:part|461 -> ae2:redstone_p2p_tunnel`: 1
+- `appliedenergistics2:part|469 -> ae2:fe_p2p_tunnel`: 1
+- `appliedenergistics2:material|48 -> ae2:quantum_entangled_singularity`: 1
+- `appliedenergistics2:spatial_pylon|0 -> ae2:spatial_pylon`: 1
+- `appliedenergistics2:spatial_storage_cell_16_cubed|0 -> ae2:spatial_storage_cell_16`: 1
+- `appliedenergistics2:material|27 -> ae2:capacity_card`: 1
+- `appliedenergistics2:material|29 -> ae2:fuzzy_card`: 1
+- `appliedenergistics2:material|31 -> ae2:inverter_card`: 1
+- `appliedenergistics2:material|26 -> ae2:redstone_card`: 1
+- `appliedenergistics2:material|30 -> ae2:speed_card`: 1
+- `appliedenergistics2:material|28 -> ae2:advanced_card`: 1
+- `appliedenergistics2:material|25 -> ae2:basic_card`: 1
+- `appliedenergistics2:material|0 -> ae2:certus_quartz_crystal`: 1
+- `appliedenergistics2:material|1 -> ae2:charged_certus_quartz_crystal`: 1
+- `appliedenergistics2:vibration_chamber|0 -> ae2:vibration_chamber`: 1
+- `appliedenergistics2:part|140 -> ae2:quartz_fiber`: 1
+- `appliedenergistics2:part|36 -> ae2:fluix_covered_cable`: 1
+- `appliedenergistics2:part|516 -> ae2:fluix_covered_dense_cable`: 1
+- `appliedenergistics2:part|56 -> ae2:fluix_smart_cable`: 1
+- `appliedenergistics2:part|76 -> ae2:fluix_smart_dense_cable`: 1
+- `appliedenergistics2:sky_stone_block|0 -> ae2:sky_stone_block`: 1
+- `appliedenergistics2:sky_stone_chest|0 -> ae2:sky_stone_chest`: 1
+- `appliedenergistics2:material|13 -> ae2:calculation_processor_press`: 1
+- `appliedenergistics2:material|14 -> ae2:engineering_processor_press`: 1
+- `appliedenergistics2:material|15 -> ae2:logic_processor_press`: 1
+- `appliedenergistics2:material|19 -> ae2:silicon_press`: 1
+- `appliedenergistics2:storage_cell_1k|0 -> ae2:item_storage_cell_1k`: 1
+- `appliedenergistics2:part|360 -> ae2:crafting_terminal`: 1
+- `appliedenergistics2:material|6 -> ae2:matter_ball`: 1
+- `appliedenergistics2:part|80 -> ae2:toggle_bus`: 1
+- `tconstruct:wide_guard|0 -> tconstruct:tool_binding`: 1
+- `tconstruct:sign_head|0 -> tconstruct:shield_core`: 1
+- `tconstruct:seared_tank|0 -> tconstruct:seared_fuel_tank`: 1
+- `tconstruct:faucet|0 -> tconstruct:seared_faucet`: 1
+- `tconstruct:casting|1 -> tconstruct:seared_basin`: 1
+- `tconstruct:cast|0 -> tconstruct:tool_handle_cast`: 1
+- `tconstruct:cast|0 -> tconstruct:small_axe_head_cast`: 1
+- `tconstruct:cast|0 -> tconstruct:large_plate_cast`: 1
+- `tconstruct:cast|0 -> tconstruct:hammer_head_cast`: 1
+- `tconstruct:pan_head|0 -> tconstruct:broad_blade`: 1
+- `tconstruct:frypan|0 -> tconstruct:melting_pan`: 1
+- `draconicevolution:diss_enchanter|0 -> draconicevolution:disenchanter`: 1
+- `draconicevolution:fusion_crafting_core|0 -> draconicevolution:crafting_core`: 1
+- `botania:sparkupgrade|1 -> botania:spark_upgrade_dominant`: 1
+- `botania:sparkupgrade|2 -> botania:spark_upgrade_recessive`: 1
+- `botania:sparkupgrade|3 -> botania:spark_upgrade_isolated`: 1
+- `bloodmagic:living_armour_chest|0 -> bloodmagic:livingplate`: 1
+- `bloodmagic:bound_axe|0 -> bloodmagic:soulaxe`: 1
+- `bloodmagic:bound_shovel|0 -> bloodmagic:soulshovel`: 1
+- `minecraft:reeds|0 -> minecraft:sugar_cane`: 1
+- `bloodmagic:path|0 -> bloodmagic:woodbrickpath`: 1
+- `bloodmagic:path|2 -> bloodmagic:stonebrickpath`: 1
+- `bloodmagic:path|4 -> bloodmagic:wornstonebrickpath`: 1
+- `minecraft:leaves|0 -> minecraft:oak_leaves`: 1
+- `bloodmagic:path|6 -> bloodmagic:obsidianbrickpath`: 1
+- `bloodmagic:monster_soul|0 -> bloodmagic:basemonstersoul`: 1
+- `bloodmagic:sanguine_book|0 -> bloodmagic:altar`: 1
+- `bloodmagic:decorative_brick|1 -> bloodmagic:bloodstonebrick`: 1
+- `bloodmagic:decorative_brick|0 -> bloodmagic:largebloodstonebrick`: 1
+- `bloodmagic:ritual_stone|0 -> bloodmagic:ritualstone`: 1
+- `minecraft:dye|4 -> minecraft:lapis_lazuli`: 1
+- `bloodmagic:blood_shard|0 -> bloodmagic:weakbloodshard`: 1
+- `actuallyadditions:block_display_stand|0 -> actuallyadditions:display_stand`: 1
+- `actuallyadditions:item_phantom_connector|0 -> actuallyadditions:phantom_connector`: 1
+- `industrialforegoing:range_addon|0 -> industrialforegoing:range_addon0`: 1
+- `industrialforegoing:range_addon|9 -> industrialforegoing:range_addon9`: 1
+- `thermalfoundation:meter|0 -> thermal:rf_potato`: 1
+- `thermalfoundation:diagram_redprint|0 -> thermal:redprint`: 1
+- `rftools:smartwrench|0 -> rftoolsbase:smartwrench`: 1
+- `rftoolscontrol:rftoolscontrol_manual|0 -> rftoolsbase:manual`: 1
+- `rftools:storage_module|2 -> rftoolsstorage:storage_module2`: 1
+- `rftools:screen_controller|0 -> rftoolsutility:screen_controller`: 1
+- `rftools:powercell_card|0 -> rftoolspower:powercell_card`: 1
+
+## Missing Item IDs
+
+- None

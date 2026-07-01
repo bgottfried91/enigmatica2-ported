@@ -1,0 +1,724 @@
+{
+  id: "0500000000010000",
+  order_index: 0,
+  title: "Standard Random Reward",
+  loot_size: 1,
+  rewards: [
+    {
+      type: "item",
+      item: "minecraft:sponge",
+      weight: 12.0,
+      count: 4
+    },
+    {
+      type: "item",
+      item: "minecraft:bookshelf",
+      weight: 12.0,
+      count: 4
+    },
+    {
+      type: "item",
+      item: "minecraft:mossy_cobblestone",
+      weight: 12.0,
+      count: 32
+    },
+    {
+      type: "item",
+      item: "minecraft:bricks",
+      weight: 12.0,
+      count: 64
+    },
+    {
+      type: "item",
+      item: "minecraft:soul_sand",
+      weight: 12.0,
+      count: 64
+    },
+    {
+      type: "item",
+      item: "minecraft:sea_lantern",
+      weight: 12.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "minecraft:jack_o_lantern",
+      weight: 12.0
+    },
+    {
+      type: "item",
+      item: "minecraft:clay",
+      weight: 12.0,
+      count: 16
+    },
+    {
+      type: "item",
+      item: "minecraft:mycelium",
+      weight: 12.0,
+      count: 16
+    },
+    {
+      type: "item",
+      item: "minecraft:hay_block",
+      weight: 12.0,
+      count: 9
+    },
+    {
+      type: "item",
+      item: "minecraft:end_stone_bricks",
+      weight: 12.0,
+      count: 32
+    },
+    {
+      type: "item",
+      item: "minecraft:bone_block",
+      weight: 12.0,
+      count: 24
+    },
+    {
+      type: "item",
+      item: "minecraft:purpur_block",
+      weight: 12.0,
+      count: 64
+    },
+    {
+      type: "item",
+      item: "minecraft:nether_wart_block",
+      weight: 12.0,
+      count: 2
+    },
+    {
+      type: "item",
+      item: "minecraft:prismarine",
+      weight: 12.0,
+      count: 32
+    },
+    {
+      type: "item",
+      item: "minecraft:cactus",
+      weight: 12.0,
+      count: 16
+    },
+    {
+      type: "item",
+      item: "minecraft:end_rod",
+      weight: 12.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "minecraft:chorus_flower",
+      weight: 12.0,
+      count: 2
+    },
+    {
+      type: "item",
+      item: "minecraft:slime_block",
+      weight: 12.0,
+      count: 4
+    },
+    {
+      type: "item",
+      item: "chisel:bookshelf_oak/rainbow",
+      weight: 12.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "chisel:bricks/panel",
+      weight: 12.0,
+      count: 64
+    },
+    {
+      type: "item",
+      item: "biomesoplenty:fir_sapling",
+      weight: 12.0
+    },
+    {
+      type: "item",
+      item: "biomesoplenty:redwood_sapling",
+      weight: 12.0
+    },
+    {
+      type: "item",
+      item: "biomesoplenty:willow_sapling",
+      weight: 12.0
+    },
+    {
+      type: "item",
+      item: "biomesoplenty:magic_sapling",
+      weight: 12.0
+    },
+    {
+      type: "item",
+      item: "chisel:glassdyed_white/forestry",
+      weight: 12.0,
+      count: 64
+    },
+    {
+      type: "item",
+      item: "chisel:glassdyed_light_blue/transparent",
+      weight: 12.0,
+      count: 64
+    },
+    {
+      type: "item",
+      item: "chisel:obsidian/greek",
+      weight: 12.0,
+      count: 64
+    },
+    {
+      type: "item",
+      item: "chisel:netherbrick/a1_netherbrick_redsmall",
+      weight: 12.0,
+      count: 64
+    },
+    {
+      type: "item",
+      item: "chisel:netherbrick/a1_netherbrick_lavastonedark",
+      weight: 12.0,
+      count: 64
+    },
+    {
+      type: "item",
+      item: "chisel:paper/floral",
+      weight: 12.0,
+      count: 64
+    },
+    {
+      type: "item",
+      item: "chisel:prismarine/chaotic_bricks",
+      weight: 12.0,
+      count: 64
+    },
+    {
+      type: "item",
+      item: "chisel:redstone/tiles_medium",
+      weight: 12.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "croptopia:avocado_sapling",
+      weight: 12.0
+    },
+    {
+      type: "item",
+      item: "croptopia:cashew_sapling",
+      weight: 12.0
+    },
+    {
+      type: "item",
+      item: "croptopia:dragonfruit_sapling",
+      weight: 12.0
+    },
+    {
+      type: "item",
+      item: "chisel:hitech_chisel",
+      weight: 12.0
+    },
+    {
+      type: "item",
+      item: "croptopia:toast_with_jam",
+      weight: 12.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "croptopia:tuna_sandwich",
+      weight: 12.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "tconstruct:grout",
+      weight: 12.0,
+      count: 64
+    },
+    {
+      type: "item",
+      item: "tconstruct:ichor_congealed_slime",
+      weight: 12.0,
+      count: 64
+    },
+    {
+      type: "item",
+      item: "tconstruct:purple_clear_stained_glass",
+      weight: 12.0,
+      count: 64
+    },
+    {
+      type: "item",
+      item: "quark:obsidian_pressure_plate",
+      weight: 12.0,
+      count: 4
+    },
+    {
+      type: "item",
+      item: "quark:soul_bead",
+      weight: 12.0
+    },
+    {
+      type: "item",
+      item: "croptopia:spaghetti_squash",
+      weight: 12.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "croptopia:vanilla_ice_cream",
+      weight: 12.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "croptopia:chocolate",
+      weight: 12.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "croptopia:toast_with_jam",
+      weight: 12.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "croptopia:chocolate_ice_cream",
+      weight: 12.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "tconstruct:green_clear_stained_glass",
+      weight: 12.0,
+      count: 64
+    },
+    {
+      type: "item",
+      item: "tconstruct:blazewood",
+      weight: 12.0,
+      count: 64
+    },
+    {
+      type: "item",
+      item: "tconstruct:seared_fuel_tank",
+      weight: 12.0,
+      count: 4
+    },
+    {
+      type: "item",
+      item: "tconstruct:seared_brick",
+      weight: 12.0
+    },
+    {
+      type: "item",
+      item: "minecraft:tnt",
+      weight: 10.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "minecraft:piston",
+      weight: 10.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "minecraft:brewing_stand",
+      weight: 10.0
+    },
+    {
+      type: "item",
+      item: "minecraft:ender_eye",
+      weight: 10.0,
+      count: 4
+    },
+    {
+      type: "item",
+      item: "minecraft:writable_book",
+      weight: 10.0
+    },
+    {
+      type: "item",
+      item: "mekanismgenerators:advanced_solar_generator",
+      weight: 10.0
+    },
+    {
+      type: "item",
+      item: "nuclearcraft:helium_collector",
+      weight: 10.0
+    },
+    {
+      type: "item",
+      item: "croptopia:blt",
+      weight: 10.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "botania:manasteel_ingot",
+      weight: 10.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "botania:horn_grass",
+      weight: 10.0
+    },
+    {
+      type: "item",
+      item: "botania:goddess_charm",
+      weight: 10.0
+    },
+    {
+      type: "item",
+      item: "botania:monocle",
+      weight: 10.0
+    },
+    {
+      type: "item",
+      item: "chiselsandbits:chisel_diamond",
+      weight: 10.0
+    },
+    {
+      type: "item",
+      item: "cookingforblockheads:cooking_table",
+      weight: 10.0
+    },
+    {
+      type: "item",
+      item: "cookingforblockheads:cow_jar",
+      weight: 10.0
+    },
+    {
+      type: "item",
+      item: "mekanism:upgrade_speed",
+      weight: 10.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "thermal:dynamo_output_augment",
+      weight: 10.0,
+      count: 4
+    },
+    {
+      type: "item",
+      item: "tconstruct:seared_brick",
+      weight: 10.0
+    },
+    {
+      type: "item",
+      item: "tconstruct:seared_brick",
+      weight: 10.0,
+      count: 3
+    },
+    {
+      type: "item",
+      item: "tconstruct:seared_brick",
+      weight: 10.0,
+      count: 2
+    },
+    {
+      type: "item",
+      item: "tconstruct:sky_congealed_slime",
+      weight: 10.0,
+      count: 2
+    },
+    {
+      type: "item",
+      item: "croptopia:taco",
+      weight: 10.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "croptopia:baked_sweet_potato",
+      weight: 10.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "croptopia:toast_sandwich",
+      weight: 10.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "croptopia:beef_wellington",
+      weight: 10.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "croptopia:grilled_cheese",
+      weight: 10.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "croptopia:fish_and_chips",
+      weight: 10.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "croptopia:french_fries",
+      weight: 10.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "scannable:scanner",
+      weight: 10.0
+    },
+    {
+      type: "item",
+      item: "rftoolsutility:crafter3",
+      weight: 10.0,
+      count: 2
+    },
+    {
+      type: "item",
+      item: "chisel:lapis/a1_blocklapis_panel",
+      weight: 10.0,
+      count: 4
+    },
+    {
+      type: "item",
+      item: "minecraft:shulker_shell",
+      weight: 7.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "minecraft:experience_bottle",
+      weight: 7.0,
+      count: 32
+    },
+    {
+      type: "item",
+      item: "minecraft:diamond_horse_armor",
+      weight: 7.0
+    },
+    {
+      type: "item",
+      item: "actuallyadditions:greenhouse_glass",
+      weight: 7.0,
+      count: 5
+    },
+    {
+      type: "item",
+      item: "actuallyadditions:ranged_collector",
+      weight: 7.0
+    },
+    {
+      type: "item",
+      item: "ae2:crafting_unit",
+      weight: 7.0,
+      count: 2
+    },
+    {
+      type: "item",
+      item: "actuallyadditions:farmer",
+      weight: 7.0
+    },
+    {
+      type: "item",
+      item: "nuclearcraft:fission_reactor_controller",
+      weight: 7.0
+    },
+    {
+      type: "item",
+      item: "nuclearcraft:upgrade_speed",
+      weight: 7.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "croptopia:supreme_pizza",
+      weight: 7.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "draconicevolution:basic_relay_crystal",
+      weight: 7.0,
+      count: 4
+    },
+    {
+      type: "item",
+      item: "draconicevolution:basic_io_crystal",
+      weight: 7.0,
+      count: 4
+    },
+    {
+      type: "item",
+      item: "draconicevolution:basic_wireless_crystal",
+      weight: 7.0,
+      count: 4
+    },
+    {
+      type: "item",
+      item: "enderstorage:ender_pouch",
+      weight: 7.0
+    },
+    {
+      type: "item",
+      item: "industrialforegoing:mob_imprisonment_tool",
+      weight: 7.0
+    },
+    {
+      type: "item",
+      item: "mekanism:precision_sawmill",
+      weight: 7.0
+    },
+    {
+      type: "item",
+      item: "mekanismgenerators:wind_generator",
+      weight: 7.0,
+      count: 2
+    },
+    {
+      type: "item",
+      item: "botania:exchange_rod",
+      weight: 7.0
+    },
+    {
+      type: "item",
+      item: "rftoolsbuilder:builder",
+      weight: 7.0
+    },
+    {
+      type: "item",
+      item: "minecraft:dragon_head",
+      weight: 3.0
+    },
+    {
+      type: "item",
+      item: "minecraft:end_crystal",
+      weight: 3.0
+    },
+    {
+      type: "item",
+      item: "actuallyadditions:atomic_reconstructor",
+      weight: 3.0
+    },
+    {
+      type: "item",
+      item: "ae2:growth_accelerator",
+      weight: 3.0,
+      count: 5
+    },
+    {
+      type: "item",
+      item: "ae2:charger",
+      weight: 3.0
+    },
+    {
+      type: "item",
+      item: "ae2:singularity",
+      weight: 3.0
+    },
+    {
+      type: "item",
+      item: "actuallyadditions:phantom_itemface",
+      weight: 3.0,
+      count: 4
+    },
+    {
+      type: "item",
+      item: "botania:terraform_rod",
+      weight: 3.0
+    },
+    {
+      type: "item",
+      item: "ae2:energy_acceptor",
+      weight: 3.0
+    },
+    {
+      type: "item",
+      item: "draconicevolution:energy_transfuser",
+      weight: 3.0
+    },
+    {
+      type: "item",
+      item: "industrialforegoing:wither_builder",
+      weight: 3.0
+    },
+    {
+      type: "item",
+      item: "mekanism:atomic_disassembler",
+      weight: 3.0
+    },
+    {
+      type: "item",
+      item: "ae2:item_storage_cell_64k",
+      weight: 3.0,
+      count: 2
+    },
+    {
+      type: "item",
+      item: "ae2:molecular_assembler",
+      weight: 3.0,
+      count: 8
+    },
+    {
+      type: "item",
+      item: "nuclearcraft:plate_elite",
+      weight: 3.0,
+      count: 32
+    },
+    {
+      type: "item",
+      item: "rftoolsutility:advanced_charged_porter",
+      weight: 3.0
+    },
+    {
+      type: "item",
+      item: "minecraft:nether_star",
+      weight: 2.0
+    },
+    {
+      type: "item",
+      item: "minecraft:dragon_egg",
+      weight: 2.0
+    },
+    {
+      type: "item",
+      item: "draconicevolution:dragon_heart",
+      weight: 2.0
+    },
+    {
+      type: "item",
+      item: "draconicevolution:advanced_dislocator",
+      weight: 2.0
+    },
+    {
+      type: "item",
+      item: "draconicevolution:wyvern_bow",
+      weight: 2.0
+    },
+    {
+      type: "item",
+      item: "draconicevolution:wyvern_energy_core",
+      weight: 2.0
+    },
+    {
+      type: "item",
+      item: "draconicevolution:wyvern_axe",
+      weight: 2.0
+    },
+    {
+      type: "item",
+      item: "ae2:controller",
+      weight: 2.0
+    },
+    {
+      type: "item",
+      item: "ae2:singularity",
+      weight: 2.0
+    }
+  ]
+}

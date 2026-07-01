@@ -1,0 +1,819 @@
+{
+  id: "01000000000E0000",
+  group: "",
+  order_index: 7,
+  filename: "14_tinkers_construct",
+  title: "Tinkers' Construct",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      id: "0200000000E00000",
+      title: "Materials and You",
+      x: 7.5,
+      y: 0.83,
+      tasks: [
+        {
+          id: "0300000000E00000",
+          type: "item",
+          item: "tconstruct:materials_and_you"
+        },
+        {
+          id: "0300000000E00001",
+          type: "item",
+          item: "tconstruct:pattern",
+          count: 8
+        }
+      ],
+      description: ["Welcome to Tinkers' Construct!", "", "These quests will help you to learn the ropes of this mod and be able to create your own customizable weapons and tools. Let's start out with the most important basic tool.", "", "The manual.", "", " Craft the&l 'M&laterials and You'&r m&ranual. Once you have it, the book willgive you information needed to know how to create most of the things of this mod.", "", "Next we need some &l'Patterns&r&l'&r. Craft some of those up and we can move on to the next step."],
+      icon: "tconstruct:materials_and_you",
+      rewards: [
+        {
+          id: "0400000000E00000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000015D0000",
+      title: "Our first Pickaxe, Step One",
+      x: 6.5,
+      y: 4.5,
+      tasks: [
+        {
+          id: "03000000015D0000",
+          type: "item",
+          item: "tconstruct:pick_head"
+        }
+      ],
+      description: ["Now that we have stencils, we want to get some tools made. One of the most important tools of course is the pickaxe. I mean it &oIS&r called &l'MIN&l&lE&l&l&l&l&rcraft' for a reason, right?", "", "Anyways lets get some &l'Flint'&r and make our first &l'Pickaxe Head'&r. This will be a good start until we're ready to make the smeltery."],
+      icon: "tconstruct:pick_head",
+      dependencies: ["02000000015F0000"],
+      rewards: [
+        {
+          id: "04000000015D0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000015F0000",
+      title: "Parts",
+      x: 7.5,
+      y: 2.83,
+      tasks: [
+        {
+          id: "03000000015F0000",
+          type: "item",
+          item: "tconstruct:part_builder"
+        }
+      ],
+      description: ["Alright we've got the stencils, now we need the parts. Make a &l'Part Builder'&r by using one log and a &l'Blank Pattern'&r on top in a crafting grid."],
+      icon: "tconstruct:part_builder",
+      dependencies: ["0200000000E00000"],
+      rewards: [
+        {
+          id: "04000000015F0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001600000",
+      title: "Tool Repair",
+      x: 9.5,
+      y: 2.83,
+      tasks: [
+        {
+          id: "0300000001600000",
+          type: "item",
+          item: "tconstruct:tinker_station"
+        }
+      ],
+      description: ["Once we have all the parts, we need to be able to put them together. That's where the &l'Tool Station'&r comes into play. Let's make that so we can put our tools together.", "", "The&l 'Tool Station'&r allows us to put together, repair, and modify only the basic tools. If we want things like the &l'Crossbow'&r or &l'Shuriken'&r, for example, ee'll need the &l'Tool Forge'&r but we'll get to that one a bit later."],
+      icon: "tconstruct:tinker_station",
+      dependencies: ["0200000000E00000", "02000000015F0000"],
+      rewards: [
+        {
+          id: "0400000001600000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001610000",
+      title: "Got Grout?",
+      x: 9.5,
+      y: 4.5,
+      tasks: [
+        {
+          id: "0300000001610000",
+          type: "item",
+          item: "tconstruct:grout",
+          count: 64
+        }
+      ],
+      description: ["Before we can move on from crude tools and weapons, we need to make the smeltery to make all of the good stuff.", "", "To start out, lets get some &l'Grout'&r made. A stack should do nicely, but two stacks would be great. To make &l'Grout'&r, you will need &l'Clay'&r, &l'Sand'&r, and &l'Gravel'&r. If you need the recipe, check &lJEI&r or &l'Materials and You'&r for more details."],
+      icon: "tconstruct:grout",
+      dependencies: ["0200000001600000"],
+      rewards: [
+        {
+          id: "0400000001610000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001620000",
+      title: "Oooooo Shiny!",
+      x: 5.5,
+      y: 11.42,
+      tasks: [
+        {
+          id: "0300000001620000",
+          type: "item",
+          item: "tconstruct:small_blade"
+        },
+        {
+          id: "0300000001620001",
+          type: "item",
+          item: "tconstruct:tool_binding"
+        }
+      ],
+      description: ["Finally the last part we need is the &l'Sword Blade'&r and &l'Wide Guard'&r. Why you ask? Well unless you're playing on &oPeaceful&r, we'll need to defend ourself from monsters like those pesky Zombies."],
+      icon: "tconstruct:small_blade",
+      dependencies: ["0200000001660000"],
+      rewards: [
+        {
+          id: "0400000001620000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001650000",
+      title: "Our First Hole!",
+      x: 5.5,
+      y: 7.83,
+      tasks: [
+        {
+          id: "0300000001650000",
+          type: "item",
+          item: "tconstruct:pick_head"
+        }
+      ],
+      description: ["Besides mining, we'll also be doing a bunch of digging.", "", "Really it's quite inevitable.", "", "While you can dig using your stumps called hands, shovels make the job much easier. Let's take the stencil for the &l'Shovel Head'&r and make it."],
+      icon: "tconstruct:pick_head",
+      dependencies: ["0200000001820000"],
+      rewards: [
+        {
+          id: "0400000001650000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001660000",
+      title: "Chop, Chop, Chop",
+      x: 5.5,
+      y: 9.58,
+      tasks: [
+        {
+          id: "0300000001660000",
+          type: "item",
+          item: "tconstruct:small_axe_head"
+        }
+      ],
+      description: ["Okay so we have a few pieces now, but next we'll need to be able to cut trees down. Like we mentioned in the previous quest, using your stumps is quite inefficient.", "", "Let's make the &l'Axe Head'&r. This will make chopping those pesky trees down much easier. And faster too."],
+      icon: "tconstruct:small_axe_head",
+      dependencies: ["0200000001650000"],
+      rewards: [
+        {
+          id: "0400000001660000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001670000",
+      title: "Battle Me! *",
+      x: 13.25,
+      y: 0.75,
+      tasks: [
+        {
+          id: "0300000001670000",
+          type: "item",
+          item: "tconstruct:shield_core"
+        },
+        {
+          id: "0300000001670001",
+          type: "item",
+          item: "tconstruct:tool_handle"
+        },
+        {
+          id: "0300000001670064",
+          type: "item",
+          item: "tconstruct:battlesign"
+        }
+      ],
+      description: ["The Battle Sign is interesting weapon. It's a defensive weapon that has low damange but works excellently as a shield and blocks projectiles."],
+      icon: "tconstruct:battlesign",
+      dependencies: ["0200000001800000"],
+      rewards: [
+        {
+          id: "0400000001670000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001690000",
+      title: "Smeltery Building Blocks",
+      x: 9.5,
+      y: 6.17,
+      tasks: [
+        {
+          id: "0300000001690000",
+          type: "item",
+          item: "tconstruct:seared_brick",
+          count: 64
+        }
+      ],
+      description: ["In order to make all of the things needed to make the smeltery, we need some &l'Seared Bricks'&r. A LOT of them.", "", "One stack should be sufficient."],
+      icon: "tconstruct:seared_brick",
+      dependencies: ["0200000001610000"],
+      rewards: [
+        {
+          id: "0400000001690000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000016B0000",
+      title: "Heart of the Smeltery",
+      x: 7.5,
+      y: 7.92,
+      tasks: [
+        {
+          id: "03000000016B0000",
+          type: "item",
+          item: "tconstruct:smeltery_controller"
+        },
+        {
+          id: "03000000016B0001",
+          type: "item",
+          item: "tconstruct:seared_fuel_tank"
+        }
+      ],
+      description: ["Just like the quest name says, &l'The Seared Tank'&r and the &l'Smeltery Controller'&r are the two items that makes it a Smeltery. The Controller we'll use to put in and monitor what we have in the Smeltery while the Tank is what heats the multiblock structure. You'll need the &l'Seared Brick'&r that you made previously to make these as well as glass for the tank"],
+      icon: "tconstruct:smeltery_controller",
+      dependencies: ["0200000001690000"],
+      rewards: [
+        {
+          id: "04000000016B0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000016C0000",
+      title: "Leaky Drains",
+      x: 7.5,
+      y: 9.58,
+      tasks: [
+        {
+          id: "03000000016C0000",
+          type: "item",
+          item: "tconstruct:seared_drain",
+          count: 4
+        },
+        {
+          id: "03000000016C0001",
+          type: "item",
+          item: "tconstruct:seared_faucet",
+          count: 4
+        }
+      ],
+      description: ["The drain will allow us to pour the liquid metals into the &l'Casting Table'&r or &l'Casting Basins'&r.", "", "Then once we have the drain, we need the &l'Faucet'&r. The faucet guides the liquid into the table or the basin by right clicking to enable it."],
+      icon: "tconstruct:seared_drain",
+      dependencies: ["02000000016B0000"],
+      rewards: [
+        {
+          id: "04000000016C0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000016D0000",
+      title: "Building Blocks. . . Part 2",
+      x: 11.5,
+      y: 7.92,
+      tasks: [
+        {
+          id: "03000000016D0000",
+          type: "item",
+          item: "tconstruct:seared_bricks",
+          count: 24
+        }
+      ],
+      description: ["In order to build the smeltery, we need some blocks to build it. That's where the &l'Seared Bricks'&r come in."],
+      icon: "tconstruct:seared_bricks",
+      dependencies: ["0200000001690000"],
+      rewards: [
+        {
+          id: "04000000016D0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000016E0000",
+      title: "Cast Your Votes",
+      x: 9.5,
+      y: 9.58,
+      tasks: [
+        {
+          id: "03000000016E0000",
+          type: "item",
+          item: "tconstruct:seared_table",
+          count: 2
+        },
+        {
+          id: "03000000016E0001",
+          type: "item",
+          item: "tconstruct:seared_basin",
+          count: 2
+        }
+      ],
+      description: ["We need to be able to pour our newly smelted stuff somewhere, so now we need a &l'Casting Basin'&r, which will make blocks of whatever you pour in there, and the &l'Casting Table'&r which  you will use the &l'Casts'&r with to make your tool and weapon parts."],
+      icon: "tconstruct:seared_table",
+      dependencies: ["0200000001690000"],
+      rewards: [
+        {
+          id: "04000000016E0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000016F0000",
+      title: "Peek-A-Boo!",
+      x: 11.5,
+      y: 6.17,
+      tasks: [
+        {
+          id: "03000000016F0000",
+          type: "item",
+          item: "tconstruct:seared_glass",
+          count: 4
+        }
+      ],
+      description: ["Everyone loves windows right? Let's make some &l'Seared Glass'&r to see what goes on in the smeltery."],
+      icon: "tconstruct:seared_glass",
+      dependencies: ["02000000016D0000"],
+      rewards: [
+        {
+          id: "04000000016F0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001700000",
+      title: "Casting now open!",
+      x: 7.5,
+      y: 11.42,
+      tasks: [
+        {
+          id: "0300000001700000",
+          type: "item",
+          item: "tconstruct:pick_head_cast"
+        },
+        {
+          id: "0300000001700001",
+          type: "item",
+          item: "tconstruct:tool_binding_cast"
+        },
+        {
+          id: "0300000001700002",
+          type: "item",
+          item: "tconstruct:tool_handle_cast"
+        }
+      ],
+      description: ["Now that we have our basic smeltery up and running, the first thing we'll need to make is casts for the tool parts we're going to be making.", "", "Now you can make the casts out of clay if you wish, but they only last for one use.", "", "We are, however, going to make the sturdier ones made out of &lAluminum Brass &rwhich will be reusable.", "", "We'll need 1 &lCopper&r to 3 &lAluminum&r in the smeltery. That will make 4 ingots. To make our casts now that we have &lAluminum Brass&r, we need a few tool parts made from the parts table. Right click it into the &l'Casting Table'&r and then right click on the faucet. It will start pouring the cast over the tool part (It &lWILL&r consume the tool part so make sure it's not made of something valuable). It will only use one ingot, so you will have 3 more casts worth of &lAluminum Brass&r. Let's make those and we can move on to the next quest."],
+      icon: "tconstruct:pick_head_cast",
+      dependencies: ["02000000016E0000"],
+      rewards: [
+        {
+          id: "0400000001700000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001710000",
+      title: "More Tools",
+      x: 9.5,
+      y: 13.08,
+      tasks: [
+        {
+          id: "0300000001710000",
+          type: "item",
+          item: "tconstruct:pick_head_cast"
+        },
+        {
+          id: "0300000001710001",
+          type: "item",
+          item: "tconstruct:small_axe_head_cast"
+        }
+      ],
+      description: ["Now you know how to make casts, let's make a Shovel Head cast and one for an Axe Head. Having a shovel and axe thatyou can repair will be very useful and also more efficient."],
+      icon: "tconstruct:pick_head_cast",
+      dependencies: ["0200000001700000"],
+      rewards: [
+        {
+          id: "0400000001710000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001720000",
+      title: "Sharp and Pointy",
+      x: 11.5,
+      y: 11.42,
+      tasks: [
+        {
+          id: "0300000001720000",
+          type: "item",
+          item: "tconstruct:small_blade_cast"
+        },
+        {
+          id: "0300000001720001",
+          type: "item",
+          item: "tconstruct:tool_binding_cast"
+        }
+      ],
+      description: ["Let's make the casts for the &l'Wide Guard'&r and the &l'Sword Blade'&r. This will allow us to make all those fancy custom swords."],
+      icon: "tconstruct:small_blade_cast",
+      dependencies: ["0200000001710000"],
+      rewards: [
+        {
+          id: "0400000001720000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001730000",
+      title: "Making Everything Better",
+      x: 13.5,
+      y: 11.42,
+      tasks: [
+        {
+          id: "0300000001730000",
+          type: "item",
+          item: "tconstruct:repair_kit_cast"
+        }
+      ],
+      description: ["Once you have your tools and weapons made, you may need them to be better. That's where the &l'Sharpening Kit'&r comes in. Remember to combine the sharpening kit with a &l'Flint'&r to use it."],
+      icon: "tconstruct:repair_kit_cast",
+      dependencies: ["0200000001720000"],
+      rewards: [
+        {
+          id: "0400000001730000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001740000",
+      title: "Ingots",
+      x: 7.5,
+      y: 13.08,
+      tasks: [
+        {
+          id: "0300000001740000",
+          type: "item",
+          item: "tconstruct:ingot_cast"
+        }
+      ],
+      description: ["If you end up having too much let over you can make them back into ingots (including Obsidian). We need an &l'Ingot Cast'&r for that."],
+      icon: "tconstruct:ingot_cast",
+      dependencies: ["0200000001700000"],
+      rewards: [
+        {
+          id: "0400000001740000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001770000",
+      title: "Even Better",
+      x: 9.5,
+      y: 11.42,
+      tasks: [
+        {
+          id: "0300000001770000",
+          type: "item",
+          item: "tconstruct:large_plate_cast"
+        },
+        {
+          id: "0300000001770001",
+          type: "item",
+          item: "tconstruct:broad_axe_head_cast"
+        },
+        {
+          id: "0300000001770002",
+          type: "item",
+          item: "tconstruct:hammer_head_cast"
+        },
+        {
+          id: "0300000001770003",
+          type: "item",
+          item: "tconstruct:broad_axe_head_cast"
+        }
+      ],
+      description: ["Let's get even better. Want to be able to chop down whole trees in one go? (No we're not talking about veinminer just so you know). We're talking about the Lumber Axe.", "", "Want to be able to dig a 3x3 area of dirt, or mine a 3x3 area of stone? We can do that. Let's make the casts needed!"],
+      icon: "tconstruct:broad_axe_head_cast",
+      dependencies: ["0200000001700000", "0200000001710000", "0200000001720000"],
+      rewards: [
+        {
+          id: "0400000001770000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001780000",
+      title: "Precious Metals",
+      x: 16.5,
+      y: 11.42,
+      tasks: [
+        {
+          id: "0300000001780000",
+          type: "item",
+          item: "minecraft:netherite_scrap",
+          count: 8
+        }
+      ],
+      description: ["Ardite is an ore from the Nether and definitely one of the more valuable metals. We definitely want some of that."],
+      icon: "minecraft:netherite_scrap",
+      dependencies: ["0200000001790000"],
+      rewards: [
+        {
+          id: "0400000001780000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001790000",
+      title: "Next Stop: Nether Ore",
+      x: 17.5,
+      y: 13.08,
+      tasks: [
+        {
+          id: "0300000001790000",
+          type: "item",
+          item: "tconstruct:repair_kit"
+        }
+      ],
+      description: ["Now that we have a pickaxe that we can grab Obsidian from, we can use some of that obsidian and make a sharpening kit. An Obsidian Sharpening Kit will allow you to get cobalt and Ardite from the Nether."],
+      icon: "tconstruct:repair_kit",
+      dependencies: ["02000000017E0000"],
+      rewards: [
+        {
+          id: "0400000001790000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000017A0000",
+      title: "Precious Metals pt. 2",
+      x: 18.5,
+      y: 11.42,
+      tasks: [
+        {
+          id: "03000000017A0000",
+          type: "item",
+          item: "tconstruct:cobalt_ingot",
+          count: 8
+        }
+      ],
+      description: ["Cobalt, like Ardite, is a precious metal from the Nether. It is also used to make another metal, which you will learn about in the next quest. For now we need some Cobalt before we get there."],
+      icon: "tconstruct:cobalt_ingot",
+      dependencies: ["0200000001790000"],
+      rewards: [
+        {
+          id: "04000000017A0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000017B0000",
+      title: "The Shiniest!",
+      x: 17.5,
+      y: 9.58,
+      tasks: [
+        {
+          id: "03000000017B0000",
+          type: "item",
+          item: "tconstruct:manyullyn_ingot",
+          count: 8
+        }
+      ],
+      description: ["Manyullyn is made by mixing one part Ardite and one part Cobalt. A precious Metal that makes a strong, sturdy alloy that is excellent for tools and weapons."],
+      icon: "tconstruct:manyullyn_ingot",
+      dependencies: ["0200000001780000", "02000000017A0000"],
+      rewards: [
+        {
+          id: "04000000017B0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000017D0000",
+      title: "Even Better Tools!",
+      x: 17.5,
+      y: 7.92,
+      tasks: [
+        {
+          id: "03000000017D0000",
+          type: "item",
+          item: "tconstruct:repair_kit"
+        }
+      ],
+      description: ["Now that we have access to Manyullyn, we want a manyullyn Sharpening Kit to make our tools better."],
+      icon: "tconstruct:repair_kit",
+      dependencies: ["02000000017B0000"],
+      rewards: [
+        {
+          id: "04000000017D0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000017E0000",
+      title: "Sharpening Kit - Steel",
+      x: 15.5,
+      y: 13.08,
+      tasks: [
+        {
+          id: "03000000017E0000",
+          type: "item",
+          item: "tconstruct:repair_kit"
+        }
+      ],
+      description: ["This will be similar to the previous quest, the difference is that we're upgrading our upgraded flint pickaxe to be able to mine Obsidian.", "", "Remember you need a flint to make the sharpening kit work!"],
+      icon: "tconstruct:repair_kit",
+      dependencies: ["0200000001830000"],
+      rewards: [
+        {
+          id: "04000000017E0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001800000",
+      title: "Pan-Tastic! *",
+      x: 11.25,
+      y: 0.75,
+      tasks: [
+        {
+          id: "0300000001800000",
+          type: "item",
+          item: "tconstruct:broad_blade"
+        },
+        {
+          id: "0300000001800001",
+          type: "item",
+          item: "tconstruct:tool_handle"
+        }
+      ],
+      description: ["Bonus Quest!", "", "Do you like pans? I do.", "", "The Frypan is really neat. It deals bonus damage and knocks the enemies back. Not only that but is cooks the drops when you use the charged blow (Right click)."],
+      icon: "tconstruct:melting_pan",
+      rewards: [
+        {
+          id: "0400000001800000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001820000",
+      title: "X Marks the Part",
+      x: 5.5,
+      y: 6.17,
+      tasks: [
+        {
+          id: "0300000001820000",
+          type: "item",
+          item: "tconstruct:tool_handle",
+          count: 4
+        },
+        {
+          id: "0300000001820001",
+          type: "item",
+          item: "tconstruct:tool_binding",
+          count: 3
+        }
+      ],
+      description: ["Most of all the tools and weapons we'll make using &nTinkers' Construct&r will need the &l'Tool Binding'&r. It's what holds the pieces together, so lets make a few of those.", "", "Then once we have the bindings, we need to be able to hold the tool or weapon right? We'll now makea &l'Tool Rod'&r or two as well."],
+      icon: "tconstruct:tool_binding",
+      dependencies: ["02000000015D0000"],
+      rewards: [
+        {
+          id: "0400000001820000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001830000",
+      title: "Sharpening Kit - Iron",
+      x: 13.5,
+      y: 13.08,
+      tasks: [
+        {
+          id: "0300000001830000",
+          type: "item",
+          item: "tconstruct:repair_kit"
+        }
+      ],
+      description: ["You have the cast, let's take our &l'Flint Pickaxe'&r and combine it with an &l'Iron Sharpening Kit'&r. This will allow you to mine Iron-level ores and goodies. Just put the tool, Sharpening Kit and Flint in the Tool Station (or Tool Forge alternatively) and grab your upgraded tool!"],
+      icon: "tconstruct:repair_kit",
+      dependencies: ["0200000001730000"],
+      rewards: [
+        {
+          id: "0400000001830000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001840000",
+      title: "Tool Forge Upgrade",
+      x: 11.5,
+      y: 9.58,
+      tasks: [
+        {
+          id: "0300000001840000",
+          type: "item",
+          item: "tconstruct:tinkers_anvil"
+        }
+      ],
+      description: ["The &l'Tool Forge'&r is basically the &l'Tool Station'&r but upgraded. When you have this table, you can make the better weapons and tools like the Lumber Axe, the Excavator, etc."],
+      icon: "tconstruct:tinkers_anvil",
+      dependencies: ["02000000016E0000"],
+      rewards: [
+        {
+          id: "0400000001840000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    }
+  ],
+  quest_links: [],
+  subtitle: ["Welcome to Tinkers' Construct!", "", "Authored by Bethylee"],
+  icon: "minecraft:book"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "actuallyadditions:liquid_fuel",
+  "fuel": {
+    "Amount": 50,
+    "FluidName": "actuallyadditions:empowered_oil"
+  },
+  "result": {
+    "burn_time": 200,
+    "total_energy": 64000
+  }
+}

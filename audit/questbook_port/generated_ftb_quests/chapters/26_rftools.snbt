@@ -1,0 +1,434 @@
+{
+  id: "01000000001A0000",
+  group: "",
+  order_index: 14,
+  filename: "26_rftools",
+  title: "RFTools",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      id: "0200000000E10000",
+      title: "RFTools",
+      x: -4.33,
+      y: 0.33,
+      tasks: [
+        {
+          id: "0300000000E10000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["Welcome to RFTools! This mod is filled with gadgets that can make your Minecrafting experience a whole lot better, such as teleporters, storage, the Builder, and highly advanced redstone."],
+      icon: "rftoolsbase:manual",
+      rewards: [
+        {
+          id: "0400000000E10000",
+          type: "item",
+          item: "rftoolsbase:smartwrench"
+        },
+        {
+          id: "0400000000E10001",
+          type: "item",
+          item: "rftoolsbase:manual"
+        },
+        {
+          id: "0400000000E10002",
+          type: "item",
+          item: "rftoolsbase:manual"
+        },
+        {
+          id: "0400000000E10001",
+          type: "command",
+          command: "/say VAR_NAME has begun the RFTools questline!"
+        }
+      ]
+    },
+    {
+      id: "0200000002700000",
+      title: "Matter Receiver",
+      x: -3,
+      y: 4.67,
+      tasks: [
+        {
+          id: "0300000002700000",
+          type: "item",
+          item: "rftoolsutility:matter_receiver"
+        }
+      ],
+      description: ["The Matter Receiver can be teleported to.", "", "See the RFTools manual for details."],
+      icon: "rftoolsutility:matter_receiver",
+      dependencies: ["0200000000E10000"],
+      rewards: [
+        {
+          id: "0400000002700000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002770000",
+      title: "Shape Card (Void)",
+      x: 4.33,
+      y: 3,
+      tasks: [
+        {
+          id: "0300000002770000",
+          type: "item",
+          item: "rftoolsbuilder:shape_card_void"
+        }
+      ],
+      description: ["This Card is useful for clearing out large areas of blocks.", "", "See the RFTools manual for details."],
+      icon: "rftoolsbuilder:shape_card_void",
+      dependencies: ["02000000027C0000"],
+      rewards: [
+        {
+          id: "0400000002770000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002780000",
+      title: "Environmental Controller",
+      x: -0.33,
+      y: 3.67,
+      tasks: [
+        {
+          id: "0300000002780000",
+          type: "item",
+          item: "rftoolsutility:environmental_controller"
+        }
+      ],
+      description: ["A highly advanced Beacon alternative.", "", "See the RFTools manual for details."],
+      icon: "rftoolsutility:environmental_controller",
+      dependencies: ["0200000000E10000"],
+      rewards: [
+        {
+          id: "0400000002780000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002790000",
+      title: "Charged Porter",
+      x: -1.67,
+      y: 4.33,
+      tasks: [
+        {
+          id: "0300000002790000",
+          type: "item",
+          item: "rftoolsutility:advanced_charged_porter"
+        }
+      ],
+      description: ["The Advanced Charged Porter can be bound to several Matter Receivers, letting you teleport between them.", "", "See the RFTools manual for details."],
+      icon: "rftoolsutility:advanced_charged_porter",
+      dependencies: ["0200000000E10000", "0200000002700000"],
+      rewards: [
+        {
+          id: "0400000002790000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000027A0000",
+      title: "Machine Infuser",
+      x: 2.33,
+      y: 2.33,
+      tasks: [
+        {
+          id: "03000000027A0000",
+          type: "item",
+          item: "rftoolsbase:machine_infuser"
+        }
+      ],
+      description: ["This machine infuses RFTools devices with Dimensional Shards, improving them in various ways.", "", "See the RFTools manual for details."],
+      icon: "rftoolsbase:machine_infuser",
+      dependencies: ["0200000000E10000"],
+      rewards: [
+        {
+          id: "04000000027A0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000027B0000",
+      title: "Modular Storage",
+      x: -4.33,
+      y: 5,
+      tasks: [
+        {
+          id: "03000000027B0000",
+          type: "item",
+          item: "rftoolsstorage:modular_storage"
+        },
+        {
+          id: "03000000027B0001",
+          type: "item",
+          item: "rftoolsstorage:storage_module2"
+        }
+      ],
+      description: ["The Modular Storage, when equipped with a Storage Module, is a portable mini-AE system, storing up to 300 stacks of unique items. Note that non-stackable items count for 1.", "", "See the RFTools manual for details."],
+      icon: "rftoolsstorage:modular_storage",
+      dependencies: ["0200000000E10000"],
+      rewards: [
+        {
+          id: "04000000027B0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000027C0000",
+      title: "Builder",
+      x: 3.67,
+      y: 1.67,
+      tasks: [
+        {
+          id: "03000000027C0000",
+          type: "item",
+          item: "rftoolsbuilder:builder"
+        }
+      ],
+      description: ["See the RFTools manual for details."],
+      icon: "rftoolsbuilder:builder",
+      dependencies: ["0200000000E10000"],
+      rewards: [
+        {
+          id: "04000000027C0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000027D0000",
+      title: "Screens",
+      x: 5,
+      y: 1,
+      tasks: [
+        {
+          id: "03000000027D0000",
+          type: "item",
+          item: "rftoolsutility:screen"
+        },
+        {
+          id: "03000000027D0001",
+          type: "item",
+          item: "rftoolsutility:screen_controller"
+        }
+      ],
+      description: ["Screens are able to display a whole bunch of cool things, aswell as manage redstone remotely, call elevators, and more.", "", "See the RFTools manual for details."],
+      icon: "rftoolsutility:screen",
+      dependencies: ["0200000000E10000"],
+      rewards: [
+        {
+          id: "04000000027D0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000027E0000",
+      title: "Power Cell",
+      x: 1,
+      y: 3,
+      tasks: [
+        {
+          id: "03000000027E0000",
+          type: "item",
+          item: "rftoolspower:dimensionalcell"
+        },
+        {
+          id: "03000000027E0001",
+          type: "item",
+          item: "rftoolspower:powercell_card"
+        }
+      ],
+      description: ["A Power Cell for storing your RF. Power Cells can be wirelessly connected to eachother.", "", "See the RFTools manual for details."],
+      icon: "rftoolspower:dimensionalcell",
+      dependencies: ["0200000000E10000"],
+      rewards: [
+        {
+          id: "04000000027E0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000027F0000",
+      title: "Shape Card",
+      x: 5,
+      y: 4.33,
+      tasks: [
+        {
+          id: "03000000027F0000",
+          type: "item",
+          item: "rftoolsbuilder:shape_card_def"
+        }
+      ],
+      description: ["This Card can be used for building, with the Builder.", "", "See the RFTools manual for details."],
+      icon: "rftoolsbuilder:shape_card_def",
+      dependencies: ["0200000002770000"],
+      rewards: [
+        {
+          id: "04000000027F0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002800000",
+      title: "Matter Transmitter",
+      x: -2.33,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000002800000",
+          type: "item",
+          item: "rftoolsutility:matter_transmitter"
+        }
+      ],
+      description: ["The Matter Transmitter can be teleported from, to Matter Receivers.", "", "See the RFTools manual for details."],
+      icon: "rftoolsutility:matter_transmitter",
+      dependencies: ["0200000002700000"],
+      rewards: [
+        {
+          id: "0400000002800000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002810000",
+      title: "Dialing Device",
+      x: -1.67,
+      y: 7.33,
+      tasks: [
+        {
+          id: "0300000002810000",
+          type: "item",
+          item: "rftoolsutility:dialing_device"
+        }
+      ],
+      description: ["The Dialing Devices lets you \"dial\" Matter Receivers, enabling travel to them from a nearby Matter Transmitter.", "", "See the RFTools manual for details."],
+      icon: "rftoolsutility:dialing_device",
+      dependencies: ["0200000002800000"],
+      rewards: [
+        {
+          id: "0400000002810000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002820000",
+      title: "Destination Analyser",
+      x: -1,
+      y: 5.67,
+      tasks: [
+        {
+          id: "0300000002820000",
+          type: "item",
+          item: "rftoolsutility:destination_analyzer"
+        }
+      ],
+      description: ["The Destination Analyser, when connected to a Matter Transmitter, enables you to check whether the Receiver you're dialing to has power.", "", "See the RFTools manual for details."],
+      icon: "rftoolsutility:destination_analyzer",
+      dependencies: ["0200000002800000"],
+      rewards: [
+        {
+          id: "0400000002820000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002840000",
+      title: "Matter Booster",
+      x: -0.33,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000002840000",
+          type: "item",
+          item: "rftoolsutility:matter_booster"
+        }
+      ],
+      description: ["The Matter Booster, when placed adjacent to a Matter Transmitter, allows it to spend extra RF to get you to your destination safely. With it, the Matter Receiver you're teleporting to can be completely out of power, without you dying.", "", "See the RFTools manual for details."],
+      icon: "rftoolsutility:matter_booster",
+      dependencies: ["0200000002820000"],
+      rewards: [
+        {
+          id: "0400000002840000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002850000",
+      title: "Builder Quarry",
+      x: 5.67,
+      y: 5.67,
+      tasks: [
+        {
+          id: "0300000002850000",
+          type: "item",
+          item: "rftoolsbuilder:shape_card_quarry"
+        }
+      ],
+      description: ["See the RFTools manual for details."],
+      icon: "rftoolsbuilder:shape_card_quarry",
+      dependencies: ["02000000027F0000"],
+      rewards: [
+        {
+          id: "0400000002850000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000002860000",
+      title: "Button Module",
+      x: 5.67,
+      y: 2.33,
+      tasks: [
+        {
+          id: "0300000002860000",
+          type: "item",
+          item: "rftoolsutility:button_module"
+        }
+      ],
+      description: ["Screen controlled Wireless Redstone!", "", "See the RFTools manual for details."],
+      icon: "rftoolsutility:button_module",
+      dependencies: ["02000000027D0000"],
+      rewards: [
+        {
+          id: "0400000002860000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    }
+  ],
+  quest_links: [],
+  subtitle: ["Quests for RFTools. Authored by NillerMedDild."],
+  icon: "minecraft:book"
+}

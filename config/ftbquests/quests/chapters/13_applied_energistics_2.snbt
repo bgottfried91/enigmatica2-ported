@@ -1,0 +1,1390 @@
+{
+  id: "01000000000D0000",
+  group: "",
+  order_index: 6,
+  filename: "13_applied_energistics_2",
+  title: "Applied Energistics 2",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      id: "02000000000E0000",
+      title: "You will be Assimilated",
+      x: 18.67,
+      y: 2.67,
+      tasks: [
+        {
+          id: "03000000000E0000",
+          type: "item",
+          item: "ae2:interface"
+        }
+      ],
+      description: ["  &lME Interfaces&r are the doorways to the ME system from machines and devices in the world.  Items can be piped into it from hoppers or other means, and they will be assimilated into the ME storage cells if there is sufficient room.", "", "  They can also be configured to buffer certain items, allowing hoppers, pipes, etc. to passively pull from the ME system.  Place the items you wish to buffer in the top row of the &lInterface&r's GUI.  You can adjust the quantity of the items by having the same number of items in-hand, so if you wanted a full stack of coal, you'd place a full stack of coal in a slot in the top row.  To clear the buffer's configuration, simply left click on the respective item in the top row.", "", "Note: The output buffer (items going out of the ME system) shares the same inventory space as the input buffer, so be sure to leave at least one slot clear if you want to use the same interface for both input and output.", "", "  More features of the Interface will be covered in other quests where they are relevant.", "", "Tip:  ME Interfaces also have a multipart  or \"flat panel\" version.  You can toggle between the two types by simply tossing the Interface into a crafting grid by itself.  However, this version will not power the device it is attached to, nor will it connect to devices other than what it is attached to."],
+      icon: "ae2:interface",
+      dependencies: ["0200000001510000"],
+      rewards: [
+        {
+          id: "04000000000E0000",
+          type: "item",
+          item: "ae2:interface",
+          count: 4
+        },
+        {
+          id: "04000000000E0001",
+          type: "item",
+          item: "ae2:cable_interface",
+          count: 4
+        }
+      ]
+    },
+    {
+      id: "0200000000C70000",
+      title: "I See a Pattern Here...",
+      x: 26,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000000C70000",
+          type: "item",
+          item: "ae2:pattern_encoding_terminal"
+        },
+        {
+          id: "0300000000C70001",
+          type: "item",
+          item: "ae2:blank_pattern"
+        }
+      ],
+      description: ["  &lME Pattern Terminals&r are used to program &lCrafting Patterns&r and &lProcessing Patterns&r, the former being used by &lMolecular Assemblers&r to perform crafting table recipes, and the latter being used to perform recipes done by other blocks and machines (including furnaces and brewing stands, but mainly machines from other mods).", "", "  The Terminal's GUI is broken up into three parts:", "", " * The &l&oME Grid&r at the top to allow access to ingredients for recipes,", "", " * The &l&oPattern Grid&r group in the lower left and middle is where you'll be setting therecipes for patterns, and", "", " * The &l&oPattern Queue&r group in the lower right is where you'll put patterns to be programmed and where you'll retrieved patterns that have been programmed.", "", "  Instructions to program the two types of patterns are covered later in the questline."],
+      icon: "ae2:pattern_encoding_terminal",
+      rewards: [
+        {
+          id: "0400000000C70000",
+          type: "item",
+          item: "ae2:blank_pattern",
+          count: 64
+        }
+      ]
+    },
+    {
+      id: "0200000000C80000",
+      title: "See Pea You",
+      x: 26,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000000C80000",
+          type: "item",
+          item: "ae2:crafting_unit"
+        }
+      ],
+      description: ["  The &l&oCrafting Processing Unit&r is a multiblock construction that is essential to AE2's autocrafting.  In essence, it is responsible for coordinating the various machines connected to the ME system so that they can craft one or more items from a single request.", "", "  They are constructed in a solid cuboid, in any arrangement, of its component blocks.", "", "  &lCrafting Units&r are a core crafting ingredient for the other component blocks of the Crafting CPU multiblock.  They can used as filler blocks, too, but otherwise don't have any function.", "", ""],
+      icon: "ae2:crafting_unit",
+      rewards: [
+        {
+          id: "0400000000C80000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000ED0000",
+      title: "Networking Tools",
+      x: 18,
+      y: 1,
+      tasks: [
+        {
+          id: "0300000000ED0000",
+          type: "item",
+          item: "ae2:certus_quartz_wrench"
+        }
+      ],
+      description: ["  The &lQuartz Wrench&r is used to safely pry off most AE2 devices and cables, and can interact with some devices (such as the ME Interface) in a special way.  To pry off a device or cable, Sneak + Use the wrench while looking at the target.  Careful! Sometimes they can fly off a fair distance.", "", "Note: There's no difference between the Certus and Nether Quartz wrenches in terms of functionality.", "", "  The &lNetwork Tool&r is a modified Quartz Wrench that can open a GUI on a cable or connected device to view the status of all connected cables/devices on the network, right up to the ME Controller.  It however loses some of the special functions that a Quartz Wrench has."],
+      icon: "ae2:certus_quartz_wrench",
+      dependencies: ["0200000001510000"],
+      rewards: [
+        {
+          id: "0400000000ED0000",
+          type: "item",
+          item: "ae2:network_tool"
+        }
+      ]
+    },
+    {
+      id: "0200000000EE0000",
+      title: "Harmless",
+      x: 0,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000000EE0000",
+          type: "item",
+          item: "ae2:charged_staff"
+        },
+        {
+          id: "0300000000EE0001",
+          type: "item",
+          item: "ae2:entropy_manipulator"
+        }
+      ],
+      description: ["  The &lCharged Staff&r is a weapon that deals damage comparable to that of an Iron Sword.  It differs from the sword, however, in that it consumes energy instead of durability.  It also deals magic damage instead of physical, which means it can bypass most armors.  A notable exception are Witches, who have a bit of magic resistance instead of armor.", "", "  The &lEntropy Manipulator&r can set fires to blocks and mobs at the cost of energy.  Right click on a block, left click on a mob.", "", "  Both devices may be recharged in a &lCharger&r."],
+      icon: "ae2:charged_staff",
+      dependencies: ["02000000014F0000"],
+      rewards: [
+        {
+          id: "0400000000EE0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000EF0000",
+      title: "I See What You Did There...",
+      x: 27,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000000EF0000",
+          type: "item",
+          item: "ae2:crafting_monitor"
+        }
+      ],
+      description: ["  &lCrafting Monitors&r are an optional block that will visually display the current top-level task (what you ordered).", "", " Only one of these may be in the entire multiblock.", "", ""],
+      icon: "ae2:crafting_monitor",
+      dependencies: ["0200000000C80000"],
+      rewards: [
+        {
+          id: "0400000000EF0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000F00000",
+      title: "Download More Wam",
+      x: 25,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000000F00000",
+          type: "item",
+          item: "ae2:1k_crafting_storage"
+        }
+      ],
+      description: ["  &lCrafting Storage Units&r are like the RAM of your computer, allowing for larger recipes or larger batch orders to go through.  Shouuld there be an insufficent amount of CSU's in the multiblock, the crafting request will refuse to start.  Should this happen, you can either reduce the number of requested items in the batch, add more CSU's to the multiblock, or swap out CSU's with a higher tier version.", "", "  You must have at least one CSU in the multiblock."],
+      icon: "ae2:1k_crafting_storage",
+      dependencies: ["0200000000C80000"],
+      rewards: [
+        {
+          id: "0400000000F00000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000F10000",
+      title: "See Sea Pea You",
+      x: 26,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000000F10000",
+          type: "item",
+          item: "ae2:crafting_accelerator"
+        }
+      ],
+      description: ["  &lCrafting Co-Processing Units&r are the task coordinators of the multiblock.  A task is defined as a single crafting operation, and each Unit can initiate a single task by moving the requested ingredients to the appropriate ME Interface.  More CCPU's in the multiblock mean more tasks can be started at the same time, although a single CCPU is still capable of doing different types of tasks.", "", "  For example, 4 assemblers are attached to an ME interface.  All 4 assemblers have the potential of performing the same type of crafting task.  With a single CCPU, 1 assembler will be started, then another, then another, then finally the last assembler.  With 4 CCPU's, all 4 assemblers will be started at the same time.  For small crafting recipes, the difference usually doesn't matter since the CCPU's can switch between tasks at a fast rate.  Only on the very large recipes does adding more CCPU's make an impact."],
+      icon: "ae2:crafting_accelerator",
+      dependencies: ["0200000000C80000"],
+      rewards: [
+        {
+          id: "0400000000F10000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000F30000",
+      title: "IKEA Worker of the Year",
+      x: 23,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000000F30000",
+          type: "item",
+          item: "ae2:molecular_assembler"
+        }
+      ],
+      description: ["  The &lMolecular Assembler&r is a machine that will perform a craft according to a &lCrafting Pattern&r placed in the slot above the output slot.  Items piped into the Assembler will go to the correct location and the result will be automatically pushed into an adjacent inventory.  Crafting performed in this matter is referred to as &opassive&r or &ocontinous auto-crafting&r, since crafting will continously be done so long as the Assembler is fed enough ingredients.", "", "Tip:  When trying to push the result, the &lAssembler&r will start with the bottom, then the top, then the sides.  Keep this in mind when doing passive auto-crafting, as it can push into its input hopper.", "", "  The &lAssembler&r must be powered through a cable or another connected AE2, but it does not take up a channel."],
+      icon: "ae2:molecular_assembler",
+      dependencies: ["0200000000F50000"],
+      rewards: [
+        {
+          id: "0400000000F30000",
+          type: "item",
+          item: "ae2:molecular_assembler",
+          count: 4
+        }
+      ]
+    },
+    {
+      id: "0200000000F40000",
+      title: "Crafting, On Demand.",
+      x: 24,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000000F40000",
+          type: "item",
+          item: "minecraft:oak_planks",
+          count: 4
+        }
+      ],
+      description: ["  This is it, the culmination of several hours of reading walls of text that could keep out the Mongols during all of the Ming Dynasty.", "", "  Everything learned thus far is put to use to achieve &o&lon-demand auto-crafting&r. We will start of with crafting table recipes before moving on to the slightly more complex machine crafting.", "", "  First of all, make sure you have a functioning &lCrafting Processing Unit&r multiblock connected to the ME system (including an ME drive with at least one Storage Cell in it), and sufficient power for everything.", "", "  Place a &lME Interface&r somewhere and  connect it to the rest of the ME system.", "", "  Then, place a &lMolecular Assembler&r on top or otherwise adjacent to the interface.", "", "  Program a &lCrafting Pattern&r for &lWood Planks&r (or another simple crafting recipe) and place the pattern in a slot in the bottom row of the &lInterface&r's GUI.", "", "  Finally, &o&lTest&r the installation by interacting with any suitable &lME Terminal&r or variant.  The item you programmed the Pattern to (such as our wood planks) should show up in the grid with a friendly \"CRAFT\" label over it.", "", "Tip:  If you already have wood planks in the system, you should pull them all out or use a different recipe.", "", "Tip:  If the programmed item still doesn't show up in the grid, check your connections, and check to see you programmed the Pattern correctly.  Too often does a Processing Pattern get made instead of the inteded Crafting Pattern.", "", "  Left click on the item, the crafting request GUI should pop up, allowing you to specify how many items to craft.  We'll just go with 1 for this test.", "", "  The next GUI that pops up will show you how many bytes is required to process the \"job,\" and all of the ingredients available and any ingredients that need to be crafted.  Click \"START\" to tell the system to begin crafting!", "", "Note: If if an error message pops up stating that \"No processors are available!\" it probably means you need more Crafting Storage Units.", ""],
+      icon: "ae2:logic_processor",
+      dependencies: ["0200000000F10000", "0200000000F30000"],
+      rewards: [
+        {
+          id: "0400000000F40000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000F50000",
+      title: "Crafting Patterns",
+      x: 23,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000000F50000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["&lCrafting Patterns&r are relatively straight forward to program.", "", "  First, ensure that the button on the right hand side looks like a crafting table, if it does not, then press it to switch it over.", "", "  Place the ingredients in the &l&oPattern Grid&r like you would a normal crafting grid, and the resulting item should appear in the slot to the immediate right.  (If it doesn't, check your recipe).", "", "  Then, make sure you have at least one &lBlank Pattern&r in the top slot of the &l&oPattern Queue&r and press the button with a down arrow to program it.", "", "Tip:  You'd normally would want the ore dictionary enabled for patterns, unless there's a specific reason why one type of copper (for example) is extra special.", "", "Tip:  Patterns can be overwritten if left in the bottom slot of the &l&oPattern Queue&r", ""],
+      icon: "minecraft:crafting_table",
+      dependencies: ["0200000000C70000"],
+      rewards: [
+        {
+          id: "0400000000F50000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000F60000",
+      title: "Processing Patterns",
+      x: 29,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000000F60000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["  &lProcessing Patterns&r are programmed in a similar fashion to &lCrafting Patterns&r with a few key differences.", "", "  First of which is that the order of the items in the &l&oPattern Grid&r no longer matter, these will all be pushed to a recipient machine (or inventory!) at the same time.", "", "  Second of which is that you can specify up to three different result (or output) items on the right side of the &l&oPattern Grid&r.  These are items that the ME system will expect to find after some time, and must be pushed into the network by hoppers or pipes via &lME Interfaces&r, or be pulled in by an &lImport Bus&r.", "", "  Lastly, you can specify a different amount of items (up to a full stack) per slot in either the input or output sides of the &l&oPattern Grid", "", "&4&l&oWarning!&r A crafting task will look for &oexactly&r the same amount of items you specified in the output slots of the Pattern Grid.  If it cannot find the item (for example Thermal Foundation's &lSlag&r) then the crafting task will be listed as incomplete or still \"in-progress.\"  You'll have to be clever to get such items to autocraft correctly.&r.."],
+      icon: "minecraft:furnace",
+      dependencies: ["0200000000C70000"],
+      rewards: [
+        {
+          id: "0400000000F60000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000F70000",
+      title: "Wheels on the Bus",
+      x: 21,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000000F70000",
+          type: "item",
+          item: "ae2:export_bus"
+        },
+        {
+          id: "0300000000F70001",
+          type: "item",
+          item: "ae2:import_bus"
+        }
+      ],
+      description: ["  Aside from &lME Interfaces&r, there are also &lImport Busses&r and &lExport Busses&r.", "", "  Both types should be fairly self-explanitory:", "", " The &lImport Bus&r pulls items from an attached inventory or machine &ointo&r the ME System.  It can be configured to pull only a certain type of item through its GUI.", "", " The &lExport Bus&r pushes items into an inventory or machine that it is attached to.  It must be told which items to export and how many it should try to push at a time (similar to how the ME Interface operates).", "", "  Both Busses start off with only 1 available slot, but you can give them up to 2 &lCapacity Cards&r to increase by 4 slots each for each card.", "", "  Both Busses are multipart constructions, and are easily installed by placing them on the inventory/machine that they will be importing/exporting."],
+      icon: "ae2:import_bus",
+      dependencies: ["02000000000E0000"],
+      rewards: [
+        {
+          id: "0400000000F70000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000F80000",
+      title: "Dramatic Pause",
+      x: 22,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000000F80000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["  By now, you should have successfully made &lWood Planks&r from demanding it through an &lME Terminal&r.  If not, check your connections (A &lNetwork Tool&r may help), check your power supply, and check your &lCrafting Pattern&r for any flaws.  If you're still having problems doing your first autocraft, then feel free to drop by the Enigmatica Discord and ask for help.", "", "&9&nhttps://discord.gg/HnWNd7X&r", "", ""],
+      icon: "minecraft:cookie",
+      dependencies: ["0200000000F40000"]
+    },
+    {
+      id: "0200000000F90000",
+      title: "Scribble Scribble",
+      x: 28,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000000F90000",
+          type: "item",
+          item: "ae2:printed_silicon"
+        }
+      ],
+      description: ["  This final quest in the autocrafting line will teach you the basics of interfacing machines to get them to do autocrafting for you.  For our example, we'll automate the &lInscriber&r, which is a good machine to automate since you will be needing quite a few of the different processors as you progress further through AE2.", "", "  You will need:", "1x &lME Interface&r", "1x &lImport Bus&r", "1x &lInscriber&r", "1x &lInscriber Silicon Press&r", "1x &lBlank Pattern&r", "", "  Place the &lInscriber&r.", "", "  Place the &lME Interface&r on top of the Inscriber (or anywhere adjacent).", "", "  Place the &lImport Bus&r on the bottom of the Inscriber (or anywhere adjacent).", "", "  Connect the &lME Interface&r and the &lImport Bus&r to the ME system.", "", "  Place the &lInscriber Silicon Press&r inside of the Inscriber, and place a piece of Silicon in the center slot to verify that it has power and is functioning.", "", "Hint: The panel variant of the ME Interface won't supply power, so you may have to attach a cable to the side of the Inscriber.", "", "  Program a &lProcessing Pattern&r (remember, it has a Furnace icon) on the ME Pattern Terminal.  1 Silicon as the input, 1 Printed Silicon as the Output.", "", "  Place the programmed Processing Pattern into the &lME Interface&r, and &l&oTest&r the setup by requesting a Printed Silicon from the ME System (Like you did with the previous quest)."],
+      icon: "ae2:engineering_processor",
+      dependencies: ["0200000000F10000", "0200000001490000"],
+      rewards: [
+        {
+          id: "0400000000F90000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000FA0000",
+      title: "Pregnant Pause",
+      x: 30,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000000FA0000",
+          type: "checkmark",
+          title: "Complete"
+        }
+      ],
+      description: ["  That's it.  That's the basics to automating a machine with AE2.  The following are tips, hints, and a general summary of what happens.", "", "&l  Crafting Patterns&r or &lProcessing Patterns&r go into the &lME Interfaces&r, when a crafting request is made by the &l&oCPU multiblock&r, it'll have the ME Interface push the ingredients into an adjacent inventory.", "", "Tip:  If you're one for compact builds, you can right click an &lME Interface&r block with a &lQuartz Wrench&r to tell it to push only into a certain direction.  Otherwise, the Interface will pick a side at random.  You can also use the panel version of the Interface to limit to just one side, but remember that it won't supply power nor act as a cable.", "", "  Use &lImport Busses&r to pull crafted items from machines into the ME system. If the machine can push items, you can instead have it push into an ME Interface (which can be the same one that has the Processing Pattern).", "", "  Machines that need a Catalyst, Tool, or Fuel (such as furnaces) should have that item pushed into them by an &lExport Bus&r, have the tool left in them, or be maintained by other means.  Some blocks, such as furnaces, are picky about which side the items are pushed in and taken.  Furnaces have input at the top, fuel at any side, and output at the bottom.", "", "  Crafting tasks are marked as \"success\" if the product of a Crafting Pattern or Processing Pattern is pushed into the system from &oany&r ME Interface or Import Bus.  This only happens if the task was started by a CPU, however."],
+      icon: "minecraft:cake",
+      dependencies: ["0200000000F90000"],
+      rewards: [
+        {
+          id: "0400000000FA0000",
+          type: "item",
+          item: "ae2:engineering_processor",
+          count: 8
+        },
+        {
+          id: "0400000000FA0001",
+          type: "item",
+          item: "ae2:logic_processor",
+          count: 8
+        },
+        {
+          id: "0400000000FA0002",
+          type: "item",
+          item: "minecraft:cake"
+        }
+      ]
+    },
+    {
+      id: "0200000000FB0000",
+      title: "Just a Few for the Road",
+      x: 10,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000000FB0000",
+          type: "item",
+          item: "ae2:portable_item_cell_1k",
+          consume_items: "true"
+        }
+      ],
+      description: ["  The Portable Cell is AE2's version of a backpack, offering a much larger portable storage solution than most backpacks, bags, etc. available from other mods.  The only downside is that you have to recharge it occasionally."],
+      icon: "ae2:portable_item_cell_1k",
+      dependencies: ["0200000001580000"],
+      rewards: [
+        {
+          id: "0400000000FB0000",
+          type: "item",
+          item: "ae2:portable_item_cell_1k"
+        },
+        {
+          id: "0400000000FB0001",
+          type: "item",
+          item: "ae2:cell_component_4k"
+        }
+      ]
+    },
+    {
+      id: "0200000000FC0000",
+      title: "Old Habits Die Hard",
+      x: 21,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000000FC0000",
+          type: "item",
+          item: "ae2:storage_bus"
+        }
+      ],
+      description: ["  There may be some cases where you would prefer to use another storage method outside of the ME system, such as Storage Drawers.  For those cases there is the &lStorage Bus&r.  Attach this onto the inventory system where both input and output operations can occur (such as on a Drawer Controller)."],
+      icon: "ae2:storage_bus",
+      dependencies: ["02000000000E0000"],
+      rewards: [
+        {
+          id: "0400000000FC0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000FD0000",
+      title: "Annihilate! Formulate?",
+      x: 10,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000000FD0000",
+          type: "item",
+          item: "ae2:annihilation_plane"
+        },
+        {
+          id: "0300000000FD0001",
+          type: "item",
+          item: "ae2:formation_plane"
+        }
+      ],
+      description: ["  The &lAnnihilation Plane&r will instantly mine any block that is in front of it and import its broken products into the ME system.  This might be useful for vanilla cobble generators and similar constructions.", "", "  The &lFormation Plane&r will instantly place configured blocks or items in the space in front it, whenever an Annihalation Plane was activated.  You also have the option of dropping blocks as items instead of placing them in the world.", "", "  The pair might be useful for some uncommon or rare block drops, such as flint from gravel.  In such a setup you'd place a Formation plane two blocks above an Annihilation Plane and have the gravel blocks fall down into the Annihlation Plane.", "", "&4&l&oWarning:&r This can easily become a lag machine if you are not careful!", "", "  The &lIdentity Annihilation Plane&r will instantly mine a block as if it had the silk touch enchantment."],
+      icon: "ae2:formation_plane",
+      dependencies: ["0200000001530000"],
+      rewards: [
+        {
+          id: "0400000000FD0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000000FE0000",
+      title: "Better Than Wifi!",
+      x: 13,
+      y: 5,
+      tasks: [
+        {
+          id: "0300000000FE0000",
+          type: "item",
+          item: "ae2:wireless_terminal"
+        },
+        {
+          id: "0300000000FE0001",
+          type: "item",
+          item: "ae2:wireless_crafting_terminal"
+        }
+      ],
+      description: [" &l Wireless Terminals&r and &lWireless Crafting Terminals &rallow you to access your ME system without needing to stand by an ME Terminal that's anchored down to a cable somewhere.", "", "  In order to do this, however, they need to be within range of a &lWireless Access Point&r, which start off with about an 16 block range.  This range can be improved up to 512m from the access point by installing &lWireless Boosters&r, this comes at the cost of more power, however.", "", "  They also need to be linked to the ME System, and the only way to do this is through the &lSecurity Terminal&r.", "", "  Lastly, they consume energy for the entire duration you have its GUI open. It doesn't consume energy per request, however."],
+      icon: "ae2:wireless_terminal",
+      dependencies: ["0200000001550000"],
+      rewards: [
+        {
+          id: "0400000000FE0000",
+          type: "item",
+          item: "ae2:wireless_access_point"
+        },
+        {
+          id: "0400000000FE0001",
+          type: "item",
+          item: "ae2:wireless_booster",
+          count: 4
+        }
+      ]
+    },
+    {
+      id: "0200000001000000",
+      title: "Ctrl+C, Ctrl+V",
+      x: 18.67,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000001000000",
+          type: "item",
+          item: "ae2:memory_card"
+        }
+      ],
+      description: ["  &lMemory Cards&r are used to copy the configuration of ME Interfaces and Busses and then paste them onto the same type of device.  This may be useful if you have several Interfaces or Busses with the same configuration.", "", "  They may be also used to link P2P Tunnels."],
+      icon: "ae2:memory_card",
+      dependencies: ["02000000000E0000", "0200000001400000"],
+      rewards: [
+        {
+          id: "0400000001000000",
+          type: "item",
+          item: "ae2:memory_card",
+          count: 4
+        }
+      ]
+    },
+    {
+      id: "0200000001010000",
+      title: "Paper Walls",
+      x: 6,
+      y: 5,
+      tasks: [
+        {
+          id: "0300000001010000",
+          type: "item",
+          item: "ae2:cell_workbench"
+        }
+      ],
+      description: ["  Items stored on the Cells are composed of an 8 byte (B) type tag, and a 1 byte quantity tag for every 8 items take.  Items that normally don't stack, such as tools and armor, will stack within the Cell so long as they have exact same damage data and NBT data (enchantments).", "", "  For example, 8 identical iron swords will only take up 9B (1 type tag for 8B, 1 quantity tag for 1B).  However, if one of the swords is damaged or is enchanted, the memory cost jumps up to 18B (2 type tags for 16B, 2 quantity tags for 2B).", "", "  You can partition a Storage Cell at a &lCell Workbench&r to limit the types of items that can be stored on the cell.  This will ensure that the majority of the available memory space will be used by quantity tags instead of the more bulky type tags, which can be useful when trying to micromanage multiple Storage Cells installed in the ME system.", "", "  Partitioned Storage Cells have a higher priority than standard Storage Cells, so they will get filled up first by the ME system before the \"misc. storage\"  ones will.", "", "  The grid in the GUI of the &lCell Workbench&r is where you set the filters/partitions.  The slot in the upper right of the GUI is where you place the Storage Cell that you'll be working on.  The buttons on the left do verious things, and it is recommended that you experiment with them to see what they do."],
+      icon: "ae2:cell_workbench",
+      dependencies: ["0200000001540000"],
+      rewards: [
+        {
+          id: "0400000001010000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001020000",
+      title: "Is That a Sconce?",
+      x: 0,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000001020000",
+          type: "item",
+          item: "ae2:quartz_fixture"
+        },
+        {
+          id: "0300000001020001",
+          type: "item",
+          item: "ae2:light_detector"
+        }
+      ],
+      description: ["  The &lCharged Quartz Fixture&r is a somewhat nice looking light source that can be placed on solid blocks from any side.", "", "  The &lLight Detecting Fixture&r operates similarly to that of the vanilla Daylight Detector, but can be placed on solid blocks from any side.  It emits a redstone signal to all adjacent block spaces, but not to the block it is attached to."],
+      icon: "ae2:quartz_fixture",
+      dependencies: ["02000000014B0000"],
+      rewards: [
+        {
+          id: "0400000001020000",
+          type: "item",
+          item: "ae2:quartz_fixture",
+          count: 64
+        }
+      ]
+    },
+    {
+      id: "02000000013F0000",
+      title: "Paper Shuffler",
+      x: 8,
+      y: 6,
+      tasks: [
+        {
+          id: "03000000013F0000",
+          type: "item",
+          item: "ae2:io_port"
+        }
+      ],
+      description: ["  The &lME IO Port&r is used to automatically transfer items stored on up to 6 Storage Cells (and similar devices) into the Cells installed in connected &lME Drives&r.", "", "  Storage Cells go in the left hand slots of the GUI, and when they are emptied they will appear in the right hand slots.", "", "  You can specify the direction of the data transfer, either from the Cells into the ME network, or from the ME network into the Cells.  The latter direction is handy to fill up partitioned Cells or newer, higher tiered Cells.", "", "  Storage Cells in the &lME IO Port &rwill not be available to the ME network, they must be installed in an ME Drive."],
+      icon: "ae2:io_port",
+      dependencies: ["0200000001540000"],
+      rewards: [
+        {
+          id: "04000000013F0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001400000",
+      title: "It's Peer, not Pier",
+      x: 17,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000001400000",
+          type: "item",
+          item: "ae2:me_p2p_tunnel"
+        }
+      ],
+      description: ["  &lP2P Tunnels&r allow for various things to go through the ME Cables, such as items, fluids, energy, redstone signals, light levels and &l&oeven other channels&r.", "", "  &lP2P Tunnels&r are changed by placing them in-world, at clicking them with a item that would connect to the P2P type you want, so for P2P Tunnel - Item, click it with an Itemduct.  When first crafting a Tunnel, it will be the &lP2P Tunnel - ME&r which is used for &l&ochannel multiplexing&r and will be covered in another quest.", "", "  We'll instead start off with an easy example: &lP2P Tunnel - Item&r (referred to as an &oItem Tunnel&r) will accept items pushed into it and transfer them to inventories attached to linked &oItem Tunnels&r.", "", "  Linking is performed by Sneak + Right-Clicking a &lMemory Card&r on the &oItem Tunnel&r that is going to be the input.  Then, Right-Click the &lMemory Card&r on any other &oItem Tunnel&r to set it to be an output.", "", "  &lTunnels&r are pushed in the order that you linked them, so the first &oItem Tunnel&r that you linked will have items pushed to it first.  When the inventory at the first &oTunnel&r fills up, the second &oTunnel&r will be pushed to, then the third, and so on.", "", "  &lTunnels&r must all be powered and on the same ME network to function, but otherwise do not need anything special."],
+      icon: "ae2:item_p2p_tunnel",
+      dependencies: ["0200000001550000"],
+      rewards: [
+        {
+          id: "0400000001400000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001410000",
+      title: "Peers of Peers",
+      x: 19,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000001410000",
+          type: "item",
+          item: "ae2:light_p2p_tunnel"
+        },
+        {
+          id: "0300000001410001",
+          type: "item",
+          item: "ae2:redstone_p2p_tunnel"
+        },
+        {
+          id: "0300000001410002",
+          type: "item",
+          item: "ae2:fe_p2p_tunnel"
+        }
+      ],
+      description: ["  This section covers the other types of &lP2P Tunnels&r, unless otherwise noted, they have the same requirements and linking behavior as &oItem Tunnels&r.", "", "  &lP2P Tunnel - Light&r is a unique device that senses the light level in the block in front of it and transmits the light to all linked &oLight Tunnels&r.  It will sense and transmit light from the sky as well as any light emitting blocks (torches, etc.)", "", "  &lP2P Tunnel - Redstone&r will transmit any redstone signals that the block space in front of it happens to have.  Redstone signal levels do not lose any strength while traversing the ME system, so for all linked &oRedstone Tunnels&r its as if the attached blocks where adjacent to the input block space.  They are however, one-way: redstone signals at the output Tunnels will not travel to the input Tunnel.", "", "  &l&oEnergy Tunnels&r allow transmission of energy through the ME system to all linked destinations.  Each supported energy type will have their own &oEnergy Tunnel&r variation, and likewise will only link to Tunnels of the same variation; &oEU Tunnels&r won't link to &oForge Energy Tunnels&r, and vice versa.", "", "  Other mods may add more types of &lP2P Tunnels&r, such as &oFluid Tunnels&r and &oOpenComputer Tunnels&r.  Their operating requirements and linking behavior is the same, the only difference is what is transferred.  Usually their name is a good enough clue as to what they do."],
+      icon: "ae2:light_p2p_tunnel",
+      dependencies: ["0200000001400000"],
+      rewards: [
+        {
+          id: "0400000001410000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001420000",
+      title: "Please Sir, May I Have Some More?",
+      x: 17,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000001420000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: ["  Up until now, you've been limited to 8 channels for most types of cables, and can get up to 32 channels with the relatively expensive Dense Cables.", "", "  The &lP2P Tunnel - ME&r variant we skipped over before allows us to go little  past that limit through a method called &l&ochannel multiplexing&r.  What this does is cram up to 32 channels into 1 or 2 channels - the channels used to link two &oME Tunnels&r together.  This ultimately allows for a maximum of 256 through a humble Glass Cable... &mor possibly more.&r", "", "&lNote:&r  Tunneling may have an impact on the responsiveness of the ME system, if you find that your devices at the other end of a tunnel feel a bit sluggish, you may need to run a Dense Cable to there instead of using tunnels.", "", "  Standard tunneling requirements and behavior apply - The tunnels must be powered and linked together to function.", "", "  Right-Click an ME Tunnel on a cable to install it on the cable.", "", "  Sneak + Right-Click to have it attach to/look at the cable; all channels on the cable will be available for tunneling.", "", "  There several differences worth mentioning that &oME Tunnels&r have over the others:", "", "  The first of which is that &oME Tunnels&r are &l&obi-directional&r, all linked &oTunnels&r can push and pull ME requests, although they are all limited to a maximum of 32 channels.", "", "&lNote:&r  &oME Tunnels&r seem to behave better if &l&othey are in pairs&r. Two or more output &oTunnels&r per input &oTunnel&r can have less total channel capacity or behave strangely.", "", "  Secondly, there must be an &lME controller&r somewhere on the ME network that the Tunnels are handling, otherwise the maximum is limited to 8 channels (which makes the use of the &oME Tunnels&r moot).", "", "  Finally, &oME Tunnels&r &l&ocannot self-reference&r, meaning they cannot input from/output to a cable that eventually connects to themselves or their linked partners.  They can, however, be connected to the same ME network if they go through an &lME Controller&r."],
+      icon: "ae2:me_p2p_tunnel",
+      dependencies: ["0200000001400000"],
+      rewards: [
+        {
+          id: "0400000001420000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001430000",
+      title: "Thicker Than Thicc",
+      x: 15,
+      y: 5,
+      tasks: [
+        {
+          id: "0300000001430000",
+          type: "item",
+          item: "ae2:condenser"
+        }
+      ],
+      description: ["", "  The &lMatter Condenser&r is used to create &lMatter Balls&r and &lSingularities&r.", "", "  &lMatter Balls&r are ammunition for the &lMatter Cannon&r, and is described in detail in the Cannon's quest.", "", "  &lSingularities&r are a crafting component for items used later in this quest line.", "", "  The &lMatter Condenser&r is in &l&oTrash Mode&r when it is first placed down, anything put in the slot marked with a trash can  in its GUI will be destroyed instantly.", "", "  The button on the right of the GUI cycles between &l&oTrash Mode&r and the two &o&lCondense&r modes.", "", "  There must be a &lStorage Component&r installed in the top slot of the GUI, or neither of the &l&oCondense&r modes will work and the items will simply be destroyed.", "", "  The cost to create either Matter Balls or Singularities is in number of items, and all types of items contribute the same amount, so use something cheap and abundant such as Cobble, Dirt, or any \"trash\" item.", "", "", "  The&l Matter Condenser&r does not require power to function."],
+      icon: "ae2:condenser",
+      dependencies: ["0200000001550000"],
+      rewards: [
+        {
+          id: "0400000001430000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001440000",
+      title: "Bang!",
+      x: 15,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000001440000",
+          type: "item",
+          item: "ae2:tiny_tnt"
+        },
+        {
+          id: "0300000001440001",
+          type: "item",
+          item: "ae2:quantum_entangled_singularity",
+          count: 2
+        }
+      ],
+      description: ["  &lTiny TNT&rs are cheap, and super low-powered versions of their more destructive breathrin.  They are particularly useful in AE2 for the creation of &lQuantum Entangled Singularities&r, which are used to link two &lQuantum Ring&rs together.  Other mods which use explosive crafting may benefit from Tiny TNTs, as well.", "", "  A pair of &lQuantum Entangled Singularities&r are created by tossing 1 &lEnder Dust&r and 1 &lSingularity&r onto the ground, and then create an explosion nearby.  If using the &lTiny TNT&r as the explosion source, it must be in the same block space as the two ingredients when lit."],
+      icon: "ae2:tiny_tnt",
+      dependencies: ["0200000001430000"],
+      rewards: [
+        {
+          id: "0400000001440000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001450000",
+      title: "Much Better Than Wifi!",
+      x: 15,
+      y: 9,
+      tasks: [
+        {
+          id: "0300000001450000",
+          type: "item",
+          item: "ae2:quantum_ring",
+          count: 8
+        },
+        {
+          id: "0300000001450001",
+          type: "item",
+          item: "ae2:quantum_link"
+        }
+      ],
+      description: ["  The &l&oME Quantum Ring multiblock&r is used to link two ME networks together, from any distance, from any dimension.  It does however take up a significant amount of power.", "", "  The multiblock is composed of 8 &lME Quantum Ring&r blocks in a donut shape (either verticle or horizontal) and a single &lME Quantum Link Chamber&r in the center.  There must be a multiblock at both ME networks, and they both must have a &lQuantum Entangle Singularity (QES)&r in them.", "", "  The &lQES&r is always crafted in pairs, and contains data that links the two Rings togetherat a quantum level... theoretically.", "", "  Both rings must be powered in order for the link to establish.  Once the link is active, however, they can draw power from either side.", "", "  A maximum of 32 channels may go through the ring (before tunneling), and cables may connect to any of the Quantum Ring Blocks that are not in the corners."],
+      icon: "ae2:quantum_ring",
+      dependencies: ["0200000001440000"],
+      rewards: [
+        {
+          id: "0400000001450000",
+          type: "item",
+          item: "ae2:quantum_ring",
+          count: 8
+        },
+        {
+          id: "0400000001450001",
+          type: "item",
+          item: "ae2:quantum_link"
+        }
+      ]
+    },
+    {
+      id: "0200000001460000",
+      title: "Sign Painter's Favorite",
+      x: 13,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000001460000",
+          type: "item",
+          item: "ae2:color_applicator"
+        }
+      ],
+      description: ["  The &lColor Applicator&r is used to paint cables and wool blocks placed in the world to different colors according to the &lPaintballs&r loaded in it.  It may also be able to paint similar blocks, as well.", "", "  Colors are cycled through by Sneak + Right-Clicking on any block that won't accept color.  See the quest for the &lMatter Cannon&r for loading and charging instructions."],
+      icon: "ae2:color_applicator",
+      dependencies: ["0200000001430000"],
+      rewards: [
+        {
+          id: "0400000001460000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001470000",
+      title: "Box Stuffer",
+      x: 8,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000001470000",
+          type: "item",
+          item: "ae2:spatial_io_port"
+        },
+        {
+          id: "0300000001470001",
+          type: "item",
+          item: "ae2:spatial_pylon",
+          count: 12
+        }
+      ],
+      description: ["  The &lSpatial IO Port&r is used in conjunction with the &lSpatial Pylons&r to store and relocate blocks constructed in the world.  (So cool...)", "", "  Constructions are stored in special \"pocket dimensions\" and are managed by &lSpatial Storage Cells&r.  These are tiered based on the amount of blocks per side they can hold.", "", "Note:  Many multiplayer servers have a policy on how many dimensions players can make. Since this policy applies to Spatial Storage usage.", "", "  The &lPylons&r are built in four edges to the space that they will be digitizing.  A common set up is to build pillars of Pylon blocks that go upwards.  The minimum valid multblock construction size (referred to as the &l&oSpatial Containment Structure&r) is a 3x3x3 cube. which will store/transfer a single block in the middle.", "", "  To start the digitization process, a valid Spatial Containment Structure (SCS) must be built and connected via cables to the Spatial IO Port.  Both the SCS and IO Port need power, but otherwise don't need anything special.", "", "Note:  Only 1 SCS may exist on any ME network.", "", "  Place a &lSpatial Storage Cell&r in the left hand slot of the &lSpatial IO Port&r's GUI, then supply a redstone signal to the IO Port to initiate the process.  If the Spatial Storage Cell happens to have something in it at the time digitizing occurs, it will be swapped with the whatever is within the SCS.", "", "&4&l&oWarning!&r &n&oAnything&r within the SCS at the time of the redstone signal will get digitized, including mobs and players (there's an advancement for this).  You will need some form of teleportation to get out of of there, a Nether Portal, a redstone contraption to re-trigger the IO Port, or a friend to push the button on the IO Port."],
+      icon: "ae2:spatial_io_port",
+      dependencies: ["02000000013F0000"],
+      rewards: [
+        {
+          id: "0400000001470000",
+          type: "item",
+          item: "ae2:spatial_storage_cell_16"
+        }
+      ]
+    },
+    {
+      id: "0200000001480000",
+      title: "Windows for ME",
+      x: 6,
+      y: 7,
+      tasks: [
+        {
+          id: "0300000001480000",
+          type: "item",
+          item: "ae2:view_cell"
+        }
+      ],
+      description: ["  &lView Cells&r are used in conjunction with the &lCell Workbench&r, and may be installed in most types of &lME Terminals&r.", "", "  &lView Cells&r act as a filter for the ME Terminal, meaning that the Terminal will only show the items that are configured on the View Cells that are installed in it.", "", "  This means that you can make a \"Frequently Used Items\" view cell and plop it in a Terminal whenever you need it, instead of needing to use the search bar all the time.", "", "  It can also be used dedicate Terminals for some particular purpose, such as a \"Kitchen Terminal.\""],
+      icon: "ae2:view_cell",
+      dependencies: ["0200000001010000"],
+      rewards: [
+        {
+          id: "0400000001480000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001490000",
+      title: "Open 24/7/52!",
+      x: 29,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000001490000",
+          type: "item",
+          item: "ae2:level_emitter"
+        }
+      ],
+      description: ["  &l&oContinous Autocrafting&r can be set up relatively easily with &lME Import&r and &lExport Busses&r, but most often you'll need some form of control over the machines to prevent them from overcrafting.", "", "  AE2 offers several devices that allow for some redstone control,  The &lME Toggle Bus&r (covered in &nCrystal Production 201&r), the &lRedstone Upgrade Card&r (covered in &nUp Doots&r), and the &lME Level Emitter&r.", "", "  The &lME Level Emitter&r will monitor a configured item and will emit a redstone signal if the stocks are above or below a set level.", "", "  It can also monitor the energy levels present in the ME system, which can be used, for example, to turn on a backup generator of sorts.", "", "  If a &lCrafting Card&r is installed, it will emit a signal whenever the monitored item has an active crafting request."],
+      icon: "ae2:level_emitter",
+      dependencies: ["0200000000F60000"],
+      rewards: [
+        {
+          id: "0400000001490000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000014A0000",
+      title: "Up Doots",
+      x: 6,
+      y: 2,
+      tasks: [
+        {
+          id: "03000000014A0000",
+          type: "item",
+          item: "ae2:capacity_card"
+        },
+        {
+          id: "03000000014A0001",
+          type: "item",
+          item: "ae2:crafting_card"
+        },
+        {
+          id: "03000000014A0002",
+          type: "item",
+          item: "ae2:fuzzy_card"
+        },
+        {
+          id: "03000000014A0003",
+          type: "item",
+          item: "ae2:inverter_card"
+        },
+        {
+          id: "03000000014A0004",
+          type: "item",
+          item: "ae2:redstone_card"
+        },
+        {
+          id: "03000000014A0005",
+          type: "item",
+          item: "ae2:speed_card"
+        }
+      ],
+      description: ["  Many AE2 devices and machines are able to accept &l&oUpgrade Cards&r.  These are usually installed in dedicated slots found their GUI, in the upper right hand corner with the outline of a &lBasic Card&r drawn on them.", "", "  Handheld devices, such as the &lMatter Cannon&r, and &lView Cells&r can have Upgrade Cards installed at the &lCell Workbench&r.", "", "  Each Card's tooltip describe where the Card may be installed.  Numbers in parenthesis indicate the maximum number of Cards that device may have.", "", "  The following is a short overview of what each Card does:", "", "&lCapacity&r:  Increase the number of slots in the device's filter.", "", "&lCrafting&r:  The device is able to request the crafting of configured items.  For example, an export bus configured to export Wood Planks will continously request them to be crafted until the attached inventory is full.", "", "&lFuzzy&r:  The device will ignore NBT and damage data, and will use the Ore Dictionary equivalents of the configured items.", "", "&lInverter&r:  Changes the device's filters from a whitelist into a blacklist.  Items in the filter will NOT be pulled/requested.", "", "&lRedstone&r:  Allows the device to be controlled by redstone signals.  Behavior is configured in the device's GUI with a new button.", "", "&lAcceleration&r:  Increases the operating speed of the device.  For busses, this increases the stack size per transfer."],
+      icon: "ae2:crafting_card",
+      dependencies: ["0200000001530000"],
+      rewards: [
+        {
+          id: "04000000014A0000",
+          type: "item",
+          item: "ae2:advanced_card",
+          count: 64
+        },
+        {
+          id: "04000000014A0001",
+          type: "item",
+          item: "ae2:basic_card",
+          count: 64
+        }
+      ]
+    },
+    {
+      id: "02000000014B0000",
+      title: "Intro to AE2",
+      x: 2,
+      y: 0,
+      tasks: [
+        {
+          id: "03000000014B0000",
+          type: "checkmark",
+          title: "checkbox"
+        }
+      ],
+      description: [" &lApplied Energistics 2&r is centered around inventory managment using high-tech machines which theoretically convert&r &rMatter into Energy and back again.  A vanilla style store room containing hundreds of double chests can be digitized through the ME system and fit onto a single storage cell, freeing up all that space in the world to be used by more interesting things.", "", "  &lVids, Plox?&r  There are several youtube tutorials over AE2, if you prefer.  (Sorry, hyperlinks not supported in BQM) :(", "", "&9&nhttps://www.youtube.com/results?search_query=applied+energistics+2+tutorial&r", "", "  You can also check out the official wiki!", "", "&r&9&nhttp://ae-mod.info/"],
+      icon: "ae2:certus_quartz_crystal",
+      rewards: [
+        {
+          id: "04000000014B0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000014E0000",
+      title: "Crystal Production 102",
+      x: 2,
+      y: 4,
+      tasks: [
+        {
+          id: "03000000014E0000",
+          type: "item",
+          item: "ae2:charged_certus_quartz_crystal"
+        },
+        {
+          id: "03000000014E0001",
+          type: "item",
+          item: "minecraft:quartz"
+        },
+        {
+          id: "03000000014E0002",
+          type: "item",
+          item: "minecraft:redstone"
+        },
+        {
+          id: "03000000014E0003",
+          type: "item",
+          item: "ae2:fluix_crystal"
+        }
+      ],
+      description: ["  &lFluix Crystals&r are a key component to many machines in AE2. Unlike Certus and Nether Quartz, &lFluix&r must be crafted in a unique manner.", "", "  However, you first need a &lCharged Certus Quartz&r crystal. These may be found in the world in ores, and look like normal Certus Quartz ore with lightning bolts zapping across them occasionally.", "", "  Once you have your Charged Certus, drop it in a block of calm water along with 1 redstone dust and 1 Nether Quartz. The three will be consumed and a &lFluix Crystal&r will materialize after a few seconds.", "", "  You can also make &lPure Fluix Crystals&r using the same method you learned in &nCrystal Production 101&r."],
+      icon: "ae2:fluix_crystal",
+      dependencies: ["02000000014B0000"],
+      rewards: [
+        {
+          id: "04000000014E0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000014F0000",
+      title: "Energized",
+      x: 1,
+      y: 6,
+      tasks: [
+        {
+          id: "03000000014F0000",
+          type: "item",
+          item: "ae2:charger"
+        }
+      ],
+      description: ["  Since &lCharged Certus Quartz&r can be difficult to find naturally in the world sometimes, it would be a good idea to make something that can energize natural &lCertus Quartz&r. The &lCharger&r does exactly that.", "", "  The &lCharger&r operates in a similar manner to the Grindstone; place a natural Certus Quartz into the charger by right-clicking the &lCharger&r with the Quartz in hand. Then, place a wooden crank on the top of the machine and get cranking.", "", "  Tip: You can place an ME cable on the top or bottom of the Charger, and it'll take in power from the ME system instead of using the hand crank."],
+      icon: "ae2:charger",
+      dependencies: ["02000000014E0000"],
+      rewards: [
+        {
+          id: "04000000014F0000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001500000",
+      title: "Electrified",
+      x: 3,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000001500000",
+          type: "item",
+          item: "ae2:energy_acceptor"
+        }
+      ],
+      description: ["  The Matter Energy (ME) system will only ever work if it is powered.  AE2 provides a simple generator called the &lVibration Chamber&r which will consume burnables and generate a trickle of energy for the ME system.", "", "  However, most players forego making the Vibration Chamber and instead use a more powerful generator from another mod, and then use an &lEnergy Acceptor&r to power the ME system.", "", "Note: The &lEnergy Acceptor&r will only ever take energy from an outside source and will only ever output energy to the ME system."],
+      icon: "ae2:energy_acceptor",
+      dependencies: ["02000000014E0000"],
+      rewards: [
+        {
+          id: "0400000001500000",
+          type: "item",
+          item: "ae2:vibration_chamber",
+          count: 2
+        }
+      ]
+    },
+    {
+      id: "0200000001510000",
+      title: "\"Laser\" \"Beams\"",
+      x: 16,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000001510000",
+          type: "item",
+          item: "ae2:quartz_fiber"
+        },
+        {
+          id: "0300000001510001",
+          type: "item",
+          item: "ae2:fluix_glass_cable",
+          count: 4
+        },
+        {
+          id: "0300000001510002",
+          type: "item",
+          item: "ae2:fluix_covered_cable",
+          count: 4
+        },
+        {
+          id: "0300000001510003",
+          type: "item",
+          item: "ae2:fluix_covered_dense_cable"
+        },
+        {
+          id: "0300000001510004",
+          type: "item",
+          item: "ae2:fluix_smart_cable",
+          count: 4
+        },
+        {
+          id: "0300000001510005",
+          type: "item",
+          item: "ae2:fluix_smart_dense_cable"
+        }
+      ],
+      description: ["  In order to transfer ME across the ME system, the machines must either be adjacent to one another or have optical cables connecting them.", "", "  &lQuartz Fibers&r are the foundation of all the cables in AE2. They may be placed in the word, but don't actually connect anything.", "", "  &lME Glass Cables&r are the basic tier of AE2 cables, and can support up to 8 connected devices on a line.", "", "  &lME Covered Cables&r are also basic tier, and are largely viewed as a crafting step toward &lME Smart Cables&r. Some contest they look a bit better, too.", "", "  &lME Smart Cables&r also connect up to 8 devices, but they visually show how many devices are connected and will turn red if there's a conflict of some sort.", "", "  &lME Dense Cables&r are the top tier cables and can support up to 32 connected devices. They also show how many devices are connected.", "", "Note:  Dense Cables will not function if there isn't an &lME Controller&r somewhere on the network.", "", "Hint:  AE2 machines act like ME Glass Cables when doing adjacent connections, supporting up to 8 devices."],
+      icon: "ae2:fluix_glass_cable",
+      rewards: [
+        {
+          id: "0400000001510000",
+          type: "item",
+          item: "ae2:fluix_glass_cable",
+          count: 32
+        }
+      ]
+    },
+    {
+      id: "0200000001520000",
+      title: "Stone of the Skies",
+      x: 8,
+      y: 0,
+      tasks: [
+        {
+          id: "0300000001520000",
+          type: "item",
+          item: "ae2:sky_stone_block",
+          count: 32
+        }
+      ],
+      description: ["  Before progressing much further into AE2, you're going to have to bit of exploring to find &lmeteorites&r. These are large chunks of &lSky stone&r that are generated throughout the world, and tend to make a huge crater.  &lSky stone&r is an obsidian level mining block, so be sure to have a pickaxe (or other tool) that can collect it.", "", "  These meteorites can be found easily with a &lMeteorite Compass&r, which will point towards chunks that have Skystone blocks in them (even a single block). If you don't see the meteorite anywhere, then it's probably buried undergound.", "", "  Inside the center of each of the meteorites is a &lSky Stone Chest&r, which can hold &lInscriber Press Plates&r. These are essential to the progession into AE2, and can sometimes be difficult to find, especially in a crowded server. Thankfully they can make copies of themselves in an &lInscriber&r, so long as you have one to begin with."],
+      icon: "ae2:sky_stone_chest",
+      rewards: [
+        {
+          id: "0400000001520000",
+          type: "item",
+          item: "ae2:calculation_processor_press",
+          title: "Choice option: ae2:calculation_processor_press"
+        },
+        {
+          id: "0400000001520001",
+          type: "item",
+          item: "ae2:engineering_processor_press",
+          title: "Choice option: ae2:engineering_processor_press"
+        },
+        {
+          id: "0400000001520002",
+          type: "item",
+          item: "ae2:logic_processor_press",
+          title: "Choice option: ae2:logic_processor_press"
+        },
+        {
+          id: "0400000001520003",
+          type: "item",
+          item: "ae2:silicon_press",
+          title: "Choice option: ae2:silicon_press"
+        }
+      ]
+    },
+    {
+      id: "0200000001530000",
+      title: "Pressing Matters",
+      x: 8,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000001530000",
+          type: "item",
+          item: "ae2:inscriber"
+        },
+        {
+          id: "0300000001530001",
+          type: "item",
+          item: "ae2:engineering_processor"
+        },
+        {
+          id: "0300000001530002",
+          type: "item",
+          item: "ae2:logic_processor"
+        },
+        {
+          id: "0300000001530003",
+          type: "item",
+          item: "ae2:printed_silicon"
+        }
+      ],
+      description: ["  Now that you have &lInscriber Press Plates&r, a bit of &lSky Stone&r, and a powered ME network, you can start making circuits with the &lInscriber&r.", "", "  The Inscriber must be powered to function.", "", "  You should consult JEI to see all available recipes for the &lInscriber&r.", "", "Tip: You should make 1 &lInscriber&r per plate, and at least 1 more for processor crafting. This is not necassary, but it does aide in automation.", "", "Tip: Hoppers can pipe in crafting ingredients to the &lInscriber&r from any side."],
+      icon: "ae2:inscriber",
+      dependencies: ["0200000001520000"],
+      rewards: [
+        {
+          id: "0400000001530000",
+          type: "item",
+          item: "ae2:engineering_processor",
+          count: 2
+        },
+        {
+          id: "0400000001530001",
+          type: "item",
+          item: "ae2:logic_processor",
+          count: 3
+        }
+      ]
+    },
+    {
+      id: "0200000001540000",
+      title: "Overdrive",
+      x: 8,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000001540000",
+          type: "item",
+          item: "ae2:drive"
+        },
+        {
+          id: "0300000001540001",
+          type: "item",
+          item: "ae2:item_storage_cell_1k"
+        }
+      ],
+      description: ["  &lME Drives&r are devices that allow the ME system to read and write to &lStorage Cells&r.  This is like your computer's DVD drive, with the DVD's being the Storage Cells.", "", " &lStorage Cells&r contain solid items, and can contain &oany&r type of item.  Other mods and addons may add specialized versions&r which behave in a similar manner, such as the &lFluid Storage Cell&r which will hold mB's of fluid instead of items.", "", "  &lStorage Cells&r have a limited amount of space of them, and are tiered.", "", "  &lStorage Cells &rmay be taken out of the &lDrive&r at any time, the items stored on them are safe so long as the cell isn't destroyed in fire, lava, cactus, explosion, etc."],
+      icon: "ae2:drive",
+      dependencies: ["0200000001530000"],
+      rewards: [
+        {
+          id: "0400000001540000",
+          type: "item",
+          item: "ae2:item_storage_cell_64k"
+        }
+      ]
+    },
+    {
+      id: "0200000001550000",
+      title: "Out of Control",
+      x: 16,
+      y: 2,
+      tasks: [
+        {
+          id: "0300000001550000",
+          type: "item",
+          item: "ae2:controller"
+        }
+      ],
+      description: ["  The &lME Controller&r isn't actually needed if you'll be using AE2 just for basic storage.  It does however sport four important features that may be needed if you decide to progress further.", "", "  The first of which is an &l&oenergy buffer&r.  Both the &lVibration Chamber&r and the &lEnergy Acceptor&r don't have such a buffer.  This can cause stability problems when the ME system starts to grow, as some machines will prioritize power flow over others, causing the others to lose power and possibly shut down.", "", "  The second feature is that it enables the use of &lME Dense Cables&r, which will not function without an ME Controller somewhere in the ME system.", "", "  The third feature is a large number of &l&ochannels&r.  Each side of the &lME Controller&r can accept up to 32 channels (which is the capacity of a &lME Dense Cable&r), making for a maximum of 192 devices on a single Controller.", "", "  The last feature is that the &lController&r may be a &l&omultiblock&r construction, adding more available channels and more energy storage per block.  Each Controller may have up to 3 adjacent Controllers to it on the same plane (T's, no +'s) and have a maximum of 4 controllers altogether (+ with a bent leg).  The entire multiblock may be no larger than a 7x7x7 cube."],
+      icon: "chisel:futura/controller",
+      dependencies: ["0200000001510000"],
+      rewards: [
+        {
+          id: "0400000001550000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001560000",
+      title: "CRTs Are Still Better",
+      x: 10,
+      y: 4,
+      tasks: [
+        {
+          id: "0300000001560000",
+          type: "item",
+          item: "ae2:terminal"
+        }
+      ],
+      description: ["  &lME Terminals&r are used to interact with most other devices on the ME network, most notably the &lME Drives&r.  They are a type of multipart block which will sit in the same space as the cable they are connected to, and installation is as easy as placing them on a cable.", "", "  The &lTerminal&r should light up to indicate that it connected successfully and has sufficient power.  If it is dark, check that your smart cables show you have an available channel and check your power supplier.  Remember that all devices (aside from cables) will consume a bit of energy, even when not in use.", "", "  Right-click on the &lTerminal &rto access its GUI.  Here, you can treat the \"Grid\" just like you would an ordinary chest inventory.  When depositing items, you don't have to place it into a specific spot, the Grid is automatically sorted.", "", "  The left hand side of the GUI has a number of buttons that affect sorting and terminal style, you should play around with them a bit to see what they all do.", "", "  The top of the GUI has a &o&lsearch bar&r.  Some addon mods can link this search bar with the JEI search bar, in which case there would be a button to toggle the settings.", "", "  &lME Crafting Terminals&r add a 3x3 crafting grid to the GUI.  Here, you can craft things right at the terminal without needing to move back and forth between a crafting table.  Items left on the grid will stay there until you remove them or clear the grid."],
+      icon: "ae2:terminal",
+      dependencies: ["0200000001530000"],
+      rewards: [
+        {
+          id: "0400000001560000",
+          type: "item",
+          item: "ae2:crafting_terminal"
+        }
+      ]
+    },
+    {
+      id: "0200000001570000",
+      title: "Keep 'em Seperated",
+      x: 14,
+      y: 1,
+      tasks: [
+        {
+          id: "0300000001570000",
+          type: "item",
+          item: "ae2:cable_anchor",
+          count: 8
+        }
+      ],
+      description: ["  Cables can be seperated from each other or specific AE2 devices by using &lCable Anchors&r. These are a type of \"multipart\" construction, and may placed directly on the cable or vice versa.", "", "  Cables can also be dyed, either in the crafting grid or in the world with a &lMatter Cannon&r loaded with paintballs. Dyed cables won't connect to other cables of different colors, with the exception of the Fluix color."],
+      icon: "ae2:cable_anchor",
+      dependencies: ["0200000001510000"],
+      rewards: [
+        {
+          id: "0400000001570000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001580000",
+      title: "Single Cell Organizer",
+      x: 10,
+      y: 6,
+      tasks: [
+        {
+          id: "0300000001580000",
+          type: "item",
+          item: "ae2:chest"
+        }
+      ],
+      description: ["  &lME Chests&r are an alternative to &lME Drives&r. They have a built-in &lME Terminal&r on the top of them to allow access to the solitary &lStorage Cell&r in their inventory, which can be swapped out by interacting with the front side of the chest.", "", "  Hint: They make loading the &lMatter Cannon&r real easy."],
+      icon: "ae2:chest",
+      dependencies: ["0200000001540000", "0200000001560000"],
+      rewards: [
+        {
+          id: "0400000001580000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "0200000001590000",
+      title: "A Battery for ME",
+      x: 2,
+      y: 8,
+      tasks: [
+        {
+          id: "0300000001590000",
+          type: "item",
+          item: "ae2:energy_cell"
+        }
+      ],
+      description: ["  &lEnergy Cells&r are blocks that can store energy from &lEnergy Acceptors&r or &lVibration Chambers&r and make the power available to the ME system.  If you find that you are having power fluctuations in the system, you can try placing down more &lEnergy Cells&r instead of&l ME Controllers&r to increase the overall power buffer.", "", "  A lesser known feature of Energy Cells is that they can be charged in a &lCharger&r and then placed in the world to use.  Unfortunately, they will not retain their energy if broken after being placed."],
+      icon: "ae2:energy_cell",
+      dependencies: ["02000000014F0000"],
+      rewards: [
+        {
+          id: "0400000001590000",
+          type: "random",
+          table_id: 360287970189705216
+        }
+      ]
+    },
+    {
+      id: "02000000015A0000",
+      title: "Mostly Harmless",
+      x: 12,
+      y: 7,
+      tasks: [
+        {
+          id: "03000000015A0000",
+          type: "item",
+          item: "ae2:matter_cannon",
+          consume_items: "true"
+        }
+      ],
+      description: ["  The &lMatter Cannon&r is used to shoot &lMatter Balls &rand &lPaintballs&r at a short distance - about the same as a normal tool.", "", "  When armed with &lMatter Balls&r, the Cannon can insta-break soft blocks that can be broken by hand, and can damage mobs with a power similar to an empty hand.  It does, however, have a very fast rate of fire.", "", "  When armed with &lPaintballs&r, the Cannon can dye sheep and some mobs without hurting them (they will still feel a bit of a sting, though).  Paintballs can also stick to solid blocks, which may be used to mark points of interest or mildly annoy your neighbors.  The &lLux Paintballs&r glow in the dark, too.", "", "  The Matter Cannon needs both energy and ammo to function. It can be charged in the &k&l&r&lCharger&r, and can be loaded from the ME system by treating it like a partitioned Storage Cell.  Using a &lME Chest&r is the easiest way to load the Cannon."],
+      icon: "ae2:matter_cannon",
+      dependencies: ["0200000001430000"],
+      rewards: [
+        {
+          id: "04000000015A0000",
+          type: "item",
+          item: "ae2:matter_cannon"
+        },
+        {
+          id: "04000000015A0001",
+          type: "item",
+          item: "ae2:matter_ball",
+          count: 64
+        }
+      ]
+    },
+    {
+      id: "02000000015B0000",
+      title: "Crystal Production 201",
+      x: 4,
+      y: 8,
+      tasks: [
+        {
+          id: "03000000015B0000",
+          type: "item",
+          item: "ae2:growth_accelerator"
+        },
+        {
+          id: "03000000015B0001",
+          type: "item",
+          item: "ae2:toggle_bus"
+        }
+      ],
+      description: ["   Once you have gotten a power source for your ME system, you can create &lCrystal Growth Accelerators&r to greatly speed up the growth of Pure Quartz and Pure Fluix crystals.", "", "  These are placed adjacent to and facing the water block that the crystal seeds will be in, and must be connected to the ME system with suitable cables.  Theoretically you can place a maximum of 6 Accelerators around a water source block, but you'll need a way of getting the seeds in and the crystals out.", "", "  Since the Accelerators can eat up a significant amount of power, a method of easily turning them on and off would be desired.  The &lME Toggle Bus&r is one solution, as it will turn on power and device access between connected cables/devices when it senses a redstone signal.  These are multipart components, and take up the same space as a cable.  To install them, you can place them directly on a cable or on the side of an AE2 device.", "", "  An inverted version of the ME Toggle Bus exists, as well. These turn off when sensing a redstone signal."],
+      icon: "ae2:growth_accelerator",
+      dependencies: ["0200000001500000"],
+      rewards: [
+        {
+          id: "04000000015B0000",
+          type: "item",
+          item: "ae2:growth_accelerator",
+          count: 4
+        }
+      ]
+    }
+  ],
+  quest_links: [],
+  subtitle: ["  This will introduce you to the basics of AE2 as well as its high-tech storage solution.  Later on, it will also introduce AE2's on-demand autocrafting system.", "", "Authored by: z64555"],
+  icon: "minecraft:book"
+}
