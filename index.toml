@@ -3078,8 +3078,8 @@ hash = "abf68c7b90b93d7223c6ed856e7a4ae89ebdccf7780277e4de6aa3d707f7e27f"
 metafile = true
 
 [[files]]
-file = "mods/distanthorizons.pw.toml"
-hash = "ec0e5be063949a50b5eb473a98ba78f45c71d05e8526a18e5023cdf6bba54b29"
+file = "mods/distant-horizons.pw.toml"
+hash = "298053bb5d1251b70d3141aac6812f9fac64b9365743d121e85c4f64dae64189"
 metafile = true
 
 [[files]]
@@ -3094,7 +3094,7 @@ metafile = true
 
 [[files]]
 file = "mods/embeddium.pw.toml"
-hash = "5ec0c37f3f4ad07a40c10376668bca80334ddb7ad2bab06eb4de8f7aac339c8e"
+hash = "a74b2d65c286896335b454f61f18be630d0f13767626ebb118584907d1d37112"
 metafile = true
 
 [[files]]
@@ -3148,8 +3148,8 @@ hash = "77095e78d0432b58d1243f271e953c8c6b318bf8dbd0563358b07e15baf30a9c"
 metafile = true
 
 [[files]]
-file = "mods/ferrite-core.pw.toml"
-hash = "902bac905b93271f02bd0951a22bac06a3da24f5c237fcaeb469e14a7679e508"
+file = "mods/ferritecore.pw.toml"
+hash = "5bd0506bc0be25116b234f2b5af9447f60d82ae1cb6c5be4e12d8841f6c2501c"
 metafile = true
 
 [[files]]
@@ -3349,7 +3349,7 @@ metafile = true
 
 [[files]]
 file = "mods/modernfix.pw.toml"
-hash = "0d2ccd5f845ceb01ff78b093d9adc8686550513cce37cb052045fab8cbc03263"
+hash = "ce79c9c2caaeff5bab9cbc657b1e09c43c6fca32f1e3095e9b84bd4923e3be7e"
 metafile = true
 
 [[files]]
@@ -3404,7 +3404,7 @@ metafile = true
 
 [[files]]
 file = "mods/oculus.pw.toml"
-hash = "f83b253ca6a8e6f2f847952704da0e1fb00e65cbb10b7c9cb15d1a1780618da0"
+hash = "200f79b635a087841698c85ac7028f0a1fac2cc4ffae1d59ff3f07a94abfe70e"
 metafile = true
 
 [[files]]
@@ -3589,7 +3589,7 @@ metafile = true
 
 [[files]]
 file = "mods/terralith.pw.toml"
-hash = "dd7a6d0998526339b2413a4ab2a3f538033b17752b5039d9eaedc0b366678af5"
+hash = "be71c69ef56489d31df54ba59209617f3305eb0a793d8070f32794e590d4738d"
 metafile = true
 
 [[files]]
